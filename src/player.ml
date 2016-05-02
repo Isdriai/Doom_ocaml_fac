@@ -19,11 +19,25 @@ let rotate d p =
 
 type mv = MFwd | MBwd | MLeft | MRight
 
-(*on fera attention, l'origine demarre en haut à gauche, il faut donc mettre -10 à y pour "avancer" et 10 pour "reculer"*)
+let pi = 3.1415926535897932384626433832795
+
+let radian_of_deg deg = 
+	pi *. (float_of_int deg) /. 180.
+
+(*on fera attention, l'origine demarre en haut à gauche, il faut donc mettre -10 à y pour "avancer" et 10 pour "reculer"
+	l'angle 0 corespond à l'état ou le personnage est tourné vers la droite
+*)
 let move d p bsp = 
 	if Physic.detect_collision p.pos bsp then
 	match d with
-	| MFwd -> p.pos <- Point.new_point p.pos.x (p.pos.y-10)
-	| MBwd -> p.pos <- Point.new_point p.pos.x (p.pos.y+10)
-	| MLeft -> p.pos <- Point.new_point (p.pos.x-10) p.pos.y
-	| MRight -> p.pos <- Point.new_point (p.pos.x+10) p.pos.y
+	| MFwd -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.cos (radian_of_deg p.pa))) 
+										(p.pos.y-truncate(10.*.sin (radian_of_deg p.pa)))
+
+	| MBwd -> p.pos <- Point.new_point (p.pos.x-truncate(10.*.cos (radian_of_deg p.pa))) 
+										(p.pos.y+truncate(10.*.sin (radian_of_deg p.pa)))
+
+	| MLeft -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.sin (radian_of_deg p.pa))) 
+										(p.pos.y-truncate(10.*.cos (radian_of_deg p.pa)))
+
+	| MRight -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.cos (radian_of_deg p.pa))) 
+										(p.pos.y-truncate(10.*.sin (radian_of_deg p.pa)))
