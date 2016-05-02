@@ -47,11 +47,26 @@ let rec iter_cps f bsp=
 
 
 
-let rec iter_cps f bsp=  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(*let rec iter_cps f bsp=  
 	let rec iter cont = function 
 	| E -> cont (fun _ -> ())
 	| N (r, g, d) -> let k  = let c = fun a -> cont (fun a -> f r) 
 								in (fun () -> iter c d)
 					in iter k g
 	in	
-	iter (fun g -> g ()) bsp
+	iter (fun g -> g ()) bsp*)
