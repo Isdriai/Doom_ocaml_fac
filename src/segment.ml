@@ -1,4 +1,5 @@
 open Point
+open String
 
 type t = {id : string; 
           porig : Point.t; 
@@ -29,6 +30,7 @@ let split_segment d s =
 	| L,L -> (Some (d), None)
 	| R,R -> (None, Some (d)) 
 	| _,_ -> 
+	
 	let xa = d.porig.x in 
 	let xb = d.pdest.x in 
 	let ya = d.porig.y in 
@@ -38,20 +40,25 @@ let split_segment d s =
 	let yc = s.porig.y in 
 	let yd = s.pdest.y in 
 
-	let d = ((xb - xa) * (yd - yc) - (yb - ya) * (xd - xc)) in
-	let r = ((ya - yc) * (xd - xc) - (xa - xc) * (yd - yc)) / d in 
+	let dd = ((xb - xa) * (yd - yc) - (yb - ya) * (xd - xc)) in
+
+	if dd = 0 then (Some (d), None)
+	else
+
+	let r = ((ya - yc) * (xd - xc) - (xa - xc) * (yd - yc)) / dd in 
 	let xi = xa + r * (xb - xa)  in 
     let yi = ya + r * (yb - ya)  in 
     (Some (new_segment xc yc xi yi), Some(new_segment xi yi xd yd))	
 
-let (+::) e l = match e with None -> l | Some e -> e :: l
+let (+::) e l = match e with None -> l | Some e -> e :: l 
+
 
 let split hd rest = 
-    let rec split_terminal l (sl,sr) =
-    match l with
-    | [] -> (sl,sr)
-    | a::b -> let (l,r) = split_segment hd a in
-    split_terminal b (l+::sl, r+::sr) 
+	let rec split_terminal l (sl,sr) =
+	match l with
+	| [] -> (sl,sr)
+	| a::b -> let (l,r) = split_segment hd a in
+				split_terminal b (l+::sl, r+::sr) 
 in
 split_terminal rest ([],[])
 

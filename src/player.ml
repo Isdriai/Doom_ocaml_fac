@@ -7,6 +7,8 @@ mutable pos : Point.t;
 mutable pa : int;
 }
 
+let pas = 10.
+
 let new_player pos pa = let t = {pos = pos ; pa = pa} in t
 
 type dir = Left | Right
@@ -30,14 +32,14 @@ let radian_of_deg deg =
 let move d p bsp = 
 	if Physic.detect_collision p.pos bsp then
 	match d with
-	| MFwd -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.cos (radian_of_deg p.pa))) 
-										(p.pos.y-truncate(10.*.sin (radian_of_deg p.pa)))
+	| MFwd -> p.pos <- Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
+										(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MBwd -> p.pos <- Point.new_point (p.pos.x-truncate(10.*.cos (radian_of_deg p.pa))) 
-										(p.pos.y+truncate(10.*.sin (radian_of_deg p.pa)))
+	| MBwd -> p.pos <- Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
+										(p.pos.y+truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MLeft -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.sin (radian_of_deg p.pa))) 
-										(p.pos.y-truncate(10.*.cos (radian_of_deg p.pa)))
+	| MLeft -> p.pos <- Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
+										(p.pos.y-truncate(pas*.cos (radian_of_deg p.pa)))
 
-	| MRight -> p.pos <- Point.new_point (p.pos.x+truncate(10.*.cos (radian_of_deg p.pa))) 
-										(p.pos.y-truncate(10.*.sin (radian_of_deg p.pa)))
+	| MRight -> p.pos <- Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
+										(p.pos.y+truncate(pas*.cos (radian_of_deg p.pa)))
