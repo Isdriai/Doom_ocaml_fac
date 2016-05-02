@@ -1,960 +1,1005 @@
-"src/bsp.ml" 8 65 73 "src/bsp.ml" 8 65 78
+"src/bsp.ml" 7 54 62 "src/bsp.ml" 7 54 67
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  def parse "src/bsp.ml" 8 65 65 "src/bsp.ml" 1 0 -1
+  def parse "src/bsp.ml" 7 54 54 "src/bsp.ml" 1 0 -1
 )
-"src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+"src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 type(
   Segment.t -> 'a
 )
 ident(
-  def f "src/bsp.ml" 8 65 81 "src/bsp.ml" 12 196 237
+  def f "src/bsp.ml" 7 54 70 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 8 65 81 "src/bsp.ml" 8 65 84
+"src/bsp.ml" 7 54 70 "src/bsp.ml" 7 54 73
 type(
   t
 )
 ident(
-  def bsp "src/bsp.ml" 8 65 85 "src/bsp.ml" 12 196 237
+  def bsp "src/bsp.ml" 7 54 74 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+"src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 type(
   Point.t
 )
 ident(
-  def p "src/bsp.ml" 9 90 91 "src/bsp.ml" 12 196 237
+  def p "src/bsp.ml" 8 79 80 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 9 90 97 "src/bsp.ml" 9 90 100
+"src/bsp.ml" 8 79 86 "src/bsp.ml" 8 79 89
 type(
   t
 )
 ident(
-  int_ref bsp "src/bsp.ml" 8 65 81 "src/bsp.ml" 8 65 84
+  int_ref bsp "src/bsp.ml" 7 54 70 "src/bsp.ml" 7 54 73
 )
-"src/bsp.ml" 10 106 109 "src/bsp.ml" 10 106 110
+"src/bsp.ml" 9 95 98 "src/bsp.ml" 9 95 99
 type(
   t
 )
-"src/bsp.ml" 10 106 114 "src/bsp.ml" 10 106 116
+"src/bsp.ml" 9 95 103 "src/bsp.ml" 9 95 105
 type(
   unit
 )
-"src/bsp.ml" 11 117 123 "src/bsp.ml" 11 117 124
+"src/bsp.ml" 10 106 112 "src/bsp.ml" 10 106 113
 type(
   Segment.t
 )
 ident(
-  def r "src/bsp.ml" 11 117 135 "src/bsp.ml" 12 196 237
+  def r "src/bsp.ml" 10 106 124 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 11 117 126 "src/bsp.ml" 11 117 127
+"src/bsp.ml" 10 106 115 "src/bsp.ml" 10 106 116
 type(
   t
 )
 ident(
-  def g "src/bsp.ml" 11 117 135 "src/bsp.ml" 12 196 237
+  def g "src/bsp.ml" 10 106 124 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 11 117 129 "src/bsp.ml" 11 117 130
+"src/bsp.ml" 10 106 118 "src/bsp.ml" 10 106 119
 type(
   t
 )
 ident(
-  def d "src/bsp.ml" 11 117 135 "src/bsp.ml" 12 196 237
+  def d "src/bsp.ml" 10 106 124 "src/bsp.ml" 11 185 226
 )
-"src/bsp.ml" 11 117 120 "src/bsp.ml" 11 117 131
+"src/bsp.ml" 10 106 109 "src/bsp.ml" 10 106 120
 type(
   t
 )
-"src/bsp.ml" 11 117 138 "src/bsp.ml" 11 117 150
+"src/bsp.ml" 10 106 127 "src/bsp.ml" 10 106 139
 type(
   Point.t -> Segment.t -> Segment.tpos
 )
 ident(
   ext_ref Segment.get_position
 )
-"src/bsp.ml" 11 117 151 "src/bsp.ml" 11 117 152
+"src/bsp.ml" 10 106 140 "src/bsp.ml" 10 106 141
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+  int_ref p "src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 )
-"src/bsp.ml" 11 117 153 "src/bsp.ml" 11 117 154
+"src/bsp.ml" 10 106 142 "src/bsp.ml" 10 106 143
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 11 117 123 "src/bsp.ml" 11 117 124
+  int_ref r "src/bsp.ml" 10 106 112 "src/bsp.ml" 10 106 113
 )
-"src/bsp.ml" 11 117 138 "src/bsp.ml" 11 117 154
-call(
-  stack
-)
+"src/bsp.ml" 10 106 127 "src/bsp.ml" 10 106 143
 type(
   Segment.tpos
 )
-"src/bsp.ml" 11 117 155 "src/bsp.ml" 11 117 156
+"src/bsp.ml" 10 106 144 "src/bsp.ml" 10 106 145
 type(
   Segment.tpos -> Segment.tpos -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"src/bsp.ml" 11 117 157 "src/bsp.ml" 11 117 158
+"src/bsp.ml" 10 106 146 "src/bsp.ml" 10 106 147
 type(
   Segment.tpos
 )
-"src/bsp.ml" 11 117 138 "src/bsp.ml" 11 117 158
+"src/bsp.ml" 10 106 127 "src/bsp.ml" 10 106 147
 type(
   bool
 )
-"src/bsp.ml" 11 117 165 "src/bsp.ml" 11 117 170
+"src/bsp.ml" 10 106 154 "src/bsp.ml" 10 106 159
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref parse "src/bsp.ml" 8 65 73 "src/bsp.ml" 8 65 78
+  int_ref parse "src/bsp.ml" 7 54 62 "src/bsp.ml" 7 54 67
 )
-"src/bsp.ml" 11 117 171 "src/bsp.ml" 11 117 172
+"src/bsp.ml" 10 106 160 "src/bsp.ml" 10 106 161
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 11 117 173 "src/bsp.ml" 11 117 174
+"src/bsp.ml" 10 106 162 "src/bsp.ml" 10 106 163
 type(
   t
 )
 ident(
-  int_ref g "src/bsp.ml" 11 117 126 "src/bsp.ml" 11 117 127
+  int_ref g "src/bsp.ml" 10 106 115 "src/bsp.ml" 10 106 116
 )
-"src/bsp.ml" 11 117 175 "src/bsp.ml" 11 117 176
+"src/bsp.ml" 10 106 164 "src/bsp.ml" 10 106 165
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+  int_ref p "src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 )
-"src/bsp.ml" 11 117 165 "src/bsp.ml" 11 117 176
-call(
-  stack
-)
+"src/bsp.ml" 10 106 154 "src/bsp.ml" 10 106 165
 type(
   unit
 )
-"src/bsp.ml" 11 117 178 "src/bsp.ml" 11 117 179
+"src/bsp.ml" 10 106 167 "src/bsp.ml" 10 106 168
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 11 117 180 "src/bsp.ml" 11 117 181
+"src/bsp.ml" 10 106 169 "src/bsp.ml" 10 106 170
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 11 117 123 "src/bsp.ml" 11 117 124
+  int_ref r "src/bsp.ml" 10 106 112 "src/bsp.ml" 10 106 113
 )
-"src/bsp.ml" 11 117 178 "src/bsp.ml" 11 117 181
-call(
-  stack
-)
+"src/bsp.ml" 10 106 167 "src/bsp.ml" 10 106 170
 type(
   'a
 )
-"src/bsp.ml" 11 117 183 "src/bsp.ml" 11 117 188
+"src/bsp.ml" 10 106 172 "src/bsp.ml" 10 106 177
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref parse "src/bsp.ml" 8 65 73 "src/bsp.ml" 8 65 78
+  int_ref parse "src/bsp.ml" 7 54 62 "src/bsp.ml" 7 54 67
 )
-"src/bsp.ml" 11 117 189 "src/bsp.ml" 11 117 190
+"src/bsp.ml" 10 106 178 "src/bsp.ml" 10 106 179
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 11 117 191 "src/bsp.ml" 11 117 192
+"src/bsp.ml" 10 106 180 "src/bsp.ml" 10 106 181
 type(
   t
 )
 ident(
-  int_ref d "src/bsp.ml" 11 117 129 "src/bsp.ml" 11 117 130
+  int_ref d "src/bsp.ml" 10 106 118 "src/bsp.ml" 10 106 119
 )
-"src/bsp.ml" 11 117 193 "src/bsp.ml" 11 117 194
+"src/bsp.ml" 10 106 182 "src/bsp.ml" 10 106 183
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+  int_ref p "src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 )
-"src/bsp.ml" 11 117 183 "src/bsp.ml" 11 117 194
-call(
-  tail
-)
+"src/bsp.ml" 10 106 172 "src/bsp.ml" 10 106 183
 type(
   unit
 )
-"src/bsp.ml" 11 117 178 "src/bsp.ml" 11 117 194
+"src/bsp.ml" 10 106 167 "src/bsp.ml" 10 106 183
 type(
   unit
 )
-"src/bsp.ml" 11 117 164 "src/bsp.ml" 11 117 195
+"src/bsp.ml" 10 106 153 "src/bsp.ml" 10 106 184
 type(
   unit
 )
-"src/bsp.ml" 12 196 207 "src/bsp.ml" 12 196 212
+"src/bsp.ml" 11 185 196 "src/bsp.ml" 11 185 201
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref parse "src/bsp.ml" 8 65 73 "src/bsp.ml" 8 65 78
+  int_ref parse "src/bsp.ml" 7 54 62 "src/bsp.ml" 7 54 67
 )
-"src/bsp.ml" 12 196 213 "src/bsp.ml" 12 196 214
+"src/bsp.ml" 11 185 202 "src/bsp.ml" 11 185 203
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 12 196 215 "src/bsp.ml" 12 196 216
+"src/bsp.ml" 11 185 204 "src/bsp.ml" 11 185 205
 type(
   t
 )
 ident(
-  int_ref d "src/bsp.ml" 11 117 129 "src/bsp.ml" 11 117 130
+  int_ref d "src/bsp.ml" 10 106 118 "src/bsp.ml" 10 106 119
 )
-"src/bsp.ml" 12 196 217 "src/bsp.ml" 12 196 218
+"src/bsp.ml" 11 185 206 "src/bsp.ml" 11 185 207
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+  int_ref p "src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 )
-"src/bsp.ml" 12 196 207 "src/bsp.ml" 12 196 218
-call(
-  stack
-)
+"src/bsp.ml" 11 185 196 "src/bsp.ml" 11 185 207
 type(
   unit
 )
-"src/bsp.ml" 12 196 220 "src/bsp.ml" 12 196 221
+"src/bsp.ml" 11 185 209 "src/bsp.ml" 11 185 210
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 12 196 222 "src/bsp.ml" 12 196 223
+"src/bsp.ml" 11 185 211 "src/bsp.ml" 11 185 212
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 11 117 123 "src/bsp.ml" 11 117 124
+  int_ref r "src/bsp.ml" 10 106 112 "src/bsp.ml" 10 106 113
 )
-"src/bsp.ml" 12 196 220 "src/bsp.ml" 12 196 223
-call(
-  stack
-)
+"src/bsp.ml" 11 185 209 "src/bsp.ml" 11 185 212
 type(
   'a
 )
-"src/bsp.ml" 12 196 225 "src/bsp.ml" 12 196 230
+"src/bsp.ml" 11 185 214 "src/bsp.ml" 11 185 219
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref parse "src/bsp.ml" 8 65 73 "src/bsp.ml" 8 65 78
+  int_ref parse "src/bsp.ml" 7 54 62 "src/bsp.ml" 7 54 67
 )
-"src/bsp.ml" 12 196 231 "src/bsp.ml" 12 196 232
+"src/bsp.ml" 11 185 220 "src/bsp.ml" 11 185 221
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 8 65 79 "src/bsp.ml" 8 65 80
+  int_ref f "src/bsp.ml" 7 54 68 "src/bsp.ml" 7 54 69
 )
-"src/bsp.ml" 12 196 233 "src/bsp.ml" 12 196 234
+"src/bsp.ml" 11 185 222 "src/bsp.ml" 11 185 223
 type(
   t
 )
 ident(
-  int_ref g "src/bsp.ml" 11 117 126 "src/bsp.ml" 11 117 127
+  int_ref g "src/bsp.ml" 10 106 115 "src/bsp.ml" 10 106 116
 )
-"src/bsp.ml" 12 196 235 "src/bsp.ml" 12 196 236
+"src/bsp.ml" 11 185 224 "src/bsp.ml" 11 185 225
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 8 65 85 "src/bsp.ml" 8 65 86
+  int_ref p "src/bsp.ml" 7 54 74 "src/bsp.ml" 7 54 75
 )
-"src/bsp.ml" 12 196 225 "src/bsp.ml" 12 196 236
-call(
-  tail
-)
+"src/bsp.ml" 11 185 214 "src/bsp.ml" 11 185 225
 type(
   unit
 )
-"src/bsp.ml" 12 196 220 "src/bsp.ml" 12 196 236
+"src/bsp.ml" 11 185 209 "src/bsp.ml" 11 185 225
 type(
   unit
 )
-"src/bsp.ml" 12 196 206 "src/bsp.ml" 12 196 237
+"src/bsp.ml" 11 185 195 "src/bsp.ml" 11 185 226
 type(
   unit
 )
-"src/bsp.ml" 11 117 135 "src/bsp.ml" 12 196 237
+"src/bsp.ml" 10 106 124 "src/bsp.ml" 11 185 226
 type(
   unit
 )
-"src/bsp.ml" 9 90 91 "src/bsp.ml" 12 196 237
+"src/bsp.ml" 8 79 80 "src/bsp.ml" 11 185 226
 type(
   unit
 )
-"src/bsp.ml" 14 239 247 "src/bsp.ml" 14 239 256
+"src/bsp.ml" 13 228 236 "src/bsp.ml" 13 228 245
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  def rev_parse "src/bsp.ml" 14 239 239 "src/bsp.ml" 1 0 -1
+  def rev_parse "src/bsp.ml" 13 228 228 "src/bsp.ml" 1 0 -1
 )
-"src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+"src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 type(
   Segment.t -> 'a
 )
 ident(
-  def f "src/bsp.ml" 14 239 259 "src/bsp.ml" 17 386 435
+  def f "src/bsp.ml" 13 228 248 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 14 239 259 "src/bsp.ml" 14 239 262
+"src/bsp.ml" 13 228 248 "src/bsp.ml" 13 228 251
 type(
   t
 )
 ident(
-  def bsp "src/bsp.ml" 14 239 263 "src/bsp.ml" 17 386 435
+  def bsp "src/bsp.ml" 13 228 252 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+"src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 type(
   Point.t
 )
 ident(
-  def p "src/bsp.ml" 14 239 267 "src/bsp.ml" 17 386 435
+  def p "src/bsp.ml" 13 228 256 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 14 239 273 "src/bsp.ml" 14 239 276
+"src/bsp.ml" 13 228 262 "src/bsp.ml" 13 228 265
 type(
   t
 )
 ident(
-  int_ref bsp "src/bsp.ml" 14 239 259 "src/bsp.ml" 14 239 262
+  int_ref bsp "src/bsp.ml" 13 228 248 "src/bsp.ml" 13 228 251
 )
-"src/bsp.ml" 15 282 285 "src/bsp.ml" 15 282 286
+"src/bsp.ml" 14 271 274 "src/bsp.ml" 14 271 275
 type(
   t
 )
-"src/bsp.ml" 15 282 290 "src/bsp.ml" 15 282 292
+"src/bsp.ml" 14 271 279 "src/bsp.ml" 14 271 281
 type(
   unit
 )
-"src/bsp.ml" 16 293 299 "src/bsp.ml" 16 293 300
+"src/bsp.ml" 15 282 288 "src/bsp.ml" 15 282 289
 type(
   Segment.t
 )
 ident(
-  def r "src/bsp.ml" 16 293 311 "src/bsp.ml" 17 386 435
+  def r "src/bsp.ml" 15 282 300 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 16 293 302 "src/bsp.ml" 16 293 303
+"src/bsp.ml" 15 282 291 "src/bsp.ml" 15 282 292
 type(
   t
 )
 ident(
-  def g "src/bsp.ml" 16 293 311 "src/bsp.ml" 17 386 435
+  def g "src/bsp.ml" 15 282 300 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 16 293 305 "src/bsp.ml" 16 293 306
+"src/bsp.ml" 15 282 294 "src/bsp.ml" 15 282 295
 type(
   t
 )
 ident(
-  def d "src/bsp.ml" 16 293 311 "src/bsp.ml" 17 386 435
+  def d "src/bsp.ml" 15 282 300 "src/bsp.ml" 16 375 424
 )
-"src/bsp.ml" 16 293 296 "src/bsp.ml" 16 293 307
+"src/bsp.ml" 15 282 285 "src/bsp.ml" 15 282 296
 type(
   t
 )
-"src/bsp.ml" 16 293 314 "src/bsp.ml" 16 293 317
+"src/bsp.ml" 15 282 303 "src/bsp.ml" 15 282 306
 type(
   bool -> bool
 )
 ident(
   ext_ref Pervasives.not
 )
-"src/bsp.ml" 16 293 319 "src/bsp.ml" 16 293 331
+"src/bsp.ml" 15 282 308 "src/bsp.ml" 15 282 320
 type(
   Point.t -> Segment.t -> Segment.tpos
 )
 ident(
   ext_ref Segment.get_position
 )
-"src/bsp.ml" 16 293 332 "src/bsp.ml" 16 293 333
+"src/bsp.ml" 15 282 321 "src/bsp.ml" 15 282 322
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+  int_ref p "src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 )
-"src/bsp.ml" 16 293 334 "src/bsp.ml" 16 293 335
+"src/bsp.ml" 15 282 323 "src/bsp.ml" 15 282 324
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 16 293 299 "src/bsp.ml" 16 293 300
+  int_ref r "src/bsp.ml" 15 282 288 "src/bsp.ml" 15 282 289
 )
-"src/bsp.ml" 16 293 319 "src/bsp.ml" 16 293 335
-call(
-  stack
-)
+"src/bsp.ml" 15 282 308 "src/bsp.ml" 15 282 324
 type(
   Segment.tpos
 )
-"src/bsp.ml" 16 293 336 "src/bsp.ml" 16 293 337
+"src/bsp.ml" 15 282 325 "src/bsp.ml" 15 282 326
 type(
   Segment.tpos -> Segment.tpos -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"src/bsp.ml" 16 293 338 "src/bsp.ml" 16 293 339
+"src/bsp.ml" 15 282 327 "src/bsp.ml" 15 282 328
 type(
   Segment.tpos
 )
-"src/bsp.ml" 16 293 318 "src/bsp.ml" 16 293 340
+"src/bsp.ml" 15 282 307 "src/bsp.ml" 15 282 329
 type(
   bool
 )
-"src/bsp.ml" 16 293 314 "src/bsp.ml" 16 293 340
+"src/bsp.ml" 15 282 303 "src/bsp.ml" 15 282 329
 type(
   bool
 )
-"src/bsp.ml" 16 293 347 "src/bsp.ml" 16 293 356
+"src/bsp.ml" 15 282 336 "src/bsp.ml" 15 282 345
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref rev_parse "src/bsp.ml" 14 239 247 "src/bsp.ml" 14 239 256
+  int_ref rev_parse "src/bsp.ml" 13 228 236 "src/bsp.ml" 13 228 245
 )
-"src/bsp.ml" 16 293 357 "src/bsp.ml" 16 293 358
+"src/bsp.ml" 15 282 346 "src/bsp.ml" 15 282 347
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 16 293 359 "src/bsp.ml" 16 293 360
+"src/bsp.ml" 15 282 348 "src/bsp.ml" 15 282 349
 type(
   t
 )
 ident(
-  int_ref g "src/bsp.ml" 16 293 302 "src/bsp.ml" 16 293 303
+  int_ref g "src/bsp.ml" 15 282 291 "src/bsp.ml" 15 282 292
 )
-"src/bsp.ml" 16 293 361 "src/bsp.ml" 16 293 362
+"src/bsp.ml" 15 282 350 "src/bsp.ml" 15 282 351
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+  int_ref p "src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 )
-"src/bsp.ml" 16 293 347 "src/bsp.ml" 16 293 362
-call(
-  stack
-)
+"src/bsp.ml" 15 282 336 "src/bsp.ml" 15 282 351
 type(
   unit
 )
-"src/bsp.ml" 16 293 364 "src/bsp.ml" 16 293 365
+"src/bsp.ml" 15 282 353 "src/bsp.ml" 15 282 354
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 16 293 366 "src/bsp.ml" 16 293 367
+"src/bsp.ml" 15 282 355 "src/bsp.ml" 15 282 356
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 16 293 299 "src/bsp.ml" 16 293 300
+  int_ref r "src/bsp.ml" 15 282 288 "src/bsp.ml" 15 282 289
 )
-"src/bsp.ml" 16 293 364 "src/bsp.ml" 16 293 367
-call(
-  stack
-)
+"src/bsp.ml" 15 282 353 "src/bsp.ml" 15 282 356
 type(
   'a
 )
-"src/bsp.ml" 16 293 369 "src/bsp.ml" 16 293 378
+"src/bsp.ml" 15 282 358 "src/bsp.ml" 15 282 367
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref rev_parse "src/bsp.ml" 14 239 247 "src/bsp.ml" 14 239 256
+  int_ref rev_parse "src/bsp.ml" 13 228 236 "src/bsp.ml" 13 228 245
 )
-"src/bsp.ml" 16 293 379 "src/bsp.ml" 16 293 380
+"src/bsp.ml" 15 282 368 "src/bsp.ml" 15 282 369
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 16 293 381 "src/bsp.ml" 16 293 382
+"src/bsp.ml" 15 282 370 "src/bsp.ml" 15 282 371
 type(
   t
 )
 ident(
-  int_ref d "src/bsp.ml" 16 293 305 "src/bsp.ml" 16 293 306
+  int_ref d "src/bsp.ml" 15 282 294 "src/bsp.ml" 15 282 295
 )
-"src/bsp.ml" 16 293 383 "src/bsp.ml" 16 293 384
+"src/bsp.ml" 15 282 372 "src/bsp.ml" 15 282 373
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+  int_ref p "src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 )
-"src/bsp.ml" 16 293 369 "src/bsp.ml" 16 293 384
-call(
-  tail
-)
+"src/bsp.ml" 15 282 358 "src/bsp.ml" 15 282 373
 type(
   unit
 )
-"src/bsp.ml" 16 293 364 "src/bsp.ml" 16 293 384
+"src/bsp.ml" 15 282 353 "src/bsp.ml" 15 282 373
 type(
   unit
 )
-"src/bsp.ml" 16 293 346 "src/bsp.ml" 16 293 385
+"src/bsp.ml" 15 282 335 "src/bsp.ml" 15 282 374
 type(
   unit
 )
-"src/bsp.ml" 17 386 397 "src/bsp.ml" 17 386 406
+"src/bsp.ml" 16 375 386 "src/bsp.ml" 16 375 395
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref rev_parse "src/bsp.ml" 14 239 247 "src/bsp.ml" 14 239 256
+  int_ref rev_parse "src/bsp.ml" 13 228 236 "src/bsp.ml" 13 228 245
 )
-"src/bsp.ml" 17 386 407 "src/bsp.ml" 17 386 408
+"src/bsp.ml" 16 375 396 "src/bsp.ml" 16 375 397
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 17 386 409 "src/bsp.ml" 17 386 410
+"src/bsp.ml" 16 375 398 "src/bsp.ml" 16 375 399
 type(
   t
 )
 ident(
-  int_ref d "src/bsp.ml" 16 293 305 "src/bsp.ml" 16 293 306
+  int_ref d "src/bsp.ml" 15 282 294 "src/bsp.ml" 15 282 295
 )
-"src/bsp.ml" 17 386 411 "src/bsp.ml" 17 386 412
+"src/bsp.ml" 16 375 400 "src/bsp.ml" 16 375 401
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+  int_ref p "src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 )
-"src/bsp.ml" 17 386 397 "src/bsp.ml" 17 386 412
-call(
-  stack
-)
+"src/bsp.ml" 16 375 386 "src/bsp.ml" 16 375 401
 type(
   unit
 )
-"src/bsp.ml" 17 386 414 "src/bsp.ml" 17 386 415
+"src/bsp.ml" 16 375 403 "src/bsp.ml" 16 375 404
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 17 386 416 "src/bsp.ml" 17 386 417
+"src/bsp.ml" 16 375 405 "src/bsp.ml" 16 375 406
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 16 293 299 "src/bsp.ml" 16 293 300
+  int_ref r "src/bsp.ml" 15 282 288 "src/bsp.ml" 15 282 289
 )
-"src/bsp.ml" 17 386 414 "src/bsp.ml" 17 386 417
-call(
-  stack
-)
+"src/bsp.ml" 16 375 403 "src/bsp.ml" 16 375 406
 type(
   'a
 )
-"src/bsp.ml" 17 386 419 "src/bsp.ml" 17 386 428
+"src/bsp.ml" 16 375 408 "src/bsp.ml" 16 375 417
 type(
   (Segment.t -> 'a) -> t -> Point.t -> unit
 )
 ident(
-  int_ref rev_parse "src/bsp.ml" 14 239 247 "src/bsp.ml" 14 239 256
+  int_ref rev_parse "src/bsp.ml" 13 228 236 "src/bsp.ml" 13 228 245
 )
-"src/bsp.ml" 17 386 429 "src/bsp.ml" 17 386 430
+"src/bsp.ml" 16 375 418 "src/bsp.ml" 16 375 419
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 14 239 257 "src/bsp.ml" 14 239 258
+  int_ref f "src/bsp.ml" 13 228 246 "src/bsp.ml" 13 228 247
 )
-"src/bsp.ml" 17 386 431 "src/bsp.ml" 17 386 432
+"src/bsp.ml" 16 375 420 "src/bsp.ml" 16 375 421
 type(
   t
 )
 ident(
-  int_ref g "src/bsp.ml" 16 293 302 "src/bsp.ml" 16 293 303
+  int_ref g "src/bsp.ml" 15 282 291 "src/bsp.ml" 15 282 292
 )
-"src/bsp.ml" 17 386 433 "src/bsp.ml" 17 386 434
+"src/bsp.ml" 16 375 422 "src/bsp.ml" 16 375 423
 type(
   Point.t
 )
 ident(
-  int_ref p "src/bsp.ml" 14 239 263 "src/bsp.ml" 14 239 264
+  int_ref p "src/bsp.ml" 13 228 252 "src/bsp.ml" 13 228 253
 )
-"src/bsp.ml" 17 386 419 "src/bsp.ml" 17 386 434
-call(
-  tail
-)
+"src/bsp.ml" 16 375 408 "src/bsp.ml" 16 375 423
 type(
   unit
 )
-"src/bsp.ml" 17 386 414 "src/bsp.ml" 17 386 434
+"src/bsp.ml" 16 375 403 "src/bsp.ml" 16 375 423
 type(
   unit
 )
-"src/bsp.ml" 17 386 396 "src/bsp.ml" 17 386 435
+"src/bsp.ml" 16 375 385 "src/bsp.ml" 16 375 424
 type(
   unit
 )
-"src/bsp.ml" 16 293 311 "src/bsp.ml" 17 386 435
+"src/bsp.ml" 15 282 300 "src/bsp.ml" 16 375 424
 type(
   unit
 )
-"src/bsp.ml" 14 239 267 "src/bsp.ml" 17 386 435
+"src/bsp.ml" 13 228 256 "src/bsp.ml" 16 375 424
 type(
   unit
 )
-"src/bsp.ml" 20 438 446 "src/bsp.ml" 20 438 450
+"src/bsp.ml" 19 427 435 "src/bsp.ml" 19 427 439
 type(
   (Segment.t -> 'a) -> t -> unit
 )
 ident(
-  def iter "src/bsp.ml" 20 438 438 "src/bsp.ml" 1 0 -1
+  def iter "src/bsp.ml" 19 427 427 "src/bsp.ml" 1 0 -1
 )
-"src/bsp.ml" 20 438 451 "src/bsp.ml" 20 438 452
+"src/bsp.ml" 19 427 440 "src/bsp.ml" 19 427 441
 type(
   Segment.t -> 'a
 )
 ident(
-  def f "src/bsp.ml" 20 438 456 "src/bsp.ml" 22 477 519
+  def f "src/bsp.ml" 19 427 445 "src/bsp.ml" 21 466 508
 )
-"src/bsp.ml" 21 466 469 "src/bsp.ml" 21 466 470
+"src/bsp.ml" 20 455 458 "src/bsp.ml" 20 455 459
 type(
   t
 )
-"src/bsp.ml" 21 466 474 "src/bsp.ml" 21 466 476
+"src/bsp.ml" 20 455 463 "src/bsp.ml" 20 455 465
 type(
   unit
 )
-"src/bsp.ml" 22 477 483 "src/bsp.ml" 22 477 484
+"src/bsp.ml" 21 466 472 "src/bsp.ml" 21 466 473
 type(
   Segment.t
 )
 ident(
-  def r "src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 519
+  def r "src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 508
 )
-"src/bsp.ml" 22 477 486 "src/bsp.ml" 22 477 487
+"src/bsp.ml" 21 466 475 "src/bsp.ml" 21 466 476
 type(
   t
 )
 ident(
-  def g "src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 519
+  def g "src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 508
 )
-"src/bsp.ml" 22 477 489 "src/bsp.ml" 22 477 490
+"src/bsp.ml" 21 466 478 "src/bsp.ml" 21 466 479
 type(
   t
 )
 ident(
-  def d "src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 519
+  def d "src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 508
 )
-"src/bsp.ml" 22 477 480 "src/bsp.ml" 22 477 491
+"src/bsp.ml" 21 466 469 "src/bsp.ml" 21 466 480
 type(
   t
 )
-"src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 499
+"src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 488
 type(
   (Segment.t -> 'a) -> t -> unit
 )
 ident(
-  int_ref iter "src/bsp.ml" 20 438 446 "src/bsp.ml" 20 438 450
+  int_ref iter "src/bsp.ml" 19 427 435 "src/bsp.ml" 19 427 439
 )
-"src/bsp.ml" 22 477 500 "src/bsp.ml" 22 477 501
+"src/bsp.ml" 21 466 489 "src/bsp.ml" 21 466 490
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 20 438 451 "src/bsp.ml" 20 438 452
+  int_ref f "src/bsp.ml" 19 427 440 "src/bsp.ml" 19 427 441
 )
-"src/bsp.ml" 22 477 502 "src/bsp.ml" 22 477 503
+"src/bsp.ml" 21 466 491 "src/bsp.ml" 21 466 492
 type(
   t
 )
 ident(
-  int_ref g "src/bsp.ml" 22 477 486 "src/bsp.ml" 22 477 487
+  int_ref g "src/bsp.ml" 21 466 475 "src/bsp.ml" 21 466 476
 )
-"src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 503
-call(
-  stack
-)
+"src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 492
 type(
   unit
 )
-"src/bsp.ml" 22 477 506 "src/bsp.ml" 22 477 507
+"src/bsp.ml" 21 466 495 "src/bsp.ml" 21 466 496
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 20 438 451 "src/bsp.ml" 20 438 452
+  int_ref f "src/bsp.ml" 19 427 440 "src/bsp.ml" 19 427 441
 )
-"src/bsp.ml" 22 477 508 "src/bsp.ml" 22 477 509
+"src/bsp.ml" 21 466 497 "src/bsp.ml" 21 466 498
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/bsp.ml" 22 477 483 "src/bsp.ml" 22 477 484
+  int_ref r "src/bsp.ml" 21 466 472 "src/bsp.ml" 21 466 473
 )
-"src/bsp.ml" 22 477 506 "src/bsp.ml" 22 477 509
-call(
-  stack
-)
+"src/bsp.ml" 21 466 495 "src/bsp.ml" 21 466 498
 type(
   'a
 )
-"src/bsp.ml" 22 477 511 "src/bsp.ml" 22 477 515
+"src/bsp.ml" 21 466 500 "src/bsp.ml" 21 466 504
 type(
   (Segment.t -> 'a) -> t -> unit
 )
 ident(
-  int_ref iter "src/bsp.ml" 20 438 446 "src/bsp.ml" 20 438 450
+  int_ref iter "src/bsp.ml" 19 427 435 "src/bsp.ml" 19 427 439
 )
-"src/bsp.ml" 22 477 516 "src/bsp.ml" 22 477 517
+"src/bsp.ml" 21 466 505 "src/bsp.ml" 21 466 506
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/bsp.ml" 20 438 451 "src/bsp.ml" 20 438 452
+  int_ref f "src/bsp.ml" 19 427 440 "src/bsp.ml" 19 427 441
 )
-"src/bsp.ml" 22 477 518 "src/bsp.ml" 22 477 519
+"src/bsp.ml" 21 466 507 "src/bsp.ml" 21 466 508
 type(
   t
 )
 ident(
-  int_ref d "src/bsp.ml" 22 477 489 "src/bsp.ml" 22 477 490
+  int_ref d "src/bsp.ml" 21 466 478 "src/bsp.ml" 21 466 479
 )
-"src/bsp.ml" 22 477 511 "src/bsp.ml" 22 477 519
-call(
-  tail
-)
+"src/bsp.ml" 21 466 500 "src/bsp.ml" 21 466 508
 type(
   unit
 )
-"src/bsp.ml" 22 477 506 "src/bsp.ml" 22 477 519
+"src/bsp.ml" 21 466 495 "src/bsp.ml" 21 466 508
 type(
   unit
 )
-"src/bsp.ml" 22 477 495 "src/bsp.ml" 22 477 519
+"src/bsp.ml" 21 466 484 "src/bsp.ml" 21 466 508
 type(
   unit
 )
-"src/bsp.ml" 20 438 456 "src/bsp.ml" 22 477 519
+"src/bsp.ml" 19 427 445 "src/bsp.ml" 21 466 508
 type(
   t -> unit
 )
-"src/bsp.ml" 26 528 532 "src/bsp.ml" 26 528 541
+"src/bsp.ml" 25 517 521 "src/bsp.ml" 25 517 530
 type(
   Segment.t list -> t
 )
 ident(
-  def build_bsp "src/bsp.ml" 31 655 664 "src/bsp.ml" 1 0 -1
+  def build_bsp "src/bsp.ml" 34 657 657 "src/bsp.ml" 1 0 -1
 )
-"src/bsp.ml" 26 528 542 "src/bsp.ml" 26 528 544
+"src/bsp.ml" 25 517 531 "src/bsp.ml" 25 517 533
 type(
   Segment.t list
 )
 ident(
-  def sl "src/bsp.ml" 27 548 549 "src/bsp.ml" 31 655 664
+  def sl "src/bsp.ml" 26 537 538 "src/bsp.ml" 30 644 653
 )
-"src/bsp.ml" 27 548 557 "src/bsp.ml" 27 548 562
+"src/bsp.ml" 26 537 546 "src/bsp.ml" 26 537 551
 type(
   Segment.t list -> t
 )
 ident(
-  def b_bsp "src/bsp.ml" 27 548 549 "src/bsp.ml" 31 655 664
+  def b_bsp "src/bsp.ml" 26 537 538 "src/bsp.ml" 30 644 653
 )
-"src/bsp.ml" 28 574 578 "src/bsp.ml" 28 574 580
+"src/bsp.ml" 27 563 567 "src/bsp.ml" 27 563 569
 type(
   Segment.t list
 )
-"src/bsp.ml" 28 574 583 "src/bsp.ml" 28 574 584
+"src/bsp.ml" 27 563 572 "src/bsp.ml" 27 563 573
 type(
   t
 )
-"src/bsp.ml" 29 585 589 "src/bsp.ml" 29 585 590
+"src/bsp.ml" 28 574 578 "src/bsp.ml" 28 574 579
 type(
   Segment.t
 )
 ident(
-  def x "src/bsp.ml" 29 585 597 "src/bsp.ml" 29 585 650
+  def x "src/bsp.ml" 28 574 586 "src/bsp.ml" 28 574 639
 )
-"src/bsp.ml" 29 585 592 "src/bsp.ml" 29 585 593
+"src/bsp.ml" 28 574 581 "src/bsp.ml" 28 574 582
 type(
   Segment.t list
 )
 ident(
-  def s "src/bsp.ml" 29 585 597 "src/bsp.ml" 29 585 650
+  def s "src/bsp.ml" 28 574 586 "src/bsp.ml" 28 574 639
 )
-"src/bsp.ml" 29 585 589 "src/bsp.ml" 29 585 593
+"src/bsp.ml" 28 574 578 "src/bsp.ml" 28 574 582
 type(
   Segment.t list
 )
-"src/bsp.ml" 29 585 602 "src/bsp.ml" 29 585 604
-type(
-  Segment.t list
-)
-ident(
-  def ll "src/bsp.ml" 29 585 625 "src/bsp.ml" 29 585 650
-)
-"src/bsp.ml" 29 585 606 "src/bsp.ml" 29 585 608
+"src/bsp.ml" 28 574 591 "src/bsp.ml" 28 574 593
 type(
   Segment.t list
 )
 ident(
-  def lr "src/bsp.ml" 29 585 625 "src/bsp.ml" 29 585 650
+  def ll "src/bsp.ml" 28 574 614 "src/bsp.ml" 28 574 639
 )
-"src/bsp.ml" 29 585 601 "src/bsp.ml" 29 585 609
+"src/bsp.ml" 28 574 595 "src/bsp.ml" 28 574 597
+type(
+  Segment.t list
+)
+ident(
+  def lr "src/bsp.ml" 28 574 614 "src/bsp.ml" 28 574 639
+)
+"src/bsp.ml" 28 574 590 "src/bsp.ml" 28 574 598
 type(
   Segment.t list * Segment.t list
 )
-"src/bsp.ml" 29 585 612 "src/bsp.ml" 29 585 617
+"src/bsp.ml" 28 574 601 "src/bsp.ml" 28 574 606
 type(
   Segment.t -> Segment.t list -> Segment.t list * Segment.t list
 )
 ident(
   ext_ref Segment.split
 )
-"src/bsp.ml" 29 585 618 "src/bsp.ml" 29 585 619
+"src/bsp.ml" 28 574 607 "src/bsp.ml" 28 574 608
 type(
   Segment.t
 )
 ident(
-  int_ref x "src/bsp.ml" 29 585 589 "src/bsp.ml" 29 585 590
+  int_ref x "src/bsp.ml" 28 574 578 "src/bsp.ml" 28 574 579
 )
-"src/bsp.ml" 29 585 620 "src/bsp.ml" 29 585 621
+"src/bsp.ml" 28 574 609 "src/bsp.ml" 28 574 610
 type(
   Segment.t list
 )
 ident(
-  int_ref s "src/bsp.ml" 29 585 592 "src/bsp.ml" 29 585 593
+  int_ref s "src/bsp.ml" 28 574 581 "src/bsp.ml" 28 574 582
 )
-"src/bsp.ml" 29 585 612 "src/bsp.ml" 29 585 621
-call(
-  stack
-)
+"src/bsp.ml" 28 574 601 "src/bsp.ml" 28 574 610
 type(
   Segment.t list * Segment.t list
 )
-"src/bsp.ml" 29 585 628 "src/bsp.ml" 29 585 629
+"src/bsp.ml" 28 574 617 "src/bsp.ml" 28 574 618
 type(
   Segment.t
 )
 ident(
-  int_ref x "src/bsp.ml" 29 585 589 "src/bsp.ml" 29 585 590
+  int_ref x "src/bsp.ml" 28 574 578 "src/bsp.ml" 28 574 579
 )
-"src/bsp.ml" 29 585 631 "src/bsp.ml" 29 585 636
+"src/bsp.ml" 28 574 620 "src/bsp.ml" 28 574 625
 type(
   Segment.t list -> t
 )
 ident(
-  int_ref b_bsp "src/bsp.ml" 27 548 557 "src/bsp.ml" 27 548 562
+  int_ref b_bsp "src/bsp.ml" 26 537 546 "src/bsp.ml" 26 537 551
 )
-"src/bsp.ml" 29 585 637 "src/bsp.ml" 29 585 639
+"src/bsp.ml" 28 574 626 "src/bsp.ml" 28 574 628
 type(
   Segment.t list
 )
 ident(
-  int_ref ll "src/bsp.ml" 29 585 602 "src/bsp.ml" 29 585 604
+  int_ref ll "src/bsp.ml" 28 574 591 "src/bsp.ml" 28 574 593
 )
-"src/bsp.ml" 29 585 631 "src/bsp.ml" 29 585 639
-call(
-  stack
-)
+"src/bsp.ml" 28 574 620 "src/bsp.ml" 28 574 628
 type(
   t
 )
-"src/bsp.ml" 29 585 641 "src/bsp.ml" 29 585 646
+"src/bsp.ml" 28 574 630 "src/bsp.ml" 28 574 635
 type(
   Segment.t list -> t
 )
 ident(
-  int_ref b_bsp "src/bsp.ml" 27 548 557 "src/bsp.ml" 27 548 562
+  int_ref b_bsp "src/bsp.ml" 26 537 546 "src/bsp.ml" 26 537 551
 )
-"src/bsp.ml" 29 585 647 "src/bsp.ml" 29 585 649
+"src/bsp.ml" 28 574 636 "src/bsp.ml" 28 574 638
 type(
   Segment.t list
 )
 ident(
-  int_ref lr "src/bsp.ml" 29 585 606 "src/bsp.ml" 29 585 608
+  int_ref lr "src/bsp.ml" 28 574 595 "src/bsp.ml" 28 574 597
 )
-"src/bsp.ml" 29 585 641 "src/bsp.ml" 29 585 649
-call(
-  stack
-)
+"src/bsp.ml" 28 574 630 "src/bsp.ml" 28 574 638
 type(
   t
 )
-"src/bsp.ml" 29 585 625 "src/bsp.ml" 29 585 650
+"src/bsp.ml" 28 574 614 "src/bsp.ml" 28 574 639
 type(
   t
 )
-"src/bsp.ml" 29 585 597 "src/bsp.ml" 29 585 650
+"src/bsp.ml" 28 574 586 "src/bsp.ml" 28 574 639
 type(
   t
 )
-"src/bsp.ml" 27 548 565 "src/bsp.ml" 29 585 650
+"src/bsp.ml" 26 537 554 "src/bsp.ml" 28 574 639
 type(
   Segment.t list -> t
 )
-"src/bsp.ml" 31 655 656 "src/bsp.ml" 31 655 661
+"src/bsp.ml" 30 644 645 "src/bsp.ml" 30 644 650
 type(
   Segment.t list -> t
 )
 ident(
-  int_ref b_bsp "src/bsp.ml" 27 548 557 "src/bsp.ml" 27 548 562
+  int_ref b_bsp "src/bsp.ml" 26 537 546 "src/bsp.ml" 26 537 551
 )
-"src/bsp.ml" 31 655 662 "src/bsp.ml" 31 655 664
+"src/bsp.ml" 30 644 651 "src/bsp.ml" 30 644 653
 type(
   Segment.t list
 )
 ident(
-  int_ref sl "src/bsp.ml" 26 528 542 "src/bsp.ml" 26 528 544
+  int_ref sl "src/bsp.ml" 25 517 531 "src/bsp.ml" 25 517 533
 )
-"src/bsp.ml" 31 655 656 "src/bsp.ml" 31 655 664
-call(
-  tail
-)
+"src/bsp.ml" 30 644 645 "src/bsp.ml" 30 644 653
 type(
   t
 )
-"src/bsp.ml" 27 548 549 "src/bsp.ml" 31 655 664
+"src/bsp.ml" 26 537 538 "src/bsp.ml" 30 644 653
 type(
   t
+)
+"src/bsp.ml" 34 657 665 "src/bsp.ml" 34 657 673
+type(
+  '_a -> '_b -> '_c
+)
+ident(
+  def iter_cps "src/bsp.ml" 34 657 657 "src/bsp.ml" 1 0 -1
+)
+"src/bsp.ml" 34 657 674 "src/bsp.ml" 34 657 675
+type(
+  '_a
+)
+ident(
+  def f "src/bsp.ml" 34 657 676 "src/bsp.ml" 41 827 850
+)
+"src/bsp.ml" 34 657 676 "src/bsp.ml" 34 657 679
+type(
+  '_b
+)
+ident(
+  def bsp "src/bsp.ml" 35 683 684 "src/bsp.ml" 41 827 850
+)
+"src/bsp.ml" 35 683 692 "src/bsp.ml" 35 683 696
+type(
+  (unit -> '_d) -> t -> '_d
+)
+ident(
+  def iter "src/bsp.ml" 35 683 684 "src/bsp.ml" 41 827 850
+)
+"src/bsp.ml" 35 683 697 "src/bsp.ml" 35 683 701
+type(
+  unit -> '_d
+)
+ident(
+  def cont "src/bsp.ml" 36 705 706 "src/bsp.ml" 39 805 821
+)
+"src/bsp.ml" 37 716 719 "src/bsp.ml" 37 716 720
+type(
+  t
+)
+"src/bsp.ml" 37 716 724 "src/bsp.ml" 37 716 728
+type(
+  unit -> '_d
+)
+ident(
+  int_ref cont "src/bsp.ml" 35 683 697 "src/bsp.ml" 35 683 701
+)
+"src/bsp.ml" 37 716 729 "src/bsp.ml" 37 716 731
+type(
+  unit
+)
+"src/bsp.ml" 37 716 724 "src/bsp.ml" 37 716 731
+type(
+  '_d
+)
+"src/bsp.ml" 38 732 738 "src/bsp.ml" 38 732 739
+type(
+  Segment.t
+)
+ident(
+  def r "src/bsp.ml" 38 732 750 "src/bsp.ml" 39 805 821
+)
+"src/bsp.ml" 38 732 741 "src/bsp.ml" 38 732 742
+type(
+  t
+)
+ident(
+  def g "src/bsp.ml" 38 732 750 "src/bsp.ml" 39 805 821
+)
+"src/bsp.ml" 38 732 744 "src/bsp.ml" 38 732 745
+type(
+  t
+)
+ident(
+  def d "src/bsp.ml" 38 732 750 "src/bsp.ml" 39 805 821
+)
+"src/bsp.ml" 38 732 735 "src/bsp.ml" 38 732 746
+type(
+  t
+)
+"src/bsp.ml" 38 732 754 "src/bsp.ml" 38 732 755
+type(
+  unit -> '_e
+)
+ident(
+  def k "src/bsp.ml" 39 805 813 "src/bsp.ml" 39 805 821
+)
+"src/bsp.ml" 38 732 756 "src/bsp.ml" 38 732 758
+type(
+  unit
+)
+"src/bsp.ml" 38 732 765 "src/bsp.ml" 38 732 766
+type(
+  unit -> '_f
+)
+ident(
+  def c "src/bsp.ml" 38 732 796 "src/bsp.ml" 38 732 804
+)
+"src/bsp.ml" 38 732 767 "src/bsp.ml" 38 732 769
+type(
+  unit
+)
+"src/bsp.ml" 38 732 772 "src/bsp.ml" 38 732 776
+type(
+  unit -> '_d
+)
+ident(
+  int_ref cont "src/bsp.ml" 35 683 697 "src/bsp.ml" 35 683 701
 )

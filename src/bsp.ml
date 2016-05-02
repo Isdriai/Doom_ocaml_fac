@@ -1,5 +1,4 @@
 open Segment
-open Point
 
 type t = E | N of Segment.t * t * t 
 
@@ -30,3 +29,29 @@ let build_bsp sl =
 	in
 	b_bsp sl
 
+
+
+let rec iter_cps f bsp=  
+	let rec iter cont = function 
+	| E -> cont ()
+	| N (r, g, d) -> let k  = (fun () -> f r; iter cont d)
+					in iter k g
+	in	
+	iter (fun _ ->()) bsp
+
+
+
+
+
+
+
+
+
+let rec iter_cps f bsp=  
+	let rec iter cont = function 
+	| E -> cont (fun _ -> ())
+	| N (r, g, d) -> let k  = let c = fun a -> cont (fun a -> f r) 
+								in (fun () -> iter c d)
+					in iter k g
+	in	
+	iter (fun g -> g ()) bsp
