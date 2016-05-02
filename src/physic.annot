@@ -1,0 +1,39 @@
+"src/physic.ml" 1 0 4 "src/physic.ml" 1 0 20
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def detect_collision "src/physic.ml" 1 0 44 "src/physic.ml" 1 0 -1
+)
+"src/physic.ml" 1 0 21 "src/physic.ml" 1 0 22
+type(
+  'a
+)
+ident(
+  def p "src/physic.ml" 1 0 23 "src/physic.ml" 1 0 44
+)
+"src/physic.ml" 1 0 23 "src/physic.ml" 1 0 26
+type(
+  'b
+)
+ident(
+  def bsp "src/physic.ml" 1 0 29 "src/physic.ml" 1 0 44
+)
+"src/physic.ml" 1 0 29 "src/physic.ml" 1 0 37
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/physic.ml" 1 0 38 "src/physic.ml" 1 0 44
+type(
+  string
+)
+"src/physic.ml" 1 0 29 "src/physic.ml" 1 0 44
+call(
+  tail
+)
+type(
+  'c
+)

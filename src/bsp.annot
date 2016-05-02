@@ -1,0 +1,163 @@
+"src/bsp.ml" 5 52 56 "src/bsp.ml" 5 52 61
+type(
+  'a -> 'b -> 'c -> 'd
+)
+ident(
+  def parse "src/bsp.ml" 7 89 89 "src/bsp.ml" 1 0 -1
+)
+"src/bsp.ml" 5 52 62 "src/bsp.ml" 5 52 63
+type(
+  'a
+)
+ident(
+  def f "src/bsp.ml" 5 52 64 "src/bsp.ml" 5 52 87
+)
+"src/bsp.ml" 5 52 64 "src/bsp.ml" 5 52 67
+type(
+  'b
+)
+ident(
+  def bsp "src/bsp.ml" 5 52 68 "src/bsp.ml" 5 52 87
+)
+"src/bsp.ml" 5 52 68 "src/bsp.ml" 5 52 69
+type(
+  'c
+)
+ident(
+  def p "src/bsp.ml" 5 52 72 "src/bsp.ml" 5 52 87
+)
+"src/bsp.ml" 5 52 72 "src/bsp.ml" 5 52 80
+type(
+  string -> 'd
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/bsp.ml" 5 52 81 "src/bsp.ml" 5 52 87
+type(
+  string
+)
+"src/bsp.ml" 5 52 72 "src/bsp.ml" 5 52 87
+call(
+  tail
+)
+type(
+  'd
+)
+"src/bsp.ml" 7 89 93 "src/bsp.ml" 7 89 102
+type(
+  'a -> 'b -> 'c -> 'd
+)
+ident(
+  def rev_parse "src/bsp.ml" 9 130 130 "src/bsp.ml" 1 0 -1
+)
+"src/bsp.ml" 7 89 103 "src/bsp.ml" 7 89 104
+type(
+  'a
+)
+ident(
+  def f "src/bsp.ml" 7 89 105 "src/bsp.ml" 7 89 128
+)
+"src/bsp.ml" 7 89 105 "src/bsp.ml" 7 89 108
+type(
+  'b
+)
+ident(
+  def bsp "src/bsp.ml" 7 89 109 "src/bsp.ml" 7 89 128
+)
+"src/bsp.ml" 7 89 109 "src/bsp.ml" 7 89 110
+type(
+  'c
+)
+ident(
+  def p "src/bsp.ml" 7 89 113 "src/bsp.ml" 7 89 128
+)
+"src/bsp.ml" 7 89 113 "src/bsp.ml" 7 89 121
+type(
+  string -> 'd
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/bsp.ml" 7 89 122 "src/bsp.ml" 7 89 128
+type(
+  string
+)
+"src/bsp.ml" 7 89 113 "src/bsp.ml" 7 89 128
+call(
+  tail
+)
+type(
+  'd
+)
+"src/bsp.ml" 9 130 134 "src/bsp.ml" 9 130 138
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def iter "src/bsp.ml" 11 164 164 "src/bsp.ml" 1 0 -1
+)
+"src/bsp.ml" 9 130 139 "src/bsp.ml" 9 130 140
+type(
+  'a
+)
+ident(
+  def f "src/bsp.ml" 9 130 141 "src/bsp.ml" 9 130 162
+)
+"src/bsp.ml" 9 130 141 "src/bsp.ml" 9 130 144
+type(
+  'b
+)
+ident(
+  def bsp "src/bsp.ml" 9 130 147 "src/bsp.ml" 9 130 162
+)
+"src/bsp.ml" 9 130 147 "src/bsp.ml" 9 130 155
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/bsp.ml" 9 130 156 "src/bsp.ml" 9 130 162
+type(
+  string
+)
+"src/bsp.ml" 9 130 147 "src/bsp.ml" 9 130 162
+call(
+  tail
+)
+type(
+  'c
+)
+"src/bsp.ml" 11 164 168 "src/bsp.ml" 11 164 177
+type(
+  'a -> 'b
+)
+ident(
+  def build_bsp "src/bsp.ml" 11 164 198 "src/bsp.ml" 1 0 -1
+)
+"src/bsp.ml" 11 164 178 "src/bsp.ml" 11 164 180
+type(
+  'a
+)
+ident(
+  def sl "src/bsp.ml" 11 164 183 "src/bsp.ml" 11 164 198
+)
+"src/bsp.ml" 11 164 183 "src/bsp.ml" 11 164 191
+type(
+  string -> 'b
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/bsp.ml" 11 164 192 "src/bsp.ml" 11 164 198
+type(
+  string
+)
+"src/bsp.ml" 11 164 183 "src/bsp.ml" 11 164 198
+call(
+  tail
+)
+type(
+  'b
+)

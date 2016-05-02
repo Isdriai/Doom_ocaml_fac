@@ -1,0 +1,124 @@
+"src/player.ml" 9 85 89 "src/player.ml" 9 85 99
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def new_player "src/player.ml" 11 126 126 "src/player.ml" 1 0 -1
+)
+"src/player.ml" 9 85 100 "src/player.ml" 9 85 103
+type(
+  'a
+)
+ident(
+  def pos "src/player.ml" 9 85 104 "src/player.ml" 9 85 124
+)
+"src/player.ml" 9 85 104 "src/player.ml" 9 85 106
+type(
+  'b
+)
+ident(
+  def pa "src/player.ml" 9 85 109 "src/player.ml" 9 85 124
+)
+"src/player.ml" 9 85 109 "src/player.ml" 9 85 117
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/player.ml" 9 85 118 "src/player.ml" 9 85 124
+type(
+  string
+)
+"src/player.ml" 9 85 109 "src/player.ml" 9 85 124
+call(
+  tail
+)
+type(
+  'c
+)
+"src/player.ml" 13 151 155 "src/player.ml" 13 151 161
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def rotate "src/player.ml" 15 185 185 "src/player.ml" 1 0 -1
+)
+"src/player.ml" 13 151 162 "src/player.ml" 13 151 163
+type(
+  'a
+)
+ident(
+  def d "src/player.ml" 13 151 164 "src/player.ml" 13 151 183
+)
+"src/player.ml" 13 151 164 "src/player.ml" 13 151 165
+type(
+  'b
+)
+ident(
+  def p "src/player.ml" 13 151 168 "src/player.ml" 13 151 183
+)
+"src/player.ml" 13 151 168 "src/player.ml" 13 151 176
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/player.ml" 13 151 177 "src/player.ml" 13 151 183
+type(
+  string
+)
+"src/player.ml" 13 151 168 "src/player.ml" 13 151 183
+call(
+  tail
+)
+type(
+  'c
+)
+"src/player.ml" 17 225 229 "src/player.ml" 17 225 233
+type(
+  'a -> 'b -> 'c -> 'd
+)
+ident(
+  def move "src/player.ml" 17 225 259 "src/player.ml" 1 0 -1
+)
+"src/player.ml" 17 225 234 "src/player.ml" 17 225 235
+type(
+  'a
+)
+ident(
+  def d "src/player.ml" 17 225 236 "src/player.ml" 17 225 259
+)
+"src/player.ml" 17 225 236 "src/player.ml" 17 225 237
+type(
+  'b
+)
+ident(
+  def p "src/player.ml" 17 225 238 "src/player.ml" 17 225 259
+)
+"src/player.ml" 17 225 238 "src/player.ml" 17 225 241
+type(
+  'c
+)
+ident(
+  def bsp "src/player.ml" 17 225 244 "src/player.ml" 17 225 259
+)
+"src/player.ml" 17 225 244 "src/player.ml" 17 225 252
+type(
+  string -> 'd
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/player.ml" 17 225 253 "src/player.ml" 17 225 259
+type(
+  string
+)
+"src/player.ml" 17 225 244 "src/player.ml" 17 225 259
+call(
+  tail
+)
+type(
+  'd
+)

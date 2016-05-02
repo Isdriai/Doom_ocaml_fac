@@ -1,0 +1,170 @@
+"src/segment.ml" 8 114 118 "src/segment.ml" 8 114 129
+type(
+  'a -> 'b -> 'c -> 'd -> 'e
+)
+ident(
+  def new_segment "src/segment.ml" 10 161 161 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 8 114 130 "src/segment.ml" 8 114 132
+type(
+  'a
+)
+ident(
+  def xo "src/segment.ml" 8 114 133 "src/segment.ml" 8 114 159
+)
+"src/segment.ml" 8 114 133 "src/segment.ml" 8 114 135
+type(
+  'b
+)
+ident(
+  def yo "src/segment.ml" 8 114 136 "src/segment.ml" 8 114 159
+)
+"src/segment.ml" 8 114 136 "src/segment.ml" 8 114 138
+type(
+  'c
+)
+ident(
+  def xd "src/segment.ml" 8 114 139 "src/segment.ml" 8 114 159
+)
+"src/segment.ml" 8 114 139 "src/segment.ml" 8 114 141
+type(
+  'd
+)
+ident(
+  def yd "src/segment.ml" 8 114 144 "src/segment.ml" 8 114 159
+)
+"src/segment.ml" 8 114 144 "src/segment.ml" 8 114 152
+type(
+  string -> 'e
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/segment.ml" 8 114 153 "src/segment.ml" 8 114 159
+type(
+  string
+)
+"src/segment.ml" 8 114 144 "src/segment.ml" 8 114 159
+call(
+  tail
+)
+type(
+  'e
+)
+"src/segment.ml" 10 161 165 "src/segment.ml" 10 161 177
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def get_position "src/segment.ml" 12 201 201 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 10 161 178 "src/segment.ml" 10 161 179
+type(
+  'a
+)
+ident(
+  def p "src/segment.ml" 10 161 180 "src/segment.ml" 10 161 199
+)
+"src/segment.ml" 10 161 180 "src/segment.ml" 10 161 181
+type(
+  'b
+)
+ident(
+  def s "src/segment.ml" 10 161 184 "src/segment.ml" 10 161 199
+)
+"src/segment.ml" 10 161 184 "src/segment.ml" 10 161 192
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/segment.ml" 10 161 193 "src/segment.ml" 10 161 199
+type(
+  string
+)
+"src/segment.ml" 10 161 184 "src/segment.ml" 10 161 199
+call(
+  tail
+)
+type(
+  'c
+)
+"src/segment.ml" 12 201 205 "src/segment.ml" 12 201 218
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def split_segment "src/segment.ml" 14 242 242 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 12 201 219 "src/segment.ml" 12 201 220
+type(
+  'a
+)
+ident(
+  def d "src/segment.ml" 12 201 221 "src/segment.ml" 12 201 240
+)
+"src/segment.ml" 12 201 221 "src/segment.ml" 12 201 222
+type(
+  'b
+)
+ident(
+  def s "src/segment.ml" 12 201 225 "src/segment.ml" 12 201 240
+)
+"src/segment.ml" 12 201 225 "src/segment.ml" 12 201 233
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/segment.ml" 12 201 234 "src/segment.ml" 12 201 240
+type(
+  string
+)
+"src/segment.ml" 12 201 225 "src/segment.ml" 12 201 240
+call(
+  tail
+)
+type(
+  'c
+)
+"src/segment.ml" 14 242 246 "src/segment.ml" 14 242 251
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def split "src/segment.ml" 14 242 277 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 14 242 252 "src/segment.ml" 14 242 254
+type(
+  'a
+)
+ident(
+  def hd "src/segment.ml" 14 242 255 "src/segment.ml" 14 242 277
+)
+"src/segment.ml" 14 242 255 "src/segment.ml" 14 242 259
+type(
+  'b
+)
+ident(
+  def rest "src/segment.ml" 14 242 262 "src/segment.ml" 14 242 277
+)
+"src/segment.ml" 14 242 262 "src/segment.ml" 14 242 270
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/segment.ml" 14 242 271 "src/segment.ml" 14 242 277
+type(
+  string
+)
+"src/segment.ml" 14 242 262 "src/segment.ml" 14 242 277
+call(
+  tail
+)
+type(
+  'c
+)

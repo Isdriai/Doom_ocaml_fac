@@ -1,0 +1,39 @@
+"src/point.ml" 3 29 33 "src/point.ml" 3 29 42
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def new_point "src/point.ml" 3 29 64 "src/point.ml" 1 0 -1
+)
+"src/point.ml" 3 29 43 "src/point.ml" 3 29 44
+type(
+  'a
+)
+ident(
+  def x "src/point.ml" 3 29 45 "src/point.ml" 3 29 64
+)
+"src/point.ml" 3 29 45 "src/point.ml" 3 29 46
+type(
+  'b
+)
+ident(
+  def y "src/point.ml" 3 29 49 "src/point.ml" 3 29 64
+)
+"src/point.ml" 3 29 49 "src/point.ml" 3 29 57
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/point.ml" 3 29 58 "src/point.ml" 3 29 64
+type(
+  string
+)
+"src/point.ml" 3 29 49 "src/point.ml" 3 29 64
+call(
+  tail
+)
+type(
+  'c
+)

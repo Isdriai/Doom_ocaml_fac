@@ -3,7 +3,9 @@ OCAMLOPT = ocamlopt
 OCAMLDEP = ocamldep
 OCAMLFIND = ocamlfind
 
-OPTIONS = -g -annot
+SRCDIR = src
+
+OPTIONS = -g -annot -I $(SRCDIR)
 
 PACKAGES = # sdl
 
@@ -16,13 +18,13 @@ LIBOPTS = $(LIBS:.cma=.cmxa)
 
 EXEC = bsp
 
-OBJS = 	trigo.cmo options.cmo point.cmo \
+OBJS = 	$(addprefix $(SRCDIR)/, trigo.cmo options.cmo point.cmo \
 	segment.cmo bsp.cmo physic.cmo \
-	player.cmo parse_lab.cmo render.cmo main.cmo
+	player.cmo parse_lab.cmo render.cmo main.cmo)
 
 OPTOBJS = $(OBJS:.cmo=.cmx)
 FILESMLI = $(OBJS:.cmo=.mli)
-FILESMLS = $(OBJS:.cmo=.ml)
+FILESML = $(OBJS:.cmo=.ml)
 
 all: depend $(EXEC)
 
@@ -37,9 +39,19 @@ $(EXEC).opt: $(OPTOBJS)
 	$(COMPILEOPT) $(OPTIONS) -o $(EXEC) $(LIBOPTS) $(OPTOBJS)
 
 clean:
-	rm -f *.cm[iox] *~ .*~ *.o *.annot .depend
+	rm -f $(addprefix $(SRCDIR)/, *.cm[iox] *~ .*~ *.o *.annot .depend)
 	rm -f $(EXEC) 
 	rm -f $(EXEC).opt
+
+doclatex:
+	ocamldoc -I src/ -latex -o sujet/documentationter.tex \
+	$(filter-out %.mll %.mly, $(FILESML)) $(FILESMLI)
+
+dochtml:
+	mkdir -p doc/ocamldoc/html
+	ocamldoc -I src/ -html -d doc/ocamldoc/html \
+	$(filter-out %.mll %.mly, $(FILESML)) $(FILESMLI)
+
 
 .SUFFIXES: .ml .mli .cmo .cmi .mll
 
@@ -58,10 +70,10 @@ clean:
 .mll.ml:
 	ocamllex $<
 
-.depend:
-	$(OCAMLDEP) $(FILESMLI) $(FILESMLS) > .depend
+$(SRCDIR)/.depend:
+	$(OCAMLDEP) $(FILESMLI) $(FILESML) > $(SRCDIR)/.depend
 
 depend:
-	$(OCAMLDEP) $(FILESMLI) $(FILESMLS) > .depend
+	$(OCAMLDEP) $(FILESMLI) $(FILESML) > $(SRCDIR)/.depend
 
--include .depend
+-include $(SRCDIR)/.depend

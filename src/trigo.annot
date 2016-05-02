@@ -1,0 +1,400 @@
+"src/trigo.ml" 1 0 4 "src/trigo.ml" 1 0 6
+type(
+  float
+)
+ident(
+  def pi "src/trigo.ml" 3 24 24 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 1 0 9 "src/trigo.ml" 1 0 11
+type(
+  float
+)
+"src/trigo.ml" 1 0 12 "src/trigo.ml" 1 0 14
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/trigo.ml" 1 0 15 "src/trigo.ml" 1 0 19
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.atan
+)
+"src/trigo.ml" 1 0 20 "src/trigo.ml" 1 0 22
+type(
+  float
+)
+"src/trigo.ml" 1 0 15 "src/trigo.ml" 1 0 22
+type(
+  float
+)
+"src/trigo.ml" 1 0 9 "src/trigo.ml" 1 0 22
+type(
+  float
+)
+"src/trigo.ml" 3 24 28 "src/trigo.ml" 3 24 33
+type(
+  float
+)
+ident(
+  def pidiv "src/trigo.ml" 4 47 47 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 3 24 36 "src/trigo.ml" 3 24 38
+type(
+  float
+)
+ident(
+  int_ref pi "src/trigo.ml" 1 0 4 "src/trigo.ml" 1 0 6
+)
+"src/trigo.ml" 3 24 39 "src/trigo.ml" 3 24 41
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"src/trigo.ml" 3 24 42 "src/trigo.ml" 3 24 46
+type(
+  float
+)
+"src/trigo.ml" 3 24 36 "src/trigo.ml" 3 24 46
+type(
+  float
+)
+"src/trigo.ml" 4 47 51 "src/trigo.ml" 4 47 57
+type(
+  float
+)
+ident(
+  def ipidiv "src/trigo.ml" 6 72 72 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 4 47 60 "src/trigo.ml" 4 47 64
+type(
+  float
+)
+"src/trigo.ml" 4 47 65 "src/trigo.ml" 4 47 67
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"src/trigo.ml" 4 47 68 "src/trigo.ml" 4 47 70
+type(
+  float
+)
+ident(
+  int_ref pi "src/trigo.ml" 1 0 4 "src/trigo.ml" 1 0 6
+)
+"src/trigo.ml" 4 47 60 "src/trigo.ml" 4 47 70
+type(
+  float
+)
+"src/trigo.ml" 6 72 76 "src/trigo.ml" 6 72 84
+type(
+  int -> float
+)
+ident(
+  def d_to_rad "src/trigo.ml" 7 106 106 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 6 72 85 "src/trigo.ml" 6 72 86
+type(
+  int
+)
+ident(
+  def a "src/trigo.ml" 6 72 89 "src/trigo.ml" 6 72 105
+)
+"src/trigo.ml" 6 72 89 "src/trigo.ml" 6 72 94
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/trigo.ml" 6 72 95 "src/trigo.ml" 6 72 96
+type(
+  int
+)
+ident(
+  int_ref a "src/trigo.ml" 6 72 85 "src/trigo.ml" 6 72 86
+)
+"src/trigo.ml" 6 72 89 "src/trigo.ml" 6 72 96
+type(
+  float
+)
+"src/trigo.ml" 6 72 97 "src/trigo.ml" 6 72 99
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/trigo.ml" 6 72 100 "src/trigo.ml" 6 72 105
+type(
+  float
+)
+ident(
+  int_ref pidiv "src/trigo.ml" 3 24 28 "src/trigo.ml" 3 24 33
+)
+"src/trigo.ml" 6 72 89 "src/trigo.ml" 6 72 105
+type(
+  float
+)
+"src/trigo.ml" 7 106 110 "src/trigo.ml" 7 106 118
+type(
+  float -> float
+)
+ident(
+  def r_to_deg "src/trigo.ml" 9 136 136 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 7 106 119 "src/trigo.ml" 7 106 120
+type(
+  float
+)
+ident(
+  def a "src/trigo.ml" 7 106 123 "src/trigo.ml" 7 106 134
+)
+"src/trigo.ml" 7 106 123 "src/trigo.ml" 7 106 124
+type(
+  float
+)
+ident(
+  int_ref a "src/trigo.ml" 7 106 119 "src/trigo.ml" 7 106 120
+)
+"src/trigo.ml" 7 106 125 "src/trigo.ml" 7 106 127
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/trigo.ml" 7 106 128 "src/trigo.ml" 7 106 134
+type(
+  float
+)
+ident(
+  int_ref ipidiv "src/trigo.ml" 4 47 51 "src/trigo.ml" 4 47 57
+)
+"src/trigo.ml" 7 106 123 "src/trigo.ml" 7 106 134
+type(
+  float
+)
+"src/trigo.ml" 9 136 140 "src/trigo.ml" 9 136 144
+type(
+  float -> float
+)
+ident(
+  def rtan "src/trigo.ml" 10 155 155 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 9 136 145 "src/trigo.ml" 9 136 146
+type(
+  float
+)
+ident(
+  def a "src/trigo.ml" 9 136 149 "src/trigo.ml" 9 136 154
+)
+"src/trigo.ml" 9 136 149 "src/trigo.ml" 9 136 152
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.tan
+)
+"src/trigo.ml" 9 136 153 "src/trigo.ml" 9 136 154
+type(
+  float
+)
+ident(
+  int_ref a "src/trigo.ml" 9 136 145 "src/trigo.ml" 9 136 146
+)
+"src/trigo.ml" 9 136 149 "src/trigo.ml" 9 136 154
+type(
+  float
+)
+"src/trigo.ml" 10 155 159 "src/trigo.ml" 10 155 163
+type(
+  int -> float
+)
+ident(
+  def dtan "src/trigo.ml" 12 186 186 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 10 155 164 "src/trigo.ml" 10 155 165
+type(
+  int
+)
+ident(
+  def a "src/trigo.ml" 10 155 168 "src/trigo.ml" 10 155 184
+)
+"src/trigo.ml" 10 155 168 "src/trigo.ml" 10 155 171
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.tan
+)
+"src/trigo.ml" 10 155 173 "src/trigo.ml" 10 155 181
+type(
+  int -> float
+)
+ident(
+  int_ref d_to_rad "src/trigo.ml" 6 72 76 "src/trigo.ml" 6 72 84
+)
+"src/trigo.ml" 10 155 182 "src/trigo.ml" 10 155 183
+type(
+  int
+)
+ident(
+  int_ref a "src/trigo.ml" 10 155 164 "src/trigo.ml" 10 155 165
+)
+"src/trigo.ml" 10 155 172 "src/trigo.ml" 10 155 184
+call(
+  stack
+)
+type(
+  float
+)
+"src/trigo.ml" 10 155 168 "src/trigo.ml" 10 155 184
+type(
+  float
+)
+"src/trigo.ml" 12 186 190 "src/trigo.ml" 12 186 194
+type(
+  int -> float
+)
+ident(
+  def dcos "src/trigo.ml" 14 217 217 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 12 186 195 "src/trigo.ml" 12 186 196
+type(
+  int
+)
+ident(
+  def a "src/trigo.ml" 12 186 199 "src/trigo.ml" 12 186 215
+)
+"src/trigo.ml" 12 186 199 "src/trigo.ml" 12 186 202
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.cos
+)
+"src/trigo.ml" 12 186 204 "src/trigo.ml" 12 186 212
+type(
+  int -> float
+)
+ident(
+  int_ref d_to_rad "src/trigo.ml" 6 72 76 "src/trigo.ml" 6 72 84
+)
+"src/trigo.ml" 12 186 213 "src/trigo.ml" 12 186 214
+type(
+  int
+)
+ident(
+  int_ref a "src/trigo.ml" 12 186 195 "src/trigo.ml" 12 186 196
+)
+"src/trigo.ml" 12 186 203 "src/trigo.ml" 12 186 215
+call(
+  stack
+)
+type(
+  float
+)
+"src/trigo.ml" 12 186 199 "src/trigo.ml" 12 186 215
+type(
+  float
+)
+"src/trigo.ml" 14 217 221 "src/trigo.ml" 14 217 226
+type(
+  float -> float
+)
+ident(
+  def dacos "src/trigo.ml" 16 250 250 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 14 217 227 "src/trigo.ml" 14 217 228
+type(
+  float
+)
+ident(
+  def c "src/trigo.ml" 14 217 231 "src/trigo.ml" 14 217 248
+)
+"src/trigo.ml" 14 217 231 "src/trigo.ml" 14 217 239
+type(
+  float -> float
+)
+ident(
+  int_ref r_to_deg "src/trigo.ml" 7 106 110 "src/trigo.ml" 7 106 118
+)
+"src/trigo.ml" 14 217 241 "src/trigo.ml" 14 217 245
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.acos
+)
+"src/trigo.ml" 14 217 246 "src/trigo.ml" 14 217 247
+type(
+  float
+)
+ident(
+  int_ref c "src/trigo.ml" 14 217 227 "src/trigo.ml" 14 217 228
+)
+"src/trigo.ml" 14 217 240 "src/trigo.ml" 14 217 248
+type(
+  float
+)
+"src/trigo.ml" 14 217 231 "src/trigo.ml" 14 217 248
+call(
+  tail
+)
+type(
+  float
+)
+"src/trigo.ml" 16 250 254 "src/trigo.ml" 16 250 258
+type(
+  int -> float
+)
+ident(
+  def dsin "src/trigo.ml" 16 250 279 "src/trigo.ml" 1 0 -1
+)
+"src/trigo.ml" 16 250 259 "src/trigo.ml" 16 250 260
+type(
+  int
+)
+ident(
+  def a "src/trigo.ml" 16 250 263 "src/trigo.ml" 16 250 279
+)
+"src/trigo.ml" 16 250 263 "src/trigo.ml" 16 250 266
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.sin
+)
+"src/trigo.ml" 16 250 268 "src/trigo.ml" 16 250 276
+type(
+  int -> float
+)
+ident(
+  int_ref d_to_rad "src/trigo.ml" 6 72 76 "src/trigo.ml" 6 72 84
+)
+"src/trigo.ml" 16 250 277 "src/trigo.ml" 16 250 278
+type(
+  int
+)
+ident(
+  int_ref a "src/trigo.ml" 16 250 259 "src/trigo.ml" 16 250 260
+)
+"src/trigo.ml" 16 250 267 "src/trigo.ml" 16 250 279
+call(
+  stack
+)
+type(
+  float
+)
+"src/trigo.ml" 16 250 263 "src/trigo.ml" 16 250 279
+type(
+  float
+)

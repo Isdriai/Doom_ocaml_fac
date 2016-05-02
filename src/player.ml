@@ -10,10 +10,7 @@ let new_player pos pa = failwith "TODO"
 
 type dir = Left | Right
 
-let rotate d p = 
-	match d with
-	| Left -> expr
-	| Right -> expr2
+let rotate d p = failwith "TODO"
 
 type mv = MFwd | MBwd | MLeft | MRight
 

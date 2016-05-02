@@ -1,0 +1,969 @@
+"src/parse_lab.ml" 1 0 4 "src/parse_lab.ml" 1 0 12
+type(
+  in_channel -> (int * int * int) * (int * int * int * int) list
+)
+ident(
+  def read_lab "src/parse_lab.ml" 27 1130 1136 "src/parse_lab.ml" 1 0 -1
+)
+"src/parse_lab.ml" 1 0 13 "src/parse_lab.ml" 1 0 15
+type(
+  in_channel
+)
+ident(
+  def ci "src/parse_lab.ml" 2 18 20 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 2 18 24 "src/parse_lab.ml" 2 18 25
+type(
+  Str.regexp
+)
+ident(
+  def r "src/parse_lab.ml" 3 96 98 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 2 18 28 "src/parse_lab.ml" 2 18 38
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"src/parse_lab.ml" 2 18 39 "src/parse_lab.ml" 2 18 92
+type(
+  string
+)
+"src/parse_lab.ml" 2 18 28 "src/parse_lab.ml" 2 18 92
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"src/parse_lab.ml" 3 96 102 "src/parse_lab.ml" 3 96 104
+type(
+  Str.regexp
+)
+ident(
+  def rp "src/parse_lab.ml" 4 166 168 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 3 96 107 "src/parse_lab.ml" 3 96 117
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"src/parse_lab.ml" 3 96 118 "src/parse_lab.ml" 3 96 162
+type(
+  string
+)
+"src/parse_lab.ml" 3 96 107 "src/parse_lab.ml" 3 96 162
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"src/parse_lab.ml" 4 166 172 "src/parse_lab.ml" 4 166 174
+type(
+  Str.regexp
+)
+ident(
+  def rc "src/parse_lab.ml" 5 202 204 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 4 166 177 "src/parse_lab.ml" 4 166 187
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"src/parse_lab.ml" 4 166 188 "src/parse_lab.ml" 4 166 198
+type(
+  string
+)
+"src/parse_lab.ml" 4 166 177 "src/parse_lab.ml" 4 166 198
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"src/parse_lab.ml" 5 202 208 "src/parse_lab.ml" 5 202 209
+type(
+  (int * int * int) option
+)
+ident(
+  def p "src/parse_lab.ml" 24 1021 1023 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 5 202 211 "src/parse_lab.ml" 5 202 212
+type(
+  (int * int * int * int) list
+)
+ident(
+  def l "src/parse_lab.ml" 24 1021 1023 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 5 202 208 "src/parse_lab.ml" 5 202 212
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 6 215 227 "src/parse_lab.ml" 6 215 229
+type(
+  (int * int * int) option * (int * int * int * int) list ->
+  (int * int * int) option * (int * int * int * int) list
+)
+ident(
+  def rr "src/parse_lab.ml" 6 215 219 "src/parse_lab.ml" 23 997 1017
+)
+"src/parse_lab.ml" 6 215 231 "src/parse_lab.ml" 6 215 232
+type(
+  (int * int * int) option
+)
+ident(
+  def p "src/parse_lab.ml" 7 241 247 "src/parse_lab.ml" 22 949 996
+)
+"src/parse_lab.ml" 6 215 234 "src/parse_lab.ml" 6 215 237
+type(
+  (int * int * int * int) list
+)
+ident(
+  def acc "src/parse_lab.ml" 7 241 247 "src/parse_lab.ml" 22 949 996
+)
+"src/parse_lab.ml" 6 215 230 "src/parse_lab.ml" 6 215 238
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+type(
+  string
+)
+ident(
+  def l "src/parse_lab.ml" 9 284 292 "src/parse_lab.ml" 21 907 948
+)
+"src/parse_lab.ml" 8 251 267 "src/parse_lab.ml" 8 251 277
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"src/parse_lab.ml" 8 251 278 "src/parse_lab.ml" 8 251 280
+type(
+  in_channel
+)
+ident(
+  int_ref ci "src/parse_lab.ml" 1 0 13 "src/parse_lab.ml" 1 0 15
+)
+"src/parse_lab.ml" 8 251 267 "src/parse_lab.ml" 8 251 280
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 9 284 295 "src/parse_lab.ml" 9 284 311
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"src/parse_lab.ml" 9 284 312 "src/parse_lab.ml" 9 284 314
+type(
+  Str.regexp
+)
+ident(
+  int_ref rp "src/parse_lab.ml" 3 96 102 "src/parse_lab.ml" 3 96 104
+)
+"src/parse_lab.ml" 9 284 315 "src/parse_lab.ml" 9 284 316
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 9 284 317 "src/parse_lab.ml" 9 284 318
+type(
+  int
+)
+"src/parse_lab.ml" 9 284 295 "src/parse_lab.ml" 9 284 318
+call(
+  stack
+)
+type(
+  bool
+)
+"src/parse_lab.ml" 10 324 338 "src/parse_lab.ml" 10 324 340
+type(
+  int
+)
+ident(
+  def xp "src/parse_lab.ml" 11 391 401 "src/parse_lab.ml" 13 525 562
+)
+"src/parse_lab.ml" 10 324 343 "src/parse_lab.ml" 10 324 356
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 10 324 358 "src/parse_lab.ml" 10 324 375
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 10 324 376 "src/parse_lab.ml" 10 324 378
+type(
+  Str.regexp
+)
+ident(
+  int_ref rp "src/parse_lab.ml" 3 96 102 "src/parse_lab.ml" 3 96 104
+)
+"src/parse_lab.ml" 10 324 379 "src/parse_lab.ml" 10 324 384
+type(
+  string
+)
+"src/parse_lab.ml" 10 324 385 "src/parse_lab.ml" 10 324 386
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 10 324 357 "src/parse_lab.ml" 10 324 387
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 10 324 343 "src/parse_lab.ml" 10 324 387
+type(
+  int
+)
+"src/parse_lab.ml" 11 391 405 "src/parse_lab.ml" 11 391 407
+type(
+  int
+)
+ident(
+  def yp "src/parse_lab.ml" 12 458 468 "src/parse_lab.ml" 13 525 562
+)
+"src/parse_lab.ml" 11 391 410 "src/parse_lab.ml" 11 391 423
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 11 391 425 "src/parse_lab.ml" 11 391 442
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 11 391 443 "src/parse_lab.ml" 11 391 445
+type(
+  Str.regexp
+)
+ident(
+  int_ref rp "src/parse_lab.ml" 3 96 102 "src/parse_lab.ml" 3 96 104
+)
+"src/parse_lab.ml" 11 391 446 "src/parse_lab.ml" 11 391 451
+type(
+  string
+)
+"src/parse_lab.ml" 11 391 452 "src/parse_lab.ml" 11 391 453
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 11 391 424 "src/parse_lab.ml" 11 391 454
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 11 391 410 "src/parse_lab.ml" 11 391 454
+type(
+  int
+)
+"src/parse_lab.ml" 12 458 472 "src/parse_lab.ml" 12 458 474
+type(
+  int
+)
+ident(
+  def ap "src/parse_lab.ml" 13 525 535 "src/parse_lab.ml" 13 525 562
+)
+"src/parse_lab.ml" 12 458 477 "src/parse_lab.ml" 12 458 490
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 12 458 492 "src/parse_lab.ml" 12 458 509
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 12 458 510 "src/parse_lab.ml" 12 458 512
+type(
+  Str.regexp
+)
+ident(
+  int_ref rp "src/parse_lab.ml" 3 96 102 "src/parse_lab.ml" 3 96 104
+)
+"src/parse_lab.ml" 12 458 513 "src/parse_lab.ml" 12 458 518
+type(
+  string
+)
+"src/parse_lab.ml" 12 458 519 "src/parse_lab.ml" 12 458 520
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 12 458 491 "src/parse_lab.ml" 12 458 521
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 12 458 477 "src/parse_lab.ml" 12 458 521
+type(
+  int
+)
+"src/parse_lab.ml" 13 525 535 "src/parse_lab.ml" 13 525 537
+type(
+  (int * int * int) option * (int * int * int * int) list ->
+  (int * int * int) option * (int * int * int * int) list
+)
+ident(
+  int_ref rr "src/parse_lab.ml" 6 215 227 "src/parse_lab.ml" 6 215 229
+)
+"src/parse_lab.ml" 13 525 545 "src/parse_lab.ml" 13 525 547
+type(
+  int
+)
+ident(
+  int_ref xp "src/parse_lab.ml" 10 324 338 "src/parse_lab.ml" 10 324 340
+)
+"src/parse_lab.ml" 13 525 549 "src/parse_lab.ml" 13 525 551
+type(
+  int
+)
+ident(
+  int_ref yp "src/parse_lab.ml" 11 391 405 "src/parse_lab.ml" 11 391 407
+)
+"src/parse_lab.ml" 13 525 553 "src/parse_lab.ml" 13 525 555
+type(
+  int
+)
+ident(
+  int_ref ap "src/parse_lab.ml" 12 458 472 "src/parse_lab.ml" 12 458 474
+)
+"src/parse_lab.ml" 13 525 544 "src/parse_lab.ml" 13 525 556
+type(
+  int * int * int
+)
+"src/parse_lab.ml" 13 525 539 "src/parse_lab.ml" 13 525 556
+type(
+  (int * int * int) option
+)
+"src/parse_lab.ml" 13 525 558 "src/parse_lab.ml" 13 525 561
+type(
+  (int * int * int * int) list
+)
+ident(
+  int_ref acc "src/parse_lab.ml" 6 215 234 "src/parse_lab.ml" 6 215 237
+)
+"src/parse_lab.ml" 13 525 538 "src/parse_lab.ml" 13 525 562
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 13 525 535 "src/parse_lab.ml" 13 525 562
+call(
+  stack
+)
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 12 458 468 "src/parse_lab.ml" 13 525 562
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 11 391 401 "src/parse_lab.ml" 13 525 562
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 10 324 334 "src/parse_lab.ml" 13 525 562
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 14 563 579 "src/parse_lab.ml" 14 563 595
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"src/parse_lab.ml" 14 563 596 "src/parse_lab.ml" 14 563 598
+type(
+  Str.regexp
+)
+ident(
+  int_ref rc "src/parse_lab.ml" 4 166 172 "src/parse_lab.ml" 4 166 174
+)
+"src/parse_lab.ml" 14 563 599 "src/parse_lab.ml" 14 563 600
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 14 563 601 "src/parse_lab.ml" 14 563 602
+type(
+  int
+)
+"src/parse_lab.ml" 14 563 579 "src/parse_lab.ml" 14 563 602
+call(
+  stack
+)
+type(
+  bool
+)
+"src/parse_lab.ml" 15 608 618 "src/parse_lab.ml" 15 608 620
+type(
+  (int * int * int) option * (int * int * int * int) list ->
+  (int * int * int) option * (int * int * int * int) list
+)
+ident(
+  int_ref rr "src/parse_lab.ml" 6 215 227 "src/parse_lab.ml" 6 215 229
+)
+"src/parse_lab.ml" 15 608 622 "src/parse_lab.ml" 15 608 623
+type(
+  (int * int * int) option
+)
+ident(
+  int_ref p "src/parse_lab.ml" 6 215 231 "src/parse_lab.ml" 6 215 232
+)
+"src/parse_lab.ml" 15 608 625 "src/parse_lab.ml" 15 608 628
+type(
+  (int * int * int * int) list
+)
+ident(
+  int_ref acc "src/parse_lab.ml" 6 215 234 "src/parse_lab.ml" 6 215 237
+)
+"src/parse_lab.ml" 15 608 621 "src/parse_lab.ml" 15 608 629
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 15 608 618 "src/parse_lab.ml" 15 608 629
+call(
+  stack
+)
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 17 643 657 "src/parse_lab.ml" 17 643 659
+type(
+  int
+)
+ident(
+  def xo "src/parse_lab.ml" 18 709 719 "src/parse_lab.ml" 21 907 948
+)
+"src/parse_lab.ml" 17 643 662 "src/parse_lab.ml" 17 643 675
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 17 643 677 "src/parse_lab.ml" 17 643 694
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 17 643 695 "src/parse_lab.ml" 17 643 696
+type(
+  Str.regexp
+)
+ident(
+  int_ref r "src/parse_lab.ml" 2 18 24 "src/parse_lab.ml" 2 18 25
+)
+"src/parse_lab.ml" 17 643 697 "src/parse_lab.ml" 17 643 702
+type(
+  string
+)
+"src/parse_lab.ml" 17 643 703 "src/parse_lab.ml" 17 643 704
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 17 643 676 "src/parse_lab.ml" 17 643 705
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 17 643 662 "src/parse_lab.ml" 17 643 705
+type(
+  int
+)
+"src/parse_lab.ml" 18 709 723 "src/parse_lab.ml" 18 709 725
+type(
+  int
+)
+ident(
+  def yo "src/parse_lab.ml" 19 775 785 "src/parse_lab.ml" 21 907 948
+)
+"src/parse_lab.ml" 18 709 728 "src/parse_lab.ml" 18 709 741
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 18 709 743 "src/parse_lab.ml" 18 709 760
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 18 709 761 "src/parse_lab.ml" 18 709 762
+type(
+  Str.regexp
+)
+ident(
+  int_ref r "src/parse_lab.ml" 2 18 24 "src/parse_lab.ml" 2 18 25
+)
+"src/parse_lab.ml" 18 709 763 "src/parse_lab.ml" 18 709 768
+type(
+  string
+)
+"src/parse_lab.ml" 18 709 769 "src/parse_lab.ml" 18 709 770
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 18 709 742 "src/parse_lab.ml" 18 709 771
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 18 709 728 "src/parse_lab.ml" 18 709 771
+type(
+  int
+)
+"src/parse_lab.ml" 19 775 789 "src/parse_lab.ml" 19 775 791
+type(
+  int
+)
+ident(
+  def xd "src/parse_lab.ml" 20 841 851 "src/parse_lab.ml" 21 907 948
+)
+"src/parse_lab.ml" 19 775 794 "src/parse_lab.ml" 19 775 807
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 19 775 809 "src/parse_lab.ml" 19 775 826
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 19 775 827 "src/parse_lab.ml" 19 775 828
+type(
+  Str.regexp
+)
+ident(
+  int_ref r "src/parse_lab.ml" 2 18 24 "src/parse_lab.ml" 2 18 25
+)
+"src/parse_lab.ml" 19 775 829 "src/parse_lab.ml" 19 775 834
+type(
+  string
+)
+"src/parse_lab.ml" 19 775 835 "src/parse_lab.ml" 19 775 836
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 19 775 808 "src/parse_lab.ml" 19 775 837
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 19 775 794 "src/parse_lab.ml" 19 775 837
+type(
+  int
+)
+"src/parse_lab.ml" 20 841 855 "src/parse_lab.ml" 20 841 857
+type(
+  int
+)
+ident(
+  def yd "src/parse_lab.ml" 21 907 917 "src/parse_lab.ml" 21 907 948
+)
+"src/parse_lab.ml" 20 841 860 "src/parse_lab.ml" 20 841 873
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"src/parse_lab.ml" 20 841 875 "src/parse_lab.ml" 20 841 892
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.replace_first
+)
+"src/parse_lab.ml" 20 841 893 "src/parse_lab.ml" 20 841 894
+type(
+  Str.regexp
+)
+ident(
+  int_ref r "src/parse_lab.ml" 2 18 24 "src/parse_lab.ml" 2 18 25
+)
+"src/parse_lab.ml" 20 841 895 "src/parse_lab.ml" 20 841 900
+type(
+  string
+)
+"src/parse_lab.ml" 20 841 901 "src/parse_lab.ml" 20 841 902
+type(
+  string
+)
+ident(
+  int_ref l "src/parse_lab.ml" 8 251 263 "src/parse_lab.ml" 8 251 264
+)
+"src/parse_lab.ml" 20 841 874 "src/parse_lab.ml" 20 841 903
+call(
+  stack
+)
+type(
+  string
+)
+"src/parse_lab.ml" 20 841 860 "src/parse_lab.ml" 20 841 903
+type(
+  int
+)
+"src/parse_lab.ml" 21 907 917 "src/parse_lab.ml" 21 907 919
+type(
+  (int * int * int) option * (int * int * int * int) list ->
+  (int * int * int) option * (int * int * int * int) list
+)
+ident(
+  int_ref rr "src/parse_lab.ml" 6 215 227 "src/parse_lab.ml" 6 215 229
+)
+"src/parse_lab.ml" 21 907 921 "src/parse_lab.ml" 21 907 922
+type(
+  (int * int * int) option
+)
+ident(
+  int_ref p "src/parse_lab.ml" 6 215 231 "src/parse_lab.ml" 6 215 232
+)
+"src/parse_lab.ml" 21 907 925 "src/parse_lab.ml" 21 907 927
+type(
+  int
+)
+ident(
+  int_ref xo "src/parse_lab.ml" 17 643 657 "src/parse_lab.ml" 17 643 659
+)
+"src/parse_lab.ml" 21 907 929 "src/parse_lab.ml" 21 907 931
+type(
+  int
+)
+ident(
+  int_ref yo "src/parse_lab.ml" 18 709 723 "src/parse_lab.ml" 18 709 725
+)
+"src/parse_lab.ml" 21 907 933 "src/parse_lab.ml" 21 907 935
+type(
+  int
+)
+ident(
+  int_ref xd "src/parse_lab.ml" 19 775 789 "src/parse_lab.ml" 19 775 791
+)
+"src/parse_lab.ml" 21 907 937 "src/parse_lab.ml" 21 907 939
+type(
+  int
+)
+ident(
+  int_ref yd "src/parse_lab.ml" 20 841 855 "src/parse_lab.ml" 20 841 857
+)
+"src/parse_lab.ml" 21 907 924 "src/parse_lab.ml" 21 907 940
+type(
+  int * int * int * int
+)
+"src/parse_lab.ml" 21 907 944 "src/parse_lab.ml" 21 907 947
+type(
+  (int * int * int * int) list
+)
+ident(
+  int_ref acc "src/parse_lab.ml" 6 215 234 "src/parse_lab.ml" 6 215 237
+)
+"src/parse_lab.ml" 21 907 924 "src/parse_lab.ml" 21 907 947
+type(
+  (int * int * int * int) list
+)
+"src/parse_lab.ml" 21 907 920 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 21 907 917 "src/parse_lab.ml" 21 907 948
+call(
+  stack
+)
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 20 841 851 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 19 775 785 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 18 709 719 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 17 643 653 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 14 563 576 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 9 284 292 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 8 251 259 "src/parse_lab.ml" 21 907 948
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 22 949 960 "src/parse_lab.ml" 22 949 971
+type(
+  exn
+)
+"src/parse_lab.ml" 22 949 975 "src/parse_lab.ml" 22 949 983
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"src/parse_lab.ml" 22 949 984 "src/parse_lab.ml" 22 949 986
+type(
+  in_channel
+)
+ident(
+  int_ref ci "src/parse_lab.ml" 1 0 13 "src/parse_lab.ml" 1 0 15
+)
+"src/parse_lab.ml" 22 949 975 "src/parse_lab.ml" 22 949 986
+call(
+  stack
+)
+type(
+  unit
+)
+"src/parse_lab.ml" 22 949 989 "src/parse_lab.ml" 22 949 990
+type(
+  (int * int * int) option
+)
+ident(
+  int_ref p "src/parse_lab.ml" 6 215 231 "src/parse_lab.ml" 6 215 232
+)
+"src/parse_lab.ml" 22 949 992 "src/parse_lab.ml" 22 949 995
+type(
+  (int * int * int * int) list
+)
+ident(
+  int_ref acc "src/parse_lab.ml" 6 215 234 "src/parse_lab.ml" 6 215 237
+)
+"src/parse_lab.ml" 22 949 988 "src/parse_lab.ml" 22 949 996
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 22 949 975 "src/parse_lab.ml" 22 949 996
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 7 241 247 "src/parse_lab.ml" 22 949 996
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 23 997 1004 "src/parse_lab.ml" 23 997 1006
+type(
+  (int * int * int) option * (int * int * int * int) list ->
+  (int * int * int) option * (int * int * int * int) list
+)
+ident(
+  int_ref rr "src/parse_lab.ml" 6 215 227 "src/parse_lab.ml" 6 215 229
+)
+"src/parse_lab.ml" 23 997 1008 "src/parse_lab.ml" 23 997 1012
+type(
+  (int * int * int) option
+)
+"src/parse_lab.ml" 23 997 1014 "src/parse_lab.ml" 23 997 1016
+type(
+  (int * int * int * int) list
+)
+"src/parse_lab.ml" 23 997 1007 "src/parse_lab.ml" 23 997 1017
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 23 997 1004 "src/parse_lab.ml" 23 997 1017
+call(
+  stack
+)
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 6 215 219 "src/parse_lab.ml" 23 997 1017
+type(
+  (int * int * int) option * (int * int * int * int) list
+)
+"src/parse_lab.ml" 24 1021 1027 "src/parse_lab.ml" 24 1021 1028
+type(
+  int * int * int
+)
+ident(
+  def p "src/parse_lab.ml" 27 1130 1132 "src/parse_lab.ml" 27 1130 1136
+)
+"src/parse_lab.ml" 24 1021 1037 "src/parse_lab.ml" 24 1021 1038
+type(
+  (int * int * int) option
+)
+ident(
+  int_ref p "src/parse_lab.ml" 5 202 208 "src/parse_lab.ml" 5 202 209
+)
+"src/parse_lab.ml" 25 1045 1051 "src/parse_lab.ml" 25 1045 1055
+type(
+  (int * int * int) option
+)
+"src/parse_lab.ml" 25 1045 1059 "src/parse_lab.ml" 25 1045 1073
+type(
+  (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.eprintf
+)
+"src/parse_lab.ml" 25 1045 1074 "src/parse_lab.ml" 25 1045 1096
+type(
+  (unit, Format.formatter, unit) format
+)
+"src/parse_lab.ml" 25 1045 1059 "src/parse_lab.ml" 25 1045 1096
+call(
+  stack
+)
+type(
+  unit
+)
+"src/parse_lab.ml" 25 1045 1098 "src/parse_lab.ml" 25 1045 1103
+type(
+  exn -> int * int * int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/parse_lab.ml" 25 1045 1104 "src/parse_lab.ml" 25 1045 1108
+type(
+  exn
+)
+"src/parse_lab.ml" 25 1045 1098 "src/parse_lab.ml" 25 1045 1108
+type(
+  int * int * int
+)
+"src/parse_lab.ml" 25 1045 1059 "src/parse_lab.ml" 25 1045 1108
+type(
+  int * int * int
+)
+"src/parse_lab.ml" 26 1109 1120 "src/parse_lab.ml" 26 1109 1121
+type(
+  int * int * int
+)
+ident(
+  def c "src/parse_lab.ml" 26 1109 1125 "src/parse_lab.ml" 26 1109 1126
+)
+"src/parse_lab.ml" 26 1109 1115 "src/parse_lab.ml" 26 1109 1121
+type(
+  (int * int * int) option
+)
+"src/parse_lab.ml" 26 1109 1125 "src/parse_lab.ml" 26 1109 1126
+type(
+  int * int * int
+)
+ident(
+  int_ref c "src/parse_lab.ml" 26 1109 1120 "src/parse_lab.ml" 26 1109 1121
+)
+"src/parse_lab.ml" 24 1021 1031 "src/parse_lab.ml" 26 1109 1126
+type(
+  int * int * int
+)
+"src/parse_lab.ml" 27 1130 1132 "src/parse_lab.ml" 27 1130 1133
+type(
+  int * int * int
+)
+ident(
+  int_ref p "src/parse_lab.ml" 24 1021 1027 "src/parse_lab.ml" 24 1021 1028
+)
+"src/parse_lab.ml" 27 1130 1135 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int * int) list
+)
+ident(
+  int_ref l "src/parse_lab.ml" 5 202 211 "src/parse_lab.ml" 5 202 212
+)
+"src/parse_lab.ml" 27 1130 1132 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/parse_lab.ml" 24 1021 1023 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/parse_lab.ml" 5 202 204 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/parse_lab.ml" 4 166 168 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/parse_lab.ml" 3 96 98 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/parse_lab.ml" 2 18 20 "src/parse_lab.ml" 27 1130 1136
+type(
+  (int * int * int) * (int * int * int * int) list
+)

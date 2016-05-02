@@ -1,0 +1,39 @@
+"src/render.ml" 1 0 4 "src/render.ml" 1 0 11
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def display "src/render.ml" 1 0 35 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 1 0 12 "src/render.ml" 1 0 15
+type(
+  'a
+)
+ident(
+  def bsp "src/render.ml" 1 0 16 "src/render.ml" 1 0 35
+)
+"src/render.ml" 1 0 16 "src/render.ml" 1 0 17
+type(
+  'b
+)
+ident(
+  def p "src/render.ml" 1 0 20 "src/render.ml" 1 0 35
+)
+"src/render.ml" 1 0 20 "src/render.ml" 1 0 28
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/render.ml" 1 0 29 "src/render.ml" 1 0 35
+type(
+  string
+)
+"src/render.ml" 1 0 20 "src/render.ml" 1 0 35
+call(
+  tail
+)
+type(
+  'c
+)

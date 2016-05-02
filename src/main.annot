@@ -1,0 +1,22 @@
+"src/main.ml" 3 14 18 "src/main.ml" 3 14 20
+type(
+  unit
+)
+"src/main.ml" 3 14 23 "src/main.ml" 3 14 31
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"src/main.ml" 3 14 32 "src/main.ml" 3 14 38
+type(
+  string
+)
+"src/main.ml" 3 14 23 "src/main.ml" 3 14 38
+call(
+  stack
+)
+type(
+  unit
+)
