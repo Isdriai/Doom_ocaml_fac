@@ -1,39 +1,1100 @@
-"src/render.ml" 1 0 4 "src/render.ml" 1 0 11
+"src/render.ml" 6 48 52 "src/render.ml" 6 48 66
 type(
-  'a -> 'b -> 'c
+  Player.t -> Segment.t -> Segment.t
 )
 ident(
-  def display "src/render.ml" 1 0 35 "src/render.ml" 1 0 -1
+  def calcul_vecteur "src/render.ml" 16 250 250 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 1 0 12 "src/render.ml" 1 0 15
+"src/render.ml" 6 48 67 "src/render.ml" 6 48 68
 type(
-  'a
+  Player.t
 )
 ident(
-  def bsp "src/render.ml" 1 0 16 "src/render.ml" 1 0 35
+  def p "src/render.ml" 6 48 69 "src/render.ml" 10 168 193
 )
-"src/render.ml" 1 0 16 "src/render.ml" 1 0 17
+"src/render.ml" 6 48 69 "src/render.ml" 6 48 70
 type(
-  'b
+  Segment.t
 )
 ident(
-  def p "src/render.ml" 1 0 20 "src/render.ml" 1 0 35
+  def s "src/render.ml" 7 73 74 "src/render.ml" 10 168 193
 )
-"src/render.ml" 1 0 20 "src/render.ml" 1 0 28
+"src/render.ml" 7 73 74 "src/render.ml" 7 73 93
 type(
-  string -> 'c
+  int -> int -> int -> int -> Segment.t
 )
 ident(
-  ext_ref Pervasives.failwith
+  ext_ref Segment.new_segment
 )
-"src/render.ml" 1 0 29 "src/render.ml" 1 0 35
+"src/render.ml" 7 73 95 "src/render.ml" 7 73 96
 type(
-  string
+  Segment.t
 )
-"src/render.ml" 1 0 20 "src/render.ml" 1 0 35
+ident(
+  int_ref s "src/render.ml" 6 48 69 "src/render.ml" 6 48 70
+)
+"src/render.ml" 7 73 95 "src/render.ml" 7 73 102
+type(
+  Point.t
+)
+"src/render.ml" 7 73 95 "src/render.ml" 7 73 104
+type(
+  int
+)
+"src/render.ml" 7 73 104 "src/render.ml" 7 73 105
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/render.ml" 7 73 105 "src/render.ml" 7 73 106
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 6 48 67 "src/render.ml" 6 48 68
+)
+"src/render.ml" 7 73 105 "src/render.ml" 7 73 110
+type(
+  Point.t
+)
+"src/render.ml" 7 73 105 "src/render.ml" 7 73 112
+type(
+  int
+)
+"src/render.ml" 7 73 94 "src/render.ml" 7 73 113
+type(
+  int
+)
+"src/render.ml" 8 115 122 "src/render.ml" 8 115 123
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 6 48 69 "src/render.ml" 6 48 70
+)
+"src/render.ml" 8 115 122 "src/render.ml" 8 115 129
+type(
+  Point.t
+)
+"src/render.ml" 8 115 122 "src/render.ml" 8 115 131
+type(
+  int
+)
+"src/render.ml" 8 115 131 "src/render.ml" 8 115 132
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/render.ml" 8 115 132 "src/render.ml" 8 115 133
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 6 48 67 "src/render.ml" 6 48 68
+)
+"src/render.ml" 8 115 132 "src/render.ml" 8 115 137
+type(
+  Point.t
+)
+"src/render.ml" 8 115 132 "src/render.ml" 8 115 139
+type(
+  int
+)
+"src/render.ml" 8 115 121 "src/render.ml" 8 115 140
+type(
+  int
+)
+"src/render.ml" 9 141 148 "src/render.ml" 9 141 149
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 6 48 69 "src/render.ml" 6 48 70
+)
+"src/render.ml" 9 141 148 "src/render.ml" 9 141 155
+type(
+  Point.t
+)
+"src/render.ml" 9 141 148 "src/render.ml" 9 141 157
+type(
+  int
+)
+"src/render.ml" 9 141 157 "src/render.ml" 9 141 158
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/render.ml" 9 141 158 "src/render.ml" 9 141 159
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 6 48 67 "src/render.ml" 6 48 68
+)
+"src/render.ml" 9 141 158 "src/render.ml" 9 141 163
+type(
+  Point.t
+)
+"src/render.ml" 9 141 158 "src/render.ml" 9 141 165
+type(
+  int
+)
+"src/render.ml" 9 141 147 "src/render.ml" 9 141 166
+type(
+  int
+)
+"src/render.ml" 10 168 175 "src/render.ml" 10 168 176
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 6 48 69 "src/render.ml" 6 48 70
+)
+"src/render.ml" 10 168 175 "src/render.ml" 10 168 182
+type(
+  Point.t
+)
+"src/render.ml" 10 168 175 "src/render.ml" 10 168 184
+type(
+  int
+)
+"src/render.ml" 10 168 184 "src/render.ml" 10 168 185
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/render.ml" 10 168 185 "src/render.ml" 10 168 186
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 6 48 67 "src/render.ml" 6 48 68
+)
+"src/render.ml" 10 168 185 "src/render.ml" 10 168 190
+type(
+  Point.t
+)
+"src/render.ml" 10 168 185 "src/render.ml" 10 168 192
+type(
+  int
+)
+"src/render.ml" 10 168 174 "src/render.ml" 10 168 193
+type(
+  int
+)
+"src/render.ml" 7 73 74 "src/render.ml" 10 168 193
 call(
   tail
 )
 type(
-  'c
+  Segment.t
+)
+"src/render.ml" 16 250 254 "src/render.ml" 16 250 266
+type(
+  Player.t -> Segment.t -> Segment.t
+)
+ident(
+  def calcul_angle "src/render.ml" 23 724 724 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+type(
+  Player.t
+)
+ident(
+  def p "src/render.ml" 16 250 269 "src/render.ml" 21 615 722
+)
+"src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+type(
+  Segment.t
+)
+ident(
+  def s "src/render.ml" 17 273 274 "src/render.ml" 21 615 722
+)
+"src/render.ml" 17 273 274 "src/render.ml" 17 273 293
+type(
+  int -> int -> int -> int -> Segment.t
+)
+ident(
+  ext_ref Segment.new_segment
+)
+"src/render.ml" 18 295 298 "src/render.ml" 18 295 306
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/render.ml" 18 295 308 "src/render.ml" 18 295 320
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 18 295 322 "src/render.ml" 18 295 323
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 18 295 322 "src/render.ml" 18 295 329
+type(
+  Point.t
+)
+"src/render.ml" 18 295 321 "src/render.ml" 18 295 332
+type(
+  int
+)
+"src/render.ml" 18 295 308 "src/render.ml" 18 295 332
+type(
+  float
+)
+"src/render.ml" 18 295 333 "src/render.ml" 18 295 335
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 18 295 336 "src/render.ml" 18 295 346
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dcos
+)
+"src/render.ml" 18 295 347 "src/render.ml" 18 295 348
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 18 295 347 "src/render.ml" 18 295 351
+type(
+  int
+)
+"src/render.ml" 18 295 336 "src/render.ml" 18 295 351
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 18 295 308 "src/render.ml" 18 295 351
+type(
+  float
+)
+"src/render.ml" 18 295 352 "src/render.ml" 18 295 354
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/render.ml" 18 295 355 "src/render.ml" 18 295 367
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 18 295 369 "src/render.ml" 18 295 370
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 18 295 369 "src/render.ml" 18 295 376
+type(
+  Point.t
+)
+"src/render.ml" 18 295 368 "src/render.ml" 18 295 379
+type(
+  int
+)
+"src/render.ml" 18 295 355 "src/render.ml" 18 295 379
+type(
+  float
+)
+"src/render.ml" 18 295 380 "src/render.ml" 18 295 382
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 18 295 383 "src/render.ml" 18 295 393
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dsin
+)
+"src/render.ml" 18 295 394 "src/render.ml" 18 295 395
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 18 295 394 "src/render.ml" 18 295 398
+type(
+  int
+)
+"src/render.ml" 18 295 383 "src/render.ml" 18 295 398
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 18 295 355 "src/render.ml" 18 295 398
+type(
+  float
+)
+"src/render.ml" 18 295 307 "src/render.ml" 18 295 399
+type(
+  float
+)
+"src/render.ml" 18 295 297 "src/render.ml" 18 295 400
+type(
+  int
+)
+"src/render.ml" 19 401 404 "src/render.ml" 19 401 412
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/render.ml" 19 401 414 "src/render.ml" 19 401 426
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 19 401 428 "src/render.ml" 19 401 429
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"src/render.ml" 19 401 429 "src/render.ml" 19 401 430
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 19 401 429 "src/render.ml" 19 401 436
+type(
+  Point.t
+)
+"src/render.ml" 19 401 429 "src/render.ml" 19 401 438
+type(
+  int
+)
+"src/render.ml" 19 401 427 "src/render.ml" 19 401 439
+type(
+  int
+)
+"src/render.ml" 19 401 414 "src/render.ml" 19 401 439
+type(
+  float
+)
+"src/render.ml" 19 401 440 "src/render.ml" 19 401 442
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 19 401 443 "src/render.ml" 19 401 453
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dsin
+)
+"src/render.ml" 19 401 454 "src/render.ml" 19 401 455
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 19 401 454 "src/render.ml" 19 401 458
+type(
+  int
+)
+"src/render.ml" 19 401 443 "src/render.ml" 19 401 458
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 19 401 414 "src/render.ml" 19 401 458
+type(
+  float
+)
+"src/render.ml" 19 401 459 "src/render.ml" 19 401 461
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/render.ml" 19 401 462 "src/render.ml" 19 401 474
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 19 401 476 "src/render.ml" 19 401 477
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"src/render.ml" 19 401 477 "src/render.ml" 19 401 478
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 19 401 477 "src/render.ml" 19 401 484
+type(
+  Point.t
+)
+"src/render.ml" 19 401 477 "src/render.ml" 19 401 486
+type(
+  int
+)
+"src/render.ml" 19 401 475 "src/render.ml" 19 401 487
+type(
+  int
+)
+"src/render.ml" 19 401 462 "src/render.ml" 19 401 487
+type(
+  float
+)
+"src/render.ml" 19 401 488 "src/render.ml" 19 401 490
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 19 401 491 "src/render.ml" 19 401 501
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dcos
+)
+"src/render.ml" 19 401 502 "src/render.ml" 19 401 503
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 19 401 502 "src/render.ml" 19 401 506
+type(
+  int
+)
+"src/render.ml" 19 401 491 "src/render.ml" 19 401 506
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 19 401 462 "src/render.ml" 19 401 506
+type(
+  float
+)
+"src/render.ml" 19 401 413 "src/render.ml" 19 401 507
+type(
+  float
+)
+"src/render.ml" 19 401 403 "src/render.ml" 19 401 508
+type(
+  int
+)
+"src/render.ml" 20 509 512 "src/render.ml" 20 509 520
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/render.ml" 20 509 522 "src/render.ml" 20 509 534
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 20 509 536 "src/render.ml" 20 509 537
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 20 509 536 "src/render.ml" 20 509 543
+type(
+  Point.t
+)
+"src/render.ml" 20 509 535 "src/render.ml" 20 509 546
+type(
+  int
+)
+"src/render.ml" 20 509 522 "src/render.ml" 20 509 546
+type(
+  float
+)
+"src/render.ml" 20 509 547 "src/render.ml" 20 509 549
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 20 509 550 "src/render.ml" 20 509 560
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dcos
+)
+"src/render.ml" 20 509 561 "src/render.ml" 20 509 562
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 20 509 561 "src/render.ml" 20 509 565
+type(
+  int
+)
+"src/render.ml" 20 509 550 "src/render.ml" 20 509 565
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 20 509 522 "src/render.ml" 20 509 565
+type(
+  float
+)
+"src/render.ml" 20 509 566 "src/render.ml" 20 509 568
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/render.ml" 20 509 569 "src/render.ml" 20 509 581
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 20 509 583 "src/render.ml" 20 509 584
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 20 509 583 "src/render.ml" 20 509 590
+type(
+  Point.t
+)
+"src/render.ml" 20 509 582 "src/render.ml" 20 509 593
+type(
+  int
+)
+"src/render.ml" 20 509 569 "src/render.ml" 20 509 593
+type(
+  float
+)
+"src/render.ml" 20 509 594 "src/render.ml" 20 509 596
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 20 509 597 "src/render.ml" 20 509 607
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dsin
+)
+"src/render.ml" 20 509 608 "src/render.ml" 20 509 609
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 20 509 608 "src/render.ml" 20 509 612
+type(
+  int
+)
+"src/render.ml" 20 509 597 "src/render.ml" 20 509 612
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 20 509 569 "src/render.ml" 20 509 612
+type(
+  float
+)
+"src/render.ml" 20 509 521 "src/render.ml" 20 509 613
+type(
+  float
+)
+"src/render.ml" 20 509 511 "src/render.ml" 20 509 614
+type(
+  int
+)
+"src/render.ml" 21 615 618 "src/render.ml" 21 615 626
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/render.ml" 21 615 628 "src/render.ml" 21 615 640
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 21 615 642 "src/render.ml" 21 615 643
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"src/render.ml" 21 615 643 "src/render.ml" 21 615 644
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 21 615 643 "src/render.ml" 21 615 650
+type(
+  Point.t
+)
+"src/render.ml" 21 615 643 "src/render.ml" 21 615 652
+type(
+  int
+)
+"src/render.ml" 21 615 641 "src/render.ml" 21 615 653
+type(
+  int
+)
+"src/render.ml" 21 615 628 "src/render.ml" 21 615 653
+type(
+  float
+)
+"src/render.ml" 21 615 654 "src/render.ml" 21 615 656
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 21 615 657 "src/render.ml" 21 615 667
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dsin
+)
+"src/render.ml" 21 615 668 "src/render.ml" 21 615 669
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 21 615 668 "src/render.ml" 21 615 672
+type(
+  int
+)
+"src/render.ml" 21 615 657 "src/render.ml" 21 615 672
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 21 615 628 "src/render.ml" 21 615 672
+type(
+  float
+)
+"src/render.ml" 21 615 673 "src/render.ml" 21 615 675
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/render.ml" 21 615 676 "src/render.ml" 21 615 688
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 21 615 690 "src/render.ml" 21 615 691
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"src/render.ml" 21 615 691 "src/render.ml" 21 615 692
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 16 250 269 "src/render.ml" 16 250 270
+)
+"src/render.ml" 21 615 691 "src/render.ml" 21 615 698
+type(
+  Point.t
+)
+"src/render.ml" 21 615 691 "src/render.ml" 21 615 700
+type(
+  int
+)
+"src/render.ml" 21 615 689 "src/render.ml" 21 615 701
+type(
+  int
+)
+"src/render.ml" 21 615 676 "src/render.ml" 21 615 701
+type(
+  float
+)
+"src/render.ml" 21 615 702 "src/render.ml" 21 615 704
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/render.ml" 21 615 705 "src/render.ml" 21 615 715
+type(
+  int -> float
+)
+ident(
+  ext_ref Trigo.dcos
+)
+"src/render.ml" 21 615 716 "src/render.ml" 21 615 717
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 16 250 267 "src/render.ml" 16 250 268
+)
+"src/render.ml" 21 615 716 "src/render.ml" 21 615 720
+type(
+  int
+)
+"src/render.ml" 21 615 705 "src/render.ml" 21 615 720
+call(
+  stack
+)
+type(
+  float
+)
+"src/render.ml" 21 615 676 "src/render.ml" 21 615 720
+type(
+  float
+)
+"src/render.ml" 21 615 627 "src/render.ml" 21 615 721
+type(
+  float
+)
+"src/render.ml" 21 615 617 "src/render.ml" 21 615 722
+type(
+  int
+)
+"src/render.ml" 17 273 274 "src/render.ml" 21 615 722
+call(
+  tail
+)
+type(
+  Segment.t
+)
+"src/render.ml" 23 724 728 "src/render.ml" 23 724 735
+type(
+  Player.t -> Segment.t -> unit
+)
+ident(
+  def affiche "src/render.ml" 28 919 919 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 23 724 736 "src/render.ml" 23 724 737
+type(
+  Player.t
+)
+ident(
+  def p "src/render.ml" 23 724 740 "src/render.ml" 25 804 916
+)
+"src/render.ml" 23 724 744 "src/render.ml" 23 724 745
+type(
+  Segment.t
+)
+ident(
+  def s "src/render.ml" 24 750 751 "src/render.ml" 25 804 916
+)
+"src/render.ml" 24 750 755 "src/render.ml" 24 750 761
+type(
+  Segment.t
+)
+ident(
+  def nw_seg "src/render.ml" 25 804 805 "src/render.ml" 25 804 916
+)
+"src/render.ml" 24 750 764 "src/render.ml" 24 750 776
+type(
+  Player.t -> Segment.t -> Segment.t
+)
+ident(
+  int_ref calcul_angle "src/render.ml" 16 250 254 "src/render.ml" 16 250 266
+)
+"src/render.ml" 24 750 777 "src/render.ml" 24 750 778
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 23 724 736 "src/render.ml" 23 724 737
+)
+"src/render.ml" 24 750 780 "src/render.ml" 24 750 794
+type(
+  Player.t -> Segment.t -> Segment.t
+)
+ident(
+  int_ref calcul_vecteur "src/render.ml" 6 48 52 "src/render.ml" 6 48 66
+)
+"src/render.ml" 24 750 795 "src/render.ml" 24 750 796
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 23 724 736 "src/render.ml" 23 724 737
+)
+"src/render.ml" 24 750 797 "src/render.ml" 24 750 798
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 23 724 744 "src/render.ml" 23 724 745
+)
+"src/render.ml" 24 750 779 "src/render.ml" 24 750 799
+call(
+  stack
+)
+type(
+  Segment.t
+)
+"src/render.ml" 24 750 764 "src/render.ml" 24 750 799
+call(
+  stack
+)
+type(
+  Segment.t
+)
+"src/render.ml" 25 804 805 "src/render.ml" 25 804 818
+type(
+  (int -> int -> int -> int -> unit, out_channel, unit) format ->
+  int -> int -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"src/render.ml" 25 804 819 "src/render.ml" 25 804 856
+type(
+  (int -> int -> int -> int -> unit, out_channel, unit) format
+)
+"src/render.ml" 25 804 857 "src/render.ml" 25 804 863
+type(
+  Segment.t
+)
+ident(
+  int_ref nw_seg "src/render.ml" 24 750 755 "src/render.ml" 24 750 761
+)
+"src/render.ml" 25 804 857 "src/render.ml" 25 804 869
+type(
+  Point.t
+)
+"src/render.ml" 25 804 857 "src/render.ml" 25 804 871
+type(
+  int
+)
+"src/render.ml" 25 804 872 "src/render.ml" 25 804 878
+type(
+  Segment.t
+)
+ident(
+  int_ref nw_seg "src/render.ml" 24 750 755 "src/render.ml" 24 750 761
+)
+"src/render.ml" 25 804 872 "src/render.ml" 25 804 884
+type(
+  Point.t
+)
+"src/render.ml" 25 804 872 "src/render.ml" 25 804 886
+type(
+  int
+)
+"src/render.ml" 25 804 887 "src/render.ml" 25 804 893
+type(
+  Segment.t
+)
+ident(
+  int_ref nw_seg "src/render.ml" 24 750 755 "src/render.ml" 24 750 761
+)
+"src/render.ml" 25 804 887 "src/render.ml" 25 804 899
+type(
+  Point.t
+)
+"src/render.ml" 25 804 887 "src/render.ml" 25 804 901
+type(
+  int
+)
+"src/render.ml" 25 804 902 "src/render.ml" 25 804 908
+type(
+  Segment.t
+)
+ident(
+  int_ref nw_seg "src/render.ml" 24 750 755 "src/render.ml" 24 750 761
+)
+"src/render.ml" 25 804 902 "src/render.ml" 25 804 914
+type(
+  Point.t
+)
+"src/render.ml" 25 804 902 "src/render.ml" 25 804 916
+type(
+  int
+)
+"src/render.ml" 25 804 805 "src/render.ml" 25 804 916
+call(
+  tail
+)
+type(
+  unit
+)
+"src/render.ml" 24 750 751 "src/render.ml" 25 804 916
+type(
+  unit
+)
+"src/render.ml" 23 724 740 "src/render.ml" 25 804 916
+type(
+  Segment.t -> unit
+)
+"src/render.ml" 28 919 923 "src/render.ml" 28 919 930
+type(
+  Bsp.t -> Player.t -> unit
+)
+ident(
+  def display "src/render.ml" 29 940 972 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 28 919 931 "src/render.ml" 28 919 934
+type(
+  Bsp.t
+)
+ident(
+  def bsp "src/render.ml" 28 919 935 "src/render.ml" 29 940 972
+)
+"src/render.ml" 28 919 935 "src/render.ml" 28 919 936
+type(
+  Player.t
+)
+ident(
+  def p "src/render.ml" 29 940 941 "src/render.ml" 29 940 972
+)
+"src/render.ml" 29 940 941 "src/render.ml" 29 940 950
+type(
+  (Segment.t -> unit) -> Bsp.t -> Point.t -> unit
+)
+ident(
+  ext_ref Bsp.parse
+)
+"src/render.ml" 29 940 952 "src/render.ml" 29 940 959
+type(
+  Player.t -> Segment.t -> unit
+)
+ident(
+  int_ref affiche "src/render.ml" 23 724 728 "src/render.ml" 23 724 735
+)
+"src/render.ml" 29 940 960 "src/render.ml" 29 940 961
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 28 919 935 "src/render.ml" 28 919 936
+)
+"src/render.ml" 29 940 951 "src/render.ml" 29 940 962
+call(
+  stack
+)
+type(
+  Segment.t -> unit
+)
+"src/render.ml" 29 940 963 "src/render.ml" 29 940 966
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp "src/render.ml" 28 919 931 "src/render.ml" 28 919 934
+)
+"src/render.ml" 29 940 967 "src/render.ml" 29 940 968
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 28 919 935 "src/render.ml" 28 919 936
+)
+"src/render.ml" 29 940 967 "src/render.ml" 29 940 972
+type(
+  Point.t
+)
+"src/render.ml" 29 940 941 "src/render.ml" 29 940 972
+call(
+  tail
+)
+type(
+  unit
 )

@@ -3,6 +3,7 @@ open Point
 open Segment
 open Player
 open Bsp
+open Render
 
 let affiche_point p = 
 	Printf.printf "x: %d, y: %d\n" p.x p.y
@@ -63,6 +64,9 @@ let () =
 	let p = Point.new_point 3 3 in 
 	let player = Player.new_player p 80 in 
 
+	Printf.printf "affichage player :\n\n";
+
+
 	(*on met le joueur à 90° pr tester ds un cas facile au début*)
 
 	Player.rotate Player.Left player;
@@ -103,14 +107,68 @@ let () =
 	affiche_point player.pos;
 
 	Player.move MRight player (Bsp.build_bsp []);
-	affiche_point player.pos
+	affiche_point player.pos;
 
-	(*on voit que tout marche *)
+	(*on voit que tout marche 
+		il faut avoir ca comme resultats :
+
+		x: 3, y: -7
+		x: 2, y: -16
+		x: 3, y: -7
+		x: 3, y: 3
+		x: -7, y: 3
+		x: 3, y: 3
+		x: -6, y: 4
+		x: 3, y: 3
+		x: 12, y: 2
+
+	*)
 
 
+	Printf.printf "affichage display :\n\n";
 
+	let s_d = Segment.new_segment 2 0 2 3 in
+	let bd = Bsp.build_bsp (s_d::[]) in
+	let playerd = Player.new_player (Point.new_point 0 0) 90 in
+
+	Render.display bd playerd;
+
+	(*resultat attendu = 
+		
+		xa: 0, ya: -2
+ 		xb: 3, yb: -2
+
+	*)
+
+	let s_d2 = Segment.new_segment 2 2 4 2 in
+	let b2 = Bsp.build_bsp (s_d2::[]) in
+	let player2 = Player.new_player (Point.new_point 1 1) 90 in
+
+	Render.display b2 player2; 
+
+	(*resultat attendu = 
+		
+		xa: 1, ya: -1
+ 		xb: 1, yb: -3
+
+	*)
+
+	let s_d3 = Segment.new_segment (-3) 1 (-1) 3 in
+	let b3 = Bsp.build_bsp (s_d3::[]) in
+	let player3 = Player.new_player (Point.new_point (-1) 1) 135 in
+
+	Render.display b3 player3
+
+	(*
+	resultat attendu =
+
+		xa: 1, ya: 1
+		xb: 1, yb, -1
+		attention normalement c'est pas ca 
+		mais avec les histoires de int/float c'est moins précis
+
+		Tout est ok
+	*)
+
+	
 ;;
-
-
-
-
