@@ -30,16 +30,23 @@ let radian_of_deg deg =
 	l'angle 0 corespond à l'état ou le personnage est tourné vers la droite
 *)
 let move d p bsp = 
-	if not (Physic.detect_collision p.pos bsp) then 
+
+	let player_tmp = new_player(Point.new_point 0 0) p.pa in
+
 	match d with
-	| MFwd -> p.pos <- Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
+	| MFwd -> player_tmp.pos <- Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
 										(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MBwd -> p.pos <- Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
+	| MBwd -> player_tmp.pos <- Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
 										(p.pos.y+truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MLeft -> p.pos <- Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
+	| MLeft -> player_tmp.pos <- Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
 										(p.pos.y-truncate(pas*.cos (radian_of_deg p.pa)))
 
-	| MRight -> p.pos <- Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
+	| MRight -> player_tmp.pos <- Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
 										(p.pos.y+truncate(pas*.cos (radian_of_deg p.pa)))
+	;
+
+	if not (Physic.detect_collision player_tmp.pos bsp) 
+	then p.pos <- player_tmp.pos
+	else ()

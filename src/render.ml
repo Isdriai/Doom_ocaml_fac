@@ -15,12 +15,15 @@ let calcul_vecteur p s =
 	y' = -x sin a + y cos a
 *)
 
+(*à tester demain, voir si les y sont bons,
+ et ecris tous les exemple comme il faut sur ta putain de feuille !*)
+
 let calcul_angle p s =
 	Segment.new_segment 
 		(truncate (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (s.porig.y) *. Trigo.dsin p.pa))
-		(truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (-s.porig.y) *. Trigo.dcos p.pa))
+		(-truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (-s.porig.y) *. Trigo.dcos p.pa))
 		(truncate (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (s.pdest.y) *. Trigo.dsin p.pa))
-		(truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (-s.pdest.y) *. Trigo.dcos p.pa))
+		(-truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (-s.pdest.y) *. Trigo.dcos p.pa))
 
 let ta xo yo xd yd = 
 	float_of_int (yd - yo) /. float_of_int(xd - xo)
