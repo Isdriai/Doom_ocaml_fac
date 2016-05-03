@@ -4,7 +4,7 @@ open Point
 open Segment
 
 let angle (xa, ya) (xb, yb) (xc, yc) =
-	(xb -. xa) *. (xc -. xa) -. (yb -. ya) *. (yc -. ya)
+	(xb -. xa) *. (xc -. xa) +. (yb -. ya) *. (yc -. ya)
 
 
 let procheSegment p =
