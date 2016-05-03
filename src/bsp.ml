@@ -31,6 +31,15 @@ let build_bsp sl =
 
 
 
+let affichage_bsp bsp =
+	let aff s =
+		| E -> Printf.printf "E"
+		| N (r, g, d) -> Printf.printf 
+
+
+
+
+
 let rec iter_cps f bsp=  
 	let rec iter cont = function 
 	| E -> cont ()
@@ -75,11 +84,11 @@ let build_bsp_cps sl =
 	b_bsp (fun n -> match n with | E -> E | a -> a)
 		sl *)
 
-let build_bsp_cps sl = 
+let build_bsp_cps sl = (*presque*)
 	let rec b_bsp cont = function
 		| []-> cont None
 		| x::s -> let (ll, lr) = split x s in
-				let k n = (match n with | None -> Some (E) | Some g ->  Some (N(x, g, let Some(i) = b_bsp cont lr in i))) in 
+				let k n = (match n with | None -> Some (E) | Some g ->  Some (N(x, g, let Some(d) = b_bsp cont lr in d))) in 
 				b_bsp k ll	
 	in
 	b_bsp (fun n -> match n with | None -> Some E | a -> a)	sl

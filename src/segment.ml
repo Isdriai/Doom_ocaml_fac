@@ -30,6 +30,7 @@ let split_segment d s =
 	| R,C
 	| R,R
 	| C,R -> (None, Some (s)) 
+	| C,C
 	| L,L 
 	| L,C 
 	| C,L -> (Some (s), None)
