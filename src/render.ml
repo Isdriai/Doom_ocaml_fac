@@ -2,6 +2,7 @@ open Segment
 open Point
 open Trigo
 open Player
+open Graphics
 
 let calcul_vecteur p s =
 	Segment.new_segment (s.porig.x-p.pos.x) 
@@ -44,8 +45,14 @@ let affiche p = fun s ->
 	match clip with
 	| None -> ()
 	| Some(seg) -> 
-	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y
+	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y;
+	Graphics.set_color (Graphics.rgb 255 0 0);
+	Graphics.plot (seg.porig.x*20+5) (seg.porig.y*20+50);
+	Graphics.lineto (seg.pdest.x*20+50) (seg.pdest.y*20+50)
 
+(*faire fenetre graphique et afficher les segments dedans*)
 
 let display bsp p = 
+
 	Bsp.parse (affiche p) bsp p.pos
+	

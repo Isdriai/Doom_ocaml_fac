@@ -4,6 +4,7 @@ open Segment
 open Player
 open Bsp
 open Render
+open Graphics
 
 let affiche_point p = 
 	Printf.printf "x: %d, y: %d\n" p.x p.y
@@ -133,6 +134,10 @@ let () =
 
 
 	Printf.printf "affichage display :\n\n";
+	
+	let s = string_of_int (500) in 
+	let a =  " " ^ s ^ "x" ^ s in
+	Graphics.open_graph a;
 
 	let s_d = Segment.new_segment 2 0 2 3 in
 	let bd = Bsp.build_bsp (s_d::[]) in
@@ -164,7 +169,7 @@ let () =
 	let b3 = Bsp.build_bsp (s_d3::[]) in
 	let player3 = Player.new_player (Point.new_point (-1) 1) 135 in
 
-	Render.display b3 player3
+	Render.display b3 player3;
 
 	(*
 	resultat attendu =
@@ -176,6 +181,6 @@ let () =
 
 		Tout est ok
 	*)
-
+	let s = Graphics.wait_next_event [Graphics.Button_down;Graphics.Key_pressed] in ()
 	
 ;;
