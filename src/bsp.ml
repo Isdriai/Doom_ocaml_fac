@@ -28,15 +28,6 @@ let build_bsp sl =
 
 
 
-let affichage_bsp bsp =
-	let aff s =
-		| E -> Printf.printf "E"
-		| N (r, g, d) -> Printf.printf 
-
-
-
-
-
 let rec iter_cps f bsp=  
 	let rec iter cont = function 
 	| E -> cont ()
