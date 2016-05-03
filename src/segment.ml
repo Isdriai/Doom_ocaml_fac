@@ -27,11 +27,11 @@ let get_position p s =
 
 let split_segment d s = 
 	match get_position s.porig d, get_position s.pdest d with
-	| L,L -> (Some (s), None)
-	| R,C -> (None, Some (s)) 
-	| R,R -> (None, Some (s)) 
+	| R,C
+	| R,R
 	| C,R -> (None, Some (s)) 
-	| L,C -> (Some (s), None)
+	| L,L 
+	| L,C 
 	| C,L -> (Some (s), None)
 	| _,_ -> 
 	
