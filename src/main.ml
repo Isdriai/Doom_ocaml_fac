@@ -9,11 +9,15 @@ let affiche_point p =
 	Printf.printf "x: %d, y: %d\n" p.x p.y
 
 let affiche_segment s = 
-	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\n" s.porig.x s.porig.y s.pdest.x s.pdest.y
+	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d\n" s.porig.x s.porig.y s.pdest.x s.pdest.y
 
-
-let affiche_bsp bsp = 
-	Bsp.iter affiche_segment bsp
+let affiche_bsp bsp =
+	let rec aff s = function
+		| E -> Printf.printf "%s" s; Printf.printf "E\n"
+		| N (r, g, d) -> let s2 = s^"|            " in
+		 aff s2 g; Printf.printf "%s" s; affiche_segment r; aff s2 d 
+	in
+	aff "" bsp
 
 let rec iter_cps f bsp=  
 	let rec iter cont = function 
@@ -43,10 +47,13 @@ let () =
 	let s2 = Segment.new_segment 1 0 3 0 in 
 	let s3 = Segment.new_segment 2 1 2 3 in 
 	let s4 = Segment.new_segment 3 1 4 0 in 
-
+	let s5 = Segment.new_segment 1 1 8 3 in 
+	let s6 = Segment.new_segment 8 2 3 3 in 
+	let s7 = Segment.new_segment 5 6 5 7 in 
+	let s8 = Segment.new_segment 0 10 0 0 in
  	let test_split_segment = Segment.split_segment s1 s3 in 
  
-	let l_seg = s1::s2::s3::s4::[] in
+	let l_seg = s1::s2::s3::s4::s5::s6::s7::s8::[] in
 	let test_split = Segment.split s1 l_seg in 
 	let b = Bsp.build_bsp l_seg in 
 
