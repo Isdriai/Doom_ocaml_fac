@@ -1,25 +1,662 @@
-"src/physic.ml" 1 0 4 "src/physic.ml" 1 0 20
+"src/physic.ml" 6 47 51 "src/physic.ml" 6 47 56
 type(
-  'a -> 'b -> bool
+  float * float -> float * float -> float * float -> float
 )
 ident(
-  def detect_collision "src/physic.ml" 1 0 33 "src/physic.ml" 1 0 -1
+  def angle "src/physic.ml" 9 141 141 "src/physic.ml" 1 0 -1
 )
-"src/physic.ml" 1 0 21 "src/physic.ml" 1 0 22
+"src/physic.ml" 6 47 58 "src/physic.ml" 6 47 60
 type(
-  'a
+  float
 )
 ident(
-  def p "src/physic.ml" 1 0 23 "src/physic.ml" 1 0 33
+  def xa "src/physic.ml" 6 47 66 "src/physic.ml" 7 86 139
 )
-"src/physic.ml" 1 0 23 "src/physic.ml" 1 0 26
+"src/physic.ml" 6 47 62 "src/physic.ml" 6 47 64
 type(
-  'b
+  float
 )
 ident(
-  def bsp "src/physic.ml" 1 0 29 "src/physic.ml" 1 0 33
+  def ya "src/physic.ml" 6 47 66 "src/physic.ml" 7 86 139
 )
-"src/physic.ml" 1 0 29 "src/physic.ml" 1 0 33
+"src/physic.ml" 6 47 57 "src/physic.ml" 6 47 65
+type(
+  float * float
+)
+"src/physic.ml" 6 47 67 "src/physic.ml" 6 47 69
+type(
+  float
+)
+ident(
+  def xb "src/physic.ml" 6 47 75 "src/physic.ml" 7 86 139
+)
+"src/physic.ml" 6 47 71 "src/physic.ml" 6 47 73
+type(
+  float
+)
+ident(
+  def yb "src/physic.ml" 6 47 75 "src/physic.ml" 7 86 139
+)
+"src/physic.ml" 6 47 66 "src/physic.ml" 6 47 74
+type(
+  float * float
+)
+"src/physic.ml" 6 47 76 "src/physic.ml" 6 47 78
+type(
+  float
+)
+ident(
+  def xc "src/physic.ml" 7 86 87 "src/physic.ml" 7 86 139
+)
+"src/physic.ml" 6 47 80 "src/physic.ml" 6 47 82
+type(
+  float
+)
+ident(
+  def yc "src/physic.ml" 7 86 87 "src/physic.ml" 7 86 139
+)
+"src/physic.ml" 6 47 75 "src/physic.ml" 6 47 83
+type(
+  float * float
+)
+"src/physic.ml" 7 86 88 "src/physic.ml" 7 86 90
+type(
+  float
+)
+ident(
+  int_ref xb "src/physic.ml" 6 47 67 "src/physic.ml" 6 47 69
+)
+"src/physic.ml" 7 86 91 "src/physic.ml" 7 86 93
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/physic.ml" 7 86 94 "src/physic.ml" 7 86 96
+type(
+  float
+)
+ident(
+  int_ref xa "src/physic.ml" 6 47 58 "src/physic.ml" 6 47 60
+)
+"src/physic.ml" 7 86 87 "src/physic.ml" 7 86 97
+type(
+  float
+)
+"src/physic.ml" 7 86 98 "src/physic.ml" 7 86 100
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/physic.ml" 7 86 102 "src/physic.ml" 7 86 104
+type(
+  float
+)
+ident(
+  int_ref xc "src/physic.ml" 6 47 76 "src/physic.ml" 6 47 78
+)
+"src/physic.ml" 7 86 105 "src/physic.ml" 7 86 107
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/physic.ml" 7 86 108 "src/physic.ml" 7 86 110
+type(
+  float
+)
+ident(
+  int_ref xa "src/physic.ml" 6 47 58 "src/physic.ml" 6 47 60
+)
+"src/physic.ml" 7 86 101 "src/physic.ml" 7 86 111
+type(
+  float
+)
+"src/physic.ml" 7 86 87 "src/physic.ml" 7 86 111
+type(
+  float
+)
+"src/physic.ml" 7 86 112 "src/physic.ml" 7 86 114
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/physic.ml" 7 86 116 "src/physic.ml" 7 86 118
+type(
+  float
+)
+ident(
+  int_ref yb "src/physic.ml" 6 47 71 "src/physic.ml" 6 47 73
+)
+"src/physic.ml" 7 86 119 "src/physic.ml" 7 86 121
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/physic.ml" 7 86 122 "src/physic.ml" 7 86 124
+type(
+  float
+)
+ident(
+  int_ref ya "src/physic.ml" 6 47 62 "src/physic.ml" 6 47 64
+)
+"src/physic.ml" 7 86 115 "src/physic.ml" 7 86 125
+type(
+  float
+)
+"src/physic.ml" 7 86 126 "src/physic.ml" 7 86 128
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/physic.ml" 7 86 130 "src/physic.ml" 7 86 132
+type(
+  float
+)
+ident(
+  int_ref yc "src/physic.ml" 6 47 80 "src/physic.ml" 6 47 82
+)
+"src/physic.ml" 7 86 133 "src/physic.ml" 7 86 135
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/physic.ml" 7 86 136 "src/physic.ml" 7 86 138
+type(
+  float
+)
+ident(
+  int_ref ya "src/physic.ml" 6 47 62 "src/physic.ml" 6 47 64
+)
+"src/physic.ml" 7 86 129 "src/physic.ml" 7 86 139
+type(
+  float
+)
+"src/physic.ml" 7 86 115 "src/physic.ml" 7 86 139
+type(
+  float
+)
+"src/physic.ml" 7 86 87 "src/physic.ml" 7 86 139
+type(
+  float
+)
+"src/physic.ml" 9 141 145 "src/physic.ml" 9 141 158
+type(
+  Point.t -> Segment.t -> unit
+)
+ident(
+  def procheSegment "src/physic.ml" 16 452 452 "src/physic.ml" 1 0 -1
+)
+"src/physic.ml" 9 141 159 "src/physic.ml" 9 141 160
+type(
+  Point.t
+)
+ident(
+  def p "src/physic.ml" 10 163 164 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 10 163 168 "src/physic.ml" 10 163 169
+type(
+  Segment.t
+)
+ident(
+  def s "src/physic.ml" 10 163 173 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 10 163 178 "src/physic.ml" 10 163 180
+type(
+  float
+)
+ident(
+  def xc "src/physic.ml" 11 226 229 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 10 163 182 "src/physic.ml" 10 163 184
+type(
+  float
+)
+ident(
+  def yc "src/physic.ml" 11 226 229 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 10 163 177 "src/physic.ml" 10 163 185
+type(
+  float * float
+)
+"src/physic.ml" 10 163 188 "src/physic.ml" 10 163 200
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 10 163 201 "src/physic.ml" 10 163 202
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 9 141 159 "src/physic.ml" 9 141 160
+)
+"src/physic.ml" 10 163 201 "src/physic.ml" 10 163 204
+type(
+  int
+)
+"src/physic.ml" 10 163 188 "src/physic.ml" 10 163 204
+type(
+  float
+)
+"src/physic.ml" 10 163 206 "src/physic.ml" 10 163 218
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 10 163 219 "src/physic.ml" 10 163 220
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 9 141 159 "src/physic.ml" 9 141 160
+)
+"src/physic.ml" 10 163 219 "src/physic.ml" 10 163 222
+type(
+  int
+)
+"src/physic.ml" 10 163 206 "src/physic.ml" 10 163 222
+type(
+  float
+)
+"src/physic.ml" 10 163 188 "src/physic.ml" 10 163 222
+type(
+  float * float
+)
+"src/physic.ml" 11 226 234 "src/physic.ml" 11 226 236
+type(
+  float
+)
+ident(
+  def xa "src/physic.ml" 12 294 297 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 11 226 238 "src/physic.ml" 11 226 240
+type(
+  float
+)
+ident(
+  def ya "src/physic.ml" 12 294 297 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 11 226 233 "src/physic.ml" 11 226 241
+type(
+  float * float
+)
+"src/physic.ml" 11 226 244 "src/physic.ml" 11 226 256
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 11 226 257 "src/physic.ml" 11 226 258
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/physic.ml" 10 163 168 "src/physic.ml" 10 163 169
+)
+"src/physic.ml" 11 226 257 "src/physic.ml" 11 226 264
+type(
+  Point.t
+)
+"src/physic.ml" 11 226 257 "src/physic.ml" 11 226 266
+type(
+  int
+)
+"src/physic.ml" 11 226 244 "src/physic.ml" 11 226 266
+type(
+  float
+)
+"src/physic.ml" 11 226 268 "src/physic.ml" 11 226 280
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 11 226 281 "src/physic.ml" 11 226 282
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/physic.ml" 10 163 168 "src/physic.ml" 10 163 169
+)
+"src/physic.ml" 11 226 281 "src/physic.ml" 11 226 288
+type(
+  Point.t
+)
+"src/physic.ml" 11 226 281 "src/physic.ml" 11 226 290
+type(
+  int
+)
+"src/physic.ml" 11 226 268 "src/physic.ml" 11 226 290
+type(
+  float
+)
+"src/physic.ml" 11 226 244 "src/physic.ml" 11 226 290
+type(
+  float * float
+)
+"src/physic.ml" 12 294 302 "src/physic.ml" 12 294 304
+type(
+  float
+)
+ident(
+  def xb "src/physic.ml" 13 362 365 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 12 294 306 "src/physic.ml" 12 294 308
+type(
+  float
+)
+ident(
+  def yb "src/physic.ml" 13 362 365 "src/physic.ml" 13 362 449
+)
+"src/physic.ml" 12 294 301 "src/physic.ml" 12 294 309
+type(
+  float * float
+)
+"src/physic.ml" 12 294 312 "src/physic.ml" 12 294 324
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 12 294 325 "src/physic.ml" 12 294 326
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/physic.ml" 10 163 168 "src/physic.ml" 10 163 169
+)
+"src/physic.ml" 12 294 325 "src/physic.ml" 12 294 332
+type(
+  Point.t
+)
+"src/physic.ml" 12 294 325 "src/physic.ml" 12 294 334
+type(
+  int
+)
+"src/physic.ml" 12 294 312 "src/physic.ml" 12 294 334
+type(
+  float
+)
+"src/physic.ml" 12 294 336 "src/physic.ml" 12 294 348
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/physic.ml" 12 294 349 "src/physic.ml" 12 294 350
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/physic.ml" 10 163 168 "src/physic.ml" 10 163 169
+)
+"src/physic.ml" 12 294 349 "src/physic.ml" 12 294 356
+type(
+  Point.t
+)
+"src/physic.ml" 12 294 349 "src/physic.ml" 12 294 358
+type(
+  int
+)
+"src/physic.ml" 12 294 336 "src/physic.ml" 12 294 358
+type(
+  float
+)
+"src/physic.ml" 12 294 312 "src/physic.ml" 12 294 358
+type(
+  float * float
+)
+"src/physic.ml" 13 362 368 "src/physic.ml" 13 362 371
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.sin
+)
+"src/physic.ml" 13 362 373 "src/physic.ml" 13 362 377
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.acos
+)
+"src/physic.ml" 13 362 379 "src/physic.ml" 13 362 384
+type(
+  float * float -> float * float -> float * float -> float
+)
+ident(
+  int_ref angle "src/physic.ml" 6 47 51 "src/physic.ml" 6 47 56
+)
+"src/physic.ml" 13 362 386 "src/physic.ml" 13 362 388
+type(
+  float
+)
+ident(
+  int_ref xa "src/physic.ml" 11 226 234 "src/physic.ml" 11 226 236
+)
+"src/physic.ml" 13 362 390 "src/physic.ml" 13 362 392
+type(
+  float
+)
+ident(
+  int_ref ya "src/physic.ml" 11 226 238 "src/physic.ml" 11 226 240
+)
+"src/physic.ml" 13 362 385 "src/physic.ml" 13 362 393
+type(
+  float * float
+)
+"src/physic.ml" 13 362 395 "src/physic.ml" 13 362 397
+type(
+  float
+)
+ident(
+  int_ref xb "src/physic.ml" 12 294 302 "src/physic.ml" 12 294 304
+)
+"src/physic.ml" 13 362 399 "src/physic.ml" 13 362 401
+type(
+  float
+)
+ident(
+  int_ref yb "src/physic.ml" 12 294 306 "src/physic.ml" 12 294 308
+)
+"src/physic.ml" 13 362 394 "src/physic.ml" 13 362 402
+type(
+  float * float
+)
+"src/physic.ml" 13 362 404 "src/physic.ml" 13 362 406
+type(
+  float
+)
+ident(
+  int_ref xc "src/physic.ml" 10 163 178 "src/physic.ml" 10 163 180
+)
+"src/physic.ml" 13 362 408 "src/physic.ml" 13 362 410
+type(
+  float
+)
+ident(
+  int_ref yc "src/physic.ml" 10 163 182 "src/physic.ml" 10 163 184
+)
+"src/physic.ml" 13 362 403 "src/physic.ml" 13 362 411
+type(
+  float * float
+)
+"src/physic.ml" 13 362 378 "src/physic.ml" 13 362 412
+call(
+  stack
+)
+type(
+  float
+)
+"src/physic.ml" 13 362 372 "src/physic.ml" 13 362 413
+type(
+  float
+)
+"src/physic.ml" 13 362 368 "src/physic.ml" 13 362 413
+type(
+  float
+)
+"src/physic.ml" 13 362 414 "src/physic.ml" 13 362 415
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/physic.ml" 13 362 416 "src/physic.ml" 13 362 433
+type(
+  float
+)
+ident(
+  ext_ref Options.step_dist
+)
+"src/physic.ml" 13 362 368 "src/physic.ml" 13 362 433
+type(
+  bool
+)
+"src/physic.ml" 13 362 439 "src/physic.ml" 13 362 444
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/physic.ml" 13 362 445 "src/physic.ml" 13 362 449
+type(
+  exn
+)
+"src/physic.ml" 13 362 439 "src/physic.ml" 13 362 449
+type(
+  unit
+)
+"src/physic.ml" 13 362 365 "src/physic.ml" 13 362 449
+type(
+  unit
+)
+"src/physic.ml" 12 294 297 "src/physic.ml" 13 362 449
+type(
+  unit
+)
+"src/physic.ml" 11 226 229 "src/physic.ml" 13 362 449
+type(
+  unit
+)
+"src/physic.ml" 10 163 173 "src/physic.ml" 13 362 449
+type(
+  unit
+)
+"src/physic.ml" 10 163 164 "src/physic.ml" 13 362 449
+type(
+  Segment.t -> unit
+)
+"src/physic.ml" 16 452 456 "src/physic.ml" 16 452 472
+type(
+  Point.t -> Bsp.t -> bool
+)
+ident(
+  def detect_collision "src/physic.ml" 20 536 548 "src/physic.ml" 1 0 -1
+)
+"src/physic.ml" 16 452 473 "src/physic.ml" 16 452 474
+type(
+  Point.t
+)
+ident(
+  def p "src/physic.ml" 16 452 475 "src/physic.ml" 20 536 548
+)
+"src/physic.ml" 16 452 475 "src/physic.ml" 16 452 478
+type(
+  Bsp.t
+)
+ident(
+  def bsp "src/physic.ml" 17 482 483 "src/physic.ml" 20 536 548
+)
+"src/physic.ml" 18 487 489 "src/physic.ml" 18 487 498
+type(
+  (Segment.t -> unit) -> Bsp.t -> Point.t -> unit
+)
+ident(
+  ext_ref Bsp.parse
+)
+"src/physic.ml" 18 487 500 "src/physic.ml" 18 487 513
+type(
+  Point.t -> Segment.t -> unit
+)
+ident(
+  int_ref procheSegment "src/physic.ml" 9 141 145 "src/physic.ml" 9 141 158
+)
+"src/physic.ml" 18 487 514 "src/physic.ml" 18 487 515
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 16 452 473 "src/physic.ml" 16 452 474
+)
+"src/physic.ml" 18 487 499 "src/physic.ml" 18 487 516
+call(
+  stack
+)
+type(
+  Segment.t -> unit
+)
+"src/physic.ml" 18 487 517 "src/physic.ml" 18 487 520
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp "src/physic.ml" 16 452 475 "src/physic.ml" 16 452 478
+)
+"src/physic.ml" 18 487 521 "src/physic.ml" 18 487 522
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 16 452 473 "src/physic.ml" 16 452 474
+)
+"src/physic.ml" 18 487 489 "src/physic.ml" 18 487 522
+call(
+  stack
+)
+type(
+  unit
+)
+"src/physic.ml" 18 487 524 "src/physic.ml" 18 487 529
+type(
+  bool
+)
+"src/physic.ml" 18 487 489 "src/physic.ml" 18 487 529
+type(
+  bool
+)
+"src/physic.ml" 20 536 539 "src/physic.ml" 20 536 540
+type(
+  exn
+)
+"src/physic.ml" 20 536 544 "src/physic.ml" 20 536 548
+type(
+  bool
+)
+"src/physic.ml" 17 482 483 "src/physic.ml" 20 536 548
 type(
   bool
 )
