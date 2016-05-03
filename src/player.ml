@@ -30,7 +30,7 @@ let radian_of_deg deg =
 	l'angle 0 corespond à l'état ou le personnage est tourné vers la droite
 *)
 let move d p bsp = 
-	if Physic.detect_collision p.pos bsp then
+	if not (Physic.detect_collision p.pos bsp) then 
 	match d with
 	| MFwd -> p.pos <- Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
 										(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))

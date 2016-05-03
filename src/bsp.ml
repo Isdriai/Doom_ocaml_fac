@@ -2,8 +2,6 @@ open Segment
 
 type t = E | N of Segment.t * t * t 
 
-
-
 let rec parse f bsp p = 
 	match bsp with
 	| E -> ()
@@ -19,7 +17,6 @@ let rec rev_parse f bsp p = match bsp with
 let rec iter f =  function 
 	| E -> ()
 	| N (r, g, d) -> iter f g ; f r; iter f d
-					
 
 
 let build_bsp sl = 
