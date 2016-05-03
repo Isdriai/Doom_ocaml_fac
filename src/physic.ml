@@ -3,7 +3,7 @@ open Options
 open Point
 open Segment
 
-let angle (xa, ya) (xb, yb) (xc, yc) =
+let scalair (xa, ya) (xb, yb) (xc, yc) =
 	(xb -. xa) *. (xc -. xa) +. (yb -. ya) *. (yc -. ya)
 
 
@@ -11,7 +11,7 @@ let procheSegment p =
 	fun s -> let (xc, yc) = float_of_int p.x, float_of_int p.y in
 			let (xa, ya) = float_of_int s.porig.x, float_of_int s.porig.y in
 			let (xb, yb) = float_of_int s.pdest.x, float_of_int s.pdest.y in
-			if sin (acos (angle (xa, ya) (xb, yb) (xc, yc))) < Options.step_dist then raise Exit
+			if sin (acos (scalair(xa, ya) (xb, yb) (xc, yc))) < Options.step_dist then raise Exit
 
 
 let rec secteurProche f bsp p = 
