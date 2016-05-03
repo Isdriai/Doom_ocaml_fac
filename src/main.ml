@@ -44,7 +44,7 @@ let rec affiche_split (l,r) =
 	| sl::g , [] ->  affiche_segment sl; affiche_split (g, [])
 
 let () = 
-	let s1 = Segment.new_segment 1 1 0 0 in 
+	let s1 = Segment.new_segment 0 0 1 1 in 
 	let s2 = Segment.new_segment 1 0 3 0 in 
 	let s3 = Segment.new_segment 2 1 2 3 in 
 	let s4 = Segment.new_segment 3 1 4 0 in 
@@ -134,12 +134,12 @@ let () =
 
 
 	Printf.printf "affichage display :\n\n";
-	
+
 	let s = string_of_int (500) in 
 	let a =  " " ^ s ^ "x" ^ s in
 	Graphics.open_graph a;
 
-	let s_d = Segment.new_segment 2 0 2 3 in
+	(* let s_d = Segment.new_segment 2 0 2 3 in
 	let bd = Bsp.build_bsp (s_d::[]) in
 	let playerd = Player.new_player (Point.new_point 0 0) 90 in
 
@@ -158,12 +158,12 @@ let () =
 
 	Render.display b2 player2; 
 
-	(*resultat attendu = 
+	resultat attendu = 
 		
 		xa: 1, ya: -1
  		xb: 1, yb: -3
 
-	*)
+	
 
 	let s_d3 = Segment.new_segment (-3) 1 (-1) 3 in
 	let b3 = Bsp.build_bsp (s_d3::[]) in
@@ -180,7 +180,17 @@ let () =
 		mais avec les histoires de int/float c'est moins précis
 
 		Tout est ok
-	*)
+	*) *)
+
+	
+	let bsp_test = Bsp.build_bsp (s1::s2::s3::s4::[]) in 
+	let player_test = Player.new_player (Point.new_point (-1) 0) 0 in 
+
+	Render.display bsp_test player_test ;
+	affiche_bsp_bis bsp_test;
+
+
+
 	let s = Graphics.wait_next_event [Graphics.Button_down;Graphics.Key_pressed] in ()
 	
 ;;
