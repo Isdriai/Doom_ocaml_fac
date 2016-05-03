@@ -27,28 +27,38 @@ let get_position p s =
 
 let split_segment d s = 
 	match get_position s.porig d, get_position s.pdest d with
-	| L,L -> (Some (d), None)
-	| R,R -> (None, Some (d)) 
+	| L,L -> (Some (s), None)
+	| R,C -> (None, Some (s)) 
+	| R,R -> (None, Some (s)) 
+	| C,R -> (None, Some (s)) 
+	| L,C -> (Some (s), None)
+	| C,L -> (Some (s), None)
 	| _,_ -> 
 	
-	let xa = d.porig.x in 
-	let xb = d.pdest.x in 
-	let ya = d.porig.y in 
-	let yb = d.pdest.y in 
-	let xc = s.porig.x in 
-	let xd = s.pdest.x in 
-	let yc = s.porig.y in 
-	let yd = s.pdest.y in 
+	let xa = float_of_int s.porig.x in 
+	let xb = float_of_int s.pdest.x in 
+	let ya = float_of_int s.porig.y in 
+	let yb = float_of_int s.pdest.y in 
+	let xc = float_of_int d.porig.x in 
+	let xd = float_of_int d.pdest.x in 
+	let yc = float_of_int d.porig.y in 
+	let yd = float_of_int d.pdest.y in 
 
-	let dd = ((xb - xa) * (yd - yc) - (yb - ya) * (xd - xc)) in
+	let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
 
-	if dd = 0 then (Some (d), None)
-	else
+	(*if dd = 0 then (Some (s), None)
+	else*)
+	(* Printf.printf "dd: %d" dd; *) 
 
-	let r = ((ya - yc) * (xd - xc) - (xa - xc) * (yd - yc)) / dd in 
-	let xi = xa + r * (xb - xa)  in 
-    let yi = ya + r * (yb - ya)  in 
-    (Some (new_segment xc yc xi yi), Some(new_segment xi yi xd yd))	
+	let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
+	let xi = truncate (xa +. r *. (xb -. xa))  in 
+    let yi = truncate (ya +. r *. (yb -. ya))  in 
+    (* Printf.printf "result: %f\n" ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc));
+    Printf.printf "dd: %f\n" dd;
+    Printf.printf "r: %f\n" r;
+    Printf.printf "xi: %d\n" xi;
+    Printf.printf "yi: %d\n" yi; *)
+    (Some (new_segment (truncate xa) (truncate ya) xi yi), Some(new_segment xi yi (truncate xb) (truncate yb)))	
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 

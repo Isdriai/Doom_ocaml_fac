@@ -38,13 +38,17 @@ let rec affiche_split (l,r) =
 	| sl::g , [] ->  affiche_segment sl; affiche_split (g, [])
 
 let () = 
-	let s1 = Segment.new_segment 0 0 1 1 in 
+	let s1 = Segment.new_segment 1 1 0 0 in 
 	let s2 = Segment.new_segment 1 0 3 0 in 
 	let s3 = Segment.new_segment 2 1 2 3 in 
 	let s4 = Segment.new_segment 3 1 4 0 in 
+
+ 	let test_split_segment = Segment.split_segment s1 s3 in 
+ 
 	let l_seg = s1::s2::s3::s4::[] in
 	let test_split = Segment.split s1 l_seg in 
-	let b = Bsp.build_bsp l_seg in
+	let b = Bsp.build_bsp l_seg in 
+
 	Printf.printf "bsp :\n\n";
 	affiche_bsp b;
 
@@ -71,8 +75,8 @@ let () =
 	Player.move Player.MFwd player (Bsp.build_bsp []);
 	affiche_point player.pos;
 
-	(*on voit bien que ca marche, voir la sortie, 
-	on remet le joueur comme avant*)
+	(* on voit bien que ca marche, voir la sortie, 
+	on remet le joueur comme avant *)
 
 	Player.move Player.MBwd player (Bsp.build_bsp []);
 	affiche_point player.pos;
