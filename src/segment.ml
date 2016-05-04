@@ -1,9 +1,14 @@
 open Point
 open String
+(* cree deux segment *)
 
 type t = {id : string; 
           porig : Point.t; 
           pdest : Point.t;
+          boite_gauche_orig : Point.t;
+          boite_gauche_dest : Point.t;
+          boite_droite_orig : Point.t;
+          boite_droite_dest : Point.t;
          }
 
 type tpos = L | R | C
@@ -12,10 +17,25 @@ let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
 
+
+
+let angleNormal xa ya xb yb = 
+	let y = float_of_int (yb - ya) in
+	let x = float_of_int (xb - xa) in
+	let tang = atan (y /. x) in (* calcule de l'angle de la normal*)
+	truncate (tang *. 180. /. 3.14)
+
 let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
+	let ang = angleNormal xo yo xd yd in
+	let igG = {x = xo + 5 * ang ; y = yo + 5 * ang} in 
+	let estG = {x = xd + 5 * ang ; y = yd + 5 * ang} in 
+	let igD = {x = xo - 5 * ang ; y = yo - 5 * ang} in 
+	let estD = {x = xd - 5 * ang ; y = yd - 5 * ang} in 
 	let c = compteur() in 
-	let p = {id = string_of_int c; porig = ig ; pdest = est } 
+	let p = {id = string_of_int c; porig = ig ; pdest = est;
+			 boite_gauche_orig = igG; boite_gauche_dest = estG;
+			 boite_droite_orig = igD; boite_droite_dest = estD} 
 	in p
 
 let get_position p s = 

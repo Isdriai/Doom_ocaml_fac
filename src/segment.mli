@@ -1,8 +1,12 @@
-type t = {
-  id : string;
-  porig : Point.t; 
-  pdest : Point.t;
-}
+type t = {id : string; 
+          porig : Point.t; 
+          pdest : Point.t;
+          boite_gauche_orig : Point.t;
+          boite_gauche_dest : Point.t;
+          boite_droite_orig : Point.t;
+          boite_droite_dest : Point.t;
+         }
+
 
 type tpos = L | R | C
 
