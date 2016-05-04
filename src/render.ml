@@ -8,6 +8,13 @@ let taille = 500
 
 let angle_vision = 90
 
+let d_focale = truncate(float_of_int(taille)/.tan ((float_of_int angle_vision)/. 2.)) 
+
+let affiche_segment s = 
+	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
+
+
+
 let calcul_vecteur p s =
 	Segment.new_segment (s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
@@ -46,32 +53,77 @@ let draw_line xo yo xd yd =
 	let decal = 0 in
 	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
 
-let correction_y ymax ymin ytest = 
-	if ytest < ymin then ymin
-	else if ytest > ymax then ymax
-	else ytest
+let correction_c cmax cmin ctest = 
+	if ctest < cmin then cmin
+	else if ctest > cmax then cmax
+	else ctest
 
 
-(*y' = ( ls / 2 ) - (( y * d ) / x *)
-let project l d p =
-	l - truncate( float_of_int( p.y * d) /. float_of_int p.x)
+let distance x y =
+	let xf = float_of_int x in
+	let yf = float_of_int y in
 
+	sqrt ((xf**2.)+.(yf**2.))
 
+(*
+on calcule la correspondance entre la projection et la coordonnée x de l'affichage, 
+ce qui revient à faire une fonction affine
+*)
+let calcul_p_x c =
+	let a = float_of_int(taille)/.float_of_int(d_focale*2) in 
+	let b = float_of_int(taille/2) in
+	truncate (-.a *. float_of_int (c) +. b)
+
+let calcul_p_y x y =
+	let echelle = float_of_int(taille/2) in
+	let rapport = float_of_int d_focale /. distance x y in
+	truncate(echelle *. rapport)+(taille/2)
+
+let passage_3d xo yo xd yd co cd =
+	let p_gauche = Point.new_point
+
+	(calcul_p_x co)
+	(calcul_p_y xo yo)
+	in
+	let p_droite = Point.new_point
+	(calcul_p_x cd)
+	(calcul_p_y xd yd)
+	in
+	Graphics.set_color (Graphics.rgb 255 0 0);
+	Graphics.fill_poly [|
+		p_gauche.x,p_gauche.y;
+		p_gauche.x,(-p_gauche.y);
+		p_droite.x,p_droite.y;
+		p_droite.x,(-p_droite.y)
+	|]
 
 let projection seg  =
-	let d_focale = truncate(float_of_int(taille)/.tan ((float_of_int angle_vision)/. 2.)) in 
-	let ymax = truncate((dtan (angle_vision/2)) *. float_of_int(d_focale)) in
-	let ymin = (-ymax) in 
-	let ls = ymax - ymin in 
-	let y_p_orig = project ls d_focale seg.porig in
-	let y_p_dest = project ls d_focale seg.pdest in
 
-	match y_p_orig, y_p_dest with
-	| a,b when a > ymax && b > ymax -> Printf.printf "ymax: %d, ymin: %d, a :%d, b: %d\n\n" ymax ymin a b
-	| a,b when a < ymin && b < ymin -> Printf.printf "ymax: %d, ymin: %d, a :%d, b: %d\n\n" ymax ymin a b
-	| a,b -> let cor = (correction_y ymax ymin) in 
-			Printf.printf "x :%d, y1: %d, x : %d, y2 : %d \n\n" d_focale (cor y_p_dest) d_focale (cor y_p_orig)
+	(*y' = ( ls / 2 ) - (( y * d ) / x *)
+	let project l d p =
+		truncate(float_of_int (d * p.y) /. float_of_int( p.x )) in
 
+	affiche_segment seg;
+	let cmax = truncate((dtan (angle_vision/2)) *. float_of_int(d_focale)) in
+	Printf.printf "d == %d \ncmax: %d\n" d_focale cmax ; 
+	let cmin = (-cmax) in 
+	Printf.printf "cmin: %d\n" cmin;
+	let ls = cmax - cmin in 
+	let c_p_orig = project ls d_focale seg.porig in
+	Printf.printf "c_p_orig: %d\n" c_p_orig;
+	let c_p_dest = project ls d_focale seg.pdest in
+	Printf.printf "c_p_dest: %d\n" c_p_dest;
+
+	match c_p_orig, c_p_dest with
+	| a,b when a > cmax && b > cmax -> ()
+	| a,b when a < cmin && b < cmin -> ()
+	| a,b -> let cor = (correction_c cmax cmin) in 
+			passage_3d seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y (cor c_p_dest) (cor c_p_orig)
+			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
+(*
+devra renvoyer un quator de points qui representeront les 4 coins du mur à afficher
+projection seg -> Point.t * Point.t * Point.t * Point.t
+*)
 
 let affiche p = fun s -> 
 
@@ -80,15 +132,14 @@ let affiche p = fun s ->
 
 	match clip with
 	| None -> ()
-	| Some(seg) -> 
-	(projection seg ;
-	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
+	| Some(seg) -> (projection seg ;
+	(* Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
 	Graphics.set_color (Graphics.rgb 255 0 0);
-	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y)
+	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y *))
 
 (*faire fenetre graphique et afficher les segments dedans*)
 
 let display bsp p = 
 
-	Bsp.parse (affiche p) bsp p.pos
+	Bsp.rev_parse (affiche p) bsp p.pos
 	

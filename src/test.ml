@@ -43,7 +43,16 @@ let rec affiche_split (l,r) =
 	| [], sr::d -> affiche_segment sr; affiche_split ([], d)
 	| sl::g , [] ->  affiche_segment sl; affiche_split (g, [])
 
-let test () = 
+
+let construire_liste (_,lab) =
+	let rec cl l acc =
+		match l with
+		 | [] -> acc
+		 | (x1, y1, x2, y2)::b -> cl b ((Segment.new_segment x1 y1 x2 y2)::acc)
+		in
+	cl lab []
+
+let test lab = 
 	let s1 = Segment.new_segment 0 0 1 1 in 
 	let s2 = Segment.new_segment 1 0 3 0 in 
 	let s3 = Segment.new_segment 2 1 2 3 in 
@@ -53,7 +62,7 @@ let test () =
 	let s7 = Segment.new_segment 5 6 5 7 in 
 	let s8 = Segment.new_segment 0 10 0 0 in
  	let test_split_segment = Segment.split_segment s1 s3 in 
- 
+ 	let l_lab = construire_liste lab in 
 	let l_seg = s1::s2::s3::s4::s5::s6::s7::s8::[] in
 	let test_split = Segment.split s1 l_seg in 
 	let b = Bsp.build_bsp l_seg in 
@@ -184,9 +193,10 @@ let test () =
 	*) 
 
 	
-	let bsp_test = Bsp.build_bsp (s2::[]) in 
+	let bsp_test = Bsp.build_bsp l_lab in 
 	let player_test = Player.new_player (Point.new_point 4 (-2)) 90 in 
 	affiche_bsp_bis bsp_test; 
+	Printf.printf "\n\n";
 
 
 	Render.display bsp_test player_test ;

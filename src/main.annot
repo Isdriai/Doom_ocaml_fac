@@ -1,64 +1,121 @@
-"src/main.ml" 4 26 30 "src/main.ml" 4 26 32
+"src/main.ml" 5 41 45 "src/main.ml" 5 41 47
 type(
   unit
 )
-"src/main.ml" 5 36 37 "src/main.ml" 5 36 41
+"src/main.ml" 6 51 56 "src/main.ml" 6 51 59
 type(
-  unit -> unit
+  (int * int * int) * (int * int * int * int) list
+)
+ident(
+  def lab "src/main.ml" 7 107 108 "src/main.ml" 9 196 203
+)
+"src/main.ml" 6 51 62 "src/main.ml" 6 51 80
+type(
+  in_channel -> (int * int * int) * (int * int * int * int) list
+)
+ident(
+  ext_ref Parse_lab.read_lab
+)
+"src/main.ml" 6 51 82 "src/main.ml" 6 51 89
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"src/main.ml" 6 51 90 "src/main.ml" 6 51 98
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"src/main.ml" 6 51 100 "src/main.ml" 6 51 101
+type(
+  int
+)
+"src/main.ml" 6 51 90 "src/main.ml" 6 51 102
+type(
+  string
+)
+"src/main.ml" 6 51 81 "src/main.ml" 6 51 103
+call(
+  stack
+)
+type(
+  in_channel
+)
+"src/main.ml" 6 51 62 "src/main.ml" 6 51 103
+call(
+  stack
+)
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/main.ml" 7 107 108 "src/main.ml" 7 107 112
+type(
+  (int * int * int) * (int * int * int * int) list -> unit
 )
 ident(
   ext_ref Test.test
 )
-"src/main.ml" 5 36 42 "src/main.ml" 5 36 44
+"src/main.ml" 7 107 113 "src/main.ml" 7 107 116
 type(
-  unit
+  (int * int * int) * (int * int * int * int) list
 )
-"src/main.ml" 5 36 37 "src/main.ml" 5 36 44
+ident(
+  int_ref lab "src/main.ml" 6 51 56 "src/main.ml" 6 51 59
+)
+"src/main.ml" 7 107 108 "src/main.ml" 7 107 116
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 6 46 51 "src/main.ml" 6 46 52
+"src/main.ml" 8 118 123 "src/main.ml" 8 118 124
 type(
   Graphics.status
 )
 ident(
-  def s "src/main.ml" 7 124 129 "src/main.ml" 7 124 131
+  def s "src/main.ml" 9 196 201 "src/main.ml" 9 196 203
 )
-"src/main.ml" 6 46 55 "src/main.ml" 6 46 79
+"src/main.ml" 8 118 127 "src/main.ml" 8 118 151
 type(
   Graphics.event list -> Graphics.status
 )
 ident(
   ext_ref Graphics.wait_next_event
 )
-"src/main.ml" 6 46 81 "src/main.ml" 6 46 101
+"src/main.ml" 8 118 153 "src/main.ml" 8 118 173
 type(
   Graphics.event
 )
-"src/main.ml" 6 46 102 "src/main.ml" 6 46 122
+"src/main.ml" 8 118 174 "src/main.ml" 8 118 194
 type(
   Graphics.event
 )
-"src/main.ml" 6 46 80 "src/main.ml" 6 46 123
+"src/main.ml" 8 118 152 "src/main.ml" 8 118 195
 type(
   Graphics.event list
 )
-"src/main.ml" 6 46 55 "src/main.ml" 6 46 123
+"src/main.ml" 8 118 127 "src/main.ml" 8 118 195
 type(
   Graphics.status
 )
-"src/main.ml" 7 124 129 "src/main.ml" 7 124 131
+"src/main.ml" 9 196 201 "src/main.ml" 9 196 203
 type(
   unit
 )
-"src/main.ml" 6 46 47 "src/main.ml" 7 124 131
+"src/main.ml" 8 118 119 "src/main.ml" 9 196 203
 type(
   unit
 )
-"src/main.ml" 5 36 37 "src/main.ml" 7 124 131
+"src/main.ml" 7 107 108 "src/main.ml" 9 196 203
+type(
+  unit
+)
+"src/main.ml" 6 51 52 "src/main.ml" 9 196 203
 type(
   unit
 )
