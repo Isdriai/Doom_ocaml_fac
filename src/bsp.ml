@@ -19,16 +19,27 @@ let rec iter f =  function
 	| N (r, g, d) -> iter f g ; f r; iter f d
 
 
+let delta_min (x, ll, lr) (s, l, min) =
+	let delta = List.length ll - List.length lr in
+	if delta < min then (x , (ll, lr), delta)
+	else (s, l, min) 
+
+let rec equilibrage_bsp sl aVoir acc =
+	match aVoir with
+	|[] -> acc
+	|x::s -> let ll,lr = split x (List.filter (fun e -> x != e) sl) in equilibrage_bsp sl s (delta_min (x, ll, lr) acc)
+
 let build_bsp sl = 
 	let rec b_bsp = function
 		| []-> E
-		| x::s -> let (ll, lr) = split x s in N (x, b_bsp ll, b_bsp lr)
+		| l -> let (s, (ll, lr), _) = equilibrage_bsp l l (List.hd sl, ([], []), 8000) in N (s, b_bsp ll, b_bsp lr)
+		(* | x::s -> let (ll, lr) = split x s in N (x, b_bsp ll, b_bsp lr) *)
 	in
 	b_bsp sl
 
 
 
-let rec iter_cps f bsp=  
+(* let rec iter_cps f bsp=  
 	let rec iter cont = function 
 	| E -> cont ()
 	| N (r, g, d) -> let k  = (fun () -> f r; iter cont d)
@@ -79,4 +90,4 @@ let build_bsp_cps sl = (*presque*)
 				let k n = (match n with | None -> Some (E) | Some g ->  Some (N(x, g, let Some(d) = b_bsp cont lr in d))) in 
 				b_bsp k ll	
 	in
-	b_bsp (fun n -> match n with | None -> Some E | a -> a)	sl
+	b_bsp (fun n -> match n with | None -> Some E | a -> a)	sl *)
