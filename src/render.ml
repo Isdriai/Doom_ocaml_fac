@@ -4,6 +4,10 @@ open Trigo
 open Player
 open Graphics
 
+let taille = 500
+
+let angle_vision = 90
+
 let calcul_vecteur p s =
 	Segment.new_segment (s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
@@ -14,9 +18,6 @@ let calcul_vecteur p s =
 	x' = x cos a + y sin a
 	y' = -x sin a + y cos a
 *)
-
-(*à tester demain, voir si les y sont bons,
- et ecris tous les exemple comme il faut sur ta putain de feuille !*)
 
 let calcul_angle p s =
 	Segment.new_segment 
@@ -42,9 +43,28 @@ let clipping s =
 
 let draw_line xo yo xd yd =
 	let pixel = 20 in
-	let decal = 50 in
-	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
+	let decal = 0 in
+	Graphics.draw_segments [|yo*pixel+decal,xo*pixel+decal,yd*pixel+decal,xd*pixel+decal|]
 
+let correction_y ymax ymin ytest = 
+	if ytest < ymin then ymin
+	else if ytest > ymax then ymax
+	else ytest
+
+
+let projection seg  =
+	let d_focale = truncate(float_of_int(taille)/.tan ((float_of_int angle_vision)/. 2.)) in 
+	let ymax = truncate((dtan (angle_vision/2)) *. float_of_int(d_focale)) in
+	let ymin = (-ymax) in 
+	let ls = ymax - ymin in 
+	let y_p_orig = truncate((float_of_int ls /. 2.) -. (float_of_int(seg.porig.y - d_focale) /. float_of_int(seg.porig.x))) in
+	let y_p_dest = truncate((float_of_int ls /. 2.) -. (float_of_int(seg.pdest.y - d_focale) /. float_of_int(seg.pdest.x))) in
+
+	match y_p_orig, y_p_dest with
+	| a,b when a > ymax && b > ymax -> Printf.printf "ymax: %d, ymin: %d, a :%d, b: %d\n\n" ymax ymin a b
+	| a,b when a < ymin && b < ymin -> Printf.printf "ymax: %d, ymin: %d, a :%d, b: %d\n\n" ymax ymin a b
+	| a,b -> let cor = (correction_y ymax ymin) in 
+			Printf.printf "x :%d, y1: %d, x : %d, y2 : %d \n\n" d_focale (cor y_p_dest) d_focale (cor y_p_orig)
 
 
 let affiche p = fun s -> 
@@ -55,7 +75,8 @@ let affiche p = fun s ->
 	match clip with
 	| None -> ()
 	| Some(seg) -> 
-	(Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
+	(projection seg ;
+	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
 	Graphics.set_color (Graphics.rgb 255 0 0);
 	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y)
 

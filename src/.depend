@@ -7,6 +7,7 @@ src/physic.cmi :
 src/player.cmi :
 src/parse_lab.cmi :
 src/render.cmi :
+src/test.cmi :
 src/trigo.cmo : src/trigo.cmi
 src/trigo.cmx : src/trigo.cmi
 src/options.cmo : src/options.cmi
@@ -25,5 +26,7 @@ src/parse_lab.cmo : src/parse_lab.cmi
 src/parse_lab.cmx : src/parse_lab.cmi
 src/render.cmo : src/render.cmi
 src/render.cmx : src/render.cmi
+src/test.cmo : src/test.cmi
+src/test.cmx : src/test.cmi
 src/main.cmo :
 src/main.cmx :
