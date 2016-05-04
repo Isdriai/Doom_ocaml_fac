@@ -1072,7 +1072,7 @@ type(
   unit -> unit
 )
 ident(
-  def test "src/test.ml" 195 4353 4436 "src/test.ml" 1 0 -1
+  def test "src/test.ml" 192 4300 4338 "src/test.ml" 1 0 -1
 )
 "src/test.ml" 46 1041 1050 "src/test.ml" 46 1041 1052
 type(
@@ -1083,7 +1083,7 @@ type(
   Segment.t
 )
 ident(
-  def s1 "src/test.ml" 48 1098 1099 "src/test.ml" 195 4353 4436
+  def s1 "src/test.ml" 48 1098 1099 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 47 1056 1066 "src/test.ml" 47 1056 1085
 type(
@@ -1120,7 +1120,7 @@ type(
   Segment.t
 )
 ident(
-  def s2 "src/test.ml" 49 1140 1141 "src/test.ml" 195 4353 4436
+  def s2 "src/test.ml" 49 1140 1141 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 48 1098 1108 "src/test.ml" 48 1098 1127
 type(
@@ -1157,7 +1157,7 @@ type(
   Segment.t
 )
 ident(
-  def s3 "src/test.ml" 50 1182 1183 "src/test.ml" 195 4353 4436
+  def s3 "src/test.ml" 50 1182 1183 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 49 1140 1150 "src/test.ml" 49 1140 1169
 type(
@@ -1194,7 +1194,7 @@ type(
   Segment.t
 )
 ident(
-  def s4 "src/test.ml" 51 1224 1225 "src/test.ml" 195 4353 4436
+  def s4 "src/test.ml" 51 1224 1225 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 50 1182 1192 "src/test.ml" 50 1182 1211
 type(
@@ -1231,7 +1231,7 @@ type(
   Segment.t
 )
 ident(
-  def s5 "src/test.ml" 52 1266 1267 "src/test.ml" 195 4353 4436
+  def s5 "src/test.ml" 52 1266 1267 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 51 1224 1234 "src/test.ml" 51 1224 1253
 type(
@@ -1268,7 +1268,7 @@ type(
   Segment.t
 )
 ident(
-  def s6 "src/test.ml" 53 1308 1309 "src/test.ml" 195 4353 4436
+  def s6 "src/test.ml" 53 1308 1309 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 52 1266 1276 "src/test.ml" 52 1266 1295
 type(
@@ -1305,7 +1305,7 @@ type(
   Segment.t
 )
 ident(
-  def s7 "src/test.ml" 54 1350 1351 "src/test.ml" 195 4353 4436
+  def s7 "src/test.ml" 54 1350 1351 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 53 1308 1318 "src/test.ml" 53 1308 1337
 type(
@@ -1342,7 +1342,7 @@ type(
   Segment.t
 )
 ident(
-  def s8 "src/test.ml" 55 1392 1394 "src/test.ml" 195 4353 4436
+  def s8 "src/test.ml" 55 1392 1394 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 54 1350 1360 "src/test.ml" 54 1350 1379
 type(
@@ -1379,7 +1379,7 @@ type(
   Segment.t option * Segment.t option
 )
 ident(
-  def test_split_segment "src/test.ml" 57 1453 1454 "src/test.ml" 195 4353 4436
+  def test_split_segment "src/test.ml" 57 1453 1454 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 55 1392 1419 "src/test.ml" 55 1392 1440
 type(
@@ -1414,7 +1414,7 @@ type(
   Segment.t list
 )
 ident(
-  def l_seg "src/test.ml" 58 1504 1505 "src/test.ml" 195 4353 4436
+  def l_seg "src/test.ml" 58 1504 1505 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 57 1453 1466 "src/test.ml" 57 1453 1468
 type(
@@ -1513,7 +1513,7 @@ type(
   Segment.t list * Segment.t list
 )
 ident(
-  def test_split "src/test.ml" 59 1549 1550 "src/test.ml" 195 4353 4436
+  def test_split "src/test.ml" 59 1549 1550 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 58 1504 1522 "src/test.ml" 58 1504 1535
 type(
@@ -1548,7 +1548,7 @@ type(
   Bsp.t
 )
 ident(
-  def b "src/test.ml" 61 1583 1584 "src/test.ml" 195 4353 4436
+  def b "src/test.ml" 61 1583 1584 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 59 1549 1558 "src/test.ml" 59 1549 1571
 type(
@@ -1693,7 +1693,7 @@ type(
   Point.t
 )
 ident(
-  def p "src/test.ml" 73 1794 1795 "src/test.ml" 195 4353 4436
+  def p "src/test.ml" 73 1794 1795 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 72 1761 1770 "src/test.ml" 72 1761 1785
 type(
@@ -1722,7 +1722,7 @@ type(
   Player.t
 )
 ident(
-  def player "src/test.ml" 75 1836 1837 "src/test.ml" 195 4353 4436
+  def player "src/test.ml" 75 1836 1837 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 73 1794 1808 "src/test.ml" 73 1794 1825
 type(
@@ -2502,7 +2502,7 @@ type(
   string
 )
 ident(
-  def s "src/test.ml" 140 3262 3263 "src/test.ml" 195 4353 4436
+  def s "src/test.ml" 140 3262 3263 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 139 3219 3228 "src/test.ml" 139 3219 3241
 type(
@@ -2530,7 +2530,7 @@ type(
   string
 )
 ident(
-  def a "src/test.ml" 141 3293 3294 "src/test.ml" 195 4353 4436
+  def a "src/test.ml" 141 3293 3294 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 140 3262 3272 "src/test.ml" 140 3262 3275
 type(
@@ -2622,7 +2622,7 @@ type(
   Bsp.t
 )
 ident(
-  def bsp_test "src/test.ml" 188 4213 4214 "src/test.ml" 195 4353 4436
+  def bsp_test "src/test.ml" 188 4201 4202 "src/test.ml" 192 4300 4338
 )
 "src/test.ml" 187 4158 4174 "src/test.ml" 187 4158 4187
 type(
@@ -2636,391 +2636,316 @@ type(
   Segment.t
 )
 ident(
-  int_ref s1 "src/test.ml" 47 1056 1061 "src/test.ml" 47 1056 1063
+  int_ref s2 "src/test.ml" 48 1098 1103 "src/test.ml" 48 1098 1105
 )
 "src/test.ml" 187 4158 4193 "src/test.ml" 187 4158 4195
 type(
-  Segment.t
+  Segment.t list
 )
-ident(
-  int_ref s2 "src/test.ml" 48 1098 1103 "src/test.ml" 48 1098 1105
-)
-"src/test.ml" 187 4158 4197 "src/test.ml" 187 4158 4199
-type(
-  Segment.t
-)
-ident(
-  int_ref s3 "src/test.ml" 49 1140 1145 "src/test.ml" 49 1140 1147
-)
-"src/test.ml" 187 4158 4201 "src/test.ml" 187 4158 4203
-type(
-  Segment.t
-)
-ident(
-  int_ref s4 "src/test.ml" 50 1182 1187 "src/test.ml" 50 1182 1189
-)
-"src/test.ml" 187 4158 4205 "src/test.ml" 187 4158 4207
+"src/test.ml" 187 4158 4188 "src/test.ml" 187 4158 4196
 type(
   Segment.t list
 )
-"src/test.ml" 187 4158 4201 "src/test.ml" 187 4158 4207
-type(
-  Segment.t list
-)
-"src/test.ml" 187 4158 4197 "src/test.ml" 187 4158 4207
-type(
-  Segment.t list
-)
-"src/test.ml" 187 4158 4193 "src/test.ml" 187 4158 4207
-type(
-  Segment.t list
-)
-"src/test.ml" 187 4158 4188 "src/test.ml" 187 4158 4208
-type(
-  Segment.t list
-)
-"src/test.ml" 187 4158 4174 "src/test.ml" 187 4158 4208
+"src/test.ml" 187 4158 4174 "src/test.ml" 187 4158 4196
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/test.ml" 188 4213 4218 "src/test.ml" 188 4213 4229
+"src/test.ml" 188 4201 4206 "src/test.ml" 188 4201 4217
 type(
   Player.t
 )
 ident(
-  def player_test "src/test.ml" 189 4282 4283 "src/test.ml" 195 4353 4436
+  def player_test "src/test.ml" 189 4270 4271 "src/test.ml" 192 4300 4338
 )
-"src/test.ml" 188 4213 4232 "src/test.ml" 188 4213 4249
+"src/test.ml" 188 4201 4220 "src/test.ml" 188 4201 4237
 type(
   Point.t -> int -> Player.t
 )
 ident(
   ext_ref Player.new_player
 )
-"src/test.ml" 188 4213 4251 "src/test.ml" 188 4213 4266
+"src/test.ml" 188 4201 4239 "src/test.ml" 188 4201 4254
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/test.ml" 188 4213 4267 "src/test.ml" 188 4213 4268
+"src/test.ml" 188 4201 4255 "src/test.ml" 188 4201 4256
 type(
   int
 )
-"src/test.ml" 188 4213 4269 "src/test.ml" 188 4213 4273
+"src/test.ml" 188 4201 4257 "src/test.ml" 188 4201 4261
 type(
   int
 )
-"src/test.ml" 188 4213 4250 "src/test.ml" 188 4213 4274
+"src/test.ml" 188 4201 4238 "src/test.ml" 188 4201 4262
 call(
   stack
 )
 type(
   Point.t
 )
-"src/test.ml" 188 4213 4275 "src/test.ml" 188 4213 4277
+"src/test.ml" 188 4201 4263 "src/test.ml" 188 4201 4265
 type(
   int
 )
-"src/test.ml" 188 4213 4232 "src/test.ml" 188 4213 4277
+"src/test.ml" 188 4201 4220 "src/test.ml" 188 4201 4265
 call(
   stack
 )
 type(
   Player.t
 )
-"src/test.ml" 189 4282 4283 "src/test.ml" 189 4282 4298
+"src/test.ml" 189 4270 4271 "src/test.ml" 189 4270 4286
 type(
   Bsp.t -> unit
 )
 ident(
   int_ref affiche_bsp_bis "src/test.ml" 33 689 693 "src/test.ml" 33 689 708
 )
-"src/test.ml" 189 4282 4299 "src/test.ml" 189 4282 4307
+"src/test.ml" 189 4270 4287 "src/test.ml" 189 4270 4295
 type(
   Bsp.t
 )
 ident(
   int_ref bsp_test "src/test.ml" 187 4158 4163 "src/test.ml" 187 4158 4171
 )
-"src/test.ml" 189 4282 4283 "src/test.ml" 189 4282 4307
+"src/test.ml" 189 4270 4271 "src/test.ml" 189 4270 4295
 call(
   stack
 )
 type(
   unit
 )
-"src/test.ml" 192 4312 4313 "src/test.ml" 192 4312 4327
+"src/test.ml" 192 4300 4301 "src/test.ml" 192 4300 4315
 type(
   Bsp.t -> Player.t -> unit
 )
 ident(
   ext_ref Render.display
 )
-"src/test.ml" 192 4312 4328 "src/test.ml" 192 4312 4336
+"src/test.ml" 192 4300 4316 "src/test.ml" 192 4300 4324
 type(
   Bsp.t
 )
 ident(
   int_ref bsp_test "src/test.ml" 187 4158 4163 "src/test.ml" 187 4158 4171
 )
-"src/test.ml" 192 4312 4337 "src/test.ml" 192 4312 4348
+"src/test.ml" 192 4300 4325 "src/test.ml" 192 4300 4336
 type(
   Player.t
 )
 ident(
-  int_ref player_test "src/test.ml" 188 4213 4218 "src/test.ml" 188 4213 4229
+  int_ref player_test "src/test.ml" 188 4201 4206 "src/test.ml" 188 4201 4217
 )
-"src/test.ml" 192 4312 4313 "src/test.ml" 192 4312 4348
+"src/test.ml" 192 4300 4301 "src/test.ml" 192 4300 4338
 call(
-  stack
+  tail
 )
 type(
   unit
 )
-"src/test.ml" 195 4353 4358 "src/test.ml" 195 4353 4359
-type(
-  Graphics.status
-)
-ident(
-  def s "src/test.ml" 195 4353 4434 "src/test.ml" 195 4353 4436
-)
-"src/test.ml" 195 4353 4362 "src/test.ml" 195 4353 4386
-type(
-  Graphics.event list -> Graphics.status
-)
-ident(
-  ext_ref Graphics.wait_next_event
-)
-"src/test.ml" 195 4353 4388 "src/test.ml" 195 4353 4408
-type(
-  Graphics.event
-)
-"src/test.ml" 195 4353 4409 "src/test.ml" 195 4353 4429
-type(
-  Graphics.event
-)
-"src/test.ml" 195 4353 4387 "src/test.ml" 195 4353 4430
-type(
-  Graphics.event list
-)
-"src/test.ml" 195 4353 4362 "src/test.ml" 195 4353 4430
-type(
-  Graphics.status
-)
-"src/test.ml" 195 4353 4434 "src/test.ml" 195 4353 4436
+"src/test.ml" 189 4270 4271 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 195 4353 4354 "src/test.ml" 195 4353 4436
+"src/test.ml" 188 4201 4202 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 192 4312 4313 "src/test.ml" 195 4353 4436
+"src/test.ml" 187 4158 4159 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 189 4282 4283 "src/test.ml" 195 4353 4436
+"src/test.ml" 141 3293 3294 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 188 4213 4214 "src/test.ml" 195 4353 4436
+"src/test.ml" 140 3262 3263 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 187 4158 4159 "src/test.ml" 195 4353 4436
+"src/test.ml" 139 3219 3220 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 141 3293 3294 "src/test.ml" 195 4353 4436
+"src/test.ml" 137 3176 3177 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 140 3262 3263 "src/test.ml" 195 4353 4436
+"src/test.ml" 119 2951 2952 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 139 3219 3220 "src/test.ml" 195 4353 4436
+"src/test.ml" 118 2904 2905 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 137 3176 3177 "src/test.ml" 195 4353 4436
+"src/test.ml" 116 2876 2877 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 119 2951 2952 "src/test.ml" 195 4353 4436
+"src/test.ml" 115 2829 2830 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 118 2904 2905 "src/test.ml" 195 4353 4436
+"src/test.ml" 113 2801 2802 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 116 2876 2877 "src/test.ml" 195 4353 4436
+"src/test.ml" 112 2755 2756 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 115 2829 2830 "src/test.ml" 195 4353 4436
+"src/test.ml" 111 2727 2728 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 113 2801 2802 "src/test.ml" 195 4353 4436
+"src/test.ml" 107 2670 2671 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 112 2755 2756 "src/test.ml" 195 4353 4436
+"src/test.ml" 106 2623 2624 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 111 2727 2728 "src/test.ml" 195 4353 4436
+"src/test.ml" 104 2595 2596 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 107 2670 2671 "src/test.ml" 195 4353 4436
+"src/test.ml" 103 2549 2550 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 106 2623 2624 "src/test.ml" 195 4353 4436
+"src/test.ml" 99 2455 2456 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 104 2595 2596 "src/test.ml" 195 4353 4436
+"src/test.ml" 98 2403 2404 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 103 2549 2550 "src/test.ml" 195 4353 4436
+"src/test.ml" 97 2374 2375 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 99 2455 2456 "src/test.ml" 195 4353 4436
+"src/test.ml" 95 2346 2347 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 98 2403 2404 "src/test.ml" 195 4353 4436
+"src/test.ml" 94 2294 2295 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 97 2374 2375 "src/test.ml" 195 4353 4436
+"src/test.ml" 89 2181 2182 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 95 2346 2347 "src/test.ml" 195 4353 4436
+"src/test.ml" 88 2129 2130 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 94 2294 2295 "src/test.ml" 195 4353 4436
+"src/test.ml" 87 2101 2102 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 89 2181 2182 "src/test.ml" 195 4353 4436
+"src/test.ml" 82 2034 2035 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 88 2129 2130 "src/test.ml" 195 4353 4436
+"src/test.ml" 81 1982 1983 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 87 2101 2102 "src/test.ml" 195 4353 4436
+"src/test.ml" 80 1947 1948 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 82 2034 2035 "src/test.ml" 195 4353 4436
+"src/test.ml" 75 1836 1837 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 81 1982 1983 "src/test.ml" 195 4353 4436
+"src/test.ml" 73 1794 1795 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 80 1947 1948 "src/test.ml" 195 4353 4436
+"src/test.ml" 72 1761 1762 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 75 1836 1837 "src/test.ml" 195 4353 4436
+"src/test.ml" 68 1731 1732 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 73 1794 1795 "src/test.ml" 195 4353 4436
+"src/test.ml" 67 1691 1692 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 72 1761 1762 "src/test.ml" 195 4353 4436
+"src/test.ml" 65 1670 1671 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 68 1731 1732 "src/test.ml" 195 4353 4436
+"src/test.ml" 64 1628 1629 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 67 1691 1692 "src/test.ml" 195 4353 4436
+"src/test.ml" 62 1611 1612 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 65 1670 1671 "src/test.ml" 195 4353 4436
+"src/test.ml" 61 1583 1584 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 64 1628 1629 "src/test.ml" 195 4353 4436
+"src/test.ml" 59 1549 1550 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 62 1611 1612 "src/test.ml" 195 4353 4436
+"src/test.ml" 58 1504 1505 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 61 1583 1584 "src/test.ml" 195 4353 4436
+"src/test.ml" 57 1453 1454 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 59 1549 1550 "src/test.ml" 195 4353 4436
+"src/test.ml" 55 1392 1394 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 58 1504 1505 "src/test.ml" 195 4353 4436
+"src/test.ml" 54 1350 1351 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 57 1453 1454 "src/test.ml" 195 4353 4436
+"src/test.ml" 53 1308 1309 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 55 1392 1394 "src/test.ml" 195 4353 4436
+"src/test.ml" 52 1266 1267 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 54 1350 1351 "src/test.ml" 195 4353 4436
+"src/test.ml" 51 1224 1225 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 53 1308 1309 "src/test.ml" 195 4353 4436
+"src/test.ml" 50 1182 1183 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 52 1266 1267 "src/test.ml" 195 4353 4436
+"src/test.ml" 49 1140 1141 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 51 1224 1225 "src/test.ml" 195 4353 4436
+"src/test.ml" 48 1098 1099 "src/test.ml" 192 4300 4338
 type(
   unit
 )
-"src/test.ml" 50 1182 1183 "src/test.ml" 195 4353 4436
-type(
-  unit
-)
-"src/test.ml" 49 1140 1141 "src/test.ml" 195 4353 4436
-type(
-  unit
-)
-"src/test.ml" 48 1098 1099 "src/test.ml" 195 4353 4436
-type(
-  unit
-)
-"src/test.ml" 47 1056 1057 "src/test.ml" 195 4353 4436
+"src/test.ml" 47 1056 1057 "src/test.ml" 192 4300 4338
 type(
   unit
 )

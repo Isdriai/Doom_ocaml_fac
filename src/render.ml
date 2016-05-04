@@ -44,7 +44,7 @@ let clipping s =
 let draw_line xo yo xd yd =
 	let pixel = 20 in
 	let decal = 0 in
-	Graphics.draw_segments [|yo*pixel+decal,xo*pixel+decal,yd*pixel+decal,xd*pixel+decal|]
+	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
 
 let correction_y ymax ymin ytest = 
 	if ytest < ymin then ymin
@@ -52,13 +52,19 @@ let correction_y ymax ymin ytest =
 	else ytest
 
 
+(*y' = ( ls / 2 ) - (( y * d ) / x *)
+let project l d p =
+	l - truncate( float_of_int( p.y * d) /. float_of_int p.x)
+
+
+
 let projection seg  =
 	let d_focale = truncate(float_of_int(taille)/.tan ((float_of_int angle_vision)/. 2.)) in 
 	let ymax = truncate((dtan (angle_vision/2)) *. float_of_int(d_focale)) in
 	let ymin = (-ymax) in 
 	let ls = ymax - ymin in 
-	let y_p_orig = truncate((float_of_int ls /. 2.) -. (float_of_int(seg.porig.y - d_focale) /. float_of_int(seg.porig.x))) in
-	let y_p_dest = truncate((float_of_int ls /. 2.) -. (float_of_int(seg.pdest.y - d_focale) /. float_of_int(seg.pdest.x))) in
+	let y_p_orig = project ls d_focale seg.porig in
+	let y_p_dest = project ls d_focale seg.pdest in
 
 	match y_p_orig, y_p_dest with
 	| a,b when a > ymax && b > ymax -> Printf.printf "ymax: %d, ymin: %d, a :%d, b: %d\n\n" ymax ymin a b

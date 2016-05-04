@@ -184,14 +184,11 @@ let test () =
 	*) 
 
 	
-	let bsp_test = Bsp.build_bsp (s1::s2::s3::s4::[]) in 
+	let bsp_test = Bsp.build_bsp (s2::[]) in 
 	let player_test = Player.new_player (Point.new_point 4 (-2)) 90 in 
 	affiche_bsp_bis bsp_test; 
 
 
 	Render.display bsp_test player_test ;
-
-
-	let s = Graphics.wait_next_event [Graphics.Button_down;Graphics.Key_pressed] in ()
 	
 ;;
