@@ -1318,133 +1318,181 @@ ident(
 type(
   unit
 )
-"src/options.ml" 85 1833 1837 "src/options.ml" 85 1833 1847
+"src/options.ml" 86 1848 1852 "src/options.ml" 86 1848 1862
 type(
-  touche -> string
+  char -> touche
 )
 ident(
-  def clavier_lg "src/options.ml" 95 2074 2094 "src/options.ml" 1 0 -1
+  def clavier_lg "src/options.ml" 102 2209 2230 "src/options.ml" 1 0 -1
 )
-"src/options.ml" 85 1833 1848 "src/options.ml" 85 1833 1854
+"src/options.ml" 86 1848 1863 "src/options.ml" 86 1848 1869
 type(
-  touche
+  char
 )
 ident(
-  def touche "src/options.ml" 85 1833 1857 "src/options.ml" 95 2074 2094
+  def touche "src/options.ml" 86 1848 1872 "src/options.ml" 102 2209 2230
 )
-"src/options.ml" 85 1833 1863 "src/options.ml" 85 1833 1864
+"src/options.ml" 86 1848 1878 "src/options.ml" 86 1848 1879
 type(
   tlang ref -> tlang
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"src/options.ml" 85 1833 1864 "src/options.ml" 85 1833 1868
+"src/options.ml" 86 1848 1879 "src/options.ml" 86 1848 1883
 type(
   tlang ref
 )
 ident(
   int_ref lang "src/options.ml" 81 1745 1749 "src/options.ml" 81 1745 1753
 )
-"src/options.ml" 85 1833 1863 "src/options.ml" 85 1833 1868
+"src/options.ml" 86 1848 1878 "src/options.ml" 86 1848 1883
 type(
   tlang
 )
-"src/options.ml" 86 1874 1877 "src/options.ml" 86 1874 1879
+"src/options.ml" 87 1889 1892 "src/options.ml" 87 1889 1894
 type(
   tlang
 )
-"src/options.ml" 86 1874 1890 "src/options.ml" 86 1874 1896
+"src/options.ml" 87 1889 1905 "src/options.ml" 87 1889 1911
 type(
-  touche
+  char
 )
 ident(
-  int_ref touche "src/options.ml" 85 1833 1848 "src/options.ml" 85 1833 1854
+  int_ref touche "src/options.ml" 86 1848 1863 "src/options.ml" 86 1848 1869
 )
-"src/options.ml" 87 1903 1914 "src/options.ml" 87 1903 1915
+"src/options.ml" 88 1918 1929 "src/options.ml" 88 1918 1932
+type(
+  char
+)
+"src/options.ml" 88 1918 1936 "src/options.ml" 88 1918 1937
 type(
   touche
 )
-"src/options.ml" 87 1903 1919 "src/options.ml" 87 1903 1922
+"src/options.ml" 89 1938 1949 "src/options.ml" 89 1938 1952
 type(
-  string
+  char
 )
-"src/options.ml" 88 1923 1934 "src/options.ml" 88 1923 1935
-type(
-  touche
-)
-"src/options.ml" 88 1923 1939 "src/options.ml" 88 1923 1942
-type(
-  string
-)
-"src/options.ml" 89 1943 1954 "src/options.ml" 89 1943 1955
+"src/options.ml" 89 1938 1956 "src/options.ml" 89 1938 1957
 type(
   touche
 )
-"src/options.ml" 89 1943 1959 "src/options.ml" 89 1943 1962
+"src/options.ml" 90 1958 1969 "src/options.ml" 90 1958 1972
 type(
-  string
+  char
 )
-"src/options.ml" 90 1963 1974 "src/options.ml" 90 1963 1975
+"src/options.ml" 90 1958 1976 "src/options.ml" 90 1958 1977
 type(
   touche
 )
-"src/options.ml" 90 1963 1979 "src/options.ml" 90 1963 1982
+"src/options.ml" 91 1978 1989 "src/options.ml" 91 1978 1992
 type(
-  string
+  char
 )
-"src/options.ml" 86 1874 1883 "src/options.ml" 90 1963 1983
+"src/options.ml" 91 1978 1996 "src/options.ml" 91 1978 1997
 type(
-  string
+  touche
 )
-"src/options.ml" 91 1984 1987 "src/options.ml" 91 1984 1989
+"src/options.ml" 92 1998 2009 "src/options.ml" 92 1998 2012
+type(
+  char
+)
+"src/options.ml" 92 1998 2016 "src/options.ml" 92 1998 2017
+type(
+  touche
+)
+"src/options.ml" 93 2018 2029 "src/options.ml" 93 2018 2032
+type(
+  char
+)
+"src/options.ml" 93 2018 2036 "src/options.ml" 93 2018 2037
+type(
+  touche
+)
+"src/options.ml" 94 2038 2049 "src/options.ml" 94 2038 2050
+type(
+  char
+)
+"src/options.ml" 94 2038 2054 "src/options.ml" 94 2038 2058
+type(
+  touche
+)
+"src/options.ml" 87 1889 1898 "src/options.ml" 94 2038 2059
+type(
+  touche
+)
+"src/options.ml" 95 2060 2063 "src/options.ml" 95 2060 2065
 type(
   tlang
 )
-"src/options.ml" 91 1984 2000 "src/options.ml" 91 1984 2006
+"src/options.ml" 95 2060 2076 "src/options.ml" 95 2060 2082
 type(
-  touche
+  char
 )
 ident(
-  int_ref touche "src/options.ml" 85 1833 1848 "src/options.ml" 85 1833 1854
+  int_ref touche "src/options.ml" 86 1848 1863 "src/options.ml" 86 1848 1869
 )
-"src/options.ml" 92 2013 2024 "src/options.ml" 92 2013 2025
+"src/options.ml" 96 2089 2100 "src/options.ml" 96 2089 2103
+type(
+  char
+)
+"src/options.ml" 96 2089 2107 "src/options.ml" 96 2089 2108
 type(
   touche
 )
-"src/options.ml" 92 2013 2029 "src/options.ml" 92 2013 2033
+"src/options.ml" 97 2109 2120 "src/options.ml" 97 2109 2123
 type(
-  string
+  char
 )
-"src/options.ml" 93 2034 2045 "src/options.ml" 93 2034 2046
+"src/options.ml" 97 2109 2127 "src/options.ml" 97 2109 2128
 type(
   touche
 )
-"src/options.ml" 93 2034 2050 "src/options.ml" 93 2034 2053
+"src/options.ml" 98 2129 2140 "src/options.ml" 98 2129 2143
 type(
-  string
+  char
 )
-"src/options.ml" 94 2054 2065 "src/options.ml" 94 2054 2066
+"src/options.ml" 98 2129 2147 "src/options.ml" 98 2129 2148
 type(
   touche
 )
-"src/options.ml" 94 2054 2070 "src/options.ml" 94 2054 2073
+"src/options.ml" 99 2149 2160 "src/options.ml" 99 2149 2163
 type(
-  string
+  char
 )
-"src/options.ml" 95 2074 2085 "src/options.ml" 95 2074 2086
+"src/options.ml" 99 2149 2167 "src/options.ml" 99 2149 2168
 type(
   touche
 )
-"src/options.ml" 95 2074 2090 "src/options.ml" 95 2074 2093
+"src/options.ml" 100 2169 2180 "src/options.ml" 100 2169 2183
 type(
-  string
+  char
 )
-"src/options.ml" 91 1984 1993 "src/options.ml" 95 2074 2094
+"src/options.ml" 100 2169 2187 "src/options.ml" 100 2169 2188
 type(
-  string
+  touche
 )
-"src/options.ml" 85 1833 1857 "src/options.ml" 95 2074 2094
+"src/options.ml" 101 2189 2200 "src/options.ml" 101 2189 2203
 type(
-  string
+  char
+)
+"src/options.ml" 101 2189 2207 "src/options.ml" 101 2189 2208
+type(
+  touche
+)
+"src/options.ml" 102 2209 2220 "src/options.ml" 102 2209 2221
+type(
+  char
+)
+"src/options.ml" 102 2209 2225 "src/options.ml" 102 2209 2229
+type(
+  touche
+)
+"src/options.ml" 95 2060 2069 "src/options.ml" 102 2209 2230
+type(
+  touche
+)
+"src/options.ml" 86 1848 1872 "src/options.ml" 102 2209 2230
+type(
+  touche
 )
