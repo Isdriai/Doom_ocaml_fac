@@ -3,7 +3,7 @@ open Options
 open Point
 open Segment
 
-let scalair (xa, ya) (xb, yb) (xc, yc) =
+(* let scalair (xa, ya) (xb, yb) (xc, yc) =
 	(xb -. xa) *. (xc -. xa) +. (yb -. ya) *. (yc -. ya)
 
 
@@ -24,4 +24,15 @@ let detect_collision p bsp =
 	try
 		secteurProche (procheSegment p) bsp p; false
 	with
-	| _ -> true
+	| _ -> true *)
+
+let detect_collision p bsp =
+	let rec dc f bsp = 
+		match bsp with
+		| E -> ()
+		| N (r, g, d) -> if get_position p r = L then (parse f g p; f r)
+						else (parse f d p; f r)
+	in
+	try 
+		dc (Segment.dansLaBoite p) bsp; false
+	with Exit -> true

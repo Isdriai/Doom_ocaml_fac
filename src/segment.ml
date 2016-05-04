@@ -17,26 +17,32 @@ let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
 
-
-
 let angleNormal xa ya xb yb = 
 	let y = float_of_int (yb - ya) in
 	let x = float_of_int (xb - xa) in
-	let tang = atan (y /. x) in (* calcule de l'angle de la normal*)
-	truncate (tang *. 180. /. 3.14)
+	atan (y /. x)(* calcule de l'angle de la normal*)
+	
 
 let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
-	let ang = angleNormal xo yo xd yd in
-	let igG = {x = xo + 5 * ang ; y = yo + 5 * ang} in 
-	let estG = {x = xd + 5 * ang ; y = yd + 5 * ang} in 
-	let igD = {x = xo - 5 * ang ; y = yo - 5 * ang} in 
-	let estD = {x = xd - 5 * ang ; y = yd - 5 * ang} in 
+	let ang = truncate (angleNormal xo yo xd yd *. 10. )in
+	let igG = {x = xo - ang ; y = yo - ang} in 
+	let estG = {x = xd - ang ; y = yd - ang} in 
+	let igD = {x = xo + ang ; y = yo + ang} in 
+	let estD = {x = xd + ang ; y = yd + ang} in 
 	let c = compteur() in 
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
 			 boite_droite_orig = igD; boite_droite_dest = estD} 
 	in p
+
+let dansLaBoite p s = 
+	let res1 = (s.boite_gauche_dest.x - s.boite_gauche_orig.x) * (p.y - s.boite_gauche_orig.y) - 
+	(s.boite_gauche_dest.y - s.boite_gauche_orig.y)* (p.x - s.boite_gauche_orig.x) in
+	let res2 = (s.boite_droite_dest.x - s.boite_droite_orig.x) * (p.y - s.boite_droite_orig.y) - 
+	(s.boite_droite_dest.y - s.boite_droite_orig.y)* (p.x - s.boite_droite_orig.x) in
+	if res1 >= 0 && res2 <= 0 then raise Exit
+
 
 let get_position p s = 
 	let res = (s.pdest.x - s.porig.x) * (p.y - s.porig.y) - (s.pdest.y - s.porig.y)* (p.x - s.porig.x) in

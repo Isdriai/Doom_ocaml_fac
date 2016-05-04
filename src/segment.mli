@@ -10,6 +10,8 @@ type t = {id : string;
 
 type tpos = L | R | C
 
+val dansLaBoite : Point.t -> t -> unit
+
 val new_segment : int -> int -> int -> int -> t
 
 val get_position : Point.t -> t -> tpos
