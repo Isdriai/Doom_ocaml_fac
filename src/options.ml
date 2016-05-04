@@ -76,3 +76,20 @@ let minimap = !minimap
 
 let debug = !debug
 let debug_bsp = !debug_bsp
+
+type tlang = Fr | Be
+let lang = ref Fr
+let change_lang langue = lang := langue
+
+type touche = Z | Q | S | D 
+let clavier_lg touche = match !lang with
+  |Fr -> (match touche with 
+          |Z -> "z"
+          |Q -> "q"
+          |S -> "s"
+          |D -> "d")
+  |Be -> (match touche with 
+          |Z -> "é"
+          |Q -> "a"
+          |S -> "u"
+          |D -> "i")
