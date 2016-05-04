@@ -8,14 +8,14 @@ type t = {id : string;
 
 type tpos = L | R | C
 
-let compteur () =
+let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
 
 let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
 	let c = compteur() in 
-	let p = {id = string_of_int(c()); porig = ig ; pdest = est } 
+	let p = {id = string_of_int c; porig = ig ; pdest = est } 
 	in p
 
 let get_position p s = 
@@ -47,18 +47,10 @@ let split_segment d s =
 
 	let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
 
-	(*if dd = 0 then (Some (s), None)
-	else*)
-	(* Printf.printf "dd: %d" dd; *) 
-
 	let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
 	let xi = truncate (xa +. r *. (xb -. xa))  in 
     let yi = truncate (ya +. r *. (yb -. ya))  in 
-    (* Printf.printf "result: %f\n" ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc));
-    Printf.printf "dd: %f\n" dd;
-    Printf.printf "r: %f\n" r;
-    Printf.printf "xi: %d\n" xi;
-    Printf.printf "yi: %d\n" yi; *)
+
     (Some (new_segment (truncate xa) (truncate ya) xi yi), Some(new_segment xi yi (truncate xb) (truncate yb)))	
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 

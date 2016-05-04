@@ -20,13 +20,13 @@ let calcul_vecteur p s =
 
 let calcul_angle p s =
 	Segment.new_segment 
-		(truncate (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (s.porig.y) *. Trigo.dsin p.pa))
-		(-truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (-s.porig.y) *. Trigo.dcos p.pa))
-		(truncate (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (s.pdest.y) *. Trigo.dsin p.pa))
-		(-truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (-s.pdest.y) *. Trigo.dcos p.pa))
+		(-truncate (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (-s.porig.y) *. Trigo.dsin p.pa))
+		(truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (s.porig.y) *. Trigo.dcos p.pa))
+		(-truncate (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (-s.pdest.y) *. Trigo.dsin p.pa))
+		(truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (s.pdest.y) *. Trigo.dcos p.pa))
 
-let ta xo yo xd yd = 
-	float_of_int (yd - yo) /. float_of_int(xd - xo)
+let ata xo yo xd yd = 
+	float_of_int(yd - yo) /. float_of_int(xd - xo)
 
 let clipping s = 
 
@@ -36,22 +36,28 @@ let clipping s =
 	let yd = s.pdest.y in
 
 	if xo < 1 && xd < 1 then None
-	else if xo < 1 then Some(Segment.new_segment 1 (yo+truncate(float_of_int(1-xo)*. ta xo yo xd yd)) xd yd ) 
-	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + truncate(float_of_int(1-xd)*. ta xo yo xd yd)))
+	else if xo < 1 then Some(Segment.new_segment 1 (yo+truncate(float_of_int(1-xo)*. ata xo yo xd yd)) xd yd ) 
+	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + truncate(float_of_int(1-xd)*. ata xo yo xd yd)))
 	else Some(s)
+
+let draw_line xo yo xd yd =
+	let pixel = 20 in
+	let decal = 50 in
+	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
+
 
 
 let affiche p = fun s -> 
+
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
 	let clip = clipping nw_seg in
 
 	match clip with
 	| None -> ()
 	| Some(seg) -> 
-	Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y;
+	(Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
 	Graphics.set_color (Graphics.rgb 255 0 0);
-	Graphics.plot (seg.porig.x*20+5) (seg.porig.y*20+50);
-	Graphics.lineto (seg.pdest.x*20+50) (seg.pdest.y*20+50)
+	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y)
 
 (*faire fenetre graphique et afficher les segments dedans*)
 

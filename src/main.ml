@@ -10,7 +10,7 @@ let affiche_point p =
 	Printf.printf "x: %d, y: %d\n" p.x p.y
 
 let affiche_segment s = 
-	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d\n" s.porig.x s.porig.y s.pdest.x s.pdest.y
+	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
 
 let affiche_bsp bsp =
 	let rec aff s = function
@@ -81,6 +81,7 @@ let () =
 	Player.move Player.MFwd player (Bsp.build_bsp []);
 	affiche_point player.pos;
 
+
 	(*on test avec un léger decalage*)
 
 	Player.rotate Left player;
@@ -139,7 +140,7 @@ let () =
 	let a =  " " ^ s ^ "x" ^ s in
 	Graphics.open_graph a;
 
-	(* let s_d = Segment.new_segment 2 0 2 3 in
+	 (* let s_d = Segment.new_segment 2 0 2 3 in
 	let bd = Bsp.build_bsp (s_d::[]) in
 	let playerd = Player.new_player (Point.new_point 0 0) 90 in
 
@@ -156,12 +157,12 @@ let () =
 	let b2 = Bsp.build_bsp (s_d2::[]) in
 	let player2 = Player.new_player (Point.new_point 1 1) 90 in
 
-	Render.display b2 player2; 
+	(* Render.display b2 player2; 
 
 	resultat attendu = 
 		
 		xa: 1, ya: -1
- 		xb: 1, yb: -3
+ 		xb: 1, yb: -3 *)
 
 	
 
@@ -169,7 +170,7 @@ let () =
 	let b3 = Bsp.build_bsp (s_d3::[]) in
 	let player3 = Player.new_player (Point.new_point (-1) 1) 135 in
 
-	Render.display b3 player3;
+	Render.display b3 player3; *)
 
 	(*
 	resultat attendu =
@@ -180,14 +181,16 @@ let () =
 		mais avec les histoires de int/float c'est moins précis
 
 		Tout est ok
-	*) *)
+	*) 
 
 	
 	let bsp_test = Bsp.build_bsp (s1::s2::s3::s4::[]) in 
-	let player_test = Player.new_player (Point.new_point (-1) 0) 0 in 
+	let player_test = Player.new_player (Point.new_point 4 (-2)) 90 in 
+	affiche_bsp_bis bsp_test; 
+
 
 	Render.display bsp_test player_test ;
-	affiche_bsp_bis bsp_test;
+	
 
 
 

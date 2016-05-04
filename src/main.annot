@@ -57,2949 +57,2960 @@ type(
   Segment.t -> unit
 )
 ident(
-  def affiche_segment "src/main.ml" 15 267 267 "src/main.ml" 1 0 -1
+  def affiche_segment "src/main.ml" 15 283 283 "src/main.ml" 1 0 -1
 )
 "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
 type(
   Segment.t
 )
 ident(
-  def s "src/main.ml" 13 174 175 "src/main.ml" 13 174 265
+  def s "src/main.ml" 13 174 175 "src/main.ml" 13 174 281
 )
 "src/main.ml" 13 174 175 "src/main.ml" 13 174 188
 type(
-  (int -> int -> int -> int -> unit, out_channel, unit) format ->
-  int -> int -> int -> int -> unit
+  (int -> int -> int -> int -> string -> unit, out_channel, unit) format ->
+  int -> int -> int -> int -> string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 13 174 189 "src/main.ml" 13 174 225
+"src/main.ml" 13 174 189 "src/main.ml" 13 174 236
 type(
-  (int -> int -> int -> int -> unit, out_channel, unit) format
+  (int -> int -> int -> int -> string -> unit, out_channel, unit) format
 )
-"src/main.ml" 13 174 226 "src/main.ml" 13 174 227
-type(
-  Segment.t
-)
-ident(
-  int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
-)
-"src/main.ml" 13 174 226 "src/main.ml" 13 174 233
-type(
-  Point.t
-)
-"src/main.ml" 13 174 226 "src/main.ml" 13 174 235
-type(
-  int
-)
-"src/main.ml" 13 174 236 "src/main.ml" 13 174 237
+"src/main.ml" 13 174 237 "src/main.ml" 13 174 238
 type(
   Segment.t
 )
 ident(
   int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
 )
-"src/main.ml" 13 174 236 "src/main.ml" 13 174 243
+"src/main.ml" 13 174 237 "src/main.ml" 13 174 244
 type(
   Point.t
 )
-"src/main.ml" 13 174 236 "src/main.ml" 13 174 245
+"src/main.ml" 13 174 237 "src/main.ml" 13 174 246
 type(
   int
 )
-"src/main.ml" 13 174 246 "src/main.ml" 13 174 247
+"src/main.ml" 13 174 247 "src/main.ml" 13 174 248
 type(
   Segment.t
 )
 ident(
   int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
 )
-"src/main.ml" 13 174 246 "src/main.ml" 13 174 253
+"src/main.ml" 13 174 247 "src/main.ml" 13 174 254
 type(
   Point.t
 )
-"src/main.ml" 13 174 246 "src/main.ml" 13 174 255
+"src/main.ml" 13 174 247 "src/main.ml" 13 174 256
 type(
   int
 )
-"src/main.ml" 13 174 256 "src/main.ml" 13 174 257
+"src/main.ml" 13 174 257 "src/main.ml" 13 174 258
 type(
   Segment.t
 )
 ident(
   int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
 )
-"src/main.ml" 13 174 256 "src/main.ml" 13 174 263
+"src/main.ml" 13 174 257 "src/main.ml" 13 174 264
 type(
   Point.t
 )
-"src/main.ml" 13 174 256 "src/main.ml" 13 174 265
+"src/main.ml" 13 174 257 "src/main.ml" 13 174 266
 type(
   int
 )
-"src/main.ml" 13 174 175 "src/main.ml" 13 174 265
+"src/main.ml" 13 174 267 "src/main.ml" 13 174 268
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
+)
+"src/main.ml" 13 174 267 "src/main.ml" 13 174 274
+type(
+  Point.t
+)
+"src/main.ml" 13 174 267 "src/main.ml" 13 174 276
+type(
+  int
+)
+"src/main.ml" 13 174 277 "src/main.ml" 13 174 278
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/main.ml" 12 149 169 "src/main.ml" 12 149 170
+)
+"src/main.ml" 13 174 277 "src/main.ml" 13 174 281
+type(
+  string
+)
+"src/main.ml" 13 174 175 "src/main.ml" 13 174 281
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 15 267 271 "src/main.ml" 15 267 282
+"src/main.ml" 15 283 287 "src/main.ml" 15 283 298
 type(
   Bsp.t -> unit
 )
 ident(
-  def affiche_bsp "src/main.ml" 23 496 496 "src/main.ml" 1 0 -1
+  def affiche_bsp "src/main.ml" 23 512 512 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 15 267 283 "src/main.ml" 15 267 286
+"src/main.ml" 15 283 299 "src/main.ml" 15 283 302
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 16 289 290 "src/main.ml" 21 483 494
+  def bsp "src/main.ml" 16 305 306 "src/main.ml" 21 499 510
 )
-"src/main.ml" 16 289 298 "src/main.ml" 16 289 301
+"src/main.ml" 16 305 314 "src/main.ml" 16 305 317
 type(
   string -> Bsp.t -> unit
 )
 ident(
-  def aff "src/main.ml" 16 289 290 "src/main.ml" 21 483 494
+  def aff "src/main.ml" 16 305 306 "src/main.ml" 21 499 510
 )
-"src/main.ml" 16 289 302 "src/main.ml" 16 289 303
+"src/main.ml" 16 305 318 "src/main.ml" 16 305 319
 type(
   string
 )
 ident(
-  def s "src/main.ml" 16 289 306 "src/main.ml" 19 415 477
+  def s "src/main.ml" 16 305 322 "src/main.ml" 19 431 493
 )
-"src/main.ml" 17 315 319 "src/main.ml" 17 315 320
+"src/main.ml" 17 331 335 "src/main.ml" 17 331 336
 type(
   Bsp.t
 )
-"src/main.ml" 17 315 324 "src/main.ml" 17 315 337
+"src/main.ml" 17 331 340 "src/main.ml" 17 331 353
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 17 315 338 "src/main.ml" 17 315 342
+"src/main.ml" 17 331 354 "src/main.ml" 17 331 358
 type(
   (string -> unit, out_channel, unit) format
 )
-"src/main.ml" 17 315 343 "src/main.ml" 17 315 344
+"src/main.ml" 17 331 359 "src/main.ml" 17 331 360
 type(
   string
 )
 ident(
-  int_ref s "src/main.ml" 16 289 302 "src/main.ml" 16 289 303
+  int_ref s "src/main.ml" 16 305 318 "src/main.ml" 16 305 319
 )
-"src/main.ml" 17 315 324 "src/main.ml" 17 315 344
+"src/main.ml" 17 331 340 "src/main.ml" 17 331 360
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 17 315 346 "src/main.ml" 17 315 359
+"src/main.ml" 17 331 362 "src/main.ml" 17 331 375
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 17 315 360 "src/main.ml" 17 315 365
+"src/main.ml" 17 331 376 "src/main.ml" 17 331 381
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 17 315 346 "src/main.ml" 17 315 365
+"src/main.ml" 17 331 362 "src/main.ml" 17 331 381
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 17 315 324 "src/main.ml" 17 315 365
+"src/main.ml" 17 331 340 "src/main.ml" 17 331 381
 type(
   unit
 )
-"src/main.ml" 18 366 373 "src/main.ml" 18 366 374
+"src/main.ml" 18 382 389 "src/main.ml" 18 382 390
 type(
   Segment.t
 )
 ident(
-  def r "src/main.ml" 18 366 385 "src/main.ml" 19 415 477
+  def r "src/main.ml" 18 382 401 "src/main.ml" 19 431 493
 )
-"src/main.ml" 18 366 376 "src/main.ml" 18 366 377
+"src/main.ml" 18 382 392 "src/main.ml" 18 382 393
 type(
   Bsp.t
 )
 ident(
-  def g "src/main.ml" 18 366 385 "src/main.ml" 19 415 477
+  def g "src/main.ml" 18 382 401 "src/main.ml" 19 431 493
 )
-"src/main.ml" 18 366 379 "src/main.ml" 18 366 380
+"src/main.ml" 18 382 395 "src/main.ml" 18 382 396
 type(
   Bsp.t
 )
 ident(
-  def d "src/main.ml" 18 366 385 "src/main.ml" 19 415 477
+  def d "src/main.ml" 18 382 401 "src/main.ml" 19 431 493
 )
-"src/main.ml" 18 366 370 "src/main.ml" 18 366 381
+"src/main.ml" 18 382 386 "src/main.ml" 18 382 397
 type(
   Bsp.t
 )
-"src/main.ml" 18 366 389 "src/main.ml" 18 366 391
+"src/main.ml" 18 382 405 "src/main.ml" 18 382 407
 type(
   string
 )
 ident(
-  def s2 "src/main.ml" 19 415 418 "src/main.ml" 19 415 477
+  def s2 "src/main.ml" 19 431 434 "src/main.ml" 19 431 493
 )
-"src/main.ml" 18 366 394 "src/main.ml" 18 366 395
+"src/main.ml" 18 382 410 "src/main.ml" 18 382 411
 type(
   string
 )
 ident(
-  int_ref s "src/main.ml" 16 289 302 "src/main.ml" 16 289 303
+  int_ref s "src/main.ml" 16 305 318 "src/main.ml" 16 305 319
 )
-"src/main.ml" 18 366 395 "src/main.ml" 18 366 396
+"src/main.ml" 18 382 411 "src/main.ml" 18 382 412
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"src/main.ml" 18 366 396 "src/main.ml" 18 366 411
+"src/main.ml" 18 382 412 "src/main.ml" 18 382 427
 type(
   string
 )
-"src/main.ml" 18 366 394 "src/main.ml" 18 366 411
+"src/main.ml" 18 382 410 "src/main.ml" 18 382 427
 call(
   stack
 )
 type(
   string
 )
-"src/main.ml" 19 415 418 "src/main.ml" 19 415 421
+"src/main.ml" 19 431 434 "src/main.ml" 19 431 437
 type(
   string -> Bsp.t -> unit
 )
 ident(
-  int_ref aff "src/main.ml" 16 289 298 "src/main.ml" 16 289 301
+  int_ref aff "src/main.ml" 16 305 314 "src/main.ml" 16 305 317
 )
-"src/main.ml" 19 415 422 "src/main.ml" 19 415 424
+"src/main.ml" 19 431 438 "src/main.ml" 19 431 440
 type(
   string
 )
 ident(
-  int_ref s2 "src/main.ml" 18 366 389 "src/main.ml" 18 366 391
+  int_ref s2 "src/main.ml" 18 382 405 "src/main.ml" 18 382 407
 )
-"src/main.ml" 19 415 425 "src/main.ml" 19 415 426
+"src/main.ml" 19 431 441 "src/main.ml" 19 431 442
 type(
   Bsp.t
 )
 ident(
-  int_ref g "src/main.ml" 18 366 376 "src/main.ml" 18 366 377
+  int_ref g "src/main.ml" 18 382 392 "src/main.ml" 18 382 393
 )
-"src/main.ml" 19 415 418 "src/main.ml" 19 415 426
+"src/main.ml" 19 431 434 "src/main.ml" 19 431 442
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 19 415 428 "src/main.ml" 19 415 441
+"src/main.ml" 19 431 444 "src/main.ml" 19 431 457
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 19 415 442 "src/main.ml" 19 415 446
+"src/main.ml" 19 431 458 "src/main.ml" 19 431 462
 type(
   (string -> unit, out_channel, unit) format
 )
-"src/main.ml" 19 415 447 "src/main.ml" 19 415 448
+"src/main.ml" 19 431 463 "src/main.ml" 19 431 464
 type(
   string
 )
 ident(
-  int_ref s "src/main.ml" 16 289 302 "src/main.ml" 16 289 303
+  int_ref s "src/main.ml" 16 305 318 "src/main.ml" 16 305 319
 )
-"src/main.ml" 19 415 428 "src/main.ml" 19 415 448
+"src/main.ml" 19 431 444 "src/main.ml" 19 431 464
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 19 415 450 "src/main.ml" 19 415 465
+"src/main.ml" 19 431 466 "src/main.ml" 19 431 481
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 19 415 466 "src/main.ml" 19 415 467
+"src/main.ml" 19 431 482 "src/main.ml" 19 431 483
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/main.ml" 18 366 373 "src/main.ml" 18 366 374
+  int_ref r "src/main.ml" 18 382 389 "src/main.ml" 18 382 390
 )
-"src/main.ml" 19 415 450 "src/main.ml" 19 415 467
+"src/main.ml" 19 431 466 "src/main.ml" 19 431 483
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 19 415 469 "src/main.ml" 19 415 472
+"src/main.ml" 19 431 485 "src/main.ml" 19 431 488
 type(
   string -> Bsp.t -> unit
 )
 ident(
-  int_ref aff "src/main.ml" 16 289 298 "src/main.ml" 16 289 301
+  int_ref aff "src/main.ml" 16 305 314 "src/main.ml" 16 305 317
 )
-"src/main.ml" 19 415 473 "src/main.ml" 19 415 475
+"src/main.ml" 19 431 489 "src/main.ml" 19 431 491
 type(
   string
 )
 ident(
-  int_ref s2 "src/main.ml" 18 366 389 "src/main.ml" 18 366 391
+  int_ref s2 "src/main.ml" 18 382 405 "src/main.ml" 18 382 407
 )
-"src/main.ml" 19 415 476 "src/main.ml" 19 415 477
+"src/main.ml" 19 431 492 "src/main.ml" 19 431 493
 type(
   Bsp.t
 )
 ident(
-  int_ref d "src/main.ml" 18 366 379 "src/main.ml" 18 366 380
+  int_ref d "src/main.ml" 18 382 395 "src/main.ml" 18 382 396
 )
-"src/main.ml" 19 415 469 "src/main.ml" 19 415 477
+"src/main.ml" 19 431 485 "src/main.ml" 19 431 493
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 19 415 450 "src/main.ml" 19 415 477
+"src/main.ml" 19 431 466 "src/main.ml" 19 431 493
 type(
   unit
 )
-"src/main.ml" 19 415 428 "src/main.ml" 19 415 477
+"src/main.ml" 19 431 444 "src/main.ml" 19 431 493
 type(
   unit
 )
-"src/main.ml" 19 415 418 "src/main.ml" 19 415 477
+"src/main.ml" 19 431 434 "src/main.ml" 19 431 493
 type(
   unit
 )
-"src/main.ml" 18 366 385 "src/main.ml" 19 415 477
+"src/main.ml" 18 382 401 "src/main.ml" 19 431 493
 type(
   unit
 )
-"src/main.ml" 16 289 306 "src/main.ml" 19 415 477
+"src/main.ml" 16 305 322 "src/main.ml" 19 431 493
 type(
   Bsp.t -> unit
 )
-"src/main.ml" 21 483 484 "src/main.ml" 21 483 487
+"src/main.ml" 21 499 500 "src/main.ml" 21 499 503
 type(
   string -> Bsp.t -> unit
 )
 ident(
-  int_ref aff "src/main.ml" 16 289 298 "src/main.ml" 16 289 301
+  int_ref aff "src/main.ml" 16 305 314 "src/main.ml" 16 305 317
 )
-"src/main.ml" 21 483 488 "src/main.ml" 21 483 490
+"src/main.ml" 21 499 504 "src/main.ml" 21 499 506
 type(
   string
 )
-"src/main.ml" 21 483 491 "src/main.ml" 21 483 494
+"src/main.ml" 21 499 507 "src/main.ml" 21 499 510
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 15 267 283 "src/main.ml" 15 267 286
+  int_ref bsp "src/main.ml" 15 283 299 "src/main.ml" 15 283 302
 )
-"src/main.ml" 21 483 484 "src/main.ml" 21 483 494
+"src/main.ml" 21 499 500 "src/main.ml" 21 499 510
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 16 289 290 "src/main.ml" 21 483 494
+"src/main.ml" 16 305 306 "src/main.ml" 21 499 510
 type(
   unit
 )
-"src/main.ml" 23 496 504 "src/main.ml" 23 496 512
+"src/main.ml" 23 512 520 "src/main.ml" 23 512 528
 type(
   (Segment.t -> 'a) -> Bsp.t -> unit
 )
 ident(
-  def iter_cps "src/main.ml" 23 496 496 "src/main.ml" 1 0 -1
+  def iter_cps "src/main.ml" 23 512 512 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 23 496 513 "src/main.ml" 23 496 514
+"src/main.ml" 23 512 529 "src/main.ml" 23 512 530
 type(
   Segment.t -> 'a
 )
 ident(
-  def f "src/main.ml" 23 496 515 "src/main.ml" 29 647 669
+  def f "src/main.ml" 23 512 531 "src/main.ml" 29 663 685
 )
-"src/main.ml" 23 496 515 "src/main.ml" 23 496 518
+"src/main.ml" 23 512 531 "src/main.ml" 23 512 534
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 24 522 523 "src/main.ml" 29 647 669
+  def bsp "src/main.ml" 24 538 539 "src/main.ml" 29 663 685
 )
-"src/main.ml" 24 522 531 "src/main.ml" 24 522 535
+"src/main.ml" 24 538 547 "src/main.ml" 24 538 551
 type(
   (unit -> 'b) -> Bsp.t -> 'b
 )
 ident(
-  def iter "src/main.ml" 24 522 523 "src/main.ml" 29 647 669
+  def iter "src/main.ml" 24 538 539 "src/main.ml" 29 663 685
 )
-"src/main.ml" 24 522 536 "src/main.ml" 24 522 540
+"src/main.ml" 24 538 552 "src/main.ml" 24 538 556
 type(
   unit -> 'b
 )
 ident(
-  def cont "src/main.ml" 24 522 543 "src/main.ml" 27 625 641
+  def cont "src/main.ml" 24 538 559 "src/main.ml" 27 641 657
 )
-"src/main.ml" 25 553 556 "src/main.ml" 25 553 557
+"src/main.ml" 25 569 572 "src/main.ml" 25 569 573
 type(
   Bsp.t
 )
-"src/main.ml" 25 553 561 "src/main.ml" 25 553 565
+"src/main.ml" 25 569 577 "src/main.ml" 25 569 581
 type(
   unit -> 'b
 )
 ident(
-  int_ref cont "src/main.ml" 24 522 536 "src/main.ml" 24 522 540
+  int_ref cont "src/main.ml" 24 538 552 "src/main.ml" 24 538 556
 )
-"src/main.ml" 25 553 566 "src/main.ml" 25 553 568
+"src/main.ml" 25 569 582 "src/main.ml" 25 569 584
 type(
   unit
 )
-"src/main.ml" 25 553 561 "src/main.ml" 25 553 568
+"src/main.ml" 25 569 577 "src/main.ml" 25 569 584
 call(
   tail
 )
 type(
   'b
 )
-"src/main.ml" 26 569 575 "src/main.ml" 26 569 576
+"src/main.ml" 26 585 591 "src/main.ml" 26 585 592
 type(
   Segment.t
 )
 ident(
-  def r "src/main.ml" 26 569 587 "src/main.ml" 27 625 641
+  def r "src/main.ml" 26 585 603 "src/main.ml" 27 641 657
 )
-"src/main.ml" 26 569 578 "src/main.ml" 26 569 579
+"src/main.ml" 26 585 594 "src/main.ml" 26 585 595
 type(
   Bsp.t
 )
 ident(
-  def g "src/main.ml" 26 569 587 "src/main.ml" 27 625 641
+  def g "src/main.ml" 26 585 603 "src/main.ml" 27 641 657
 )
-"src/main.ml" 26 569 581 "src/main.ml" 26 569 582
+"src/main.ml" 26 585 597 "src/main.ml" 26 585 598
 type(
   Bsp.t
 )
 ident(
-  def d "src/main.ml" 26 569 587 "src/main.ml" 27 625 641
+  def d "src/main.ml" 26 585 603 "src/main.ml" 27 641 657
 )
-"src/main.ml" 26 569 572 "src/main.ml" 26 569 583
+"src/main.ml" 26 585 588 "src/main.ml" 26 585 599
 type(
   Bsp.t
 )
-"src/main.ml" 26 569 591 "src/main.ml" 26 569 592
+"src/main.ml" 26 585 607 "src/main.ml" 26 585 608
 type(
   unit -> 'b
 )
 ident(
-  def k "src/main.ml" 27 625 633 "src/main.ml" 27 625 641
+  def k "src/main.ml" 27 641 649 "src/main.ml" 27 641 657
 )
-"src/main.ml" 26 569 601 "src/main.ml" 26 569 603
+"src/main.ml" 26 585 617 "src/main.ml" 26 585 619
 type(
   unit
 )
-"src/main.ml" 26 569 607 "src/main.ml" 26 569 608
+"src/main.ml" 26 585 623 "src/main.ml" 26 585 624
 type(
   Segment.t -> 'a
 )
 ident(
-  int_ref f "src/main.ml" 23 496 513 "src/main.ml" 23 496 514
+  int_ref f "src/main.ml" 23 512 529 "src/main.ml" 23 512 530
 )
-"src/main.ml" 26 569 609 "src/main.ml" 26 569 610
+"src/main.ml" 26 585 625 "src/main.ml" 26 585 626
 type(
   Segment.t
 )
 ident(
-  int_ref r "src/main.ml" 26 569 575 "src/main.ml" 26 569 576
+  int_ref r "src/main.ml" 26 585 591 "src/main.ml" 26 585 592
 )
-"src/main.ml" 26 569 607 "src/main.ml" 26 569 610
+"src/main.ml" 26 585 623 "src/main.ml" 26 585 626
 call(
   stack
 )
 type(
   'a
 )
-"src/main.ml" 26 569 612 "src/main.ml" 26 569 616
+"src/main.ml" 26 585 628 "src/main.ml" 26 585 632
 type(
   (unit -> 'b) -> Bsp.t -> 'b
 )
 ident(
-  int_ref iter "src/main.ml" 24 522 531 "src/main.ml" 24 522 535
+  int_ref iter "src/main.ml" 24 538 547 "src/main.ml" 24 538 551
 )
-"src/main.ml" 26 569 617 "src/main.ml" 26 569 621
+"src/main.ml" 26 585 633 "src/main.ml" 26 585 637
 type(
   unit -> 'b
 )
 ident(
-  int_ref cont "src/main.ml" 24 522 536 "src/main.ml" 24 522 540
+  int_ref cont "src/main.ml" 24 538 552 "src/main.ml" 24 538 556
 )
-"src/main.ml" 26 569 622 "src/main.ml" 26 569 623
+"src/main.ml" 26 585 638 "src/main.ml" 26 585 639
 type(
   Bsp.t
 )
 ident(
-  int_ref d "src/main.ml" 26 569 581 "src/main.ml" 26 569 582
+  int_ref d "src/main.ml" 26 585 597 "src/main.ml" 26 585 598
 )
-"src/main.ml" 26 569 612 "src/main.ml" 26 569 623
+"src/main.ml" 26 585 628 "src/main.ml" 26 585 639
 call(
   tail
 )
 type(
   'b
 )
-"src/main.ml" 26 569 607 "src/main.ml" 26 569 623
+"src/main.ml" 26 585 623 "src/main.ml" 26 585 639
 type(
   'b
 )
-"src/main.ml" 26 569 596 "src/main.ml" 26 569 624
+"src/main.ml" 26 585 612 "src/main.ml" 26 585 640
 type(
   unit -> 'b
 )
-"src/main.ml" 27 625 633 "src/main.ml" 27 625 637
+"src/main.ml" 27 641 649 "src/main.ml" 27 641 653
 type(
   (unit -> 'b) -> Bsp.t -> 'b
 )
 ident(
-  int_ref iter "src/main.ml" 24 522 531 "src/main.ml" 24 522 535
+  int_ref iter "src/main.ml" 24 538 547 "src/main.ml" 24 538 551
 )
-"src/main.ml" 27 625 638 "src/main.ml" 27 625 639
+"src/main.ml" 27 641 654 "src/main.ml" 27 641 655
 type(
   unit -> 'b
 )
 ident(
-  int_ref k "src/main.ml" 26 569 591 "src/main.ml" 26 569 592
+  int_ref k "src/main.ml" 26 585 607 "src/main.ml" 26 585 608
 )
-"src/main.ml" 27 625 640 "src/main.ml" 27 625 641
+"src/main.ml" 27 641 656 "src/main.ml" 27 641 657
 type(
   Bsp.t
 )
 ident(
-  int_ref g "src/main.ml" 26 569 578 "src/main.ml" 26 569 579
+  int_ref g "src/main.ml" 26 585 594 "src/main.ml" 26 585 595
 )
-"src/main.ml" 27 625 633 "src/main.ml" 27 625 641
+"src/main.ml" 27 641 649 "src/main.ml" 27 641 657
 call(
   tail
 )
 type(
   'b
 )
-"src/main.ml" 26 569 587 "src/main.ml" 27 625 641
+"src/main.ml" 26 585 603 "src/main.ml" 27 641 657
 type(
   'b
 )
-"src/main.ml" 24 522 543 "src/main.ml" 27 625 641
+"src/main.ml" 24 538 559 "src/main.ml" 27 641 657
 type(
   Bsp.t -> 'b
 )
-"src/main.ml" 29 647 648 "src/main.ml" 29 647 652
+"src/main.ml" 29 663 664 "src/main.ml" 29 663 668
 type(
   (unit -> unit) -> Bsp.t -> unit
 )
 ident(
-  int_ref iter "src/main.ml" 24 522 531 "src/main.ml" 24 522 535
+  int_ref iter "src/main.ml" 24 538 547 "src/main.ml" 24 538 551
 )
-"src/main.ml" 29 647 658 "src/main.ml" 29 647 659
+"src/main.ml" 29 663 674 "src/main.ml" 29 663 675
 type(
   unit
 )
-"src/main.ml" 29 647 662 "src/main.ml" 29 647 664
+"src/main.ml" 29 663 678 "src/main.ml" 29 663 680
 type(
   unit
 )
-"src/main.ml" 29 647 653 "src/main.ml" 29 647 665
+"src/main.ml" 29 663 669 "src/main.ml" 29 663 681
 type(
   unit -> unit
 )
-"src/main.ml" 29 647 666 "src/main.ml" 29 647 669
+"src/main.ml" 29 663 682 "src/main.ml" 29 663 685
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 23 496 515 "src/main.ml" 23 496 518
+  int_ref bsp "src/main.ml" 23 512 531 "src/main.ml" 23 512 534
 )
-"src/main.ml" 29 647 648 "src/main.ml" 29 647 669
+"src/main.ml" 29 663 664 "src/main.ml" 29 663 685
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 24 522 523 "src/main.ml" 29 647 669
+"src/main.ml" 24 538 539 "src/main.ml" 29 663 685
 type(
   unit
 )
-"src/main.ml" 33 673 677 "src/main.ml" 33 673 692
+"src/main.ml" 33 689 693 "src/main.ml" 33 689 708
 type(
   Bsp.t -> unit
 )
 ident(
-  def affiche_bsp_bis "src/main.ml" 36 732 732 "src/main.ml" 1 0 -1
+  def affiche_bsp_bis "src/main.ml" 36 748 748 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 33 673 693 "src/main.ml" 33 673 696
+"src/main.ml" 33 689 709 "src/main.ml" 33 689 712
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 34 700 701 "src/main.ml" 34 700 729
+  def bsp "src/main.ml" 34 716 717 "src/main.ml" 34 716 745
 )
-"src/main.ml" 34 700 701 "src/main.ml" 34 700 709
+"src/main.ml" 34 716 717 "src/main.ml" 34 716 725
 type(
   (Segment.t -> unit) -> Bsp.t -> unit
 )
 ident(
-  int_ref iter_cps "src/main.ml" 23 496 504 "src/main.ml" 23 496 512
+  int_ref iter_cps "src/main.ml" 23 512 520 "src/main.ml" 23 512 528
 )
-"src/main.ml" 34 700 710 "src/main.ml" 34 700 725
+"src/main.ml" 34 716 726 "src/main.ml" 34 716 741
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 34 700 726 "src/main.ml" 34 700 729
+"src/main.ml" 34 716 742 "src/main.ml" 34 716 745
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 33 673 693 "src/main.ml" 33 673 696
+  int_ref bsp "src/main.ml" 33 689 709 "src/main.ml" 33 689 712
 )
-"src/main.ml" 34 700 701 "src/main.ml" 34 700 729
+"src/main.ml" 34 716 717 "src/main.ml" 34 716 745
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 36 732 740 "src/main.ml" 36 732 753
+"src/main.ml" 36 748 756 "src/main.ml" 36 748 769
 type(
   Segment.t list * Segment.t list -> unit
 )
 ident(
-  def affiche_split "src/main.ml" 36 732 732 "src/main.ml" 1 0 -1
+  def affiche_split "src/main.ml" 36 748 748 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 36 732 755 "src/main.ml" 36 732 756
+"src/main.ml" 36 748 771 "src/main.ml" 36 748 772
 type(
   Segment.t list
 )
 ident(
-  def l "src/main.ml" 37 762 763 "src/main.ml" 44 964 1023
+  def l "src/main.ml" 37 778 779 "src/main.ml" 44 980 1039
 )
-"src/main.ml" 36 732 757 "src/main.ml" 36 732 758
+"src/main.ml" 36 748 773 "src/main.ml" 36 748 774
 type(
   Segment.t list
 )
 ident(
-  def r "src/main.ml" 37 762 763 "src/main.ml" 44 964 1023
+  def r "src/main.ml" 37 778 779 "src/main.ml" 44 980 1039
 )
-"src/main.ml" 36 732 754 "src/main.ml" 36 732 759
+"src/main.ml" 36 748 770 "src/main.ml" 36 748 775
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 37 762 769 "src/main.ml" 37 762 770
+"src/main.ml" 37 778 785 "src/main.ml" 37 778 786
 type(
   Segment.t list
 )
 ident(
-  int_ref l "src/main.ml" 36 732 755 "src/main.ml" 36 732 756
+  int_ref l "src/main.ml" 36 748 771 "src/main.ml" 36 748 772
 )
-"src/main.ml" 37 762 771 "src/main.ml" 37 762 772
+"src/main.ml" 37 778 787 "src/main.ml" 37 778 788
 type(
   Segment.t list
 )
 ident(
-  int_ref r "src/main.ml" 36 732 757 "src/main.ml" 36 732 758
+  int_ref r "src/main.ml" 36 748 773 "src/main.ml" 36 748 774
 )
-"src/main.ml" 37 762 769 "src/main.ml" 37 762 772
+"src/main.ml" 37 778 785 "src/main.ml" 37 778 788
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 38 778 781 "src/main.ml" 38 778 783
+"src/main.ml" 38 794 797 "src/main.ml" 38 794 799
 type(
   Segment.t list
 )
-"src/main.ml" 38 778 784 "src/main.ml" 38 778 786
+"src/main.ml" 38 794 800 "src/main.ml" 38 794 802
 type(
   Segment.t list
 )
-"src/main.ml" 38 778 781 "src/main.ml" 38 778 786
+"src/main.ml" 38 794 797 "src/main.ml" 38 794 802
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 38 778 790 "src/main.ml" 38 778 803
+"src/main.ml" 38 794 806 "src/main.ml" 38 794 819
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 38 778 804 "src/main.ml" 38 778 810
+"src/main.ml" 38 794 820 "src/main.ml" 38 794 826
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 38 778 790 "src/main.ml" 38 778 810
+"src/main.ml" 38 794 806 "src/main.ml" 38 794 826
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 39 811 814 "src/main.ml" 39 811 816
+"src/main.ml" 39 827 830 "src/main.ml" 39 827 832
 type(
   Segment.t
 )
 ident(
-  def sl "src/main.ml" 39 811 830 "src/main.ml" 41 878 904
+  def sl "src/main.ml" 39 827 846 "src/main.ml" 41 894 920
 )
-"src/main.ml" 39 811 818 "src/main.ml" 39 811 819
+"src/main.ml" 39 827 834 "src/main.ml" 39 827 835
 type(
   Segment.t list
 )
 ident(
-  def g "src/main.ml" 39 811 830 "src/main.ml" 41 878 904
+  def g "src/main.ml" 39 827 846 "src/main.ml" 41 894 920
 )
-"src/main.ml" 39 811 814 "src/main.ml" 39 811 819
+"src/main.ml" 39 827 830 "src/main.ml" 39 827 835
 type(
   Segment.t list
 )
-"src/main.ml" 39 811 821 "src/main.ml" 39 811 823
+"src/main.ml" 39 827 837 "src/main.ml" 39 827 839
 type(
   Segment.t
 )
 ident(
-  def sr "src/main.ml" 39 811 830 "src/main.ml" 41 878 904
+  def sr "src/main.ml" 39 827 846 "src/main.ml" 41 894 920
 )
-"src/main.ml" 39 811 825 "src/main.ml" 39 811 826
+"src/main.ml" 39 827 841 "src/main.ml" 39 827 842
 type(
   Segment.t list
 )
 ident(
-  def d "src/main.ml" 39 811 830 "src/main.ml" 41 878 904
+  def d "src/main.ml" 39 827 846 "src/main.ml" 41 894 920
 )
-"src/main.ml" 39 811 821 "src/main.ml" 39 811 826
+"src/main.ml" 39 827 837 "src/main.ml" 39 827 842
 type(
   Segment.t list
 )
-"src/main.ml" 39 811 814 "src/main.ml" 39 811 826
+"src/main.ml" 39 827 830 "src/main.ml" 39 827 842
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 39 811 830 "src/main.ml" 39 811 845
+"src/main.ml" 39 827 846 "src/main.ml" 39 827 861
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 39 811 846 "src/main.ml" 39 811 848
+"src/main.ml" 39 827 862 "src/main.ml" 39 827 864
 type(
   Segment.t
 )
 ident(
-  int_ref sl "src/main.ml" 39 811 814 "src/main.ml" 39 811 816
+  int_ref sl "src/main.ml" 39 827 830 "src/main.ml" 39 827 832
 )
-"src/main.ml" 39 811 830 "src/main.ml" 39 811 848
+"src/main.ml" 39 827 846 "src/main.ml" 39 827 864
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 40 851 858 "src/main.ml" 40 851 873
+"src/main.ml" 40 867 874 "src/main.ml" 40 867 889
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 40 851 874 "src/main.ml" 40 851 876
+"src/main.ml" 40 867 890 "src/main.ml" 40 867 892
 type(
   Segment.t
 )
 ident(
-  int_ref sr "src/main.ml" 39 811 821 "src/main.ml" 39 811 823
+  int_ref sr "src/main.ml" 39 827 837 "src/main.ml" 39 827 839
 )
-"src/main.ml" 40 851 858 "src/main.ml" 40 851 876
+"src/main.ml" 40 867 874 "src/main.ml" 40 867 892
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 41 878 885 "src/main.ml" 41 878 898
+"src/main.ml" 41 894 901 "src/main.ml" 41 894 914
 type(
   Segment.t list * Segment.t list -> unit
 )
 ident(
-  int_ref affiche_split "src/main.ml" 36 732 740 "src/main.ml" 36 732 753
+  int_ref affiche_split "src/main.ml" 36 748 756 "src/main.ml" 36 748 769
 )
-"src/main.ml" 41 878 900 "src/main.ml" 41 878 901
+"src/main.ml" 41 894 916 "src/main.ml" 41 894 917
 type(
   Segment.t list
 )
 ident(
-  int_ref g "src/main.ml" 39 811 818 "src/main.ml" 39 811 819
+  int_ref g "src/main.ml" 39 827 834 "src/main.ml" 39 827 835
 )
-"src/main.ml" 41 878 902 "src/main.ml" 41 878 903
+"src/main.ml" 41 894 918 "src/main.ml" 41 894 919
 type(
   Segment.t list
 )
 ident(
-  int_ref d "src/main.ml" 39 811 825 "src/main.ml" 39 811 826
+  int_ref d "src/main.ml" 39 827 841 "src/main.ml" 39 827 842
 )
-"src/main.ml" 41 878 899 "src/main.ml" 41 878 904
+"src/main.ml" 41 894 915 "src/main.ml" 41 894 920
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 41 878 885 "src/main.ml" 41 878 904
+"src/main.ml" 41 894 901 "src/main.ml" 41 894 920
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 40 851 858 "src/main.ml" 41 878 904
+"src/main.ml" 40 867 874 "src/main.ml" 41 894 920
 type(
   unit
 )
-"src/main.ml" 39 811 830 "src/main.ml" 41 878 904
+"src/main.ml" 39 827 846 "src/main.ml" 41 894 920
 type(
   unit
 )
-"src/main.ml" 43 906 909 "src/main.ml" 43 906 911
+"src/main.ml" 43 922 925 "src/main.ml" 43 922 927
 type(
   Segment.t list
 )
-"src/main.ml" 43 906 913 "src/main.ml" 43 906 915
+"src/main.ml" 43 922 929 "src/main.ml" 43 922 931
 type(
   Segment.t
 )
 ident(
-  def sr "src/main.ml" 43 906 922 "src/main.ml" 43 906 963
+  def sr "src/main.ml" 43 922 938 "src/main.ml" 43 922 979
 )
-"src/main.ml" 43 906 917 "src/main.ml" 43 906 918
+"src/main.ml" 43 922 933 "src/main.ml" 43 922 934
 type(
   Segment.t list
 )
 ident(
-  def d "src/main.ml" 43 906 922 "src/main.ml" 43 906 963
+  def d "src/main.ml" 43 922 938 "src/main.ml" 43 922 979
 )
-"src/main.ml" 43 906 913 "src/main.ml" 43 906 918
+"src/main.ml" 43 922 929 "src/main.ml" 43 922 934
 type(
   Segment.t list
 )
-"src/main.ml" 43 906 909 "src/main.ml" 43 906 918
+"src/main.ml" 43 922 925 "src/main.ml" 43 922 934
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 43 906 922 "src/main.ml" 43 906 937
+"src/main.ml" 43 922 938 "src/main.ml" 43 922 953
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 43 906 938 "src/main.ml" 43 906 940
+"src/main.ml" 43 922 954 "src/main.ml" 43 922 956
 type(
   Segment.t
 )
 ident(
-  int_ref sr "src/main.ml" 43 906 913 "src/main.ml" 43 906 915
+  int_ref sr "src/main.ml" 43 922 929 "src/main.ml" 43 922 931
 )
-"src/main.ml" 43 906 922 "src/main.ml" 43 906 940
+"src/main.ml" 43 922 938 "src/main.ml" 43 922 956
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 43 906 942 "src/main.ml" 43 906 955
+"src/main.ml" 43 922 958 "src/main.ml" 43 922 971
 type(
   Segment.t list * Segment.t list -> unit
 )
 ident(
-  int_ref affiche_split "src/main.ml" 36 732 740 "src/main.ml" 36 732 753
+  int_ref affiche_split "src/main.ml" 36 748 756 "src/main.ml" 36 748 769
 )
-"src/main.ml" 43 906 957 "src/main.ml" 43 906 959
+"src/main.ml" 43 922 973 "src/main.ml" 43 922 975
 type(
   Segment.t list
 )
-"src/main.ml" 43 906 961 "src/main.ml" 43 906 962
+"src/main.ml" 43 922 977 "src/main.ml" 43 922 978
 type(
   Segment.t list
 )
 ident(
-  int_ref d "src/main.ml" 43 906 917 "src/main.ml" 43 906 918
+  int_ref d "src/main.ml" 43 922 933 "src/main.ml" 43 922 934
 )
-"src/main.ml" 43 906 956 "src/main.ml" 43 906 963
+"src/main.ml" 43 922 972 "src/main.ml" 43 922 979
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 43 906 942 "src/main.ml" 43 906 963
+"src/main.ml" 43 922 958 "src/main.ml" 43 922 979
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 43 906 922 "src/main.ml" 43 906 963
+"src/main.ml" 43 922 938 "src/main.ml" 43 922 979
 type(
   unit
 )
-"src/main.ml" 44 964 967 "src/main.ml" 44 964 969
+"src/main.ml" 44 980 983 "src/main.ml" 44 980 985
 type(
   Segment.t
 )
 ident(
-  def sl "src/main.ml" 44 964 982 "src/main.ml" 44 964 1023
+  def sl "src/main.ml" 44 980 998 "src/main.ml" 44 980 1039
 )
-"src/main.ml" 44 964 971 "src/main.ml" 44 964 972
+"src/main.ml" 44 980 987 "src/main.ml" 44 980 988
 type(
   Segment.t list
 )
 ident(
-  def g "src/main.ml" 44 964 982 "src/main.ml" 44 964 1023
+  def g "src/main.ml" 44 980 998 "src/main.ml" 44 980 1039
 )
-"src/main.ml" 44 964 967 "src/main.ml" 44 964 972
+"src/main.ml" 44 980 983 "src/main.ml" 44 980 988
 type(
   Segment.t list
 )
-"src/main.ml" 44 964 975 "src/main.ml" 44 964 977
+"src/main.ml" 44 980 991 "src/main.ml" 44 980 993
 type(
   Segment.t list
 )
-"src/main.ml" 44 964 967 "src/main.ml" 44 964 977
+"src/main.ml" 44 980 983 "src/main.ml" 44 980 993
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 44 964 982 "src/main.ml" 44 964 997
+"src/main.ml" 44 980 998 "src/main.ml" 44 980 1013
 type(
   Segment.t -> unit
 )
 ident(
   int_ref affiche_segment "src/main.ml" 12 149 153 "src/main.ml" 12 149 168
 )
-"src/main.ml" 44 964 998 "src/main.ml" 44 964 1000
+"src/main.ml" 44 980 1014 "src/main.ml" 44 980 1016
 type(
   Segment.t
 )
 ident(
-  int_ref sl "src/main.ml" 44 964 967 "src/main.ml" 44 964 969
+  int_ref sl "src/main.ml" 44 980 983 "src/main.ml" 44 980 985
 )
-"src/main.ml" 44 964 982 "src/main.ml" 44 964 1000
+"src/main.ml" 44 980 998 "src/main.ml" 44 980 1016
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 44 964 1002 "src/main.ml" 44 964 1015
+"src/main.ml" 44 980 1018 "src/main.ml" 44 980 1031
 type(
   Segment.t list * Segment.t list -> unit
 )
 ident(
-  int_ref affiche_split "src/main.ml" 36 732 740 "src/main.ml" 36 732 753
+  int_ref affiche_split "src/main.ml" 36 748 756 "src/main.ml" 36 748 769
 )
-"src/main.ml" 44 964 1017 "src/main.ml" 44 964 1018
+"src/main.ml" 44 980 1033 "src/main.ml" 44 980 1034
 type(
   Segment.t list
 )
 ident(
-  int_ref g "src/main.ml" 44 964 971 "src/main.ml" 44 964 972
+  int_ref g "src/main.ml" 44 980 987 "src/main.ml" 44 980 988
 )
-"src/main.ml" 44 964 1020 "src/main.ml" 44 964 1022
+"src/main.ml" 44 980 1036 "src/main.ml" 44 980 1038
 type(
   Segment.t list
 )
-"src/main.ml" 44 964 1016 "src/main.ml" 44 964 1023
+"src/main.ml" 44 980 1032 "src/main.ml" 44 980 1039
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 44 964 1002 "src/main.ml" 44 964 1023
+"src/main.ml" 44 980 1018 "src/main.ml" 44 980 1039
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 44 964 982 "src/main.ml" 44 964 1023
+"src/main.ml" 44 980 998 "src/main.ml" 44 980 1039
 type(
   unit
 )
-"src/main.ml" 37 762 763 "src/main.ml" 44 964 1023
+"src/main.ml" 37 778 779 "src/main.ml" 44 980 1039
 type(
   unit
 )
-"src/main.ml" 46 1025 1029 "src/main.ml" 46 1025 1031
+"src/main.ml" 46 1041 1045 "src/main.ml" 46 1041 1047
 type(
   unit
 )
-"src/main.ml" 47 1035 1040 "src/main.ml" 47 1035 1042
+"src/main.ml" 47 1051 1056 "src/main.ml" 47 1051 1058
 type(
   Segment.t
 )
 ident(
-  def s1 "src/main.ml" 48 1077 1078 "src/main.ml" 194 4311 4394
+  def s1 "src/main.ml" 48 1093 1094 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 47 1035 1045 "src/main.ml" 47 1035 1064
+"src/main.ml" 47 1051 1061 "src/main.ml" 47 1051 1080
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 47 1035 1065 "src/main.ml" 47 1035 1066
+"src/main.ml" 47 1051 1081 "src/main.ml" 47 1051 1082
 type(
   int
 )
-"src/main.ml" 47 1035 1067 "src/main.ml" 47 1035 1068
+"src/main.ml" 47 1051 1083 "src/main.ml" 47 1051 1084
 type(
   int
 )
-"src/main.ml" 47 1035 1069 "src/main.ml" 47 1035 1070
+"src/main.ml" 47 1051 1085 "src/main.ml" 47 1051 1086
 type(
   int
 )
-"src/main.ml" 47 1035 1071 "src/main.ml" 47 1035 1072
+"src/main.ml" 47 1051 1087 "src/main.ml" 47 1051 1088
 type(
   int
 )
-"src/main.ml" 47 1035 1045 "src/main.ml" 47 1035 1072
+"src/main.ml" 47 1051 1061 "src/main.ml" 47 1051 1088
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 48 1077 1082 "src/main.ml" 48 1077 1084
+"src/main.ml" 48 1093 1098 "src/main.ml" 48 1093 1100
 type(
   Segment.t
 )
 ident(
-  def s2 "src/main.ml" 49 1119 1120 "src/main.ml" 194 4311 4394
+  def s2 "src/main.ml" 49 1135 1136 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 48 1077 1087 "src/main.ml" 48 1077 1106
+"src/main.ml" 48 1093 1103 "src/main.ml" 48 1093 1122
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 48 1077 1107 "src/main.ml" 48 1077 1108
+"src/main.ml" 48 1093 1123 "src/main.ml" 48 1093 1124
 type(
   int
 )
-"src/main.ml" 48 1077 1109 "src/main.ml" 48 1077 1110
+"src/main.ml" 48 1093 1125 "src/main.ml" 48 1093 1126
 type(
   int
 )
-"src/main.ml" 48 1077 1111 "src/main.ml" 48 1077 1112
+"src/main.ml" 48 1093 1127 "src/main.ml" 48 1093 1128
 type(
   int
 )
-"src/main.ml" 48 1077 1113 "src/main.ml" 48 1077 1114
+"src/main.ml" 48 1093 1129 "src/main.ml" 48 1093 1130
 type(
   int
 )
-"src/main.ml" 48 1077 1087 "src/main.ml" 48 1077 1114
+"src/main.ml" 48 1093 1103 "src/main.ml" 48 1093 1130
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 49 1119 1124 "src/main.ml" 49 1119 1126
+"src/main.ml" 49 1135 1140 "src/main.ml" 49 1135 1142
 type(
   Segment.t
 )
 ident(
-  def s3 "src/main.ml" 50 1161 1162 "src/main.ml" 194 4311 4394
+  def s3 "src/main.ml" 50 1177 1178 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 49 1119 1129 "src/main.ml" 49 1119 1148
+"src/main.ml" 49 1135 1145 "src/main.ml" 49 1135 1164
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 49 1119 1149 "src/main.ml" 49 1119 1150
+"src/main.ml" 49 1135 1165 "src/main.ml" 49 1135 1166
 type(
   int
 )
-"src/main.ml" 49 1119 1151 "src/main.ml" 49 1119 1152
+"src/main.ml" 49 1135 1167 "src/main.ml" 49 1135 1168
 type(
   int
 )
-"src/main.ml" 49 1119 1153 "src/main.ml" 49 1119 1154
+"src/main.ml" 49 1135 1169 "src/main.ml" 49 1135 1170
 type(
   int
 )
-"src/main.ml" 49 1119 1155 "src/main.ml" 49 1119 1156
+"src/main.ml" 49 1135 1171 "src/main.ml" 49 1135 1172
 type(
   int
 )
-"src/main.ml" 49 1119 1129 "src/main.ml" 49 1119 1156
+"src/main.ml" 49 1135 1145 "src/main.ml" 49 1135 1172
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 50 1161 1166 "src/main.ml" 50 1161 1168
+"src/main.ml" 50 1177 1182 "src/main.ml" 50 1177 1184
 type(
   Segment.t
 )
 ident(
-  def s4 "src/main.ml" 51 1203 1204 "src/main.ml" 194 4311 4394
+  def s4 "src/main.ml" 51 1219 1220 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 50 1161 1171 "src/main.ml" 50 1161 1190
+"src/main.ml" 50 1177 1187 "src/main.ml" 50 1177 1206
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 50 1161 1191 "src/main.ml" 50 1161 1192
+"src/main.ml" 50 1177 1207 "src/main.ml" 50 1177 1208
 type(
   int
 )
-"src/main.ml" 50 1161 1193 "src/main.ml" 50 1161 1194
+"src/main.ml" 50 1177 1209 "src/main.ml" 50 1177 1210
 type(
   int
 )
-"src/main.ml" 50 1161 1195 "src/main.ml" 50 1161 1196
+"src/main.ml" 50 1177 1211 "src/main.ml" 50 1177 1212
 type(
   int
 )
-"src/main.ml" 50 1161 1197 "src/main.ml" 50 1161 1198
+"src/main.ml" 50 1177 1213 "src/main.ml" 50 1177 1214
 type(
   int
 )
-"src/main.ml" 50 1161 1171 "src/main.ml" 50 1161 1198
+"src/main.ml" 50 1177 1187 "src/main.ml" 50 1177 1214
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 51 1203 1208 "src/main.ml" 51 1203 1210
+"src/main.ml" 51 1219 1224 "src/main.ml" 51 1219 1226
 type(
   Segment.t
 )
 ident(
-  def s5 "src/main.ml" 52 1245 1246 "src/main.ml" 194 4311 4394
+  def s5 "src/main.ml" 52 1261 1262 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 51 1203 1213 "src/main.ml" 51 1203 1232
+"src/main.ml" 51 1219 1229 "src/main.ml" 51 1219 1248
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 51 1203 1233 "src/main.ml" 51 1203 1234
+"src/main.ml" 51 1219 1249 "src/main.ml" 51 1219 1250
 type(
   int
 )
-"src/main.ml" 51 1203 1235 "src/main.ml" 51 1203 1236
+"src/main.ml" 51 1219 1251 "src/main.ml" 51 1219 1252
 type(
   int
 )
-"src/main.ml" 51 1203 1237 "src/main.ml" 51 1203 1238
+"src/main.ml" 51 1219 1253 "src/main.ml" 51 1219 1254
 type(
   int
 )
-"src/main.ml" 51 1203 1239 "src/main.ml" 51 1203 1240
+"src/main.ml" 51 1219 1255 "src/main.ml" 51 1219 1256
 type(
   int
 )
-"src/main.ml" 51 1203 1213 "src/main.ml" 51 1203 1240
+"src/main.ml" 51 1219 1229 "src/main.ml" 51 1219 1256
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 52 1245 1250 "src/main.ml" 52 1245 1252
+"src/main.ml" 52 1261 1266 "src/main.ml" 52 1261 1268
 type(
   Segment.t
 )
 ident(
-  def s6 "src/main.ml" 53 1287 1288 "src/main.ml" 194 4311 4394
+  def s6 "src/main.ml" 53 1303 1304 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 52 1245 1255 "src/main.ml" 52 1245 1274
+"src/main.ml" 52 1261 1271 "src/main.ml" 52 1261 1290
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 52 1245 1275 "src/main.ml" 52 1245 1276
+"src/main.ml" 52 1261 1291 "src/main.ml" 52 1261 1292
 type(
   int
 )
-"src/main.ml" 52 1245 1277 "src/main.ml" 52 1245 1278
+"src/main.ml" 52 1261 1293 "src/main.ml" 52 1261 1294
 type(
   int
 )
-"src/main.ml" 52 1245 1279 "src/main.ml" 52 1245 1280
+"src/main.ml" 52 1261 1295 "src/main.ml" 52 1261 1296
 type(
   int
 )
-"src/main.ml" 52 1245 1281 "src/main.ml" 52 1245 1282
+"src/main.ml" 52 1261 1297 "src/main.ml" 52 1261 1298
 type(
   int
 )
-"src/main.ml" 52 1245 1255 "src/main.ml" 52 1245 1282
+"src/main.ml" 52 1261 1271 "src/main.ml" 52 1261 1298
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 53 1287 1292 "src/main.ml" 53 1287 1294
+"src/main.ml" 53 1303 1308 "src/main.ml" 53 1303 1310
 type(
   Segment.t
 )
 ident(
-  def s7 "src/main.ml" 54 1329 1330 "src/main.ml" 194 4311 4394
+  def s7 "src/main.ml" 54 1345 1346 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 53 1287 1297 "src/main.ml" 53 1287 1316
+"src/main.ml" 53 1303 1313 "src/main.ml" 53 1303 1332
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 53 1287 1317 "src/main.ml" 53 1287 1318
+"src/main.ml" 53 1303 1333 "src/main.ml" 53 1303 1334
 type(
   int
 )
-"src/main.ml" 53 1287 1319 "src/main.ml" 53 1287 1320
+"src/main.ml" 53 1303 1335 "src/main.ml" 53 1303 1336
 type(
   int
 )
-"src/main.ml" 53 1287 1321 "src/main.ml" 53 1287 1322
+"src/main.ml" 53 1303 1337 "src/main.ml" 53 1303 1338
 type(
   int
 )
-"src/main.ml" 53 1287 1323 "src/main.ml" 53 1287 1324
+"src/main.ml" 53 1303 1339 "src/main.ml" 53 1303 1340
 type(
   int
 )
-"src/main.ml" 53 1287 1297 "src/main.ml" 53 1287 1324
+"src/main.ml" 53 1303 1313 "src/main.ml" 53 1303 1340
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 54 1329 1334 "src/main.ml" 54 1329 1336
+"src/main.ml" 54 1345 1350 "src/main.ml" 54 1345 1352
 type(
   Segment.t
 )
 ident(
-  def s8 "src/main.ml" 55 1371 1373 "src/main.ml" 194 4311 4394
+  def s8 "src/main.ml" 55 1387 1389 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 54 1329 1339 "src/main.ml" 54 1329 1358
+"src/main.ml" 54 1345 1355 "src/main.ml" 54 1345 1374
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 54 1329 1359 "src/main.ml" 54 1329 1360
+"src/main.ml" 54 1345 1375 "src/main.ml" 54 1345 1376
 type(
   int
 )
-"src/main.ml" 54 1329 1361 "src/main.ml" 54 1329 1363
+"src/main.ml" 54 1345 1377 "src/main.ml" 54 1345 1379
 type(
   int
 )
-"src/main.ml" 54 1329 1364 "src/main.ml" 54 1329 1365
+"src/main.ml" 54 1345 1380 "src/main.ml" 54 1345 1381
 type(
   int
 )
-"src/main.ml" 54 1329 1366 "src/main.ml" 54 1329 1367
+"src/main.ml" 54 1345 1382 "src/main.ml" 54 1345 1383
 type(
   int
 )
-"src/main.ml" 54 1329 1339 "src/main.ml" 54 1329 1367
+"src/main.ml" 54 1345 1355 "src/main.ml" 54 1345 1383
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 55 1371 1377 "src/main.ml" 55 1371 1395
+"src/main.ml" 55 1387 1393 "src/main.ml" 55 1387 1411
 type(
   Segment.t option * Segment.t option
 )
 ident(
-  def test_split_segment "src/main.ml" 57 1432 1433 "src/main.ml" 194 4311 4394
+  def test_split_segment "src/main.ml" 57 1448 1449 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 55 1371 1398 "src/main.ml" 55 1371 1419
+"src/main.ml" 55 1387 1414 "src/main.ml" 55 1387 1435
 type(
   Segment.t -> Segment.t -> Segment.t option * Segment.t option
 )
 ident(
   ext_ref Segment.split_segment
 )
-"src/main.ml" 55 1371 1420 "src/main.ml" 55 1371 1422
+"src/main.ml" 55 1387 1436 "src/main.ml" 55 1387 1438
 type(
   Segment.t
 )
 ident(
-  int_ref s1 "src/main.ml" 47 1035 1040 "src/main.ml" 47 1035 1042
+  int_ref s1 "src/main.ml" 47 1051 1056 "src/main.ml" 47 1051 1058
 )
-"src/main.ml" 55 1371 1423 "src/main.ml" 55 1371 1425
+"src/main.ml" 55 1387 1439 "src/main.ml" 55 1387 1441
 type(
   Segment.t
 )
 ident(
-  int_ref s3 "src/main.ml" 49 1119 1124 "src/main.ml" 49 1119 1126
+  int_ref s3 "src/main.ml" 49 1135 1140 "src/main.ml" 49 1135 1142
 )
-"src/main.ml" 55 1371 1398 "src/main.ml" 55 1371 1425
+"src/main.ml" 55 1387 1414 "src/main.ml" 55 1387 1441
 call(
   stack
 )
 type(
   Segment.t option * Segment.t option
 )
-"src/main.ml" 57 1432 1437 "src/main.ml" 57 1432 1442
+"src/main.ml" 57 1448 1453 "src/main.ml" 57 1448 1458
 type(
   Segment.t list
 )
 ident(
-  def l_seg "src/main.ml" 58 1483 1484 "src/main.ml" 194 4311 4394
+  def l_seg "src/main.ml" 58 1499 1500 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 57 1432 1445 "src/main.ml" 57 1432 1447
+"src/main.ml" 57 1448 1461 "src/main.ml" 57 1448 1463
 type(
   Segment.t
 )
 ident(
-  int_ref s1 "src/main.ml" 47 1035 1040 "src/main.ml" 47 1035 1042
+  int_ref s1 "src/main.ml" 47 1051 1056 "src/main.ml" 47 1051 1058
 )
-"src/main.ml" 57 1432 1449 "src/main.ml" 57 1432 1451
+"src/main.ml" 57 1448 1465 "src/main.ml" 57 1448 1467
 type(
   Segment.t
 )
 ident(
-  int_ref s2 "src/main.ml" 48 1077 1082 "src/main.ml" 48 1077 1084
+  int_ref s2 "src/main.ml" 48 1093 1098 "src/main.ml" 48 1093 1100
 )
-"src/main.ml" 57 1432 1453 "src/main.ml" 57 1432 1455
+"src/main.ml" 57 1448 1469 "src/main.ml" 57 1448 1471
 type(
   Segment.t
 )
 ident(
-  int_ref s3 "src/main.ml" 49 1119 1124 "src/main.ml" 49 1119 1126
+  int_ref s3 "src/main.ml" 49 1135 1140 "src/main.ml" 49 1135 1142
 )
-"src/main.ml" 57 1432 1457 "src/main.ml" 57 1432 1459
+"src/main.ml" 57 1448 1473 "src/main.ml" 57 1448 1475
 type(
   Segment.t
 )
 ident(
-  int_ref s4 "src/main.ml" 50 1161 1166 "src/main.ml" 50 1161 1168
+  int_ref s4 "src/main.ml" 50 1177 1182 "src/main.ml" 50 1177 1184
 )
-"src/main.ml" 57 1432 1461 "src/main.ml" 57 1432 1463
+"src/main.ml" 57 1448 1477 "src/main.ml" 57 1448 1479
 type(
   Segment.t
 )
 ident(
-  int_ref s5 "src/main.ml" 51 1203 1208 "src/main.ml" 51 1203 1210
+  int_ref s5 "src/main.ml" 51 1219 1224 "src/main.ml" 51 1219 1226
 )
-"src/main.ml" 57 1432 1465 "src/main.ml" 57 1432 1467
+"src/main.ml" 57 1448 1481 "src/main.ml" 57 1448 1483
 type(
   Segment.t
 )
 ident(
-  int_ref s6 "src/main.ml" 52 1245 1250 "src/main.ml" 52 1245 1252
+  int_ref s6 "src/main.ml" 52 1261 1266 "src/main.ml" 52 1261 1268
 )
-"src/main.ml" 57 1432 1469 "src/main.ml" 57 1432 1471
+"src/main.ml" 57 1448 1485 "src/main.ml" 57 1448 1487
 type(
   Segment.t
 )
 ident(
-  int_ref s7 "src/main.ml" 53 1287 1292 "src/main.ml" 53 1287 1294
+  int_ref s7 "src/main.ml" 53 1303 1308 "src/main.ml" 53 1303 1310
 )
-"src/main.ml" 57 1432 1473 "src/main.ml" 57 1432 1475
+"src/main.ml" 57 1448 1489 "src/main.ml" 57 1448 1491
 type(
   Segment.t
 )
 ident(
-  int_ref s8 "src/main.ml" 54 1329 1334 "src/main.ml" 54 1329 1336
+  int_ref s8 "src/main.ml" 54 1345 1350 "src/main.ml" 54 1345 1352
 )
-"src/main.ml" 57 1432 1477 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1493 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1473 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1489 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1469 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1485 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1465 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1481 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1461 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1477 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1457 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1473 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1453 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1469 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1449 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1465 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 57 1432 1445 "src/main.ml" 57 1432 1479
+"src/main.ml" 57 1448 1461 "src/main.ml" 57 1448 1495
 type(
   Segment.t list
 )
-"src/main.ml" 58 1483 1488 "src/main.ml" 58 1483 1498
+"src/main.ml" 58 1499 1504 "src/main.ml" 58 1499 1514
 type(
   Segment.t list * Segment.t list
 )
 ident(
-  def test_split "src/main.ml" 59 1528 1529 "src/main.ml" 194 4311 4394
+  def test_split "src/main.ml" 59 1544 1545 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 58 1483 1501 "src/main.ml" 58 1483 1514
+"src/main.ml" 58 1499 1517 "src/main.ml" 58 1499 1530
 type(
   Segment.t -> Segment.t list -> Segment.t list * Segment.t list
 )
 ident(
   ext_ref Segment.split
 )
-"src/main.ml" 58 1483 1515 "src/main.ml" 58 1483 1517
+"src/main.ml" 58 1499 1531 "src/main.ml" 58 1499 1533
 type(
   Segment.t
 )
 ident(
-  int_ref s1 "src/main.ml" 47 1035 1040 "src/main.ml" 47 1035 1042
+  int_ref s1 "src/main.ml" 47 1051 1056 "src/main.ml" 47 1051 1058
 )
-"src/main.ml" 58 1483 1518 "src/main.ml" 58 1483 1523
+"src/main.ml" 58 1499 1534 "src/main.ml" 58 1499 1539
 type(
   Segment.t list
 )
 ident(
-  int_ref l_seg "src/main.ml" 57 1432 1437 "src/main.ml" 57 1432 1442
+  int_ref l_seg "src/main.ml" 57 1448 1453 "src/main.ml" 57 1448 1458
 )
-"src/main.ml" 58 1483 1501 "src/main.ml" 58 1483 1523
+"src/main.ml" 58 1499 1517 "src/main.ml" 58 1499 1539
 call(
   stack
 )
 type(
   Segment.t list * Segment.t list
 )
-"src/main.ml" 59 1528 1533 "src/main.ml" 59 1528 1534
+"src/main.ml" 59 1544 1549 "src/main.ml" 59 1544 1550
 type(
   Bsp.t
 )
 ident(
-  def b "src/main.ml" 61 1562 1563 "src/main.ml" 194 4311 4394
+  def b "src/main.ml" 61 1578 1579 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 59 1528 1537 "src/main.ml" 59 1528 1550
+"src/main.ml" 59 1544 1553 "src/main.ml" 59 1544 1566
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 59 1528 1551 "src/main.ml" 59 1528 1556
+"src/main.ml" 59 1544 1567 "src/main.ml" 59 1544 1572
 type(
   Segment.t list
 )
 ident(
-  int_ref l_seg "src/main.ml" 57 1432 1437 "src/main.ml" 57 1432 1442
+  int_ref l_seg "src/main.ml" 57 1448 1453 "src/main.ml" 57 1448 1458
 )
-"src/main.ml" 59 1528 1537 "src/main.ml" 59 1528 1556
+"src/main.ml" 59 1544 1553 "src/main.ml" 59 1544 1572
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 61 1562 1563 "src/main.ml" 61 1562 1576
+"src/main.ml" 61 1578 1579 "src/main.ml" 61 1578 1592
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 61 1562 1577 "src/main.ml" 61 1562 1588
+"src/main.ml" 61 1578 1593 "src/main.ml" 61 1578 1604
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 61 1562 1563 "src/main.ml" 61 1562 1588
+"src/main.ml" 61 1578 1579 "src/main.ml" 61 1578 1604
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 62 1590 1591 "src/main.ml" 62 1590 1602
+"src/main.ml" 62 1606 1607 "src/main.ml" 62 1606 1618
 type(
   Bsp.t -> unit
 )
 ident(
-  int_ref affiche_bsp "src/main.ml" 15 267 271 "src/main.ml" 15 267 282
+  int_ref affiche_bsp "src/main.ml" 15 283 287 "src/main.ml" 15 283 298
 )
-"src/main.ml" 62 1590 1603 "src/main.ml" 62 1590 1604
+"src/main.ml" 62 1606 1619 "src/main.ml" 62 1606 1620
 type(
   Bsp.t
 )
 ident(
-  int_ref b "src/main.ml" 59 1528 1533 "src/main.ml" 59 1528 1534
+  int_ref b "src/main.ml" 59 1544 1549 "src/main.ml" 59 1544 1550
 )
-"src/main.ml" 62 1590 1591 "src/main.ml" 62 1590 1604
+"src/main.ml" 62 1606 1607 "src/main.ml" 62 1606 1620
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 64 1607 1608 "src/main.ml" 64 1607 1621
+"src/main.ml" 64 1623 1624 "src/main.ml" 64 1623 1637
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 64 1607 1622 "src/main.ml" 64 1607 1647
+"src/main.ml" 64 1623 1638 "src/main.ml" 64 1623 1663
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 64 1607 1608 "src/main.ml" 64 1607 1647
+"src/main.ml" 64 1623 1624 "src/main.ml" 64 1623 1663
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 65 1649 1650 "src/main.ml" 65 1649 1665
+"src/main.ml" 65 1665 1666 "src/main.ml" 65 1665 1681
 type(
   Bsp.t -> unit
 )
 ident(
-  int_ref affiche_bsp_bis "src/main.ml" 33 673 677 "src/main.ml" 33 673 692
+  int_ref affiche_bsp_bis "src/main.ml" 33 689 693 "src/main.ml" 33 689 708
 )
-"src/main.ml" 65 1649 1666 "src/main.ml" 65 1649 1667
+"src/main.ml" 65 1665 1682 "src/main.ml" 65 1665 1683
 type(
   Bsp.t
 )
 ident(
-  int_ref b "src/main.ml" 59 1528 1533 "src/main.ml" 59 1528 1534
+  int_ref b "src/main.ml" 59 1544 1549 "src/main.ml" 59 1544 1550
 )
-"src/main.ml" 65 1649 1650 "src/main.ml" 65 1649 1667
+"src/main.ml" 65 1665 1666 "src/main.ml" 65 1665 1683
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 67 1670 1671 "src/main.ml" 67 1670 1684
+"src/main.ml" 67 1686 1687 "src/main.ml" 67 1686 1700
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 67 1670 1685 "src/main.ml" 67 1670 1708
+"src/main.ml" 67 1686 1701 "src/main.ml" 67 1686 1724
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 67 1670 1671 "src/main.ml" 67 1670 1708
+"src/main.ml" 67 1686 1687 "src/main.ml" 67 1686 1724
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 68 1710 1711 "src/main.ml" 68 1710 1724
+"src/main.ml" 68 1726 1727 "src/main.ml" 68 1726 1740
 type(
   Segment.t list * Segment.t list -> unit
 )
 ident(
-  int_ref affiche_split "src/main.ml" 36 732 740 "src/main.ml" 36 732 753
+  int_ref affiche_split "src/main.ml" 36 748 756 "src/main.ml" 36 748 769
 )
-"src/main.ml" 68 1710 1725 "src/main.ml" 68 1710 1735
+"src/main.ml" 68 1726 1741 "src/main.ml" 68 1726 1751
 type(
   Segment.t list * Segment.t list
 )
 ident(
-  int_ref test_split "src/main.ml" 58 1483 1488 "src/main.ml" 58 1483 1498
+  int_ref test_split "src/main.ml" 58 1499 1504 "src/main.ml" 58 1499 1514
 )
-"src/main.ml" 68 1710 1711 "src/main.ml" 68 1710 1735
+"src/main.ml" 68 1726 1727 "src/main.ml" 68 1726 1751
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 72 1740 1745 "src/main.ml" 72 1740 1746
+"src/main.ml" 72 1756 1761 "src/main.ml" 72 1756 1762
 type(
   Point.t
 )
 ident(
-  def p "src/main.ml" 73 1773 1774 "src/main.ml" 194 4311 4394
+  def p "src/main.ml" 73 1789 1790 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 72 1740 1749 "src/main.ml" 72 1740 1764
+"src/main.ml" 72 1756 1765 "src/main.ml" 72 1756 1780
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/main.ml" 72 1740 1765 "src/main.ml" 72 1740 1766
+"src/main.ml" 72 1756 1781 "src/main.ml" 72 1756 1782
 type(
   int
 )
-"src/main.ml" 72 1740 1767 "src/main.ml" 72 1740 1768
+"src/main.ml" 72 1756 1783 "src/main.ml" 72 1756 1784
 type(
   int
 )
-"src/main.ml" 72 1740 1749 "src/main.ml" 72 1740 1768
+"src/main.ml" 72 1756 1765 "src/main.ml" 72 1756 1784
 call(
   stack
 )
 type(
   Point.t
 )
-"src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+"src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 type(
   Player.t
 )
 ident(
-  def player "src/main.ml" 75 1815 1816 "src/main.ml" 194 4311 4394
+  def player "src/main.ml" 75 1831 1832 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 73 1773 1787 "src/main.ml" 73 1773 1804
+"src/main.ml" 73 1789 1803 "src/main.ml" 73 1789 1820
 type(
   Point.t -> int -> Player.t
 )
 ident(
   ext_ref Player.new_player
 )
-"src/main.ml" 73 1773 1805 "src/main.ml" 73 1773 1806
+"src/main.ml" 73 1789 1821 "src/main.ml" 73 1789 1822
 type(
   Point.t
 )
 ident(
-  int_ref p "src/main.ml" 72 1740 1745 "src/main.ml" 72 1740 1746
+  int_ref p "src/main.ml" 72 1756 1761 "src/main.ml" 72 1756 1762
 )
-"src/main.ml" 73 1773 1807 "src/main.ml" 73 1773 1809
+"src/main.ml" 73 1789 1823 "src/main.ml" 73 1789 1825
 type(
   int
 )
-"src/main.ml" 73 1773 1787 "src/main.ml" 73 1773 1809
+"src/main.ml" 73 1789 1803 "src/main.ml" 73 1789 1825
 call(
   stack
 )
 type(
   Player.t
 )
-"src/main.ml" 75 1815 1816 "src/main.ml" 75 1815 1829
+"src/main.ml" 75 1831 1832 "src/main.ml" 75 1831 1845
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 75 1815 1830 "src/main.ml" 75 1815 1854
+"src/main.ml" 75 1831 1846 "src/main.ml" 75 1831 1870
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 75 1815 1816 "src/main.ml" 75 1815 1854
+"src/main.ml" 75 1831 1832 "src/main.ml" 75 1831 1870
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 80 1926 1927 "src/main.ml" 80 1926 1940
+"src/main.ml" 80 1942 1943 "src/main.ml" 80 1942 1956
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 80 1926 1941 "src/main.ml" 80 1926 1952
+"src/main.ml" 80 1942 1957 "src/main.ml" 80 1942 1968
 type(
   Player.dir
 )
-"src/main.ml" 80 1926 1953 "src/main.ml" 80 1926 1959
+"src/main.ml" 80 1942 1969 "src/main.ml" 80 1942 1975
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 80 1926 1927 "src/main.ml" 80 1926 1959
+"src/main.ml" 80 1942 1943 "src/main.ml" 80 1942 1975
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 81 1961 1962 "src/main.ml" 81 1961 1973
+"src/main.ml" 81 1977 1978 "src/main.ml" 81 1977 1989
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 81 1961 1974 "src/main.ml" 81 1961 1985
+"src/main.ml" 81 1977 1990 "src/main.ml" 81 1977 2001
 type(
   Player.mv
 )
-"src/main.ml" 81 1961 1986 "src/main.ml" 81 1961 1992
+"src/main.ml" 81 1977 2002 "src/main.ml" 81 1977 2008
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 81 1961 1994 "src/main.ml" 81 1961 2007
+"src/main.ml" 81 1977 2010 "src/main.ml" 81 1977 2023
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 81 1961 2008 "src/main.ml" 81 1961 2010
+"src/main.ml" 81 1977 2024 "src/main.ml" 81 1977 2026
 type(
   Segment.t list
 )
-"src/main.ml" 81 1961 1993 "src/main.ml" 81 1961 2011
+"src/main.ml" 81 1977 2009 "src/main.ml" 81 1977 2027
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 81 1961 1962 "src/main.ml" 81 1961 2011
+"src/main.ml" 81 1977 1978 "src/main.ml" 81 1977 2027
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 82 2013 2014 "src/main.ml" 82 2013 2027
+"src/main.ml" 82 2029 2030 "src/main.ml" 82 2029 2043
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 82 2013 2028 "src/main.ml" 82 2013 2034
+"src/main.ml" 82 2029 2044 "src/main.ml" 82 2029 2050
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 82 2013 2028 "src/main.ml" 82 2013 2038
+"src/main.ml" 82 2029 2044 "src/main.ml" 82 2029 2054
 type(
   Point.t
 )
-"src/main.ml" 82 2013 2014 "src/main.ml" 82 2013 2038
+"src/main.ml" 82 2029 2030 "src/main.ml" 82 2029 2054
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 86 2079 2080 "src/main.ml" 86 2079 2093
+"src/main.ml" 87 2096 2097 "src/main.ml" 87 2096 2110
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 86 2079 2094 "src/main.ml" 86 2079 2098
+"src/main.ml" 87 2096 2111 "src/main.ml" 87 2096 2115
 type(
   Player.dir
 )
-"src/main.ml" 86 2079 2099 "src/main.ml" 86 2079 2105
+"src/main.ml" 87 2096 2116 "src/main.ml" 87 2096 2122
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 86 2079 2080 "src/main.ml" 86 2079 2105
+"src/main.ml" 87 2096 2097 "src/main.ml" 87 2096 2122
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 87 2107 2108 "src/main.ml" 87 2107 2119
+"src/main.ml" 88 2124 2125 "src/main.ml" 88 2124 2136
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 87 2107 2120 "src/main.ml" 87 2107 2131
+"src/main.ml" 88 2124 2137 "src/main.ml" 88 2124 2148
 type(
   Player.mv
 )
-"src/main.ml" 87 2107 2132 "src/main.ml" 87 2107 2138
+"src/main.ml" 88 2124 2149 "src/main.ml" 88 2124 2155
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 87 2107 2140 "src/main.ml" 87 2107 2153
+"src/main.ml" 88 2124 2157 "src/main.ml" 88 2124 2170
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 87 2107 2154 "src/main.ml" 87 2107 2156
+"src/main.ml" 88 2124 2171 "src/main.ml" 88 2124 2173
 type(
   Segment.t list
 )
-"src/main.ml" 87 2107 2139 "src/main.ml" 87 2107 2157
+"src/main.ml" 88 2124 2156 "src/main.ml" 88 2124 2174
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 87 2107 2108 "src/main.ml" 87 2107 2157
+"src/main.ml" 88 2124 2125 "src/main.ml" 88 2124 2174
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 88 2159 2160 "src/main.ml" 88 2159 2173
+"src/main.ml" 89 2176 2177 "src/main.ml" 89 2176 2190
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 88 2159 2174 "src/main.ml" 88 2159 2180
+"src/main.ml" 89 2176 2191 "src/main.ml" 89 2176 2197
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 88 2159 2174 "src/main.ml" 88 2159 2184
+"src/main.ml" 89 2176 2191 "src/main.ml" 89 2176 2201
 type(
   Point.t
 )
-"src/main.ml" 88 2159 2160 "src/main.ml" 88 2159 2184
+"src/main.ml" 89 2176 2177 "src/main.ml" 89 2176 2201
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 93 2272 2273 "src/main.ml" 93 2272 2284
+"src/main.ml" 94 2289 2290 "src/main.ml" 94 2289 2301
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 93 2272 2285 "src/main.ml" 93 2272 2296
+"src/main.ml" 94 2289 2302 "src/main.ml" 94 2289 2313
 type(
   Player.mv
 )
-"src/main.ml" 93 2272 2297 "src/main.ml" 93 2272 2303
+"src/main.ml" 94 2289 2314 "src/main.ml" 94 2289 2320
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 93 2272 2305 "src/main.ml" 93 2272 2318
+"src/main.ml" 94 2289 2322 "src/main.ml" 94 2289 2335
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 93 2272 2319 "src/main.ml" 93 2272 2321
+"src/main.ml" 94 2289 2336 "src/main.ml" 94 2289 2338
 type(
   Segment.t list
 )
-"src/main.ml" 93 2272 2304 "src/main.ml" 93 2272 2322
+"src/main.ml" 94 2289 2321 "src/main.ml" 94 2289 2339
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 93 2272 2273 "src/main.ml" 93 2272 2322
+"src/main.ml" 94 2289 2290 "src/main.ml" 94 2289 2339
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 94 2324 2325 "src/main.ml" 94 2324 2338
+"src/main.ml" 95 2341 2342 "src/main.ml" 95 2341 2355
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 94 2324 2339 "src/main.ml" 94 2324 2345
+"src/main.ml" 95 2341 2356 "src/main.ml" 95 2341 2362
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 94 2324 2339 "src/main.ml" 94 2324 2349
+"src/main.ml" 95 2341 2356 "src/main.ml" 95 2341 2366
 type(
   Point.t
 )
-"src/main.ml" 94 2324 2325 "src/main.ml" 94 2324 2349
+"src/main.ml" 95 2341 2342 "src/main.ml" 95 2341 2366
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 96 2352 2353 "src/main.ml" 96 2352 2366
+"src/main.ml" 97 2369 2370 "src/main.ml" 97 2369 2383
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 96 2352 2367 "src/main.ml" 96 2352 2372
+"src/main.ml" 97 2369 2384 "src/main.ml" 97 2369 2389
 type(
   Player.dir
 )
-"src/main.ml" 96 2352 2373 "src/main.ml" 96 2352 2379
+"src/main.ml" 97 2369 2390 "src/main.ml" 97 2369 2396
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 96 2352 2353 "src/main.ml" 96 2352 2379
+"src/main.ml" 97 2369 2370 "src/main.ml" 97 2369 2396
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 97 2381 2382 "src/main.ml" 97 2381 2393
+"src/main.ml" 98 2398 2399 "src/main.ml" 98 2398 2410
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 97 2381 2394 "src/main.ml" 97 2381 2405
+"src/main.ml" 98 2398 2411 "src/main.ml" 98 2398 2422
 type(
   Player.mv
 )
-"src/main.ml" 97 2381 2406 "src/main.ml" 97 2381 2412
+"src/main.ml" 98 2398 2423 "src/main.ml" 98 2398 2429
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 97 2381 2414 "src/main.ml" 97 2381 2427
+"src/main.ml" 98 2398 2431 "src/main.ml" 98 2398 2444
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 97 2381 2428 "src/main.ml" 97 2381 2430
+"src/main.ml" 98 2398 2445 "src/main.ml" 98 2398 2447
 type(
   Segment.t list
 )
-"src/main.ml" 97 2381 2413 "src/main.ml" 97 2381 2431
+"src/main.ml" 98 2398 2430 "src/main.ml" 98 2398 2448
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 97 2381 2382 "src/main.ml" 97 2381 2431
+"src/main.ml" 98 2398 2399 "src/main.ml" 98 2398 2448
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 98 2433 2434 "src/main.ml" 98 2433 2447
+"src/main.ml" 99 2450 2451 "src/main.ml" 99 2450 2464
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 98 2433 2448 "src/main.ml" 98 2433 2454
+"src/main.ml" 99 2450 2465 "src/main.ml" 99 2450 2471
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 98 2433 2448 "src/main.ml" 98 2433 2458
+"src/main.ml" 99 2450 2465 "src/main.ml" 99 2450 2475
 type(
   Point.t
 )
-"src/main.ml" 98 2433 2434 "src/main.ml" 98 2433 2458
+"src/main.ml" 99 2450 2451 "src/main.ml" 99 2450 2475
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 102 2527 2528 "src/main.ml" 102 2527 2539
+"src/main.ml" 103 2544 2545 "src/main.ml" 103 2544 2556
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 102 2527 2540 "src/main.ml" 102 2527 2545
+"src/main.ml" 103 2544 2557 "src/main.ml" 103 2544 2562
 type(
   Player.mv
 )
-"src/main.ml" 102 2527 2546 "src/main.ml" 102 2527 2552
+"src/main.ml" 103 2544 2563 "src/main.ml" 103 2544 2569
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 102 2527 2554 "src/main.ml" 102 2527 2567
+"src/main.ml" 103 2544 2571 "src/main.ml" 103 2544 2584
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 102 2527 2568 "src/main.ml" 102 2527 2570
+"src/main.ml" 103 2544 2585 "src/main.ml" 103 2544 2587
 type(
   Segment.t list
 )
-"src/main.ml" 102 2527 2553 "src/main.ml" 102 2527 2571
+"src/main.ml" 103 2544 2570 "src/main.ml" 103 2544 2588
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 102 2527 2528 "src/main.ml" 102 2527 2571
+"src/main.ml" 103 2544 2545 "src/main.ml" 103 2544 2588
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 103 2573 2574 "src/main.ml" 103 2573 2587
+"src/main.ml" 104 2590 2591 "src/main.ml" 104 2590 2604
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 103 2573 2588 "src/main.ml" 103 2573 2594
+"src/main.ml" 104 2590 2605 "src/main.ml" 104 2590 2611
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 103 2573 2588 "src/main.ml" 103 2573 2598
+"src/main.ml" 104 2590 2605 "src/main.ml" 104 2590 2615
 type(
   Point.t
 )
-"src/main.ml" 103 2573 2574 "src/main.ml" 103 2573 2598
+"src/main.ml" 104 2590 2591 "src/main.ml" 104 2590 2615
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 105 2601 2602 "src/main.ml" 105 2601 2613
+"src/main.ml" 106 2618 2619 "src/main.ml" 106 2618 2630
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 105 2601 2614 "src/main.ml" 105 2601 2620
+"src/main.ml" 106 2618 2631 "src/main.ml" 106 2618 2637
 type(
   Player.mv
 )
-"src/main.ml" 105 2601 2621 "src/main.ml" 105 2601 2627
+"src/main.ml" 106 2618 2638 "src/main.ml" 106 2618 2644
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 105 2601 2629 "src/main.ml" 105 2601 2642
+"src/main.ml" 106 2618 2646 "src/main.ml" 106 2618 2659
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 105 2601 2643 "src/main.ml" 105 2601 2645
+"src/main.ml" 106 2618 2660 "src/main.ml" 106 2618 2662
 type(
   Segment.t list
 )
-"src/main.ml" 105 2601 2628 "src/main.ml" 105 2601 2646
+"src/main.ml" 106 2618 2645 "src/main.ml" 106 2618 2663
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 105 2601 2602 "src/main.ml" 105 2601 2646
+"src/main.ml" 106 2618 2619 "src/main.ml" 106 2618 2663
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 106 2648 2649 "src/main.ml" 106 2648 2662
+"src/main.ml" 107 2665 2666 "src/main.ml" 107 2665 2679
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 106 2648 2663 "src/main.ml" 106 2648 2669
+"src/main.ml" 107 2665 2680 "src/main.ml" 107 2665 2686
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 106 2648 2663 "src/main.ml" 106 2648 2673
+"src/main.ml" 107 2665 2680 "src/main.ml" 107 2665 2690
 type(
   Point.t
 )
-"src/main.ml" 106 2648 2649 "src/main.ml" 106 2648 2673
+"src/main.ml" 107 2665 2666 "src/main.ml" 107 2665 2690
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 110 2705 2706 "src/main.ml" 110 2705 2719
+"src/main.ml" 111 2722 2723 "src/main.ml" 111 2722 2736
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 110 2705 2720 "src/main.ml" 110 2705 2724
+"src/main.ml" 111 2722 2737 "src/main.ml" 111 2722 2741
 type(
   Player.dir
 )
-"src/main.ml" 110 2705 2725 "src/main.ml" 110 2705 2731
+"src/main.ml" 111 2722 2742 "src/main.ml" 111 2722 2748
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 110 2705 2706 "src/main.ml" 110 2705 2731
+"src/main.ml" 111 2722 2723 "src/main.ml" 111 2722 2748
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 111 2733 2734 "src/main.ml" 111 2733 2745
+"src/main.ml" 112 2750 2751 "src/main.ml" 112 2750 2762
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 111 2733 2746 "src/main.ml" 111 2733 2751
+"src/main.ml" 112 2750 2763 "src/main.ml" 112 2750 2768
 type(
   Player.mv
 )
-"src/main.ml" 111 2733 2752 "src/main.ml" 111 2733 2758
+"src/main.ml" 112 2750 2769 "src/main.ml" 112 2750 2775
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 111 2733 2760 "src/main.ml" 111 2733 2773
+"src/main.ml" 112 2750 2777 "src/main.ml" 112 2750 2790
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 111 2733 2774 "src/main.ml" 111 2733 2776
+"src/main.ml" 112 2750 2791 "src/main.ml" 112 2750 2793
 type(
   Segment.t list
 )
-"src/main.ml" 111 2733 2759 "src/main.ml" 111 2733 2777
+"src/main.ml" 112 2750 2776 "src/main.ml" 112 2750 2794
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 111 2733 2734 "src/main.ml" 111 2733 2777
+"src/main.ml" 112 2750 2751 "src/main.ml" 112 2750 2794
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 112 2779 2780 "src/main.ml" 112 2779 2793
+"src/main.ml" 113 2796 2797 "src/main.ml" 113 2796 2810
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 112 2779 2794 "src/main.ml" 112 2779 2800
+"src/main.ml" 113 2796 2811 "src/main.ml" 113 2796 2817
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 112 2779 2794 "src/main.ml" 112 2779 2804
+"src/main.ml" 113 2796 2811 "src/main.ml" 113 2796 2821
 type(
   Point.t
 )
-"src/main.ml" 112 2779 2780 "src/main.ml" 112 2779 2804
+"src/main.ml" 113 2796 2797 "src/main.ml" 113 2796 2821
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 114 2807 2808 "src/main.ml" 114 2807 2819
+"src/main.ml" 115 2824 2825 "src/main.ml" 115 2824 2836
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 114 2807 2820 "src/main.ml" 114 2807 2826
+"src/main.ml" 115 2824 2837 "src/main.ml" 115 2824 2843
 type(
   Player.mv
 )
-"src/main.ml" 114 2807 2827 "src/main.ml" 114 2807 2833
+"src/main.ml" 115 2824 2844 "src/main.ml" 115 2824 2850
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 114 2807 2835 "src/main.ml" 114 2807 2848
+"src/main.ml" 115 2824 2852 "src/main.ml" 115 2824 2865
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 114 2807 2849 "src/main.ml" 114 2807 2851
+"src/main.ml" 115 2824 2866 "src/main.ml" 115 2824 2868
 type(
   Segment.t list
 )
-"src/main.ml" 114 2807 2834 "src/main.ml" 114 2807 2852
+"src/main.ml" 115 2824 2851 "src/main.ml" 115 2824 2869
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 114 2807 2808 "src/main.ml" 114 2807 2852
+"src/main.ml" 115 2824 2825 "src/main.ml" 115 2824 2869
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 115 2854 2855 "src/main.ml" 115 2854 2868
+"src/main.ml" 116 2871 2872 "src/main.ml" 116 2871 2885
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 115 2854 2869 "src/main.ml" 115 2854 2875
+"src/main.ml" 116 2871 2886 "src/main.ml" 116 2871 2892
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 115 2854 2869 "src/main.ml" 115 2854 2879
+"src/main.ml" 116 2871 2886 "src/main.ml" 116 2871 2896
 type(
   Point.t
 )
-"src/main.ml" 115 2854 2855 "src/main.ml" 115 2854 2879
+"src/main.ml" 116 2871 2872 "src/main.ml" 116 2871 2896
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 117 2882 2883 "src/main.ml" 117 2882 2894
+"src/main.ml" 118 2899 2900 "src/main.ml" 118 2899 2911
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 117 2882 2895 "src/main.ml" 117 2882 2901
+"src/main.ml" 118 2899 2912 "src/main.ml" 118 2899 2918
 type(
   Player.mv
 )
-"src/main.ml" 117 2882 2902 "src/main.ml" 117 2882 2908
+"src/main.ml" 118 2899 2919 "src/main.ml" 118 2899 2925
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 117 2882 2910 "src/main.ml" 117 2882 2923
+"src/main.ml" 118 2899 2927 "src/main.ml" 118 2899 2940
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 117 2882 2924 "src/main.ml" 117 2882 2926
+"src/main.ml" 118 2899 2941 "src/main.ml" 118 2899 2943
 type(
   Segment.t list
 )
-"src/main.ml" 117 2882 2909 "src/main.ml" 117 2882 2927
+"src/main.ml" 118 2899 2926 "src/main.ml" 118 2899 2944
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 117 2882 2883 "src/main.ml" 117 2882 2927
+"src/main.ml" 118 2899 2900 "src/main.ml" 118 2899 2944
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 118 2929 2930 "src/main.ml" 118 2929 2943
+"src/main.ml" 119 2946 2947 "src/main.ml" 119 2946 2960
 type(
   Point.t -> unit
 )
 ident(
   int_ref affiche_point "src/main.ml" 9 85 89 "src/main.ml" 9 85 102
 )
-"src/main.ml" 118 2929 2944 "src/main.ml" 118 2929 2950
+"src/main.ml" 119 2946 2961 "src/main.ml" 119 2946 2967
 type(
   Player.t
 )
 ident(
-  int_ref player "src/main.ml" 73 1773 1778 "src/main.ml" 73 1773 1784
+  int_ref player "src/main.ml" 73 1789 1794 "src/main.ml" 73 1789 1800
 )
-"src/main.ml" 118 2929 2944 "src/main.ml" 118 2929 2954
+"src/main.ml" 119 2946 2961 "src/main.ml" 119 2946 2971
 type(
   Point.t
 )
-"src/main.ml" 118 2929 2930 "src/main.ml" 118 2929 2954
+"src/main.ml" 119 2946 2947 "src/main.ml" 119 2946 2971
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 136 3154 3155 "src/main.ml" 136 3154 3168
+"src/main.ml" 137 3171 3172 "src/main.ml" 137 3171 3185
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/main.ml" 136 3154 3169 "src/main.ml" 136 3154 3194
+"src/main.ml" 137 3171 3186 "src/main.ml" 137 3171 3211
 type(
   (unit, out_channel, unit) format
 )
-"src/main.ml" 136 3154 3155 "src/main.ml" 136 3154 3194
+"src/main.ml" 137 3171 3172 "src/main.ml" 137 3171 3211
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 138 3197 3202 "src/main.ml" 138 3197 3203
+"src/main.ml" 139 3214 3219 "src/main.ml" 139 3214 3220
 type(
   string
 )
 ident(
-  def s "src/main.ml" 139 3230 3231 "src/main.ml" 194 4311 4394
+  def s "src/main.ml" 140 3247 3248 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 138 3197 3206 "src/main.ml" 138 3197 3219
+"src/main.ml" 139 3214 3223 "src/main.ml" 139 3214 3236
 type(
   int -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"src/main.ml" 138 3197 3220 "src/main.ml" 138 3197 3225
+"src/main.ml" 139 3214 3237 "src/main.ml" 139 3214 3242
 type(
   int
 )
-"src/main.ml" 138 3197 3206 "src/main.ml" 138 3197 3225
+"src/main.ml" 139 3214 3223 "src/main.ml" 139 3214 3242
 call(
   stack
 )
 type(
   string
 )
-"src/main.ml" 139 3230 3235 "src/main.ml" 139 3230 3236
+"src/main.ml" 140 3247 3252 "src/main.ml" 140 3247 3253
 type(
   string
 )
 ident(
-  def a "src/main.ml" 140 3261 3262 "src/main.ml" 194 4311 4394
+  def a "src/main.ml" 141 3278 3279 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 139 3230 3240 "src/main.ml" 139 3230 3243
+"src/main.ml" 140 3247 3257 "src/main.ml" 140 3247 3260
 type(
   string
 )
-"src/main.ml" 139 3230 3244 "src/main.ml" 139 3230 3245
+"src/main.ml" 140 3247 3261 "src/main.ml" 140 3247 3262
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"src/main.ml" 139 3230 3246 "src/main.ml" 139 3230 3247
+"src/main.ml" 140 3247 3263 "src/main.ml" 140 3247 3264
 type(
   string
 )
 ident(
-  int_ref s "src/main.ml" 138 3197 3202 "src/main.ml" 138 3197 3203
+  int_ref s "src/main.ml" 139 3214 3219 "src/main.ml" 139 3214 3220
 )
-"src/main.ml" 139 3230 3248 "src/main.ml" 139 3230 3249
+"src/main.ml" 140 3247 3265 "src/main.ml" 140 3247 3266
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"src/main.ml" 139 3230 3250 "src/main.ml" 139 3230 3253
+"src/main.ml" 140 3247 3267 "src/main.ml" 140 3247 3270
 type(
   string
 )
-"src/main.ml" 139 3230 3254 "src/main.ml" 139 3230 3255
+"src/main.ml" 140 3247 3271 "src/main.ml" 140 3247 3272
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"src/main.ml" 139 3230 3256 "src/main.ml" 139 3230 3257
+"src/main.ml" 140 3247 3273 "src/main.ml" 140 3247 3274
 type(
   string
 )
 ident(
-  int_ref s "src/main.ml" 138 3197 3202 "src/main.ml" 138 3197 3203
+  int_ref s "src/main.ml" 139 3214 3219 "src/main.ml" 139 3214 3220
 )
-"src/main.ml" 139 3230 3250 "src/main.ml" 139 3230 3257
+"src/main.ml" 140 3247 3267 "src/main.ml" 140 3247 3274
 call(
   stack
 )
 type(
   string
 )
-"src/main.ml" 139 3230 3246 "src/main.ml" 139 3230 3257
+"src/main.ml" 140 3247 3263 "src/main.ml" 140 3247 3274
 call(
   stack
 )
 type(
   string
 )
-"src/main.ml" 139 3230 3240 "src/main.ml" 139 3230 3257
+"src/main.ml" 140 3247 3257 "src/main.ml" 140 3247 3274
 call(
   stack
 )
 type(
   string
 )
-"src/main.ml" 140 3261 3262 "src/main.ml" 140 3261 3281
+"src/main.ml" 141 3278 3279 "src/main.ml" 141 3278 3298
 type(
   string -> unit
 )
 ident(
   ext_ref Graphics.open_graph
 )
-"src/main.ml" 140 3261 3282 "src/main.ml" 140 3261 3283
+"src/main.ml" 141 3278 3299 "src/main.ml" 141 3278 3300
 type(
   string
 )
 ident(
-  int_ref a "src/main.ml" 139 3230 3235 "src/main.ml" 139 3230 3236
+  int_ref a "src/main.ml" 140 3247 3252 "src/main.ml" 140 3247 3253
 )
-"src/main.ml" 140 3261 3262 "src/main.ml" 140 3261 3283
+"src/main.ml" 141 3278 3279 "src/main.ml" 141 3278 3300
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 186 4118 4123 "src/main.ml" 186 4118 4131
+"src/main.ml" 187 4143 4148 "src/main.ml" 187 4143 4156
 type(
   Bsp.t
 )
 ident(
-  def bsp_test "src/main.ml" 187 4173 4174 "src/main.ml" 194 4311 4394
+  def bsp_test "src/main.ml" 188 4198 4199 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 186 4118 4134 "src/main.ml" 186 4118 4147
+"src/main.ml" 187 4143 4159 "src/main.ml" 187 4143 4172
 type(
   Segment.t list -> Bsp.t
 )
 ident(
   ext_ref Bsp.build_bsp
 )
-"src/main.ml" 186 4118 4149 "src/main.ml" 186 4118 4151
+"src/main.ml" 187 4143 4174 "src/main.ml" 187 4143 4176
 type(
   Segment.t
 )
 ident(
-  int_ref s1 "src/main.ml" 47 1035 1040 "src/main.ml" 47 1035 1042
+  int_ref s1 "src/main.ml" 47 1051 1056 "src/main.ml" 47 1051 1058
 )
-"src/main.ml" 186 4118 4153 "src/main.ml" 186 4118 4155
+"src/main.ml" 187 4143 4178 "src/main.ml" 187 4143 4180
 type(
   Segment.t
 )
 ident(
-  int_ref s2 "src/main.ml" 48 1077 1082 "src/main.ml" 48 1077 1084
+  int_ref s2 "src/main.ml" 48 1093 1098 "src/main.ml" 48 1093 1100
 )
-"src/main.ml" 186 4118 4157 "src/main.ml" 186 4118 4159
+"src/main.ml" 187 4143 4182 "src/main.ml" 187 4143 4184
 type(
   Segment.t
 )
 ident(
-  int_ref s3 "src/main.ml" 49 1119 1124 "src/main.ml" 49 1119 1126
+  int_ref s3 "src/main.ml" 49 1135 1140 "src/main.ml" 49 1135 1142
 )
-"src/main.ml" 186 4118 4161 "src/main.ml" 186 4118 4163
+"src/main.ml" 187 4143 4186 "src/main.ml" 187 4143 4188
 type(
   Segment.t
 )
 ident(
-  int_ref s4 "src/main.ml" 50 1161 1166 "src/main.ml" 50 1161 1168
+  int_ref s4 "src/main.ml" 50 1177 1182 "src/main.ml" 50 1177 1184
 )
-"src/main.ml" 186 4118 4165 "src/main.ml" 186 4118 4167
+"src/main.ml" 187 4143 4190 "src/main.ml" 187 4143 4192
 type(
   Segment.t list
 )
-"src/main.ml" 186 4118 4161 "src/main.ml" 186 4118 4167
+"src/main.ml" 187 4143 4186 "src/main.ml" 187 4143 4192
 type(
   Segment.t list
 )
-"src/main.ml" 186 4118 4157 "src/main.ml" 186 4118 4167
+"src/main.ml" 187 4143 4182 "src/main.ml" 187 4143 4192
 type(
   Segment.t list
 )
-"src/main.ml" 186 4118 4153 "src/main.ml" 186 4118 4167
+"src/main.ml" 187 4143 4178 "src/main.ml" 187 4143 4192
 type(
   Segment.t list
 )
-"src/main.ml" 186 4118 4148 "src/main.ml" 186 4118 4168
+"src/main.ml" 187 4143 4173 "src/main.ml" 187 4143 4193
 type(
   Segment.t list
 )
-"src/main.ml" 186 4118 4134 "src/main.ml" 186 4118 4168
+"src/main.ml" 187 4143 4159 "src/main.ml" 187 4143 4193
 call(
   stack
 )
 type(
   Bsp.t
 )
-"src/main.ml" 187 4173 4178 "src/main.ml" 187 4173 4189
+"src/main.ml" 188 4198 4203 "src/main.ml" 188 4198 4214
 type(
   Player.t
 )
 ident(
-  def player_test "src/main.ml" 189 4242 4243 "src/main.ml" 194 4311 4394
+  def player_test "src/main.ml" 189 4267 4268 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 187 4173 4192 "src/main.ml" 187 4173 4209
+"src/main.ml" 188 4198 4217 "src/main.ml" 188 4198 4234
 type(
   Point.t -> int -> Player.t
 )
 ident(
   ext_ref Player.new_player
 )
-"src/main.ml" 187 4173 4211 "src/main.ml" 187 4173 4226
+"src/main.ml" 188 4198 4236 "src/main.ml" 188 4198 4251
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/main.ml" 187 4173 4227 "src/main.ml" 187 4173 4231
+"src/main.ml" 188 4198 4252 "src/main.ml" 188 4198 4253
 type(
   int
 )
-"src/main.ml" 187 4173 4232 "src/main.ml" 187 4173 4233
+"src/main.ml" 188 4198 4254 "src/main.ml" 188 4198 4258
 type(
   int
 )
-"src/main.ml" 187 4173 4210 "src/main.ml" 187 4173 4234
+"src/main.ml" 188 4198 4235 "src/main.ml" 188 4198 4259
 call(
   stack
 )
 type(
   Point.t
 )
-"src/main.ml" 187 4173 4235 "src/main.ml" 187 4173 4236
+"src/main.ml" 188 4198 4260 "src/main.ml" 188 4198 4262
 type(
   int
 )
-"src/main.ml" 187 4173 4192 "src/main.ml" 187 4173 4236
+"src/main.ml" 188 4198 4217 "src/main.ml" 188 4198 4262
 call(
   stack
 )
 type(
   Player.t
 )
-"src/main.ml" 189 4242 4243 "src/main.ml" 189 4242 4257
+"src/main.ml" 189 4267 4268 "src/main.ml" 189 4267 4283
+type(
+  Bsp.t -> unit
+)
+ident(
+  int_ref affiche_bsp_bis "src/main.ml" 33 689 693 "src/main.ml" 33 689 708
+)
+"src/main.ml" 189 4267 4284 "src/main.ml" 189 4267 4292
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp_test "src/main.ml" 187 4143 4148 "src/main.ml" 187 4143 4156
+)
+"src/main.ml" 189 4267 4268 "src/main.ml" 189 4267 4292
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 192 4297 4298 "src/main.ml" 192 4297 4312
 type(
   Bsp.t -> Player.t -> unit
 )
 ident(
   ext_ref Render.display
 )
-"src/main.ml" 189 4242 4258 "src/main.ml" 189 4242 4266
+"src/main.ml" 192 4297 4313 "src/main.ml" 192 4297 4321
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp_test "src/main.ml" 186 4118 4123 "src/main.ml" 186 4118 4131
+  int_ref bsp_test "src/main.ml" 187 4143 4148 "src/main.ml" 187 4143 4156
 )
-"src/main.ml" 189 4242 4267 "src/main.ml" 189 4242 4278
+"src/main.ml" 192 4297 4322 "src/main.ml" 192 4297 4333
 type(
   Player.t
 )
 ident(
-  int_ref player_test "src/main.ml" 187 4173 4178 "src/main.ml" 187 4173 4189
+  int_ref player_test "src/main.ml" 188 4198 4203 "src/main.ml" 188 4198 4214
 )
-"src/main.ml" 189 4242 4243 "src/main.ml" 189 4242 4278
+"src/main.ml" 192 4297 4298 "src/main.ml" 192 4297 4333
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 190 4281 4282 "src/main.ml" 190 4281 4297
-type(
-  Bsp.t -> unit
-)
-ident(
-  int_ref affiche_bsp_bis "src/main.ml" 33 673 677 "src/main.ml" 33 673 692
-)
-"src/main.ml" 190 4281 4298 "src/main.ml" 190 4281 4306
-type(
-  Bsp.t
-)
-ident(
-  int_ref bsp_test "src/main.ml" 186 4118 4123 "src/main.ml" 186 4118 4131
-)
-"src/main.ml" 190 4281 4282 "src/main.ml" 190 4281 4306
-call(
-  stack
-)
-type(
-  unit
-)
-"src/main.ml" 194 4311 4316 "src/main.ml" 194 4311 4317
+"src/main.ml" 197 4341 4346 "src/main.ml" 197 4341 4347
 type(
   Graphics.status
 )
 ident(
-  def s "src/main.ml" 194 4311 4392 "src/main.ml" 194 4311 4394
+  def s "src/main.ml" 197 4341 4422 "src/main.ml" 197 4341 4424
 )
-"src/main.ml" 194 4311 4320 "src/main.ml" 194 4311 4344
+"src/main.ml" 197 4341 4350 "src/main.ml" 197 4341 4374
 type(
   Graphics.event list -> Graphics.status
 )
 ident(
   ext_ref Graphics.wait_next_event
 )
-"src/main.ml" 194 4311 4346 "src/main.ml" 194 4311 4366
+"src/main.ml" 197 4341 4376 "src/main.ml" 197 4341 4396
 type(
   Graphics.event
 )
-"src/main.ml" 194 4311 4367 "src/main.ml" 194 4311 4387
+"src/main.ml" 197 4341 4397 "src/main.ml" 197 4341 4417
 type(
   Graphics.event
 )
-"src/main.ml" 194 4311 4345 "src/main.ml" 194 4311 4388
+"src/main.ml" 197 4341 4375 "src/main.ml" 197 4341 4418
 type(
   Graphics.event list
 )
-"src/main.ml" 194 4311 4320 "src/main.ml" 194 4311 4388
+"src/main.ml" 197 4341 4350 "src/main.ml" 197 4341 4418
 type(
   Graphics.status
 )
-"src/main.ml" 194 4311 4392 "src/main.ml" 194 4311 4394
+"src/main.ml" 197 4341 4422 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 194 4311 4312 "src/main.ml" 194 4311 4394
+"src/main.ml" 197 4341 4342 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 190 4281 4282 "src/main.ml" 194 4311 4394
+"src/main.ml" 192 4297 4298 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 189 4242 4243 "src/main.ml" 194 4311 4394
+"src/main.ml" 189 4267 4268 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 187 4173 4174 "src/main.ml" 194 4311 4394
+"src/main.ml" 188 4198 4199 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 186 4118 4119 "src/main.ml" 194 4311 4394
+"src/main.ml" 187 4143 4144 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 140 3261 3262 "src/main.ml" 194 4311 4394
+"src/main.ml" 141 3278 3279 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 139 3230 3231 "src/main.ml" 194 4311 4394
+"src/main.ml" 140 3247 3248 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 138 3197 3198 "src/main.ml" 194 4311 4394
+"src/main.ml" 139 3214 3215 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 136 3154 3155 "src/main.ml" 194 4311 4394
+"src/main.ml" 137 3171 3172 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 118 2929 2930 "src/main.ml" 194 4311 4394
+"src/main.ml" 119 2946 2947 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 117 2882 2883 "src/main.ml" 194 4311 4394
+"src/main.ml" 118 2899 2900 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 115 2854 2855 "src/main.ml" 194 4311 4394
+"src/main.ml" 116 2871 2872 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 114 2807 2808 "src/main.ml" 194 4311 4394
+"src/main.ml" 115 2824 2825 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 112 2779 2780 "src/main.ml" 194 4311 4394
+"src/main.ml" 113 2796 2797 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 111 2733 2734 "src/main.ml" 194 4311 4394
+"src/main.ml" 112 2750 2751 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 110 2705 2706 "src/main.ml" 194 4311 4394
+"src/main.ml" 111 2722 2723 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 106 2648 2649 "src/main.ml" 194 4311 4394
+"src/main.ml" 107 2665 2666 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 105 2601 2602 "src/main.ml" 194 4311 4394
+"src/main.ml" 106 2618 2619 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 103 2573 2574 "src/main.ml" 194 4311 4394
+"src/main.ml" 104 2590 2591 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 102 2527 2528 "src/main.ml" 194 4311 4394
+"src/main.ml" 103 2544 2545 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 98 2433 2434 "src/main.ml" 194 4311 4394
+"src/main.ml" 99 2450 2451 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 97 2381 2382 "src/main.ml" 194 4311 4394
+"src/main.ml" 98 2398 2399 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 96 2352 2353 "src/main.ml" 194 4311 4394
+"src/main.ml" 97 2369 2370 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 94 2324 2325 "src/main.ml" 194 4311 4394
+"src/main.ml" 95 2341 2342 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 93 2272 2273 "src/main.ml" 194 4311 4394
+"src/main.ml" 94 2289 2290 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 88 2159 2160 "src/main.ml" 194 4311 4394
+"src/main.ml" 89 2176 2177 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 87 2107 2108 "src/main.ml" 194 4311 4394
+"src/main.ml" 88 2124 2125 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 86 2079 2080 "src/main.ml" 194 4311 4394
+"src/main.ml" 87 2096 2097 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 82 2013 2014 "src/main.ml" 194 4311 4394
+"src/main.ml" 82 2029 2030 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 81 1961 1962 "src/main.ml" 194 4311 4394
+"src/main.ml" 81 1977 1978 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 80 1926 1927 "src/main.ml" 194 4311 4394
+"src/main.ml" 80 1942 1943 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 75 1815 1816 "src/main.ml" 194 4311 4394
+"src/main.ml" 75 1831 1832 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 73 1773 1774 "src/main.ml" 194 4311 4394
+"src/main.ml" 73 1789 1790 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 72 1740 1741 "src/main.ml" 194 4311 4394
+"src/main.ml" 72 1756 1757 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 68 1710 1711 "src/main.ml" 194 4311 4394
+"src/main.ml" 68 1726 1727 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 67 1670 1671 "src/main.ml" 194 4311 4394
+"src/main.ml" 67 1686 1687 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 65 1649 1650 "src/main.ml" 194 4311 4394
+"src/main.ml" 65 1665 1666 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 64 1607 1608 "src/main.ml" 194 4311 4394
+"src/main.ml" 64 1623 1624 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 62 1590 1591 "src/main.ml" 194 4311 4394
+"src/main.ml" 62 1606 1607 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 61 1562 1563 "src/main.ml" 194 4311 4394
+"src/main.ml" 61 1578 1579 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 59 1528 1529 "src/main.ml" 194 4311 4394
+"src/main.ml" 59 1544 1545 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 58 1483 1484 "src/main.ml" 194 4311 4394
+"src/main.ml" 58 1499 1500 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 57 1432 1433 "src/main.ml" 194 4311 4394
+"src/main.ml" 57 1448 1449 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 55 1371 1373 "src/main.ml" 194 4311 4394
+"src/main.ml" 55 1387 1389 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 54 1329 1330 "src/main.ml" 194 4311 4394
+"src/main.ml" 54 1345 1346 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 53 1287 1288 "src/main.ml" 194 4311 4394
+"src/main.ml" 53 1303 1304 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 52 1245 1246 "src/main.ml" 194 4311 4394
+"src/main.ml" 52 1261 1262 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 51 1203 1204 "src/main.ml" 194 4311 4394
+"src/main.ml" 51 1219 1220 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 50 1161 1162 "src/main.ml" 194 4311 4394
+"src/main.ml" 50 1177 1178 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 49 1119 1120 "src/main.ml" 194 4311 4394
+"src/main.ml" 49 1135 1136 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 48 1077 1078 "src/main.ml" 194 4311 4394
+"src/main.ml" 48 1093 1094 "src/main.ml" 197 4341 4424
 type(
   unit
 )
-"src/main.ml" 47 1035 1036 "src/main.ml" 194 4311 4394
+"src/main.ml" 47 1051 1052 "src/main.ml" 197 4341 4424
 type(
   unit
 )

@@ -31,22 +31,22 @@ let radian_of_deg deg =
 *)
 let move d p bsp = 
 
-	let player_tmp = new_player(Point.new_point 0 0) p.pa in
+	let point_tmp = ref (Point.new_point 0 0) in
 
-	match d with
-	| MFwd -> player_tmp.pos <- Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
-										(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))
+	(match d with
+		| MFwd -> point_tmp := Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
+		(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MBwd -> player_tmp.pos <- Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
-										(p.pos.y+truncate(pas*.sin (radian_of_deg p.pa)))
+		| MBwd -> point_tmp := Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
+		(p.pos.y+truncate(pas*.sin (radian_of_deg p.pa)))
 
-	| MLeft -> player_tmp.pos <- Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
-										(p.pos.y-truncate(pas*.cos (radian_of_deg p.pa)))
+		| MLeft -> point_tmp := Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
+		(p.pos.y-truncate(pas*.cos (radian_of_deg p.pa)))
 
-	| MRight -> player_tmp.pos <- Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
-										(p.pos.y+truncate(pas*.cos (radian_of_deg p.pa)))
-	;
+		| MRight -> point_tmp := Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
+		(p.pos.y+truncate(pas*.cos (radian_of_deg p.pa)))
+	);
 
-	if not (Physic.detect_collision player_tmp.pos bsp) 
-	then p.pos <- player_tmp.pos
-	else ()
+	if not (Physic.detect_collision !point_tmp bsp) 
+	then  p.pos <- !point_tmp
+	else () 
