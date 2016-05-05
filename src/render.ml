@@ -165,4 +165,11 @@ let affiche p = fun s ->
 
 let display bsp p = 
 
+	Graphics.set_color (Graphics.rgb 0 100 0);
+	Graphics.fill_poly[|
+	0,0;
+	0,taille/2;
+	taille,taille/2;
+	taille,0;
+	|];
 	Bsp.rev_parse (affiche p) bsp p.pos

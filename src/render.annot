@@ -4966,72 +4966,222 @@ type(
   Bsp.t -> Player.t -> unit
 )
 ident(
-  def display "src/render.ml" 168 5171 5207 "src/render.ml" 1 0 -1
+  def display "src/render.ml" 175 5290 5326 "src/render.ml" 1 0 -1
 )
 "src/render.ml" 166 5149 5161 "src/render.ml" 166 5149 5164
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/render.ml" 166 5149 5165 "src/render.ml" 168 5171 5207
+  def bsp "src/render.ml" 166 5149 5165 "src/render.ml" 175 5290 5326
 )
 "src/render.ml" 166 5149 5165 "src/render.ml" 166 5149 5166
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 168 5171 5172 "src/render.ml" 168 5171 5207
+  def p "src/render.ml" 168 5171 5172 "src/render.ml" 175 5290 5326
 )
-"src/render.ml" 168 5171 5172 "src/render.ml" 168 5171 5185
+"src/render.ml" 168 5171 5172 "src/render.ml" 168 5171 5190
+type(
+  Graphics.color -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"src/render.ml" 168 5171 5192 "src/render.ml" 168 5171 5204
+type(
+  int -> int -> int -> Graphics.color
+)
+ident(
+  ext_ref Graphics.rgb
+)
+"src/render.ml" 168 5171 5205 "src/render.ml" 168 5171 5206
+type(
+  int
+)
+"src/render.ml" 168 5171 5207 "src/render.ml" 168 5171 5210
+type(
+  int
+)
+"src/render.ml" 168 5171 5211 "src/render.ml" 168 5171 5212
+type(
+  int
+)
+"src/render.ml" 168 5171 5191 "src/render.ml" 168 5171 5213
+call(
+  stack
+)
+type(
+  Graphics.color
+)
+"src/render.ml" 168 5171 5172 "src/render.ml" 168 5171 5213
+type(
+  unit
+)
+"src/render.ml" 169 5215 5216 "src/render.ml" 169 5215 5234
+type(
+  (int * int) array -> unit
+)
+ident(
+  ext_ref Graphics.fill_poly
+)
+"src/render.ml" 170 5237 5238 "src/render.ml" 170 5237 5239
+type(
+  int
+)
+"src/render.ml" 170 5237 5240 "src/render.ml" 170 5237 5241
+type(
+  int
+)
+"src/render.ml" 170 5237 5238 "src/render.ml" 170 5237 5241
+type(
+  int * int
+)
+"src/render.ml" 171 5243 5244 "src/render.ml" 171 5243 5245
+type(
+  int
+)
+"src/render.ml" 171 5243 5246 "src/render.ml" 171 5243 5252
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 171 5243 5252 "src/render.ml" 171 5243 5253
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 171 5243 5253 "src/render.ml" 171 5243 5254
+type(
+  int
+)
+"src/render.ml" 171 5243 5246 "src/render.ml" 171 5243 5254
+type(
+  int
+)
+"src/render.ml" 171 5243 5244 "src/render.ml" 171 5243 5254
+type(
+  int * int
+)
+"src/render.ml" 172 5256 5257 "src/render.ml" 172 5256 5263
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 172 5256 5264 "src/render.ml" 172 5256 5270
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 172 5256 5270 "src/render.ml" 172 5256 5271
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 172 5256 5271 "src/render.ml" 172 5256 5272
+type(
+  int
+)
+"src/render.ml" 172 5256 5264 "src/render.ml" 172 5256 5272
+type(
+  int
+)
+"src/render.ml" 172 5256 5257 "src/render.ml" 172 5256 5272
+type(
+  int * int
+)
+"src/render.ml" 173 5274 5275 "src/render.ml" 173 5274 5281
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 173 5274 5282 "src/render.ml" 173 5274 5283
+type(
+  int
+)
+"src/render.ml" 173 5274 5275 "src/render.ml" 173 5274 5283
+type(
+  int * int
+)
+"src/render.ml" 169 5215 5234 "src/render.ml" 174 5285 5288
+type(
+  (int * int) array
+)
+"src/render.ml" 169 5215 5216 "src/render.ml" 174 5285 5288
+type(
+  unit
+)
+"src/render.ml" 175 5290 5291 "src/render.ml" 175 5290 5304
 type(
   (Segment.t -> unit) -> Bsp.t -> Point.t -> unit
 )
 ident(
   ext_ref Bsp.rev_parse
 )
-"src/render.ml" 168 5171 5187 "src/render.ml" 168 5171 5194
+"src/render.ml" 175 5290 5306 "src/render.ml" 175 5290 5313
 type(
   Player.t -> Segment.t -> unit
 )
 ident(
   int_ref affiche "src/render.ml" 149 4564 4568 "src/render.ml" 149 4564 4575
 )
-"src/render.ml" 168 5171 5195 "src/render.ml" 168 5171 5196
+"src/render.ml" 175 5290 5314 "src/render.ml" 175 5290 5315
 type(
   Player.t
 )
 ident(
   int_ref p "src/render.ml" 166 5149 5165 "src/render.ml" 166 5149 5166
 )
-"src/render.ml" 168 5171 5186 "src/render.ml" 168 5171 5197
+"src/render.ml" 175 5290 5305 "src/render.ml" 175 5290 5316
 call(
   stack
 )
 type(
   Segment.t -> unit
 )
-"src/render.ml" 168 5171 5198 "src/render.ml" 168 5171 5201
+"src/render.ml" 175 5290 5317 "src/render.ml" 175 5290 5320
 type(
   Bsp.t
 )
 ident(
   int_ref bsp "src/render.ml" 166 5149 5161 "src/render.ml" 166 5149 5164
 )
-"src/render.ml" 168 5171 5202 "src/render.ml" 168 5171 5203
+"src/render.ml" 175 5290 5321 "src/render.ml" 175 5290 5322
 type(
   Player.t
 )
 ident(
   int_ref p "src/render.ml" 166 5149 5165 "src/render.ml" 166 5149 5166
 )
-"src/render.ml" 168 5171 5202 "src/render.ml" 168 5171 5207
+"src/render.ml" 175 5290 5321 "src/render.ml" 175 5290 5326
 type(
   Point.t
 )
-"src/render.ml" 168 5171 5172 "src/render.ml" 168 5171 5207
+"src/render.ml" 175 5290 5291 "src/render.ml" 175 5290 5326
 call(
   tail
 )
+type(
+  unit
+)
+"src/render.ml" 169 5215 5216 "src/render.ml" 175 5290 5326
+type(
+  unit
+)
+"src/render.ml" 168 5171 5172 "src/render.ml" 175 5290 5326
 type(
   unit
 )
