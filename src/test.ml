@@ -52,6 +52,9 @@ let construire_liste (_,lab) =
 		in
 	cl lab []
 
+let construire_player ((x,y,pa),_) =
+	Player.new_player (Point.new_point x y) pa
+
 let test lab = 
 	let s1 = Segment.new_segment 0 0 1 1 in 
 	let s2 = Segment.new_segment 1 0 3 0 in 
@@ -63,6 +66,7 @@ let test lab =
 	let s8 = Segment.new_segment 0 10 0 0 in
  	let test_split_segment = Segment.split_segment s1 s3 in 
  	let l_lab = construire_liste lab in 
+ 	let p_lab = construire_player lab in
 	let l_seg = s1::s2::s3::s4::s5::s6::s7::s8::[] in
 	let test_split = Segment.split s1 l_seg in 
 	let b = Bsp.build_bsp l_seg in 
@@ -192,13 +196,13 @@ let test lab =
 		Tout est ok
 	*) 
 
-	
+	affiche_segment (List.hd l_lab);
 	let bsp_test = Bsp.build_bsp l_lab in 
 	let player_test = Player.new_player (Point.new_point 4 (-2)) 90 in 
 	affiche_bsp_bis bsp_test; 
 	Printf.printf "\n\n";
 
 
-	Render.display bsp_test player_test ;
+	Render.display bsp_test p_lab ;
 	
 ;;

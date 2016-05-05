@@ -8,7 +8,7 @@ let taille = 500
 
 let angle_vision = 90
 
-let d_focale = truncate(float_of_int(taille)/.tan ((float_of_int angle_vision)/. 2.)) 
+let d_focale = truncate(float_of_int(taille/2)/.tan ((float_of_int angle_vision)/. 2.)) 
 
 let affiche_segment s = 
 	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
@@ -32,6 +32,7 @@ let calcul_angle p s =
 		(truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (s.porig.y) *. Trigo.dcos p.pa))
 		(-truncate (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (-s.pdest.y) *. Trigo.dsin p.pa))
 		(truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (s.pdest.y) *. Trigo.dcos p.pa))
+		
 
 let ata xo yo xd yd = 
 	float_of_int(yd - yo) /. float_of_int(xd - xo)
@@ -69,56 +70,66 @@ let distance x y =
 on calcule la correspondance entre la projection et la coordonnée x de l'affichage, 
 ce qui revient à faire une fonction affine
 *)
-let calcul_p_x c =
-	let a = float_of_int(taille)/.float_of_int(d_focale*2) in 
+let calcul_p_x cmax c =
+	let a = float_of_int(taille)/. (dtan (angle_vision/2) *. float_of_int(d_focale)) in 
 	let b = float_of_int(taille/2) in
-	truncate (-.a *. float_of_int (c) +. b)
+	truncate ( float_of_int((taille/2)/(-cmax)) *. float_of_int (c) +. float_of_int (taille/2))
 
-let calcul_p_y x y =
-	let echelle = float_of_int(taille/2) in
-	let rapport = float_of_int d_focale /. distance x y in
-	truncate(echelle *. rapport)+(taille/2)
 
-let passage_3d xo yo xd yd co cd =
+let passage_3d cmax xo yo xd yd co cd =
+
+	Printf.printf"co == %d, cd == %d\n" co cd;
+	let hauteur_yeux = taille/2 in 
+
+	let calcul_p_y x y =
+
+		let echelle = float_of_int(taille/4) in
+		let rapport = float_of_int d_focale /. distance x y in
+		truncate(echelle *. rapport)+hauteur_yeux
+	in
+
 	let p_gauche = Point.new_point
-
-	(calcul_p_x co)
+	(calcul_p_x cmax co)
 	(calcul_p_y xo yo)
 	in
 	let p_droite = Point.new_point
-	(calcul_p_x cd)
-	(calcul_p_y xd yd)
-	in
+	(calcul_p_x cmax cd)
+	(calcul_p_y xd yd) in 
+	Printf.printf"
+		p_gauche.x == %d  ,p_gauche.y == %d \n;
+		p_gauche.x == %d  ,(-p_gauche.y == %d \n);
+		p_droite.x == %d  ,p_droite.y == %d \n;
+		p_droite.x == %d  ,(-p_droite.y == %d \n)"
+
+		p_gauche.x p_gauche.y
+		p_gauche.x (hauteur_yeux-(p_gauche.y-hauteur_yeux))
+		p_droite.x p_droite.y
+		p_droite.x (hauteur_yeux-(p_droite.y-hauteur_yeux)) ;
 	Graphics.set_color (Graphics.rgb 255 0 0);
 	Graphics.fill_poly [|
-		p_gauche.x,p_gauche.y;
-		p_gauche.x,(-p_gauche.y);
-		p_droite.x,p_droite.y;
-		p_droite.x,(-p_droite.y)
+		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
+		p_gauche.x,p_droite.y;
+		p_droite.x,p_gauche.y;
+		p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux))
 	|]
 
 let projection seg  =
 
 	(*y' = ( ls / 2 ) - (( y * d ) / x *)
-	let project l d p =
-		truncate(float_of_int (d * p.y) /. float_of_int( p.x )) in
+	let project p =
+		truncate(float_of_int (d_focale * p.y) /. float_of_int( p.x )) in
 
-	affiche_segment seg;
-	let cmax = truncate((dtan (angle_vision/2)) *. float_of_int(d_focale)) in
-	Printf.printf "d == %d \ncmax: %d\n" d_focale cmax ; 
+	let cmax = truncate (dtan (angle_vision/2) *. float_of_int d_focale) in
 	let cmin = (-cmax) in 
-	Printf.printf "cmin: %d\n" cmin;
-	let ls = cmax - cmin in 
-	let c_p_orig = project ls d_focale seg.porig in
-	Printf.printf "c_p_orig: %d\n" c_p_orig;
-	let c_p_dest = project ls d_focale seg.pdest in
-	Printf.printf "c_p_dest: %d\n" c_p_dest;
+	Printf.printf"d == %d \n cmax == %d, cmin == %d\n" d_focale cmax cmin;
+	let c_p_orig = project seg.porig in
+	let c_p_dest = project seg.pdest in
 
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
 	| a,b when a < cmin && b < cmin -> ()
 	| a,b -> let cor = (correction_c cmax cmin) in 
-			passage_3d seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y (cor c_p_dest) (cor c_p_orig)
+			passage_3d cmax seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y (cor c_p_dest) (cor c_p_orig)
 			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
 (*
 devra renvoyer un quator de points qui representeront les 4 coins du mur à afficher
@@ -126,8 +137,11 @@ projection seg -> Point.t * Point.t * Point.t * Point.t
 *)
 
 let affiche p = fun s -> 
-
+	Printf.printf "commencement ==\n ";
+	affiche_segment s;
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
+	Printf.printf "avant clipp ==\n ";
+	affiche_segment nw_seg;
 	let clip = clipping nw_seg in
 
 	match clip with
@@ -142,4 +156,3 @@ let affiche p = fun s ->
 let display bsp p = 
 
 	Bsp.rev_parse (affiche p) bsp p.pos
-	
