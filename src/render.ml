@@ -6,9 +6,12 @@ open Graphics
 
 let taille = 500
 
-let angle_vision = 90
+let angle_vision = 80
 
-let d_focale = truncate(float_of_int(taille/2)/.tan ((float_of_int angle_vision)/. 2.)) 
+let fabs a =
+	if a < 0. then -.a else a
+
+let d_focale = truncate(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 ))) 
 
 let affiche_segment s = 
 	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
