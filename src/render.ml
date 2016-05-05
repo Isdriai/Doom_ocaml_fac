@@ -108,14 +108,14 @@ let passage_3d cmax xo yo xd yd co cd =
 		p_gauche.x (hauteur_yeux-(p_gauche.y-hauteur_yeux))
 		p_droite.x p_droite.y
 		p_droite.x (hauteur_yeux-(p_droite.y-hauteur_yeux)) ;
-	Graphics.set_color (Graphics.rgb 50 50 50);
+	Graphics.set_color (Graphics.rgb 0 100 0);
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
 		p_gauche.x,p_droite.y;
 		p_droite.x,p_gauche.y;
 		p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux))
 	|];
-	Graphics.set_color (Graphics.rgb 0 0 255);
+	Graphics.set_color (Graphics.rgb 0 0 0);
 	Graphics.draw_segments [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux)),p_gauche.x,p_droite.y;
 		p_droite.x,p_gauche.y,p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux));
@@ -165,11 +165,18 @@ let affiche p = fun s ->
 
 let display bsp p = 
 
-	Graphics.set_color (Graphics.rgb 0 100 0);
+	Graphics.set_color (Graphics.rgb 40 40 40);
 	Graphics.fill_poly[|
 	0,0;
 	0,taille/2;
 	taille,taille/2;
 	taille,0;
+	|];
+	Graphics.set_color (Graphics.rgb 75 0 0);
+	Graphics.fill_poly[|
+	0,taille;
+	0,taille/2;
+	taille,taille/2;
+	taille,taille;
 	|];
 	Bsp.rev_parse (affiche p) bsp p.pos
