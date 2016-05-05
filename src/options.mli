@@ -24,10 +24,10 @@ val minimap : bool
 val debug : bool
 val debug_bsp : bool
 
-(* type tlang = Fr | Be
-type touche = Z | Q | S | D 
+type tlang = Fr | Be
+type touche = TZ | TQ | TS | TD | TA | TE | None
 
 val lang : tlang ref
 val change_lang : tlang -> unit
 
-val clavier_lg : touche -> string  *)
+val clavier_lg : char -> touche
