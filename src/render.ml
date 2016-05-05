@@ -76,7 +76,7 @@ ce qui revient à faire une fonction affine
 let calcul_p_x cmax c =
 	let a = float_of_int(taille)/. (dtan (angle_vision/2) *. float_of_int(d_focale)) in 
 	let b = float_of_int(taille/2) in
-	truncate ( float_of_int((taille/2)/(-cmax)) *. float_of_int (c) +. float_of_int (taille/2))
+	truncate ( float_of_int (taille/2)/.float_of_int(-cmax) *. float_of_int (c) +. float_of_int (taille/2))
 
 
 let passage_3d cmax xo yo xd yd co cd =
@@ -108,12 +108,19 @@ let passage_3d cmax xo yo xd yd co cd =
 		p_gauche.x (hauteur_yeux-(p_gauche.y-hauteur_yeux))
 		p_droite.x p_droite.y
 		p_droite.x (hauteur_yeux-(p_droite.y-hauteur_yeux)) ;
-	Graphics.set_color (Graphics.rgb 255 0 0);
+	Graphics.set_color (Graphics.rgb 50 50 50);
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
 		p_gauche.x,p_droite.y;
 		p_droite.x,p_gauche.y;
 		p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux))
+	|];
+	Graphics.set_color (Graphics.rgb 0 0 255);
+	Graphics.draw_segments [|
+		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux)),p_gauche.x,p_droite.y;
+		p_droite.x,p_gauche.y,p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux));
+		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux)), p_droite.x,(hauteur_yeux-(p_gauche.y-hauteur_yeux));
+		p_gauche.x,p_droite.y,p_droite.x,p_gauche.y;
 	|]
 
 let projection seg  =
