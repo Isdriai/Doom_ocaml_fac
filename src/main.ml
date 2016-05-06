@@ -48,6 +48,8 @@ let () =
 	let bsp = Bsp.build_bsp lab in
 	let s = string_of_int (Render.taille) in 
 	let a =  " " ^ s ^ "x" ^ s in
+
 	Graphics.open_graph a;
+	auto_synchronize false;
 	jeu p bsp;
 	Graphics.close_graph ()
