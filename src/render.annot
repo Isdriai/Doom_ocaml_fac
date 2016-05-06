@@ -5299,383 +5299,431 @@ type(
 type(
   Segment.t -> unit
 )
-"src/render.ml" 176 5449 5453 "src/render.ml" 176 5449 5460
+"src/render.ml" 176 5449 5453 "src/render.ml" 176 5449 5464
+type(
+  unit -> unit
+)
+ident(
+  def clear_graph "src/render.ml" 192 5719 5719 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5467
+type(
+  unit
+)
+"src/render.ml" 177 5471 5472 "src/render.ml" 177 5471 5490
+type(
+  Graphics.color -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"src/render.ml" 177 5471 5492 "src/render.ml" 177 5471 5504
+type(
+  int -> int -> int -> Graphics.color
+)
+ident(
+  ext_ref Graphics.rgb
+)
+"src/render.ml" 177 5471 5505 "src/render.ml" 177 5471 5507
+type(
+  int
+)
+"src/render.ml" 177 5471 5508 "src/render.ml" 177 5471 5510
+type(
+  int
+)
+"src/render.ml" 177 5471 5511 "src/render.ml" 177 5471 5513
+type(
+  int
+)
+"src/render.ml" 177 5471 5491 "src/render.ml" 177 5471 5514
+call(
+  stack
+)
+type(
+  Graphics.color
+)
+"src/render.ml" 177 5471 5472 "src/render.ml" 177 5471 5514
+type(
+  unit
+)
+"src/render.ml" 178 5516 5517 "src/render.ml" 178 5516 5535
+type(
+  (int * int) array -> unit
+)
+ident(
+  ext_ref Graphics.fill_poly
+)
+"src/render.ml" 179 5538 5539 "src/render.ml" 179 5538 5540
+type(
+  int
+)
+"src/render.ml" 179 5538 5541 "src/render.ml" 179 5538 5542
+type(
+  int
+)
+"src/render.ml" 179 5538 5539 "src/render.ml" 179 5538 5542
+type(
+  int * int
+)
+"src/render.ml" 180 5544 5545 "src/render.ml" 180 5544 5546
+type(
+  int
+)
+"src/render.ml" 180 5544 5547 "src/render.ml" 180 5544 5553
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 180 5544 5553 "src/render.ml" 180 5544 5554
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 180 5544 5554 "src/render.ml" 180 5544 5555
+type(
+  int
+)
+"src/render.ml" 180 5544 5547 "src/render.ml" 180 5544 5555
+type(
+  int
+)
+"src/render.ml" 180 5544 5545 "src/render.ml" 180 5544 5555
+type(
+  int * int
+)
+"src/render.ml" 181 5557 5558 "src/render.ml" 181 5557 5564
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 181 5557 5565 "src/render.ml" 181 5557 5571
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 181 5557 5571 "src/render.ml" 181 5557 5572
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 181 5557 5572 "src/render.ml" 181 5557 5573
+type(
+  int
+)
+"src/render.ml" 181 5557 5565 "src/render.ml" 181 5557 5573
+type(
+  int
+)
+"src/render.ml" 181 5557 5558 "src/render.ml" 181 5557 5573
+type(
+  int * int
+)
+"src/render.ml" 182 5575 5576 "src/render.ml" 182 5575 5582
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 182 5575 5583 "src/render.ml" 182 5575 5584
+type(
+  int
+)
+"src/render.ml" 182 5575 5576 "src/render.ml" 182 5575 5584
+type(
+  int * int
+)
+"src/render.ml" 178 5516 5535 "src/render.ml" 183 5586 5589
+type(
+  (int * int) array
+)
+"src/render.ml" 178 5516 5517 "src/render.ml" 183 5586 5589
+type(
+  unit
+)
+"src/render.ml" 184 5591 5592 "src/render.ml" 184 5591 5610
+type(
+  Graphics.color -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"src/render.ml" 184 5591 5612 "src/render.ml" 184 5591 5624
+type(
+  int -> int -> int -> Graphics.color
+)
+ident(
+  ext_ref Graphics.rgb
+)
+"src/render.ml" 184 5591 5625 "src/render.ml" 184 5591 5627
+type(
+  int
+)
+"src/render.ml" 184 5591 5628 "src/render.ml" 184 5591 5629
+type(
+  int
+)
+"src/render.ml" 184 5591 5630 "src/render.ml" 184 5591 5631
+type(
+  int
+)
+"src/render.ml" 184 5591 5611 "src/render.ml" 184 5591 5632
+call(
+  stack
+)
+type(
+  Graphics.color
+)
+"src/render.ml" 184 5591 5592 "src/render.ml" 184 5591 5632
+type(
+  unit
+)
+"src/render.ml" 185 5634 5635 "src/render.ml" 185 5634 5653
+type(
+  (int * int) array -> unit
+)
+ident(
+  ext_ref Graphics.fill_poly
+)
+"src/render.ml" 186 5656 5657 "src/render.ml" 186 5656 5658
+type(
+  int
+)
+"src/render.ml" 186 5656 5659 "src/render.ml" 186 5656 5665
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 186 5656 5657 "src/render.ml" 186 5656 5665
+type(
+  int * int
+)
+"src/render.ml" 187 5667 5668 "src/render.ml" 187 5667 5669
+type(
+  int
+)
+"src/render.ml" 187 5667 5670 "src/render.ml" 187 5667 5676
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 187 5667 5676 "src/render.ml" 187 5667 5677
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 187 5667 5677 "src/render.ml" 187 5667 5678
+type(
+  int
+)
+"src/render.ml" 187 5667 5670 "src/render.ml" 187 5667 5678
+type(
+  int
+)
+"src/render.ml" 187 5667 5668 "src/render.ml" 187 5667 5678
+type(
+  int * int
+)
+"src/render.ml" 188 5680 5681 "src/render.ml" 188 5680 5687
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 188 5680 5688 "src/render.ml" 188 5680 5694
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 188 5680 5694 "src/render.ml" 188 5680 5695
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 188 5680 5695 "src/render.ml" 188 5680 5696
+type(
+  int
+)
+"src/render.ml" 188 5680 5688 "src/render.ml" 188 5680 5696
+type(
+  int
+)
+"src/render.ml" 188 5680 5681 "src/render.ml" 188 5680 5696
+type(
+  int * int
+)
+"src/render.ml" 189 5698 5699 "src/render.ml" 189 5698 5705
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 189 5698 5706 "src/render.ml" 189 5698 5712
+type(
+  int
+)
+ident(
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
+)
+"src/render.ml" 189 5698 5699 "src/render.ml" 189 5698 5712
+type(
+  int * int
+)
+"src/render.ml" 185 5634 5653 "src/render.ml" 190 5714 5717
+type(
+  (int * int) array
+)
+"src/render.ml" 185 5634 5635 "src/render.ml" 190 5714 5717
+type(
+  unit
+)
+"src/render.ml" 184 5591 5592 "src/render.ml" 190 5714 5717
+type(
+  unit
+)
+"src/render.ml" 178 5516 5517 "src/render.ml" 190 5714 5717
+type(
+  unit
+)
+"src/render.ml" 177 5471 5472 "src/render.ml" 190 5714 5717
+type(
+  unit
+)
+"src/render.ml" 192 5719 5723 "src/render.ml" 192 5719 5730
 type(
   Bsp.t -> Player.t -> unit
 )
 ident(
-  def display "src/render.ml" 192 5719 5755 "src/render.ml" 1 0 -1
+  def display "src/render.ml" 196 5796 5811 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 176 5449 5461 "src/render.ml" 176 5449 5464
+"src/render.ml" 192 5719 5731 "src/render.ml" 192 5719 5734
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/render.ml" 176 5449 5465 "src/render.ml" 192 5719 5755
+  def bsp "src/render.ml" 192 5719 5735 "src/render.ml" 196 5796 5811
 )
-"src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
+"src/render.ml" 192 5719 5735 "src/render.ml" 192 5719 5736
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 178 5471 5472 "src/render.ml" 192 5719 5755
+  def p "src/render.ml" 194 5741 5742 "src/render.ml" 196 5796 5811
 )
-"src/render.ml" 178 5471 5472 "src/render.ml" 178 5471 5490
+"src/render.ml" 194 5741 5742 "src/render.ml" 194 5741 5753
 type(
-  Graphics.color -> unit
+  unit -> unit
 )
 ident(
-  ext_ref Graphics.set_color
+  int_ref clear_graph "src/render.ml" 176 5449 5453 "src/render.ml" 176 5449 5464
 )
-"src/render.ml" 178 5471 5492 "src/render.ml" 178 5471 5504
+"src/render.ml" 194 5741 5754 "src/render.ml" 194 5741 5756
 type(
-  int -> int -> int -> Graphics.color
+  unit
 )
-ident(
-  ext_ref Graphics.rgb
-)
-"src/render.ml" 178 5471 5505 "src/render.ml" 178 5471 5507
-type(
-  int
-)
-"src/render.ml" 178 5471 5508 "src/render.ml" 178 5471 5510
-type(
-  int
-)
-"src/render.ml" 178 5471 5511 "src/render.ml" 178 5471 5513
-type(
-  int
-)
-"src/render.ml" 178 5471 5491 "src/render.ml" 178 5471 5514
+"src/render.ml" 194 5741 5742 "src/render.ml" 194 5741 5756
 call(
   stack
 )
 type(
-  Graphics.color
-)
-"src/render.ml" 178 5471 5472 "src/render.ml" 178 5471 5514
-type(
   unit
 )
-"src/render.ml" 179 5516 5517 "src/render.ml" 179 5516 5535
-type(
-  (int * int) array -> unit
-)
-ident(
-  ext_ref Graphics.fill_poly
-)
-"src/render.ml" 180 5538 5539 "src/render.ml" 180 5538 5540
-type(
-  int
-)
-"src/render.ml" 180 5538 5541 "src/render.ml" 180 5538 5542
-type(
-  int
-)
-"src/render.ml" 180 5538 5539 "src/render.ml" 180 5538 5542
-type(
-  int * int
-)
-"src/render.ml" 181 5544 5545 "src/render.ml" 181 5544 5546
-type(
-  int
-)
-"src/render.ml" 181 5544 5547 "src/render.ml" 181 5544 5553
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 181 5544 5553 "src/render.ml" 181 5544 5554
-type(
-  int -> int -> int
-)
-ident(
-  ext_ref Pervasives.( / )
-)
-"src/render.ml" 181 5544 5554 "src/render.ml" 181 5544 5555
-type(
-  int
-)
-"src/render.ml" 181 5544 5547 "src/render.ml" 181 5544 5555
-type(
-  int
-)
-"src/render.ml" 181 5544 5545 "src/render.ml" 181 5544 5555
-type(
-  int * int
-)
-"src/render.ml" 182 5557 5558 "src/render.ml" 182 5557 5564
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 182 5557 5565 "src/render.ml" 182 5557 5571
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 182 5557 5571 "src/render.ml" 182 5557 5572
-type(
-  int -> int -> int
-)
-ident(
-  ext_ref Pervasives.( / )
-)
-"src/render.ml" 182 5557 5572 "src/render.ml" 182 5557 5573
-type(
-  int
-)
-"src/render.ml" 182 5557 5565 "src/render.ml" 182 5557 5573
-type(
-  int
-)
-"src/render.ml" 182 5557 5558 "src/render.ml" 182 5557 5573
-type(
-  int * int
-)
-"src/render.ml" 183 5575 5576 "src/render.ml" 183 5575 5582
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 183 5575 5583 "src/render.ml" 183 5575 5584
-type(
-  int
-)
-"src/render.ml" 183 5575 5576 "src/render.ml" 183 5575 5584
-type(
-  int * int
-)
-"src/render.ml" 179 5516 5535 "src/render.ml" 184 5586 5589
-type(
-  (int * int) array
-)
-"src/render.ml" 179 5516 5517 "src/render.ml" 184 5586 5589
-type(
-  unit
-)
-"src/render.ml" 185 5591 5592 "src/render.ml" 185 5591 5610
-type(
-  Graphics.color -> unit
-)
-ident(
-  ext_ref Graphics.set_color
-)
-"src/render.ml" 185 5591 5612 "src/render.ml" 185 5591 5624
-type(
-  int -> int -> int -> Graphics.color
-)
-ident(
-  ext_ref Graphics.rgb
-)
-"src/render.ml" 185 5591 5625 "src/render.ml" 185 5591 5627
-type(
-  int
-)
-"src/render.ml" 185 5591 5628 "src/render.ml" 185 5591 5629
-type(
-  int
-)
-"src/render.ml" 185 5591 5630 "src/render.ml" 185 5591 5631
-type(
-  int
-)
-"src/render.ml" 185 5591 5611 "src/render.ml" 185 5591 5632
-call(
-  stack
-)
-type(
-  Graphics.color
-)
-"src/render.ml" 185 5591 5592 "src/render.ml" 185 5591 5632
-type(
-  unit
-)
-"src/render.ml" 186 5634 5635 "src/render.ml" 186 5634 5653
-type(
-  (int * int) array -> unit
-)
-ident(
-  ext_ref Graphics.fill_poly
-)
-"src/render.ml" 187 5656 5657 "src/render.ml" 187 5656 5658
-type(
-  int
-)
-"src/render.ml" 187 5656 5659 "src/render.ml" 187 5656 5665
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 187 5656 5657 "src/render.ml" 187 5656 5665
-type(
-  int * int
-)
-"src/render.ml" 188 5667 5668 "src/render.ml" 188 5667 5669
-type(
-  int
-)
-"src/render.ml" 188 5667 5670 "src/render.ml" 188 5667 5676
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 188 5667 5676 "src/render.ml" 188 5667 5677
-type(
-  int -> int -> int
-)
-ident(
-  ext_ref Pervasives.( / )
-)
-"src/render.ml" 188 5667 5677 "src/render.ml" 188 5667 5678
-type(
-  int
-)
-"src/render.ml" 188 5667 5670 "src/render.ml" 188 5667 5678
-type(
-  int
-)
-"src/render.ml" 188 5667 5668 "src/render.ml" 188 5667 5678
-type(
-  int * int
-)
-"src/render.ml" 189 5680 5681 "src/render.ml" 189 5680 5687
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 189 5680 5688 "src/render.ml" 189 5680 5694
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 189 5680 5694 "src/render.ml" 189 5680 5695
-type(
-  int -> int -> int
-)
-ident(
-  ext_ref Pervasives.( / )
-)
-"src/render.ml" 189 5680 5695 "src/render.ml" 189 5680 5696
-type(
-  int
-)
-"src/render.ml" 189 5680 5688 "src/render.ml" 189 5680 5696
-type(
-  int
-)
-"src/render.ml" 189 5680 5681 "src/render.ml" 189 5680 5696
-type(
-  int * int
-)
-"src/render.ml" 190 5698 5699 "src/render.ml" 190 5698 5705
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 190 5698 5706 "src/render.ml" 190 5698 5712
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 190 5698 5699 "src/render.ml" 190 5698 5712
-type(
-  int * int
-)
-"src/render.ml" 186 5634 5653 "src/render.ml" 191 5714 5717
-type(
-  (int * int) array
-)
-"src/render.ml" 186 5634 5635 "src/render.ml" 191 5714 5717
-type(
-  unit
-)
-"src/render.ml" 192 5719 5720 "src/render.ml" 192 5719 5733
+"src/render.ml" 195 5758 5759 "src/render.ml" 195 5758 5772
 type(
   (Segment.t -> unit) -> Bsp.t -> Point.t -> unit
 )
 ident(
   ext_ref Bsp.rev_parse
 )
-"src/render.ml" 192 5719 5735 "src/render.ml" 192 5719 5742
+"src/render.ml" 195 5758 5774 "src/render.ml" 195 5758 5781
 type(
   Player.t -> Segment.t -> unit
 )
 ident(
   int_ref affiche "src/render.ml" 158 4844 4848 "src/render.ml" 158 4844 4855
 )
-"src/render.ml" 192 5719 5743 "src/render.ml" 192 5719 5744
+"src/render.ml" 195 5758 5782 "src/render.ml" 195 5758 5783
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
+  int_ref p "src/render.ml" 192 5719 5735 "src/render.ml" 192 5719 5736
 )
-"src/render.ml" 192 5719 5734 "src/render.ml" 192 5719 5745
+"src/render.ml" 195 5758 5773 "src/render.ml" 195 5758 5784
 call(
   stack
 )
 type(
   Segment.t -> unit
 )
-"src/render.ml" 192 5719 5746 "src/render.ml" 192 5719 5749
+"src/render.ml" 195 5758 5785 "src/render.ml" 195 5758 5788
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/render.ml" 176 5449 5461 "src/render.ml" 176 5449 5464
+  int_ref bsp "src/render.ml" 192 5719 5731 "src/render.ml" 192 5719 5734
 )
-"src/render.ml" 192 5719 5750 "src/render.ml" 192 5719 5751
+"src/render.ml" 195 5758 5789 "src/render.ml" 195 5758 5790
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
+  int_ref p "src/render.ml" 192 5719 5735 "src/render.ml" 192 5719 5736
 )
-"src/render.ml" 192 5719 5750 "src/render.ml" 192 5719 5755
+"src/render.ml" 195 5758 5789 "src/render.ml" 195 5758 5794
 type(
   Point.t
 )
-"src/render.ml" 192 5719 5720 "src/render.ml" 192 5719 5755
+"src/render.ml" 195 5758 5759 "src/render.ml" 195 5758 5794
 call(
-  tail
+  stack
 )
 type(
   unit
 )
-"src/render.ml" 186 5634 5635 "src/render.ml" 192 5719 5755
+"src/render.ml" 196 5796 5797 "src/render.ml" 196 5796 5808
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Graphics.synchronize
+)
+"src/render.ml" 196 5796 5809 "src/render.ml" 196 5796 5811
 type(
   unit
 )
-"src/render.ml" 185 5591 5592 "src/render.ml" 192 5719 5755
+"src/render.ml" 196 5796 5797 "src/render.ml" 196 5796 5811
 type(
   unit
 )
-"src/render.ml" 179 5516 5517 "src/render.ml" 192 5719 5755
+"src/render.ml" 195 5758 5759 "src/render.ml" 196 5796 5811
 type(
   unit
 )
-"src/render.ml" 178 5471 5472 "src/render.ml" 192 5719 5755
+"src/render.ml" 194 5741 5742 "src/render.ml" 196 5796 5811
 type(
   unit
 )

@@ -1,6 +1,7 @@
 open Options
 open Physic
 open Point
+open Trigo
 
 type t = {
 mutable pos : Point.t;
@@ -21,11 +22,6 @@ let rotate d p =
 
 type mv = MFwd | MBwd | MLeft | MRight
 
-let pi = 3.1415926535897932384626433832795
-
-let radian_of_deg deg = 
-	pi *. (float_of_int deg) /. 180.
-
 (*on fera attention, l'origine demarre en haut à gauche, il faut donc mettre -10 à y pour "avancer" et 10 pour "reculer"
 	l'angle 0 corespond à l'état ou le personnage est tourné vers la droite
 *)
@@ -34,17 +30,17 @@ let move d p bsp =
 	let point_tmp = ref (Point.new_point 0 0) in
 
 	(match d with
-		| MFwd -> point_tmp := Point.new_point (p.pos.x+truncate(pas*.cos (radian_of_deg p.pa))) 
-		(p.pos.y-truncate(pas*.sin (radian_of_deg p.pa)))
+		| MFwd -> point_tmp := Point.new_point (p.pos.x+int_of_float(pas*.dcos (p.pa))) 
+		(p.pos.y+int_of_float(pas*.dsin (p.pa)))
 
-		| MBwd -> point_tmp := Point.new_point (p.pos.x-truncate(pas*.cos (radian_of_deg p.pa))) 
-		(p.pos.y+truncate(pas*.sin (radian_of_deg p.pa)))
+		| MBwd -> point_tmp := Point.new_point (p.pos.x-int_of_float(pas*.dcos (p.pa))) 
+		(p.pos.y-int_of_float(pas*.dsin (p.pa)))
 
-		| MLeft -> point_tmp := Point.new_point (p.pos.x-truncate(pas*.sin (radian_of_deg p.pa))) 
-		(p.pos.y-truncate(pas*.cos (radian_of_deg p.pa)))
+		| MLeft -> point_tmp := Point.new_point (p.pos.x-int_of_float(pas*.dsin (p.pa))) 
+		(p.pos.y-int_of_float(pas*.dcos (p.pa)))
 
-		| MRight -> point_tmp := Point.new_point (p.pos.x+truncate(pas*.sin (radian_of_deg p.pa))) 
-		(p.pos.y+truncate(pas*.cos (radian_of_deg p.pa)))
+		| MRight -> point_tmp := Point.new_point (p.pos.x+int_of_float(pas*.dsin (p.pa))) 
+		(p.pos.y+int_of_float(pas*.dcos (p.pa)))
 	);
 
 	if not (Physic.detect_collision !point_tmp bsp) 
