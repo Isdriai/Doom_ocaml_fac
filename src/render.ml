@@ -173,8 +173,7 @@ let affiche p = fun s ->
 
 (*faire fenetre graphique et afficher les segments dedans*)
 
-let display bsp p = 
-
+let clear_graph () = 
 	Graphics.set_color (Graphics.rgb 40 40 40);
 	Graphics.fill_poly[|
 	0,0;
@@ -188,5 +187,10 @@ let display bsp p =
 	0,taille/2;
 	taille,taille/2;
 	taille,taille;
-	|];
-	Bsp.rev_parse (affiche p) bsp p.pos
+	|]
+
+let display bsp p = 
+
+	clear_graph ();
+	Bsp.rev_parse (affiche p) bsp p.pos;
+	synchronize ()
