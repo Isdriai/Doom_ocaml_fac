@@ -49,7 +49,7 @@ let dansLaBoite p s =
 	(s.boite_gauche_dest.y - s.boite_gauche_orig.y)* (p.x - s.boite_gauche_orig.x) in
 	let res2 = (s.boite_droite_dest.x - s.boite_droite_orig.x) * (p.y - s.boite_droite_orig.y) - 
 	(s.boite_droite_dest.y - s.boite_droite_orig.y)* (p.x - s.boite_droite_orig.x) in
-	if res1 >= 0 && res2 <= 0 then raise Exit
+	if res1 * res2 <= 0 then raise Exit
 
 
 let get_position p s = 
