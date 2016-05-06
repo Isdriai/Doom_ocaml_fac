@@ -7,7 +7,7 @@ open Segment
 open Player
 open Bsp
 open Render
-
+open Unix
 
 (* let () = 
 	let lab = Parse_lab.read_lab (open_in Sys.argv.(1)) in
@@ -17,6 +17,8 @@ open Render
 
 ;;
  *)
+
+
 exception Invalid_Touche
 let deplacement p bsp = function
 	|TZ -> Player.move MFwd p bsp

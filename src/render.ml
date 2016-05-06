@@ -6,12 +6,13 @@ open Graphics
 
 let taille = 500
 
-let angle_vision = 80
+
+let angle_vision = 45
 
 let fabs a =
 	if a < 0. then -.a else a
 
-let d_focale = truncate(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 ))) 
+let d_focale = int_of_float(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 ))) 
 
 let affiche_segment s = 
 	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
@@ -31,10 +32,10 @@ let calcul_vecteur p s =
 
 let calcul_angle p s =
 	Segment.new_segment 
-		(-truncate (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (-s.porig.y) *. Trigo.dsin p.pa))
-		(truncate (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (s.porig.y) *. Trigo.dcos p.pa))
-		(-truncate (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (-s.pdest.y) *. Trigo.dsin p.pa))
-		(truncate (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (s.pdest.y) *. Trigo.dcos p.pa))
+		(-int_of_float (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (-s.porig.y) *. Trigo.dsin p.pa))
+		(int_of_float (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (s.porig.y) *. Trigo.dcos p.pa))
+		(-int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (-s.pdest.y) *. Trigo.dsin p.pa))
+		(int_of_float (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (s.pdest.y) *. Trigo.dcos p.pa))
 		
 
 let ata xo yo xd yd = 
@@ -48,8 +49,8 @@ let clipping s =
 	let yd = s.pdest.y in
 
 	if xo < 1 && xd < 1 then None
-	else if xo < 1 then Some(Segment.new_segment 1 (yo+truncate(float_of_int(1-xo)*. ata xo yo xd yd)) xd yd ) 
-	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + truncate(float_of_int(1-xd)*. ata xo yo xd yd)))
+	else if xo < 1 then Some(Segment.new_segment 1 (yo+int_of_float(float_of_int(1-xo)*. ata xo yo xd yd)) xd yd ) 
+	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. ata xo yo xd yd)))
 	else Some(s)
 
 let draw_line xo yo xd yd =
@@ -76,7 +77,7 @@ ce qui revient à faire une fonction affine
 let calcul_p_x cmax c =
 	let a = float_of_int(taille)/. (dtan (angle_vision/2) *. float_of_int(d_focale)) in 
 	let b = float_of_int(taille/2) in
-	truncate ( float_of_int (taille/2)/.float_of_int(-cmax) *. float_of_int (c) +. float_of_int (taille/2))
+	int_of_float ( float_of_int (taille/2)/.float_of_int(-cmax) *. float_of_int (c) +. float_of_int (taille/2))
 
 
 let passage_3d cmax xo yo xd yd co cd =
@@ -88,7 +89,7 @@ let passage_3d cmax xo yo xd yd co cd =
 
 		let echelle = float_of_int(taille/4) in
 		let rapport = float_of_int d_focale /. distance x y in
-		truncate(echelle *. rapport)+hauteur_yeux
+		int_of_float(echelle *. rapport)+hauteur_yeux
 	in
 
 	let p_gauche = Point.new_point
@@ -127,9 +128,9 @@ let projection seg  =
 
 	(*y' = ( ls / 2 ) - (( y * d ) / x *)
 	let project p =
-		truncate(float_of_int (d_focale * p.y) /. float_of_int( p.x )) in
+		int_of_float(float_of_int (d_focale * p.y) /. float_of_int( p.x )) in
 
-	let cmax = truncate (dtan (angle_vision/2) *. float_of_int d_focale) in
+	let cmax = int_of_float (dtan (angle_vision/2) *. float_of_int d_focale) in
 	let cmin = (-cmax) in 
 	Printf.printf"d == %d \n cmax == %d, cmin == %d\n" d_focale cmax cmin;
 	let c_p_orig = project seg.porig in
@@ -146,6 +147,14 @@ devra renvoyer un quator de points qui representeront les 4 coins du mur à affi
 projection seg -> Point.t * Point.t * Point.t * Point.t
 *)
 
+let debug_bsp_2D s p =
+
+    Graphics.draw_segments [|(s.porig.x/4, s.porig.y/4,
+    s.pdest.x/4, s.pdest.y/4)
+    |]; 
+    Printf.printf " origine : %d %d , arrivee : %d %d \n\n"  (s.porig.x/4) (s.porig.y/4) (s.pdest.x/4) (s.pdest.y/4)
+
+
 let affiche p = fun s -> 
 	Printf.printf "commencement ==\n ";
 	affiche_segment s;
@@ -153,10 +162,11 @@ let affiche p = fun s ->
 	Printf.printf "avant clipp ==\n ";
 	affiche_segment nw_seg;
 	let clip = clipping nw_seg in
+	debug_bsp_2D s p;
 
 	match clip with
 	| None -> ()
-	| Some(seg) -> (projection seg ;
+	| Some(seg) -> (projection seg ; 
 	(* Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
 	Graphics.set_color (Graphics.rgb 255 0 0);
 	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y *))
