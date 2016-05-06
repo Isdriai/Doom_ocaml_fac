@@ -20,7 +20,8 @@ let compteur =
 let angleNormal xa ya xb yb = 
 	let y = float_of_int (yb - ya) in
 	let x = float_of_int (xb - xa) in
-	atan (y /. x)(* calcule de l'angle de la normal*)
+
+	((atan (y /. x)) /. 3.14159 +. 1.) *. 10. (* calcule de l'angle de la normal et le borne entre 10 et -10*)
 	
 
 let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
