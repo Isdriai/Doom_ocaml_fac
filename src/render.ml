@@ -4,6 +4,7 @@ open Trigo
 open Player
 open Graphics
 
+
 let taille = 500
 
 
@@ -32,14 +33,14 @@ let calcul_vecteur p s =
 
 let calcul_angle p s =
 	Segment.new_segment 
-		(-int_of_float (float_of_int (s.porig.x) *. Trigo.dcos p.pa +. float_of_int (-s.porig.y) *. Trigo.dsin p.pa))
-		(int_of_float (float_of_int (-s.porig.x) *. Trigo.dsin p.pa +. float_of_int (s.porig.y) *. Trigo.dcos p.pa))
-		(-int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos p.pa +. float_of_int (-s.pdest.y) *. Trigo.dsin p.pa))
-		(int_of_float (float_of_int (-s.pdest.x) *. Trigo.dsin p.pa +. float_of_int (s.pdest.y) *. Trigo.dcos p.pa))
-		
-
+		(int_of_float (float_of_int (s.porig.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.porig.y) *. Trigo.dsin (-p.pa)))
+		(int_of_float (float_of_int (s.porig.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.porig.y) *. Trigo.dcos (-p.pa)))
+		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.pdest.y) *. Trigo.dsin (-p.pa)))
+		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.pdest.y) *. Trigo.dcos (-p.pa)))
+	
 let ata xo yo xd yd = 
 	float_of_int(yd - yo) /. float_of_int(xd - xo)
+
 
 let clipping s = 
 
@@ -47,10 +48,11 @@ let clipping s =
 	let yo = s.porig.y in
 	let xd = s.pdest.x in
 	let yd = s.pdest.y in
+	let angle_mur = ata xo yo xd yd in
 
 	if xo < 1 && xd < 1 then None
-	else if xo < 1 then Some(Segment.new_segment 1 (yo+int_of_float(float_of_int(1-xo)*. ata xo yo xd yd)) xd yd ) 
-	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. ata xo yo xd yd)))
+	else if xo < 1 then Some(Segment.new_segment 1 (yo+int_of_float(float_of_int(1-xo)*. angle_mur)) xd yd ) 
+	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
 	else Some(s)
 
 let draw_line xo yo xd yd =
@@ -86,10 +88,11 @@ let passage_3d cmax xo yo xd yd co cd =
 	let hauteur_yeux = taille/2 in 
 
 	let calcul_p_y x y =
-
+		let limite = taille in 
 		let echelle = float_of_int(taille/4) in
 		let rapport = float_of_int d_focale /. distance x y in
-		int_of_float(echelle *. rapport)+hauteur_yeux
+		let calcul = int_of_float(echelle *. rapport)+hauteur_yeux in 
+		calcul
 	in
 
 	let p_gauche = Point.new_point
@@ -105,10 +108,10 @@ let passage_3d cmax xo yo xd yd co cd =
 		p_droite.x == %d  ,p_droite.y == %d \n;
 		p_droite.x == %d  ,(-p_droite.y == %d \n)"
 
-		p_gauche.x p_gauche.y
-		p_gauche.x (hauteur_yeux-(p_gauche.y-hauteur_yeux))
-		p_droite.x p_droite.y
-		p_droite.x (hauteur_yeux-(p_droite.y-hauteur_yeux)) ;
+		p_gauche.x (hauteur_yeux-(p_droite.y-hauteur_yeux))
+		p_gauche.x p_droite.y
+		p_droite.x p_gauche.y
+		p_droite.x (hauteur_yeux-(p_gauche.y-hauteur_yeux));
 	Graphics.set_color (Graphics.rgb 0 100 0);
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
