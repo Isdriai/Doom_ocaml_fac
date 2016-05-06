@@ -3,215 +3,215 @@ type(
   int
 )
 ident(
-  def taille "src/render.ml" 9 80 80 "src/render.ml" 1 0 -1
+  def taille "src/render.ml" 10 81 81 "src/render.ml" 1 0 -1
 )
 "src/render.ml" 7 62 75 "src/render.ml" 7 62 78
 type(
   int
 )
-"src/render.ml" 9 80 84 "src/render.ml" 9 80 96
+"src/render.ml" 10 81 85 "src/render.ml" 10 81 97
 type(
   int
 )
 ident(
-  def angle_vision "src/render.ml" 11 103 103 "src/render.ml" 1 0 -1
+  def angle_vision "src/render.ml" 12 104 104 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 9 80 99 "src/render.ml" 9 80 101
+"src/render.ml" 10 81 100 "src/render.ml" 10 81 102
 type(
   int
 )
-"src/render.ml" 11 103 107 "src/render.ml" 11 103 111
+"src/render.ml" 12 104 108 "src/render.ml" 12 104 112
 type(
   float -> float
 )
 ident(
-  def fabs "src/render.ml" 14 144 144 "src/render.ml" 1 0 -1
+  def fabs "src/render.ml" 15 145 145 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 11 103 112 "src/render.ml" 11 103 113
+"src/render.ml" 12 104 113 "src/render.ml" 12 104 114
 type(
   float
 )
 ident(
-  def a "src/render.ml" 12 116 117 "src/render.ml" 12 116 142
+  def a "src/render.ml" 13 117 118 "src/render.ml" 13 117 143
 )
-"src/render.ml" 12 116 120 "src/render.ml" 12 116 121
+"src/render.ml" 13 117 121 "src/render.ml" 13 117 122
 type(
   float
 )
 ident(
-  int_ref a "src/render.ml" 11 103 112 "src/render.ml" 11 103 113
+  int_ref a "src/render.ml" 12 104 113 "src/render.ml" 12 104 114
 )
-"src/render.ml" 12 116 122 "src/render.ml" 12 116 123
+"src/render.ml" 13 117 123 "src/render.ml" 13 117 124
 type(
   float -> float -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 12 116 124 "src/render.ml" 12 116 126
+"src/render.ml" 13 117 125 "src/render.ml" 13 117 127
 type(
   float
 )
-"src/render.ml" 12 116 120 "src/render.ml" 12 116 126
+"src/render.ml" 13 117 121 "src/render.ml" 13 117 127
 type(
   bool
 )
-"src/render.ml" 12 116 132 "src/render.ml" 12 116 134
+"src/render.ml" 13 117 133 "src/render.ml" 13 117 135
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.( ~-. )
 )
-"src/render.ml" 12 116 134 "src/render.ml" 12 116 135
+"src/render.ml" 13 117 135 "src/render.ml" 13 117 136
 type(
   float
 )
 ident(
-  int_ref a "src/render.ml" 11 103 112 "src/render.ml" 11 103 113
+  int_ref a "src/render.ml" 12 104 113 "src/render.ml" 12 104 114
 )
-"src/render.ml" 12 116 132 "src/render.ml" 12 116 135
+"src/render.ml" 13 117 133 "src/render.ml" 13 117 136
 type(
   float
 )
-"src/render.ml" 12 116 141 "src/render.ml" 12 116 142
+"src/render.ml" 13 117 142 "src/render.ml" 13 117 143
 type(
   float
 )
 ident(
-  int_ref a "src/render.ml" 11 103 112 "src/render.ml" 11 103 113
+  int_ref a "src/render.ml" 12 104 113 "src/render.ml" 12 104 114
 )
-"src/render.ml" 12 116 117 "src/render.ml" 12 116 142
+"src/render.ml" 13 117 118 "src/render.ml" 13 117 143
 type(
   float
 )
-"src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+"src/render.ml" 15 145 149 "src/render.ml" 15 145 157
 type(
   int
 )
 ident(
-  def d_focale "src/render.ml" 16 226 226 "src/render.ml" 1 0 -1
+  def d_focale "src/render.ml" 17 231 231 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 14 144 159 "src/render.ml" 14 144 167
+"src/render.ml" 15 145 160 "src/render.ml" 15 145 172
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 14 144 168 "src/render.ml" 14 144 180
+"src/render.ml" 15 145 173 "src/render.ml" 15 145 185
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 14 144 181 "src/render.ml" 14 144 187
+"src/render.ml" 15 145 186 "src/render.ml" 15 145 192
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 14 144 187 "src/render.ml" 14 144 188
+"src/render.ml" 15 145 192 "src/render.ml" 15 145 193
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 14 144 188 "src/render.ml" 14 144 189
+"src/render.ml" 15 145 193 "src/render.ml" 15 145 194
 type(
   int
 )
-"src/render.ml" 14 144 180 "src/render.ml" 14 144 190
+"src/render.ml" 15 145 185 "src/render.ml" 15 145 195
 type(
   int
 )
-"src/render.ml" 14 144 168 "src/render.ml" 14 144 190
+"src/render.ml" 15 145 173 "src/render.ml" 15 145 195
 type(
   float
 )
-"src/render.ml" 14 144 190 "src/render.ml" 14 144 192
+"src/render.ml" 15 145 195 "src/render.ml" 15 145 197
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 14 144 193 "src/render.ml" 14 144 197
+"src/render.ml" 15 145 198 "src/render.ml" 15 145 202
 type(
   float -> float
 )
 ident(
-  int_ref fabs "src/render.ml" 11 103 107 "src/render.ml" 11 103 111
+  int_ref fabs "src/render.ml" 12 104 108 "src/render.ml" 12 104 112
 )
-"src/render.ml" 14 144 199 "src/render.ml" 14 144 203
+"src/render.ml" 15 145 204 "src/render.ml" 15 145 208
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dtan
 )
-"src/render.ml" 14 144 205 "src/render.ml" 14 144 217
+"src/render.ml" 15 145 210 "src/render.ml" 15 145 222
 type(
   int
 )
 ident(
-  int_ref angle_vision "src/render.ml" 9 80 84 "src/render.ml" 9 80 96
+  int_ref angle_vision "src/render.ml" 10 81 85 "src/render.ml" 10 81 97
 )
-"src/render.ml" 14 144 217 "src/render.ml" 14 144 218
+"src/render.ml" 15 145 222 "src/render.ml" 15 145 223
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 14 144 218 "src/render.ml" 14 144 219
+"src/render.ml" 15 145 223 "src/render.ml" 15 145 224
 type(
   int
 )
-"src/render.ml" 14 144 204 "src/render.ml" 14 144 221
+"src/render.ml" 15 145 209 "src/render.ml" 15 145 226
 type(
   int
 )
-"src/render.ml" 14 144 198 "src/render.ml" 14 144 222
+"src/render.ml" 15 145 203 "src/render.ml" 15 145 227
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 14 144 193 "src/render.ml" 14 144 222
+"src/render.ml" 15 145 198 "src/render.ml" 15 145 227
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 14 144 167 "src/render.ml" 14 144 223
+"src/render.ml" 15 145 172 "src/render.ml" 15 145 228
 type(
   float
 )
-"src/render.ml" 14 144 159 "src/render.ml" 14 144 223
+"src/render.ml" 15 145 160 "src/render.ml" 15 145 228
 type(
   int
 )
-"src/render.ml" 16 226 230 "src/render.ml" 16 226 245
+"src/render.ml" 17 231 235 "src/render.ml" 17 231 250
 type(
   Segment.t -> unit
 )
 ident(
-  def affiche_segment "src/render.ml" 21 362 362 "src/render.ml" 1 0 -1
+  def affiche_segment "src/render.ml" 22 367 367 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+"src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 type(
   Segment.t
 )
 ident(
-  def s "src/render.ml" 17 251 252 "src/render.ml" 17 251 358
+  def s "src/render.ml" 18 256 257 "src/render.ml" 18 256 363
 )
-"src/render.ml" 17 251 252 "src/render.ml" 17 251 265
+"src/render.ml" 18 256 257 "src/render.ml" 18 256 270
 type(
   (int -> int -> int -> int -> string -> unit, out_channel, unit) format ->
   int -> int -> int -> int -> string -> unit
@@ -219,2933 +219,2933 @@ type(
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 17 251 266 "src/render.ml" 17 251 313
+"src/render.ml" 18 256 271 "src/render.ml" 18 256 318
 type(
   (int -> int -> int -> int -> string -> unit, out_channel, unit) format
 )
-"src/render.ml" 17 251 314 "src/render.ml" 17 251 315
+"src/render.ml" 18 256 319 "src/render.ml" 18 256 320
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+  int_ref s "src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 )
-"src/render.ml" 17 251 314 "src/render.ml" 17 251 321
+"src/render.ml" 18 256 319 "src/render.ml" 18 256 326
 type(
   Point.t
 )
-"src/render.ml" 17 251 314 "src/render.ml" 17 251 323
+"src/render.ml" 18 256 319 "src/render.ml" 18 256 328
 type(
   int
 )
-"src/render.ml" 17 251 324 "src/render.ml" 17 251 325
+"src/render.ml" 18 256 329 "src/render.ml" 18 256 330
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+  int_ref s "src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 )
-"src/render.ml" 17 251 324 "src/render.ml" 17 251 331
+"src/render.ml" 18 256 329 "src/render.ml" 18 256 336
 type(
   Point.t
 )
-"src/render.ml" 17 251 324 "src/render.ml" 17 251 333
+"src/render.ml" 18 256 329 "src/render.ml" 18 256 338
 type(
   int
 )
-"src/render.ml" 17 251 334 "src/render.ml" 17 251 335
+"src/render.ml" 18 256 339 "src/render.ml" 18 256 340
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+  int_ref s "src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 )
-"src/render.ml" 17 251 334 "src/render.ml" 17 251 341
+"src/render.ml" 18 256 339 "src/render.ml" 18 256 346
 type(
   Point.t
 )
-"src/render.ml" 17 251 334 "src/render.ml" 17 251 343
+"src/render.ml" 18 256 339 "src/render.ml" 18 256 348
 type(
   int
 )
-"src/render.ml" 17 251 344 "src/render.ml" 17 251 345
+"src/render.ml" 18 256 349 "src/render.ml" 18 256 350
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+  int_ref s "src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 )
-"src/render.ml" 17 251 344 "src/render.ml" 17 251 351
+"src/render.ml" 18 256 349 "src/render.ml" 18 256 356
 type(
   Point.t
 )
-"src/render.ml" 17 251 344 "src/render.ml" 17 251 353
+"src/render.ml" 18 256 349 "src/render.ml" 18 256 358
 type(
   int
 )
-"src/render.ml" 17 251 354 "src/render.ml" 17 251 355
+"src/render.ml" 18 256 359 "src/render.ml" 18 256 360
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 16 226 246 "src/render.ml" 16 226 247
+  int_ref s "src/render.ml" 17 231 251 "src/render.ml" 17 231 252
 )
-"src/render.ml" 17 251 354 "src/render.ml" 17 251 358
+"src/render.ml" 18 256 359 "src/render.ml" 18 256 363
 type(
   string
 )
-"src/render.ml" 17 251 252 "src/render.ml" 17 251 358
+"src/render.ml" 18 256 257 "src/render.ml" 18 256 363
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 21 362 366 "src/render.ml" 21 362 380
+"src/render.ml" 22 367 371 "src/render.ml" 22 367 385
 type(
   Player.t -> Segment.t -> Segment.t
 )
 ident(
-  def calcul_vecteur "src/render.ml" 32 565 565 "src/render.ml" 1 0 -1
+  def calcul_vecteur "src/render.ml" 33 570 570 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 21 362 381 "src/render.ml" 21 362 382
+"src/render.ml" 22 367 386 "src/render.ml" 22 367 387
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 21 362 383 "src/render.ml" 25 482 507
+  def p "src/render.ml" 22 367 388 "src/render.ml" 26 487 512
 )
-"src/render.ml" 21 362 383 "src/render.ml" 21 362 384
+"src/render.ml" 22 367 388 "src/render.ml" 22 367 389
 type(
   Segment.t
 )
 ident(
-  def s "src/render.ml" 22 387 388 "src/render.ml" 25 482 507
+  def s "src/render.ml" 23 392 393 "src/render.ml" 26 487 512
 )
-"src/render.ml" 22 387 388 "src/render.ml" 22 387 407
+"src/render.ml" 23 392 393 "src/render.ml" 23 392 412
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/render.ml" 22 387 409 "src/render.ml" 22 387 410
+"src/render.ml" 23 392 414 "src/render.ml" 23 392 415
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 21 362 383 "src/render.ml" 21 362 384
+  int_ref s "src/render.ml" 22 367 388 "src/render.ml" 22 367 389
 )
-"src/render.ml" 22 387 409 "src/render.ml" 22 387 416
+"src/render.ml" 23 392 414 "src/render.ml" 23 392 421
 type(
   Point.t
 )
-"src/render.ml" 22 387 409 "src/render.ml" 22 387 418
+"src/render.ml" 23 392 414 "src/render.ml" 23 392 423
 type(
   int
 )
-"src/render.ml" 22 387 418 "src/render.ml" 22 387 419
+"src/render.ml" 23 392 423 "src/render.ml" 23 392 424
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 22 387 419 "src/render.ml" 22 387 420
+"src/render.ml" 23 392 424 "src/render.ml" 23 392 425
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 21 362 381 "src/render.ml" 21 362 382
+  int_ref p "src/render.ml" 22 367 386 "src/render.ml" 22 367 387
 )
-"src/render.ml" 22 387 419 "src/render.ml" 22 387 424
+"src/render.ml" 23 392 424 "src/render.ml" 23 392 429
 type(
   Point.t
 )
-"src/render.ml" 22 387 419 "src/render.ml" 22 387 426
+"src/render.ml" 23 392 424 "src/render.ml" 23 392 431
 type(
   int
 )
-"src/render.ml" 22 387 408 "src/render.ml" 22 387 427
+"src/render.ml" 23 392 413 "src/render.ml" 23 392 432
 type(
   int
 )
-"src/render.ml" 23 429 436 "src/render.ml" 23 429 437
+"src/render.ml" 24 434 441 "src/render.ml" 24 434 442
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 21 362 383 "src/render.ml" 21 362 384
+  int_ref s "src/render.ml" 22 367 388 "src/render.ml" 22 367 389
 )
-"src/render.ml" 23 429 436 "src/render.ml" 23 429 443
+"src/render.ml" 24 434 441 "src/render.ml" 24 434 448
 type(
   Point.t
 )
-"src/render.ml" 23 429 436 "src/render.ml" 23 429 445
+"src/render.ml" 24 434 441 "src/render.ml" 24 434 450
 type(
   int
 )
-"src/render.ml" 23 429 445 "src/render.ml" 23 429 446
+"src/render.ml" 24 434 450 "src/render.ml" 24 434 451
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 23 429 446 "src/render.ml" 23 429 447
+"src/render.ml" 24 434 451 "src/render.ml" 24 434 452
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 21 362 381 "src/render.ml" 21 362 382
+  int_ref p "src/render.ml" 22 367 386 "src/render.ml" 22 367 387
 )
-"src/render.ml" 23 429 446 "src/render.ml" 23 429 451
+"src/render.ml" 24 434 451 "src/render.ml" 24 434 456
 type(
   Point.t
 )
-"src/render.ml" 23 429 446 "src/render.ml" 23 429 453
+"src/render.ml" 24 434 451 "src/render.ml" 24 434 458
 type(
   int
 )
-"src/render.ml" 23 429 435 "src/render.ml" 23 429 454
+"src/render.ml" 24 434 440 "src/render.ml" 24 434 459
 type(
   int
 )
-"src/render.ml" 24 455 462 "src/render.ml" 24 455 463
+"src/render.ml" 25 460 467 "src/render.ml" 25 460 468
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 21 362 383 "src/render.ml" 21 362 384
+  int_ref s "src/render.ml" 22 367 388 "src/render.ml" 22 367 389
 )
-"src/render.ml" 24 455 462 "src/render.ml" 24 455 469
+"src/render.ml" 25 460 467 "src/render.ml" 25 460 474
 type(
   Point.t
 )
-"src/render.ml" 24 455 462 "src/render.ml" 24 455 471
+"src/render.ml" 25 460 467 "src/render.ml" 25 460 476
 type(
   int
 )
-"src/render.ml" 24 455 471 "src/render.ml" 24 455 472
+"src/render.ml" 25 460 476 "src/render.ml" 25 460 477
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 24 455 472 "src/render.ml" 24 455 473
+"src/render.ml" 25 460 477 "src/render.ml" 25 460 478
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 21 362 381 "src/render.ml" 21 362 382
+  int_ref p "src/render.ml" 22 367 386 "src/render.ml" 22 367 387
 )
-"src/render.ml" 24 455 472 "src/render.ml" 24 455 477
+"src/render.ml" 25 460 477 "src/render.ml" 25 460 482
 type(
   Point.t
 )
-"src/render.ml" 24 455 472 "src/render.ml" 24 455 479
+"src/render.ml" 25 460 477 "src/render.ml" 25 460 484
 type(
   int
 )
-"src/render.ml" 24 455 461 "src/render.ml" 24 455 480
+"src/render.ml" 25 460 466 "src/render.ml" 25 460 485
 type(
   int
 )
-"src/render.ml" 25 482 489 "src/render.ml" 25 482 490
+"src/render.ml" 26 487 494 "src/render.ml" 26 487 495
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 21 362 383 "src/render.ml" 21 362 384
+  int_ref s "src/render.ml" 22 367 388 "src/render.ml" 22 367 389
 )
-"src/render.ml" 25 482 489 "src/render.ml" 25 482 496
+"src/render.ml" 26 487 494 "src/render.ml" 26 487 501
 type(
   Point.t
 )
-"src/render.ml" 25 482 489 "src/render.ml" 25 482 498
+"src/render.ml" 26 487 494 "src/render.ml" 26 487 503
 type(
   int
 )
-"src/render.ml" 25 482 498 "src/render.ml" 25 482 499
+"src/render.ml" 26 487 503 "src/render.ml" 26 487 504
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 25 482 499 "src/render.ml" 25 482 500
+"src/render.ml" 26 487 504 "src/render.ml" 26 487 505
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 21 362 381 "src/render.ml" 21 362 382
+  int_ref p "src/render.ml" 22 367 386 "src/render.ml" 22 367 387
 )
-"src/render.ml" 25 482 499 "src/render.ml" 25 482 504
+"src/render.ml" 26 487 504 "src/render.ml" 26 487 509
 type(
   Point.t
 )
-"src/render.ml" 25 482 499 "src/render.ml" 25 482 506
+"src/render.ml" 26 487 504 "src/render.ml" 26 487 511
 type(
   int
 )
-"src/render.ml" 25 482 488 "src/render.ml" 25 482 507
+"src/render.ml" 26 487 493 "src/render.ml" 26 487 512
 type(
   int
 )
-"src/render.ml" 22 387 388 "src/render.ml" 25 482 507
+"src/render.ml" 23 392 393 "src/render.ml" 26 487 512
 call(
   tail
 )
 type(
   Segment.t
 )
-"src/render.ml" 32 565 569 "src/render.ml" 32 565 581
+"src/render.ml" 33 570 574 "src/render.ml" 33 570 586
 type(
   Player.t -> Segment.t -> Segment.t
 )
 ident(
-  def calcul_angle "src/render.ml" 40 1044 1044 "src/render.ml" 1 0 -1
+  def calcul_angle "src/render.ml" 41 1065 1065 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+"src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 32 565 584 "src/render.ml" 37 933 1039
+  def p "src/render.ml" 33 570 589 "src/render.ml" 38 950 1060
 )
-"src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+"src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 type(
   Segment.t
 )
 ident(
-  def s "src/render.ml" 33 588 589 "src/render.ml" 37 933 1039
+  def s "src/render.ml" 34 593 594 "src/render.ml" 38 950 1060
 )
-"src/render.ml" 33 588 589 "src/render.ml" 33 588 608
+"src/render.ml" 34 593 594 "src/render.ml" 34 593 613
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/render.ml" 34 610 613 "src/render.ml" 34 610 614
+"src/render.ml" 35 615 618 "src/render.ml" 35 615 619
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 34 610 614 "src/render.ml" 34 610 622
+"src/render.ml" 35 615 619 "src/render.ml" 35 615 631
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 34 610 624 "src/render.ml" 34 610 636
+"src/render.ml" 35 615 633 "src/render.ml" 35 615 645
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 34 610 638 "src/render.ml" 34 610 639
+"src/render.ml" 35 615 647 "src/render.ml" 35 615 648
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 34 610 638 "src/render.ml" 34 610 645
+"src/render.ml" 35 615 647 "src/render.ml" 35 615 654
 type(
   Point.t
 )
-"src/render.ml" 34 610 637 "src/render.ml" 34 610 648
+"src/render.ml" 35 615 646 "src/render.ml" 35 615 657
 type(
   int
 )
-"src/render.ml" 34 610 624 "src/render.ml" 34 610 648
+"src/render.ml" 35 615 633 "src/render.ml" 35 615 657
 type(
   float
 )
-"src/render.ml" 34 610 649 "src/render.ml" 34 610 651
+"src/render.ml" 35 615 658 "src/render.ml" 35 615 660
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 34 610 652 "src/render.ml" 34 610 662
+"src/render.ml" 35 615 661 "src/render.ml" 35 615 671
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dcos
 )
-"src/render.ml" 34 610 663 "src/render.ml" 34 610 664
+"src/render.ml" 35 615 672 "src/render.ml" 35 615 673
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 34 610 663 "src/render.ml" 34 610 667
+"src/render.ml" 35 615 672 "src/render.ml" 35 615 676
 type(
   int
 )
-"src/render.ml" 34 610 652 "src/render.ml" 34 610 667
+"src/render.ml" 35 615 661 "src/render.ml" 35 615 676
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 34 610 624 "src/render.ml" 34 610 667
+"src/render.ml" 35 615 633 "src/render.ml" 35 615 676
 type(
   float
 )
-"src/render.ml" 34 610 668 "src/render.ml" 34 610 670
+"src/render.ml" 35 615 677 "src/render.ml" 35 615 679
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 34 610 671 "src/render.ml" 34 610 683
+"src/render.ml" 35 615 680 "src/render.ml" 35 615 692
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 34 610 685 "src/render.ml" 34 610 686
+"src/render.ml" 35 615 694 "src/render.ml" 35 615 695
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 34 610 686 "src/render.ml" 34 610 687
+"src/render.ml" 35 615 695 "src/render.ml" 35 615 696
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 34 610 686 "src/render.ml" 34 610 693
+"src/render.ml" 35 615 695 "src/render.ml" 35 615 702
 type(
   Point.t
 )
-"src/render.ml" 34 610 686 "src/render.ml" 34 610 695
+"src/render.ml" 35 615 695 "src/render.ml" 35 615 704
 type(
   int
 )
-"src/render.ml" 34 610 684 "src/render.ml" 34 610 696
+"src/render.ml" 35 615 693 "src/render.ml" 35 615 705
 type(
   int
 )
-"src/render.ml" 34 610 671 "src/render.ml" 34 610 696
+"src/render.ml" 35 615 680 "src/render.ml" 35 615 705
 type(
   float
 )
-"src/render.ml" 34 610 697 "src/render.ml" 34 610 699
+"src/render.ml" 35 615 706 "src/render.ml" 35 615 708
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 34 610 700 "src/render.ml" 34 610 710
+"src/render.ml" 35 615 709 "src/render.ml" 35 615 719
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dsin
 )
-"src/render.ml" 34 610 711 "src/render.ml" 34 610 712
+"src/render.ml" 35 615 720 "src/render.ml" 35 615 721
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 34 610 711 "src/render.ml" 34 610 715
+"src/render.ml" 35 615 720 "src/render.ml" 35 615 724
 type(
   int
 )
-"src/render.ml" 34 610 700 "src/render.ml" 34 610 715
+"src/render.ml" 35 615 709 "src/render.ml" 35 615 724
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 34 610 671 "src/render.ml" 34 610 715
+"src/render.ml" 35 615 680 "src/render.ml" 35 615 724
 type(
   float
 )
-"src/render.ml" 34 610 623 "src/render.ml" 34 610 716
+"src/render.ml" 35 615 632 "src/render.ml" 35 615 725
 type(
   float
 )
-"src/render.ml" 34 610 614 "src/render.ml" 34 610 716
+"src/render.ml" 35 615 619 "src/render.ml" 35 615 725
 type(
   int
 )
-"src/render.ml" 34 610 612 "src/render.ml" 34 610 717
+"src/render.ml" 35 615 617 "src/render.ml" 35 615 726
 type(
   int
 )
-"src/render.ml" 35 718 721 "src/render.ml" 35 718 729
+"src/render.ml" 36 727 730 "src/render.ml" 36 727 742
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 35 718 731 "src/render.ml" 35 718 743
+"src/render.ml" 36 727 744 "src/render.ml" 36 727 756
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 35 718 745 "src/render.ml" 35 718 746
+"src/render.ml" 36 727 758 "src/render.ml" 36 727 759
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 35 718 746 "src/render.ml" 35 718 747
+"src/render.ml" 36 727 759 "src/render.ml" 36 727 760
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 35 718 746 "src/render.ml" 35 718 753
+"src/render.ml" 36 727 759 "src/render.ml" 36 727 766
 type(
   Point.t
 )
-"src/render.ml" 35 718 746 "src/render.ml" 35 718 755
+"src/render.ml" 36 727 759 "src/render.ml" 36 727 768
 type(
   int
 )
-"src/render.ml" 35 718 744 "src/render.ml" 35 718 756
+"src/render.ml" 36 727 757 "src/render.ml" 36 727 769
 type(
   int
 )
-"src/render.ml" 35 718 731 "src/render.ml" 35 718 756
+"src/render.ml" 36 727 744 "src/render.ml" 36 727 769
 type(
   float
 )
-"src/render.ml" 35 718 757 "src/render.ml" 35 718 759
+"src/render.ml" 36 727 770 "src/render.ml" 36 727 772
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 35 718 760 "src/render.ml" 35 718 770
+"src/render.ml" 36 727 773 "src/render.ml" 36 727 783
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dsin
 )
-"src/render.ml" 35 718 771 "src/render.ml" 35 718 772
+"src/render.ml" 36 727 784 "src/render.ml" 36 727 785
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 35 718 771 "src/render.ml" 35 718 775
+"src/render.ml" 36 727 784 "src/render.ml" 36 727 788
 type(
   int
 )
-"src/render.ml" 35 718 760 "src/render.ml" 35 718 775
+"src/render.ml" 36 727 773 "src/render.ml" 36 727 788
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 35 718 731 "src/render.ml" 35 718 775
+"src/render.ml" 36 727 744 "src/render.ml" 36 727 788
 type(
   float
 )
-"src/render.ml" 35 718 776 "src/render.ml" 35 718 778
+"src/render.ml" 36 727 789 "src/render.ml" 36 727 791
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 35 718 779 "src/render.ml" 35 718 791
+"src/render.ml" 36 727 792 "src/render.ml" 36 727 804
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 35 718 793 "src/render.ml" 35 718 794
+"src/render.ml" 36 727 806 "src/render.ml" 36 727 807
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 35 718 793 "src/render.ml" 35 718 800
+"src/render.ml" 36 727 806 "src/render.ml" 36 727 813
 type(
   Point.t
 )
-"src/render.ml" 35 718 792 "src/render.ml" 35 718 803
+"src/render.ml" 36 727 805 "src/render.ml" 36 727 816
 type(
   int
 )
-"src/render.ml" 35 718 779 "src/render.ml" 35 718 803
+"src/render.ml" 36 727 792 "src/render.ml" 36 727 816
 type(
   float
 )
-"src/render.ml" 35 718 804 "src/render.ml" 35 718 806
+"src/render.ml" 36 727 817 "src/render.ml" 36 727 819
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 35 718 807 "src/render.ml" 35 718 817
+"src/render.ml" 36 727 820 "src/render.ml" 36 727 830
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dcos
 )
-"src/render.ml" 35 718 818 "src/render.ml" 35 718 819
+"src/render.ml" 36 727 831 "src/render.ml" 36 727 832
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 35 718 818 "src/render.ml" 35 718 822
+"src/render.ml" 36 727 831 "src/render.ml" 36 727 835
 type(
   int
 )
-"src/render.ml" 35 718 807 "src/render.ml" 35 718 822
+"src/render.ml" 36 727 820 "src/render.ml" 36 727 835
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 35 718 779 "src/render.ml" 35 718 822
+"src/render.ml" 36 727 792 "src/render.ml" 36 727 835
 type(
   float
 )
-"src/render.ml" 35 718 730 "src/render.ml" 35 718 823
+"src/render.ml" 36 727 743 "src/render.ml" 36 727 836
 type(
   float
 )
-"src/render.ml" 35 718 720 "src/render.ml" 35 718 824
+"src/render.ml" 36 727 729 "src/render.ml" 36 727 837
 type(
   int
 )
-"src/render.ml" 36 825 828 "src/render.ml" 36 825 829
+"src/render.ml" 37 838 841 "src/render.ml" 37 838 842
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 36 825 829 "src/render.ml" 36 825 837
+"src/render.ml" 37 838 842 "src/render.ml" 37 838 854
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 36 825 839 "src/render.ml" 36 825 851
+"src/render.ml" 37 838 856 "src/render.ml" 37 838 868
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 36 825 853 "src/render.ml" 36 825 854
+"src/render.ml" 37 838 870 "src/render.ml" 37 838 871
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 36 825 853 "src/render.ml" 36 825 860
+"src/render.ml" 37 838 870 "src/render.ml" 37 838 877
 type(
   Point.t
 )
-"src/render.ml" 36 825 852 "src/render.ml" 36 825 863
+"src/render.ml" 37 838 869 "src/render.ml" 37 838 880
 type(
   int
 )
-"src/render.ml" 36 825 839 "src/render.ml" 36 825 863
+"src/render.ml" 37 838 856 "src/render.ml" 37 838 880
 type(
   float
 )
-"src/render.ml" 36 825 864 "src/render.ml" 36 825 866
+"src/render.ml" 37 838 881 "src/render.ml" 37 838 883
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 36 825 867 "src/render.ml" 36 825 877
+"src/render.ml" 37 838 884 "src/render.ml" 37 838 894
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dcos
 )
-"src/render.ml" 36 825 878 "src/render.ml" 36 825 879
+"src/render.ml" 37 838 895 "src/render.ml" 37 838 896
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 36 825 878 "src/render.ml" 36 825 882
+"src/render.ml" 37 838 895 "src/render.ml" 37 838 899
 type(
   int
 )
-"src/render.ml" 36 825 867 "src/render.ml" 36 825 882
+"src/render.ml" 37 838 884 "src/render.ml" 37 838 899
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 36 825 839 "src/render.ml" 36 825 882
+"src/render.ml" 37 838 856 "src/render.ml" 37 838 899
 type(
   float
 )
-"src/render.ml" 36 825 883 "src/render.ml" 36 825 885
+"src/render.ml" 37 838 900 "src/render.ml" 37 838 902
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 36 825 886 "src/render.ml" 36 825 898
+"src/render.ml" 37 838 903 "src/render.ml" 37 838 915
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 36 825 900 "src/render.ml" 36 825 901
+"src/render.ml" 37 838 917 "src/render.ml" 37 838 918
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 36 825 901 "src/render.ml" 36 825 902
+"src/render.ml" 37 838 918 "src/render.ml" 37 838 919
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 36 825 901 "src/render.ml" 36 825 908
+"src/render.ml" 37 838 918 "src/render.ml" 37 838 925
 type(
   Point.t
 )
-"src/render.ml" 36 825 901 "src/render.ml" 36 825 910
+"src/render.ml" 37 838 918 "src/render.ml" 37 838 927
 type(
   int
 )
-"src/render.ml" 36 825 899 "src/render.ml" 36 825 911
+"src/render.ml" 37 838 916 "src/render.ml" 37 838 928
 type(
   int
 )
-"src/render.ml" 36 825 886 "src/render.ml" 36 825 911
+"src/render.ml" 37 838 903 "src/render.ml" 37 838 928
 type(
   float
 )
-"src/render.ml" 36 825 912 "src/render.ml" 36 825 914
+"src/render.ml" 37 838 929 "src/render.ml" 37 838 931
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 36 825 915 "src/render.ml" 36 825 925
+"src/render.ml" 37 838 932 "src/render.ml" 37 838 942
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dsin
 )
-"src/render.ml" 36 825 926 "src/render.ml" 36 825 927
+"src/render.ml" 37 838 943 "src/render.ml" 37 838 944
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 36 825 926 "src/render.ml" 36 825 930
+"src/render.ml" 37 838 943 "src/render.ml" 37 838 947
 type(
   int
 )
-"src/render.ml" 36 825 915 "src/render.ml" 36 825 930
+"src/render.ml" 37 838 932 "src/render.ml" 37 838 947
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 36 825 886 "src/render.ml" 36 825 930
+"src/render.ml" 37 838 903 "src/render.ml" 37 838 947
 type(
   float
 )
-"src/render.ml" 36 825 838 "src/render.ml" 36 825 931
+"src/render.ml" 37 838 855 "src/render.ml" 37 838 948
 type(
   float
 )
-"src/render.ml" 36 825 829 "src/render.ml" 36 825 931
+"src/render.ml" 37 838 842 "src/render.ml" 37 838 948
 type(
   int
 )
-"src/render.ml" 36 825 827 "src/render.ml" 36 825 932
+"src/render.ml" 37 838 840 "src/render.ml" 37 838 949
 type(
   int
 )
-"src/render.ml" 37 933 936 "src/render.ml" 37 933 944
+"src/render.ml" 38 950 953 "src/render.ml" 38 950 965
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 37 933 946 "src/render.ml" 37 933 958
+"src/render.ml" 38 950 967 "src/render.ml" 38 950 979
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 37 933 960 "src/render.ml" 37 933 961
+"src/render.ml" 38 950 981 "src/render.ml" 38 950 982
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 37 933 961 "src/render.ml" 37 933 962
+"src/render.ml" 38 950 982 "src/render.ml" 38 950 983
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 37 933 961 "src/render.ml" 37 933 968
+"src/render.ml" 38 950 982 "src/render.ml" 38 950 989
 type(
   Point.t
 )
-"src/render.ml" 37 933 961 "src/render.ml" 37 933 970
+"src/render.ml" 38 950 982 "src/render.ml" 38 950 991
 type(
   int
 )
-"src/render.ml" 37 933 959 "src/render.ml" 37 933 971
+"src/render.ml" 38 950 980 "src/render.ml" 38 950 992
 type(
   int
 )
-"src/render.ml" 37 933 946 "src/render.ml" 37 933 971
+"src/render.ml" 38 950 967 "src/render.ml" 38 950 992
 type(
   float
 )
-"src/render.ml" 37 933 972 "src/render.ml" 37 933 974
+"src/render.ml" 38 950 993 "src/render.ml" 38 950 995
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 37 933 975 "src/render.ml" 37 933 985
+"src/render.ml" 38 950 996 "src/render.ml" 38 950 1006
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dsin
 )
-"src/render.ml" 37 933 986 "src/render.ml" 37 933 987
+"src/render.ml" 38 950 1007 "src/render.ml" 38 950 1008
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 37 933 986 "src/render.ml" 37 933 990
+"src/render.ml" 38 950 1007 "src/render.ml" 38 950 1011
 type(
   int
 )
-"src/render.ml" 37 933 975 "src/render.ml" 37 933 990
+"src/render.ml" 38 950 996 "src/render.ml" 38 950 1011
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 37 933 946 "src/render.ml" 37 933 990
+"src/render.ml" 38 950 967 "src/render.ml" 38 950 1011
 type(
   float
 )
-"src/render.ml" 37 933 991 "src/render.ml" 37 933 993
+"src/render.ml" 38 950 1012 "src/render.ml" 38 950 1014
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 37 933 994 "src/render.ml" 37 933 1006
+"src/render.ml" 38 950 1015 "src/render.ml" 38 950 1027
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 37 933 1008 "src/render.ml" 37 933 1009
+"src/render.ml" 38 950 1029 "src/render.ml" 38 950 1030
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 32 565 584 "src/render.ml" 32 565 585
+  int_ref s "src/render.ml" 33 570 589 "src/render.ml" 33 570 590
 )
-"src/render.ml" 37 933 1008 "src/render.ml" 37 933 1015
+"src/render.ml" 38 950 1029 "src/render.ml" 38 950 1036
 type(
   Point.t
 )
-"src/render.ml" 37 933 1007 "src/render.ml" 37 933 1018
+"src/render.ml" 38 950 1028 "src/render.ml" 38 950 1039
 type(
   int
 )
-"src/render.ml" 37 933 994 "src/render.ml" 37 933 1018
+"src/render.ml" 38 950 1015 "src/render.ml" 38 950 1039
 type(
   float
 )
-"src/render.ml" 37 933 1019 "src/render.ml" 37 933 1021
+"src/render.ml" 38 950 1040 "src/render.ml" 38 950 1042
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 37 933 1022 "src/render.ml" 37 933 1032
+"src/render.ml" 38 950 1043 "src/render.ml" 38 950 1053
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dcos
 )
-"src/render.ml" 37 933 1033 "src/render.ml" 37 933 1034
+"src/render.ml" 38 950 1054 "src/render.ml" 38 950 1055
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 32 565 582 "src/render.ml" 32 565 583
+  int_ref p "src/render.ml" 33 570 587 "src/render.ml" 33 570 588
 )
-"src/render.ml" 37 933 1033 "src/render.ml" 37 933 1037
+"src/render.ml" 38 950 1054 "src/render.ml" 38 950 1058
 type(
   int
 )
-"src/render.ml" 37 933 1022 "src/render.ml" 37 933 1037
+"src/render.ml" 38 950 1043 "src/render.ml" 38 950 1058
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 37 933 994 "src/render.ml" 37 933 1037
+"src/render.ml" 38 950 1015 "src/render.ml" 38 950 1058
 type(
   float
 )
-"src/render.ml" 37 933 945 "src/render.ml" 37 933 1038
+"src/render.ml" 38 950 966 "src/render.ml" 38 950 1059
 type(
   float
 )
-"src/render.ml" 37 933 935 "src/render.ml" 37 933 1039
+"src/render.ml" 38 950 952 "src/render.ml" 38 950 1060
 type(
   int
 )
-"src/render.ml" 33 588 589 "src/render.ml" 37 933 1039
+"src/render.ml" 34 593 594 "src/render.ml" 38 950 1060
 call(
   tail
 )
 type(
   Segment.t
 )
-"src/render.ml" 40 1044 1048 "src/render.ml" 40 1044 1051
+"src/render.ml" 41 1065 1069 "src/render.ml" 41 1065 1072
 type(
   int -> int -> int -> int -> float
 )
 ident(
-  def ata "src/render.ml" 43 1116 1116 "src/render.ml" 1 0 -1
+  def ata "src/render.ml" 44 1137 1137 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 40 1044 1052 "src/render.ml" 40 1044 1054
+"src/render.ml" 41 1065 1073 "src/render.ml" 41 1065 1075
 type(
   int
 )
 ident(
-  def xo "src/render.ml" 40 1044 1055 "src/render.ml" 41 1067 1114
+  def xo "src/render.ml" 41 1065 1076 "src/render.ml" 42 1088 1135
 )
-"src/render.ml" 40 1044 1055 "src/render.ml" 40 1044 1057
+"src/render.ml" 41 1065 1076 "src/render.ml" 41 1065 1078
 type(
   int
 )
 ident(
-  def yo "src/render.ml" 40 1044 1058 "src/render.ml" 41 1067 1114
+  def yo "src/render.ml" 41 1065 1079 "src/render.ml" 42 1088 1135
 )
-"src/render.ml" 40 1044 1058 "src/render.ml" 40 1044 1060
+"src/render.ml" 41 1065 1079 "src/render.ml" 41 1065 1081
 type(
   int
 )
 ident(
-  def xd "src/render.ml" 40 1044 1061 "src/render.ml" 41 1067 1114
+  def xd "src/render.ml" 41 1065 1082 "src/render.ml" 42 1088 1135
 )
-"src/render.ml" 40 1044 1061 "src/render.ml" 40 1044 1063
+"src/render.ml" 41 1065 1082 "src/render.ml" 41 1065 1084
 type(
   int
 )
 ident(
-  def yd "src/render.ml" 41 1067 1068 "src/render.ml" 41 1067 1114
+  def yd "src/render.ml" 42 1088 1089 "src/render.ml" 42 1088 1135
 )
-"src/render.ml" 41 1067 1068 "src/render.ml" 41 1067 1080
+"src/render.ml" 42 1088 1089 "src/render.ml" 42 1088 1101
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 41 1067 1081 "src/render.ml" 41 1067 1083
+"src/render.ml" 42 1088 1102 "src/render.ml" 42 1088 1104
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 40 1044 1061 "src/render.ml" 40 1044 1063
+  int_ref yd "src/render.ml" 41 1065 1082 "src/render.ml" 41 1065 1084
 )
-"src/render.ml" 41 1067 1084 "src/render.ml" 41 1067 1085
+"src/render.ml" 42 1088 1105 "src/render.ml" 42 1088 1106
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 41 1067 1086 "src/render.ml" 41 1067 1088
+"src/render.ml" 42 1088 1107 "src/render.ml" 42 1088 1109
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 40 1044 1055 "src/render.ml" 40 1044 1057
+  int_ref yo "src/render.ml" 41 1065 1076 "src/render.ml" 41 1065 1078
 )
-"src/render.ml" 41 1067 1080 "src/render.ml" 41 1067 1089
+"src/render.ml" 42 1088 1101 "src/render.ml" 42 1088 1110
 type(
   int
 )
-"src/render.ml" 41 1067 1068 "src/render.ml" 41 1067 1089
+"src/render.ml" 42 1088 1089 "src/render.ml" 42 1088 1110
 type(
   float
 )
-"src/render.ml" 41 1067 1090 "src/render.ml" 41 1067 1092
+"src/render.ml" 42 1088 1111 "src/render.ml" 42 1088 1113
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 41 1067 1093 "src/render.ml" 41 1067 1105
+"src/render.ml" 42 1088 1114 "src/render.ml" 42 1088 1126
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 41 1067 1106 "src/render.ml" 41 1067 1108
+"src/render.ml" 42 1088 1127 "src/render.ml" 42 1088 1129
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 40 1044 1058 "src/render.ml" 40 1044 1060
+  int_ref xd "src/render.ml" 41 1065 1079 "src/render.ml" 41 1065 1081
 )
-"src/render.ml" 41 1067 1109 "src/render.ml" 41 1067 1110
+"src/render.ml" 42 1088 1130 "src/render.ml" 42 1088 1131
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 41 1067 1111 "src/render.ml" 41 1067 1113
+"src/render.ml" 42 1088 1132 "src/render.ml" 42 1088 1134
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 40 1044 1052 "src/render.ml" 40 1044 1054
+  int_ref xo "src/render.ml" 41 1065 1073 "src/render.ml" 41 1065 1075
 )
-"src/render.ml" 41 1067 1105 "src/render.ml" 41 1067 1114
+"src/render.ml" 42 1088 1126 "src/render.ml" 42 1088 1135
 type(
   int
 )
-"src/render.ml" 41 1067 1093 "src/render.ml" 41 1067 1114
+"src/render.ml" 42 1088 1114 "src/render.ml" 42 1088 1135
 type(
   float
 )
-"src/render.ml" 41 1067 1068 "src/render.ml" 41 1067 1114
+"src/render.ml" 42 1088 1089 "src/render.ml" 42 1088 1135
 type(
   float
 )
-"src/render.ml" 43 1116 1120 "src/render.ml" 43 1116 1128
+"src/render.ml" 44 1137 1141 "src/render.ml" 44 1137 1149
 type(
   Segment.t -> Segment.t option
 )
 ident(
-  def clipping "src/render.ml" 55 1492 1492 "src/render.ml" 1 0 -1
+  def clipping "src/render.ml" 56 1521 1521 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+"src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 type(
   Segment.t
 )
 ident(
-  def s "src/render.ml" 45 1135 1136 "src/render.ml" 53 1477 1490
+  def s "src/render.ml" 46 1156 1157 "src/render.ml" 54 1506 1519
 )
-"src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+"src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 type(
   int
 )
 ident(
-  def xo "src/render.ml" 46 1158 1159 "src/render.ml" 53 1477 1490
+  def xo "src/render.ml" 47 1179 1180 "src/render.ml" 54 1506 1519
 )
-"src/render.ml" 45 1135 1145 "src/render.ml" 45 1135 1146
+"src/render.ml" 46 1156 1166 "src/render.ml" 46 1156 1167
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+  int_ref s "src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 )
-"src/render.ml" 45 1135 1145 "src/render.ml" 45 1135 1152
+"src/render.ml" 46 1156 1166 "src/render.ml" 46 1156 1173
 type(
   Point.t
 )
-"src/render.ml" 45 1135 1145 "src/render.ml" 45 1135 1154
+"src/render.ml" 46 1156 1166 "src/render.ml" 46 1156 1175
 type(
   int
 )
-"src/render.ml" 46 1158 1163 "src/render.ml" 46 1158 1165
+"src/render.ml" 47 1179 1184 "src/render.ml" 47 1179 1186
 type(
   int
 )
 ident(
-  def yo "src/render.ml" 47 1181 1182 "src/render.ml" 53 1477 1490
+  def yo "src/render.ml" 48 1202 1203 "src/render.ml" 54 1506 1519
 )
-"src/render.ml" 46 1158 1168 "src/render.ml" 46 1158 1169
+"src/render.ml" 47 1179 1189 "src/render.ml" 47 1179 1190
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+  int_ref s "src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 )
-"src/render.ml" 46 1158 1168 "src/render.ml" 46 1158 1175
+"src/render.ml" 47 1179 1189 "src/render.ml" 47 1179 1196
 type(
   Point.t
 )
-"src/render.ml" 46 1158 1168 "src/render.ml" 46 1158 1177
+"src/render.ml" 47 1179 1189 "src/render.ml" 47 1179 1198
 type(
   int
 )
-"src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+"src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 type(
   int
 )
 ident(
-  def xd "src/render.ml" 48 1204 1205 "src/render.ml" 53 1477 1490
+  def xd "src/render.ml" 49 1225 1226 "src/render.ml" 54 1506 1519
 )
-"src/render.ml" 47 1181 1191 "src/render.ml" 47 1181 1192
+"src/render.ml" 48 1202 1212 "src/render.ml" 48 1202 1213
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+  int_ref s "src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 )
-"src/render.ml" 47 1181 1191 "src/render.ml" 47 1181 1198
+"src/render.ml" 48 1202 1212 "src/render.ml" 48 1202 1219
 type(
   Point.t
 )
-"src/render.ml" 47 1181 1191 "src/render.ml" 47 1181 1200
+"src/render.ml" 48 1202 1212 "src/render.ml" 48 1202 1221
 type(
   int
 )
-"src/render.ml" 48 1204 1209 "src/render.ml" 48 1204 1211
+"src/render.ml" 49 1225 1230 "src/render.ml" 49 1225 1232
 type(
   int
 )
 ident(
-  def yd "src/render.ml" 50 1228 1229 "src/render.ml" 53 1477 1490
+  def yd "src/render.ml" 51 1249 1250 "src/render.ml" 54 1506 1519
 )
-"src/render.ml" 48 1204 1214 "src/render.ml" 48 1204 1215
+"src/render.ml" 49 1225 1235 "src/render.ml" 49 1225 1236
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+  int_ref s "src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 )
-"src/render.ml" 48 1204 1214 "src/render.ml" 48 1204 1221
+"src/render.ml" 49 1225 1235 "src/render.ml" 49 1225 1242
 type(
   Point.t
 )
-"src/render.ml" 48 1204 1214 "src/render.ml" 48 1204 1223
+"src/render.ml" 49 1225 1235 "src/render.ml" 49 1225 1244
 type(
   int
 )
-"src/render.ml" 50 1228 1232 "src/render.ml" 50 1228 1234
+"src/render.ml" 51 1249 1253 "src/render.ml" 51 1249 1255
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 50 1228 1235 "src/render.ml" 50 1228 1236
+"src/render.ml" 51 1249 1256 "src/render.ml" 51 1249 1257
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 50 1228 1237 "src/render.ml" 50 1228 1238
+"src/render.ml" 51 1249 1258 "src/render.ml" 51 1249 1259
 type(
   int
 )
-"src/render.ml" 50 1228 1232 "src/render.ml" 50 1228 1238
+"src/render.ml" 51 1249 1253 "src/render.ml" 51 1249 1259
 type(
   bool
 )
-"src/render.ml" 50 1228 1239 "src/render.ml" 50 1228 1241
+"src/render.ml" 51 1249 1260 "src/render.ml" 51 1249 1262
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"src/render.ml" 50 1228 1242 "src/render.ml" 50 1228 1244
+"src/render.ml" 51 1249 1263 "src/render.ml" 51 1249 1265
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 50 1228 1245 "src/render.ml" 50 1228 1246
+"src/render.ml" 51 1249 1266 "src/render.ml" 51 1249 1267
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 50 1228 1247 "src/render.ml" 50 1228 1248
+"src/render.ml" 51 1249 1268 "src/render.ml" 51 1249 1269
 type(
   int
 )
-"src/render.ml" 50 1228 1242 "src/render.ml" 50 1228 1248
+"src/render.ml" 51 1249 1263 "src/render.ml" 51 1249 1269
 type(
   bool
 )
-"src/render.ml" 50 1228 1232 "src/render.ml" 50 1228 1248
+"src/render.ml" 51 1249 1253 "src/render.ml" 51 1249 1269
 type(
   bool
 )
-"src/render.ml" 50 1228 1254 "src/render.ml" 50 1228 1258
+"src/render.ml" 51 1249 1275 "src/render.ml" 51 1249 1279
 type(
   Segment.t option
 )
-"src/render.ml" 51 1259 1268 "src/render.ml" 51 1259 1270
+"src/render.ml" 52 1280 1289 "src/render.ml" 52 1280 1291
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 51 1259 1271 "src/render.ml" 51 1259 1272
+"src/render.ml" 52 1280 1292 "src/render.ml" 52 1280 1293
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 51 1259 1273 "src/render.ml" 51 1259 1274
+"src/render.ml" 52 1280 1294 "src/render.ml" 52 1280 1295
 type(
   int
 )
-"src/render.ml" 51 1259 1268 "src/render.ml" 51 1259 1274
+"src/render.ml" 52 1280 1289 "src/render.ml" 52 1280 1295
 type(
   bool
 )
-"src/render.ml" 51 1259 1285 "src/render.ml" 51 1259 1304
+"src/render.ml" 52 1280 1306 "src/render.ml" 52 1280 1325
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/render.ml" 51 1259 1305 "src/render.ml" 51 1259 1306
+"src/render.ml" 52 1280 1326 "src/render.ml" 52 1280 1327
 type(
   int
 )
-"src/render.ml" 51 1259 1308 "src/render.ml" 51 1259 1310
+"src/render.ml" 52 1280 1329 "src/render.ml" 52 1280 1331
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 46 1158 1163 "src/render.ml" 46 1158 1165
+  int_ref yo "src/render.ml" 47 1179 1184 "src/render.ml" 47 1179 1186
 )
-"src/render.ml" 51 1259 1310 "src/render.ml" 51 1259 1311
+"src/render.ml" 52 1280 1331 "src/render.ml" 52 1280 1332
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 51 1259 1311 "src/render.ml" 51 1259 1319
+"src/render.ml" 52 1280 1332 "src/render.ml" 52 1280 1344
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 51 1259 1320 "src/render.ml" 51 1259 1332
+"src/render.ml" 52 1280 1345 "src/render.ml" 52 1280 1357
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 51 1259 1333 "src/render.ml" 51 1259 1334
+"src/render.ml" 52 1280 1358 "src/render.ml" 52 1280 1359
 type(
   int
 )
-"src/render.ml" 51 1259 1334 "src/render.ml" 51 1259 1335
+"src/render.ml" 52 1280 1359 "src/render.ml" 52 1280 1360
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 51 1259 1335 "src/render.ml" 51 1259 1337
+"src/render.ml" 52 1280 1360 "src/render.ml" 52 1280 1362
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 51 1259 1332 "src/render.ml" 51 1259 1338
+"src/render.ml" 52 1280 1357 "src/render.ml" 52 1280 1363
 type(
   int
 )
-"src/render.ml" 51 1259 1320 "src/render.ml" 51 1259 1338
+"src/render.ml" 52 1280 1345 "src/render.ml" 52 1280 1363
 type(
   float
 )
-"src/render.ml" 51 1259 1338 "src/render.ml" 51 1259 1340
+"src/render.ml" 52 1280 1363 "src/render.ml" 52 1280 1365
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 51 1259 1341 "src/render.ml" 51 1259 1344
+"src/render.ml" 52 1280 1366 "src/render.ml" 52 1280 1369
 type(
   int -> int -> int -> int -> float
 )
 ident(
-  int_ref ata "src/render.ml" 40 1044 1048 "src/render.ml" 40 1044 1051
+  int_ref ata "src/render.ml" 41 1065 1069 "src/render.ml" 41 1065 1072
 )
-"src/render.ml" 51 1259 1345 "src/render.ml" 51 1259 1347
+"src/render.ml" 52 1280 1370 "src/render.ml" 52 1280 1372
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 51 1259 1348 "src/render.ml" 51 1259 1350
+"src/render.ml" 52 1280 1373 "src/render.ml" 52 1280 1375
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 46 1158 1163 "src/render.ml" 46 1158 1165
+  int_ref yo "src/render.ml" 47 1179 1184 "src/render.ml" 47 1179 1186
 )
-"src/render.ml" 51 1259 1351 "src/render.ml" 51 1259 1353
+"src/render.ml" 52 1280 1376 "src/render.ml" 52 1280 1378
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 51 1259 1354 "src/render.ml" 51 1259 1356
+"src/render.ml" 52 1280 1379 "src/render.ml" 52 1280 1381
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 48 1204 1209 "src/render.ml" 48 1204 1211
+  int_ref yd "src/render.ml" 49 1225 1230 "src/render.ml" 49 1225 1232
 )
-"src/render.ml" 51 1259 1341 "src/render.ml" 51 1259 1356
+"src/render.ml" 52 1280 1366 "src/render.ml" 52 1280 1381
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 51 1259 1319 "src/render.ml" 51 1259 1357
+"src/render.ml" 52 1280 1344 "src/render.ml" 52 1280 1382
 type(
   float
 )
-"src/render.ml" 51 1259 1311 "src/render.ml" 51 1259 1357
+"src/render.ml" 52 1280 1332 "src/render.ml" 52 1280 1382
 type(
   int
 )
-"src/render.ml" 51 1259 1307 "src/render.ml" 51 1259 1358
+"src/render.ml" 52 1280 1328 "src/render.ml" 52 1280 1383
 type(
   int
 )
-"src/render.ml" 51 1259 1359 "src/render.ml" 51 1259 1361
-type(
-  int
-)
-ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
-)
-"src/render.ml" 51 1259 1362 "src/render.ml" 51 1259 1364
+"src/render.ml" 52 1280 1384 "src/render.ml" 52 1280 1386
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 48 1204 1209 "src/render.ml" 48 1204 1211
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 51 1259 1284 "src/render.ml" 51 1259 1366
+"src/render.ml" 52 1280 1387 "src/render.ml" 52 1280 1389
+type(
+  int
+)
+ident(
+  int_ref yd "src/render.ml" 49 1225 1230 "src/render.ml" 49 1225 1232
+)
+"src/render.ml" 52 1280 1305 "src/render.ml" 52 1280 1391
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/render.ml" 51 1259 1280 "src/render.ml" 51 1259 1366
+"src/render.ml" 52 1280 1301 "src/render.ml" 52 1280 1391
 type(
   Segment.t option
 )
-"src/render.ml" 52 1368 1377 "src/render.ml" 52 1368 1379
+"src/render.ml" 53 1393 1402 "src/render.ml" 53 1393 1404
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 52 1368 1380 "src/render.ml" 52 1368 1381
+"src/render.ml" 53 1393 1405 "src/render.ml" 53 1393 1406
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 52 1368 1382 "src/render.ml" 52 1368 1383
+"src/render.ml" 53 1393 1407 "src/render.ml" 53 1393 1408
 type(
   int
 )
-"src/render.ml" 52 1368 1377 "src/render.ml" 52 1368 1383
+"src/render.ml" 53 1393 1402 "src/render.ml" 53 1393 1408
 type(
   bool
 )
-"src/render.ml" 52 1368 1394 "src/render.ml" 52 1368 1413
+"src/render.ml" 53 1393 1419 "src/render.ml" 53 1393 1438
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/render.ml" 52 1368 1414 "src/render.ml" 52 1368 1416
+"src/render.ml" 53 1393 1439 "src/render.ml" 53 1393 1441
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 52 1368 1417 "src/render.ml" 52 1368 1419
+"src/render.ml" 53 1393 1442 "src/render.ml" 53 1393 1444
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 46 1158 1163 "src/render.ml" 46 1158 1165
+  int_ref yo "src/render.ml" 47 1179 1184 "src/render.ml" 47 1179 1186
 )
-"src/render.ml" 52 1368 1420 "src/render.ml" 52 1368 1421
+"src/render.ml" 53 1393 1445 "src/render.ml" 53 1393 1446
 type(
   int
 )
-"src/render.ml" 52 1368 1423 "src/render.ml" 52 1368 1425
+"src/render.ml" 53 1393 1448 "src/render.ml" 53 1393 1450
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 48 1204 1209 "src/render.ml" 48 1204 1211
+  int_ref yd "src/render.ml" 49 1225 1230 "src/render.ml" 49 1225 1232
 )
-"src/render.ml" 52 1368 1426 "src/render.ml" 52 1368 1427
+"src/render.ml" 53 1393 1451 "src/render.ml" 53 1393 1452
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 52 1368 1428 "src/render.ml" 52 1368 1436
+"src/render.ml" 53 1393 1453 "src/render.ml" 53 1393 1465
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 52 1368 1437 "src/render.ml" 52 1368 1449
+"src/render.ml" 53 1393 1466 "src/render.ml" 53 1393 1478
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 52 1368 1450 "src/render.ml" 52 1368 1451
+"src/render.ml" 53 1393 1479 "src/render.ml" 53 1393 1480
 type(
   int
 )
-"src/render.ml" 52 1368 1451 "src/render.ml" 52 1368 1452
+"src/render.ml" 53 1393 1480 "src/render.ml" 53 1393 1481
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 52 1368 1452 "src/render.ml" 52 1368 1454
+"src/render.ml" 53 1393 1481 "src/render.ml" 53 1393 1483
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 52 1368 1449 "src/render.ml" 52 1368 1455
+"src/render.ml" 53 1393 1478 "src/render.ml" 53 1393 1484
 type(
   int
 )
-"src/render.ml" 52 1368 1437 "src/render.ml" 52 1368 1455
+"src/render.ml" 53 1393 1466 "src/render.ml" 53 1393 1484
 type(
   float
 )
-"src/render.ml" 52 1368 1455 "src/render.ml" 52 1368 1457
+"src/render.ml" 53 1393 1484 "src/render.ml" 53 1393 1486
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 52 1368 1458 "src/render.ml" 52 1368 1461
+"src/render.ml" 53 1393 1487 "src/render.ml" 53 1393 1490
 type(
   int -> int -> int -> int -> float
 )
 ident(
-  int_ref ata "src/render.ml" 40 1044 1048 "src/render.ml" 40 1044 1051
+  int_ref ata "src/render.ml" 41 1065 1069 "src/render.ml" 41 1065 1072
 )
-"src/render.ml" 52 1368 1462 "src/render.ml" 52 1368 1464
+"src/render.ml" 53 1393 1491 "src/render.ml" 53 1393 1493
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 45 1135 1140 "src/render.ml" 45 1135 1142
+  int_ref xo "src/render.ml" 46 1156 1161 "src/render.ml" 46 1156 1163
 )
-"src/render.ml" 52 1368 1465 "src/render.ml" 52 1368 1467
+"src/render.ml" 53 1393 1494 "src/render.ml" 53 1393 1496
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 46 1158 1163 "src/render.ml" 46 1158 1165
+  int_ref yo "src/render.ml" 47 1179 1184 "src/render.ml" 47 1179 1186
 )
-"src/render.ml" 52 1368 1468 "src/render.ml" 52 1368 1470
+"src/render.ml" 53 1393 1497 "src/render.ml" 53 1393 1499
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 47 1181 1186 "src/render.ml" 47 1181 1188
+  int_ref xd "src/render.ml" 48 1202 1207 "src/render.ml" 48 1202 1209
 )
-"src/render.ml" 52 1368 1471 "src/render.ml" 52 1368 1473
+"src/render.ml" 53 1393 1500 "src/render.ml" 53 1393 1502
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 48 1204 1209 "src/render.ml" 48 1204 1211
+  int_ref yd "src/render.ml" 49 1225 1230 "src/render.ml" 49 1225 1232
 )
-"src/render.ml" 52 1368 1458 "src/render.ml" 52 1368 1473
+"src/render.ml" 53 1393 1487 "src/render.ml" 53 1393 1502
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 52 1368 1436 "src/render.ml" 52 1368 1474
+"src/render.ml" 53 1393 1465 "src/render.ml" 53 1393 1503
 type(
   float
 )
-"src/render.ml" 52 1368 1428 "src/render.ml" 52 1368 1474
+"src/render.ml" 53 1393 1453 "src/render.ml" 53 1393 1503
 type(
   int
 )
-"src/render.ml" 52 1368 1422 "src/render.ml" 52 1368 1475
+"src/render.ml" 53 1393 1447 "src/render.ml" 53 1393 1504
 type(
   int
 )
-"src/render.ml" 52 1368 1393 "src/render.ml" 52 1368 1476
+"src/render.ml" 53 1393 1418 "src/render.ml" 53 1393 1505
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/render.ml" 52 1368 1389 "src/render.ml" 52 1368 1476
+"src/render.ml" 53 1393 1414 "src/render.ml" 53 1393 1505
 type(
   Segment.t option
 )
-"src/render.ml" 53 1477 1487 "src/render.ml" 53 1477 1490
+"src/render.ml" 54 1506 1516 "src/render.ml" 54 1506 1519
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 43 1116 1129 "src/render.ml" 43 1116 1130
+  int_ref s "src/render.ml" 44 1137 1150 "src/render.ml" 44 1137 1151
 )
-"src/render.ml" 53 1477 1483 "src/render.ml" 53 1477 1490
+"src/render.ml" 54 1506 1512 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 52 1368 1374 "src/render.ml" 53 1477 1490
+"src/render.ml" 53 1393 1399 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 51 1259 1265 "src/render.ml" 53 1477 1490
+"src/render.ml" 52 1280 1286 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 50 1228 1229 "src/render.ml" 53 1477 1490
+"src/render.ml" 51 1249 1250 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 48 1204 1205 "src/render.ml" 53 1477 1490
+"src/render.ml" 49 1225 1226 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 47 1181 1182 "src/render.ml" 53 1477 1490
+"src/render.ml" 48 1202 1203 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 46 1158 1159 "src/render.ml" 53 1477 1490
+"src/render.ml" 47 1179 1180 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 45 1135 1136 "src/render.ml" 53 1477 1490
+"src/render.ml" 46 1156 1157 "src/render.ml" 54 1506 1519
 type(
   Segment.t option
 )
-"src/render.ml" 55 1492 1496 "src/render.ml" 55 1492 1505
+"src/render.ml" 56 1521 1525 "src/render.ml" 56 1521 1534
 type(
   int -> int -> int -> int -> unit
 )
 ident(
-  def draw_line "src/render.ml" 60 1646 1646 "src/render.ml" 1 0 -1
+  def draw_line "src/render.ml" 61 1675 1675 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 55 1492 1506 "src/render.ml" 55 1492 1508
+"src/render.ml" 56 1521 1535 "src/render.ml" 56 1521 1537
 type(
   int
 )
 ident(
-  def xo "src/render.ml" 55 1492 1509 "src/render.ml" 58 1557 1644
+  def xo "src/render.ml" 56 1521 1538 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 55 1492 1509 "src/render.ml" 55 1492 1511
+"src/render.ml" 56 1521 1538 "src/render.ml" 56 1521 1540
 type(
   int
 )
 ident(
-  def yo "src/render.ml" 55 1492 1512 "src/render.ml" 58 1557 1644
+  def yo "src/render.ml" 56 1521 1541 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 55 1492 1512 "src/render.ml" 55 1492 1514
+"src/render.ml" 56 1521 1541 "src/render.ml" 56 1521 1543
 type(
   int
 )
 ident(
-  def xd "src/render.ml" 55 1492 1515 "src/render.ml" 58 1557 1644
+  def xd "src/render.ml" 56 1521 1544 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 55 1492 1515 "src/render.ml" 55 1492 1517
+"src/render.ml" 56 1521 1544 "src/render.ml" 56 1521 1546
 type(
   int
 )
 ident(
-  def yd "src/render.ml" 56 1520 1521 "src/render.ml" 58 1557 1644
+  def yd "src/render.ml" 57 1549 1550 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 56 1520 1525 "src/render.ml" 56 1520 1530
+"src/render.ml" 57 1549 1554 "src/render.ml" 57 1549 1559
 type(
   int
 )
 ident(
-  def pixel "src/render.ml" 57 1539 1540 "src/render.ml" 58 1557 1644
+  def pixel "src/render.ml" 58 1568 1569 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 56 1520 1533 "src/render.ml" 56 1520 1535
+"src/render.ml" 57 1549 1562 "src/render.ml" 57 1549 1564
 type(
   int
 )
-"src/render.ml" 57 1539 1544 "src/render.ml" 57 1539 1549
+"src/render.ml" 58 1568 1573 "src/render.ml" 58 1568 1578
 type(
   int
 )
 ident(
-  def decal "src/render.ml" 58 1557 1558 "src/render.ml" 58 1557 1644
+  def decal "src/render.ml" 59 1586 1587 "src/render.ml" 59 1586 1673
 )
-"src/render.ml" 57 1539 1552 "src/render.ml" 57 1539 1553
+"src/render.ml" 58 1568 1581 "src/render.ml" 58 1568 1582
 type(
   int
 )
-"src/render.ml" 58 1557 1558 "src/render.ml" 58 1557 1580
+"src/render.ml" 59 1586 1587 "src/render.ml" 59 1586 1609
 type(
   (int * int * int * int) array -> unit
 )
 ident(
   ext_ref Graphics.draw_segments
 )
-"src/render.ml" 58 1557 1583 "src/render.ml" 58 1557 1585
+"src/render.ml" 59 1586 1612 "src/render.ml" 59 1586 1614
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 55 1492 1506 "src/render.ml" 55 1492 1508
+  int_ref xo "src/render.ml" 56 1521 1535 "src/render.ml" 56 1521 1537
 )
-"src/render.ml" 58 1557 1585 "src/render.ml" 58 1557 1586
+"src/render.ml" 59 1586 1614 "src/render.ml" 59 1586 1615
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/render.ml" 58 1557 1586 "src/render.ml" 58 1557 1591
+"src/render.ml" 59 1586 1615 "src/render.ml" 59 1586 1620
 type(
   int
 )
 ident(
-  int_ref pixel "src/render.ml" 56 1520 1525 "src/render.ml" 56 1520 1530
+  int_ref pixel "src/render.ml" 57 1549 1554 "src/render.ml" 57 1549 1559
 )
-"src/render.ml" 58 1557 1583 "src/render.ml" 58 1557 1591
+"src/render.ml" 59 1586 1612 "src/render.ml" 59 1586 1620
 type(
   int
 )
-"src/render.ml" 58 1557 1591 "src/render.ml" 58 1557 1592
+"src/render.ml" 59 1586 1620 "src/render.ml" 59 1586 1621
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 58 1557 1592 "src/render.ml" 58 1557 1597
+"src/render.ml" 59 1586 1621 "src/render.ml" 59 1586 1626
 type(
   int
 )
 ident(
-  int_ref decal "src/render.ml" 57 1539 1544 "src/render.ml" 57 1539 1549
+  int_ref decal "src/render.ml" 58 1568 1573 "src/render.ml" 58 1568 1578
 )
-"src/render.ml" 58 1557 1583 "src/render.ml" 58 1557 1597
+"src/render.ml" 59 1586 1612 "src/render.ml" 59 1586 1626
 type(
   int
 )
-"src/render.ml" 58 1557 1598 "src/render.ml" 58 1557 1600
+"src/render.ml" 59 1586 1627 "src/render.ml" 59 1586 1629
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 55 1492 1509 "src/render.ml" 55 1492 1511
+  int_ref yo "src/render.ml" 56 1521 1538 "src/render.ml" 56 1521 1540
 )
-"src/render.ml" 58 1557 1600 "src/render.ml" 58 1557 1601
+"src/render.ml" 59 1586 1629 "src/render.ml" 59 1586 1630
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/render.ml" 58 1557 1601 "src/render.ml" 58 1557 1606
+"src/render.ml" 59 1586 1630 "src/render.ml" 59 1586 1635
 type(
   int
 )
 ident(
-  int_ref pixel "src/render.ml" 56 1520 1525 "src/render.ml" 56 1520 1530
+  int_ref pixel "src/render.ml" 57 1549 1554 "src/render.ml" 57 1549 1559
 )
-"src/render.ml" 58 1557 1598 "src/render.ml" 58 1557 1606
+"src/render.ml" 59 1586 1627 "src/render.ml" 59 1586 1635
 type(
   int
 )
-"src/render.ml" 58 1557 1606 "src/render.ml" 58 1557 1607
+"src/render.ml" 59 1586 1635 "src/render.ml" 59 1586 1636
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 58 1557 1607 "src/render.ml" 58 1557 1612
+"src/render.ml" 59 1586 1636 "src/render.ml" 59 1586 1641
 type(
   int
 )
 ident(
-  int_ref decal "src/render.ml" 57 1539 1544 "src/render.ml" 57 1539 1549
+  int_ref decal "src/render.ml" 58 1568 1573 "src/render.ml" 58 1568 1578
 )
-"src/render.ml" 58 1557 1598 "src/render.ml" 58 1557 1612
+"src/render.ml" 59 1586 1627 "src/render.ml" 59 1586 1641
 type(
   int
 )
-"src/render.ml" 58 1557 1613 "src/render.ml" 58 1557 1615
+"src/render.ml" 59 1586 1642 "src/render.ml" 59 1586 1644
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 55 1492 1512 "src/render.ml" 55 1492 1514
+  int_ref xd "src/render.ml" 56 1521 1541 "src/render.ml" 56 1521 1543
 )
-"src/render.ml" 58 1557 1615 "src/render.ml" 58 1557 1616
+"src/render.ml" 59 1586 1644 "src/render.ml" 59 1586 1645
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/render.ml" 58 1557 1616 "src/render.ml" 58 1557 1621
+"src/render.ml" 59 1586 1645 "src/render.ml" 59 1586 1650
 type(
   int
 )
 ident(
-  int_ref pixel "src/render.ml" 56 1520 1525 "src/render.ml" 56 1520 1530
+  int_ref pixel "src/render.ml" 57 1549 1554 "src/render.ml" 57 1549 1559
 )
-"src/render.ml" 58 1557 1613 "src/render.ml" 58 1557 1621
+"src/render.ml" 59 1586 1642 "src/render.ml" 59 1586 1650
 type(
   int
 )
-"src/render.ml" 58 1557 1621 "src/render.ml" 58 1557 1622
+"src/render.ml" 59 1586 1650 "src/render.ml" 59 1586 1651
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 58 1557 1622 "src/render.ml" 58 1557 1627
+"src/render.ml" 59 1586 1651 "src/render.ml" 59 1586 1656
 type(
   int
 )
 ident(
-  int_ref decal "src/render.ml" 57 1539 1544 "src/render.ml" 57 1539 1549
+  int_ref decal "src/render.ml" 58 1568 1573 "src/render.ml" 58 1568 1578
 )
-"src/render.ml" 58 1557 1613 "src/render.ml" 58 1557 1627
+"src/render.ml" 59 1586 1642 "src/render.ml" 59 1586 1656
 type(
   int
 )
-"src/render.ml" 58 1557 1628 "src/render.ml" 58 1557 1630
+"src/render.ml" 59 1586 1657 "src/render.ml" 59 1586 1659
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 55 1492 1515 "src/render.ml" 55 1492 1517
+  int_ref yd "src/render.ml" 56 1521 1544 "src/render.ml" 56 1521 1546
 )
-"src/render.ml" 58 1557 1630 "src/render.ml" 58 1557 1631
+"src/render.ml" 59 1586 1659 "src/render.ml" 59 1586 1660
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/render.ml" 58 1557 1631 "src/render.ml" 58 1557 1636
+"src/render.ml" 59 1586 1660 "src/render.ml" 59 1586 1665
 type(
   int
 )
 ident(
-  int_ref pixel "src/render.ml" 56 1520 1525 "src/render.ml" 56 1520 1530
+  int_ref pixel "src/render.ml" 57 1549 1554 "src/render.ml" 57 1549 1559
 )
-"src/render.ml" 58 1557 1628 "src/render.ml" 58 1557 1636
+"src/render.ml" 59 1586 1657 "src/render.ml" 59 1586 1665
 type(
   int
 )
-"src/render.ml" 58 1557 1636 "src/render.ml" 58 1557 1637
+"src/render.ml" 59 1586 1665 "src/render.ml" 59 1586 1666
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 58 1557 1637 "src/render.ml" 58 1557 1642
+"src/render.ml" 59 1586 1666 "src/render.ml" 59 1586 1671
 type(
   int
 )
 ident(
-  int_ref decal "src/render.ml" 57 1539 1544 "src/render.ml" 57 1539 1549
+  int_ref decal "src/render.ml" 58 1568 1573 "src/render.ml" 58 1568 1578
 )
-"src/render.ml" 58 1557 1628 "src/render.ml" 58 1557 1642
+"src/render.ml" 59 1586 1657 "src/render.ml" 59 1586 1671
 type(
   int
 )
-"src/render.ml" 58 1557 1583 "src/render.ml" 58 1557 1642
+"src/render.ml" 59 1586 1612 "src/render.ml" 59 1586 1671
 type(
   int * int * int * int
 )
-"src/render.ml" 58 1557 1581 "src/render.ml" 58 1557 1644
+"src/render.ml" 59 1586 1610 "src/render.ml" 59 1586 1673
 type(
   (int * int * int * int) array
 )
-"src/render.ml" 58 1557 1558 "src/render.ml" 58 1557 1644
+"src/render.ml" 59 1586 1587 "src/render.ml" 59 1586 1673
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 57 1539 1540 "src/render.ml" 58 1557 1644
+"src/render.ml" 58 1568 1569 "src/render.ml" 59 1586 1673
 type(
   unit
 )
-"src/render.ml" 56 1520 1521 "src/render.ml" 58 1557 1644
+"src/render.ml" 57 1549 1550 "src/render.ml" 59 1586 1673
 type(
   unit
 )
-"src/render.ml" 60 1646 1650 "src/render.ml" 60 1646 1662
+"src/render.ml" 61 1675 1679 "src/render.ml" 61 1675 1691
 type(
   'a -> 'a -> 'a -> 'a
 )
 ident(
-  def correction_c "src/render.ml" 66 1755 1755 "src/render.ml" 1 0 -1
+  def correction_c "src/render.ml" 67 1784 1784 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 60 1646 1663 "src/render.ml" 60 1646 1667
+"src/render.ml" 61 1675 1692 "src/render.ml" 61 1675 1696
 type(
   'a
 )
 ident(
-  def cmax "src/render.ml" 60 1646 1668 "src/render.ml" 63 1741 1752
+  def cmax "src/render.ml" 61 1675 1697 "src/render.ml" 64 1770 1781
 )
-"src/render.ml" 60 1646 1668 "src/render.ml" 60 1646 1672
+"src/render.ml" 61 1675 1697 "src/render.ml" 61 1675 1701
 type(
   'a
 )
 ident(
-  def cmin "src/render.ml" 60 1646 1673 "src/render.ml" 63 1741 1752
+  def cmin "src/render.ml" 61 1675 1702 "src/render.ml" 64 1770 1781
 )
-"src/render.ml" 60 1646 1673 "src/render.ml" 60 1646 1678
+"src/render.ml" 61 1675 1702 "src/render.ml" 61 1675 1707
 type(
   'a
 )
 ident(
-  def ctest "src/render.ml" 61 1682 1683 "src/render.ml" 63 1741 1752
+  def ctest "src/render.ml" 62 1711 1712 "src/render.ml" 64 1770 1781
 )
-"src/render.ml" 61 1682 1686 "src/render.ml" 61 1682 1691
+"src/render.ml" 62 1711 1715 "src/render.ml" 62 1711 1720
 type(
   'a
 )
 ident(
-  int_ref ctest "src/render.ml" 60 1646 1673 "src/render.ml" 60 1646 1678
+  int_ref ctest "src/render.ml" 61 1675 1702 "src/render.ml" 61 1675 1707
 )
-"src/render.ml" 61 1682 1692 "src/render.ml" 61 1682 1693
+"src/render.ml" 62 1711 1721 "src/render.ml" 62 1711 1722
 type(
   'a -> 'a -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 61 1682 1694 "src/render.ml" 61 1682 1698
+"src/render.ml" 62 1711 1723 "src/render.ml" 62 1711 1727
 type(
   'a
 )
 ident(
-  int_ref cmin "src/render.ml" 60 1646 1668 "src/render.ml" 60 1646 1672
+  int_ref cmin "src/render.ml" 61 1675 1697 "src/render.ml" 61 1675 1701
 )
-"src/render.ml" 61 1682 1686 "src/render.ml" 61 1682 1698
+"src/render.ml" 62 1711 1715 "src/render.ml" 62 1711 1727
 type(
   bool
 )
-"src/render.ml" 61 1682 1704 "src/render.ml" 61 1682 1708
+"src/render.ml" 62 1711 1733 "src/render.ml" 62 1711 1737
 type(
   'a
 )
 ident(
-  int_ref cmin "src/render.ml" 60 1646 1668 "src/render.ml" 60 1646 1672
+  int_ref cmin "src/render.ml" 61 1675 1697 "src/render.ml" 61 1675 1701
 )
-"src/render.ml" 62 1709 1718 "src/render.ml" 62 1709 1723
+"src/render.ml" 63 1738 1747 "src/render.ml" 63 1738 1752
 type(
   'a
 )
 ident(
-  int_ref ctest "src/render.ml" 60 1646 1673 "src/render.ml" 60 1646 1678
+  int_ref ctest "src/render.ml" 61 1675 1702 "src/render.ml" 61 1675 1707
 )
-"src/render.ml" 62 1709 1724 "src/render.ml" 62 1709 1725
+"src/render.ml" 63 1738 1753 "src/render.ml" 63 1738 1754
 type(
   'a -> 'a -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"src/render.ml" 62 1709 1726 "src/render.ml" 62 1709 1730
+"src/render.ml" 63 1738 1755 "src/render.ml" 63 1738 1759
 type(
   'a
 )
 ident(
-  int_ref cmax "src/render.ml" 60 1646 1663 "src/render.ml" 60 1646 1667
+  int_ref cmax "src/render.ml" 61 1675 1692 "src/render.ml" 61 1675 1696
 )
-"src/render.ml" 62 1709 1718 "src/render.ml" 62 1709 1730
+"src/render.ml" 63 1738 1747 "src/render.ml" 63 1738 1759
 type(
   bool
 )
-"src/render.ml" 62 1709 1736 "src/render.ml" 62 1709 1740
+"src/render.ml" 63 1738 1765 "src/render.ml" 63 1738 1769
 type(
   'a
 )
 ident(
-  int_ref cmax "src/render.ml" 60 1646 1663 "src/render.ml" 60 1646 1667
+  int_ref cmax "src/render.ml" 61 1675 1692 "src/render.ml" 61 1675 1696
 )
-"src/render.ml" 63 1741 1747 "src/render.ml" 63 1741 1752
+"src/render.ml" 64 1770 1776 "src/render.ml" 64 1770 1781
 type(
   'a
 )
 ident(
-  int_ref ctest "src/render.ml" 60 1646 1673 "src/render.ml" 60 1646 1678
+  int_ref ctest "src/render.ml" 61 1675 1702 "src/render.ml" 61 1675 1707
 )
-"src/render.ml" 62 1709 1715 "src/render.ml" 63 1741 1752
+"src/render.ml" 63 1738 1744 "src/render.ml" 64 1770 1781
 type(
   'a
 )
-"src/render.ml" 61 1682 1683 "src/render.ml" 63 1741 1752
+"src/render.ml" 62 1711 1712 "src/render.ml" 64 1770 1781
 type(
   'a
 )
-"src/render.ml" 66 1755 1759 "src/render.ml" 66 1755 1767
+"src/render.ml" 67 1784 1788 "src/render.ml" 67 1784 1796
 type(
   int -> int -> float
 )
 ident(
-  def distance "src/render.ml" 76 1995 1995 "src/render.ml" 1 0 -1
+  def distance "src/render.ml" 77 2024 2024 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 66 1755 1768 "src/render.ml" 66 1755 1769
+"src/render.ml" 67 1784 1797 "src/render.ml" 67 1784 1798
 type(
   int
 )
 ident(
-  def x "src/render.ml" 66 1755 1770 "src/render.ml" 70 1831 1857
+  def x "src/render.ml" 67 1784 1799 "src/render.ml" 71 1860 1886
 )
-"src/render.ml" 66 1755 1770 "src/render.ml" 66 1755 1771
+"src/render.ml" 67 1784 1799 "src/render.ml" 67 1784 1800
 type(
   int
 )
 ident(
-  def y "src/render.ml" 67 1774 1775 "src/render.ml" 70 1831 1857
+  def y "src/render.ml" 68 1803 1804 "src/render.ml" 71 1860 1886
 )
-"src/render.ml" 67 1774 1779 "src/render.ml" 67 1774 1781
+"src/render.ml" 68 1803 1808 "src/render.ml" 68 1803 1810
 type(
   float
 )
 ident(
-  def xf "src/render.ml" 68 1802 1803 "src/render.ml" 70 1831 1857
+  def xf "src/render.ml" 69 1831 1832 "src/render.ml" 71 1860 1886
 )
-"src/render.ml" 67 1774 1784 "src/render.ml" 67 1774 1796
+"src/render.ml" 68 1803 1813 "src/render.ml" 68 1803 1825
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 67 1774 1797 "src/render.ml" 67 1774 1798
+"src/render.ml" 68 1803 1826 "src/render.ml" 68 1803 1827
 type(
   int
 )
 ident(
-  int_ref x "src/render.ml" 66 1755 1768 "src/render.ml" 66 1755 1769
+  int_ref x "src/render.ml" 67 1784 1797 "src/render.ml" 67 1784 1798
 )
-"src/render.ml" 67 1774 1784 "src/render.ml" 67 1774 1798
+"src/render.ml" 68 1803 1813 "src/render.ml" 68 1803 1827
 type(
   float
 )
-"src/render.ml" 68 1802 1807 "src/render.ml" 68 1802 1809
+"src/render.ml" 69 1831 1836 "src/render.ml" 69 1831 1838
 type(
   float
 )
 ident(
-  def yf "src/render.ml" 70 1831 1832 "src/render.ml" 70 1831 1857
+  def yf "src/render.ml" 71 1860 1861 "src/render.ml" 71 1860 1886
 )
-"src/render.ml" 68 1802 1812 "src/render.ml" 68 1802 1824
+"src/render.ml" 69 1831 1841 "src/render.ml" 69 1831 1853
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 68 1802 1825 "src/render.ml" 68 1802 1826
+"src/render.ml" 69 1831 1854 "src/render.ml" 69 1831 1855
 type(
   int
 )
 ident(
-  int_ref y "src/render.ml" 66 1755 1770 "src/render.ml" 66 1755 1771
+  int_ref y "src/render.ml" 67 1784 1799 "src/render.ml" 67 1784 1800
 )
-"src/render.ml" 68 1802 1812 "src/render.ml" 68 1802 1826
+"src/render.ml" 69 1831 1841 "src/render.ml" 69 1831 1855
 type(
   float
 )
-"src/render.ml" 70 1831 1832 "src/render.ml" 70 1831 1836
+"src/render.ml" 71 1860 1861 "src/render.ml" 71 1860 1865
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.sqrt
 )
-"src/render.ml" 70 1831 1839 "src/render.ml" 70 1831 1841
+"src/render.ml" 71 1860 1868 "src/render.ml" 71 1860 1870
 type(
   float
 )
 ident(
-  int_ref xf "src/render.ml" 67 1774 1779 "src/render.ml" 67 1774 1781
+  int_ref xf "src/render.ml" 68 1803 1808 "src/render.ml" 68 1803 1810
 )
-"src/render.ml" 70 1831 1841 "src/render.ml" 70 1831 1843
+"src/render.ml" 71 1860 1870 "src/render.ml" 71 1860 1872
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( ** )
 )
-"src/render.ml" 70 1831 1843 "src/render.ml" 70 1831 1845
+"src/render.ml" 71 1860 1872 "src/render.ml" 71 1860 1874
 type(
   float
 )
-"src/render.ml" 70 1831 1838 "src/render.ml" 70 1831 1846
+"src/render.ml" 71 1860 1867 "src/render.ml" 71 1860 1875
 type(
   float
 )
-"src/render.ml" 70 1831 1846 "src/render.ml" 70 1831 1848
+"src/render.ml" 71 1860 1875 "src/render.ml" 71 1860 1877
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 70 1831 1849 "src/render.ml" 70 1831 1851
+"src/render.ml" 71 1860 1878 "src/render.ml" 71 1860 1880
 type(
   float
 )
 ident(
-  int_ref yf "src/render.ml" 68 1802 1807 "src/render.ml" 68 1802 1809
+  int_ref yf "src/render.ml" 69 1831 1836 "src/render.ml" 69 1831 1838
 )
-"src/render.ml" 70 1831 1851 "src/render.ml" 70 1831 1853
+"src/render.ml" 71 1860 1880 "src/render.ml" 71 1860 1882
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( ** )
 )
-"src/render.ml" 70 1831 1853 "src/render.ml" 70 1831 1855
+"src/render.ml" 71 1860 1882 "src/render.ml" 71 1860 1884
 type(
   float
 )
-"src/render.ml" 70 1831 1848 "src/render.ml" 70 1831 1856
+"src/render.ml" 71 1860 1877 "src/render.ml" 71 1860 1885
 type(
   float
 )
-"src/render.ml" 70 1831 1837 "src/render.ml" 70 1831 1857
+"src/render.ml" 71 1860 1866 "src/render.ml" 71 1860 1886
 type(
   float
 )
-"src/render.ml" 70 1831 1832 "src/render.ml" 70 1831 1857
+"src/render.ml" 71 1860 1861 "src/render.ml" 71 1860 1886
 type(
   float
 )
-"src/render.ml" 68 1802 1803 "src/render.ml" 70 1831 1857
+"src/render.ml" 69 1831 1832 "src/render.ml" 71 1860 1886
 type(
   float
 )
-"src/render.ml" 67 1774 1775 "src/render.ml" 70 1831 1857
+"src/render.ml" 68 1803 1804 "src/render.ml" 71 1860 1886
 type(
   float
 )
-"src/render.ml" 76 1995 1999 "src/render.ml" 76 1995 2009
+"src/render.ml" 77 2024 2028 "src/render.ml" 77 2024 2038
 type(
   int -> int -> int
 )
 ident(
-  def calcul_p_x "src/render.ml" 82 2247 2247 "src/render.ml" 1 0 -1
+  def calcul_p_x "src/render.ml" 83 2280 2280 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 76 1995 2010 "src/render.ml" 76 1995 2014
+"src/render.ml" 77 2024 2039 "src/render.ml" 77 2024 2043
 type(
   int
 )
 ident(
-  def cmax "src/render.ml" 76 1995 2015 "src/render.ml" 79 2140 2244
+  def cmax "src/render.ml" 77 2024 2044 "src/render.ml" 80 2169 2277
 )
-"src/render.ml" 76 1995 2015 "src/render.ml" 76 1995 2016
+"src/render.ml" 77 2024 2044 "src/render.ml" 77 2024 2045
 type(
   int
 )
 ident(
-  def c "src/render.ml" 77 2019 2020 "src/render.ml" 79 2140 2244
+  def c "src/render.ml" 78 2048 2049 "src/render.ml" 80 2169 2277
 )
-"src/render.ml" 77 2019 2024 "src/render.ml" 77 2019 2025
+"src/render.ml" 78 2048 2053 "src/render.ml" 78 2048 2054
 type(
   float
 )
 ident(
-  def a "src/render.ml" 78 2105 2106 "src/render.ml" 79 2140 2244
+  def a "src/render.ml" 79 2134 2135 "src/render.ml" 80 2169 2277
 )
-"src/render.ml" 77 2019 2028 "src/render.ml" 77 2019 2040
+"src/render.ml" 78 2048 2057 "src/render.ml" 78 2048 2069
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 77 2019 2040 "src/render.ml" 77 2019 2048
+"src/render.ml" 78 2048 2069 "src/render.ml" 78 2048 2077
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 77 2019 2028 "src/render.ml" 77 2019 2048
+"src/render.ml" 78 2048 2057 "src/render.ml" 78 2048 2077
 type(
   float
 )
-"src/render.ml" 77 2019 2048 "src/render.ml" 77 2019 2050
+"src/render.ml" 78 2048 2077 "src/render.ml" 78 2048 2079
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 77 2019 2052 "src/render.ml" 77 2019 2056
+"src/render.ml" 78 2048 2081 "src/render.ml" 78 2048 2085
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dtan
 )
-"src/render.ml" 77 2019 2058 "src/render.ml" 77 2019 2070
+"src/render.ml" 78 2048 2087 "src/render.ml" 78 2048 2099
 type(
   int
 )
 ident(
-  int_ref angle_vision "src/render.ml" 9 80 84 "src/render.ml" 9 80 96
+  int_ref angle_vision "src/render.ml" 10 81 85 "src/render.ml" 10 81 97
 )
-"src/render.ml" 77 2019 2070 "src/render.ml" 77 2019 2071
+"src/render.ml" 78 2048 2099 "src/render.ml" 78 2048 2100
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 77 2019 2071 "src/render.ml" 77 2019 2072
+"src/render.ml" 78 2048 2100 "src/render.ml" 78 2048 2101
 type(
   int
 )
-"src/render.ml" 77 2019 2057 "src/render.ml" 77 2019 2073
+"src/render.ml" 78 2048 2086 "src/render.ml" 78 2048 2102
 type(
   int
 )
-"src/render.ml" 77 2019 2052 "src/render.ml" 77 2019 2073
+"src/render.ml" 78 2048 2081 "src/render.ml" 78 2048 2102
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 77 2019 2074 "src/render.ml" 77 2019 2076
+"src/render.ml" 78 2048 2103 "src/render.ml" 78 2048 2105
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 77 2019 2077 "src/render.ml" 77 2019 2089
+"src/render.ml" 78 2048 2106 "src/render.ml" 78 2048 2118
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 77 2019 2089 "src/render.ml" 77 2019 2099
+"src/render.ml" 78 2048 2118 "src/render.ml" 78 2048 2128
 type(
   int
 )
 ident(
-  int_ref d_focale "src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+  int_ref d_focale "src/render.ml" 15 145 149 "src/render.ml" 15 145 157
 )
-"src/render.ml" 77 2019 2077 "src/render.ml" 77 2019 2099
+"src/render.ml" 78 2048 2106 "src/render.ml" 78 2048 2128
 type(
   float
 )
-"src/render.ml" 77 2019 2051 "src/render.ml" 77 2019 2100
+"src/render.ml" 78 2048 2080 "src/render.ml" 78 2048 2129
 type(
   float
 )
-"src/render.ml" 77 2019 2028 "src/render.ml" 77 2019 2100
+"src/render.ml" 78 2048 2057 "src/render.ml" 78 2048 2129
 type(
   float
 )
-"src/render.ml" 78 2105 2110 "src/render.ml" 78 2105 2111
+"src/render.ml" 79 2134 2139 "src/render.ml" 79 2134 2140
 type(
   float
 )
 ident(
-  def b "src/render.ml" 79 2140 2141 "src/render.ml" 79 2140 2244
+  def b "src/render.ml" 80 2169 2170 "src/render.ml" 80 2169 2277
 )
-"src/render.ml" 78 2105 2114 "src/render.ml" 78 2105 2126
+"src/render.ml" 79 2134 2143 "src/render.ml" 79 2134 2155
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 78 2105 2127 "src/render.ml" 78 2105 2133
+"src/render.ml" 79 2134 2156 "src/render.ml" 79 2134 2162
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 78 2105 2133 "src/render.ml" 78 2105 2134
+"src/render.ml" 79 2134 2162 "src/render.ml" 79 2134 2163
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 78 2105 2134 "src/render.ml" 78 2105 2135
+"src/render.ml" 79 2134 2163 "src/render.ml" 79 2134 2164
 type(
   int
 )
-"src/render.ml" 78 2105 2126 "src/render.ml" 78 2105 2136
+"src/render.ml" 79 2134 2155 "src/render.ml" 79 2134 2165
 type(
   int
 )
-"src/render.ml" 78 2105 2114 "src/render.ml" 78 2105 2136
+"src/render.ml" 79 2134 2143 "src/render.ml" 79 2134 2165
 type(
   float
 )
-"src/render.ml" 79 2140 2141 "src/render.ml" 79 2140 2149
+"src/render.ml" 80 2169 2170 "src/render.ml" 80 2169 2182
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 79 2140 2152 "src/render.ml" 79 2140 2164
+"src/render.ml" 80 2169 2185 "src/render.ml" 80 2169 2197
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 79 2140 2166 "src/render.ml" 79 2140 2172
+"src/render.ml" 80 2169 2199 "src/render.ml" 80 2169 2205
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 79 2140 2172 "src/render.ml" 79 2140 2173
+"src/render.ml" 80 2169 2205 "src/render.ml" 80 2169 2206
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 79 2140 2173 "src/render.ml" 79 2140 2174
+"src/render.ml" 80 2169 2206 "src/render.ml" 80 2169 2207
 type(
   int
 )
-"src/render.ml" 79 2140 2165 "src/render.ml" 79 2140 2175
+"src/render.ml" 80 2169 2198 "src/render.ml" 80 2169 2208
 type(
   int
 )
-"src/render.ml" 79 2140 2152 "src/render.ml" 79 2140 2175
+"src/render.ml" 80 2169 2185 "src/render.ml" 80 2169 2208
 type(
   float
 )
-"src/render.ml" 79 2140 2175 "src/render.ml" 79 2140 2177
+"src/render.ml" 80 2169 2208 "src/render.ml" 80 2169 2210
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 79 2140 2177 "src/render.ml" 79 2140 2189
+"src/render.ml" 80 2169 2210 "src/render.ml" 80 2169 2222
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 79 2140 2190 "src/render.ml" 79 2140 2191
+"src/render.ml" 80 2169 2223 "src/render.ml" 80 2169 2224
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 79 2140 2191 "src/render.ml" 79 2140 2195
+"src/render.ml" 80 2169 2224 "src/render.ml" 80 2169 2228
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 76 1995 2010 "src/render.ml" 76 1995 2014
+  int_ref cmax "src/render.ml" 77 2024 2039 "src/render.ml" 77 2024 2043
 )
-"src/render.ml" 79 2140 2189 "src/render.ml" 79 2140 2196
+"src/render.ml" 80 2169 2222 "src/render.ml" 80 2169 2229
 type(
   int
 )
-"src/render.ml" 79 2140 2177 "src/render.ml" 79 2140 2196
+"src/render.ml" 80 2169 2210 "src/render.ml" 80 2169 2229
 type(
   float
 )
-"src/render.ml" 79 2140 2152 "src/render.ml" 79 2140 2196
+"src/render.ml" 80 2169 2185 "src/render.ml" 80 2169 2229
 type(
   float
 )
-"src/render.ml" 79 2140 2197 "src/render.ml" 79 2140 2199
+"src/render.ml" 80 2169 2230 "src/render.ml" 80 2169 2232
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 79 2140 2200 "src/render.ml" 79 2140 2212
+"src/render.ml" 80 2169 2233 "src/render.ml" 80 2169 2245
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 79 2140 2213 "src/render.ml" 79 2140 2216
+"src/render.ml" 80 2169 2246 "src/render.ml" 80 2169 2249
 type(
   int
 )
 ident(
-  int_ref c "src/render.ml" 76 1995 2015 "src/render.ml" 76 1995 2016
+  int_ref c "src/render.ml" 77 2024 2044 "src/render.ml" 77 2024 2045
 )
-"src/render.ml" 79 2140 2200 "src/render.ml" 79 2140 2216
+"src/render.ml" 80 2169 2233 "src/render.ml" 80 2169 2249
 type(
   float
 )
-"src/render.ml" 79 2140 2152 "src/render.ml" 79 2140 2216
+"src/render.ml" 80 2169 2185 "src/render.ml" 80 2169 2249
 type(
   float
 )
-"src/render.ml" 79 2140 2217 "src/render.ml" 79 2140 2219
+"src/render.ml" 80 2169 2250 "src/render.ml" 80 2169 2252
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/render.ml" 79 2140 2220 "src/render.ml" 79 2140 2232
+"src/render.ml" 80 2169 2253 "src/render.ml" 80 2169 2265
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 79 2140 2234 "src/render.ml" 79 2140 2240
+"src/render.ml" 80 2169 2267 "src/render.ml" 80 2169 2273
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 79 2140 2240 "src/render.ml" 79 2140 2241
+"src/render.ml" 80 2169 2273 "src/render.ml" 80 2169 2274
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 79 2140 2241 "src/render.ml" 79 2140 2242
+"src/render.ml" 80 2169 2274 "src/render.ml" 80 2169 2275
 type(
   int
 )
-"src/render.ml" 79 2140 2233 "src/render.ml" 79 2140 2243
+"src/render.ml" 80 2169 2266 "src/render.ml" 80 2169 2276
 type(
   int
 )
-"src/render.ml" 79 2140 2220 "src/render.ml" 79 2140 2243
+"src/render.ml" 80 2169 2253 "src/render.ml" 80 2169 2276
 type(
   float
 )
-"src/render.ml" 79 2140 2150 "src/render.ml" 79 2140 2244
+"src/render.ml" 80 2169 2183 "src/render.ml" 80 2169 2277
 type(
   float
 )
-"src/render.ml" 79 2140 2141 "src/render.ml" 79 2140 2244
+"src/render.ml" 80 2169 2170 "src/render.ml" 80 2169 2277
 type(
   int
 )
-"src/render.ml" 78 2105 2106 "src/render.ml" 79 2140 2244
+"src/render.ml" 79 2134 2135 "src/render.ml" 80 2169 2277
 type(
   int
 )
-"src/render.ml" 77 2019 2020 "src/render.ml" 79 2140 2244
+"src/render.ml" 78 2048 2049 "src/render.ml" 80 2169 2277
 type(
   int
 )
-"src/render.ml" 82 2247 2251 "src/render.ml" 82 2247 2261
+"src/render.ml" 83 2280 2284 "src/render.ml" 83 2280 2294
 type(
   int -> int -> int -> int -> int -> int -> int -> unit
 )
 ident(
-  def passage_3d "src/render.ml" 126 3656 3656 "src/render.ml" 1 0 -1
+  def passage_3d "src/render.ml" 127 3693 3693 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 82 2247 2262 "src/render.ml" 82 2247 2266
+"src/render.ml" 83 2280 2295 "src/render.ml" 83 2280 2299
 type(
   int
 )
 ident(
-  def cmax "src/render.ml" 82 2247 2267 "src/render.ml" 124 3651 3654
+  def cmax "src/render.ml" 83 2280 2300 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2267 "src/render.ml" 82 2247 2269
+"src/render.ml" 83 2280 2300 "src/render.ml" 83 2280 2302
 type(
   int
 )
 ident(
-  def xo "src/render.ml" 82 2247 2270 "src/render.ml" 124 3651 3654
+  def xo "src/render.ml" 83 2280 2303 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2270 "src/render.ml" 82 2247 2272
+"src/render.ml" 83 2280 2303 "src/render.ml" 83 2280 2305
 type(
   int
 )
 ident(
-  def yo "src/render.ml" 82 2247 2273 "src/render.ml" 124 3651 3654
+  def yo "src/render.ml" 83 2280 2306 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2273 "src/render.ml" 82 2247 2275
+"src/render.ml" 83 2280 2306 "src/render.ml" 83 2280 2308
 type(
   int
 )
 ident(
-  def xd "src/render.ml" 82 2247 2276 "src/render.ml" 124 3651 3654
+  def xd "src/render.ml" 83 2280 2309 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2276 "src/render.ml" 82 2247 2278
+"src/render.ml" 83 2280 2309 "src/render.ml" 83 2280 2311
 type(
   int
 )
 ident(
-  def yd "src/render.ml" 82 2247 2279 "src/render.ml" 124 3651 3654
+  def yd "src/render.ml" 83 2280 2312 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2279 "src/render.ml" 82 2247 2281
+"src/render.ml" 83 2280 2312 "src/render.ml" 83 2280 2314
 type(
   int
 )
 ident(
-  def co "src/render.ml" 82 2247 2282 "src/render.ml" 124 3651 3654
+  def co "src/render.ml" 83 2280 2315 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 82 2247 2282 "src/render.ml" 82 2247 2284
+"src/render.ml" 83 2280 2315 "src/render.ml" 83 2280 2317
 type(
   int
 )
 ident(
-  def cd "src/render.ml" 84 2288 2289 "src/render.ml" 124 3651 3654
+  def cd "src/render.ml" 85 2321 2322 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 84 2288 2289 "src/render.ml" 84 2288 2302
+"src/render.ml" 85 2321 2322 "src/render.ml" 85 2321 2335
 type(
   (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 84 2288 2302 "src/render.ml" 84 2288 2324
+"src/render.ml" 85 2321 2335 "src/render.ml" 85 2321 2357
 type(
   (int -> int -> unit, out_channel, unit) format
 )
-"src/render.ml" 84 2288 2325 "src/render.ml" 84 2288 2327
+"src/render.ml" 85 2321 2358 "src/render.ml" 85 2321 2360
 type(
   int
 )
 ident(
-  int_ref co "src/render.ml" 82 2247 2279 "src/render.ml" 82 2247 2281
+  int_ref co "src/render.ml" 83 2280 2312 "src/render.ml" 83 2280 2314
 )
-"src/render.ml" 84 2288 2328 "src/render.ml" 84 2288 2330
+"src/render.ml" 85 2321 2361 "src/render.ml" 85 2321 2363
 type(
   int
 )
 ident(
-  int_ref cd "src/render.ml" 82 2247 2282 "src/render.ml" 82 2247 2284
+  int_ref cd "src/render.ml" 83 2280 2315 "src/render.ml" 83 2280 2317
 )
-"src/render.ml" 84 2288 2289 "src/render.ml" 84 2288 2330
+"src/render.ml" 85 2321 2322 "src/render.ml" 85 2321 2363
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+"src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 type(
   int
 )
 ident(
-  def hauteur_yeux "src/render.ml" 87 2366 2367 "src/render.ml" 124 3651 3654
+  def hauteur_yeux "src/render.ml" 88 2399 2400 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 85 2332 2352 "src/render.ml" 85 2332 2358
-type(
-  int
-)
-ident(
-  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
-)
-"src/render.ml" 85 2332 2358 "src/render.ml" 85 2332 2359
-type(
-  int -> int -> int
-)
-ident(
-  ext_ref Pervasives.( / )
-)
-"src/render.ml" 85 2332 2359 "src/render.ml" 85 2332 2360
-type(
-  int
-)
-"src/render.ml" 85 2332 2352 "src/render.ml" 85 2332 2360
-type(
-  int
-)
-"src/render.ml" 87 2366 2371 "src/render.ml" 87 2366 2381
-type(
-  int -> int -> int
-)
-ident(
-  def calcul_p_y "src/render.ml" 94 2537 2538 "src/render.ml" 124 3651 3654
-)
-"src/render.ml" 87 2366 2382 "src/render.ml" 87 2366 2383
-type(
-  int
-)
-ident(
-  def x "src/render.ml" 87 2366 2384 "src/render.ml" 91 2488 2531
-)
-"src/render.ml" 87 2366 2384 "src/render.ml" 87 2366 2385
-type(
-  int
-)
-ident(
-  def y "src/render.ml" 89 2389 2391 "src/render.ml" 91 2488 2531
-)
-"src/render.ml" 89 2389 2395 "src/render.ml" 89 2389 2402
-type(
-  float
-)
-ident(
-  def echelle "src/render.ml" 90 2431 2433 "src/render.ml" 91 2488 2531
-)
-"src/render.ml" 89 2389 2405 "src/render.ml" 89 2389 2417
-type(
-  int -> float
-)
-ident(
-  ext_ref Pervasives.float_of_int
-)
-"src/render.ml" 89 2389 2418 "src/render.ml" 89 2389 2424
+"src/render.ml" 86 2365 2385 "src/render.ml" 86 2365 2391
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 89 2389 2424 "src/render.ml" 89 2389 2425
+"src/render.ml" 86 2365 2391 "src/render.ml" 86 2365 2392
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 89 2389 2425 "src/render.ml" 89 2389 2426
+"src/render.ml" 86 2365 2392 "src/render.ml" 86 2365 2393
 type(
   int
 )
-"src/render.ml" 89 2389 2417 "src/render.ml" 89 2389 2427
+"src/render.ml" 86 2365 2385 "src/render.ml" 86 2365 2393
 type(
   int
 )
-"src/render.ml" 89 2389 2405 "src/render.ml" 89 2389 2427
+"src/render.ml" 88 2399 2404 "src/render.ml" 88 2399 2414
 type(
-  float
+  int -> int -> int
 )
-"src/render.ml" 90 2431 2437 "src/render.ml" 90 2431 2444
+ident(
+  def calcul_p_y "src/render.ml" 95 2574 2575 "src/render.ml" 125 3688 3691
+)
+"src/render.ml" 88 2399 2415 "src/render.ml" 88 2399 2416
+type(
+  int
+)
+ident(
+  def x "src/render.ml" 88 2399 2417 "src/render.ml" 92 2521 2568
+)
+"src/render.ml" 88 2399 2417 "src/render.ml" 88 2399 2418
+type(
+  int
+)
+ident(
+  def y "src/render.ml" 90 2422 2424 "src/render.ml" 92 2521 2568
+)
+"src/render.ml" 90 2422 2428 "src/render.ml" 90 2422 2435
 type(
   float
 )
 ident(
-  def rapport "src/render.ml" 91 2488 2490 "src/render.ml" 91 2488 2531
+  def echelle "src/render.ml" 91 2464 2466 "src/render.ml" 92 2521 2568
 )
-"src/render.ml" 90 2431 2447 "src/render.ml" 90 2431 2459
+"src/render.ml" 90 2422 2438 "src/render.ml" 90 2422 2450
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 90 2431 2460 "src/render.ml" 90 2431 2468
+"src/render.ml" 90 2422 2451 "src/render.ml" 90 2422 2457
 type(
   int
 )
 ident(
-  int_ref d_focale "src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+  int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 90 2431 2447 "src/render.ml" 90 2431 2468
+"src/render.ml" 90 2422 2457 "src/render.ml" 90 2422 2458
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 90 2422 2458 "src/render.ml" 90 2422 2459
+type(
+  int
+)
+"src/render.ml" 90 2422 2450 "src/render.ml" 90 2422 2460
+type(
+  int
+)
+"src/render.ml" 90 2422 2438 "src/render.ml" 90 2422 2460
 type(
   float
 )
-"src/render.ml" 90 2431 2469 "src/render.ml" 90 2431 2471
+"src/render.ml" 91 2464 2470 "src/render.ml" 91 2464 2477
+type(
+  float
+)
+ident(
+  def rapport "src/render.ml" 92 2521 2523 "src/render.ml" 92 2521 2568
+)
+"src/render.ml" 91 2464 2480 "src/render.ml" 91 2464 2492
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/render.ml" 91 2464 2493 "src/render.ml" 91 2464 2501
+type(
+  int
+)
+ident(
+  int_ref d_focale "src/render.ml" 15 145 149 "src/render.ml" 15 145 157
+)
+"src/render.ml" 91 2464 2480 "src/render.ml" 91 2464 2501
+type(
+  float
+)
+"src/render.ml" 91 2464 2502 "src/render.ml" 91 2464 2504
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 90 2431 2472 "src/render.ml" 90 2431 2480
+"src/render.ml" 91 2464 2505 "src/render.ml" 91 2464 2513
 type(
   int -> int -> float
 )
 ident(
-  int_ref distance "src/render.ml" 66 1755 1759 "src/render.ml" 66 1755 1767
+  int_ref distance "src/render.ml" 67 1784 1788 "src/render.ml" 67 1784 1796
 )
-"src/render.ml" 90 2431 2481 "src/render.ml" 90 2431 2482
+"src/render.ml" 91 2464 2514 "src/render.ml" 91 2464 2515
 type(
   int
 )
 ident(
-  int_ref x "src/render.ml" 87 2366 2382 "src/render.ml" 87 2366 2383
+  int_ref x "src/render.ml" 88 2399 2415 "src/render.ml" 88 2399 2416
 )
-"src/render.ml" 90 2431 2483 "src/render.ml" 90 2431 2484
+"src/render.ml" 91 2464 2516 "src/render.ml" 91 2464 2517
 type(
   int
 )
 ident(
-  int_ref y "src/render.ml" 87 2366 2384 "src/render.ml" 87 2366 2385
+  int_ref y "src/render.ml" 88 2399 2417 "src/render.ml" 88 2399 2418
 )
-"src/render.ml" 90 2431 2472 "src/render.ml" 90 2431 2484
+"src/render.ml" 91 2464 2505 "src/render.ml" 91 2464 2517
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 90 2431 2447 "src/render.ml" 90 2431 2484
+"src/render.ml" 91 2464 2480 "src/render.ml" 91 2464 2517
 type(
   float
 )
-"src/render.ml" 91 2488 2490 "src/render.ml" 91 2488 2498
+"src/render.ml" 92 2521 2523 "src/render.ml" 92 2521 2535
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 91 2488 2499 "src/render.ml" 91 2488 2506
+"src/render.ml" 92 2521 2536 "src/render.ml" 92 2521 2543
 type(
   float
 )
 ident(
-  int_ref echelle "src/render.ml" 89 2389 2395 "src/render.ml" 89 2389 2402
+  int_ref echelle "src/render.ml" 90 2422 2428 "src/render.ml" 90 2422 2435
 )
-"src/render.ml" 91 2488 2507 "src/render.ml" 91 2488 2509
+"src/render.ml" 92 2521 2544 "src/render.ml" 92 2521 2546
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 91 2488 2510 "src/render.ml" 91 2488 2517
+"src/render.ml" 92 2521 2547 "src/render.ml" 92 2521 2554
 type(
   float
 )
 ident(
-  int_ref rapport "src/render.ml" 90 2431 2437 "src/render.ml" 90 2431 2444
+  int_ref rapport "src/render.ml" 91 2464 2470 "src/render.ml" 91 2464 2477
 )
-"src/render.ml" 91 2488 2498 "src/render.ml" 91 2488 2518
+"src/render.ml" 92 2521 2535 "src/render.ml" 92 2521 2555
 type(
   float
 )
-"src/render.ml" 91 2488 2490 "src/render.ml" 91 2488 2518
+"src/render.ml" 92 2521 2523 "src/render.ml" 92 2521 2555
 type(
   int
 )
-"src/render.ml" 91 2488 2518 "src/render.ml" 91 2488 2519
+"src/render.ml" 92 2521 2555 "src/render.ml" 92 2521 2556
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/render.ml" 91 2488 2519 "src/render.ml" 91 2488 2531
+"src/render.ml" 92 2521 2556 "src/render.ml" 92 2521 2568
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 91 2488 2490 "src/render.ml" 91 2488 2531
+"src/render.ml" 92 2521 2523 "src/render.ml" 92 2521 2568
 type(
   int
 )
-"src/render.ml" 90 2431 2433 "src/render.ml" 91 2488 2531
+"src/render.ml" 91 2464 2466 "src/render.ml" 92 2521 2568
 type(
   int
 )
-"src/render.ml" 89 2389 2391 "src/render.ml" 91 2488 2531
+"src/render.ml" 90 2422 2424 "src/render.ml" 92 2521 2568
 type(
   int
 )
-"src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+"src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 type(
   Point.t
 )
 ident(
-  def p_gauche "src/render.ml" 98 2615 2616 "src/render.ml" 124 3651 3654
+  def p_gauche "src/render.ml" 99 2652 2653 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 94 2537 2553 "src/render.ml" 94 2537 2568
+"src/render.ml" 95 2574 2590 "src/render.ml" 95 2574 2605
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/render.ml" 95 2569 2571 "src/render.ml" 95 2569 2581
+"src/render.ml" 96 2606 2608 "src/render.ml" 96 2606 2618
 type(
   int -> int -> int
 )
 ident(
-  int_ref calcul_p_x "src/render.ml" 76 1995 1999 "src/render.ml" 76 1995 2009
+  int_ref calcul_p_x "src/render.ml" 77 2024 2028 "src/render.ml" 77 2024 2038
 )
-"src/render.ml" 95 2569 2582 "src/render.ml" 95 2569 2586
+"src/render.ml" 96 2606 2619 "src/render.ml" 96 2606 2623
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 82 2247 2262 "src/render.ml" 82 2247 2266
+  int_ref cmax "src/render.ml" 83 2280 2295 "src/render.ml" 83 2280 2299
 )
-"src/render.ml" 95 2569 2587 "src/render.ml" 95 2569 2589
+"src/render.ml" 96 2606 2624 "src/render.ml" 96 2606 2626
 type(
   int
 )
 ident(
-  int_ref co "src/render.ml" 82 2247 2279 "src/render.ml" 82 2247 2281
+  int_ref co "src/render.ml" 83 2280 2312 "src/render.ml" 83 2280 2314
 )
-"src/render.ml" 95 2569 2570 "src/render.ml" 95 2569 2590
+"src/render.ml" 96 2606 2607 "src/render.ml" 96 2606 2627
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 96 2591 2593 "src/render.ml" 96 2591 2603
+"src/render.ml" 97 2628 2630 "src/render.ml" 97 2628 2640
 type(
   int -> int -> int
 )
 ident(
-  int_ref calcul_p_y "src/render.ml" 87 2366 2371 "src/render.ml" 87 2366 2381
+  int_ref calcul_p_y "src/render.ml" 88 2399 2404 "src/render.ml" 88 2399 2414
 )
-"src/render.ml" 96 2591 2604 "src/render.ml" 96 2591 2606
+"src/render.ml" 97 2628 2641 "src/render.ml" 97 2628 2643
 type(
   int
 )
 ident(
-  int_ref xo "src/render.ml" 82 2247 2267 "src/render.ml" 82 2247 2269
+  int_ref xo "src/render.ml" 83 2280 2300 "src/render.ml" 83 2280 2302
 )
-"src/render.ml" 96 2591 2607 "src/render.ml" 96 2591 2609
+"src/render.ml" 97 2628 2644 "src/render.ml" 97 2628 2646
 type(
   int
 )
 ident(
-  int_ref yo "src/render.ml" 82 2247 2270 "src/render.ml" 82 2247 2272
+  int_ref yo "src/render.ml" 83 2280 2303 "src/render.ml" 83 2280 2305
 )
-"src/render.ml" 96 2591 2592 "src/render.ml" 96 2591 2610
+"src/render.ml" 97 2628 2629 "src/render.ml" 97 2628 2647
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 94 2537 2553 "src/render.ml" 96 2591 2610
+"src/render.ml" 95 2574 2590 "src/render.ml" 97 2628 2647
 call(
   stack
 )
 type(
   Point.t
 )
-"src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+"src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 type(
   Point.t
 )
 ident(
-  def p_droite "src/render.ml" 101 2693 2694 "src/render.ml" 124 3651 3654
+  def p_droite "src/render.ml" 102 2730 2731 "src/render.ml" 125 3688 3691
 )
-"src/render.ml" 98 2615 2631 "src/render.ml" 98 2615 2646
+"src/render.ml" 99 2652 2668 "src/render.ml" 99 2652 2683
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/render.ml" 99 2647 2649 "src/render.ml" 99 2647 2659
+"src/render.ml" 100 2684 2686 "src/render.ml" 100 2684 2696
 type(
   int -> int -> int
 )
 ident(
-  int_ref calcul_p_x "src/render.ml" 76 1995 1999 "src/render.ml" 76 1995 2009
+  int_ref calcul_p_x "src/render.ml" 77 2024 2028 "src/render.ml" 77 2024 2038
 )
-"src/render.ml" 99 2647 2660 "src/render.ml" 99 2647 2664
+"src/render.ml" 100 2684 2697 "src/render.ml" 100 2684 2701
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 82 2247 2262 "src/render.ml" 82 2247 2266
+  int_ref cmax "src/render.ml" 83 2280 2295 "src/render.ml" 83 2280 2299
 )
-"src/render.ml" 99 2647 2665 "src/render.ml" 99 2647 2667
+"src/render.ml" 100 2684 2702 "src/render.ml" 100 2684 2704
 type(
   int
 )
 ident(
-  int_ref cd "src/render.ml" 82 2247 2282 "src/render.ml" 82 2247 2284
+  int_ref cd "src/render.ml" 83 2280 2315 "src/render.ml" 83 2280 2317
 )
-"src/render.ml" 99 2647 2648 "src/render.ml" 99 2647 2668
+"src/render.ml" 100 2684 2685 "src/render.ml" 100 2684 2705
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 100 2669 2671 "src/render.ml" 100 2669 2681
+"src/render.ml" 101 2706 2708 "src/render.ml" 101 2706 2718
 type(
   int -> int -> int
 )
 ident(
-  int_ref calcul_p_y "src/render.ml" 87 2366 2371 "src/render.ml" 87 2366 2381
+  int_ref calcul_p_y "src/render.ml" 88 2399 2404 "src/render.ml" 88 2399 2414
 )
-"src/render.ml" 100 2669 2682 "src/render.ml" 100 2669 2684
+"src/render.ml" 101 2706 2719 "src/render.ml" 101 2706 2721
 type(
   int
 )
 ident(
-  int_ref xd "src/render.ml" 82 2247 2273 "src/render.ml" 82 2247 2275
+  int_ref xd "src/render.ml" 83 2280 2306 "src/render.ml" 83 2280 2308
 )
-"src/render.ml" 100 2669 2685 "src/render.ml" 100 2669 2687
+"src/render.ml" 101 2706 2722 "src/render.ml" 101 2706 2724
 type(
   int
 )
 ident(
-  int_ref yd "src/render.ml" 82 2247 2276 "src/render.ml" 82 2247 2278
+  int_ref yd "src/render.ml" 83 2280 2309 "src/render.ml" 83 2280 2311
 )
-"src/render.ml" 100 2669 2670 "src/render.ml" 100 2669 2688
+"src/render.ml" 101 2706 2707 "src/render.ml" 101 2706 2725
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 98 2615 2631 "src/render.ml" 100 2669 2688
+"src/render.ml" 99 2652 2668 "src/render.ml" 101 2706 2725
 call(
   stack
 )
 type(
   Point.t
 )
-"src/render.ml" 101 2693 2694 "src/render.ml" 101 2693 2707
+"src/render.ml" 102 2730 2731 "src/render.ml" 102 2730 2744
 type(
   (int -> int -> int -> int -> int -> int -> int -> int -> unit, out_channel,
    unit)
@@ -3154,1055 +3154,1055 @@ type(
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 101 2693 2707 "src/render.ml" 105 2838 2882
+"src/render.ml" 102 2730 2744 "src/render.ml" 106 2875 2919
 type(
   (int -> int -> int -> int -> int -> int -> int -> int -> unit, out_channel,
    unit)
   format
 )
-"src/render.ml" 107 2884 2886 "src/render.ml" 107 2884 2894
+"src/render.ml" 108 2921 2923 "src/render.ml" 108 2921 2931
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 107 2884 2886 "src/render.ml" 107 2884 2896
+"src/render.ml" 108 2921 2923 "src/render.ml" 108 2921 2933
 type(
   int
 )
-"src/render.ml" 107 2884 2897 "src/render.ml" 107 2884 2905
+"src/render.ml" 108 2921 2934 "src/render.ml" 108 2921 2942
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 107 2884 2897 "src/render.ml" 107 2884 2907
+"src/render.ml" 108 2921 2934 "src/render.ml" 108 2921 2944
 type(
   int
 )
-"src/render.ml" 108 2908 2910 "src/render.ml" 108 2908 2918
+"src/render.ml" 109 2945 2947 "src/render.ml" 109 2945 2955
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 108 2908 2910 "src/render.ml" 108 2908 2920
+"src/render.ml" 109 2945 2947 "src/render.ml" 109 2945 2957
 type(
   int
 )
-"src/render.ml" 108 2908 2922 "src/render.ml" 108 2908 2934
+"src/render.ml" 109 2945 2959 "src/render.ml" 109 2945 2971
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 108 2908 2934 "src/render.ml" 108 2908 2935
+"src/render.ml" 109 2945 2971 "src/render.ml" 109 2945 2972
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 108 2908 2936 "src/render.ml" 108 2908 2944
+"src/render.ml" 109 2945 2973 "src/render.ml" 109 2945 2981
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 108 2908 2936 "src/render.ml" 108 2908 2946
+"src/render.ml" 109 2945 2973 "src/render.ml" 109 2945 2983
 type(
   int
 )
-"src/render.ml" 108 2908 2946 "src/render.ml" 108 2908 2947
+"src/render.ml" 109 2945 2983 "src/render.ml" 109 2945 2984
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 108 2908 2947 "src/render.ml" 108 2908 2959
+"src/render.ml" 109 2945 2984 "src/render.ml" 109 2945 2996
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 108 2908 2935 "src/render.ml" 108 2908 2960
+"src/render.ml" 109 2945 2972 "src/render.ml" 109 2945 2997
 type(
   int
 )
-"src/render.ml" 108 2908 2921 "src/render.ml" 108 2908 2961
+"src/render.ml" 109 2945 2958 "src/render.ml" 109 2945 2998
 type(
   int
 )
-"src/render.ml" 109 2962 2964 "src/render.ml" 109 2962 2972
+"src/render.ml" 110 2999 3001 "src/render.ml" 110 2999 3009
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 109 2962 2964 "src/render.ml" 109 2962 2974
+"src/render.ml" 110 2999 3001 "src/render.ml" 110 2999 3011
 type(
   int
 )
-"src/render.ml" 109 2962 2975 "src/render.ml" 109 2962 2983
+"src/render.ml" 110 2999 3012 "src/render.ml" 110 2999 3020
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 109 2962 2975 "src/render.ml" 109 2962 2985
+"src/render.ml" 110 2999 3012 "src/render.ml" 110 2999 3022
 type(
   int
 )
-"src/render.ml" 110 2986 2988 "src/render.ml" 110 2986 2996
+"src/render.ml" 111 3023 3025 "src/render.ml" 111 3023 3033
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 110 2986 2988 "src/render.ml" 110 2986 2998
+"src/render.ml" 111 3023 3025 "src/render.ml" 111 3023 3035
 type(
   int
 )
-"src/render.ml" 110 2986 3000 "src/render.ml" 110 2986 3012
+"src/render.ml" 111 3023 3037 "src/render.ml" 111 3023 3049
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 110 2986 3012 "src/render.ml" 110 2986 3013
+"src/render.ml" 111 3023 3049 "src/render.ml" 111 3023 3050
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 110 2986 3014 "src/render.ml" 110 2986 3022
+"src/render.ml" 111 3023 3051 "src/render.ml" 111 3023 3059
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 110 2986 3014 "src/render.ml" 110 2986 3024
+"src/render.ml" 111 3023 3051 "src/render.ml" 111 3023 3061
 type(
   int
 )
-"src/render.ml" 110 2986 3024 "src/render.ml" 110 2986 3025
+"src/render.ml" 111 3023 3061 "src/render.ml" 111 3023 3062
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 110 2986 3025 "src/render.ml" 110 2986 3037
+"src/render.ml" 111 3023 3062 "src/render.ml" 111 3023 3074
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 110 2986 3013 "src/render.ml" 110 2986 3038
+"src/render.ml" 111 3023 3050 "src/render.ml" 111 3023 3075
 type(
   int
 )
-"src/render.ml" 110 2986 2999 "src/render.ml" 110 2986 3039
+"src/render.ml" 111 3023 3036 "src/render.ml" 111 3023 3076
 type(
   int
 )
-"src/render.ml" 101 2693 2694 "src/render.ml" 110 2986 3039
+"src/render.ml" 102 2730 2731 "src/render.ml" 111 3023 3076
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 111 3042 3043 "src/render.ml" 111 3042 3061
+"src/render.ml" 112 3079 3080 "src/render.ml" 112 3079 3098
 type(
   Graphics.color -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"src/render.ml" 111 3042 3063 "src/render.ml" 111 3042 3075
+"src/render.ml" 112 3079 3100 "src/render.ml" 112 3079 3112
 type(
   int -> int -> int -> Graphics.color
 )
 ident(
   ext_ref Graphics.rgb
 )
-"src/render.ml" 111 3042 3076 "src/render.ml" 111 3042 3077
+"src/render.ml" 112 3079 3113 "src/render.ml" 112 3079 3114
 type(
   int
 )
-"src/render.ml" 111 3042 3078 "src/render.ml" 111 3042 3081
+"src/render.ml" 112 3079 3115 "src/render.ml" 112 3079 3118
 type(
   int
 )
-"src/render.ml" 111 3042 3082 "src/render.ml" 111 3042 3083
+"src/render.ml" 112 3079 3119 "src/render.ml" 112 3079 3120
 type(
   int
 )
-"src/render.ml" 111 3042 3062 "src/render.ml" 111 3042 3084
+"src/render.ml" 112 3079 3099 "src/render.ml" 112 3079 3121
 call(
   stack
 )
 type(
   Graphics.color
 )
-"src/render.ml" 111 3042 3043 "src/render.ml" 111 3042 3084
+"src/render.ml" 112 3079 3080 "src/render.ml" 112 3079 3121
 type(
   unit
 )
-"src/render.ml" 112 3086 3087 "src/render.ml" 112 3086 3105
+"src/render.ml" 113 3123 3124 "src/render.ml" 113 3123 3142
 type(
   (int * int) array -> unit
 )
 ident(
   ext_ref Graphics.fill_poly
 )
-"src/render.ml" 113 3109 3111 "src/render.ml" 113 3109 3119
+"src/render.ml" 114 3146 3148 "src/render.ml" 114 3146 3156
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 113 3109 3111 "src/render.ml" 113 3109 3121
+"src/render.ml" 114 3146 3148 "src/render.ml" 114 3146 3158
 type(
   int
 )
-"src/render.ml" 113 3109 3123 "src/render.ml" 113 3109 3135
+"src/render.ml" 114 3146 3160 "src/render.ml" 114 3146 3172
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 113 3109 3135 "src/render.ml" 113 3109 3136
+"src/render.ml" 114 3146 3172 "src/render.ml" 114 3146 3173
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 113 3109 3137 "src/render.ml" 113 3109 3145
+"src/render.ml" 114 3146 3174 "src/render.ml" 114 3146 3182
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 113 3109 3137 "src/render.ml" 113 3109 3147
+"src/render.ml" 114 3146 3174 "src/render.ml" 114 3146 3184
 type(
   int
 )
-"src/render.ml" 113 3109 3147 "src/render.ml" 113 3109 3148
+"src/render.ml" 114 3146 3184 "src/render.ml" 114 3146 3185
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 113 3109 3148 "src/render.ml" 113 3109 3160
+"src/render.ml" 114 3146 3185 "src/render.ml" 114 3146 3197
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 113 3109 3136 "src/render.ml" 113 3109 3161
+"src/render.ml" 114 3146 3173 "src/render.ml" 114 3146 3198
 type(
   int
 )
-"src/render.ml" 113 3109 3122 "src/render.ml" 113 3109 3162
+"src/render.ml" 114 3146 3159 "src/render.ml" 114 3146 3199
 type(
   int
 )
-"src/render.ml" 113 3109 3111 "src/render.ml" 113 3109 3162
+"src/render.ml" 114 3146 3148 "src/render.ml" 114 3146 3199
 type(
   int * int
 )
-"src/render.ml" 114 3164 3166 "src/render.ml" 114 3164 3174
+"src/render.ml" 115 3201 3203 "src/render.ml" 115 3201 3211
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 114 3164 3166 "src/render.ml" 114 3164 3176
+"src/render.ml" 115 3201 3203 "src/render.ml" 115 3201 3213
 type(
   int
 )
-"src/render.ml" 114 3164 3177 "src/render.ml" 114 3164 3185
+"src/render.ml" 115 3201 3214 "src/render.ml" 115 3201 3222
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 114 3164 3177 "src/render.ml" 114 3164 3187
+"src/render.ml" 115 3201 3214 "src/render.ml" 115 3201 3224
 type(
   int
 )
-"src/render.ml" 114 3164 3166 "src/render.ml" 114 3164 3187
+"src/render.ml" 115 3201 3203 "src/render.ml" 115 3201 3224
 type(
   int * int
 )
-"src/render.ml" 115 3189 3191 "src/render.ml" 115 3189 3199
+"src/render.ml" 116 3226 3228 "src/render.ml" 116 3226 3236
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 115 3189 3191 "src/render.ml" 115 3189 3201
+"src/render.ml" 116 3226 3228 "src/render.ml" 116 3226 3238
 type(
   int
 )
-"src/render.ml" 115 3189 3202 "src/render.ml" 115 3189 3210
+"src/render.ml" 116 3226 3239 "src/render.ml" 116 3226 3247
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 115 3189 3202 "src/render.ml" 115 3189 3212
+"src/render.ml" 116 3226 3239 "src/render.ml" 116 3226 3249
 type(
   int
 )
-"src/render.ml" 115 3189 3191 "src/render.ml" 115 3189 3212
+"src/render.ml" 116 3226 3228 "src/render.ml" 116 3226 3249
 type(
   int * int
 )
-"src/render.ml" 116 3214 3216 "src/render.ml" 116 3214 3224
+"src/render.ml" 117 3251 3253 "src/render.ml" 117 3251 3261
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 116 3214 3216 "src/render.ml" 116 3214 3226
+"src/render.ml" 117 3251 3253 "src/render.ml" 117 3251 3263
 type(
   int
 )
-"src/render.ml" 116 3214 3228 "src/render.ml" 116 3214 3240
+"src/render.ml" 117 3251 3265 "src/render.ml" 117 3251 3277
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 116 3214 3240 "src/render.ml" 116 3214 3241
+"src/render.ml" 117 3251 3277 "src/render.ml" 117 3251 3278
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 116 3214 3242 "src/render.ml" 116 3214 3250
+"src/render.ml" 117 3251 3279 "src/render.ml" 117 3251 3287
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 116 3214 3242 "src/render.ml" 116 3214 3252
+"src/render.ml" 117 3251 3279 "src/render.ml" 117 3251 3289
 type(
   int
 )
-"src/render.ml" 116 3214 3252 "src/render.ml" 116 3214 3253
+"src/render.ml" 117 3251 3289 "src/render.ml" 117 3251 3290
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 116 3214 3253 "src/render.ml" 116 3214 3265
+"src/render.ml" 117 3251 3290 "src/render.ml" 117 3251 3302
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 116 3214 3241 "src/render.ml" 116 3214 3266
+"src/render.ml" 117 3251 3278 "src/render.ml" 117 3251 3303
 type(
   int
 )
-"src/render.ml" 116 3214 3227 "src/render.ml" 116 3214 3267
+"src/render.ml" 117 3251 3264 "src/render.ml" 117 3251 3304
 type(
   int
 )
-"src/render.ml" 116 3214 3216 "src/render.ml" 116 3214 3267
+"src/render.ml" 117 3251 3253 "src/render.ml" 117 3251 3304
 type(
   int * int
 )
-"src/render.ml" 112 3086 3106 "src/render.ml" 117 3268 3271
+"src/render.ml" 113 3123 3143 "src/render.ml" 118 3305 3308
 type(
   (int * int) array
 )
-"src/render.ml" 112 3086 3087 "src/render.ml" 117 3268 3271
+"src/render.ml" 113 3123 3124 "src/render.ml" 118 3305 3308
 type(
   unit
 )
-"src/render.ml" 118 3273 3274 "src/render.ml" 118 3273 3292
+"src/render.ml" 119 3310 3311 "src/render.ml" 119 3310 3329
 type(
   Graphics.color -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"src/render.ml" 118 3273 3294 "src/render.ml" 118 3273 3306
+"src/render.ml" 119 3310 3331 "src/render.ml" 119 3310 3343
 type(
   int -> int -> int -> Graphics.color
 )
 ident(
   ext_ref Graphics.rgb
 )
-"src/render.ml" 118 3273 3307 "src/render.ml" 118 3273 3308
+"src/render.ml" 119 3310 3344 "src/render.ml" 119 3310 3345
 type(
   int
 )
-"src/render.ml" 118 3273 3309 "src/render.ml" 118 3273 3310
+"src/render.ml" 119 3310 3346 "src/render.ml" 119 3310 3347
 type(
   int
 )
-"src/render.ml" 118 3273 3311 "src/render.ml" 118 3273 3312
+"src/render.ml" 119 3310 3348 "src/render.ml" 119 3310 3349
 type(
   int
 )
-"src/render.ml" 118 3273 3293 "src/render.ml" 118 3273 3313
+"src/render.ml" 119 3310 3330 "src/render.ml" 119 3310 3350
 call(
   stack
 )
 type(
   Graphics.color
 )
-"src/render.ml" 118 3273 3274 "src/render.ml" 118 3273 3313
+"src/render.ml" 119 3310 3311 "src/render.ml" 119 3310 3350
 type(
   unit
 )
-"src/render.ml" 119 3315 3316 "src/render.ml" 119 3315 3338
+"src/render.ml" 120 3352 3353 "src/render.ml" 120 3352 3375
 type(
   (int * int * int * int) array -> unit
 )
 ident(
   ext_ref Graphics.draw_segments
 )
-"src/render.ml" 120 3342 3344 "src/render.ml" 120 3342 3352
+"src/render.ml" 121 3379 3381 "src/render.ml" 121 3379 3389
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 120 3342 3344 "src/render.ml" 120 3342 3354
+"src/render.ml" 121 3379 3381 "src/render.ml" 121 3379 3391
 type(
   int
 )
-"src/render.ml" 120 3342 3356 "src/render.ml" 120 3342 3368
+"src/render.ml" 121 3379 3393 "src/render.ml" 121 3379 3405
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 120 3342 3368 "src/render.ml" 120 3342 3369
+"src/render.ml" 121 3379 3405 "src/render.ml" 121 3379 3406
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 120 3342 3370 "src/render.ml" 120 3342 3378
+"src/render.ml" 121 3379 3407 "src/render.ml" 121 3379 3415
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 120 3342 3370 "src/render.ml" 120 3342 3380
+"src/render.ml" 121 3379 3407 "src/render.ml" 121 3379 3417
 type(
   int
 )
-"src/render.ml" 120 3342 3380 "src/render.ml" 120 3342 3381
+"src/render.ml" 121 3379 3417 "src/render.ml" 121 3379 3418
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 120 3342 3381 "src/render.ml" 120 3342 3393
+"src/render.ml" 121 3379 3418 "src/render.ml" 121 3379 3430
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 120 3342 3369 "src/render.ml" 120 3342 3394
+"src/render.ml" 121 3379 3406 "src/render.ml" 121 3379 3431
 type(
   int
 )
-"src/render.ml" 120 3342 3355 "src/render.ml" 120 3342 3395
+"src/render.ml" 121 3379 3392 "src/render.ml" 121 3379 3432
 type(
   int
 )
-"src/render.ml" 120 3342 3396 "src/render.ml" 120 3342 3404
+"src/render.ml" 121 3379 3433 "src/render.ml" 121 3379 3441
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 120 3342 3396 "src/render.ml" 120 3342 3406
+"src/render.ml" 121 3379 3433 "src/render.ml" 121 3379 3443
 type(
   int
 )
-"src/render.ml" 120 3342 3407 "src/render.ml" 120 3342 3415
+"src/render.ml" 121 3379 3444 "src/render.ml" 121 3379 3452
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 120 3342 3407 "src/render.ml" 120 3342 3417
+"src/render.ml" 121 3379 3444 "src/render.ml" 121 3379 3454
 type(
   int
 )
-"src/render.ml" 120 3342 3344 "src/render.ml" 120 3342 3417
+"src/render.ml" 121 3379 3381 "src/render.ml" 121 3379 3454
 type(
   int * int * int * int
 )
-"src/render.ml" 121 3419 3421 "src/render.ml" 121 3419 3429
+"src/render.ml" 122 3456 3458 "src/render.ml" 122 3456 3466
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 121 3419 3421 "src/render.ml" 121 3419 3431
+"src/render.ml" 122 3456 3458 "src/render.ml" 122 3456 3468
 type(
   int
 )
-"src/render.ml" 121 3419 3432 "src/render.ml" 121 3419 3440
+"src/render.ml" 122 3456 3469 "src/render.ml" 122 3456 3477
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 121 3419 3432 "src/render.ml" 121 3419 3442
+"src/render.ml" 122 3456 3469 "src/render.ml" 122 3456 3479
 type(
   int
 )
-"src/render.ml" 121 3419 3443 "src/render.ml" 121 3419 3451
+"src/render.ml" 122 3456 3480 "src/render.ml" 122 3456 3488
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 121 3419 3443 "src/render.ml" 121 3419 3453
+"src/render.ml" 122 3456 3480 "src/render.ml" 122 3456 3490
 type(
   int
 )
-"src/render.ml" 121 3419 3455 "src/render.ml" 121 3419 3467
+"src/render.ml" 122 3456 3492 "src/render.ml" 122 3456 3504
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 121 3419 3467 "src/render.ml" 121 3419 3468
+"src/render.ml" 122 3456 3504 "src/render.ml" 122 3456 3505
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 121 3419 3469 "src/render.ml" 121 3419 3477
+"src/render.ml" 122 3456 3506 "src/render.ml" 122 3456 3514
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 121 3419 3469 "src/render.ml" 121 3419 3479
+"src/render.ml" 122 3456 3506 "src/render.ml" 122 3456 3516
 type(
   int
 )
-"src/render.ml" 121 3419 3479 "src/render.ml" 121 3419 3480
+"src/render.ml" 122 3456 3516 "src/render.ml" 122 3456 3517
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 121 3419 3480 "src/render.ml" 121 3419 3492
+"src/render.ml" 122 3456 3517 "src/render.ml" 122 3456 3529
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 121 3419 3468 "src/render.ml" 121 3419 3493
+"src/render.ml" 122 3456 3505 "src/render.ml" 122 3456 3530
 type(
   int
 )
-"src/render.ml" 121 3419 3454 "src/render.ml" 121 3419 3494
+"src/render.ml" 122 3456 3491 "src/render.ml" 122 3456 3531
 type(
   int
 )
-"src/render.ml" 121 3419 3421 "src/render.ml" 121 3419 3494
+"src/render.ml" 122 3456 3458 "src/render.ml" 122 3456 3531
 type(
   int * int * int * int
 )
-"src/render.ml" 122 3496 3498 "src/render.ml" 122 3496 3506
+"src/render.ml" 123 3533 3535 "src/render.ml" 123 3533 3543
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 122 3496 3498 "src/render.ml" 122 3496 3508
+"src/render.ml" 123 3533 3535 "src/render.ml" 123 3533 3545
 type(
   int
 )
-"src/render.ml" 122 3496 3510 "src/render.ml" 122 3496 3522
+"src/render.ml" 123 3533 3547 "src/render.ml" 123 3533 3559
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 122 3496 3522 "src/render.ml" 122 3496 3523
+"src/render.ml" 123 3533 3559 "src/render.ml" 123 3533 3560
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 122 3496 3524 "src/render.ml" 122 3496 3532
+"src/render.ml" 123 3533 3561 "src/render.ml" 123 3533 3569
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 122 3496 3524 "src/render.ml" 122 3496 3534
+"src/render.ml" 123 3533 3561 "src/render.ml" 123 3533 3571
 type(
   int
 )
-"src/render.ml" 122 3496 3534 "src/render.ml" 122 3496 3535
+"src/render.ml" 123 3533 3571 "src/render.ml" 123 3533 3572
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 122 3496 3535 "src/render.ml" 122 3496 3547
+"src/render.ml" 123 3533 3572 "src/render.ml" 123 3533 3584
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 122 3496 3523 "src/render.ml" 122 3496 3548
+"src/render.ml" 123 3533 3560 "src/render.ml" 123 3533 3585
 type(
   int
 )
-"src/render.ml" 122 3496 3509 "src/render.ml" 122 3496 3549
+"src/render.ml" 123 3533 3546 "src/render.ml" 123 3533 3586
 type(
   int
 )
-"src/render.ml" 122 3496 3551 "src/render.ml" 122 3496 3559
+"src/render.ml" 123 3533 3588 "src/render.ml" 123 3533 3596
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 122 3496 3551 "src/render.ml" 122 3496 3561
+"src/render.ml" 123 3533 3588 "src/render.ml" 123 3533 3598
 type(
   int
 )
-"src/render.ml" 122 3496 3563 "src/render.ml" 122 3496 3575
+"src/render.ml" 123 3533 3600 "src/render.ml" 123 3533 3612
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 122 3496 3575 "src/render.ml" 122 3496 3576
+"src/render.ml" 123 3533 3612 "src/render.ml" 123 3533 3613
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 122 3496 3577 "src/render.ml" 122 3496 3585
+"src/render.ml" 123 3533 3614 "src/render.ml" 123 3533 3622
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 122 3496 3577 "src/render.ml" 122 3496 3587
+"src/render.ml" 123 3533 3614 "src/render.ml" 123 3533 3624
 type(
   int
 )
-"src/render.ml" 122 3496 3587 "src/render.ml" 122 3496 3588
+"src/render.ml" 123 3533 3624 "src/render.ml" 123 3533 3625
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/render.ml" 122 3496 3588 "src/render.ml" 122 3496 3600
+"src/render.ml" 123 3533 3625 "src/render.ml" 123 3533 3637
 type(
   int
 )
 ident(
-  int_ref hauteur_yeux "src/render.ml" 85 2332 2337 "src/render.ml" 85 2332 2349
+  int_ref hauteur_yeux "src/render.ml" 86 2365 2370 "src/render.ml" 86 2365 2382
 )
-"src/render.ml" 122 3496 3576 "src/render.ml" 122 3496 3601
+"src/render.ml" 123 3533 3613 "src/render.ml" 123 3533 3638
 type(
   int
 )
-"src/render.ml" 122 3496 3562 "src/render.ml" 122 3496 3602
+"src/render.ml" 123 3533 3599 "src/render.ml" 123 3533 3639
 type(
   int
 )
-"src/render.ml" 122 3496 3498 "src/render.ml" 122 3496 3602
+"src/render.ml" 123 3533 3535 "src/render.ml" 123 3533 3639
 type(
   int * int * int * int
 )
-"src/render.ml" 123 3604 3606 "src/render.ml" 123 3604 3614
+"src/render.ml" 124 3641 3643 "src/render.ml" 124 3641 3651
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 123 3604 3606 "src/render.ml" 123 3604 3616
+"src/render.ml" 124 3641 3643 "src/render.ml" 124 3641 3653
 type(
   int
 )
-"src/render.ml" 123 3604 3617 "src/render.ml" 123 3604 3625
+"src/render.ml" 124 3641 3654 "src/render.ml" 124 3641 3662
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 123 3604 3617 "src/render.ml" 123 3604 3627
+"src/render.ml" 124 3641 3654 "src/render.ml" 124 3641 3664
 type(
   int
 )
-"src/render.ml" 123 3604 3628 "src/render.ml" 123 3604 3636
+"src/render.ml" 124 3641 3665 "src/render.ml" 124 3641 3673
 type(
   Point.t
 )
 ident(
-  int_ref p_droite "src/render.ml" 98 2615 2620 "src/render.ml" 98 2615 2628
+  int_ref p_droite "src/render.ml" 99 2652 2657 "src/render.ml" 99 2652 2665
 )
-"src/render.ml" 123 3604 3628 "src/render.ml" 123 3604 3638
+"src/render.ml" 124 3641 3665 "src/render.ml" 124 3641 3675
 type(
   int
 )
-"src/render.ml" 123 3604 3639 "src/render.ml" 123 3604 3647
+"src/render.ml" 124 3641 3676 "src/render.ml" 124 3641 3684
 type(
   Point.t
 )
 ident(
-  int_ref p_gauche "src/render.ml" 94 2537 2542 "src/render.ml" 94 2537 2550
+  int_ref p_gauche "src/render.ml" 95 2574 2579 "src/render.ml" 95 2574 2587
 )
-"src/render.ml" 123 3604 3639 "src/render.ml" 123 3604 3649
+"src/render.ml" 124 3641 3676 "src/render.ml" 124 3641 3686
 type(
   int
 )
-"src/render.ml" 123 3604 3606 "src/render.ml" 123 3604 3649
+"src/render.ml" 124 3641 3643 "src/render.ml" 124 3641 3686
 type(
   int * int * int * int
 )
-"src/render.ml" 119 3315 3339 "src/render.ml" 124 3651 3654
+"src/render.ml" 120 3352 3376 "src/render.ml" 125 3688 3691
 type(
   (int * int * int * int) array
 )
-"src/render.ml" 119 3315 3316 "src/render.ml" 124 3651 3654
+"src/render.ml" 120 3352 3353 "src/render.ml" 125 3688 3691
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 118 3273 3274 "src/render.ml" 124 3651 3654
+"src/render.ml" 119 3310 3311 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 112 3086 3087 "src/render.ml" 124 3651 3654
+"src/render.ml" 113 3123 3124 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 111 3042 3043 "src/render.ml" 124 3651 3654
+"src/render.ml" 112 3079 3080 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 101 2693 2694 "src/render.ml" 124 3651 3654
+"src/render.ml" 102 2730 2731 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 98 2615 2616 "src/render.ml" 124 3651 3654
+"src/render.ml" 99 2652 2653 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 94 2537 2538 "src/render.ml" 124 3651 3654
+"src/render.ml" 95 2574 2575 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 87 2366 2367 "src/render.ml" 124 3651 3654
+"src/render.ml" 88 2399 2400 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 85 2332 2333 "src/render.ml" 124 3651 3654
+"src/render.ml" 86 2365 2366 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 84 2288 2289 "src/render.ml" 124 3651 3654
+"src/render.ml" 85 2321 2322 "src/render.ml" 125 3688 3691
 type(
   unit
 )
-"src/render.ml" 126 3656 3660 "src/render.ml" 126 3656 3670
+"src/render.ml" 127 3693 3697 "src/render.ml" 127 3693 3707
 type(
   Segment.t -> unit
 )
 ident(
-  def projection "src/render.ml" 149 4561 4561 "src/render.ml" 1 0 -1
+  def projection "src/render.ml" 150 4606 4606 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+"src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 type(
   Segment.t
 )
 ident(
-  def seg "src/render.ml" 129 3718 3719 "src/render.ml" 142 4206 4302
+  def seg "src/render.ml" 130 3755 3756 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 129 3718 3723 "src/render.ml" 129 3718 3730
+"src/render.ml" 130 3755 3760 "src/render.ml" 130 3755 3767
 type(
   Point.t -> int
 )
 ident(
-  def project "src/render.ml" 132 3804 3805 "src/render.ml" 142 4206 4302
+  def project "src/render.ml" 133 3845 3846 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 129 3718 3731 "src/render.ml" 129 3718 3732
+"src/render.ml" 130 3755 3768 "src/render.ml" 130 3755 3769
 type(
   Point.t
 )
 ident(
-  def p "src/render.ml" 130 3735 3737 "src/render.ml" 130 3735 3799
+  def p "src/render.ml" 131 3772 3774 "src/render.ml" 131 3772 3840
 )
-"src/render.ml" 130 3735 3737 "src/render.ml" 130 3735 3745
+"src/render.ml" 131 3772 3774 "src/render.ml" 131 3772 3786
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 130 3735 3746 "src/render.ml" 130 3735 3758
+"src/render.ml" 131 3772 3787 "src/render.ml" 131 3772 3799
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 130 3735 3760 "src/render.ml" 130 3735 3768
+"src/render.ml" 131 3772 3801 "src/render.ml" 131 3772 3809
 type(
   int
 )
 ident(
-  int_ref d_focale "src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+  int_ref d_focale "src/render.ml" 15 145 149 "src/render.ml" 15 145 157
 )
-"src/render.ml" 130 3735 3769 "src/render.ml" 130 3735 3770
+"src/render.ml" 131 3772 3810 "src/render.ml" 131 3772 3811
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/render.ml" 130 3735 3771 "src/render.ml" 130 3735 3772
+"src/render.ml" 131 3772 3812 "src/render.ml" 131 3772 3813
 type(
   Point.t
 )
 ident(
-  int_ref p "src/render.ml" 129 3718 3731 "src/render.ml" 129 3718 3732
+  int_ref p "src/render.ml" 130 3755 3768 "src/render.ml" 130 3755 3769
 )
-"src/render.ml" 130 3735 3771 "src/render.ml" 130 3735 3774
+"src/render.ml" 131 3772 3812 "src/render.ml" 131 3772 3815
 type(
   int
 )
-"src/render.ml" 130 3735 3759 "src/render.ml" 130 3735 3775
+"src/render.ml" 131 3772 3800 "src/render.ml" 131 3772 3816
 type(
   int
 )
-"src/render.ml" 130 3735 3746 "src/render.ml" 130 3735 3775
+"src/render.ml" 131 3772 3787 "src/render.ml" 131 3772 3816
 type(
   float
 )
-"src/render.ml" 130 3735 3776 "src/render.ml" 130 3735 3778
+"src/render.ml" 131 3772 3817 "src/render.ml" 131 3772 3819
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/render.ml" 130 3735 3779 "src/render.ml" 130 3735 3791
+"src/render.ml" 131 3772 3820 "src/render.ml" 131 3772 3832
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 130 3735 3793 "src/render.ml" 130 3735 3794
+"src/render.ml" 131 3772 3834 "src/render.ml" 131 3772 3835
 type(
   Point.t
 )
 ident(
-  int_ref p "src/render.ml" 129 3718 3731 "src/render.ml" 129 3718 3732
+  int_ref p "src/render.ml" 130 3755 3768 "src/render.ml" 130 3755 3769
 )
-"src/render.ml" 130 3735 3791 "src/render.ml" 130 3735 3798
+"src/render.ml" 131 3772 3832 "src/render.ml" 131 3772 3839
 type(
   int
 )
-"src/render.ml" 130 3735 3779 "src/render.ml" 130 3735 3798
+"src/render.ml" 131 3772 3820 "src/render.ml" 131 3772 3839
 type(
   float
 )
-"src/render.ml" 130 3735 3745 "src/render.ml" 130 3735 3799
+"src/render.ml" 131 3772 3786 "src/render.ml" 131 3772 3840
 type(
   float
 )
-"src/render.ml" 130 3735 3737 "src/render.ml" 130 3735 3799
+"src/render.ml" 131 3772 3774 "src/render.ml" 131 3772 3840
 type(
   int
 )
-"src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+"src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 type(
   int
 )
 ident(
-  def cmax "src/render.ml" 133 3877 3878 "src/render.ml" 142 4206 4302
+  def cmax "src/render.ml" 134 3922 3923 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 132 3804 3816 "src/render.ml" 132 3804 3824
+"src/render.ml" 133 3845 3857 "src/render.ml" 133 3845 3869
 type(
   float -> int
 )
 ident(
-  ext_ref Pervasives.truncate
+  ext_ref Pervasives.int_of_float
 )
-"src/render.ml" 132 3804 3826 "src/render.ml" 132 3804 3830
+"src/render.ml" 133 3845 3871 "src/render.ml" 133 3845 3875
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dtan
 )
-"src/render.ml" 132 3804 3832 "src/render.ml" 132 3804 3844
+"src/render.ml" 133 3845 3877 "src/render.ml" 133 3845 3889
 type(
   int
 )
 ident(
-  int_ref angle_vision "src/render.ml" 9 80 84 "src/render.ml" 9 80 96
+  int_ref angle_vision "src/render.ml" 10 81 85 "src/render.ml" 10 81 97
 )
-"src/render.ml" 132 3804 3844 "src/render.ml" 132 3804 3845
+"src/render.ml" 133 3845 3889 "src/render.ml" 133 3845 3890
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 132 3804 3845 "src/render.ml" 132 3804 3846
+"src/render.ml" 133 3845 3890 "src/render.ml" 133 3845 3891
 type(
   int
 )
-"src/render.ml" 132 3804 3831 "src/render.ml" 132 3804 3847
+"src/render.ml" 133 3845 3876 "src/render.ml" 133 3845 3892
 type(
   int
 )
-"src/render.ml" 132 3804 3826 "src/render.ml" 132 3804 3847
+"src/render.ml" 133 3845 3871 "src/render.ml" 133 3845 3892
 call(
   stack
 )
 type(
   float
 )
-"src/render.ml" 132 3804 3848 "src/render.ml" 132 3804 3850
+"src/render.ml" 133 3845 3893 "src/render.ml" 133 3845 3895
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/render.ml" 132 3804 3851 "src/render.ml" 132 3804 3863
+"src/render.ml" 133 3845 3896 "src/render.ml" 133 3845 3908
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/render.ml" 132 3804 3864 "src/render.ml" 132 3804 3872
+"src/render.ml" 133 3845 3909 "src/render.ml" 133 3845 3917
 type(
   int
 )
 ident(
-  int_ref d_focale "src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+  int_ref d_focale "src/render.ml" 15 145 149 "src/render.ml" 15 145 157
 )
-"src/render.ml" 132 3804 3851 "src/render.ml" 132 3804 3872
+"src/render.ml" 133 3845 3896 "src/render.ml" 133 3845 3917
 type(
   float
 )
-"src/render.ml" 132 3804 3825 "src/render.ml" 132 3804 3873
+"src/render.ml" 133 3845 3870 "src/render.ml" 133 3845 3918
 type(
   float
 )
-"src/render.ml" 132 3804 3816 "src/render.ml" 132 3804 3873
+"src/render.ml" 133 3845 3857 "src/render.ml" 133 3845 3918
 type(
   int
 )
-"src/render.ml" 133 3877 3882 "src/render.ml" 133 3877 3886
+"src/render.ml" 134 3922 3927 "src/render.ml" 134 3922 3931
 type(
   int
 )
 ident(
-  def cmin "src/render.ml" 134 3901 3902 "src/render.ml" 142 4206 4302
+  def cmin "src/render.ml" 135 3946 3947 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 133 3877 3890 "src/render.ml" 133 3877 3891
+"src/render.ml" 134 3922 3935 "src/render.ml" 134 3922 3936
 type(
   int -> int
 )
 ident(
   ext_ref Pervasives.( ~- )
 )
-"src/render.ml" 133 3877 3891 "src/render.ml" 133 3877 3895
+"src/render.ml" 134 3922 3936 "src/render.ml" 134 3922 3940
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 133 3877 3889 "src/render.ml" 133 3877 3896
+"src/render.ml" 134 3922 3934 "src/render.ml" 134 3922 3941
 type(
   int
 )
-"src/render.ml" 134 3901 3902 "src/render.ml" 134 3901 3915
+"src/render.ml" 135 3946 3947 "src/render.ml" 135 3946 3960
 type(
   (int -> int -> int -> unit, out_channel, unit) format ->
   int -> int -> int -> unit
@@ -4210,1134 +4210,1472 @@ type(
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 134 3901 3915 "src/render.ml" 134 3901 3952
+"src/render.ml" 135 3946 3960 "src/render.ml" 135 3946 3997
 type(
   (int -> int -> int -> unit, out_channel, unit) format
 )
-"src/render.ml" 134 3901 3953 "src/render.ml" 134 3901 3961
+"src/render.ml" 135 3946 3998 "src/render.ml" 135 3946 4006
 type(
   int
 )
 ident(
-  int_ref d_focale "src/render.ml" 14 144 148 "src/render.ml" 14 144 156
+  int_ref d_focale "src/render.ml" 15 145 149 "src/render.ml" 15 145 157
 )
-"src/render.ml" 134 3901 3962 "src/render.ml" 134 3901 3966
+"src/render.ml" 135 3946 4007 "src/render.ml" 135 3946 4011
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 134 3901 3967 "src/render.ml" 134 3901 3971
+"src/render.ml" 135 3946 4012 "src/render.ml" 135 3946 4016
 type(
   int
 )
 ident(
-  int_ref cmin "src/render.ml" 133 3877 3882 "src/render.ml" 133 3877 3886
+  int_ref cmin "src/render.ml" 134 3922 3927 "src/render.ml" 134 3922 3931
 )
-"src/render.ml" 134 3901 3902 "src/render.ml" 134 3901 3971
+"src/render.ml" 135 3946 3947 "src/render.ml" 135 3946 4016
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 135 3973 3978 "src/render.ml" 135 3973 3986
+"src/render.ml" 136 4018 4023 "src/render.ml" 136 4018 4031
 type(
   int
 )
 ident(
-  def c_p_orig "src/render.ml" 136 4010 4011 "src/render.ml" 142 4206 4302
+  def c_p_orig "src/render.ml" 137 4055 4056 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 135 3973 3989 "src/render.ml" 135 3973 3996
+"src/render.ml" 136 4018 4034 "src/render.ml" 136 4018 4041
 type(
   Point.t -> int
 )
 ident(
-  int_ref project "src/render.ml" 129 3718 3723 "src/render.ml" 129 3718 3730
+  int_ref project "src/render.ml" 130 3755 3760 "src/render.ml" 130 3755 3767
 )
-"src/render.ml" 135 3973 3997 "src/render.ml" 135 3973 4000
+"src/render.ml" 136 4018 4042 "src/render.ml" 136 4018 4045
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 135 3973 3997 "src/render.ml" 135 3973 4006
+"src/render.ml" 136 4018 4042 "src/render.ml" 136 4018 4051
 type(
   Point.t
 )
-"src/render.ml" 135 3973 3989 "src/render.ml" 135 3973 4006
+"src/render.ml" 136 4018 4034 "src/render.ml" 136 4018 4051
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 136 4010 4015 "src/render.ml" 136 4010 4023
+"src/render.ml" 137 4055 4060 "src/render.ml" 137 4055 4068
 type(
   int
 )
 ident(
-  def c_p_dest "src/render.ml" 138 4048 4049 "src/render.ml" 142 4206 4302
+  def c_p_dest "src/render.ml" 139 4093 4094 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 136 4010 4026 "src/render.ml" 136 4010 4033
+"src/render.ml" 137 4055 4071 "src/render.ml" 137 4055 4078
 type(
   Point.t -> int
 )
 ident(
-  int_ref project "src/render.ml" 129 3718 3723 "src/render.ml" 129 3718 3730
+  int_ref project "src/render.ml" 130 3755 3760 "src/render.ml" 130 3755 3767
 )
-"src/render.ml" 136 4010 4034 "src/render.ml" 136 4010 4037
+"src/render.ml" 137 4055 4079 "src/render.ml" 137 4055 4082
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 136 4010 4034 "src/render.ml" 136 4010 4043
+"src/render.ml" 137 4055 4079 "src/render.ml" 137 4055 4088
 type(
   Point.t
 )
-"src/render.ml" 136 4010 4026 "src/render.ml" 136 4010 4043
+"src/render.ml" 137 4055 4071 "src/render.ml" 137 4055 4088
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 138 4048 4055 "src/render.ml" 138 4048 4063
+"src/render.ml" 139 4093 4100 "src/render.ml" 139 4093 4108
 type(
   int
 )
 ident(
-  int_ref c_p_orig "src/render.ml" 135 3973 3978 "src/render.ml" 135 3973 3986
+  int_ref c_p_orig "src/render.ml" 136 4018 4023 "src/render.ml" 136 4018 4031
 )
-"src/render.ml" 138 4048 4065 "src/render.ml" 138 4048 4073
+"src/render.ml" 139 4093 4110 "src/render.ml" 139 4093 4118
 type(
   int
 )
 ident(
-  int_ref c_p_dest "src/render.ml" 136 4010 4015 "src/render.ml" 136 4010 4023
+  int_ref c_p_dest "src/render.ml" 137 4055 4060 "src/render.ml" 137 4055 4068
 )
-"src/render.ml" 138 4048 4055 "src/render.ml" 138 4048 4073
+"src/render.ml" 139 4093 4100 "src/render.ml" 139 4093 4118
 type(
   int * int
 )
-"src/render.ml" 139 4079 4082 "src/render.ml" 139 4079 4083
+"src/render.ml" 140 4124 4127 "src/render.ml" 140 4124 4128
 type(
   int
 )
 ident(
-  def a "src/render.ml" 139 4079 4091 "src/render.ml" 139 4079 4117
+  def a "src/render.ml" 140 4124 4136 "src/render.ml" 140 4124 4162
 )
-"src/render.ml" 139 4079 4084 "src/render.ml" 139 4079 4085
+"src/render.ml" 140 4124 4129 "src/render.ml" 140 4124 4130
 type(
   int
 )
 ident(
-  def b "src/render.ml" 139 4079 4091 "src/render.ml" 139 4079 4117
+  def b "src/render.ml" 140 4124 4136 "src/render.ml" 140 4124 4162
 )
-"src/render.ml" 139 4079 4082 "src/render.ml" 139 4079 4085
+"src/render.ml" 140 4124 4127 "src/render.ml" 140 4124 4130
 type(
   int * int
 )
-"src/render.ml" 139 4079 4091 "src/render.ml" 139 4079 4092
+"src/render.ml" 140 4124 4136 "src/render.ml" 140 4124 4137
 type(
   int
 )
 ident(
-  int_ref a "src/render.ml" 139 4079 4082 "src/render.ml" 139 4079 4083
+  int_ref a "src/render.ml" 140 4124 4127 "src/render.ml" 140 4124 4128
 )
-"src/render.ml" 139 4079 4093 "src/render.ml" 139 4079 4094
+"src/render.ml" 140 4124 4138 "src/render.ml" 140 4124 4139
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"src/render.ml" 139 4079 4095 "src/render.ml" 139 4079 4099
+"src/render.ml" 140 4124 4140 "src/render.ml" 140 4124 4144
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 139 4079 4091 "src/render.ml" 139 4079 4099
+"src/render.ml" 140 4124 4136 "src/render.ml" 140 4124 4144
 type(
   bool
 )
-"src/render.ml" 139 4079 4100 "src/render.ml" 139 4079 4102
+"src/render.ml" 140 4124 4145 "src/render.ml" 140 4124 4147
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"src/render.ml" 139 4079 4103 "src/render.ml" 139 4079 4104
+"src/render.ml" 140 4124 4148 "src/render.ml" 140 4124 4149
 type(
   int
 )
 ident(
-  int_ref b "src/render.ml" 139 4079 4084 "src/render.ml" 139 4079 4085
+  int_ref b "src/render.ml" 140 4124 4129 "src/render.ml" 140 4124 4130
 )
-"src/render.ml" 139 4079 4105 "src/render.ml" 139 4079 4106
+"src/render.ml" 140 4124 4150 "src/render.ml" 140 4124 4151
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"src/render.ml" 139 4079 4107 "src/render.ml" 139 4079 4111
+"src/render.ml" 140 4124 4152 "src/render.ml" 140 4124 4156
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 139 4079 4103 "src/render.ml" 139 4079 4111
+"src/render.ml" 140 4124 4148 "src/render.ml" 140 4124 4156
 type(
   bool
 )
-"src/render.ml" 139 4079 4091 "src/render.ml" 139 4079 4111
+"src/render.ml" 140 4124 4136 "src/render.ml" 140 4124 4156
 type(
   bool
 )
-"src/render.ml" 139 4079 4115 "src/render.ml" 139 4079 4117
+"src/render.ml" 140 4124 4160 "src/render.ml" 140 4124 4162
 type(
   unit
 )
-"src/render.ml" 140 4118 4121 "src/render.ml" 140 4118 4122
+"src/render.ml" 141 4163 4166 "src/render.ml" 141 4163 4167
 type(
   int
 )
 ident(
-  def a "src/render.ml" 140 4118 4130 "src/render.ml" 140 4118 4156
+  def a "src/render.ml" 141 4163 4175 "src/render.ml" 141 4163 4201
 )
-"src/render.ml" 140 4118 4123 "src/render.ml" 140 4118 4124
+"src/render.ml" 141 4163 4168 "src/render.ml" 141 4163 4169
 type(
   int
 )
 ident(
-  def b "src/render.ml" 140 4118 4130 "src/render.ml" 140 4118 4156
+  def b "src/render.ml" 141 4163 4175 "src/render.ml" 141 4163 4201
 )
-"src/render.ml" 140 4118 4121 "src/render.ml" 140 4118 4124
+"src/render.ml" 141 4163 4166 "src/render.ml" 141 4163 4169
 type(
   int * int
 )
-"src/render.ml" 140 4118 4130 "src/render.ml" 140 4118 4131
+"src/render.ml" 141 4163 4175 "src/render.ml" 141 4163 4176
 type(
   int
 )
 ident(
-  int_ref a "src/render.ml" 140 4118 4121 "src/render.ml" 140 4118 4122
+  int_ref a "src/render.ml" 141 4163 4166 "src/render.ml" 141 4163 4167
 )
-"src/render.ml" 140 4118 4132 "src/render.ml" 140 4118 4133
+"src/render.ml" 141 4163 4177 "src/render.ml" 141 4163 4178
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 140 4118 4134 "src/render.ml" 140 4118 4138
+"src/render.ml" 141 4163 4179 "src/render.ml" 141 4163 4183
 type(
   int
 )
 ident(
-  int_ref cmin "src/render.ml" 133 3877 3882 "src/render.ml" 133 3877 3886
+  int_ref cmin "src/render.ml" 134 3922 3927 "src/render.ml" 134 3922 3931
 )
-"src/render.ml" 140 4118 4130 "src/render.ml" 140 4118 4138
+"src/render.ml" 141 4163 4175 "src/render.ml" 141 4163 4183
 type(
   bool
 )
-"src/render.ml" 140 4118 4139 "src/render.ml" 140 4118 4141
+"src/render.ml" 141 4163 4184 "src/render.ml" 141 4163 4186
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"src/render.ml" 140 4118 4142 "src/render.ml" 140 4118 4143
+"src/render.ml" 141 4163 4187 "src/render.ml" 141 4163 4188
 type(
   int
 )
 ident(
-  int_ref b "src/render.ml" 140 4118 4123 "src/render.ml" 140 4118 4124
+  int_ref b "src/render.ml" 141 4163 4168 "src/render.ml" 141 4163 4169
 )
-"src/render.ml" 140 4118 4144 "src/render.ml" 140 4118 4145
+"src/render.ml" 141 4163 4189 "src/render.ml" 141 4163 4190
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/render.ml" 140 4118 4146 "src/render.ml" 140 4118 4150
+"src/render.ml" 141 4163 4191 "src/render.ml" 141 4163 4195
 type(
   int
 )
 ident(
-  int_ref cmin "src/render.ml" 133 3877 3882 "src/render.ml" 133 3877 3886
+  int_ref cmin "src/render.ml" 134 3922 3927 "src/render.ml" 134 3922 3931
 )
-"src/render.ml" 140 4118 4142 "src/render.ml" 140 4118 4150
+"src/render.ml" 141 4163 4187 "src/render.ml" 141 4163 4195
 type(
   bool
 )
-"src/render.ml" 140 4118 4130 "src/render.ml" 140 4118 4150
+"src/render.ml" 141 4163 4175 "src/render.ml" 141 4163 4195
 type(
   bool
 )
-"src/render.ml" 140 4118 4154 "src/render.ml" 140 4118 4156
+"src/render.ml" 141 4163 4199 "src/render.ml" 141 4163 4201
 type(
   unit
 )
-"src/render.ml" 141 4157 4160 "src/render.ml" 141 4157 4161
+"src/render.ml" 142 4202 4205 "src/render.ml" 142 4202 4206
 type(
   int
 )
 ident(
-  def a "src/render.ml" 141 4157 4167 "src/render.ml" 142 4206 4302
+  def a "src/render.ml" 142 4202 4212 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 141 4157 4162 "src/render.ml" 141 4157 4163
+"src/render.ml" 142 4202 4207 "src/render.ml" 142 4202 4208
 type(
   int
 )
 ident(
-  def b "src/render.ml" 141 4157 4167 "src/render.ml" 142 4206 4302
+  def b "src/render.ml" 142 4202 4212 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 141 4157 4160 "src/render.ml" 141 4157 4163
+"src/render.ml" 142 4202 4205 "src/render.ml" 142 4202 4208
 type(
   int * int
 )
-"src/render.ml" 141 4157 4171 "src/render.ml" 141 4157 4174
+"src/render.ml" 142 4202 4216 "src/render.ml" 142 4202 4219
 type(
   int -> int
 )
 ident(
-  def cor "src/render.ml" 142 4206 4209 "src/render.ml" 142 4206 4302
+  def cor "src/render.ml" 143 4251 4254 "src/render.ml" 143 4251 4347
 )
-"src/render.ml" 141 4157 4178 "src/render.ml" 141 4157 4190
+"src/render.ml" 142 4202 4223 "src/render.ml" 142 4202 4235
 type(
   int -> int -> int -> int
 )
 ident(
-  int_ref correction_c "src/render.ml" 60 1646 1650 "src/render.ml" 60 1646 1662
+  int_ref correction_c "src/render.ml" 61 1675 1679 "src/render.ml" 61 1675 1691
 )
-"src/render.ml" 141 4157 4191 "src/render.ml" 141 4157 4195
+"src/render.ml" 142 4202 4236 "src/render.ml" 142 4202 4240
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 141 4157 4196 "src/render.ml" 141 4157 4200
+"src/render.ml" 142 4202 4241 "src/render.ml" 142 4202 4245
 type(
   int
 )
 ident(
-  int_ref cmin "src/render.ml" 133 3877 3882 "src/render.ml" 133 3877 3886
+  int_ref cmin "src/render.ml" 134 3922 3927 "src/render.ml" 134 3922 3931
 )
-"src/render.ml" 141 4157 4177 "src/render.ml" 141 4157 4201
+"src/render.ml" 142 4202 4222 "src/render.ml" 142 4202 4246
 call(
   stack
 )
 type(
   int -> int
 )
-"src/render.ml" 142 4206 4209 "src/render.ml" 142 4206 4219
+"src/render.ml" 143 4251 4254 "src/render.ml" 143 4251 4264
 type(
   int -> int -> int -> int -> int -> int -> int -> unit
 )
 ident(
-  int_ref passage_3d "src/render.ml" 82 2247 2251 "src/render.ml" 82 2247 2261
+  int_ref passage_3d "src/render.ml" 83 2280 2284 "src/render.ml" 83 2280 2294
 )
-"src/render.ml" 142 4206 4220 "src/render.ml" 142 4206 4224
+"src/render.ml" 143 4251 4265 "src/render.ml" 143 4251 4269
 type(
   int
 )
 ident(
-  int_ref cmax "src/render.ml" 132 3804 3809 "src/render.ml" 132 3804 3813
+  int_ref cmax "src/render.ml" 133 3845 3850 "src/render.ml" 133 3845 3854
 )
-"src/render.ml" 142 4206 4225 "src/render.ml" 142 4206 4228
+"src/render.ml" 143 4251 4270 "src/render.ml" 143 4251 4273
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 142 4206 4225 "src/render.ml" 142 4206 4234
+"src/render.ml" 143 4251 4270 "src/render.ml" 143 4251 4279
 type(
   Point.t
 )
-"src/render.ml" 142 4206 4225 "src/render.ml" 142 4206 4236
+"src/render.ml" 143 4251 4270 "src/render.ml" 143 4251 4281
 type(
   int
 )
-"src/render.ml" 142 4206 4237 "src/render.ml" 142 4206 4240
+"src/render.ml" 143 4251 4282 "src/render.ml" 143 4251 4285
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 142 4206 4237 "src/render.ml" 142 4206 4246
+"src/render.ml" 143 4251 4282 "src/render.ml" 143 4251 4291
 type(
   Point.t
 )
-"src/render.ml" 142 4206 4237 "src/render.ml" 142 4206 4248
+"src/render.ml" 143 4251 4282 "src/render.ml" 143 4251 4293
 type(
   int
 )
-"src/render.ml" 142 4206 4249 "src/render.ml" 142 4206 4252
+"src/render.ml" 143 4251 4294 "src/render.ml" 143 4251 4297
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 142 4206 4249 "src/render.ml" 142 4206 4258
+"src/render.ml" 143 4251 4294 "src/render.ml" 143 4251 4303
 type(
   Point.t
 )
-"src/render.ml" 142 4206 4249 "src/render.ml" 142 4206 4260
+"src/render.ml" 143 4251 4294 "src/render.ml" 143 4251 4305
 type(
   int
 )
-"src/render.ml" 142 4206 4261 "src/render.ml" 142 4206 4264
+"src/render.ml" 143 4251 4306 "src/render.ml" 143 4251 4309
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 126 3656 3671 "src/render.ml" 126 3656 3674
+  int_ref seg "src/render.ml" 127 3693 3708 "src/render.ml" 127 3693 3711
 )
-"src/render.ml" 142 4206 4261 "src/render.ml" 142 4206 4270
+"src/render.ml" 143 4251 4306 "src/render.ml" 143 4251 4315
 type(
   Point.t
 )
-"src/render.ml" 142 4206 4261 "src/render.ml" 142 4206 4272
+"src/render.ml" 143 4251 4306 "src/render.ml" 143 4251 4317
 type(
   int
 )
-"src/render.ml" 142 4206 4274 "src/render.ml" 142 4206 4277
+"src/render.ml" 143 4251 4319 "src/render.ml" 143 4251 4322
 type(
   int -> int
 )
 ident(
-  int_ref cor "src/render.ml" 141 4157 4171 "src/render.ml" 141 4157 4174
+  int_ref cor "src/render.ml" 142 4202 4216 "src/render.ml" 142 4202 4219
 )
-"src/render.ml" 142 4206 4278 "src/render.ml" 142 4206 4286
+"src/render.ml" 143 4251 4323 "src/render.ml" 143 4251 4331
 type(
   int
 )
 ident(
-  int_ref c_p_dest "src/render.ml" 136 4010 4015 "src/render.ml" 136 4010 4023
+  int_ref c_p_dest "src/render.ml" 137 4055 4060 "src/render.ml" 137 4055 4068
 )
-"src/render.ml" 142 4206 4273 "src/render.ml" 142 4206 4287
+"src/render.ml" 143 4251 4318 "src/render.ml" 143 4251 4332
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 142 4206 4289 "src/render.ml" 142 4206 4292
+"src/render.ml" 143 4251 4334 "src/render.ml" 143 4251 4337
 type(
   int -> int
 )
 ident(
-  int_ref cor "src/render.ml" 141 4157 4171 "src/render.ml" 141 4157 4174
+  int_ref cor "src/render.ml" 142 4202 4216 "src/render.ml" 142 4202 4219
 )
-"src/render.ml" 142 4206 4293 "src/render.ml" 142 4206 4301
+"src/render.ml" 143 4251 4338 "src/render.ml" 143 4251 4346
 type(
   int
 )
 ident(
-  int_ref c_p_orig "src/render.ml" 135 3973 3978 "src/render.ml" 135 3973 3986
+  int_ref c_p_orig "src/render.ml" 136 4018 4023 "src/render.ml" 136 4018 4031
 )
-"src/render.ml" 142 4206 4288 "src/render.ml" 142 4206 4302
+"src/render.ml" 143 4251 4333 "src/render.ml" 143 4251 4347
 call(
   stack
 )
 type(
   int
 )
-"src/render.ml" 142 4206 4209 "src/render.ml" 142 4206 4302
+"src/render.ml" 143 4251 4254 "src/render.ml" 143 4251 4347
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 141 4157 4167 "src/render.ml" 142 4206 4302
+"src/render.ml" 142 4202 4212 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 138 4048 4049 "src/render.ml" 142 4206 4302
+"src/render.ml" 139 4093 4094 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 136 4010 4011 "src/render.ml" 142 4206 4302
+"src/render.ml" 137 4055 4056 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 135 3973 3974 "src/render.ml" 142 4206 4302
+"src/render.ml" 136 4018 4019 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 134 3901 3902 "src/render.ml" 142 4206 4302
+"src/render.ml" 135 3946 3947 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 133 3877 3878 "src/render.ml" 142 4206 4302
+"src/render.ml" 134 3922 3923 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 132 3804 3805 "src/render.ml" 142 4206 4302
+"src/render.ml" 133 3845 3846 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 129 3718 3719 "src/render.ml" 142 4206 4302
+"src/render.ml" 130 3755 3756 "src/render.ml" 143 4251 4347
 type(
   unit
 )
-"src/render.ml" 149 4561 4565 "src/render.ml" 149 4561 4572
+"src/render.ml" 150 4606 4610 "src/render.ml" 150 4606 4622
+type(
+  Segment.t -> 'a -> unit
+)
+ident(
+  def debug_bsp_2D "src/render.ml" 158 4844 4844 "src/render.ml" 1 0 -1
+)
+"src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+type(
+  Segment.t
+)
+ident(
+  def s "src/render.ml" 150 4606 4625 "src/render.ml" 155 4725 4841
+)
+"src/render.ml" 150 4606 4625 "src/render.ml" 150 4606 4626
+type(
+  'a
+)
+ident(
+  def p "src/render.ml" 152 4630 4634 "src/render.ml" 155 4725 4841
+)
+"src/render.ml" 152 4630 4634 "src/render.ml" 152 4630 4656
+type(
+  (int * int * int * int) array -> unit
+)
+ident(
+  ext_ref Graphics.draw_segments
+)
+"src/render.ml" 152 4630 4660 "src/render.ml" 152 4630 4661
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 152 4630 4660 "src/render.ml" 152 4630 4667
+type(
+  Point.t
+)
+"src/render.ml" 152 4630 4660 "src/render.ml" 152 4630 4669
+type(
+  int
+)
+"src/render.ml" 152 4630 4669 "src/render.ml" 152 4630 4670
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 152 4630 4670 "src/render.ml" 152 4630 4671
+type(
+  int
+)
+"src/render.ml" 152 4630 4660 "src/render.ml" 152 4630 4671
+type(
+  int
+)
+"src/render.ml" 152 4630 4673 "src/render.ml" 152 4630 4674
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 152 4630 4673 "src/render.ml" 152 4630 4680
+type(
+  Point.t
+)
+"src/render.ml" 152 4630 4673 "src/render.ml" 152 4630 4682
+type(
+  int
+)
+"src/render.ml" 152 4630 4682 "src/render.ml" 152 4630 4683
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 152 4630 4683 "src/render.ml" 152 4630 4684
+type(
+  int
+)
+"src/render.ml" 152 4630 4673 "src/render.ml" 152 4630 4684
+type(
+  int
+)
+"src/render.ml" 153 4686 4690 "src/render.ml" 153 4686 4691
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 153 4686 4690 "src/render.ml" 153 4686 4697
+type(
+  Point.t
+)
+"src/render.ml" 153 4686 4690 "src/render.ml" 153 4686 4699
+type(
+  int
+)
+"src/render.ml" 153 4686 4699 "src/render.ml" 153 4686 4700
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 153 4686 4700 "src/render.ml" 153 4686 4701
+type(
+  int
+)
+"src/render.ml" 153 4686 4690 "src/render.ml" 153 4686 4701
+type(
+  int
+)
+"src/render.ml" 153 4686 4703 "src/render.ml" 153 4686 4704
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 153 4686 4703 "src/render.ml" 153 4686 4710
+type(
+  Point.t
+)
+"src/render.ml" 153 4686 4703 "src/render.ml" 153 4686 4712
+type(
+  int
+)
+"src/render.ml" 153 4686 4712 "src/render.ml" 153 4686 4713
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 153 4686 4713 "src/render.ml" 153 4686 4714
+type(
+  int
+)
+"src/render.ml" 153 4686 4703 "src/render.ml" 153 4686 4714
+type(
+  int
+)
+"src/render.ml" 152 4630 4659 "src/render.ml" 153 4686 4715
+type(
+  int * int * int * int
+)
+"src/render.ml" 152 4630 4657 "src/render.ml" 154 4716 4722
+type(
+  (int * int * int * int) array
+)
+"src/render.ml" 152 4630 4634 "src/render.ml" 154 4716 4722
+call(
+  stack
+)
+type(
+  unit
+)
+"src/render.ml" 155 4725 4729 "src/render.ml" 155 4725 4742
+type(
+  (int -> int -> int -> int -> unit, out_channel, unit) format ->
+  int -> int -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"src/render.ml" 155 4725 4743 "src/render.ml" 155 4725 4784
+type(
+  (int -> int -> int -> int -> unit, out_channel, unit) format
+)
+"src/render.ml" 155 4725 4787 "src/render.ml" 155 4725 4788
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 155 4725 4787 "src/render.ml" 155 4725 4794
+type(
+  Point.t
+)
+"src/render.ml" 155 4725 4787 "src/render.ml" 155 4725 4796
+type(
+  int
+)
+"src/render.ml" 155 4725 4796 "src/render.ml" 155 4725 4797
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 155 4725 4797 "src/render.ml" 155 4725 4798
+type(
+  int
+)
+"src/render.ml" 155 4725 4786 "src/render.ml" 155 4725 4799
+type(
+  int
+)
+"src/render.ml" 155 4725 4801 "src/render.ml" 155 4725 4802
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 155 4725 4801 "src/render.ml" 155 4725 4808
+type(
+  Point.t
+)
+"src/render.ml" 155 4725 4801 "src/render.ml" 155 4725 4810
+type(
+  int
+)
+"src/render.ml" 155 4725 4810 "src/render.ml" 155 4725 4811
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 155 4725 4811 "src/render.ml" 155 4725 4812
+type(
+  int
+)
+"src/render.ml" 155 4725 4800 "src/render.ml" 155 4725 4813
+type(
+  int
+)
+"src/render.ml" 155 4725 4815 "src/render.ml" 155 4725 4816
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 155 4725 4815 "src/render.ml" 155 4725 4822
+type(
+  Point.t
+)
+"src/render.ml" 155 4725 4815 "src/render.ml" 155 4725 4824
+type(
+  int
+)
+"src/render.ml" 155 4725 4824 "src/render.ml" 155 4725 4825
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 155 4725 4825 "src/render.ml" 155 4725 4826
+type(
+  int
+)
+"src/render.ml" 155 4725 4814 "src/render.ml" 155 4725 4827
+type(
+  int
+)
+"src/render.ml" 155 4725 4829 "src/render.ml" 155 4725 4830
+type(
+  Segment.t
+)
+ident(
+  int_ref s "src/render.ml" 150 4606 4623 "src/render.ml" 150 4606 4624
+)
+"src/render.ml" 155 4725 4829 "src/render.ml" 155 4725 4836
+type(
+  Point.t
+)
+"src/render.ml" 155 4725 4829 "src/render.ml" 155 4725 4838
+type(
+  int
+)
+"src/render.ml" 155 4725 4838 "src/render.ml" 155 4725 4839
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/render.ml" 155 4725 4839 "src/render.ml" 155 4725 4840
+type(
+  int
+)
+"src/render.ml" 155 4725 4828 "src/render.ml" 155 4725 4841
+type(
+  int
+)
+"src/render.ml" 155 4725 4729 "src/render.ml" 155 4725 4841
+call(
+  tail
+)
+type(
+  unit
+)
+"src/render.ml" 152 4630 4634 "src/render.ml" 155 4725 4841
+type(
+  unit
+)
+"src/render.ml" 158 4844 4848 "src/render.ml" 158 4844 4855
 type(
   Player.t -> Segment.t -> unit
 )
 ident(
-  def affiche "src/render.ml" 166 5146 5146 "src/render.ml" 1 0 -1
+  def affiche "src/render.ml" 176 5449 5449 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 149 4561 4573 "src/render.ml" 149 4561 4574
+"src/render.ml" 158 4844 4856 "src/render.ml" 158 4844 4857
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 149 4561 4577 "src/render.ml" 162 5021 5083
+  def p "src/render.ml" 158 4844 4860 "src/render.ml" 172 5324 5386
 )
-"src/render.ml" 149 4561 4581 "src/render.ml" 149 4561 4582
+"src/render.ml" 158 4844 4864 "src/render.ml" 158 4844 4865
 type(
   Segment.t
 )
 ident(
-  def s "src/render.ml" 150 4587 4588 "src/render.ml" 162 5021 5083
+  def s "src/render.ml" 159 4870 4871 "src/render.ml" 172 5324 5386
 )
-"src/render.ml" 150 4587 4588 "src/render.ml" 150 4587 4601
+"src/render.ml" 159 4870 4871 "src/render.ml" 159 4870 4884
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 150 4587 4602 "src/render.ml" 150 4587 4622
+"src/render.ml" 159 4870 4885 "src/render.ml" 159 4870 4905
 type(
   (unit, out_channel, unit) format
 )
-"src/render.ml" 150 4587 4588 "src/render.ml" 150 4587 4622
+"src/render.ml" 159 4870 4871 "src/render.ml" 159 4870 4905
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 151 4624 4625 "src/render.ml" 151 4624 4640
+"src/render.ml" 160 4907 4908 "src/render.ml" 160 4907 4923
 type(
   Segment.t -> unit
 )
 ident(
-  int_ref affiche_segment "src/render.ml" 16 226 230 "src/render.ml" 16 226 245
+  int_ref affiche_segment "src/render.ml" 17 231 235 "src/render.ml" 17 231 250
 )
-"src/render.ml" 151 4624 4641 "src/render.ml" 151 4624 4642
+"src/render.ml" 160 4907 4924 "src/render.ml" 160 4907 4925
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 149 4561 4581 "src/render.ml" 149 4561 4582
+  int_ref s "src/render.ml" 158 4844 4864 "src/render.ml" 158 4844 4865
 )
-"src/render.ml" 151 4624 4625 "src/render.ml" 151 4624 4642
+"src/render.ml" 160 4907 4908 "src/render.ml" 160 4907 4925
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 152 4644 4649 "src/render.ml" 152 4644 4655
+"src/render.ml" 161 4927 4932 "src/render.ml" 161 4927 4938
 type(
   Segment.t
 )
 ident(
-  def nw_seg "src/render.ml" 153 4698 4699 "src/render.ml" 162 5021 5083
+  def nw_seg "src/render.ml" 162 4981 4982 "src/render.ml" 172 5324 5386
 )
-"src/render.ml" 152 4644 4658 "src/render.ml" 152 4644 4670
+"src/render.ml" 161 4927 4941 "src/render.ml" 161 4927 4953
 type(
   Player.t -> Segment.t -> Segment.t
 )
 ident(
-  int_ref calcul_angle "src/render.ml" 32 565 569 "src/render.ml" 32 565 581
+  int_ref calcul_angle "src/render.ml" 33 570 574 "src/render.ml" 33 570 586
 )
-"src/render.ml" 152 4644 4671 "src/render.ml" 152 4644 4672
+"src/render.ml" 161 4927 4954 "src/render.ml" 161 4927 4955
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 149 4561 4573 "src/render.ml" 149 4561 4574
+  int_ref p "src/render.ml" 158 4844 4856 "src/render.ml" 158 4844 4857
 )
-"src/render.ml" 152 4644 4674 "src/render.ml" 152 4644 4688
+"src/render.ml" 161 4927 4957 "src/render.ml" 161 4927 4971
 type(
   Player.t -> Segment.t -> Segment.t
 )
 ident(
-  int_ref calcul_vecteur "src/render.ml" 21 362 366 "src/render.ml" 21 362 380
+  int_ref calcul_vecteur "src/render.ml" 22 367 371 "src/render.ml" 22 367 385
 )
-"src/render.ml" 152 4644 4689 "src/render.ml" 152 4644 4690
+"src/render.ml" 161 4927 4972 "src/render.ml" 161 4927 4973
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 149 4561 4573 "src/render.ml" 149 4561 4574
+  int_ref p "src/render.ml" 158 4844 4856 "src/render.ml" 158 4844 4857
 )
-"src/render.ml" 152 4644 4691 "src/render.ml" 152 4644 4692
+"src/render.ml" 161 4927 4974 "src/render.ml" 161 4927 4975
 type(
   Segment.t
 )
 ident(
-  int_ref s "src/render.ml" 149 4561 4581 "src/render.ml" 149 4561 4582
+  int_ref s "src/render.ml" 158 4844 4864 "src/render.ml" 158 4844 4865
 )
-"src/render.ml" 152 4644 4673 "src/render.ml" 152 4644 4693
+"src/render.ml" 161 4927 4956 "src/render.ml" 161 4927 4976
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/render.ml" 152 4644 4658 "src/render.ml" 152 4644 4693
+"src/render.ml" 161 4927 4941 "src/render.ml" 161 4927 4976
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/render.ml" 153 4698 4699 "src/render.ml" 153 4698 4712
+"src/render.ml" 162 4981 4982 "src/render.ml" 162 4981 4995
 type(
   (unit, out_channel, unit) format -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"src/render.ml" 153 4698 4713 "src/render.ml" 153 4698 4732
+"src/render.ml" 162 4981 4996 "src/render.ml" 162 4981 5015
 type(
   (unit, out_channel, unit) format
 )
-"src/render.ml" 153 4698 4699 "src/render.ml" 153 4698 4732
+"src/render.ml" 162 4981 4982 "src/render.ml" 162 4981 5015
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 154 4734 4735 "src/render.ml" 154 4734 4750
+"src/render.ml" 163 5017 5018 "src/render.ml" 163 5017 5033
 type(
   Segment.t -> unit
 )
 ident(
-  int_ref affiche_segment "src/render.ml" 16 226 230 "src/render.ml" 16 226 245
+  int_ref affiche_segment "src/render.ml" 17 231 235 "src/render.ml" 17 231 250
 )
-"src/render.ml" 154 4734 4751 "src/render.ml" 154 4734 4757
+"src/render.ml" 163 5017 5034 "src/render.ml" 163 5017 5040
 type(
   Segment.t
 )
 ident(
-  int_ref nw_seg "src/render.ml" 152 4644 4649 "src/render.ml" 152 4644 4655
+  int_ref nw_seg "src/render.ml" 161 4927 4932 "src/render.ml" 161 4927 4938
 )
-"src/render.ml" 154 4734 4735 "src/render.ml" 154 4734 4757
+"src/render.ml" 163 5017 5018 "src/render.ml" 163 5017 5040
 call(
   stack
 )
 type(
   unit
 )
-"src/render.ml" 155 4759 4764 "src/render.ml" 155 4759 4768
+"src/render.ml" 164 5042 5047 "src/render.ml" 164 5042 5051
 type(
   Segment.t option
 )
 ident(
-  def clip "src/render.ml" 157 4791 4792 "src/render.ml" 162 5021 5083
+  def clip "src/render.ml" 165 5073 5074 "src/render.ml" 172 5324 5386
 )
-"src/render.ml" 155 4759 4771 "src/render.ml" 155 4759 4779
+"src/render.ml" 164 5042 5054 "src/render.ml" 164 5042 5062
 type(
   Segment.t -> Segment.t option
 )
 ident(
-  int_ref clipping "src/render.ml" 43 1116 1120 "src/render.ml" 43 1116 1128
+  int_ref clipping "src/render.ml" 44 1137 1141 "src/render.ml" 44 1137 1149
 )
-"src/render.ml" 155 4759 4780 "src/render.ml" 155 4759 4786
+"src/render.ml" 164 5042 5063 "src/render.ml" 164 5042 5069
 type(
   Segment.t
 )
 ident(
-  int_ref nw_seg "src/render.ml" 152 4644 4649 "src/render.ml" 152 4644 4655
+  int_ref nw_seg "src/render.ml" 161 4927 4932 "src/render.ml" 161 4927 4938
 )
-"src/render.ml" 155 4759 4771 "src/render.ml" 155 4759 4786
+"src/render.ml" 164 5042 5054 "src/render.ml" 164 5042 5069
 call(
   stack
 )
 type(
   Segment.t option
 )
-"src/render.ml" 157 4791 4798 "src/render.ml" 157 4791 4802
+"src/render.ml" 165 5073 5074 "src/render.ml" 165 5073 5086
 type(
-  Segment.t option
+  Segment.t -> Player.t -> unit
 )
 ident(
-  int_ref clip "src/render.ml" 155 4759 4764 "src/render.ml" 155 4759 4768
+  int_ref debug_bsp_2D "src/render.ml" 150 4606 4610 "src/render.ml" 150 4606 4622
 )
-"src/render.ml" 158 4808 4811 "src/render.ml" 158 4808 4815
-type(
-  Segment.t option
-)
-"src/render.ml" 158 4808 4819 "src/render.ml" 158 4808 4821
-type(
-  unit
-)
-"src/render.ml" 159 4822 4830 "src/render.ml" 159 4822 4833
-ident(
-  def seg "src/render.ml" 159 4822 4838 "src/render.ml" 162 5021 5083
-)
-"src/render.ml" 159 4822 4829 "src/render.ml" 159 4822 4834
+"src/render.ml" 165 5073 5087 "src/render.ml" 165 5073 5088
 type(
   Segment.t
 )
-"src/render.ml" 159 4822 4825 "src/render.ml" 159 4822 4834
+ident(
+  int_ref s "src/render.ml" 158 4844 4864 "src/render.ml" 158 4844 4865
+)
+"src/render.ml" 165 5073 5089 "src/render.ml" 165 5073 5090
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/render.ml" 158 4844 4856 "src/render.ml" 158 4844 4857
+)
+"src/render.ml" 165 5073 5074 "src/render.ml" 165 5073 5090
+call(
+  stack
+)
+type(
+  unit
+)
+"src/render.ml" 167 5093 5100 "src/render.ml" 167 5093 5104
 type(
   Segment.t option
 )
-"src/render.ml" 159 4822 4839 "src/render.ml" 159 4822 4849
+ident(
+  int_ref clip "src/render.ml" 164 5042 5047 "src/render.ml" 164 5042 5051
+)
+"src/render.ml" 168 5110 5113 "src/render.ml" 168 5110 5117
+type(
+  Segment.t option
+)
+"src/render.ml" 168 5110 5121 "src/render.ml" 168 5110 5123
+type(
+  unit
+)
+"src/render.ml" 169 5124 5132 "src/render.ml" 169 5124 5135
+ident(
+  def seg "src/render.ml" 169 5124 5140 "src/render.ml" 172 5324 5386
+)
+"src/render.ml" 169 5124 5131 "src/render.ml" 169 5124 5136
+type(
+  Segment.t
+)
+"src/render.ml" 169 5124 5127 "src/render.ml" 169 5124 5136
+type(
+  Segment.t option
+)
+"src/render.ml" 169 5124 5141 "src/render.ml" 169 5124 5151
 type(
   Segment.t -> unit
 )
 ident(
-  int_ref projection "src/render.ml" 126 3656 3660 "src/render.ml" 126 3656 3670
+  int_ref projection "src/render.ml" 127 3693 3697 "src/render.ml" 127 3693 3707
 )
-"src/render.ml" 159 4822 4850 "src/render.ml" 159 4822 4853
+"src/render.ml" 169 5124 5152 "src/render.ml" 169 5124 5155
 type(
   Segment.t
 )
 ident(
-  int_ref seg "src/render.ml" 159 4822 4829 "src/render.ml" 159 4822 4834
+  int_ref seg "src/render.ml" 169 5124 5131 "src/render.ml" 169 5124 5136
 )
-"src/render.ml" 159 4822 4838 "src/render.ml" 162 5021 5083
+"src/render.ml" 169 5124 5140 "src/render.ml" 172 5324 5386
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 157 4791 4792 "src/render.ml" 162 5021 5083
+"src/render.ml" 167 5093 5094 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 155 4759 4760 "src/render.ml" 162 5021 5083
+"src/render.ml" 165 5073 5074 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 154 4734 4735 "src/render.ml" 162 5021 5083
+"src/render.ml" 164 5042 5043 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 153 4698 4699 "src/render.ml" 162 5021 5083
+"src/render.ml" 163 5017 5018 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 152 4644 4645 "src/render.ml" 162 5021 5083
+"src/render.ml" 162 4981 4982 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 151 4624 4625 "src/render.ml" 162 5021 5083
+"src/render.ml" 161 4927 4928 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 150 4587 4588 "src/render.ml" 162 5021 5083
+"src/render.ml" 160 4907 4908 "src/render.ml" 172 5324 5386
 type(
   unit
 )
-"src/render.ml" 149 4561 4577 "src/render.ml" 162 5021 5083
+"src/render.ml" 159 4870 4871 "src/render.ml" 172 5324 5386
+type(
+  unit
+)
+"src/render.ml" 158 4844 4860 "src/render.ml" 172 5324 5386
 type(
   Segment.t -> unit
 )
-"src/render.ml" 166 5146 5150 "src/render.ml" 166 5146 5157
+"src/render.ml" 176 5449 5453 "src/render.ml" 176 5449 5460
 type(
   Bsp.t -> Player.t -> unit
 )
 ident(
-  def display "src/render.ml" 182 5416 5452 "src/render.ml" 1 0 -1
+  def display "src/render.ml" 192 5719 5755 "src/render.ml" 1 0 -1
 )
-"src/render.ml" 166 5146 5158 "src/render.ml" 166 5146 5161
+"src/render.ml" 176 5449 5461 "src/render.ml" 176 5449 5464
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/render.ml" 166 5146 5162 "src/render.ml" 182 5416 5452
+  def bsp "src/render.ml" 176 5449 5465 "src/render.ml" 192 5719 5755
 )
-"src/render.ml" 166 5146 5162 "src/render.ml" 166 5146 5163
+"src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
 type(
   Player.t
 )
 ident(
-  def p "src/render.ml" 168 5168 5169 "src/render.ml" 182 5416 5452
+  def p "src/render.ml" 178 5471 5472 "src/render.ml" 192 5719 5755
 )
-"src/render.ml" 168 5168 5169 "src/render.ml" 168 5168 5187
+"src/render.ml" 178 5471 5472 "src/render.ml" 178 5471 5490
 type(
   Graphics.color -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"src/render.ml" 168 5168 5189 "src/render.ml" 168 5168 5201
+"src/render.ml" 178 5471 5492 "src/render.ml" 178 5471 5504
 type(
   int -> int -> int -> Graphics.color
 )
 ident(
   ext_ref Graphics.rgb
 )
-"src/render.ml" 168 5168 5202 "src/render.ml" 168 5168 5204
+"src/render.ml" 178 5471 5505 "src/render.ml" 178 5471 5507
 type(
   int
 )
-"src/render.ml" 168 5168 5205 "src/render.ml" 168 5168 5207
+"src/render.ml" 178 5471 5508 "src/render.ml" 178 5471 5510
 type(
   int
 )
-"src/render.ml" 168 5168 5208 "src/render.ml" 168 5168 5210
+"src/render.ml" 178 5471 5511 "src/render.ml" 178 5471 5513
 type(
   int
 )
-"src/render.ml" 168 5168 5188 "src/render.ml" 168 5168 5211
+"src/render.ml" 178 5471 5491 "src/render.ml" 178 5471 5514
 call(
   stack
 )
 type(
   Graphics.color
 )
-"src/render.ml" 168 5168 5169 "src/render.ml" 168 5168 5211
+"src/render.ml" 178 5471 5472 "src/render.ml" 178 5471 5514
 type(
   unit
 )
-"src/render.ml" 169 5213 5214 "src/render.ml" 169 5213 5232
+"src/render.ml" 179 5516 5517 "src/render.ml" 179 5516 5535
 type(
   (int * int) array -> unit
 )
 ident(
   ext_ref Graphics.fill_poly
 )
-"src/render.ml" 170 5235 5236 "src/render.ml" 170 5235 5237
+"src/render.ml" 180 5538 5539 "src/render.ml" 180 5538 5540
 type(
   int
 )
-"src/render.ml" 170 5235 5238 "src/render.ml" 170 5235 5239
+"src/render.ml" 180 5538 5541 "src/render.ml" 180 5538 5542
 type(
   int
 )
-"src/render.ml" 170 5235 5236 "src/render.ml" 170 5235 5239
+"src/render.ml" 180 5538 5539 "src/render.ml" 180 5538 5542
 type(
   int * int
 )
-"src/render.ml" 171 5241 5242 "src/render.ml" 171 5241 5243
+"src/render.ml" 181 5544 5545 "src/render.ml" 181 5544 5546
 type(
   int
 )
-"src/render.ml" 171 5241 5244 "src/render.ml" 171 5241 5250
+"src/render.ml" 181 5544 5547 "src/render.ml" 181 5544 5553
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 171 5241 5250 "src/render.ml" 171 5241 5251
+"src/render.ml" 181 5544 5553 "src/render.ml" 181 5544 5554
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 171 5241 5251 "src/render.ml" 171 5241 5252
+"src/render.ml" 181 5544 5554 "src/render.ml" 181 5544 5555
 type(
   int
 )
-"src/render.ml" 171 5241 5244 "src/render.ml" 171 5241 5252
+"src/render.ml" 181 5544 5547 "src/render.ml" 181 5544 5555
 type(
   int
 )
-"src/render.ml" 171 5241 5242 "src/render.ml" 171 5241 5252
+"src/render.ml" 181 5544 5545 "src/render.ml" 181 5544 5555
 type(
   int * int
 )
-"src/render.ml" 172 5254 5255 "src/render.ml" 172 5254 5261
+"src/render.ml" 182 5557 5558 "src/render.ml" 182 5557 5564
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 172 5254 5262 "src/render.ml" 172 5254 5268
+"src/render.ml" 182 5557 5565 "src/render.ml" 182 5557 5571
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 172 5254 5268 "src/render.ml" 172 5254 5269
+"src/render.ml" 182 5557 5571 "src/render.ml" 182 5557 5572
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 172 5254 5269 "src/render.ml" 172 5254 5270
+"src/render.ml" 182 5557 5572 "src/render.ml" 182 5557 5573
 type(
   int
 )
-"src/render.ml" 172 5254 5262 "src/render.ml" 172 5254 5270
+"src/render.ml" 182 5557 5565 "src/render.ml" 182 5557 5573
 type(
   int
 )
-"src/render.ml" 172 5254 5255 "src/render.ml" 172 5254 5270
+"src/render.ml" 182 5557 5558 "src/render.ml" 182 5557 5573
 type(
   int * int
 )
-"src/render.ml" 173 5272 5273 "src/render.ml" 173 5272 5279
+"src/render.ml" 183 5575 5576 "src/render.ml" 183 5575 5582
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 173 5272 5280 "src/render.ml" 173 5272 5281
+"src/render.ml" 183 5575 5583 "src/render.ml" 183 5575 5584
 type(
   int
 )
-"src/render.ml" 173 5272 5273 "src/render.ml" 173 5272 5281
+"src/render.ml" 183 5575 5576 "src/render.ml" 183 5575 5584
 type(
   int * int
 )
-"src/render.ml" 169 5213 5232 "src/render.ml" 174 5283 5286
+"src/render.ml" 179 5516 5535 "src/render.ml" 184 5586 5589
 type(
   (int * int) array
 )
-"src/render.ml" 169 5213 5214 "src/render.ml" 174 5283 5286
+"src/render.ml" 179 5516 5517 "src/render.ml" 184 5586 5589
 type(
   unit
 )
-"src/render.ml" 175 5288 5289 "src/render.ml" 175 5288 5307
+"src/render.ml" 185 5591 5592 "src/render.ml" 185 5591 5610
 type(
   Graphics.color -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"src/render.ml" 175 5288 5309 "src/render.ml" 175 5288 5321
+"src/render.ml" 185 5591 5612 "src/render.ml" 185 5591 5624
 type(
   int -> int -> int -> Graphics.color
 )
 ident(
   ext_ref Graphics.rgb
 )
-"src/render.ml" 175 5288 5322 "src/render.ml" 175 5288 5324
+"src/render.ml" 185 5591 5625 "src/render.ml" 185 5591 5627
 type(
   int
 )
-"src/render.ml" 175 5288 5325 "src/render.ml" 175 5288 5326
+"src/render.ml" 185 5591 5628 "src/render.ml" 185 5591 5629
 type(
   int
 )
-"src/render.ml" 175 5288 5327 "src/render.ml" 175 5288 5328
+"src/render.ml" 185 5591 5630 "src/render.ml" 185 5591 5631
 type(
   int
 )
-"src/render.ml" 175 5288 5308 "src/render.ml" 175 5288 5329
+"src/render.ml" 185 5591 5611 "src/render.ml" 185 5591 5632
 call(
   stack
 )
 type(
   Graphics.color
 )
-"src/render.ml" 175 5288 5289 "src/render.ml" 175 5288 5329
+"src/render.ml" 185 5591 5592 "src/render.ml" 185 5591 5632
 type(
   unit
 )
-"src/render.ml" 176 5331 5332 "src/render.ml" 176 5331 5350
+"src/render.ml" 186 5634 5635 "src/render.ml" 186 5634 5653
 type(
   (int * int) array -> unit
 )
 ident(
   ext_ref Graphics.fill_poly
 )
-"src/render.ml" 177 5353 5354 "src/render.ml" 177 5353 5355
+"src/render.ml" 187 5656 5657 "src/render.ml" 187 5656 5658
 type(
   int
 )
-"src/render.ml" 177 5353 5356 "src/render.ml" 177 5353 5362
+"src/render.ml" 187 5656 5659 "src/render.ml" 187 5656 5665
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 177 5353 5354 "src/render.ml" 177 5353 5362
+"src/render.ml" 187 5656 5657 "src/render.ml" 187 5656 5665
 type(
   int * int
 )
-"src/render.ml" 178 5364 5365 "src/render.ml" 178 5364 5366
+"src/render.ml" 188 5667 5668 "src/render.ml" 188 5667 5669
 type(
   int
 )
-"src/render.ml" 178 5364 5367 "src/render.ml" 178 5364 5373
+"src/render.ml" 188 5667 5670 "src/render.ml" 188 5667 5676
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 178 5364 5373 "src/render.ml" 178 5364 5374
+"src/render.ml" 188 5667 5676 "src/render.ml" 188 5667 5677
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 178 5364 5374 "src/render.ml" 178 5364 5375
+"src/render.ml" 188 5667 5677 "src/render.ml" 188 5667 5678
 type(
   int
 )
-"src/render.ml" 178 5364 5367 "src/render.ml" 178 5364 5375
+"src/render.ml" 188 5667 5670 "src/render.ml" 188 5667 5678
 type(
   int
 )
-"src/render.ml" 178 5364 5365 "src/render.ml" 178 5364 5375
+"src/render.ml" 188 5667 5668 "src/render.ml" 188 5667 5678
 type(
   int * int
 )
-"src/render.ml" 179 5377 5378 "src/render.ml" 179 5377 5384
+"src/render.ml" 189 5680 5681 "src/render.ml" 189 5680 5687
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 179 5377 5385 "src/render.ml" 179 5377 5391
+"src/render.ml" 189 5680 5688 "src/render.ml" 189 5680 5694
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 179 5377 5391 "src/render.ml" 179 5377 5392
+"src/render.ml" 189 5680 5694 "src/render.ml" 189 5680 5695
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( / )
 )
-"src/render.ml" 179 5377 5392 "src/render.ml" 179 5377 5393
+"src/render.ml" 189 5680 5695 "src/render.ml" 189 5680 5696
 type(
   int
 )
-"src/render.ml" 179 5377 5385 "src/render.ml" 179 5377 5393
+"src/render.ml" 189 5680 5688 "src/render.ml" 189 5680 5696
 type(
   int
 )
-"src/render.ml" 179 5377 5378 "src/render.ml" 179 5377 5393
+"src/render.ml" 189 5680 5681 "src/render.ml" 189 5680 5696
 type(
   int * int
 )
-"src/render.ml" 180 5395 5396 "src/render.ml" 180 5395 5402
+"src/render.ml" 190 5698 5699 "src/render.ml" 190 5698 5705
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 180 5395 5403 "src/render.ml" 180 5395 5409
+"src/render.ml" 190 5698 5706 "src/render.ml" 190 5698 5712
 type(
   int
 )
 ident(
   int_ref taille "src/render.ml" 7 62 66 "src/render.ml" 7 62 72
 )
-"src/render.ml" 180 5395 5396 "src/render.ml" 180 5395 5409
+"src/render.ml" 190 5698 5699 "src/render.ml" 190 5698 5712
 type(
   int * int
 )
-"src/render.ml" 176 5331 5350 "src/render.ml" 181 5411 5414
+"src/render.ml" 186 5634 5653 "src/render.ml" 191 5714 5717
 type(
   (int * int) array
 )
-"src/render.ml" 176 5331 5332 "src/render.ml" 181 5411 5414
+"src/render.ml" 186 5634 5635 "src/render.ml" 191 5714 5717
 type(
   unit
 )
-"src/render.ml" 182 5416 5417 "src/render.ml" 182 5416 5430
+"src/render.ml" 192 5719 5720 "src/render.ml" 192 5719 5733
 type(
   (Segment.t -> unit) -> Bsp.t -> Point.t -> unit
 )
 ident(
   ext_ref Bsp.rev_parse
 )
-"src/render.ml" 182 5416 5432 "src/render.ml" 182 5416 5439
+"src/render.ml" 192 5719 5735 "src/render.ml" 192 5719 5742
 type(
   Player.t -> Segment.t -> unit
 )
 ident(
-  int_ref affiche "src/render.ml" 149 4561 4565 "src/render.ml" 149 4561 4572
+  int_ref affiche "src/render.ml" 158 4844 4848 "src/render.ml" 158 4844 4855
 )
-"src/render.ml" 182 5416 5440 "src/render.ml" 182 5416 5441
+"src/render.ml" 192 5719 5743 "src/render.ml" 192 5719 5744
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 166 5146 5162 "src/render.ml" 166 5146 5163
+  int_ref p "src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
 )
-"src/render.ml" 182 5416 5431 "src/render.ml" 182 5416 5442
+"src/render.ml" 192 5719 5734 "src/render.ml" 192 5719 5745
 call(
   stack
 )
 type(
   Segment.t -> unit
 )
-"src/render.ml" 182 5416 5443 "src/render.ml" 182 5416 5446
+"src/render.ml" 192 5719 5746 "src/render.ml" 192 5719 5749
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/render.ml" 166 5146 5158 "src/render.ml" 166 5146 5161
+  int_ref bsp "src/render.ml" 176 5449 5461 "src/render.ml" 176 5449 5464
 )
-"src/render.ml" 182 5416 5447 "src/render.ml" 182 5416 5448
+"src/render.ml" 192 5719 5750 "src/render.ml" 192 5719 5751
 type(
   Player.t
 )
 ident(
-  int_ref p "src/render.ml" 166 5146 5162 "src/render.ml" 166 5146 5163
+  int_ref p "src/render.ml" 176 5449 5465 "src/render.ml" 176 5449 5466
 )
-"src/render.ml" 182 5416 5447 "src/render.ml" 182 5416 5452
+"src/render.ml" 192 5719 5750 "src/render.ml" 192 5719 5755
 type(
   Point.t
 )
-"src/render.ml" 182 5416 5417 "src/render.ml" 182 5416 5452
+"src/render.ml" 192 5719 5720 "src/render.ml" 192 5719 5755
 call(
   tail
 )
 type(
   unit
 )
-"src/render.ml" 176 5331 5332 "src/render.ml" 182 5416 5452
+"src/render.ml" 186 5634 5635 "src/render.ml" 192 5719 5755
 type(
   unit
 )
-"src/render.ml" 175 5288 5289 "src/render.ml" 182 5416 5452
+"src/render.ml" 185 5591 5592 "src/render.ml" 192 5719 5755
 type(
   unit
 )
-"src/render.ml" 169 5213 5214 "src/render.ml" 182 5416 5452
+"src/render.ml" 179 5516 5517 "src/render.ml" 192 5719 5755
 type(
   unit
 )
-"src/render.ml" 168 5168 5169 "src/render.ml" 182 5416 5452
+"src/render.ml" 178 5471 5472 "src/render.ml" 192 5719 5755
 type(
   unit
 )
