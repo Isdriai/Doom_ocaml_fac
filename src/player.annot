@@ -215,35 +215,35 @@ type(
   mv -> t -> Bsp.t -> unit
 )
 ident(
-  def move "src/player.ml" 48 1234 1242 "src/player.ml" 1 0 -1
+  def move "src/player.ml" 48 1240 1248 "src/player.ml" 1 0 -1
 )
 "src/player.ml" 28 559 568 "src/player.ml" 28 559 569
 type(
   mv
 )
 ident(
-  def d "src/player.ml" 28 559 570 "src/player.ml" 48 1234 1242
+  def d "src/player.ml" 28 559 570 "src/player.ml" 48 1240 1248
 )
 "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 type(
   t
 )
 ident(
-  def p "src/player.ml" 28 559 572 "src/player.ml" 48 1234 1242
+  def p "src/player.ml" 28 559 572 "src/player.ml" 48 1240 1248
 )
 "src/player.ml" 28 559 572 "src/player.ml" 28 559 575
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/player.ml" 30 580 581 "src/player.ml" 48 1234 1242
+  def bsp "src/player.ml" 30 580 581 "src/player.ml" 48 1240 1248
 )
 "src/player.ml" 30 580 585 "src/player.ml" 30 580 594
 type(
   Point.t ref
 )
 ident(
-  def point_tmp "src/player.ml" 32 627 628 "src/player.ml" 48 1234 1242
+  def point_tmp "src/player.ml" 32 627 628 "src/player.ml" 48 1240 1248
 )
 "src/player.ml" 30 580 597 "src/player.ml" 30 580 600
 type(
@@ -830,7 +830,7 @@ type(
   int -> float
 )
 ident(
-  ext_ref Trigo.dcos
+  ext_ref Trigo.dsin
 )
 "src/player.ml" 40 980 1015 "src/player.ml" 40 980 1016
 type(
@@ -839,332 +839,362 @@ type(
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 40 980 1014 "src/player.ml" 40 980 1020
+"src/player.ml" 40 980 1015 "src/player.ml" 40 980 1019
 type(
   int
 )
-"src/player.ml" 40 980 1009 "src/player.ml" 40 980 1020
+"src/player.ml" 40 980 1019 "src/player.ml" 40 980 1020
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/player.ml" 40 980 1020 "src/player.ml" 40 980 1022
+type(
+  int
+)
+"src/player.ml" 40 980 1014 "src/player.ml" 40 980 1023
+type(
+  int
+)
+"src/player.ml" 40 980 1009 "src/player.ml" 40 980 1023
 call(
   stack
 )
 type(
   float
 )
-"src/player.ml" 40 980 1003 "src/player.ml" 40 980 1021
+"src/player.ml" 40 980 1003 "src/player.ml" 40 980 1024
 type(
   float
 )
-"src/player.ml" 40 980 991 "src/player.ml" 40 980 1021
+"src/player.ml" 40 980 991 "src/player.ml" 40 980 1024
 type(
   int
 )
-"src/player.ml" 40 980 982 "src/player.ml" 40 980 1022
+"src/player.ml" 40 980 982 "src/player.ml" 40 980 1025
 type(
   int
 )
-"src/player.ml" 39 896 922 "src/player.ml" 40 980 1022
+"src/player.ml" 39 896 922 "src/player.ml" 40 980 1025
 call(
   stack
 )
 type(
   Point.t
 )
-"src/player.ml" 39 896 909 "src/player.ml" 40 980 1022
+"src/player.ml" 39 896 909 "src/player.ml" 40 980 1025
 type(
   unit
 )
-"src/player.ml" 42 1024 1028 "src/player.ml" 42 1024 1034
+"src/player.ml" 42 1027 1031 "src/player.ml" 42 1027 1037
 type(
   mv
 )
-"src/player.ml" 42 1024 1038 "src/player.ml" 42 1024 1047
+"src/player.ml" 42 1027 1041 "src/player.ml" 42 1027 1050
 type(
   Point.t ref
 )
 ident(
   int_ref point_tmp "src/player.ml" 30 580 585 "src/player.ml" 30 580 594
 )
-"src/player.ml" 42 1024 1048 "src/player.ml" 42 1024 1050
+"src/player.ml" 42 1027 1051 "src/player.ml" 42 1027 1053
 type(
   Point.t ref -> Point.t -> unit
 )
 ident(
   ext_ref Pervasives.( := )
 )
-"src/player.ml" 42 1024 1051 "src/player.ml" 42 1024 1066
+"src/player.ml" 42 1027 1054 "src/player.ml" 42 1027 1069
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/player.ml" 42 1024 1068 "src/player.ml" 42 1024 1069
+"src/player.ml" 42 1027 1071 "src/player.ml" 42 1027 1072
 type(
   t
 )
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 42 1024 1068 "src/player.ml" 42 1024 1073
+"src/player.ml" 42 1027 1071 "src/player.ml" 42 1027 1076
 type(
   Point.t
 )
-"src/player.ml" 42 1024 1068 "src/player.ml" 42 1024 1075
+"src/player.ml" 42 1027 1071 "src/player.ml" 42 1027 1078
 type(
   int
 )
-"src/player.ml" 42 1024 1075 "src/player.ml" 42 1024 1076
+"src/player.ml" 42 1027 1078 "src/player.ml" 42 1027 1079
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/player.ml" 42 1024 1076 "src/player.ml" 42 1024 1088
+"src/player.ml" 42 1027 1079 "src/player.ml" 42 1027 1091
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/player.ml" 42 1024 1089 "src/player.ml" 42 1024 1092
+"src/player.ml" 42 1027 1092 "src/player.ml" 42 1027 1095
 type(
   float
 )
 ident(
   int_ref pas "src/player.ml" 11 103 107 "src/player.ml" 11 103 110
 )
-"src/player.ml" 42 1024 1092 "src/player.ml" 42 1024 1094
+"src/player.ml" 42 1027 1095 "src/player.ml" 42 1027 1097
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/player.ml" 42 1024 1094 "src/player.ml" 42 1024 1098
+"src/player.ml" 42 1027 1097 "src/player.ml" 42 1027 1101
 type(
   int -> float
 )
 ident(
   ext_ref Trigo.dsin
 )
-"src/player.ml" 42 1024 1100 "src/player.ml" 42 1024 1101
+"src/player.ml" 42 1027 1103 "src/player.ml" 42 1027 1104
 type(
   t
 )
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 42 1024 1099 "src/player.ml" 42 1024 1105
+"src/player.ml" 42 1027 1102 "src/player.ml" 42 1027 1108
 type(
   int
 )
-"src/player.ml" 42 1024 1094 "src/player.ml" 42 1024 1105
+"src/player.ml" 42 1027 1097 "src/player.ml" 42 1027 1108
 call(
   stack
 )
 type(
   float
 )
-"src/player.ml" 42 1024 1088 "src/player.ml" 42 1024 1106
+"src/player.ml" 42 1027 1091 "src/player.ml" 42 1027 1109
 type(
   float
 )
-"src/player.ml" 42 1024 1076 "src/player.ml" 42 1024 1106
+"src/player.ml" 42 1027 1079 "src/player.ml" 42 1027 1109
 type(
   int
 )
-"src/player.ml" 42 1024 1067 "src/player.ml" 42 1024 1107
+"src/player.ml" 42 1027 1070 "src/player.ml" 42 1027 1110
 type(
   int
 )
-"src/player.ml" 43 1109 1112 "src/player.ml" 43 1109 1113
+"src/player.ml" 43 1112 1115 "src/player.ml" 43 1112 1116
 type(
   t
 )
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 43 1109 1112 "src/player.ml" 43 1109 1117
+"src/player.ml" 43 1112 1115 "src/player.ml" 43 1112 1120
 type(
   Point.t
 )
-"src/player.ml" 43 1109 1112 "src/player.ml" 43 1109 1119
+"src/player.ml" 43 1112 1115 "src/player.ml" 43 1112 1122
 type(
   int
 )
-"src/player.ml" 43 1109 1119 "src/player.ml" 43 1109 1120
+"src/player.ml" 43 1112 1122 "src/player.ml" 43 1112 1123
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/player.ml" 43 1109 1120 "src/player.ml" 43 1109 1132
+"src/player.ml" 43 1112 1123 "src/player.ml" 43 1112 1135
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/player.ml" 43 1109 1133 "src/player.ml" 43 1109 1136
+"src/player.ml" 43 1112 1136 "src/player.ml" 43 1112 1139
 type(
   float
 )
 ident(
   int_ref pas "src/player.ml" 11 103 107 "src/player.ml" 11 103 110
 )
-"src/player.ml" 43 1109 1136 "src/player.ml" 43 1109 1138
+"src/player.ml" 43 1112 1139 "src/player.ml" 43 1112 1141
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/player.ml" 43 1109 1138 "src/player.ml" 43 1109 1142
+"src/player.ml" 43 1112 1141 "src/player.ml" 43 1112 1145
 type(
   int -> float
 )
 ident(
-  ext_ref Trigo.dcos
+  ext_ref Trigo.dsin
 )
-"src/player.ml" 43 1109 1144 "src/player.ml" 43 1109 1145
+"src/player.ml" 43 1112 1147 "src/player.ml" 43 1112 1148
 type(
   t
 )
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 43 1109 1143 "src/player.ml" 43 1109 1149
+"src/player.ml" 43 1112 1147 "src/player.ml" 43 1112 1151
 type(
   int
 )
-"src/player.ml" 43 1109 1138 "src/player.ml" 43 1109 1149
+"src/player.ml" 43 1112 1151 "src/player.ml" 43 1112 1152
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/player.ml" 43 1112 1152 "src/player.ml" 43 1112 1154
+type(
+  int
+)
+"src/player.ml" 43 1112 1146 "src/player.ml" 43 1112 1155
+type(
+  int
+)
+"src/player.ml" 43 1112 1141 "src/player.ml" 43 1112 1155
 call(
   stack
 )
 type(
   float
 )
-"src/player.ml" 43 1109 1132 "src/player.ml" 43 1109 1150
+"src/player.ml" 43 1112 1135 "src/player.ml" 43 1112 1156
 type(
   float
 )
-"src/player.ml" 43 1109 1120 "src/player.ml" 43 1109 1150
+"src/player.ml" 43 1112 1123 "src/player.ml" 43 1112 1156
 type(
   int
 )
-"src/player.ml" 43 1109 1111 "src/player.ml" 43 1109 1151
+"src/player.ml" 43 1112 1114 "src/player.ml" 43 1112 1157
 type(
   int
 )
-"src/player.ml" 42 1024 1051 "src/player.ml" 43 1109 1151
+"src/player.ml" 42 1027 1054 "src/player.ml" 43 1112 1157
 call(
   stack
 )
 type(
   Point.t
 )
-"src/player.ml" 42 1024 1038 "src/player.ml" 43 1109 1151
+"src/player.ml" 42 1027 1041 "src/player.ml" 43 1112 1157
 type(
   unit
 )
-"src/player.ml" 32 627 628 "src/player.ml" 44 1152 1154
+"src/player.ml" 32 627 628 "src/player.ml" 44 1158 1160
 type(
   unit
 )
-"src/player.ml" 46 1157 1161 "src/player.ml" 46 1157 1164
+"src/player.ml" 46 1163 1167 "src/player.ml" 46 1163 1170
 type(
   bool -> bool
 )
 ident(
   ext_ref Pervasives.not
 )
-"src/player.ml" 46 1157 1166 "src/player.ml" 46 1157 1189
+"src/player.ml" 46 1163 1172 "src/player.ml" 46 1163 1195
 type(
   Point.t -> Bsp.t -> bool
 )
 ident(
   ext_ref Physic.detect_collision
 )
-"src/player.ml" 46 1157 1190 "src/player.ml" 46 1157 1191
+"src/player.ml" 46 1163 1196 "src/player.ml" 46 1163 1197
 type(
   Point.t ref -> Point.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"src/player.ml" 46 1157 1191 "src/player.ml" 46 1157 1200
+"src/player.ml" 46 1163 1197 "src/player.ml" 46 1163 1206
 type(
   Point.t ref
 )
 ident(
   int_ref point_tmp "src/player.ml" 30 580 585 "src/player.ml" 30 580 594
 )
-"src/player.ml" 46 1157 1190 "src/player.ml" 46 1157 1200
+"src/player.ml" 46 1163 1196 "src/player.ml" 46 1163 1206
 type(
   Point.t
 )
-"src/player.ml" 46 1157 1201 "src/player.ml" 46 1157 1204
+"src/player.ml" 46 1163 1207 "src/player.ml" 46 1163 1210
 type(
   Bsp.t
 )
 ident(
   int_ref bsp "src/player.ml" 28 559 572 "src/player.ml" 28 559 575
 )
-"src/player.ml" 46 1157 1165 "src/player.ml" 46 1157 1205
+"src/player.ml" 46 1163 1171 "src/player.ml" 46 1163 1211
 call(
   stack
 )
 type(
   bool
 )
-"src/player.ml" 46 1157 1161 "src/player.ml" 46 1157 1205
+"src/player.ml" 46 1163 1167 "src/player.ml" 46 1163 1211
 type(
   bool
 )
-"src/player.ml" 47 1207 1214 "src/player.ml" 47 1207 1215
+"src/player.ml" 47 1213 1220 "src/player.ml" 47 1213 1221
 type(
   t
 )
 ident(
   int_ref p "src/player.ml" 28 559 570 "src/player.ml" 28 559 571
 )
-"src/player.ml" 47 1207 1223 "src/player.ml" 47 1207 1224
+"src/player.ml" 47 1213 1229 "src/player.ml" 47 1213 1230
 type(
   Point.t ref -> Point.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"src/player.ml" 47 1207 1224 "src/player.ml" 47 1207 1233
+"src/player.ml" 47 1213 1230 "src/player.ml" 47 1213 1239
 type(
   Point.t ref
 )
 ident(
   int_ref point_tmp "src/player.ml" 30 580 585 "src/player.ml" 30 580 594
 )
-"src/player.ml" 47 1207 1223 "src/player.ml" 47 1207 1233
+"src/player.ml" 47 1213 1229 "src/player.ml" 47 1213 1239
 type(
   Point.t
 )
-"src/player.ml" 47 1207 1214 "src/player.ml" 47 1207 1233
+"src/player.ml" 47 1213 1220 "src/player.ml" 47 1213 1239
 type(
   unit
 )
-"src/player.ml" 48 1234 1240 "src/player.ml" 48 1234 1242
+"src/player.ml" 48 1240 1246 "src/player.ml" 48 1240 1248
 type(
   unit
 )
-"src/player.ml" 46 1157 1158 "src/player.ml" 48 1234 1242
+"src/player.ml" 46 1163 1164 "src/player.ml" 48 1240 1248
 type(
   unit
 )
-"src/player.ml" 32 627 628 "src/player.ml" 48 1234 1242
+"src/player.ml" 32 627 628 "src/player.ml" 48 1240 1248
 type(
   unit
 )
-"src/player.ml" 30 580 581 "src/player.ml" 48 1234 1242
+"src/player.ml" 30 580 581 "src/player.ml" 48 1240 1248
 type(
   unit
 )

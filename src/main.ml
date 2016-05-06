@@ -8,14 +8,14 @@ open Player
 open Bsp
 open Render
 
-
+(* 
 let () = 
 	let lab = Parse_lab.read_lab (open_in Sys.argv.(1)) in
 	test lab;
 	let s = Graphics.wait_next_event [Graphics.Button_down;Graphics.Key_pressed]
 	 in ()
 
-;;
+;; *)
 
 exception Invalid_Touche
 let deplacement p bsp = function
@@ -43,7 +43,7 @@ let initialisation ((x, y, pa), lab) =
 	p,ini [] lab	 
 
 
-(* let () = 
+let () = 
 	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
 	let bsp = Bsp.build_bsp lab in
 	let s = string_of_int (Render.taille) in 
@@ -52,4 +52,4 @@ let initialisation ((x, y, pa), lab) =
 	Graphics.open_graph a;
 	auto_synchronize false;
 	jeu p bsp;
-	Graphics.close_graph () *)
+	Graphics.close_graph ()

@@ -37,10 +37,10 @@ let move d p bsp =
 		(p.pos.y-int_of_float(pas*.dsin (p.pa)))
 
 		| MLeft -> point_tmp := Point.new_point (p.pos.x-int_of_float(pas*.dsin (p.pa))) 
-		(p.pos.y-int_of_float(pas*.dcos (p.pa)))
+		(p.pos.y-int_of_float(pas*.dsin (p.pa-90)))
 
 		| MRight -> point_tmp := Point.new_point (p.pos.x+int_of_float(pas*.dsin (p.pa))) 
-		(p.pos.y+int_of_float(pas*.dcos (p.pa)))
+		(p.pos.y+int_of_float(pas*.dsin (p.pa-90)))
 	);
 
 	if not (Physic.detect_collision !point_tmp bsp) 

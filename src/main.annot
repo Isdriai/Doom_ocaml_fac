@@ -1,865 +1,1064 @@
-"src/main.ml" 12 112 116 "src/main.ml" 12 112 118
-type(
-  unit
-)
-"src/main.ml" 13 122 127 "src/main.ml" 13 122 130
-type(
-  (int * int * int) * (int * int * int * int) list
-)
-ident(
-  def lab "src/main.ml" 14 178 179 "src/main.ml" 16 267 274
-)
-"src/main.ml" 13 122 133 "src/main.ml" 13 122 151
-type(
-  in_channel -> (int * int * int) * (int * int * int * int) list
-)
-ident(
-  ext_ref Parse_lab.read_lab
-)
-"src/main.ml" 13 122 153 "src/main.ml" 13 122 160
-type(
-  string -> in_channel
-)
-ident(
-  ext_ref Pervasives.open_in
-)
-"src/main.ml" 13 122 161 "src/main.ml" 13 122 169
-type(
-  string array
-)
-ident(
-  ext_ref Sys.argv
-)
-"src/main.ml" 13 122 171 "src/main.ml" 13 122 172
-type(
-  int
-)
-"src/main.ml" 13 122 161 "src/main.ml" 13 122 173
-type(
-  string
-)
-"src/main.ml" 13 122 152 "src/main.ml" 13 122 174
-call(
-  stack
-)
-type(
-  in_channel
-)
-"src/main.ml" 13 122 133 "src/main.ml" 13 122 174
-call(
-  stack
-)
-type(
-  (int * int * int) * (int * int * int * int) list
-)
-"src/main.ml" 14 178 179 "src/main.ml" 14 178 183
-type(
-  (int * int * int) * (int * int * int * int) list -> unit
-)
-ident(
-  ext_ref Test.test
-)
-"src/main.ml" 14 178 184 "src/main.ml" 14 178 187
-type(
-  (int * int * int) * (int * int * int * int) list
-)
-ident(
-  int_ref lab "src/main.ml" 13 122 127 "src/main.ml" 13 122 130
-)
-"src/main.ml" 14 178 179 "src/main.ml" 14 178 187
-call(
-  stack
-)
-type(
-  unit
-)
-"src/main.ml" 15 189 194 "src/main.ml" 15 189 195
-type(
-  Graphics.status
-)
-ident(
-  def s "src/main.ml" 16 267 272 "src/main.ml" 16 267 274
-)
-"src/main.ml" 15 189 198 "src/main.ml" 15 189 222
-type(
-  Graphics.event list -> Graphics.status
-)
-ident(
-  ext_ref Graphics.wait_next_event
-)
-"src/main.ml" 15 189 224 "src/main.ml" 15 189 244
-type(
-  Graphics.event
-)
-"src/main.ml" 15 189 245 "src/main.ml" 15 189 265
-type(
-  Graphics.event
-)
-"src/main.ml" 15 189 223 "src/main.ml" 15 189 266
-type(
-  Graphics.event list
-)
-"src/main.ml" 15 189 198 "src/main.ml" 15 189 266
-type(
-  Graphics.status
-)
-"src/main.ml" 16 267 272 "src/main.ml" 16 267 274
-type(
-  unit
-)
-"src/main.ml" 15 189 190 "src/main.ml" 16 267 274
-type(
-  unit
-)
-"src/main.ml" 14 178 179 "src/main.ml" 16 267 274
-type(
-  unit
-)
-"src/main.ml" 13 122 123 "src/main.ml" 16 267 274
-type(
-  unit
-)
-"src/main.ml" 21 305 309 "src/main.ml" 21 305 320
+"src/main.ml" 21 311 315 "src/main.ml" 21 311 326
 type(
   Player.t -> Bsp.t -> Options.touche -> unit
 )
 ident(
-  def deplacement "src/main.ml" 30 567 567 "src/main.ml" 1 0 -1
+  def deplacement "src/main.ml" 30 573 573 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+"src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 type(
   Player.t
 )
 ident(
-  def p "src/main.ml" 21 305 323 "src/main.ml" 28 535 565
+  def p "src/main.ml" 21 311 329 "src/main.ml" 28 541 571
 )
-"src/main.ml" 21 305 323 "src/main.ml" 21 305 326
+"src/main.ml" 21 311 329 "src/main.ml" 21 311 332
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 21 305 329 "src/main.ml" 28 535 565
+  def bsp "src/main.ml" 21 311 335 "src/main.ml" 28 541 571
 )
-"src/main.ml" 22 338 340 "src/main.ml" 22 338 342
+"src/main.ml" 22 344 346 "src/main.ml" 22 344 348
 type(
   Options.touche
 )
-"src/main.ml" 22 338 346 "src/main.ml" 22 338 357
+"src/main.ml" 22 344 352 "src/main.ml" 22 344 363
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 22 338 358 "src/main.ml" 22 338 362
+"src/main.ml" 22 344 364 "src/main.ml" 22 344 368
 type(
   Player.mv
 )
-"src/main.ml" 22 338 363 "src/main.ml" 22 338 364
+"src/main.ml" 22 344 369 "src/main.ml" 22 344 370
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 22 338 365 "src/main.ml" 22 338 368
+"src/main.ml" 22 344 371 "src/main.ml" 22 344 374
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 21 305 323 "src/main.ml" 21 305 326
+  int_ref bsp "src/main.ml" 21 311 329 "src/main.ml" 21 311 332
 )
-"src/main.ml" 22 338 346 "src/main.ml" 22 338 368
+"src/main.ml" 22 344 352 "src/main.ml" 22 344 374
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 23 369 374 "src/main.ml" 23 369 376
+"src/main.ml" 23 375 380 "src/main.ml" 23 375 382
 type(
   Options.touche
 )
-"src/main.ml" 23 369 379 "src/main.ml" 23 369 390
+"src/main.ml" 23 375 385 "src/main.ml" 23 375 396
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 23 369 391 "src/main.ml" 23 369 396
+"src/main.ml" 23 375 397 "src/main.ml" 23 375 402
 type(
   Player.mv
 )
-"src/main.ml" 23 369 397 "src/main.ml" 23 369 398
+"src/main.ml" 23 375 403 "src/main.ml" 23 375 404
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 23 369 399 "src/main.ml" 23 369 402
+"src/main.ml" 23 375 405 "src/main.ml" 23 375 408
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 21 305 323 "src/main.ml" 21 305 326
+  int_ref bsp "src/main.ml" 21 311 329 "src/main.ml" 21 311 332
 )
-"src/main.ml" 23 369 379 "src/main.ml" 23 369 402
+"src/main.ml" 23 375 385 "src/main.ml" 23 375 408
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 24 403 408 "src/main.ml" 24 403 410
+"src/main.ml" 24 409 414 "src/main.ml" 24 409 416
 type(
   Options.touche
 )
-"src/main.ml" 24 403 414 "src/main.ml" 24 403 425
+"src/main.ml" 24 409 420 "src/main.ml" 24 409 431
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 24 403 426 "src/main.ml" 24 403 430
+"src/main.ml" 24 409 432 "src/main.ml" 24 409 436
 type(
   Player.mv
 )
-"src/main.ml" 24 403 431 "src/main.ml" 24 403 432
+"src/main.ml" 24 409 437 "src/main.ml" 24 409 438
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 24 403 433 "src/main.ml" 24 403 436
+"src/main.ml" 24 409 439 "src/main.ml" 24 409 442
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 21 305 323 "src/main.ml" 21 305 326
+  int_ref bsp "src/main.ml" 21 311 329 "src/main.ml" 21 311 332
 )
-"src/main.ml" 24 403 414 "src/main.ml" 24 403 436
+"src/main.ml" 24 409 420 "src/main.ml" 24 409 442
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 25 437 442 "src/main.ml" 25 437 444
+"src/main.ml" 25 443 448 "src/main.ml" 25 443 450
 type(
   Options.touche
 )
-"src/main.ml" 25 437 448 "src/main.ml" 25 437 459
+"src/main.ml" 25 443 454 "src/main.ml" 25 443 465
 type(
   Player.mv -> Player.t -> Bsp.t -> unit
 )
 ident(
   ext_ref Player.move
 )
-"src/main.ml" 25 437 460 "src/main.ml" 25 437 466
+"src/main.ml" 25 443 466 "src/main.ml" 25 443 472
 type(
   Player.mv
 )
-"src/main.ml" 25 437 467 "src/main.ml" 25 437 468
+"src/main.ml" 25 443 473 "src/main.ml" 25 443 474
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 25 437 469 "src/main.ml" 25 437 472
+"src/main.ml" 25 443 475 "src/main.ml" 25 443 478
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 21 305 323 "src/main.ml" 21 305 326
+  int_ref bsp "src/main.ml" 21 311 329 "src/main.ml" 21 311 332
 )
-"src/main.ml" 25 437 448 "src/main.ml" 25 437 472
+"src/main.ml" 25 443 454 "src/main.ml" 25 443 478
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 26 473 475 "src/main.ml" 26 473 477
+"src/main.ml" 26 479 481 "src/main.ml" 26 479 483
 type(
   Options.touche
 )
-"src/main.ml" 26 473 481 "src/main.ml" 26 473 494
+"src/main.ml" 26 479 487 "src/main.ml" 26 479 500
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 26 473 495 "src/main.ml" 26 473 499
+"src/main.ml" 26 479 501 "src/main.ml" 26 479 505
 type(
   Player.dir
 )
-"src/main.ml" 26 473 500 "src/main.ml" 26 473 501
+"src/main.ml" 26 479 506 "src/main.ml" 26 479 507
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 26 473 481 "src/main.ml" 26 473 501
+"src/main.ml" 26 479 487 "src/main.ml" 26 479 507
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 27 502 504 "src/main.ml" 27 502 506
+"src/main.ml" 27 508 510 "src/main.ml" 27 508 512
 type(
   Options.touche
 )
-"src/main.ml" 27 502 510 "src/main.ml" 27 502 523
+"src/main.ml" 27 508 516 "src/main.ml" 27 508 529
 type(
   Player.dir -> Player.t -> unit
 )
 ident(
   ext_ref Player.rotate
 )
-"src/main.ml" 27 502 524 "src/main.ml" 27 502 529
+"src/main.ml" 27 508 530 "src/main.ml" 27 508 535
 type(
   Player.dir
 )
-"src/main.ml" 27 502 530 "src/main.ml" 27 502 531
+"src/main.ml" 27 508 536 "src/main.ml" 27 508 537
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 21 305 321 "src/main.ml" 21 305 322
+  int_ref p "src/main.ml" 21 311 327 "src/main.ml" 21 311 328
 )
-"src/main.ml" 27 502 510 "src/main.ml" 27 502 531
+"src/main.ml" 27 508 516 "src/main.ml" 27 508 537
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 28 535 540 "src/main.ml" 28 535 541
+"src/main.ml" 28 541 546 "src/main.ml" 28 541 547
 type(
   Options.touche
 )
-"src/main.ml" 28 535 545 "src/main.ml" 28 535 550
+"src/main.ml" 28 541 551 "src/main.ml" 28 541 556
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"src/main.ml" 28 535 551 "src/main.ml" 28 535 565
+"src/main.ml" 28 541 557 "src/main.ml" 28 541 571
 type(
   exn
 )
-"src/main.ml" 28 535 545 "src/main.ml" 28 535 565
+"src/main.ml" 28 541 551 "src/main.ml" 28 541 571
 type(
   unit
 )
-"src/main.ml" 21 305 329 "src/main.ml" 28 535 565
+"src/main.ml" 21 311 335 "src/main.ml" 28 541 571
 type(
   Options.touche -> unit
 )
-"src/main.ml" 30 567 575 "src/main.ml" 30 567 578
+"src/main.ml" 30 573 581 "src/main.ml" 30 573 584
 type(
   Player.t -> Bsp.t -> unit
 )
 ident(
-  def jeu "src/main.ml" 30 567 567 "src/main.ml" 1 0 -1
+  def jeu "src/main.ml" 30 573 573 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 30 567 579 "src/main.ml" 30 567 580
+"src/main.ml" 30 573 585 "src/main.ml" 30 573 586
 type(
   Player.t
 )
 ident(
-  def p "src/main.ml" 30 567 581 "src/main.ml" 35 690 748
+  def p "src/main.ml" 30 573 587 "src/main.ml" 35 696 754
 )
-"src/main.ml" 30 567 581 "src/main.ml" 30 567 584
+"src/main.ml" 30 573 587 "src/main.ml" 30 573 590
 type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 31 588 589 "src/main.ml" 35 690 748
+  def bsp "src/main.ml" 31 594 595 "src/main.ml" 35 696 754
 )
-"src/main.ml" 31 588 589 "src/main.ml" 31 588 603
+"src/main.ml" 31 594 595 "src/main.ml" 31 594 609
 type(
   Bsp.t -> Player.t -> unit
 )
 ident(
   ext_ref Render.display
 )
-"src/main.ml" 31 588 604 "src/main.ml" 31 588 607
+"src/main.ml" 31 594 610 "src/main.ml" 31 594 613
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 30 567 581 "src/main.ml" 30 567 584
+  int_ref bsp "src/main.ml" 30 573 587 "src/main.ml" 30 573 590
 )
-"src/main.ml" 31 588 608 "src/main.ml" 31 588 609
+"src/main.ml" 31 594 614 "src/main.ml" 31 594 615
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 30 567 579 "src/main.ml" 30 567 580
+  int_ref p "src/main.ml" 30 573 585 "src/main.ml" 30 573 586
 )
-"src/main.ml" 31 588 589 "src/main.ml" 31 588 609
+"src/main.ml" 31 594 595 "src/main.ml" 31 594 615
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 32 611 619 "src/main.ml" 32 611 634
+"src/main.ml" 32 617 625 "src/main.ml" 32 617 640
 type(
   Graphics.event list -> Graphics.status
 )
 ident(
   ext_ref Graphics.wait_next_event
 )
-"src/main.ml" 32 611 636 "src/main.ml" 32 611 647
+"src/main.ml" 32 617 642 "src/main.ml" 32 617 653
 type(
   Graphics.event
 )
-"src/main.ml" 32 611 635 "src/main.ml" 32 611 648
+"src/main.ml" 32 617 641 "src/main.ml" 32 617 654
 type(
   Graphics.event list
 )
-"src/main.ml" 32 611 618 "src/main.ml" 32 611 649
+"src/main.ml" 32 617 624 "src/main.ml" 32 617 655
 type(
   Graphics.status
 )
-"src/main.ml" 32 611 618 "src/main.ml" 32 611 653
+"src/main.ml" 32 617 624 "src/main.ml" 32 617 659
 type(
   char
 )
-"src/main.ml" 33 659 661 "src/main.ml" 33 659 664
+"src/main.ml" 33 665 667 "src/main.ml" 33 665 670
 type(
   char
 )
-"src/main.ml" 33 659 668 "src/main.ml" 33 659 671
+"src/main.ml" 33 665 674 "src/main.ml" 33 665 677
 type(
   Player.t -> Bsp.t -> unit
 )
 ident(
-  int_ref jeu "src/main.ml" 30 567 575 "src/main.ml" 30 567 578
+  int_ref jeu "src/main.ml" 30 573 581 "src/main.ml" 30 573 584
 )
-"src/main.ml" 33 659 672 "src/main.ml" 33 659 673
+"src/main.ml" 33 665 678 "src/main.ml" 33 665 679
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 30 567 579 "src/main.ml" 30 567 580
+  int_ref p "src/main.ml" 30 573 585 "src/main.ml" 30 573 586
 )
-"src/main.ml" 33 659 674 "src/main.ml" 33 659 677
+"src/main.ml" 33 665 680 "src/main.ml" 33 665 683
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 30 567 581 "src/main.ml" 30 567 584
+  int_ref bsp "src/main.ml" 30 573 587 "src/main.ml" 30 573 590
 )
-"src/main.ml" 33 659 668 "src/main.ml" 33 659 677
+"src/main.ml" 33 665 674 "src/main.ml" 33 665 683
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 34 678 680 "src/main.ml" 34 678 683
+"src/main.ml" 34 684 686 "src/main.ml" 34 684 689
 type(
   char
 )
-"src/main.ml" 34 678 687 "src/main.ml" 34 678 689
+"src/main.ml" 34 684 693 "src/main.ml" 34 684 695
 type(
   unit
 )
-"src/main.ml" 35 690 692 "src/main.ml" 35 690 693
+"src/main.ml" 35 696 698 "src/main.ml" 35 696 699
 type(
   char
 )
 ident(
-  def a "src/main.ml" 35 690 697 "src/main.ml" 35 690 748
+  def a "src/main.ml" 35 696 703 "src/main.ml" 35 696 754
 )
-"src/main.ml" 35 690 697 "src/main.ml" 35 690 708
+"src/main.ml" 35 696 703 "src/main.ml" 35 696 714
 type(
   Player.t -> Bsp.t -> Options.touche -> unit
 )
 ident(
-  int_ref deplacement "src/main.ml" 21 305 309 "src/main.ml" 21 305 320
+  int_ref deplacement "src/main.ml" 21 311 315 "src/main.ml" 21 311 326
 )
-"src/main.ml" 35 690 709 "src/main.ml" 35 690 710
+"src/main.ml" 35 696 715 "src/main.ml" 35 696 716
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 30 567 579 "src/main.ml" 30 567 580
+  int_ref p "src/main.ml" 30 573 585 "src/main.ml" 30 573 586
 )
-"src/main.ml" 35 690 711 "src/main.ml" 35 690 714
+"src/main.ml" 35 696 717 "src/main.ml" 35 696 720
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 30 567 581 "src/main.ml" 30 567 584
+  int_ref bsp "src/main.ml" 30 573 587 "src/main.ml" 30 573 590
 )
-"src/main.ml" 35 690 716 "src/main.ml" 35 690 734
+"src/main.ml" 35 696 722 "src/main.ml" 35 696 740
 type(
   char -> Options.touche
 )
 ident(
   ext_ref Options.clavier_lg
 )
-"src/main.ml" 35 690 735 "src/main.ml" 35 690 736
+"src/main.ml" 35 696 741 "src/main.ml" 35 696 742
 type(
   char
 )
 ident(
-  int_ref a "src/main.ml" 35 690 692 "src/main.ml" 35 690 693
+  int_ref a "src/main.ml" 35 696 698 "src/main.ml" 35 696 699
 )
-"src/main.ml" 35 690 715 "src/main.ml" 35 690 737
+"src/main.ml" 35 696 721 "src/main.ml" 35 696 743
 call(
   stack
 )
 type(
   Options.touche
 )
-"src/main.ml" 35 690 697 "src/main.ml" 35 690 737
+"src/main.ml" 35 696 703 "src/main.ml" 35 696 743
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 35 690 739 "src/main.ml" 35 690 742
+"src/main.ml" 35 696 745 "src/main.ml" 35 696 748
 type(
   Player.t -> Bsp.t -> unit
 )
 ident(
-  int_ref jeu "src/main.ml" 30 567 575 "src/main.ml" 30 567 578
+  int_ref jeu "src/main.ml" 30 573 581 "src/main.ml" 30 573 584
 )
-"src/main.ml" 35 690 743 "src/main.ml" 35 690 744
+"src/main.ml" 35 696 749 "src/main.ml" 35 696 750
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 30 567 579 "src/main.ml" 30 567 580
+  int_ref p "src/main.ml" 30 573 585 "src/main.ml" 30 573 586
 )
-"src/main.ml" 35 690 745 "src/main.ml" 35 690 748
+"src/main.ml" 35 696 751 "src/main.ml" 35 696 754
 type(
   Bsp.t
 )
 ident(
-  int_ref bsp "src/main.ml" 30 567 581 "src/main.ml" 30 567 584
+  int_ref bsp "src/main.ml" 30 573 587 "src/main.ml" 30 573 590
 )
-"src/main.ml" 35 690 739 "src/main.ml" 35 690 748
+"src/main.ml" 35 696 745 "src/main.ml" 35 696 754
 call(
   tail
 )
 type(
   unit
 )
-"src/main.ml" 35 690 697 "src/main.ml" 35 690 748
+"src/main.ml" 35 696 703 "src/main.ml" 35 696 754
 type(
   unit
 )
-"src/main.ml" 32 611 612 "src/main.ml" 35 690 748
+"src/main.ml" 32 617 618 "src/main.ml" 35 696 754
 type(
   unit
 )
-"src/main.ml" 31 588 589 "src/main.ml" 35 690 748
+"src/main.ml" 31 594 595 "src/main.ml" 35 696 754
 type(
   unit
 )
-"src/main.ml" 37 750 754 "src/main.ml" 37 750 768
+"src/main.ml" 37 756 760 "src/main.ml" 37 756 774
 type(
   (int * int * int) * (int * int * int * int) list ->
   Player.t * Segment.t list
 )
 ident(
-  def initialisation "src/main.ml" 43 938 951 "src/main.ml" 1 0 -1
+  def initialisation "src/main.ml" 46 962 962 "src/main.ml" 1 0 -1
 )
-"src/main.ml" 37 750 771 "src/main.ml" 37 750 772
+"src/main.ml" 37 756 777 "src/main.ml" 37 756 778
 type(
   int
 )
 ident(
-  def x "src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+  def x "src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 )
-"src/main.ml" 37 750 774 "src/main.ml" 37 750 775
+"src/main.ml" 37 756 780 "src/main.ml" 37 756 781
 type(
   int
 )
 ident(
-  def y "src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+  def y "src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 )
-"src/main.ml" 37 750 777 "src/main.ml" 37 750 779
+"src/main.ml" 37 756 783 "src/main.ml" 37 756 785
 type(
   int
 )
 ident(
-  def pa "src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+  def pa "src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 )
-"src/main.ml" 37 750 770 "src/main.ml" 37 750 780
+"src/main.ml" 37 756 776 "src/main.ml" 37 756 786
 type(
   int * int * int
 )
-"src/main.ml" 37 750 782 "src/main.ml" 37 750 785
+"src/main.ml" 37 756 788 "src/main.ml" 37 756 791
 type(
   (int * int * int * int) list
 )
 ident(
-  def lab "src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+  def lab "src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 )
-"src/main.ml" 37 750 769 "src/main.ml" 37 750 786
+"src/main.ml" 37 756 775 "src/main.ml" 37 756 792
 type(
   (int * int * int) * (int * int * int * int) list
 )
-"src/main.ml" 38 790 799 "src/main.ml" 38 790 802
+"src/main.ml" 38 796 805 "src/main.ml" 38 796 808
 type(
   Segment.t list -> (int * int * int * int) list -> Segment.t list
 )
 ident(
-  def ini "src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+  def ini "src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 )
-"src/main.ml" 38 790 803 "src/main.ml" 38 790 805
+"src/main.ml" 38 796 809 "src/main.ml" 38 796 811
 type(
   Segment.t list
 )
 ident(
-  def sl "src/main.ml" 38 790 808 "src/main.ml" 40 829 891
+  def sl "src/main.ml" 38 796 814 "src/main.ml" 40 835 897
 )
-"src/main.ml" 39 817 820 "src/main.ml" 39 817 822
+"src/main.ml" 39 823 826 "src/main.ml" 39 823 828
 type(
   (int * int * int * int) list
 )
-"src/main.ml" 39 817 826 "src/main.ml" 39 817 828
+"src/main.ml" 39 823 832 "src/main.ml" 39 823 834
 type(
   Segment.t list
 )
 ident(
-  int_ref sl "src/main.ml" 38 790 803 "src/main.ml" 38 790 805
+  int_ref sl "src/main.ml" 38 796 809 "src/main.ml" 38 796 811
 )
-"src/main.ml" 40 829 833 "src/main.ml" 40 829 835
+"src/main.ml" 40 835 839 "src/main.ml" 40 835 841
 type(
   int
 )
 ident(
-  def xa "src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+  def xa "src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 )
-"src/main.ml" 40 829 837 "src/main.ml" 40 829 839
+"src/main.ml" 40 835 843 "src/main.ml" 40 835 845
 type(
   int
 )
 ident(
-  def ya "src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+  def ya "src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 )
-"src/main.ml" 40 829 841 "src/main.ml" 40 829 843
+"src/main.ml" 40 835 847 "src/main.ml" 40 835 849
 type(
   int
 )
 ident(
-  def xb "src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+  def xb "src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 )
-"src/main.ml" 40 829 845 "src/main.ml" 40 829 847
+"src/main.ml" 40 835 851 "src/main.ml" 40 835 853
 type(
   int
 )
 ident(
-  def yb "src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+  def yb "src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 )
-"src/main.ml" 40 829 832 "src/main.ml" 40 829 848
+"src/main.ml" 40 835 838 "src/main.ml" 40 835 854
 type(
   int * int * int * int
 )
-"src/main.ml" 40 829 850 "src/main.ml" 40 829 851
+"src/main.ml" 40 835 856 "src/main.ml" 40 835 857
 type(
   (int * int * int * int) list
 )
 ident(
-  def s "src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+  def s "src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 )
-"src/main.ml" 40 829 832 "src/main.ml" 40 829 851
+"src/main.ml" 40 835 838 "src/main.ml" 40 835 857
 type(
   (int * int * int * int) list
 )
-"src/main.ml" 40 829 854 "src/main.ml" 40 829 857
+"src/main.ml" 40 835 860 "src/main.ml" 40 835 863
 type(
   Segment.t list -> (int * int * int * int) list -> Segment.t list
 )
 ident(
-  int_ref ini "src/main.ml" 38 790 799 "src/main.ml" 38 790 802
+  int_ref ini "src/main.ml" 38 796 805 "src/main.ml" 38 796 808
 )
-"src/main.ml" 40 829 860 "src/main.ml" 40 829 871
+"src/main.ml" 40 835 866 "src/main.ml" 40 835 877
 type(
   int -> int -> int -> int -> Segment.t
 )
 ident(
   ext_ref Segment.new_segment
 )
-"src/main.ml" 40 829 872 "src/main.ml" 40 829 874
+"src/main.ml" 40 835 878 "src/main.ml" 40 835 880
 type(
   int
 )
 ident(
-  int_ref xa "src/main.ml" 40 829 833 "src/main.ml" 40 829 835
+  int_ref xa "src/main.ml" 40 835 839 "src/main.ml" 40 835 841
 )
-"src/main.ml" 40 829 875 "src/main.ml" 40 829 877
+"src/main.ml" 40 835 881 "src/main.ml" 40 835 883
 type(
   int
 )
 ident(
-  int_ref ya "src/main.ml" 40 829 837 "src/main.ml" 40 829 839
+  int_ref ya "src/main.ml" 40 835 843 "src/main.ml" 40 835 845
 )
-"src/main.ml" 40 829 878 "src/main.ml" 40 829 880
+"src/main.ml" 40 835 884 "src/main.ml" 40 835 886
 type(
   int
 )
 ident(
-  int_ref xb "src/main.ml" 40 829 841 "src/main.ml" 40 829 843
+  int_ref xb "src/main.ml" 40 835 847 "src/main.ml" 40 835 849
 )
-"src/main.ml" 40 829 881 "src/main.ml" 40 829 883
+"src/main.ml" 40 835 887 "src/main.ml" 40 835 889
 type(
   int
 )
 ident(
-  int_ref yb "src/main.ml" 40 829 845 "src/main.ml" 40 829 847
+  int_ref yb "src/main.ml" 40 835 851 "src/main.ml" 40 835 853
 )
-"src/main.ml" 40 829 859 "src/main.ml" 40 829 884
+"src/main.ml" 40 835 865 "src/main.ml" 40 835 890
 call(
   stack
 )
 type(
   Segment.t
 )
-"src/main.ml" 40 829 886 "src/main.ml" 40 829 888
+"src/main.ml" 40 835 892 "src/main.ml" 40 835 894
 type(
   Segment.t list
 )
 ident(
-  int_ref sl "src/main.ml" 38 790 803 "src/main.ml" 38 790 805
+  int_ref sl "src/main.ml" 38 796 809 "src/main.ml" 38 796 811
 )
-"src/main.ml" 40 829 858 "src/main.ml" 40 829 889
+"src/main.ml" 40 835 864 "src/main.ml" 40 835 895
 type(
   Segment.t list
 )
-"src/main.ml" 40 829 890 "src/main.ml" 40 829 891
+"src/main.ml" 40 835 896 "src/main.ml" 40 835 897
 type(
   (int * int * int * int) list
 )
 ident(
-  int_ref s "src/main.ml" 40 829 850 "src/main.ml" 40 829 851
+  int_ref s "src/main.ml" 40 835 856 "src/main.ml" 40 835 857
 )
-"src/main.ml" 40 829 854 "src/main.ml" 40 829 891
+"src/main.ml" 40 835 860 "src/main.ml" 40 835 897
 call(
   tail
 )
 type(
   Segment.t list
 )
-"src/main.ml" 38 790 808 "src/main.ml" 40 829 891
+"src/main.ml" 38 796 814 "src/main.ml" 40 835 897
 type(
   (int * int * int * int) list -> Segment.t list
 )
-"src/main.ml" 42 896 901 "src/main.ml" 42 896 902
+"src/main.ml" 42 902 907 "src/main.ml" 42 902 908
 type(
   Player.t
 )
 ident(
-  def p "src/main.ml" 43 938 939 "src/main.ml" 43 938 951
+  def p "src/main.ml" 43 944 945 "src/main.ml" 43 944 957
 )
-"src/main.ml" 42 896 905 "src/main.ml" 42 896 915
+"src/main.ml" 42 902 911 "src/main.ml" 42 902 921
 type(
   Point.t -> int -> Player.t
 )
 ident(
   ext_ref Player.new_player
 )
-"src/main.ml" 42 896 917 "src/main.ml" 42 896 926
+"src/main.ml" 42 902 923 "src/main.ml" 42 902 932
 type(
   int -> int -> Point.t
 )
 ident(
   ext_ref Point.new_point
 )
-"src/main.ml" 42 896 927 "src/main.ml" 42 896 928
+"src/main.ml" 42 902 933 "src/main.ml" 42 902 934
 type(
   int
 )
 ident(
-  int_ref x "src/main.ml" 37 750 771 "src/main.ml" 37 750 772
+  int_ref x "src/main.ml" 37 756 777 "src/main.ml" 37 756 778
 )
-"src/main.ml" 42 896 929 "src/main.ml" 42 896 930
+"src/main.ml" 42 902 935 "src/main.ml" 42 902 936
 type(
   int
 )
 ident(
-  int_ref y "src/main.ml" 37 750 774 "src/main.ml" 37 750 775
+  int_ref y "src/main.ml" 37 756 780 "src/main.ml" 37 756 781
 )
-"src/main.ml" 42 896 916 "src/main.ml" 42 896 931
+"src/main.ml" 42 902 922 "src/main.ml" 42 902 937
 call(
   stack
 )
 type(
   Point.t
 )
-"src/main.ml" 42 896 932 "src/main.ml" 42 896 934
+"src/main.ml" 42 902 938 "src/main.ml" 42 902 940
 type(
   int
 )
 ident(
-  int_ref pa "src/main.ml" 37 750 777 "src/main.ml" 37 750 779
+  int_ref pa "src/main.ml" 37 756 783 "src/main.ml" 37 756 785
 )
-"src/main.ml" 42 896 905 "src/main.ml" 42 896 934
+"src/main.ml" 42 902 911 "src/main.ml" 42 902 940
 call(
   stack
 )
 type(
   Player.t
 )
-"src/main.ml" 43 938 939 "src/main.ml" 43 938 940
+"src/main.ml" 43 944 945 "src/main.ml" 43 944 946
 type(
   Player.t
 )
 ident(
-  int_ref p "src/main.ml" 42 896 901 "src/main.ml" 42 896 902
+  int_ref p "src/main.ml" 42 902 907 "src/main.ml" 42 902 908
 )
-"src/main.ml" 43 938 941 "src/main.ml" 43 938 944
+"src/main.ml" 43 944 947 "src/main.ml" 43 944 950
 type(
   Segment.t list -> (int * int * int * int) list -> Segment.t list
 )
 ident(
-  int_ref ini "src/main.ml" 38 790 799 "src/main.ml" 38 790 802
+  int_ref ini "src/main.ml" 38 796 805 "src/main.ml" 38 796 808
 )
-"src/main.ml" 43 938 945 "src/main.ml" 43 938 947
+"src/main.ml" 43 944 951 "src/main.ml" 43 944 953
 type(
   Segment.t list
 )
-"src/main.ml" 43 938 948 "src/main.ml" 43 938 951
+"src/main.ml" 43 944 954 "src/main.ml" 43 944 957
 type(
   (int * int * int * int) list
 )
 ident(
-  int_ref lab "src/main.ml" 37 750 782 "src/main.ml" 37 750 785
+  int_ref lab "src/main.ml" 37 756 788 "src/main.ml" 37 756 791
 )
-"src/main.ml" 43 938 941 "src/main.ml" 43 938 951
+"src/main.ml" 43 944 947 "src/main.ml" 43 944 957
 call(
   stack
 )
 type(
   Segment.t list
 )
-"src/main.ml" 43 938 939 "src/main.ml" 43 938 951
+"src/main.ml" 43 944 945 "src/main.ml" 43 944 957
 type(
   Player.t * Segment.t list
 )
-"src/main.ml" 42 896 897 "src/main.ml" 43 938 951
+"src/main.ml" 42 902 903 "src/main.ml" 43 944 957
 type(
   Player.t * Segment.t list
 )
-"src/main.ml" 38 790 791 "src/main.ml" 43 938 951
+"src/main.ml" 38 796 797 "src/main.ml" 43 944 957
 type(
   Player.t * Segment.t list
+)
+"src/main.ml" 46 962 966 "src/main.ml" 46 962 968
+type(
+  unit
+)
+"src/main.ml" 47 972 977 "src/main.ml" 47 972 978
+type(
+  Player.t
+)
+ident(
+  def p "src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+)
+"src/main.ml" 47 972 980 "src/main.ml" 47 972 983
+type(
+  Segment.t list
+)
+ident(
+  def lab "src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+)
+"src/main.ml" 47 972 977 "src/main.ml" 47 972 983
+type(
+  Player.t * Segment.t list
+)
+"src/main.ml" 47 972 986 "src/main.ml" 47 972 1000
+type(
+  (int * int * int) * (int * int * int * int) list ->
+  Player.t * Segment.t list
+)
+ident(
+  int_ref initialisation "src/main.ml" 37 756 760 "src/main.ml" 37 756 774
+)
+"src/main.ml" 47 972 1002 "src/main.ml" 47 972 1020
+type(
+  in_channel -> (int * int * int) * (int * int * int * int) list
+)
+ident(
+  ext_ref Parse_lab.read_lab
+)
+"src/main.ml" 47 972 1022 "src/main.ml" 47 972 1029
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"src/main.ml" 47 972 1030 "src/main.ml" 47 972 1038
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"src/main.ml" 47 972 1040 "src/main.ml" 47 972 1041
+type(
+  int
+)
+"src/main.ml" 47 972 1030 "src/main.ml" 47 972 1042
+type(
+  string
+)
+"src/main.ml" 47 972 1021 "src/main.ml" 47 972 1043
+call(
+  stack
+)
+type(
+  in_channel
+)
+"src/main.ml" 47 972 1001 "src/main.ml" 47 972 1044
+call(
+  stack
+)
+type(
+  (int * int * int) * (int * int * int * int) list
+)
+"src/main.ml" 47 972 986 "src/main.ml" 47 972 1044
+call(
+  stack
+)
+type(
+  Player.t * Segment.t list
+)
+"src/main.ml" 48 1048 1053 "src/main.ml" 48 1048 1056
+type(
+  Bsp.t
+)
+ident(
+  def bsp "src/main.ml" 49 1080 1081 "src/main.ml" 55 1216 1240
+)
+"src/main.ml" 48 1048 1059 "src/main.ml" 48 1048 1072
+type(
+  Segment.t list -> Bsp.t
+)
+ident(
+  ext_ref Bsp.build_bsp
+)
+"src/main.ml" 48 1048 1073 "src/main.ml" 48 1048 1076
+type(
+  Segment.t list
+)
+ident(
+  int_ref lab "src/main.ml" 47 972 980 "src/main.ml" 47 972 983
+)
+"src/main.ml" 48 1048 1059 "src/main.ml" 48 1048 1076
+call(
+  stack
+)
+type(
+  Bsp.t
+)
+"src/main.ml" 49 1080 1085 "src/main.ml" 49 1080 1086
+type(
+  string
+)
+ident(
+  def s "src/main.ml" 50 1123 1124 "src/main.ml" 55 1216 1240
+)
+"src/main.ml" 49 1080 1089 "src/main.ml" 49 1080 1102
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"src/main.ml" 49 1080 1103 "src/main.ml" 49 1080 1118
+type(
+  int
+)
+ident(
+  ext_ref Render.taille
+)
+"src/main.ml" 49 1080 1089 "src/main.ml" 49 1080 1118
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 50 1123 1128 "src/main.ml" 50 1123 1129
+type(
+  string
+)
+ident(
+  def a "src/main.ml" 52 1155 1156 "src/main.ml" 55 1216 1240
+)
+"src/main.ml" 50 1123 1133 "src/main.ml" 50 1123 1136
+type(
+  string
+)
+"src/main.ml" 50 1123 1137 "src/main.ml" 50 1123 1138
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"src/main.ml" 50 1123 1139 "src/main.ml" 50 1123 1140
+type(
+  string
+)
+ident(
+  int_ref s "src/main.ml" 49 1080 1085 "src/main.ml" 49 1080 1086
+)
+"src/main.ml" 50 1123 1141 "src/main.ml" 50 1123 1142
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"src/main.ml" 50 1123 1143 "src/main.ml" 50 1123 1146
+type(
+  string
+)
+"src/main.ml" 50 1123 1147 "src/main.ml" 50 1123 1148
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"src/main.ml" 50 1123 1149 "src/main.ml" 50 1123 1150
+type(
+  string
+)
+ident(
+  int_ref s "src/main.ml" 49 1080 1085 "src/main.ml" 49 1080 1086
+)
+"src/main.ml" 50 1123 1143 "src/main.ml" 50 1123 1150
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 50 1123 1139 "src/main.ml" 50 1123 1150
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 50 1123 1133 "src/main.ml" 50 1123 1150
+call(
+  stack
+)
+type(
+  string
+)
+"src/main.ml" 52 1155 1156 "src/main.ml" 52 1155 1175
+type(
+  string -> unit
+)
+ident(
+  ext_ref Graphics.open_graph
+)
+"src/main.ml" 52 1155 1176 "src/main.ml" 52 1155 1177
+type(
+  string
+)
+ident(
+  int_ref a "src/main.ml" 50 1123 1128 "src/main.ml" 50 1123 1129
+)
+"src/main.ml" 52 1155 1156 "src/main.ml" 52 1155 1177
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 53 1179 1180 "src/main.ml" 53 1179 1196
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Graphics.auto_synchronize
+)
+"src/main.ml" 53 1179 1197 "src/main.ml" 53 1179 1202
+type(
+  bool
+)
+"src/main.ml" 53 1179 1180 "src/main.ml" 53 1179 1202
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1208
+type(
+  Player.t -> Bsp.t -> unit
+)
+ident(
+  int_ref jeu "src/main.ml" 30 573 581 "src/main.ml" 30 573 584
+)
+"src/main.ml" 54 1204 1209 "src/main.ml" 54 1204 1210
+type(
+  Player.t
+)
+ident(
+  int_ref p "src/main.ml" 47 972 977 "src/main.ml" 47 972 978
+)
+"src/main.ml" 54 1204 1211 "src/main.ml" 54 1204 1214
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp "src/main.ml" 48 1048 1053 "src/main.ml" 48 1048 1056
+)
+"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1214
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 55 1216 1217 "src/main.ml" 55 1216 1237
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Graphics.close_graph
+)
+"src/main.ml" 55 1216 1238 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 55 1216 1217 "src/main.ml" 55 1216 1240
+call(
+  stack
+)
+type(
+  unit
+)
+"src/main.ml" 54 1204 1205 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 53 1179 1180 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 52 1155 1156 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 50 1123 1124 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 49 1080 1081 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+type(
+  unit
+)
+"src/main.ml" 47 972 973 "src/main.ml" 55 1216 1240
+type(
+  unit
 )
