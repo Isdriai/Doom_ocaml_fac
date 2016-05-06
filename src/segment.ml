@@ -1,5 +1,6 @@
 open Point
 open String
+open Trigo
 (* cree deux segment *)
 
 type t = {id : string; 
@@ -13,6 +14,7 @@ type t = {id : string;
 
 type tpos = L | R | C
 
+
 let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
@@ -20,17 +22,22 @@ let compteur =
 let angleNormal xa ya xb yb = 
 	let y = float_of_int (yb - ya) in
 	let x = float_of_int (xb - xa) in
-
-	((atan (y /. x)) /. 3.14159 +. 1.) *. 10. (* calcule de l'angle de la normal et le borne entre 10 et -10*)
+	if x = 0. then 3.14159/.2.
+	else
+	atan (y /. x) (* calcule de l'angle de la normal et le borne entre 10 et -10*)
 	
 
 let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
-	let ang = truncate (angleNormal xo yo xd yd *. 10. )in
-	let igG = {x = xo - ang ; y = yo - ang} in 
-	let estG = {x = xd - ang ; y = yd - ang} in 
-	let igD = {x = xo + ang ; y = yo + ang} in 
-	let estD = {x = xd + ang ; y = yd + ang} in 
+	let ang = angleNormal xo yo xd yd in
+	let igG = {x = xo - (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
+				y = yo - (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
+	let estG = {x = xd - (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
+				y = yd - (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
+	let igD = {x = xo + (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
+				y = yo + (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
+	let estD = {x = xd + (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
+				y = yd + (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
 	let c = compteur() in 
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;

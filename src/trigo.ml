@@ -1,5 +1,6 @@
 let pi = 4. *. atan 1.
 
+let piSur2 = pi /. 2.
 let pidiv = pi /. 180.
 let ipidiv = 180. /. pi
 
