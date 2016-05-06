@@ -55,6 +55,18 @@ let construire_liste (_,lab) =
 let construire_player ((x,y,pa),_) =
 	Player.new_player (Point.new_point x y) pa
 
+
+let affichage2d p bsp =
+	let r, g, b = ref 255, ref 0, ref 255 in
+	Graphics.set_color (Graphics.rgb !r !g !b);
+	Graphics.moveto p.pos.x p.pos.y;
+	Graphics.plot p.pos.x p.pos.y; Graphics.draw_string "p";
+	let draw s = Graphics.set_color (Graphics.rgb !r !g !b); r := !r - 5;
+		Graphics.moveto s.porig.x s.porig.y; Graphics.draw_string s.id; Printf.printf "%s -> " s.id;
+		Graphics.draw_segments [|s.porig.x, s.porig.y, s.pdest.x, s.pdest.y|] in
+	Bsp.rev_parse draw bsp p.pos
+
+
 let test lab = 
 	let s1 = Segment.new_segment 0 0 1 1 in 
 	let s2 = Segment.new_segment 1 0 3 0 in 
@@ -149,7 +161,7 @@ let test lab =
 
 	Printf.printf "affichage display :\n\n";
 
-	let s = string_of_int (Render.taille) in 
+	let s = string_of_int (850) in 
 	let a =  " " ^ s ^ "x" ^ s in
 	Graphics.open_graph a;
 
@@ -196,13 +208,14 @@ let test lab =
 		Tout est ok
 	*) 
 
-	affiche_segment (List.hd l_lab);
+	
+	List.iter affiche_segment l_lab;
 	let bsp_test = Bsp.build_bsp l_lab in 
-	let player_test = Player.new_player (Point.new_point 4 (-2)) 90 in 
-	affiche_bsp_bis bsp_test; 
+	let player_test = Player.new_player (Point.new_point 350 150) 90 in 
+	affiche_bsp bsp_test; 
 	Printf.printf "\n\n";
+	affichage2d player_test bsp_test
 
-
-	Render.display bsp_test p_lab ;
+	(* Render.display bsp_test p_lab ; *)
 	
 ;;
