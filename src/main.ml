@@ -51,5 +51,6 @@ let () =
 
 	Graphics.open_graph a;
 	auto_synchronize false;
+	Graphics.sound 2000 5000;
 	jeu p bsp;
 	Graphics.close_graph ()

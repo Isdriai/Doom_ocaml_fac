@@ -84,7 +84,65 @@ let calcul_p_x cmax c =
 
 let passage_3d cmax xo yo xd yd co cd =
 
-	Printf.printf"co == %d, cd == %d\n" co cd;
+	(* let ph = 140. in 
+	let fh = 0. in 
+	let ch = 200. in
+	let co = float_of_int co_i in
+	let cd = float_of_int cd_i in
+
+	let calcul_max x = 
+		let zc =(float_of_int (taille/2)) +. (( ch -. ph )*. float_of_int(d_focale) /. float_of_int(x)) in
+		let zf =(float_of_int(taille/2)) +. ( (fh -. ph )*. float_of_int(d_focale) /.float_of_int(x) )in
+		(zc, zf)
+	in
+
+	let (zuo, zlo) = calcul_max xo in
+	let (zud, zld) = calcul_max xd in
+
+	let delta_u = (zud -. zuo ) /. (cd -. co) in
+	let delta_l = (zld -. zlo) /. ( cd -. co ) in 
+
+	let algo c zu zl =
+		let t = float_of_int taille in 
+		if c < 0.-.(t/.2.) then 
+		(0., zu -. ( c *. delta_u) , zl -. (c*.delta_l))
+		else if c > t-.(t/.2.) then
+		(t, zu -. (( c -. t )*.delta_u), zl -. ((c -. t)*.delta_l))
+		else 
+		(c , zu , zl)
+	in
+
+	let (x_ori, y_haut_ori, y_bas_ori) = algo cd zuo zlo in
+	let (x_dest, y_haut_dest, y_bas_dest) = algo co zud zld in
+
+	Graphics.set_color (Graphics.rgb 0 100 0);
+	Graphics.fill_poly [|
+		int_of_float x_ori, int_of_float y_haut_ori;
+		int_of_float x_ori, int_of_float y_bas_ori;
+		int_of_float x_dest, int_of_float y_bas_dest;
+		int_of_float x_dest, int_of_float y_haut_dest;
+	|];
+	Printf.printf "
+	co = %d  cd = %d
+	x ori = %f y haut ori = %f \n
+	x ori = %f y bas ori = %f \n
+	x dest = %f y bas dest = %f \n 
+	x dest = %f y haut dest = %f \n\n
+	"
+		 co_i cd_i
+		 x_ori  y_haut_ori
+		 x_ori  y_bas_ori
+		 x_dest  y_bas_dest
+		 x_dest  y_haut_dest;;
+ *)
+
+
+
+
+
+
+
+	Printf.printf"co == %d, cd == %d\n"  ;
 	let hauteur_yeux = taille/2 in 
 
 	let calcul_p_y x y =

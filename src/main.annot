@@ -751,14 +751,14 @@ type(
   Player.t
 )
 ident(
-  def p "src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+  def p "src/main.ml" 48 1048 1049 "src/main.ml" 56 1243 1267
 )
 "src/main.ml" 47 972 980 "src/main.ml" 47 972 983
 type(
   Segment.t list
 )
 ident(
-  def lab "src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+  def lab "src/main.ml" 48 1048 1049 "src/main.ml" 56 1243 1267
 )
 "src/main.ml" 47 972 977 "src/main.ml" 47 972 983
 type(
@@ -827,7 +827,7 @@ type(
   Bsp.t
 )
 ident(
-  def bsp "src/main.ml" 49 1080 1081 "src/main.ml" 55 1216 1240
+  def bsp "src/main.ml" 49 1080 1081 "src/main.ml" 56 1243 1267
 )
 "src/main.ml" 48 1048 1059 "src/main.ml" 48 1048 1072
 type(
@@ -855,7 +855,7 @@ type(
   string
 )
 ident(
-  def s "src/main.ml" 50 1123 1124 "src/main.ml" 55 1216 1240
+  def s "src/main.ml" 50 1123 1124 "src/main.ml" 56 1243 1267
 )
 "src/main.ml" 49 1080 1089 "src/main.ml" 49 1080 1102
 type(
@@ -883,7 +883,7 @@ type(
   string
 )
 ident(
-  def a "src/main.ml" 52 1155 1156 "src/main.ml" 55 1216 1240
+  def a "src/main.ml" 52 1155 1156 "src/main.ml" 56 1243 1267
 )
 "src/main.ml" 50 1123 1133 "src/main.ml" 50 1123 1136
 type(
@@ -988,77 +988,100 @@ call(
 type(
   unit
 )
-"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1208
+"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1219
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.sound
+)
+"src/main.ml" 54 1204 1220 "src/main.ml" 54 1204 1224
+type(
+  int
+)
+"src/main.ml" 54 1204 1225 "src/main.ml" 54 1204 1229
+type(
+  int
+)
+"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1229
+type(
+  unit
+)
+"src/main.ml" 55 1231 1232 "src/main.ml" 55 1231 1235
 type(
   Player.t -> Bsp.t -> unit
 )
 ident(
   int_ref jeu "src/main.ml" 30 573 581 "src/main.ml" 30 573 584
 )
-"src/main.ml" 54 1204 1209 "src/main.ml" 54 1204 1210
+"src/main.ml" 55 1231 1236 "src/main.ml" 55 1231 1237
 type(
   Player.t
 )
 ident(
   int_ref p "src/main.ml" 47 972 977 "src/main.ml" 47 972 978
 )
-"src/main.ml" 54 1204 1211 "src/main.ml" 54 1204 1214
+"src/main.ml" 55 1231 1238 "src/main.ml" 55 1231 1241
 type(
   Bsp.t
 )
 ident(
   int_ref bsp "src/main.ml" 48 1048 1053 "src/main.ml" 48 1048 1056
 )
-"src/main.ml" 54 1204 1205 "src/main.ml" 54 1204 1214
+"src/main.ml" 55 1231 1232 "src/main.ml" 55 1231 1241
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 55 1216 1217 "src/main.ml" 55 1216 1237
+"src/main.ml" 56 1243 1244 "src/main.ml" 56 1243 1264
 type(
   unit -> unit
 )
 ident(
   ext_ref Graphics.close_graph
 )
-"src/main.ml" 55 1216 1238 "src/main.ml" 55 1216 1240
+"src/main.ml" 56 1243 1265 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 55 1216 1217 "src/main.ml" 55 1216 1240
+"src/main.ml" 56 1243 1244 "src/main.ml" 56 1243 1267
 call(
   stack
 )
 type(
   unit
 )
-"src/main.ml" 54 1204 1205 "src/main.ml" 55 1216 1240
+"src/main.ml" 55 1231 1232 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 53 1179 1180 "src/main.ml" 55 1216 1240
+"src/main.ml" 54 1204 1205 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 52 1155 1156 "src/main.ml" 55 1216 1240
+"src/main.ml" 53 1179 1180 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 50 1123 1124 "src/main.ml" 55 1216 1240
+"src/main.ml" 52 1155 1156 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 49 1080 1081 "src/main.ml" 55 1216 1240
+"src/main.ml" 50 1123 1124 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 48 1048 1049 "src/main.ml" 55 1216 1240
+"src/main.ml" 49 1080 1081 "src/main.ml" 56 1243 1267
 type(
   unit
 )
-"src/main.ml" 47 972 973 "src/main.ml" 55 1216 1240
+"src/main.ml" 48 1048 1049 "src/main.ml" 56 1243 1267
+type(
+  unit
+)
+"src/main.ml" 47 972 973 "src/main.ml" 56 1243 1267
 type(
   unit
 )
