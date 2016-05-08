@@ -180,7 +180,7 @@ let passage_3d cmax xo yo xd yd co cd =
 		p_gauche.x,p_droite.y,p_droite.x,p_gauche.y;
 	|]
 
-let projection seg  =
+let projection seg p =
 
 	(*y' = ( ls / 2 ) - (( y * d ) / x *)
 	let project p =
@@ -217,10 +217,10 @@ et non plus une simple colonne par rapport a une autre colonne*)
 
 		if ctest < cmin then 
 		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmin) in
-		cmin,nw_x,nw_y
+		nw_x,nw_y,cmin
 		else if ctest > cmax then 
 		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmax) in
-		cmax,nw_x,nw_y
+		nw_x,nw_y,cmax
 		else point.x, point.y, ctest
 	in
 
@@ -231,10 +231,14 @@ et non plus une simple colonne par rapport a une autre colonne*)
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
 	| a,b when a < cmin && b < cmin -> ()
-	| a,b -> Printf.printf "angle mur avant correction == %d \n" seg.angle_mur;
+	| a,b -> Printf.printf "angle mur avant correction == %d \n
+							segment avant correction == " seg.angle_mur;
+							affiche_segment seg;
 			let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
-			Printf.printf " angle mur apres corerction == %d \n" (angle_m nw_x_orig nw_y_orig nw_x_dest nw_y_dest);
+			Printf.printf " angle mur apres corerction == %d \n
+							segment apres correction == " (angle_m nw_x_orig nw_y_orig nw_x_dest nw_y_dest);
+			affiche_segment (Segment.new_segment nw_x_orig nw_y_orig nw_x_dest nw_y_dest );
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
 (*
@@ -261,7 +265,7 @@ let affiche p = fun s ->
 
 	match clip with
 	| None -> ()
-	| Some(seg) -> (projection seg ; 
+	| Some(seg) -> (projection seg p; 
 	(* Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
 	Graphics.set_color (Graphics.rgb 255 0 0);
 	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y *))
