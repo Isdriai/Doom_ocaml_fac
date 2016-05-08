@@ -211,15 +211,16 @@ et non plus une simple colonne par rapport a une autre colonne*)
 			let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
 			let xi = truncate (xa +. r *. (xb -. xa))  in 
 		    let yi = truncate (ya +. r *. (yb -. ya))  in 
-
+		    Printf.printf " xi == %d yi == %d\n " xi yi ;
 		    (xi,yi)
+
 		in
 
 		if ctest < cmin then 
-		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmin) in
+		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 (d_focale) cmin) in
 		nw_x,nw_y,cmin
 		else if ctest > cmax then 
-		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmax) in
+		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 (d_focale) cmax) in
 		nw_x,nw_y,cmax
 		else point.x, point.y, ctest
 	in
