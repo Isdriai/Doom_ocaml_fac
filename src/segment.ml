@@ -72,24 +72,11 @@ let split_segment d s =
 	| L,L 
 	| L,C 
 	| C,L -> (Some (s), None)
-	| _,_ -> 
-	
-	let xa = float_of_int s.porig.x in 
-	let xb = float_of_int s.pdest.x in 
-	let ya = float_of_int s.porig.y in 
-	let yb = float_of_int s.pdest.y in 
-	let xc = float_of_int d.porig.x in 
-	let xd = float_of_int d.pdest.x in 
-	let yc = float_of_int d.porig.y in 
-	let yd = float_of_int d.pdest.y in 
+	| _,_ ->  
 
-	let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
+    let (xi,yi) = Trigo.point_intersection_droites s d in 
 
-	let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
-	let xi = truncate (xa +. r *. (xb -. xa))  in 
-    let yi = truncate (ya +. r *. (yb -. ya))  in 
-
-    (Some (new_segment (truncate xa) (truncate ya) xi yi), Some(new_segment xi yi (truncate xb) (truncate yb)))	
+    (Some (new_segment s.porig.x s.porig.y xi yi), Some(new_segment xi yi s.pdest.x s.pdest.y))	
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 

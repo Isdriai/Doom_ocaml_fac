@@ -60,11 +60,6 @@ let draw_line xo yo xd yd =
 	let decal = 0 in
 	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
 
-let correction_c cmax cmin ctest = 
-	if ctest < cmin then cmin
-	else if ctest > cmax then cmax
-	else ctest
-
 
 let distance x y =
 	let xf = float_of_int x in
@@ -196,6 +191,14 @@ let projection seg  =
 	Printf.printf"d == %d \n cmax == %d, cmin == %d\n" d_focale cmax cmin;
 	let c_p_orig = project seg.porig in
 	let c_p_dest = project seg.pdest in
+
+(*correction devra renvoyer deux points ainsi que deux nouvelles colonnes par rapport à un segment 
+et non plus une simple colonne par rapport a une autre colonne*)
+	let correction_c cmax cmin ctest = 
+		if ctest < cmin then cmin
+		else if ctest > cmax then cmax
+		else ctest
+	in
 
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
