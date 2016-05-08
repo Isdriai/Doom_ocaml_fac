@@ -194,17 +194,25 @@ let projection seg  =
 
 (*correction devra renvoyer deux points ainsi que deux nouvelles colonnes par rapport à un segment 
 et non plus une simple colonne par rapport a une autre colonne*)
-	let correction_c cmax cmin ctest = 
-		if ctest < cmin then cmin
-		else if ctest > cmax then cmax
-		else ctest
+	let correction_c cmax cmin point ctest = 
+
+
+		if ctest < cmin then 
+		let (nw_x,nw_y) = Trigo.point_intersection_droites seg (Segment.new_segment 0 0 0 cmin) in
+		cmin,nw_x,nw_y
+		else if ctest > cmax then 
+		let (nw_x,nw_y) = Trigo.point_intersection_droites seg (Segment.new_segment 0 0 0 cmax) in
+		cmax,nw_x,nw_y
+		else point.x, point.y, ctest
 	in
 
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
 	| a,b when a < cmin && b < cmin -> ()
 	| a,b -> let cor = (correction_c cmax cmin) in 
-			passage_3d cmax seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y (cor c_p_dest) (cor c_p_orig)
+			 let (nw_x_orig,nw_y_orig,nw_c_p_orig) = cor seg.porig c_p_orig in
+			 let (nw_x_dest,nw_y_dest,nw_c_p_dest) = cor seg.dest c_p_dest in 
+			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
 (*
 devra renvoyer un quator de points qui representeront les 4 coins du mur à afficher
