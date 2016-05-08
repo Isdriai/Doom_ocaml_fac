@@ -1,2781 +1,4236 @@
-"src/segment.ml" 18 330 334 "src/segment.ml" 18 330 342
+"src/segment.ml" 18 356 360 "src/segment.ml" 18 356 368
 type(
   unit -> int
 )
 ident(
-  def compteur "src/segment.ml" 22 404 404 "src/segment.ml" 1 0 -1
+  def compteur "src/segment.ml" 22 430 430 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 19 345 350 "src/segment.ml" 19 345 354
+"src/segment.ml" 19 371 376 "src/segment.ml" 19 371 380
 type(
   int ref
 )
 ident(
-  def etat "src/segment.ml" 20 366 367 "src/segment.ml" 20 366 401
+  def etat "src/segment.ml" 20 392 393 "src/segment.ml" 20 392 427
 )
-"src/segment.ml" 19 345 357 "src/segment.ml" 19 345 360
+"src/segment.ml" 19 371 383 "src/segment.ml" 19 371 386
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"src/segment.ml" 19 345 361 "src/segment.ml" 19 345 362
+"src/segment.ml" 19 371 387 "src/segment.ml" 19 371 388
 type(
   int
 )
-"src/segment.ml" 19 345 357 "src/segment.ml" 19 345 362
+"src/segment.ml" 19 371 383 "src/segment.ml" 19 371 388
 type(
   int ref
 )
-"src/segment.ml" 20 366 371 "src/segment.ml" 20 366 373
+"src/segment.ml" 20 392 397 "src/segment.ml" 20 392 399
 type(
   unit
 )
-"src/segment.ml" 20 366 377 "src/segment.ml" 20 366 381
+"src/segment.ml" 20 392 403 "src/segment.ml" 20 392 407
 type(
   int ref
 )
 ident(
-  int_ref etat "src/segment.ml" 19 345 350 "src/segment.ml" 19 345 354
+  int_ref etat "src/segment.ml" 19 371 376 "src/segment.ml" 19 371 380
 )
-"src/segment.ml" 20 366 382 "src/segment.ml" 20 366 384
+"src/segment.ml" 20 392 408 "src/segment.ml" 20 392 410
 type(
   int ref -> int -> unit
 )
 ident(
   ext_ref Pervasives.( := )
 )
-"src/segment.ml" 20 366 385 "src/segment.ml" 20 366 386
+"src/segment.ml" 20 392 411 "src/segment.ml" 20 392 412
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"src/segment.ml" 20 366 386 "src/segment.ml" 20 366 390
+"src/segment.ml" 20 392 412 "src/segment.ml" 20 392 416
 type(
   int ref
 )
 ident(
-  int_ref etat "src/segment.ml" 19 345 350 "src/segment.ml" 19 345 354
+  int_ref etat "src/segment.ml" 19 371 376 "src/segment.ml" 19 371 380
 )
-"src/segment.ml" 20 366 385 "src/segment.ml" 20 366 390
+"src/segment.ml" 20 392 411 "src/segment.ml" 20 392 416
 type(
   int
 )
-"src/segment.ml" 20 366 391 "src/segment.ml" 20 366 392
+"src/segment.ml" 20 392 417 "src/segment.ml" 20 392 418
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/segment.ml" 20 366 393 "src/segment.ml" 20 366 394
+"src/segment.ml" 20 392 419 "src/segment.ml" 20 392 420
 type(
   int
 )
-"src/segment.ml" 20 366 385 "src/segment.ml" 20 366 394
+"src/segment.ml" 20 392 411 "src/segment.ml" 20 392 420
 type(
   int
 )
-"src/segment.ml" 20 366 377 "src/segment.ml" 20 366 394
+"src/segment.ml" 20 392 403 "src/segment.ml" 20 392 420
 type(
   unit
 )
-"src/segment.ml" 20 366 396 "src/segment.ml" 20 366 397
+"src/segment.ml" 20 392 422 "src/segment.ml" 20 392 423
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"src/segment.ml" 20 366 397 "src/segment.ml" 20 366 401
+"src/segment.ml" 20 392 423 "src/segment.ml" 20 392 427
 type(
   int ref
 )
 ident(
-  int_ref etat "src/segment.ml" 19 345 350 "src/segment.ml" 19 345 354
+  int_ref etat "src/segment.ml" 19 371 376 "src/segment.ml" 19 371 380
 )
-"src/segment.ml" 20 366 396 "src/segment.ml" 20 366 401
+"src/segment.ml" 20 392 422 "src/segment.ml" 20 392 427
 type(
   int
 )
-"src/segment.ml" 20 366 377 "src/segment.ml" 20 366 401
+"src/segment.ml" 20 392 403 "src/segment.ml" 20 392 427
 type(
   int
 )
-"src/segment.ml" 20 366 367 "src/segment.ml" 20 366 401
+"src/segment.ml" 20 392 393 "src/segment.ml" 20 392 427
 type(
   unit -> int
 )
-"src/segment.ml" 19 345 346 "src/segment.ml" 20 366 401
+"src/segment.ml" 19 371 372 "src/segment.ml" 20 392 427
 type(
   unit -> int
 )
-"src/segment.ml" 22 404 408 "src/segment.ml" 22 404 419
+"src/segment.ml" 22 430 434 "src/segment.ml" 22 430 445
 type(
   int -> int -> int -> int -> float
 )
 ident(
-  def angleNormal "src/segment.ml" 30 622 622 "src/segment.ml" 1 0 -1
+  def angleNormal "src/segment.ml" 30 648 648 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 22 404 420 "src/segment.ml" 22 404 422
+"src/segment.ml" 22 430 446 "src/segment.ml" 22 430 448
 type(
   int
 )
 ident(
-  def xa "src/segment.ml" 22 404 423 "src/segment.ml" 27 539 553
+  def xa "src/segment.ml" 22 430 449 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 22 404 423 "src/segment.ml" 22 404 425
+"src/segment.ml" 22 430 449 "src/segment.ml" 22 430 451
 type(
   int
 )
 ident(
-  def ya "src/segment.ml" 22 404 426 "src/segment.ml" 27 539 553
+  def ya "src/segment.ml" 22 430 452 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 22 404 426 "src/segment.ml" 22 404 428
+"src/segment.ml" 22 430 452 "src/segment.ml" 22 430 454
 type(
   int
 )
 ident(
-  def xb "src/segment.ml" 22 404 429 "src/segment.ml" 27 539 553
+  def xb "src/segment.ml" 22 430 455 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 22 404 429 "src/segment.ml" 22 404 431
+"src/segment.ml" 22 430 455 "src/segment.ml" 22 430 457
 type(
   int
 )
 ident(
-  def yb "src/segment.ml" 23 435 436 "src/segment.ml" 27 539 553
+  def yb "src/segment.ml" 23 461 462 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 23 435 440 "src/segment.ml" 23 435 441
+"src/segment.ml" 23 461 466 "src/segment.ml" 23 461 467
 type(
   float
 )
 ident(
-  def y "src/segment.ml" 24 470 471 "src/segment.ml" 27 539 553
+  def y "src/segment.ml" 24 496 497 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 23 435 444 "src/segment.ml" 23 435 456
+"src/segment.ml" 23 461 470 "src/segment.ml" 23 461 482
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/segment.ml" 23 435 458 "src/segment.ml" 23 435 460
+"src/segment.ml" 23 461 484 "src/segment.ml" 23 461 486
 type(
   int
 )
 ident(
-  int_ref yb "src/segment.ml" 22 404 429 "src/segment.ml" 22 404 431
+  int_ref yb "src/segment.ml" 22 430 455 "src/segment.ml" 22 430 457
 )
-"src/segment.ml" 23 435 461 "src/segment.ml" 23 435 462
+"src/segment.ml" 23 461 487 "src/segment.ml" 23 461 488
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 23 435 463 "src/segment.ml" 23 435 465
+"src/segment.ml" 23 461 489 "src/segment.ml" 23 461 491
 type(
   int
 )
 ident(
-  int_ref ya "src/segment.ml" 22 404 423 "src/segment.ml" 22 404 425
+  int_ref ya "src/segment.ml" 22 430 449 "src/segment.ml" 22 430 451
 )
-"src/segment.ml" 23 435 457 "src/segment.ml" 23 435 466
+"src/segment.ml" 23 461 483 "src/segment.ml" 23 461 492
 type(
   int
 )
-"src/segment.ml" 23 435 444 "src/segment.ml" 23 435 466
+"src/segment.ml" 23 461 470 "src/segment.ml" 23 461 492
 type(
   float
 )
-"src/segment.ml" 24 470 475 "src/segment.ml" 24 470 476
+"src/segment.ml" 24 496 501 "src/segment.ml" 24 496 502
 type(
   float
 )
 ident(
-  def x "src/segment.ml" 25 505 506 "src/segment.ml" 27 539 553
+  def x "src/segment.ml" 25 531 532 "src/segment.ml" 27 565 579
 )
-"src/segment.ml" 24 470 479 "src/segment.ml" 24 470 491
+"src/segment.ml" 24 496 505 "src/segment.ml" 24 496 517
 type(
   int -> float
 )
 ident(
   ext_ref Pervasives.float_of_int
 )
-"src/segment.ml" 24 470 493 "src/segment.ml" 24 470 495
+"src/segment.ml" 24 496 519 "src/segment.ml" 24 496 521
 type(
   int
 )
 ident(
-  int_ref xb "src/segment.ml" 22 404 426 "src/segment.ml" 22 404 428
+  int_ref xb "src/segment.ml" 22 430 452 "src/segment.ml" 22 430 454
 )
-"src/segment.ml" 24 470 496 "src/segment.ml" 24 470 497
+"src/segment.ml" 24 496 522 "src/segment.ml" 24 496 523
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 24 470 498 "src/segment.ml" 24 470 500
+"src/segment.ml" 24 496 524 "src/segment.ml" 24 496 526
 type(
   int
 )
 ident(
-  int_ref xa "src/segment.ml" 22 404 420 "src/segment.ml" 22 404 422
+  int_ref xa "src/segment.ml" 22 430 446 "src/segment.ml" 22 430 448
 )
-"src/segment.ml" 24 470 492 "src/segment.ml" 24 470 501
+"src/segment.ml" 24 496 518 "src/segment.ml" 24 496 527
 type(
   int
 )
-"src/segment.ml" 24 470 479 "src/segment.ml" 24 470 501
+"src/segment.ml" 24 496 505 "src/segment.ml" 24 496 527
 type(
   float
 )
-"src/segment.ml" 25 505 509 "src/segment.ml" 25 505 510
+"src/segment.ml" 25 531 535 "src/segment.ml" 25 531 536
 type(
   float
 )
 ident(
-  int_ref x "src/segment.ml" 24 470 475 "src/segment.ml" 24 470 476
+  int_ref x "src/segment.ml" 24 496 501 "src/segment.ml" 24 496 502
 )
-"src/segment.ml" 25 505 511 "src/segment.ml" 25 505 512
+"src/segment.ml" 25 531 537 "src/segment.ml" 25 531 538
 type(
   float -> float -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"src/segment.ml" 25 505 513 "src/segment.ml" 25 505 515
+"src/segment.ml" 25 531 539 "src/segment.ml" 25 531 541
 type(
   float
 )
-"src/segment.ml" 25 505 509 "src/segment.ml" 25 505 515
+"src/segment.ml" 25 531 535 "src/segment.ml" 25 531 541
 type(
   bool
 )
-"src/segment.ml" 25 505 521 "src/segment.ml" 25 505 528
+"src/segment.ml" 25 531 547 "src/segment.ml" 25 531 554
 type(
   float
 )
-"src/segment.ml" 25 505 528 "src/segment.ml" 25 505 530
+"src/segment.ml" 25 531 554 "src/segment.ml" 25 531 556
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/segment.ml" 25 505 530 "src/segment.ml" 25 505 532
+"src/segment.ml" 25 531 556 "src/segment.ml" 25 531 558
 type(
   float
 )
-"src/segment.ml" 25 505 521 "src/segment.ml" 25 505 532
+"src/segment.ml" 25 531 547 "src/segment.ml" 25 531 558
 type(
   float
 )
-"src/segment.ml" 27 539 540 "src/segment.ml" 27 539 544
+"src/segment.ml" 27 565 566 "src/segment.ml" 27 565 570
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.atan
 )
-"src/segment.ml" 27 539 546 "src/segment.ml" 27 539 547
+"src/segment.ml" 27 565 572 "src/segment.ml" 27 565 573
 type(
   float
 )
 ident(
-  int_ref y "src/segment.ml" 23 435 440 "src/segment.ml" 23 435 441
+  int_ref y "src/segment.ml" 23 461 466 "src/segment.ml" 23 461 467
 )
-"src/segment.ml" 27 539 548 "src/segment.ml" 27 539 550
+"src/segment.ml" 27 565 574 "src/segment.ml" 27 565 576
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"src/segment.ml" 27 539 551 "src/segment.ml" 27 539 552
+"src/segment.ml" 27 565 577 "src/segment.ml" 27 565 578
 type(
   float
 )
 ident(
-  int_ref x "src/segment.ml" 24 470 475 "src/segment.ml" 24 470 476
+  int_ref x "src/segment.ml" 24 496 501 "src/segment.ml" 24 496 502
 )
-"src/segment.ml" 27 539 545 "src/segment.ml" 27 539 553
+"src/segment.ml" 27 565 571 "src/segment.ml" 27 565 579
 type(
   float
 )
-"src/segment.ml" 27 539 540 "src/segment.ml" 27 539 553
+"src/segment.ml" 27 565 566 "src/segment.ml" 27 565 579
 type(
   float
 )
-"src/segment.ml" 25 505 506 "src/segment.ml" 27 539 553
+"src/segment.ml" 25 531 532 "src/segment.ml" 27 565 579
 type(
   float
 )
-"src/segment.ml" 24 470 471 "src/segment.ml" 27 539 553
+"src/segment.ml" 24 496 497 "src/segment.ml" 27 565 579
 type(
   float
 )
-"src/segment.ml" 23 435 436 "src/segment.ml" 27 539 553
+"src/segment.ml" 23 461 462 "src/segment.ml" 27 565 579
 type(
   float
 )
-"src/segment.ml" 30 622 626 "src/segment.ml" 30 622 637
+"src/segment.ml" 30 648 652 "src/segment.ml" 30 648 663
 type(
   int -> int -> int -> int -> t
 )
 ident(
-  def new_segment "src/segment.ml" 47 1524 1524 "src/segment.ml" 1 0 -1
+  def new_segment "src/segment.ml" 49 1660 1660 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 30 622 638 "src/segment.ml" 30 622 640
+"src/segment.ml" 30 648 664 "src/segment.ml" 30 648 666
 type(
   int
 )
 ident(
-  def xo "src/segment.ml" 30 622 641 "src/segment.ml" 45 1517 1522
+  def xo "src/segment.ml" 30 648 667 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 30 622 641 "src/segment.ml" 30 622 643
+"src/segment.ml" 30 648 667 "src/segment.ml" 30 648 669
 type(
   int
 )
 ident(
-  def yo "src/segment.ml" 30 622 644 "src/segment.ml" 45 1517 1522
+  def yo "src/segment.ml" 30 648 670 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 30 622 644 "src/segment.ml" 30 622 646
+"src/segment.ml" 30 648 670 "src/segment.ml" 30 648 672
 type(
   int
 )
 ident(
-  def xd "src/segment.ml" 30 622 647 "src/segment.ml" 45 1517 1522
+  def xd "src/segment.ml" 30 648 673 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 30 622 647 "src/segment.ml" 30 622 649
+"src/segment.ml" 30 648 673 "src/segment.ml" 30 648 675
 type(
   int
 )
 ident(
-  def yd "src/segment.ml" 30 622 652 "src/segment.ml" 45 1517 1522
+  def yd "src/segment.ml" 30 648 678 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 30 622 656 "src/segment.ml" 30 622 658
+"src/segment.ml" 30 648 682 "src/segment.ml" 30 648 684
 type(
   Point.t
 )
 ident(
-  def ig "src/segment.ml" 31 683 684 "src/segment.ml" 45 1517 1522
+  def ig "src/segment.ml" 31 709 710 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 30 622 666 "src/segment.ml" 30 622 668
+"src/segment.ml" 30 648 692 "src/segment.ml" 30 648 694
 type(
   int
 )
 ident(
-  int_ref xo "src/segment.ml" 30 622 638 "src/segment.ml" 30 622 640
+  int_ref xo "src/segment.ml" 30 648 664 "src/segment.ml" 30 648 666
 )
-"src/segment.ml" 30 622 675 "src/segment.ml" 30 622 677
+"src/segment.ml" 30 648 701 "src/segment.ml" 30 648 703
 type(
   int
 )
 ident(
-  int_ref yo "src/segment.ml" 30 622 641 "src/segment.ml" 30 622 643
+  int_ref yo "src/segment.ml" 30 648 667 "src/segment.ml" 30 648 669
 )
-"src/segment.ml" 30 622 661 "src/segment.ml" 30 622 678
+"src/segment.ml" 30 648 687 "src/segment.ml" 30 648 704
 type(
   Point.t
 )
-"src/segment.ml" 31 683 688 "src/segment.ml" 31 683 691
+"src/segment.ml" 31 709 714 "src/segment.ml" 31 709 717
 type(
   Point.t
 )
 ident(
-  def est "src/segment.ml" 32 716 717 "src/segment.ml" 45 1517 1522
+  def est "src/segment.ml" 32 742 743 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 31 683 699 "src/segment.ml" 31 683 701
+"src/segment.ml" 31 709 725 "src/segment.ml" 31 709 727
 type(
   int
 )
 ident(
-  int_ref xd "src/segment.ml" 30 622 644 "src/segment.ml" 30 622 646
+  int_ref xd "src/segment.ml" 30 648 670 "src/segment.ml" 30 648 672
 )
-"src/segment.ml" 31 683 708 "src/segment.ml" 31 683 710
+"src/segment.ml" 31 709 734 "src/segment.ml" 31 709 736
 type(
   int
 )
 ident(
-  int_ref yd "src/segment.ml" 30 622 647 "src/segment.ml" 30 622 649
+  int_ref yd "src/segment.ml" 30 648 673 "src/segment.ml" 30 648 675
 )
-"src/segment.ml" 31 683 694 "src/segment.ml" 31 683 711
+"src/segment.ml" 31 709 720 "src/segment.ml" 31 709 737
 type(
   Point.t
 )
-"src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+"src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 type(
   float
 )
 ident(
-  def ang "src/segment.ml" 33 754 755 "src/segment.ml" 45 1517 1522
+  def ang "src/segment.ml" 33 780 781 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 32 716 727 "src/segment.ml" 32 716 738
+"src/segment.ml" 32 742 753 "src/segment.ml" 32 742 764
 type(
   int -> int -> int -> int -> float
 )
 ident(
-  int_ref angleNormal "src/segment.ml" 22 404 408 "src/segment.ml" 22 404 419
+  int_ref angleNormal "src/segment.ml" 22 430 434 "src/segment.ml" 22 430 445
 )
-"src/segment.ml" 32 716 739 "src/segment.ml" 32 716 741
+"src/segment.ml" 32 742 765 "src/segment.ml" 32 742 767
 type(
   int
 )
 ident(
-  int_ref xo "src/segment.ml" 30 622 638 "src/segment.ml" 30 622 640
+  int_ref xo "src/segment.ml" 30 648 664 "src/segment.ml" 30 648 666
 )
-"src/segment.ml" 32 716 742 "src/segment.ml" 32 716 744
+"src/segment.ml" 32 742 768 "src/segment.ml" 32 742 770
 type(
   int
 )
 ident(
-  int_ref yo "src/segment.ml" 30 622 641 "src/segment.ml" 30 622 643
+  int_ref yo "src/segment.ml" 30 648 667 "src/segment.ml" 30 648 669
 )
-"src/segment.ml" 32 716 745 "src/segment.ml" 32 716 747
+"src/segment.ml" 32 742 771 "src/segment.ml" 32 742 773
 type(
   int
 )
 ident(
-  int_ref xd "src/segment.ml" 30 622 644 "src/segment.ml" 30 622 646
+  int_ref xd "src/segment.ml" 30 648 670 "src/segment.ml" 30 648 672
 )
-"src/segment.ml" 32 716 748 "src/segment.ml" 32 716 750
+"src/segment.ml" 32 742 774 "src/segment.ml" 32 742 776
 type(
   int
 )
 ident(
-  int_ref yd "src/segment.ml" 30 622 647 "src/segment.ml" 30 622 649
+  int_ref yd "src/segment.ml" 30 648 673 "src/segment.ml" 30 648 675
 )
-"src/segment.ml" 32 716 727 "src/segment.ml" 32 716 750
+"src/segment.ml" 32 742 753 "src/segment.ml" 32 742 776
+call(
+  stack
+)
 type(
   float
 )
-"src/segment.ml" 33 754 759 "src/segment.ml" 33 754 762
+"src/segment.ml" 33 780 785 "src/segment.ml" 33 780 788
 type(
   Point.t
 )
 ident(
-  def igG "src/segment.ml" 35 896 897 "src/segment.ml" 45 1517 1522
+  def igG "src/segment.ml" 35 922 923 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 33 754 770 "src/segment.ml" 33 754 772
+"src/segment.ml" 33 780 796 "src/segment.ml" 33 780 798
 type(
   int
 )
 ident(
-  int_ref xo "src/segment.ml" 30 622 638 "src/segment.ml" 30 622 640
+  int_ref xo "src/segment.ml" 30 648 664 "src/segment.ml" 30 648 666
 )
-"src/segment.ml" 33 754 773 "src/segment.ml" 33 754 774
+"src/segment.ml" 33 780 799 "src/segment.ml" 33 780 800
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 33 754 776 "src/segment.ml" 33 754 788
+"src/segment.ml" 33 780 802 "src/segment.ml" 33 780 814
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 33 754 790 "src/segment.ml" 33 754 793
+"src/segment.ml" 33 780 816 "src/segment.ml" 33 780 819
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.cos
 )
-"src/segment.ml" 33 754 795 "src/segment.ml" 33 754 798
+"src/segment.ml" 33 780 821 "src/segment.ml" 33 780 824
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 33 754 799 "src/segment.ml" 33 754 801
+"src/segment.ml" 33 780 825 "src/segment.ml" 33 780 827
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 33 754 802 "src/segment.ml" 33 754 814
+"src/segment.ml" 33 780 828 "src/segment.ml" 33 780 840
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 33 754 794 "src/segment.ml" 33 754 815
+"src/segment.ml" 33 780 820 "src/segment.ml" 33 780 841
 type(
   float
 )
-"src/segment.ml" 33 754 790 "src/segment.ml" 33 754 815
+"src/segment.ml" 33 780 816 "src/segment.ml" 33 780 841
 type(
   float
 )
-"src/segment.ml" 33 754 816 "src/segment.ml" 33 754 818
+"src/segment.ml" 33 780 842 "src/segment.ml" 33 780 844
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 33 754 819 "src/segment.ml" 33 754 822
+"src/segment.ml" 33 780 845 "src/segment.ml" 33 780 848
 type(
   float
 )
-"src/segment.ml" 33 754 789 "src/segment.ml" 33 754 823
+"src/segment.ml" 33 780 815 "src/segment.ml" 33 780 849
 type(
   float
 )
-"src/segment.ml" 33 754 775 "src/segment.ml" 33 754 824
+"src/segment.ml" 33 780 801 "src/segment.ml" 33 780 850
 type(
   int
 )
-"src/segment.ml" 33 754 770 "src/segment.ml" 33 754 824
+"src/segment.ml" 33 780 796 "src/segment.ml" 33 780 850
 type(
   int
 )
-"src/segment.ml" 34 828 836 "src/segment.ml" 34 828 838
+"src/segment.ml" 34 854 862 "src/segment.ml" 34 854 864
 type(
   int
 )
 ident(
-  int_ref yo "src/segment.ml" 30 622 641 "src/segment.ml" 30 622 643
+  int_ref yo "src/segment.ml" 30 648 667 "src/segment.ml" 30 648 669
 )
-"src/segment.ml" 34 828 839 "src/segment.ml" 34 828 840
+"src/segment.ml" 34 854 865 "src/segment.ml" 34 854 866
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 34 828 842 "src/segment.ml" 34 828 854
+"src/segment.ml" 34 854 868 "src/segment.ml" 34 854 880
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 34 828 856 "src/segment.ml" 34 828 859
+"src/segment.ml" 34 854 882 "src/segment.ml" 34 854 885
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.sin
 )
-"src/segment.ml" 34 828 861 "src/segment.ml" 34 828 864
+"src/segment.ml" 34 854 887 "src/segment.ml" 34 854 890
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 34 828 865 "src/segment.ml" 34 828 867
+"src/segment.ml" 34 854 891 "src/segment.ml" 34 854 893
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 34 828 868 "src/segment.ml" 34 828 880
+"src/segment.ml" 34 854 894 "src/segment.ml" 34 854 906
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 34 828 860 "src/segment.ml" 34 828 881
+"src/segment.ml" 34 854 886 "src/segment.ml" 34 854 907
 type(
   float
 )
-"src/segment.ml" 34 828 856 "src/segment.ml" 34 828 881
+"src/segment.ml" 34 854 882 "src/segment.ml" 34 854 907
 type(
   float
 )
-"src/segment.ml" 34 828 882 "src/segment.ml" 34 828 884
+"src/segment.ml" 34 854 908 "src/segment.ml" 34 854 910
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 34 828 885 "src/segment.ml" 34 828 888
+"src/segment.ml" 34 854 911 "src/segment.ml" 34 854 914
 type(
   float
 )
-"src/segment.ml" 34 828 855 "src/segment.ml" 34 828 889
+"src/segment.ml" 34 854 881 "src/segment.ml" 34 854 915
 type(
   float
 )
-"src/segment.ml" 34 828 841 "src/segment.ml" 34 828 890
+"src/segment.ml" 34 854 867 "src/segment.ml" 34 854 916
 type(
   int
 )
-"src/segment.ml" 34 828 836 "src/segment.ml" 34 828 890
+"src/segment.ml" 34 854 862 "src/segment.ml" 34 854 916
 type(
   int
 )
-"src/segment.ml" 33 754 765 "src/segment.ml" 34 828 891
+"src/segment.ml" 33 780 791 "src/segment.ml" 34 854 917
 type(
   Point.t
 )
-"src/segment.ml" 35 896 901 "src/segment.ml" 35 896 905
+"src/segment.ml" 35 922 927 "src/segment.ml" 35 922 931
 type(
   Point.t
 )
 ident(
-  def estG "src/segment.ml" 37 1039 1040 "src/segment.ml" 45 1517 1522
+  def estG "src/segment.ml" 37 1065 1066 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 35 896 913 "src/segment.ml" 35 896 915
+"src/segment.ml" 35 922 939 "src/segment.ml" 35 922 941
 type(
   int
 )
 ident(
-  int_ref xd "src/segment.ml" 30 622 644 "src/segment.ml" 30 622 646
+  int_ref xd "src/segment.ml" 30 648 670 "src/segment.ml" 30 648 672
 )
-"src/segment.ml" 35 896 916 "src/segment.ml" 35 896 917
+"src/segment.ml" 35 922 942 "src/segment.ml" 35 922 943
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 35 896 919 "src/segment.ml" 35 896 931
+"src/segment.ml" 35 922 945 "src/segment.ml" 35 922 957
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 35 896 933 "src/segment.ml" 35 896 936
+"src/segment.ml" 35 922 959 "src/segment.ml" 35 922 962
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.cos
 )
-"src/segment.ml" 35 896 938 "src/segment.ml" 35 896 941
+"src/segment.ml" 35 922 964 "src/segment.ml" 35 922 967
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 35 896 942 "src/segment.ml" 35 896 944
+"src/segment.ml" 35 922 968 "src/segment.ml" 35 922 970
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 35 896 945 "src/segment.ml" 35 896 957
+"src/segment.ml" 35 922 971 "src/segment.ml" 35 922 983
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 35 896 937 "src/segment.ml" 35 896 958
+"src/segment.ml" 35 922 963 "src/segment.ml" 35 922 984
 type(
   float
 )
-"src/segment.ml" 35 896 933 "src/segment.ml" 35 896 958
+"src/segment.ml" 35 922 959 "src/segment.ml" 35 922 984
 type(
   float
 )
-"src/segment.ml" 35 896 959 "src/segment.ml" 35 896 961
+"src/segment.ml" 35 922 985 "src/segment.ml" 35 922 987
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 35 896 962 "src/segment.ml" 35 896 965
+"src/segment.ml" 35 922 988 "src/segment.ml" 35 922 991
 type(
   float
 )
-"src/segment.ml" 35 896 932 "src/segment.ml" 35 896 966
+"src/segment.ml" 35 922 958 "src/segment.ml" 35 922 992
 type(
   float
 )
-"src/segment.ml" 35 896 918 "src/segment.ml" 35 896 967
+"src/segment.ml" 35 922 944 "src/segment.ml" 35 922 993
 type(
   int
 )
-"src/segment.ml" 35 896 913 "src/segment.ml" 35 896 967
+"src/segment.ml" 35 922 939 "src/segment.ml" 35 922 993
 type(
   int
 )
-"src/segment.ml" 36 971 979 "src/segment.ml" 36 971 981
+"src/segment.ml" 36 997 1005 "src/segment.ml" 36 997 1007
 type(
   int
 )
 ident(
-  int_ref yd "src/segment.ml" 30 622 647 "src/segment.ml" 30 622 649
+  int_ref yd "src/segment.ml" 30 648 673 "src/segment.ml" 30 648 675
 )
-"src/segment.ml" 36 971 982 "src/segment.ml" 36 971 983
+"src/segment.ml" 36 997 1008 "src/segment.ml" 36 997 1009
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 36 971 985 "src/segment.ml" 36 971 997
+"src/segment.ml" 36 997 1011 "src/segment.ml" 36 997 1023
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 36 971 999 "src/segment.ml" 36 971 1002
+"src/segment.ml" 36 997 1025 "src/segment.ml" 36 997 1028
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.sin
 )
-"src/segment.ml" 36 971 1004 "src/segment.ml" 36 971 1007
+"src/segment.ml" 36 997 1030 "src/segment.ml" 36 997 1033
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 36 971 1008 "src/segment.ml" 36 971 1010
+"src/segment.ml" 36 997 1034 "src/segment.ml" 36 997 1036
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 36 971 1011 "src/segment.ml" 36 971 1023
+"src/segment.ml" 36 997 1037 "src/segment.ml" 36 997 1049
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 36 971 1003 "src/segment.ml" 36 971 1024
+"src/segment.ml" 36 997 1029 "src/segment.ml" 36 997 1050
 type(
   float
 )
-"src/segment.ml" 36 971 999 "src/segment.ml" 36 971 1024
+"src/segment.ml" 36 997 1025 "src/segment.ml" 36 997 1050
 type(
   float
 )
-"src/segment.ml" 36 971 1025 "src/segment.ml" 36 971 1027
+"src/segment.ml" 36 997 1051 "src/segment.ml" 36 997 1053
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 36 971 1028 "src/segment.ml" 36 971 1031
+"src/segment.ml" 36 997 1054 "src/segment.ml" 36 997 1057
 type(
   float
 )
-"src/segment.ml" 36 971 998 "src/segment.ml" 36 971 1032
+"src/segment.ml" 36 997 1024 "src/segment.ml" 36 997 1058
 type(
   float
 )
-"src/segment.ml" 36 971 984 "src/segment.ml" 36 971 1033
+"src/segment.ml" 36 997 1010 "src/segment.ml" 36 997 1059
 type(
   int
 )
-"src/segment.ml" 36 971 979 "src/segment.ml" 36 971 1033
+"src/segment.ml" 36 997 1005 "src/segment.ml" 36 997 1059
 type(
   int
 )
-"src/segment.ml" 35 896 908 "src/segment.ml" 36 971 1034
+"src/segment.ml" 35 922 934 "src/segment.ml" 36 997 1060
 type(
   Point.t
 )
-"src/segment.ml" 37 1039 1044 "src/segment.ml" 37 1039 1047
+"src/segment.ml" 37 1065 1070 "src/segment.ml" 37 1065 1073
 type(
   Point.t
 )
 ident(
-  def igD "src/segment.ml" 39 1181 1182 "src/segment.ml" 45 1517 1522
+  def igD "src/segment.ml" 39 1207 1208 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 37 1039 1055 "src/segment.ml" 37 1039 1057
+"src/segment.ml" 37 1065 1081 "src/segment.ml" 37 1065 1083
 type(
   int
 )
 ident(
-  int_ref xo "src/segment.ml" 30 622 638 "src/segment.ml" 30 622 640
+  int_ref xo "src/segment.ml" 30 648 664 "src/segment.ml" 30 648 666
 )
-"src/segment.ml" 37 1039 1058 "src/segment.ml" 37 1039 1059
+"src/segment.ml" 37 1065 1084 "src/segment.ml" 37 1065 1085
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/segment.ml" 37 1039 1061 "src/segment.ml" 37 1039 1073
+"src/segment.ml" 37 1065 1087 "src/segment.ml" 37 1065 1099
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 37 1039 1075 "src/segment.ml" 37 1039 1078
+"src/segment.ml" 37 1065 1101 "src/segment.ml" 37 1065 1104
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.cos
 )
-"src/segment.ml" 37 1039 1080 "src/segment.ml" 37 1039 1083
+"src/segment.ml" 37 1065 1106 "src/segment.ml" 37 1065 1109
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 37 1039 1084 "src/segment.ml" 37 1039 1086
+"src/segment.ml" 37 1065 1110 "src/segment.ml" 37 1065 1112
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 37 1039 1087 "src/segment.ml" 37 1039 1099
+"src/segment.ml" 37 1065 1113 "src/segment.ml" 37 1065 1125
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 37 1039 1079 "src/segment.ml" 37 1039 1100
+"src/segment.ml" 37 1065 1105 "src/segment.ml" 37 1065 1126
 type(
   float
 )
-"src/segment.ml" 37 1039 1075 "src/segment.ml" 37 1039 1100
+"src/segment.ml" 37 1065 1101 "src/segment.ml" 37 1065 1126
 type(
   float
 )
-"src/segment.ml" 37 1039 1101 "src/segment.ml" 37 1039 1103
+"src/segment.ml" 37 1065 1127 "src/segment.ml" 37 1065 1129
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 37 1039 1104 "src/segment.ml" 37 1039 1107
+"src/segment.ml" 37 1065 1130 "src/segment.ml" 37 1065 1133
 type(
   float
 )
-"src/segment.ml" 37 1039 1074 "src/segment.ml" 37 1039 1108
+"src/segment.ml" 37 1065 1100 "src/segment.ml" 37 1065 1134
 type(
   float
 )
-"src/segment.ml" 37 1039 1060 "src/segment.ml" 37 1039 1109
+"src/segment.ml" 37 1065 1086 "src/segment.ml" 37 1065 1135
 type(
   int
 )
-"src/segment.ml" 37 1039 1055 "src/segment.ml" 37 1039 1109
+"src/segment.ml" 37 1065 1081 "src/segment.ml" 37 1065 1135
 type(
   int
 )
-"src/segment.ml" 38 1113 1121 "src/segment.ml" 38 1113 1123
+"src/segment.ml" 38 1139 1147 "src/segment.ml" 38 1139 1149
 type(
   int
 )
 ident(
-  int_ref yo "src/segment.ml" 30 622 641 "src/segment.ml" 30 622 643
+  int_ref yo "src/segment.ml" 30 648 667 "src/segment.ml" 30 648 669
 )
-"src/segment.ml" 38 1113 1124 "src/segment.ml" 38 1113 1125
+"src/segment.ml" 38 1139 1150 "src/segment.ml" 38 1139 1151
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/segment.ml" 38 1113 1127 "src/segment.ml" 38 1113 1139
+"src/segment.ml" 38 1139 1153 "src/segment.ml" 38 1139 1165
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 38 1113 1141 "src/segment.ml" 38 1113 1144
+"src/segment.ml" 38 1139 1167 "src/segment.ml" 38 1139 1170
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.sin
 )
-"src/segment.ml" 38 1113 1146 "src/segment.ml" 38 1113 1149
+"src/segment.ml" 38 1139 1172 "src/segment.ml" 38 1139 1175
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 38 1113 1150 "src/segment.ml" 38 1113 1152
+"src/segment.ml" 38 1139 1176 "src/segment.ml" 38 1139 1178
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 38 1113 1153 "src/segment.ml" 38 1113 1165
+"src/segment.ml" 38 1139 1179 "src/segment.ml" 38 1139 1191
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 38 1113 1145 "src/segment.ml" 38 1113 1166
+"src/segment.ml" 38 1139 1171 "src/segment.ml" 38 1139 1192
 type(
   float
 )
-"src/segment.ml" 38 1113 1141 "src/segment.ml" 38 1113 1166
+"src/segment.ml" 38 1139 1167 "src/segment.ml" 38 1139 1192
 type(
   float
 )
-"src/segment.ml" 38 1113 1167 "src/segment.ml" 38 1113 1169
+"src/segment.ml" 38 1139 1193 "src/segment.ml" 38 1139 1195
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 38 1113 1170 "src/segment.ml" 38 1113 1173
+"src/segment.ml" 38 1139 1196 "src/segment.ml" 38 1139 1199
 type(
   float
 )
-"src/segment.ml" 38 1113 1140 "src/segment.ml" 38 1113 1174
+"src/segment.ml" 38 1139 1166 "src/segment.ml" 38 1139 1200
 type(
   float
 )
-"src/segment.ml" 38 1113 1126 "src/segment.ml" 38 1113 1175
+"src/segment.ml" 38 1139 1152 "src/segment.ml" 38 1139 1201
 type(
   int
 )
-"src/segment.ml" 38 1113 1121 "src/segment.ml" 38 1113 1175
+"src/segment.ml" 38 1139 1147 "src/segment.ml" 38 1139 1201
 type(
   int
 )
-"src/segment.ml" 37 1039 1050 "src/segment.ml" 38 1113 1176
+"src/segment.ml" 37 1065 1076 "src/segment.ml" 38 1139 1202
 type(
   Point.t
 )
-"src/segment.ml" 39 1181 1186 "src/segment.ml" 39 1181 1190
+"src/segment.ml" 39 1207 1212 "src/segment.ml" 39 1207 1216
 type(
   Point.t
 )
 ident(
-  def estD "src/segment.ml" 41 1324 1325 "src/segment.ml" 45 1517 1522
+  def estD "src/segment.ml" 41 1350 1351 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 39 1181 1198 "src/segment.ml" 39 1181 1200
+"src/segment.ml" 39 1207 1224 "src/segment.ml" 39 1207 1226
 type(
   int
 )
 ident(
-  int_ref xd "src/segment.ml" 30 622 644 "src/segment.ml" 30 622 646
+  int_ref xd "src/segment.ml" 30 648 670 "src/segment.ml" 30 648 672
 )
-"src/segment.ml" 39 1181 1201 "src/segment.ml" 39 1181 1202
+"src/segment.ml" 39 1207 1227 "src/segment.ml" 39 1207 1228
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/segment.ml" 39 1181 1204 "src/segment.ml" 39 1181 1216
+"src/segment.ml" 39 1207 1230 "src/segment.ml" 39 1207 1242
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 39 1181 1218 "src/segment.ml" 39 1181 1221
+"src/segment.ml" 39 1207 1244 "src/segment.ml" 39 1207 1247
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.cos
 )
-"src/segment.ml" 39 1181 1223 "src/segment.ml" 39 1181 1226
+"src/segment.ml" 39 1207 1249 "src/segment.ml" 39 1207 1252
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 39 1181 1227 "src/segment.ml" 39 1181 1229
+"src/segment.ml" 39 1207 1253 "src/segment.ml" 39 1207 1255
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 39 1181 1230 "src/segment.ml" 39 1181 1242
+"src/segment.ml" 39 1207 1256 "src/segment.ml" 39 1207 1268
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 39 1181 1222 "src/segment.ml" 39 1181 1243
+"src/segment.ml" 39 1207 1248 "src/segment.ml" 39 1207 1269
 type(
   float
 )
-"src/segment.ml" 39 1181 1218 "src/segment.ml" 39 1181 1243
+"src/segment.ml" 39 1207 1244 "src/segment.ml" 39 1207 1269
 type(
   float
 )
-"src/segment.ml" 39 1181 1244 "src/segment.ml" 39 1181 1246
+"src/segment.ml" 39 1207 1270 "src/segment.ml" 39 1207 1272
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 39 1181 1247 "src/segment.ml" 39 1181 1250
+"src/segment.ml" 39 1207 1273 "src/segment.ml" 39 1207 1276
 type(
   float
 )
-"src/segment.ml" 39 1181 1217 "src/segment.ml" 39 1181 1251
+"src/segment.ml" 39 1207 1243 "src/segment.ml" 39 1207 1277
 type(
   float
 )
-"src/segment.ml" 39 1181 1203 "src/segment.ml" 39 1181 1252
+"src/segment.ml" 39 1207 1229 "src/segment.ml" 39 1207 1278
 type(
   int
 )
-"src/segment.ml" 39 1181 1198 "src/segment.ml" 39 1181 1252
+"src/segment.ml" 39 1207 1224 "src/segment.ml" 39 1207 1278
 type(
   int
 )
-"src/segment.ml" 40 1256 1264 "src/segment.ml" 40 1256 1266
+"src/segment.ml" 40 1282 1290 "src/segment.ml" 40 1282 1292
 type(
   int
 )
 ident(
-  int_ref yd "src/segment.ml" 30 622 647 "src/segment.ml" 30 622 649
+  int_ref yd "src/segment.ml" 30 648 673 "src/segment.ml" 30 648 675
 )
-"src/segment.ml" 40 1256 1267 "src/segment.ml" 40 1256 1268
+"src/segment.ml" 40 1282 1293 "src/segment.ml" 40 1282 1294
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"src/segment.ml" 40 1256 1270 "src/segment.ml" 40 1256 1282
+"src/segment.ml" 40 1282 1296 "src/segment.ml" 40 1282 1308
 type(
   float -> int
 )
 ident(
   ext_ref Pervasives.int_of_float
 )
-"src/segment.ml" 40 1256 1284 "src/segment.ml" 40 1256 1287
+"src/segment.ml" 40 1282 1310 "src/segment.ml" 40 1282 1313
 type(
   float -> float
 )
 ident(
   ext_ref Pervasives.sin
 )
-"src/segment.ml" 40 1256 1289 "src/segment.ml" 40 1256 1292
+"src/segment.ml" 40 1282 1315 "src/segment.ml" 40 1282 1318
 type(
   float
 )
 ident(
-  int_ref ang "src/segment.ml" 32 716 721 "src/segment.ml" 32 716 724
+  int_ref ang "src/segment.ml" 32 742 747 "src/segment.ml" 32 742 750
 )
-"src/segment.ml" 40 1256 1293 "src/segment.ml" 40 1256 1295
+"src/segment.ml" 40 1282 1319 "src/segment.ml" 40 1282 1321
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( +. )
 )
-"src/segment.ml" 40 1256 1296 "src/segment.ml" 40 1256 1308
+"src/segment.ml" 40 1282 1322 "src/segment.ml" 40 1282 1334
 type(
   float
 )
 ident(
   ext_ref Trigo.piSur2
 )
-"src/segment.ml" 40 1256 1288 "src/segment.ml" 40 1256 1309
+"src/segment.ml" 40 1282 1314 "src/segment.ml" 40 1282 1335
 type(
   float
 )
-"src/segment.ml" 40 1256 1284 "src/segment.ml" 40 1256 1309
+"src/segment.ml" 40 1282 1310 "src/segment.ml" 40 1282 1335
 type(
   float
 )
-"src/segment.ml" 40 1256 1310 "src/segment.ml" 40 1256 1312
+"src/segment.ml" 40 1282 1336 "src/segment.ml" 40 1282 1338
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( *. )
 )
-"src/segment.ml" 40 1256 1313 "src/segment.ml" 40 1256 1316
+"src/segment.ml" 40 1282 1339 "src/segment.ml" 40 1282 1342
 type(
   float
 )
-"src/segment.ml" 40 1256 1283 "src/segment.ml" 40 1256 1317
+"src/segment.ml" 40 1282 1309 "src/segment.ml" 40 1282 1343
 type(
   float
 )
-"src/segment.ml" 40 1256 1269 "src/segment.ml" 40 1256 1318
+"src/segment.ml" 40 1282 1295 "src/segment.ml" 40 1282 1344
 type(
   int
 )
-"src/segment.ml" 40 1256 1264 "src/segment.ml" 40 1256 1318
+"src/segment.ml" 40 1282 1290 "src/segment.ml" 40 1282 1344
 type(
   int
 )
-"src/segment.ml" 39 1181 1193 "src/segment.ml" 40 1256 1319
+"src/segment.ml" 39 1207 1219 "src/segment.ml" 40 1282 1345
 type(
   Point.t
 )
-"src/segment.ml" 41 1324 1329 "src/segment.ml" 41 1324 1330
+"src/segment.ml" 41 1350 1355 "src/segment.ml" 41 1350 1356
 type(
   int
 )
 ident(
-  def c "src/segment.ml" 42 1348 1349 "src/segment.ml" 45 1517 1522
+  def c "src/segment.ml" 42 1374 1375 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 41 1324 1333 "src/segment.ml" 41 1324 1341
+"src/segment.ml" 41 1350 1359 "src/segment.ml" 41 1350 1367
 type(
   unit -> int
 )
 ident(
-  int_ref compteur "src/segment.ml" 18 330 334 "src/segment.ml" 18 330 342
+  int_ref compteur "src/segment.ml" 18 356 360 "src/segment.ml" 18 356 368
 )
-"src/segment.ml" 41 1324 1341 "src/segment.ml" 41 1324 1343
+"src/segment.ml" 41 1350 1367 "src/segment.ml" 41 1350 1369
 type(
   unit
 )
-"src/segment.ml" 41 1324 1333 "src/segment.ml" 41 1324 1343
+"src/segment.ml" 41 1350 1359 "src/segment.ml" 41 1350 1369
+call(
+  stack
+)
 type(
   int
 )
-"src/segment.ml" 42 1348 1353 "src/segment.ml" 42 1348 1354
+"src/segment.ml" 42 1374 1379 "src/segment.ml" 42 1374 1380
 type(
   t
 )
 ident(
-  def p "src/segment.ml" 45 1517 1521 "src/segment.ml" 45 1517 1522
+  def p "src/segment.ml" 47 1653 1657 "src/segment.ml" 47 1653 1658
 )
-"src/segment.ml" 42 1348 1363 "src/segment.ml" 42 1348 1376
+"src/segment.ml" 42 1374 1389 "src/segment.ml" 42 1374 1402
 type(
   int -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"src/segment.ml" 42 1348 1377 "src/segment.ml" 42 1348 1378
+"src/segment.ml" 42 1374 1403 "src/segment.ml" 42 1374 1404
 type(
   int
 )
 ident(
-  int_ref c "src/segment.ml" 41 1324 1329 "src/segment.ml" 41 1324 1330
+  int_ref c "src/segment.ml" 41 1350 1355 "src/segment.ml" 41 1350 1356
 )
-"src/segment.ml" 42 1348 1363 "src/segment.ml" 42 1348 1378
+"src/segment.ml" 42 1374 1389 "src/segment.ml" 42 1374 1404
+call(
+  stack
+)
 type(
   string
 )
-"src/segment.ml" 42 1348 1388 "src/segment.ml" 42 1348 1390
+"src/segment.ml" 42 1374 1414 "src/segment.ml" 42 1374 1416
 type(
   Point.t
 )
 ident(
-  int_ref ig "src/segment.ml" 30 622 656 "src/segment.ml" 30 622 658
+  int_ref ig "src/segment.ml" 30 648 682 "src/segment.ml" 30 648 684
 )
-"src/segment.ml" 42 1348 1401 "src/segment.ml" 42 1348 1404
+"src/segment.ml" 42 1374 1427 "src/segment.ml" 42 1374 1430
 type(
   Point.t
 )
 ident(
-  int_ref est "src/segment.ml" 31 683 688 "src/segment.ml" 31 683 691
+  int_ref est "src/segment.ml" 31 709 714 "src/segment.ml" 31 709 717
 )
-"src/segment.ml" 43 1406 1430 "src/segment.ml" 43 1406 1433
+"src/segment.ml" 43 1432 1456 "src/segment.ml" 43 1432 1459
 type(
   Point.t
 )
 ident(
-  int_ref igG "src/segment.ml" 33 754 759 "src/segment.ml" 33 754 762
+  int_ref igG "src/segment.ml" 33 780 785 "src/segment.ml" 33 780 788
 )
-"src/segment.ml" 43 1406 1455 "src/segment.ml" 43 1406 1459
+"src/segment.ml" 43 1432 1481 "src/segment.ml" 43 1432 1485
 type(
   Point.t
 )
 ident(
-  int_ref estG "src/segment.ml" 35 896 901 "src/segment.ml" 35 896 905
+  int_ref estG "src/segment.ml" 35 922 927 "src/segment.ml" 35 922 931
 )
-"src/segment.ml" 44 1461 1485 "src/segment.ml" 44 1461 1488
+"src/segment.ml" 44 1487 1511 "src/segment.ml" 44 1487 1514
 type(
   Point.t
 )
 ident(
-  int_ref igD "src/segment.ml" 37 1039 1044 "src/segment.ml" 37 1039 1047
+  int_ref igD "src/segment.ml" 37 1065 1070 "src/segment.ml" 37 1065 1073
 )
-"src/segment.ml" 44 1461 1510 "src/segment.ml" 44 1461 1514
+"src/segment.ml" 44 1487 1536 "src/segment.ml" 44 1487 1540
 type(
   Point.t
 )
 ident(
-  int_ref estD "src/segment.ml" 39 1181 1186 "src/segment.ml" 39 1181 1190
+  int_ref estD "src/segment.ml" 39 1207 1212 "src/segment.ml" 39 1207 1216
 )
-"src/segment.ml" 42 1348 1357 "src/segment.ml" 44 1461 1515
+"src/segment.ml" 45 1542 1558 "src/segment.ml" 45 1542 1570
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"src/segment.ml" 45 1542 1571 "src/segment.ml" 45 1542 1579
+type(
+  float -> float
+)
+ident(
+  ext_ref Trigo.r_to_deg
+)
+"src/segment.ml" 45 1542 1580 "src/segment.ml" 45 1542 1584
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.atan
+)
+"src/segment.ml" 45 1542 1586 "src/segment.ml" 45 1542 1598
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 45 1542 1599 "src/segment.ml" 45 1542 1602
+type(
+  Point.t
+)
+ident(
+  int_ref est "src/segment.ml" 31 709 714 "src/segment.ml" 31 709 717
+)
+"src/segment.ml" 45 1542 1599 "src/segment.ml" 45 1542 1604
+type(
+  int
+)
+"src/segment.ml" 45 1542 1605 "src/segment.ml" 45 1542 1606
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/segment.ml" 45 1542 1607 "src/segment.ml" 45 1542 1609
+type(
+  Point.t
+)
+ident(
+  int_ref ig "src/segment.ml" 30 648 682 "src/segment.ml" 30 648 684
+)
+"src/segment.ml" 45 1542 1607 "src/segment.ml" 45 1542 1611
+type(
+  int
+)
+"src/segment.ml" 45 1542 1598 "src/segment.ml" 45 1542 1612
+type(
+  int
+)
+"src/segment.ml" 45 1542 1586 "src/segment.ml" 45 1542 1612
+type(
+  float
+)
+"src/segment.ml" 45 1542 1613 "src/segment.ml" 45 1542 1615
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"src/segment.ml" 45 1542 1616 "src/segment.ml" 45 1542 1628
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 45 1542 1629 "src/segment.ml" 45 1542 1632
+type(
+  Point.t
+)
+ident(
+  int_ref est "src/segment.ml" 31 709 714 "src/segment.ml" 31 709 717
+)
+"src/segment.ml" 45 1542 1629 "src/segment.ml" 45 1542 1634
+type(
+  int
+)
+"src/segment.ml" 45 1542 1635 "src/segment.ml" 45 1542 1636
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/segment.ml" 45 1542 1637 "src/segment.ml" 45 1542 1639
+type(
+  Point.t
+)
+ident(
+  int_ref ig "src/segment.ml" 30 648 682 "src/segment.ml" 30 648 684
+)
+"src/segment.ml" 45 1542 1637 "src/segment.ml" 45 1542 1641
+type(
+  int
+)
+"src/segment.ml" 45 1542 1628 "src/segment.ml" 45 1542 1642
+type(
+  int
+)
+"src/segment.ml" 45 1542 1616 "src/segment.ml" 45 1542 1642
+type(
+  float
+)
+"src/segment.ml" 45 1542 1585 "src/segment.ml" 45 1542 1643
+type(
+  float
+)
+"src/segment.ml" 45 1542 1579 "src/segment.ml" 45 1542 1644
+type(
+  float
+)
+"src/segment.ml" 45 1542 1570 "src/segment.ml" 45 1542 1645
+call(
+  stack
+)
+type(
+  float
+)
+"src/segment.ml" 45 1542 1558 "src/segment.ml" 45 1542 1645
+type(
+  int
+)
+"src/segment.ml" 42 1374 1383 "src/segment.ml" 46 1646 1651
 type(
   t
 )
-"src/segment.ml" 45 1517 1521 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 47 1653 1657 "src/segment.ml" 47 1653 1658
 type(
   t
 )
 ident(
-  int_ref p "src/segment.ml" 42 1348 1353 "src/segment.ml" 42 1348 1354
+  int_ref p "src/segment.ml" 42 1374 1379 "src/segment.ml" 42 1374 1380
 )
-"src/segment.ml" 42 1348 1349 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 42 1374 1375 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 41 1324 1325 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 41 1350 1351 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 39 1181 1182 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 39 1207 1208 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 37 1039 1040 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 37 1065 1066 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 35 896 897 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 35 922 923 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 33 754 755 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 33 780 781 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 32 716 717 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 32 742 743 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 31 683 684 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 31 709 710 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 30 622 652 "src/segment.ml" 45 1517 1522
+"src/segment.ml" 30 648 678 "src/segment.ml" 47 1653 1658
 type(
   t
 )
-"src/segment.ml" 47 1524 1528 "src/segment.ml" 47 1524 1539
+"src/segment.ml" 49 1660 1664 "src/segment.ml" 49 1660 1675
 type(
   Point.t -> t -> unit
 )
 ident(
-  def dansLaBoite "src/segment.ml" 59 2319 2319 "src/segment.ml" 1 0 -1
+  def dansLaBoite "src/segment.ml" 61 2455 2455 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+"src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 type(
   Point.t
 )
 ident(
-  def p "src/segment.ml" 47 1524 1542 "src/segment.ml" 56 2259 2316
+  def p "src/segment.ml" 49 1660 1678 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+"src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 type(
   t
 )
 ident(
-  def s "src/segment.ml" 48 1547 1548 "src/segment.ml" 56 2259 2316
+  def s "src/segment.ml" 50 1683 1684 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 48 1547 1552 "src/segment.ml" 48 1547 1556
+"src/segment.ml" 50 1683 1688 "src/segment.ml" 50 1683 1692
 type(
   int
 )
 ident(
-  def res1 "src/segment.ml" 50 1725 1726 "src/segment.ml" 56 2259 2316
+  def res1 "src/segment.ml" 52 1861 1862 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 48 1547 1560 "src/segment.ml" 48 1547 1561
+"src/segment.ml" 50 1683 1696 "src/segment.ml" 50 1683 1697
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 48 1547 1560 "src/segment.ml" 48 1547 1579
+"src/segment.ml" 50 1683 1696 "src/segment.ml" 50 1683 1715
 type(
   Point.t
 )
-"src/segment.ml" 48 1547 1560 "src/segment.ml" 48 1547 1581
+"src/segment.ml" 50 1683 1696 "src/segment.ml" 50 1683 1717
 type(
   int
 )
-"src/segment.ml" 48 1547 1582 "src/segment.ml" 48 1547 1583
+"src/segment.ml" 50 1683 1718 "src/segment.ml" 50 1683 1719
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 48 1547 1584 "src/segment.ml" 48 1547 1585
+"src/segment.ml" 50 1683 1720 "src/segment.ml" 50 1683 1721
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 48 1547 1584 "src/segment.ml" 48 1547 1603
+"src/segment.ml" 50 1683 1720 "src/segment.ml" 50 1683 1739
 type(
   Point.t
 )
-"src/segment.ml" 48 1547 1584 "src/segment.ml" 48 1547 1605
+"src/segment.ml" 50 1683 1720 "src/segment.ml" 50 1683 1741
 type(
   int
 )
-"src/segment.ml" 48 1547 1559 "src/segment.ml" 48 1547 1606
+"src/segment.ml" 50 1683 1695 "src/segment.ml" 50 1683 1742
 type(
   int
 )
-"src/segment.ml" 48 1547 1607 "src/segment.ml" 48 1547 1608
+"src/segment.ml" 50 1683 1743 "src/segment.ml" 50 1683 1744
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 48 1547 1610 "src/segment.ml" 48 1547 1611
+"src/segment.ml" 50 1683 1746 "src/segment.ml" 50 1683 1747
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 48 1547 1610 "src/segment.ml" 48 1547 1613
+"src/segment.ml" 50 1683 1746 "src/segment.ml" 50 1683 1749
 type(
   int
 )
-"src/segment.ml" 48 1547 1614 "src/segment.ml" 48 1547 1615
+"src/segment.ml" 50 1683 1750 "src/segment.ml" 50 1683 1751
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 48 1547 1616 "src/segment.ml" 48 1547 1617
+"src/segment.ml" 50 1683 1752 "src/segment.ml" 50 1683 1753
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 48 1547 1616 "src/segment.ml" 48 1547 1635
+"src/segment.ml" 50 1683 1752 "src/segment.ml" 50 1683 1771
 type(
   Point.t
 )
-"src/segment.ml" 48 1547 1616 "src/segment.ml" 48 1547 1637
+"src/segment.ml" 50 1683 1752 "src/segment.ml" 50 1683 1773
 type(
   int
 )
-"src/segment.ml" 48 1547 1609 "src/segment.ml" 48 1547 1638
+"src/segment.ml" 50 1683 1745 "src/segment.ml" 50 1683 1774
 type(
   int
 )
-"src/segment.ml" 48 1547 1559 "src/segment.ml" 48 1547 1638
+"src/segment.ml" 50 1683 1695 "src/segment.ml" 50 1683 1774
 type(
   int
 )
-"src/segment.ml" 48 1547 1639 "src/segment.ml" 48 1547 1640
+"src/segment.ml" 50 1683 1775 "src/segment.ml" 50 1683 1776
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 49 1642 1644 "src/segment.ml" 49 1642 1645
+"src/segment.ml" 51 1778 1780 "src/segment.ml" 51 1778 1781
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 49 1642 1644 "src/segment.ml" 49 1642 1663
+"src/segment.ml" 51 1778 1780 "src/segment.ml" 51 1778 1799
 type(
   Point.t
 )
-"src/segment.ml" 49 1642 1644 "src/segment.ml" 49 1642 1665
+"src/segment.ml" 51 1778 1780 "src/segment.ml" 51 1778 1801
 type(
   int
 )
-"src/segment.ml" 49 1642 1666 "src/segment.ml" 49 1642 1667
+"src/segment.ml" 51 1778 1802 "src/segment.ml" 51 1778 1803
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 49 1642 1668 "src/segment.ml" 49 1642 1669
+"src/segment.ml" 51 1778 1804 "src/segment.ml" 51 1778 1805
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 49 1642 1668 "src/segment.ml" 49 1642 1687
+"src/segment.ml" 51 1778 1804 "src/segment.ml" 51 1778 1823
 type(
   Point.t
 )
-"src/segment.ml" 49 1642 1668 "src/segment.ml" 49 1642 1689
+"src/segment.ml" 51 1778 1804 "src/segment.ml" 51 1778 1825
 type(
   int
 )
-"src/segment.ml" 49 1642 1643 "src/segment.ml" 49 1642 1690
+"src/segment.ml" 51 1778 1779 "src/segment.ml" 51 1778 1826
 type(
   int
 )
-"src/segment.ml" 49 1642 1690 "src/segment.ml" 49 1642 1691
+"src/segment.ml" 51 1778 1826 "src/segment.ml" 51 1778 1827
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 49 1642 1693 "src/segment.ml" 49 1642 1694
+"src/segment.ml" 51 1778 1829 "src/segment.ml" 51 1778 1830
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 49 1642 1693 "src/segment.ml" 49 1642 1696
+"src/segment.ml" 51 1778 1829 "src/segment.ml" 51 1778 1832
 type(
   int
 )
-"src/segment.ml" 49 1642 1697 "src/segment.ml" 49 1642 1698
+"src/segment.ml" 51 1778 1833 "src/segment.ml" 51 1778 1834
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 49 1642 1699 "src/segment.ml" 49 1642 1700
+"src/segment.ml" 51 1778 1835 "src/segment.ml" 51 1778 1836
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 49 1642 1699 "src/segment.ml" 49 1642 1718
+"src/segment.ml" 51 1778 1835 "src/segment.ml" 51 1778 1854
 type(
   Point.t
 )
-"src/segment.ml" 49 1642 1699 "src/segment.ml" 49 1642 1720
+"src/segment.ml" 51 1778 1835 "src/segment.ml" 51 1778 1856
 type(
   int
 )
-"src/segment.ml" 49 1642 1692 "src/segment.ml" 49 1642 1721
+"src/segment.ml" 51 1778 1828 "src/segment.ml" 51 1778 1857
 type(
   int
 )
-"src/segment.ml" 49 1642 1643 "src/segment.ml" 49 1642 1721
+"src/segment.ml" 51 1778 1779 "src/segment.ml" 51 1778 1857
 type(
   int
 )
-"src/segment.ml" 48 1547 1559 "src/segment.ml" 49 1642 1721
+"src/segment.ml" 50 1683 1695 "src/segment.ml" 51 1778 1857
 type(
   int
 )
-"src/segment.ml" 50 1725 1730 "src/segment.ml" 50 1725 1734
+"src/segment.ml" 52 1861 1866 "src/segment.ml" 52 1861 1870
 type(
   int
 )
 ident(
-  def res2 "src/segment.ml" 52 1903 1904 "src/segment.ml" 56 2259 2316
+  def res2 "src/segment.ml" 54 2039 2040 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 50 1725 1738 "src/segment.ml" 50 1725 1739
+"src/segment.ml" 52 1861 1874 "src/segment.ml" 52 1861 1875
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 50 1725 1738 "src/segment.ml" 50 1725 1757
+"src/segment.ml" 52 1861 1874 "src/segment.ml" 52 1861 1893
 type(
   Point.t
 )
-"src/segment.ml" 50 1725 1738 "src/segment.ml" 50 1725 1759
+"src/segment.ml" 52 1861 1874 "src/segment.ml" 52 1861 1895
 type(
   int
 )
-"src/segment.ml" 50 1725 1760 "src/segment.ml" 50 1725 1761
+"src/segment.ml" 52 1861 1896 "src/segment.ml" 52 1861 1897
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 50 1725 1762 "src/segment.ml" 50 1725 1763
+"src/segment.ml" 52 1861 1898 "src/segment.ml" 52 1861 1899
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 50 1725 1762 "src/segment.ml" 50 1725 1781
+"src/segment.ml" 52 1861 1898 "src/segment.ml" 52 1861 1917
 type(
   Point.t
 )
-"src/segment.ml" 50 1725 1762 "src/segment.ml" 50 1725 1783
+"src/segment.ml" 52 1861 1898 "src/segment.ml" 52 1861 1919
 type(
   int
 )
-"src/segment.ml" 50 1725 1737 "src/segment.ml" 50 1725 1784
+"src/segment.ml" 52 1861 1873 "src/segment.ml" 52 1861 1920
 type(
   int
 )
-"src/segment.ml" 50 1725 1785 "src/segment.ml" 50 1725 1786
+"src/segment.ml" 52 1861 1921 "src/segment.ml" 52 1861 1922
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 50 1725 1788 "src/segment.ml" 50 1725 1789
+"src/segment.ml" 52 1861 1924 "src/segment.ml" 52 1861 1925
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 50 1725 1788 "src/segment.ml" 50 1725 1791
+"src/segment.ml" 52 1861 1924 "src/segment.ml" 52 1861 1927
 type(
   int
 )
-"src/segment.ml" 50 1725 1792 "src/segment.ml" 50 1725 1793
+"src/segment.ml" 52 1861 1928 "src/segment.ml" 52 1861 1929
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 50 1725 1794 "src/segment.ml" 50 1725 1795
+"src/segment.ml" 52 1861 1930 "src/segment.ml" 52 1861 1931
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 50 1725 1794 "src/segment.ml" 50 1725 1813
+"src/segment.ml" 52 1861 1930 "src/segment.ml" 52 1861 1949
 type(
   Point.t
 )
-"src/segment.ml" 50 1725 1794 "src/segment.ml" 50 1725 1815
+"src/segment.ml" 52 1861 1930 "src/segment.ml" 52 1861 1951
 type(
   int
 )
-"src/segment.ml" 50 1725 1787 "src/segment.ml" 50 1725 1816
+"src/segment.ml" 52 1861 1923 "src/segment.ml" 52 1861 1952
 type(
   int
 )
-"src/segment.ml" 50 1725 1737 "src/segment.ml" 50 1725 1816
+"src/segment.ml" 52 1861 1873 "src/segment.ml" 52 1861 1952
 type(
   int
 )
-"src/segment.ml" 50 1725 1817 "src/segment.ml" 50 1725 1818
+"src/segment.ml" 52 1861 1953 "src/segment.ml" 52 1861 1954
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 51 1820 1822 "src/segment.ml" 51 1820 1823
+"src/segment.ml" 53 1956 1958 "src/segment.ml" 53 1956 1959
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 51 1820 1822 "src/segment.ml" 51 1820 1841
+"src/segment.ml" 53 1956 1958 "src/segment.ml" 53 1956 1977
 type(
   Point.t
 )
-"src/segment.ml" 51 1820 1822 "src/segment.ml" 51 1820 1843
+"src/segment.ml" 53 1956 1958 "src/segment.ml" 53 1956 1979
 type(
   int
 )
-"src/segment.ml" 51 1820 1844 "src/segment.ml" 51 1820 1845
+"src/segment.ml" 53 1956 1980 "src/segment.ml" 53 1956 1981
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 51 1820 1846 "src/segment.ml" 51 1820 1847
+"src/segment.ml" 53 1956 1982 "src/segment.ml" 53 1956 1983
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 51 1820 1846 "src/segment.ml" 51 1820 1865
+"src/segment.ml" 53 1956 1982 "src/segment.ml" 53 1956 2001
 type(
   Point.t
 )
-"src/segment.ml" 51 1820 1846 "src/segment.ml" 51 1820 1867
+"src/segment.ml" 53 1956 1982 "src/segment.ml" 53 1956 2003
 type(
   int
 )
-"src/segment.ml" 51 1820 1821 "src/segment.ml" 51 1820 1868
+"src/segment.ml" 53 1956 1957 "src/segment.ml" 53 1956 2004
 type(
   int
 )
-"src/segment.ml" 51 1820 1868 "src/segment.ml" 51 1820 1869
+"src/segment.ml" 53 1956 2004 "src/segment.ml" 53 1956 2005
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 51 1820 1871 "src/segment.ml" 51 1820 1872
+"src/segment.ml" 53 1956 2007 "src/segment.ml" 53 1956 2008
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 51 1820 1871 "src/segment.ml" 51 1820 1874
+"src/segment.ml" 53 1956 2007 "src/segment.ml" 53 1956 2010
 type(
   int
 )
-"src/segment.ml" 51 1820 1875 "src/segment.ml" 51 1820 1876
+"src/segment.ml" 53 1956 2011 "src/segment.ml" 53 1956 2012
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 51 1820 1877 "src/segment.ml" 51 1820 1878
+"src/segment.ml" 53 1956 2013 "src/segment.ml" 53 1956 2014
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 51 1820 1877 "src/segment.ml" 51 1820 1896
+"src/segment.ml" 53 1956 2013 "src/segment.ml" 53 1956 2032
 type(
   Point.t
 )
-"src/segment.ml" 51 1820 1877 "src/segment.ml" 51 1820 1898
+"src/segment.ml" 53 1956 2013 "src/segment.ml" 53 1956 2034
 type(
   int
 )
-"src/segment.ml" 51 1820 1870 "src/segment.ml" 51 1820 1899
+"src/segment.ml" 53 1956 2006 "src/segment.ml" 53 1956 2035
 type(
   int
 )
-"src/segment.ml" 51 1820 1821 "src/segment.ml" 51 1820 1899
+"src/segment.ml" 53 1956 1957 "src/segment.ml" 53 1956 2035
 type(
   int
 )
-"src/segment.ml" 50 1725 1737 "src/segment.ml" 51 1820 1899
+"src/segment.ml" 52 1861 1873 "src/segment.ml" 53 1956 2035
 type(
   int
 )
-"src/segment.ml" 52 1903 1908 "src/segment.ml" 52 1903 1912
+"src/segment.ml" 54 2039 2044 "src/segment.ml" 54 2039 2048
 type(
   int
 )
 ident(
-  def res3 "src/segment.ml" 54 2081 2082 "src/segment.ml" 56 2259 2316
+  def res3 "src/segment.ml" 56 2217 2218 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 52 1903 1916 "src/segment.ml" 52 1903 1917
+"src/segment.ml" 54 2039 2052 "src/segment.ml" 54 2039 2053
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 52 1903 1916 "src/segment.ml" 52 1903 1935
+"src/segment.ml" 54 2039 2052 "src/segment.ml" 54 2039 2071
 type(
   Point.t
 )
-"src/segment.ml" 52 1903 1916 "src/segment.ml" 52 1903 1937
+"src/segment.ml" 54 2039 2052 "src/segment.ml" 54 2039 2073
 type(
   int
 )
-"src/segment.ml" 52 1903 1938 "src/segment.ml" 52 1903 1939
+"src/segment.ml" 54 2039 2074 "src/segment.ml" 54 2039 2075
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 52 1903 1940 "src/segment.ml" 52 1903 1941
+"src/segment.ml" 54 2039 2076 "src/segment.ml" 54 2039 2077
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 52 1903 1940 "src/segment.ml" 52 1903 1959
+"src/segment.ml" 54 2039 2076 "src/segment.ml" 54 2039 2095
 type(
   Point.t
 )
-"src/segment.ml" 52 1903 1940 "src/segment.ml" 52 1903 1961
+"src/segment.ml" 54 2039 2076 "src/segment.ml" 54 2039 2097
 type(
   int
 )
-"src/segment.ml" 52 1903 1915 "src/segment.ml" 52 1903 1962
+"src/segment.ml" 54 2039 2051 "src/segment.ml" 54 2039 2098
 type(
   int
 )
-"src/segment.ml" 52 1903 1963 "src/segment.ml" 52 1903 1964
+"src/segment.ml" 54 2039 2099 "src/segment.ml" 54 2039 2100
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 52 1903 1966 "src/segment.ml" 52 1903 1967
+"src/segment.ml" 54 2039 2102 "src/segment.ml" 54 2039 2103
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 52 1903 1966 "src/segment.ml" 52 1903 1969
+"src/segment.ml" 54 2039 2102 "src/segment.ml" 54 2039 2105
 type(
   int
 )
-"src/segment.ml" 52 1903 1970 "src/segment.ml" 52 1903 1971
+"src/segment.ml" 54 2039 2106 "src/segment.ml" 54 2039 2107
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 52 1903 1972 "src/segment.ml" 52 1903 1973
+"src/segment.ml" 54 2039 2108 "src/segment.ml" 54 2039 2109
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 52 1903 1972 "src/segment.ml" 52 1903 1991
+"src/segment.ml" 54 2039 2108 "src/segment.ml" 54 2039 2127
 type(
   Point.t
 )
-"src/segment.ml" 52 1903 1972 "src/segment.ml" 52 1903 1993
+"src/segment.ml" 54 2039 2108 "src/segment.ml" 54 2039 2129
 type(
   int
 )
-"src/segment.ml" 52 1903 1965 "src/segment.ml" 52 1903 1994
+"src/segment.ml" 54 2039 2101 "src/segment.ml" 54 2039 2130
 type(
   int
 )
-"src/segment.ml" 52 1903 1915 "src/segment.ml" 52 1903 1994
+"src/segment.ml" 54 2039 2051 "src/segment.ml" 54 2039 2130
 type(
   int
 )
-"src/segment.ml" 52 1903 1995 "src/segment.ml" 52 1903 1996
+"src/segment.ml" 54 2039 2131 "src/segment.ml" 54 2039 2132
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 53 1998 2000 "src/segment.ml" 53 1998 2001
+"src/segment.ml" 55 2134 2136 "src/segment.ml" 55 2134 2137
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 53 1998 2000 "src/segment.ml" 53 1998 2019
+"src/segment.ml" 55 2134 2136 "src/segment.ml" 55 2134 2155
 type(
   Point.t
 )
-"src/segment.ml" 53 1998 2000 "src/segment.ml" 53 1998 2021
+"src/segment.ml" 55 2134 2136 "src/segment.ml" 55 2134 2157
 type(
   int
 )
-"src/segment.ml" 53 1998 2022 "src/segment.ml" 53 1998 2023
+"src/segment.ml" 55 2134 2158 "src/segment.ml" 55 2134 2159
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 53 1998 2024 "src/segment.ml" 53 1998 2025
+"src/segment.ml" 55 2134 2160 "src/segment.ml" 55 2134 2161
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 53 1998 2024 "src/segment.ml" 53 1998 2043
+"src/segment.ml" 55 2134 2160 "src/segment.ml" 55 2134 2179
 type(
   Point.t
 )
-"src/segment.ml" 53 1998 2024 "src/segment.ml" 53 1998 2045
+"src/segment.ml" 55 2134 2160 "src/segment.ml" 55 2134 2181
 type(
   int
 )
-"src/segment.ml" 53 1998 1999 "src/segment.ml" 53 1998 2046
+"src/segment.ml" 55 2134 2135 "src/segment.ml" 55 2134 2182
 type(
   int
 )
-"src/segment.ml" 53 1998 2046 "src/segment.ml" 53 1998 2047
+"src/segment.ml" 55 2134 2182 "src/segment.ml" 55 2134 2183
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 53 1998 2049 "src/segment.ml" 53 1998 2050
+"src/segment.ml" 55 2134 2185 "src/segment.ml" 55 2134 2186
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 53 1998 2049 "src/segment.ml" 53 1998 2052
+"src/segment.ml" 55 2134 2185 "src/segment.ml" 55 2134 2188
 type(
   int
 )
-"src/segment.ml" 53 1998 2053 "src/segment.ml" 53 1998 2054
+"src/segment.ml" 55 2134 2189 "src/segment.ml" 55 2134 2190
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 53 1998 2055 "src/segment.ml" 53 1998 2056
+"src/segment.ml" 55 2134 2191 "src/segment.ml" 55 2134 2192
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 53 1998 2055 "src/segment.ml" 53 1998 2074
+"src/segment.ml" 55 2134 2191 "src/segment.ml" 55 2134 2210
 type(
   Point.t
 )
-"src/segment.ml" 53 1998 2055 "src/segment.ml" 53 1998 2076
+"src/segment.ml" 55 2134 2191 "src/segment.ml" 55 2134 2212
 type(
   int
 )
-"src/segment.ml" 53 1998 2048 "src/segment.ml" 53 1998 2077
+"src/segment.ml" 55 2134 2184 "src/segment.ml" 55 2134 2213
 type(
   int
 )
-"src/segment.ml" 53 1998 1999 "src/segment.ml" 53 1998 2077
+"src/segment.ml" 55 2134 2135 "src/segment.ml" 55 2134 2213
 type(
   int
 )
-"src/segment.ml" 52 1903 1915 "src/segment.ml" 53 1998 2077
+"src/segment.ml" 54 2039 2051 "src/segment.ml" 55 2134 2213
 type(
   int
 )
-"src/segment.ml" 54 2081 2086 "src/segment.ml" 54 2081 2090
+"src/segment.ml" 56 2217 2222 "src/segment.ml" 56 2217 2226
 type(
   int
 )
 ident(
-  def res4 "src/segment.ml" 56 2259 2260 "src/segment.ml" 56 2259 2316
+  def res4 "src/segment.ml" 58 2395 2396 "src/segment.ml" 58 2395 2452
 )
-"src/segment.ml" 54 2081 2094 "src/segment.ml" 54 2081 2095
+"src/segment.ml" 56 2217 2230 "src/segment.ml" 56 2217 2231
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 54 2081 2094 "src/segment.ml" 54 2081 2113
+"src/segment.ml" 56 2217 2230 "src/segment.ml" 56 2217 2249
 type(
   Point.t
 )
-"src/segment.ml" 54 2081 2094 "src/segment.ml" 54 2081 2115
+"src/segment.ml" 56 2217 2230 "src/segment.ml" 56 2217 2251
 type(
   int
 )
-"src/segment.ml" 54 2081 2116 "src/segment.ml" 54 2081 2117
+"src/segment.ml" 56 2217 2252 "src/segment.ml" 56 2217 2253
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 54 2081 2118 "src/segment.ml" 54 2081 2119
+"src/segment.ml" 56 2217 2254 "src/segment.ml" 56 2217 2255
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 54 2081 2118 "src/segment.ml" 54 2081 2137
+"src/segment.ml" 56 2217 2254 "src/segment.ml" 56 2217 2273
 type(
   Point.t
 )
-"src/segment.ml" 54 2081 2118 "src/segment.ml" 54 2081 2139
+"src/segment.ml" 56 2217 2254 "src/segment.ml" 56 2217 2275
 type(
   int
 )
-"src/segment.ml" 54 2081 2093 "src/segment.ml" 54 2081 2140
+"src/segment.ml" 56 2217 2229 "src/segment.ml" 56 2217 2276
 type(
   int
 )
-"src/segment.ml" 54 2081 2141 "src/segment.ml" 54 2081 2142
+"src/segment.ml" 56 2217 2277 "src/segment.ml" 56 2217 2278
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 54 2081 2144 "src/segment.ml" 54 2081 2145
+"src/segment.ml" 56 2217 2280 "src/segment.ml" 56 2217 2281
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 54 2081 2144 "src/segment.ml" 54 2081 2147
+"src/segment.ml" 56 2217 2280 "src/segment.ml" 56 2217 2283
 type(
   int
 )
-"src/segment.ml" 54 2081 2148 "src/segment.ml" 54 2081 2149
+"src/segment.ml" 56 2217 2284 "src/segment.ml" 56 2217 2285
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 54 2081 2150 "src/segment.ml" 54 2081 2151
+"src/segment.ml" 56 2217 2286 "src/segment.ml" 56 2217 2287
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 54 2081 2150 "src/segment.ml" 54 2081 2169
+"src/segment.ml" 56 2217 2286 "src/segment.ml" 56 2217 2305
 type(
   Point.t
 )
-"src/segment.ml" 54 2081 2150 "src/segment.ml" 54 2081 2171
+"src/segment.ml" 56 2217 2286 "src/segment.ml" 56 2217 2307
 type(
   int
 )
-"src/segment.ml" 54 2081 2143 "src/segment.ml" 54 2081 2172
+"src/segment.ml" 56 2217 2279 "src/segment.ml" 56 2217 2308
 type(
   int
 )
-"src/segment.ml" 54 2081 2093 "src/segment.ml" 54 2081 2172
+"src/segment.ml" 56 2217 2229 "src/segment.ml" 56 2217 2308
 type(
   int
 )
-"src/segment.ml" 54 2081 2173 "src/segment.ml" 54 2081 2174
+"src/segment.ml" 56 2217 2309 "src/segment.ml" 56 2217 2310
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 55 2176 2178 "src/segment.ml" 55 2176 2179
+"src/segment.ml" 57 2312 2314 "src/segment.ml" 57 2312 2315
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 55 2176 2178 "src/segment.ml" 55 2176 2197
+"src/segment.ml" 57 2312 2314 "src/segment.ml" 57 2312 2333
 type(
   Point.t
 )
-"src/segment.ml" 55 2176 2178 "src/segment.ml" 55 2176 2199
+"src/segment.ml" 57 2312 2314 "src/segment.ml" 57 2312 2335
 type(
   int
 )
-"src/segment.ml" 55 2176 2200 "src/segment.ml" 55 2176 2201
+"src/segment.ml" 57 2312 2336 "src/segment.ml" 57 2312 2337
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 55 2176 2202 "src/segment.ml" 55 2176 2203
+"src/segment.ml" 57 2312 2338 "src/segment.ml" 57 2312 2339
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 55 2176 2202 "src/segment.ml" 55 2176 2221
+"src/segment.ml" 57 2312 2338 "src/segment.ml" 57 2312 2357
 type(
   Point.t
 )
-"src/segment.ml" 55 2176 2202 "src/segment.ml" 55 2176 2223
+"src/segment.ml" 57 2312 2338 "src/segment.ml" 57 2312 2359
 type(
   int
 )
-"src/segment.ml" 55 2176 2177 "src/segment.ml" 55 2176 2224
+"src/segment.ml" 57 2312 2313 "src/segment.ml" 57 2312 2360
 type(
   int
 )
-"src/segment.ml" 55 2176 2224 "src/segment.ml" 55 2176 2225
+"src/segment.ml" 57 2312 2360 "src/segment.ml" 57 2312 2361
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 55 2176 2227 "src/segment.ml" 55 2176 2228
+"src/segment.ml" 57 2312 2363 "src/segment.ml" 57 2312 2364
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 47 1524 1540 "src/segment.ml" 47 1524 1541
+  int_ref p "src/segment.ml" 49 1660 1676 "src/segment.ml" 49 1660 1677
 )
-"src/segment.ml" 55 2176 2227 "src/segment.ml" 55 2176 2230
+"src/segment.ml" 57 2312 2363 "src/segment.ml" 57 2312 2366
 type(
   int
 )
-"src/segment.ml" 55 2176 2231 "src/segment.ml" 55 2176 2232
+"src/segment.ml" 57 2312 2367 "src/segment.ml" 57 2312 2368
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 55 2176 2233 "src/segment.ml" 55 2176 2234
+"src/segment.ml" 57 2312 2369 "src/segment.ml" 57 2312 2370
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 47 1524 1542 "src/segment.ml" 47 1524 1543
+  int_ref s "src/segment.ml" 49 1660 1678 "src/segment.ml" 49 1660 1679
 )
-"src/segment.ml" 55 2176 2233 "src/segment.ml" 55 2176 2252
+"src/segment.ml" 57 2312 2369 "src/segment.ml" 57 2312 2388
 type(
   Point.t
 )
-"src/segment.ml" 55 2176 2233 "src/segment.ml" 55 2176 2254
+"src/segment.ml" 57 2312 2369 "src/segment.ml" 57 2312 2390
 type(
   int
 )
-"src/segment.ml" 55 2176 2226 "src/segment.ml" 55 2176 2255
+"src/segment.ml" 57 2312 2362 "src/segment.ml" 57 2312 2391
 type(
   int
 )
-"src/segment.ml" 55 2176 2177 "src/segment.ml" 55 2176 2255
+"src/segment.ml" 57 2312 2313 "src/segment.ml" 57 2312 2391
 type(
   int
 )
-"src/segment.ml" 54 2081 2093 "src/segment.ml" 55 2176 2255
+"src/segment.ml" 56 2217 2229 "src/segment.ml" 57 2312 2391
 type(
   int
 )
-"src/segment.ml" 56 2259 2263 "src/segment.ml" 56 2259 2267
+"src/segment.ml" 58 2395 2399 "src/segment.ml" 58 2395 2403
 type(
   int
 )
 ident(
-  int_ref res1 "src/segment.ml" 48 1547 1552 "src/segment.ml" 48 1547 1556
+  int_ref res1 "src/segment.ml" 50 1683 1688 "src/segment.ml" 50 1683 1692
 )
-"src/segment.ml" 56 2259 2268 "src/segment.ml" 56 2259 2269
+"src/segment.ml" 58 2395 2404 "src/segment.ml" 58 2395 2405
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 56 2259 2270 "src/segment.ml" 56 2259 2274
+"src/segment.ml" 58 2395 2406 "src/segment.ml" 58 2395 2410
 type(
   int
 )
 ident(
-  int_ref res2 "src/segment.ml" 50 1725 1730 "src/segment.ml" 50 1725 1734
+  int_ref res2 "src/segment.ml" 52 1861 1866 "src/segment.ml" 52 1861 1870
 )
-"src/segment.ml" 56 2259 2263 "src/segment.ml" 56 2259 2274
+"src/segment.ml" 58 2395 2399 "src/segment.ml" 58 2395 2410
 type(
   int
 )
-"src/segment.ml" 56 2259 2275 "src/segment.ml" 56 2259 2277
+"src/segment.ml" 58 2395 2411 "src/segment.ml" 58 2395 2413
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <= )
 )
-"src/segment.ml" 56 2259 2278 "src/segment.ml" 56 2259 2279
+"src/segment.ml" 58 2395 2414 "src/segment.ml" 58 2395 2415
 type(
   int
 )
-"src/segment.ml" 56 2259 2263 "src/segment.ml" 56 2259 2279
+"src/segment.ml" 58 2395 2399 "src/segment.ml" 58 2395 2415
 type(
   bool
 )
-"src/segment.ml" 56 2259 2281 "src/segment.ml" 56 2259 2283
+"src/segment.ml" 58 2395 2417 "src/segment.ml" 58 2395 2419
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"src/segment.ml" 56 2259 2284 "src/segment.ml" 56 2259 2288
+"src/segment.ml" 58 2395 2420 "src/segment.ml" 58 2395 2424
 type(
   int
 )
 ident(
-  int_ref res3 "src/segment.ml" 52 1903 1908 "src/segment.ml" 52 1903 1912
+  int_ref res3 "src/segment.ml" 54 2039 2044 "src/segment.ml" 54 2039 2048
 )
-"src/segment.ml" 56 2259 2289 "src/segment.ml" 56 2259 2290
+"src/segment.ml" 58 2395 2425 "src/segment.ml" 58 2395 2426
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 56 2259 2291 "src/segment.ml" 56 2259 2295
+"src/segment.ml" 58 2395 2427 "src/segment.ml" 58 2395 2431
 type(
   int
 )
 ident(
-  int_ref res4 "src/segment.ml" 54 2081 2086 "src/segment.ml" 54 2081 2090
+  int_ref res4 "src/segment.ml" 56 2217 2222 "src/segment.ml" 56 2217 2226
 )
-"src/segment.ml" 56 2259 2284 "src/segment.ml" 56 2259 2295
+"src/segment.ml" 58 2395 2420 "src/segment.ml" 58 2395 2431
 type(
   int
 )
-"src/segment.ml" 56 2259 2296 "src/segment.ml" 56 2259 2298
+"src/segment.ml" 58 2395 2432 "src/segment.ml" 58 2395 2434
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <= )
 )
-"src/segment.ml" 56 2259 2299 "src/segment.ml" 56 2259 2300
+"src/segment.ml" 58 2395 2435 "src/segment.ml" 58 2395 2436
 type(
   int
 )
-"src/segment.ml" 56 2259 2284 "src/segment.ml" 56 2259 2300
+"src/segment.ml" 58 2395 2420 "src/segment.ml" 58 2395 2436
 type(
   bool
 )
-"src/segment.ml" 56 2259 2263 "src/segment.ml" 56 2259 2300
+"src/segment.ml" 58 2395 2399 "src/segment.ml" 58 2395 2436
 type(
   bool
 )
-"src/segment.ml" 56 2259 2306 "src/segment.ml" 56 2259 2311
+"src/segment.ml" 58 2395 2442 "src/segment.ml" 58 2395 2447
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"src/segment.ml" 56 2259 2312 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 58 2395 2448 "src/segment.ml" 58 2395 2452
 type(
   exn
 )
-"src/segment.ml" 56 2259 2306 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 58 2395 2442 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 56 2259 2260 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 58 2395 2396 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 54 2081 2082 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 56 2217 2218 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 52 1903 1904 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 54 2039 2040 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 50 1725 1726 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 52 1861 1862 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 48 1547 1548 "src/segment.ml" 56 2259 2316
+"src/segment.ml" 50 1683 1684 "src/segment.ml" 58 2395 2452
 type(
   unit
 )
-"src/segment.ml" 59 2319 2323 "src/segment.ml" 59 2319 2335
+"src/segment.ml" 61 2455 2459 "src/segment.ml" 61 2455 2471
 type(
   Point.t -> t -> tpos
 )
 ident(
-  def get_position "src/segment.ml" 66 2515 2515 "src/segment.ml" 1 0 -1
+  def get_position "src/segment.ml" 68 2651 2651 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 59 2319 2336 "src/segment.ml" 59 2319 2337
+"src/segment.ml" 61 2455 2472 "src/segment.ml" 61 2455 2473
 type(
   Point.t
 )
 ident(
-  def p "src/segment.ml" 59 2319 2338 "src/segment.ml" 64 2504 2513
+  def p "src/segment.ml" 61 2455 2474 "src/segment.ml" 66 2640 2649
 )
-"src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+"src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 type(
   t
 )
 ident(
-  def s "src/segment.ml" 60 2343 2344 "src/segment.ml" 64 2504 2513
+  def s "src/segment.ml" 62 2479 2480 "src/segment.ml" 66 2640 2649
 )
-"src/segment.ml" 60 2343 2348 "src/segment.ml" 60 2343 2351
+"src/segment.ml" 62 2479 2484 "src/segment.ml" 62 2479 2487
 type(
   int
 )
 ident(
-  def res "src/segment.ml" 61 2446 2447 "src/segment.ml" 64 2504 2513
+  def res "src/segment.ml" 63 2582 2583 "src/segment.ml" 66 2640 2649
 )
-"src/segment.ml" 60 2343 2355 "src/segment.ml" 60 2343 2356
+"src/segment.ml" 62 2479 2491 "src/segment.ml" 62 2479 2492
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2355 "src/segment.ml" 60 2343 2362
+"src/segment.ml" 62 2479 2491 "src/segment.ml" 62 2479 2498
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2355 "src/segment.ml" 60 2343 2364
+"src/segment.ml" 62 2479 2491 "src/segment.ml" 62 2479 2500
 type(
   int
 )
-"src/segment.ml" 60 2343 2365 "src/segment.ml" 60 2343 2366
+"src/segment.ml" 62 2479 2501 "src/segment.ml" 62 2479 2502
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 60 2343 2367 "src/segment.ml" 60 2343 2368
+"src/segment.ml" 62 2479 2503 "src/segment.ml" 62 2479 2504
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2367 "src/segment.ml" 60 2343 2374
+"src/segment.ml" 62 2479 2503 "src/segment.ml" 62 2479 2510
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2367 "src/segment.ml" 60 2343 2376
+"src/segment.ml" 62 2479 2503 "src/segment.ml" 62 2479 2512
 type(
   int
 )
-"src/segment.ml" 60 2343 2354 "src/segment.ml" 60 2343 2377
+"src/segment.ml" 62 2479 2490 "src/segment.ml" 62 2479 2513
 type(
   int
 )
-"src/segment.ml" 60 2343 2378 "src/segment.ml" 60 2343 2379
+"src/segment.ml" 62 2479 2514 "src/segment.ml" 62 2479 2515
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 60 2343 2381 "src/segment.ml" 60 2343 2382
+"src/segment.ml" 62 2479 2517 "src/segment.ml" 62 2479 2518
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 59 2319 2336 "src/segment.ml" 59 2319 2337
+  int_ref p "src/segment.ml" 61 2455 2472 "src/segment.ml" 61 2455 2473
 )
-"src/segment.ml" 60 2343 2381 "src/segment.ml" 60 2343 2384
+"src/segment.ml" 62 2479 2517 "src/segment.ml" 62 2479 2520
 type(
   int
 )
-"src/segment.ml" 60 2343 2385 "src/segment.ml" 60 2343 2386
+"src/segment.ml" 62 2479 2521 "src/segment.ml" 62 2479 2522
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 60 2343 2387 "src/segment.ml" 60 2343 2388
+"src/segment.ml" 62 2479 2523 "src/segment.ml" 62 2479 2524
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2387 "src/segment.ml" 60 2343 2394
+"src/segment.ml" 62 2479 2523 "src/segment.ml" 62 2479 2530
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2387 "src/segment.ml" 60 2343 2396
+"src/segment.ml" 62 2479 2523 "src/segment.ml" 62 2479 2532
 type(
   int
 )
-"src/segment.ml" 60 2343 2380 "src/segment.ml" 60 2343 2397
+"src/segment.ml" 62 2479 2516 "src/segment.ml" 62 2479 2533
 type(
   int
 )
-"src/segment.ml" 60 2343 2354 "src/segment.ml" 60 2343 2397
+"src/segment.ml" 62 2479 2490 "src/segment.ml" 62 2479 2533
 type(
   int
 )
-"src/segment.ml" 60 2343 2398 "src/segment.ml" 60 2343 2399
+"src/segment.ml" 62 2479 2534 "src/segment.ml" 62 2479 2535
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 60 2343 2401 "src/segment.ml" 60 2343 2402
+"src/segment.ml" 62 2479 2537 "src/segment.ml" 62 2479 2538
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2401 "src/segment.ml" 60 2343 2408
+"src/segment.ml" 62 2479 2537 "src/segment.ml" 62 2479 2544
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2401 "src/segment.ml" 60 2343 2410
+"src/segment.ml" 62 2479 2537 "src/segment.ml" 62 2479 2546
 type(
   int
 )
-"src/segment.ml" 60 2343 2411 "src/segment.ml" 60 2343 2412
+"src/segment.ml" 62 2479 2547 "src/segment.ml" 62 2479 2548
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 60 2343 2413 "src/segment.ml" 60 2343 2414
+"src/segment.ml" 62 2479 2549 "src/segment.ml" 62 2479 2550
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2413 "src/segment.ml" 60 2343 2420
+"src/segment.ml" 62 2479 2549 "src/segment.ml" 62 2479 2556
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2413 "src/segment.ml" 60 2343 2422
+"src/segment.ml" 62 2479 2549 "src/segment.ml" 62 2479 2558
 type(
   int
 )
-"src/segment.ml" 60 2343 2400 "src/segment.ml" 60 2343 2423
+"src/segment.ml" 62 2479 2536 "src/segment.ml" 62 2479 2559
 type(
   int
 )
-"src/segment.ml" 60 2343 2423 "src/segment.ml" 60 2343 2424
+"src/segment.ml" 62 2479 2559 "src/segment.ml" 62 2479 2560
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"src/segment.ml" 60 2343 2426 "src/segment.ml" 60 2343 2427
+"src/segment.ml" 62 2479 2562 "src/segment.ml" 62 2479 2563
 type(
   Point.t
 )
 ident(
-  int_ref p "src/segment.ml" 59 2319 2336 "src/segment.ml" 59 2319 2337
+  int_ref p "src/segment.ml" 61 2455 2472 "src/segment.ml" 61 2455 2473
 )
-"src/segment.ml" 60 2343 2426 "src/segment.ml" 60 2343 2429
+"src/segment.ml" 62 2479 2562 "src/segment.ml" 62 2479 2565
 type(
   int
 )
-"src/segment.ml" 60 2343 2430 "src/segment.ml" 60 2343 2431
+"src/segment.ml" 62 2479 2566 "src/segment.ml" 62 2479 2567
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"src/segment.ml" 60 2343 2432 "src/segment.ml" 60 2343 2433
+"src/segment.ml" 62 2479 2568 "src/segment.ml" 62 2479 2569
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 59 2319 2338 "src/segment.ml" 59 2319 2339
+  int_ref s "src/segment.ml" 61 2455 2474 "src/segment.ml" 61 2455 2475
 )
-"src/segment.ml" 60 2343 2432 "src/segment.ml" 60 2343 2439
+"src/segment.ml" 62 2479 2568 "src/segment.ml" 62 2479 2575
 type(
   Point.t
 )
-"src/segment.ml" 60 2343 2432 "src/segment.ml" 60 2343 2441
+"src/segment.ml" 62 2479 2568 "src/segment.ml" 62 2479 2577
 type(
   int
 )
-"src/segment.ml" 60 2343 2425 "src/segment.ml" 60 2343 2442
+"src/segment.ml" 62 2479 2561 "src/segment.ml" 62 2479 2578
 type(
   int
 )
-"src/segment.ml" 60 2343 2400 "src/segment.ml" 60 2343 2442
+"src/segment.ml" 62 2479 2536 "src/segment.ml" 62 2479 2578
 type(
   int
 )
-"src/segment.ml" 60 2343 2354 "src/segment.ml" 60 2343 2442
+"src/segment.ml" 62 2479 2490 "src/segment.ml" 62 2479 2578
 type(
   int
 )
-"src/segment.ml" 61 2446 2453 "src/segment.ml" 61 2446 2456
-type(
-  int
-)
-ident(
-  int_ref res "src/segment.ml" 60 2343 2348 "src/segment.ml" 60 2343 2351
-)
-"src/segment.ml" 62 2462 2465 "src/segment.ml" 62 2462 2466
+"src/segment.ml" 63 2582 2589 "src/segment.ml" 63 2582 2592
 type(
   int
 )
 ident(
-  def a "src/segment.ml" 62 2462 2472 "src/segment.ml" 62 2462 2482
+  int_ref res "src/segment.ml" 62 2479 2484 "src/segment.ml" 62 2479 2487
 )
-"src/segment.ml" 62 2462 2472 "src/segment.ml" 62 2462 2473
+"src/segment.ml" 64 2598 2601 "src/segment.ml" 64 2598 2602
 type(
   int
 )
 ident(
-  int_ref a "src/segment.ml" 62 2462 2465 "src/segment.ml" 62 2462 2466
+  def a "src/segment.ml" 64 2598 2608 "src/segment.ml" 64 2598 2618
 )
-"src/segment.ml" 62 2462 2474 "src/segment.ml" 62 2462 2475
+"src/segment.ml" 64 2598 2608 "src/segment.ml" 64 2598 2609
+type(
+  int
+)
+ident(
+  int_ref a "src/segment.ml" 64 2598 2601 "src/segment.ml" 64 2598 2602
+)
+"src/segment.ml" 64 2598 2610 "src/segment.ml" 64 2598 2611
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"src/segment.ml" 62 2462 2476 "src/segment.ml" 62 2462 2477
+"src/segment.ml" 64 2598 2612 "src/segment.ml" 64 2598 2613
 type(
   int
 )
-"src/segment.ml" 62 2462 2472 "src/segment.ml" 62 2462 2477
+"src/segment.ml" 64 2598 2608 "src/segment.ml" 64 2598 2613
 type(
   bool
 )
-"src/segment.ml" 62 2462 2481 "src/segment.ml" 62 2462 2482
+"src/segment.ml" 64 2598 2617 "src/segment.ml" 64 2598 2618
 type(
   tpos
 )
-"src/segment.ml" 63 2483 2486 "src/segment.ml" 63 2483 2487
+"src/segment.ml" 65 2619 2622 "src/segment.ml" 65 2619 2623
 type(
   int
 )
 ident(
-  def a "src/segment.ml" 63 2483 2493 "src/segment.ml" 63 2483 2503
+  def a "src/segment.ml" 65 2619 2629 "src/segment.ml" 65 2619 2639
 )
-"src/segment.ml" 63 2483 2493 "src/segment.ml" 63 2483 2494
+"src/segment.ml" 65 2619 2629 "src/segment.ml" 65 2619 2630
 type(
   int
 )
 ident(
-  int_ref a "src/segment.ml" 63 2483 2486 "src/segment.ml" 63 2483 2487
+  int_ref a "src/segment.ml" 65 2619 2622 "src/segment.ml" 65 2619 2623
 )
-"src/segment.ml" 63 2483 2495 "src/segment.ml" 63 2483 2496
+"src/segment.ml" 65 2619 2631 "src/segment.ml" 65 2619 2632
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"src/segment.ml" 63 2483 2497 "src/segment.ml" 63 2483 2498
+"src/segment.ml" 65 2619 2633 "src/segment.ml" 65 2619 2634
 type(
   int
 )
-"src/segment.ml" 63 2483 2493 "src/segment.ml" 63 2483 2498
+"src/segment.ml" 65 2619 2629 "src/segment.ml" 65 2619 2634
 type(
   bool
 )
-"src/segment.ml" 63 2483 2502 "src/segment.ml" 63 2483 2503
+"src/segment.ml" 65 2619 2638 "src/segment.ml" 65 2619 2639
 type(
   tpos
 )
-"src/segment.ml" 64 2504 2507 "src/segment.ml" 64 2504 2508
+"src/segment.ml" 66 2640 2643 "src/segment.ml" 66 2640 2644
 type(
   int
 )
-"src/segment.ml" 64 2504 2512 "src/segment.ml" 64 2504 2513
+"src/segment.ml" 66 2640 2648 "src/segment.ml" 66 2640 2649
 type(
   tpos
 )
-"src/segment.ml" 61 2446 2447 "src/segment.ml" 64 2504 2513
+"src/segment.ml" 63 2582 2583 "src/segment.ml" 66 2640 2649
 type(
   tpos
 )
-"src/segment.ml" 60 2343 2344 "src/segment.ml" 64 2504 2513
+"src/segment.ml" 62 2479 2480 "src/segment.ml" 66 2640 2649
 type(
   tpos
 )
-"src/segment.ml" 66 2515 2519 "src/segment.ml" 66 2515 2532
+"src/segment.ml" 68 2651 2655 "src/segment.ml" 68 2651 2668
 type(
   t -> t -> t option * t option
 )
 ident(
-  def split_segment "src/segment.ml" 81 2862 2862 "src/segment.ml" 1 0 -1
+  def split_segment "src/segment.ml" 100 3598 3598 "src/segment.ml" 1 0 -1
 )
-"src/segment.ml" 66 2515 2533 "src/segment.ml" 66 2515 2534
+"src/segment.ml" 68 2651 2669 "src/segment.ml" 68 2651 2670
 type(
   t
 )
 ident(
-  def d "src/segment.ml" 66 2515 2535 "src/segment.ml" 79 2764 2859
+  def d "src/segment.ml" 68 2651 2671 "src/segment.ml" 98 3500 3595
 )
-"src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+"src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
 type(
   t
 )
 ident(
-  def s "src/segment.ml" 67 2540 2541 "src/segment.ml" 79 2764 2859
+  def s "src/segment.ml" 69 2676 2677 "src/segment.ml" 98 3500 3595
 )
-"src/segment.ml" 67 2540 2547 "src/segment.ml" 67 2540 2559
+"src/segment.ml" 69 2676 2683 "src/segment.ml" 69 2676 2695
 type(
   Point.t -> t -> tpos
 )
 ident(
-  int_ref get_position "src/segment.ml" 59 2319 2323 "src/segment.ml" 59 2319 2335
+  int_ref get_position "src/segment.ml" 61 2455 2459 "src/segment.ml" 61 2455 2471
 )
-"src/segment.ml" 67 2540 2560 "src/segment.ml" 67 2540 2561
+"src/segment.ml" 69 2676 2696 "src/segment.ml" 69 2676 2697
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
 )
-"src/segment.ml" 67 2540 2560 "src/segment.ml" 67 2540 2567
+"src/segment.ml" 69 2676 2696 "src/segment.ml" 69 2676 2703
 type(
   Point.t
 )
-"src/segment.ml" 67 2540 2568 "src/segment.ml" 67 2540 2569
+"src/segment.ml" 69 2676 2704 "src/segment.ml" 69 2676 2705
 type(
   t
 )
 ident(
-  int_ref d "src/segment.ml" 66 2515 2533 "src/segment.ml" 66 2515 2534
+  int_ref d "src/segment.ml" 68 2651 2669 "src/segment.ml" 68 2651 2670
 )
-"src/segment.ml" 67 2540 2547 "src/segment.ml" 67 2540 2569
+"src/segment.ml" 69 2676 2683 "src/segment.ml" 69 2676 2705
+call(
+  stack
+)
 type(
   tpos
 )
-"src/segment.ml" 67 2540 2571 "src/segment.ml" 67 2540 2583
+"src/segment.ml" 69 2676 2707 "src/segment.ml" 69 2676 2719
 type(
   Point.t -> t -> tpos
 )
 ident(
-  int_ref get_position "src/segment.ml" 59 2319 2323 "src/segment.ml" 59 2319 2335
+  int_ref get_position "src/segment.ml" 61 2455 2459 "src/segment.ml" 61 2455 2471
 )
-"src/segment.ml" 67 2540 2584 "src/segment.ml" 67 2540 2585
+"src/segment.ml" 69 2676 2720 "src/segment.ml" 69 2676 2721
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
 )
-"src/segment.ml" 67 2540 2584 "src/segment.ml" 67 2540 2591
+"src/segment.ml" 69 2676 2720 "src/segment.ml" 69 2676 2727
 type(
   Point.t
 )
-"src/segment.ml" 67 2540 2592 "src/segment.ml" 67 2540 2593
+"src/segment.ml" 69 2676 2728 "src/segment.ml" 69 2676 2729
 type(
   t
 )
 ident(
-  int_ref d "src/segment.ml" 66 2515 2533 "src/segment.ml" 66 2515 2534
+  int_ref d "src/segment.ml" 68 2651 2669 "src/segment.ml" 68 2651 2670
 )
-"src/segment.ml" 67 2540 2571 "src/segment.ml" 67 2540 2593
+"src/segment.ml" 69 2676 2707 "src/segment.ml" 69 2676 2729
+call(
+  stack
+)
 type(
   tpos
 )
-"src/segment.ml" 67 2540 2547 "src/segment.ml" 67 2540 2593
+"src/segment.ml" 69 2676 2683 "src/segment.ml" 69 2676 2729
 type(
   tpos * tpos
 )
-"src/segment.ml" 68 2599 2602 "src/segment.ml" 68 2599 2603
+"src/segment.ml" 70 2735 2738 "src/segment.ml" 70 2735 2739
 type(
   tpos
 )
-"src/segment.ml" 68 2599 2604 "src/segment.ml" 68 2599 2605
+"src/segment.ml" 70 2735 2740 "src/segment.ml" 70 2735 2741
 type(
   tpos
 )
-"src/segment.ml" 68 2599 2602 "src/segment.ml" 68 2599 2605
+"src/segment.ml" 70 2735 2738 "src/segment.ml" 70 2735 2741
 type(
   tpos * tpos
 )
-"src/segment.ml" 69 2606 2609 "src/segment.ml" 69 2606 2610
+"src/segment.ml" 71 2742 2745 "src/segment.ml" 71 2742 2746
 type(
   tpos
 )
-"src/segment.ml" 69 2606 2611 "src/segment.ml" 69 2606 2612
+"src/segment.ml" 71 2742 2747 "src/segment.ml" 71 2742 2748
 type(
   tpos
 )
-"src/segment.ml" 69 2606 2609 "src/segment.ml" 69 2606 2612
+"src/segment.ml" 71 2742 2745 "src/segment.ml" 71 2742 2748
 type(
   tpos * tpos
 )
-"src/segment.ml" 68 2599 2602 "src/segment.ml" 69 2606 2612
+"src/segment.ml" 70 2735 2738 "src/segment.ml" 71 2742 2748
 type(
   tpos * tpos
 )
-"src/segment.ml" 70 2613 2616 "src/segment.ml" 70 2613 2617
+"src/segment.ml" 72 2749 2752 "src/segment.ml" 72 2749 2753
 type(
   tpos
 )
-"src/segment.ml" 70 2613 2618 "src/segment.ml" 70 2613 2619
+"src/segment.ml" 72 2749 2754 "src/segment.ml" 72 2749 2755
 type(
   tpos
 )
-"src/segment.ml" 70 2613 2616 "src/segment.ml" 70 2613 2619
+"src/segment.ml" 72 2749 2752 "src/segment.ml" 72 2749 2755
 type(
   tpos * tpos
 )
-"src/segment.ml" 68 2599 2602 "src/segment.ml" 70 2613 2619
+"src/segment.ml" 70 2735 2738 "src/segment.ml" 72 2749 2755
 type(
   tpos * tpos
 )
-"src/segment.ml" 70 2613 2624 "src/segment.ml" 70 2613 2628
+"src/segment.ml" 72 2749 2760 "src/segment.ml" 72 2749 2764
 type(
   t option
 )
-"src/segment.ml" 70 2613 2635 "src/segment.ml" 70 2613 2638
+"src/segment.ml" 72 2749 2771 "src/segment.ml" 72 2749 2774
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
 )
-"src/segment.ml" 70 2613 2630 "src/segment.ml" 70 2613 2638
+"src/segment.ml" 72 2749 2766 "src/segment.ml" 72 2749 2774
 type(
   t option
 )
-"src/segment.ml" 70 2613 2623 "src/segment.ml" 70 2613 2639
+"src/segment.ml" 72 2749 2759 "src/segment.ml" 72 2749 2775
 type(
   t option * t option
 )
-"src/segment.ml" 71 2641 2644 "src/segment.ml" 71 2641 2645
+"src/segment.ml" 73 2777 2780 "src/segment.ml" 73 2777 2781
 type(
   tpos
 )
-"src/segment.ml" 71 2641 2646 "src/segment.ml" 71 2641 2647
+"src/segment.ml" 73 2777 2782 "src/segment.ml" 73 2777 2783
 type(
   tpos
 )
-"src/segment.ml" 71 2641 2644 "src/segment.ml" 71 2641 2647
+"src/segment.ml" 73 2777 2780 "src/segment.ml" 73 2777 2783
 type(
   tpos * tpos
 )
-"src/segment.ml" 72 2648 2651 "src/segment.ml" 72 2648 2652
+"src/segment.ml" 74 2784 2787 "src/segment.ml" 74 2784 2788
 type(
   tpos
 )
-"src/segment.ml" 72 2648 2653 "src/segment.ml" 72 2648 2654
+"src/segment.ml" 74 2784 2789 "src/segment.ml" 74 2784 2790
 type(
   tpos
 )
-"src/segment.ml" 72 2648 2651 "src/segment.ml" 72 2648 2654
+"src/segment.ml" 74 2784 2787 "src/segment.ml" 74 2784 2790
 type(
   tpos * tpos
 )
-"src/segment.ml" 71 2641 2644 "src/segment.ml" 72 2648 2654
+"src/segment.ml" 73 2777 2780 "src/segment.ml" 74 2784 2790
 type(
   tpos * tpos
 )
-"src/segment.ml" 73 2656 2659 "src/segment.ml" 73 2656 2660
+"src/segment.ml" 75 2792 2795 "src/segment.ml" 75 2792 2796
 type(
   tpos
 )
-"src/segment.ml" 73 2656 2661 "src/segment.ml" 73 2656 2662
+"src/segment.ml" 75 2792 2797 "src/segment.ml" 75 2792 2798
 type(
   tpos
 )
-"src/segment.ml" 73 2656 2659 "src/segment.ml" 73 2656 2662
+"src/segment.ml" 75 2792 2795 "src/segment.ml" 75 2792 2798
 type(
   tpos * tpos
 )
-"src/segment.ml" 71 2641 2644 "src/segment.ml" 73 2656 2662
+"src/segment.ml" 73 2777 2780 "src/segment.ml" 75 2792 2798
 type(
   tpos * tpos
 )
-"src/segment.ml" 74 2664 2667 "src/segment.ml" 74 2664 2668
+"src/segment.ml" 76 2800 2803 "src/segment.ml" 76 2800 2804
 type(
   tpos
 )
-"src/segment.ml" 74 2664 2669 "src/segment.ml" 74 2664 2670
+"src/segment.ml" 76 2800 2805 "src/segment.ml" 76 2800 2806
 type(
   tpos
 )
-"src/segment.ml" 74 2664 2667 "src/segment.ml" 74 2664 2670
+"src/segment.ml" 76 2800 2803 "src/segment.ml" 76 2800 2806
 type(
   tpos * tpos
 )
-"src/segment.ml" 71 2641 2644 "src/segment.ml" 74 2664 2670
+"src/segment.ml" 73 2777 2780 "src/segment.ml" 76 2800 2806
 type(
   tpos * tpos
 )
-"src/segment.ml" 74 2664 2680 "src/segment.ml" 74 2664 2683
+"src/segment.ml" 76 2800 2816 "src/segment.ml" 76 2800 2819
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
 )
-"src/segment.ml" 74 2664 2675 "src/segment.ml" 74 2664 2683
+"src/segment.ml" 76 2800 2811 "src/segment.ml" 76 2800 2819
 type(
   t option
 )
-"src/segment.ml" 74 2664 2685 "src/segment.ml" 74 2664 2689
+"src/segment.ml" 76 2800 2821 "src/segment.ml" 76 2800 2825
 type(
   t option
 )
-"src/segment.ml" 74 2664 2674 "src/segment.ml" 74 2664 2690
+"src/segment.ml" 76 2800 2810 "src/segment.ml" 76 2800 2826
 type(
   t option * t option
 )
-"src/segment.ml" 75 2691 2694 "src/segment.ml" 75 2691 2695
+"src/segment.ml" 77 2827 2830 "src/segment.ml" 77 2827 2831
 type(
   tpos
 )
-"src/segment.ml" 75 2691 2696 "src/segment.ml" 75 2691 2697
+"src/segment.ml" 77 2827 2832 "src/segment.ml" 77 2827 2833
 type(
   tpos
 )
-"src/segment.ml" 75 2691 2694 "src/segment.ml" 75 2691 2697
+"src/segment.ml" 77 2827 2830 "src/segment.ml" 77 2827 2833
 type(
   tpos * tpos
 )
-"src/segment.ml" 77 2704 2713 "src/segment.ml" 77 2704 2715
+"src/segment.ml" 78 2839 2844 "src/segment.ml" 78 2839 2870
 type(
-  '_a
+  t -> t -> int * int
 )
 ident(
-  def xi "src/segment.ml" 79 2764 2768 "src/segment.ml" 79 2764 2859
+  def point_intersection_droites "src/segment.ml" 96 3446 3450 "src/segment.ml" 98 3500 3595
 )
-"src/segment.ml" 77 2704 2716 "src/segment.ml" 77 2704 2718
-type(
-  '_b
-)
-ident(
-  def yi "src/segment.ml" 79 2764 2768 "src/segment.ml" 79 2764 2859
-)
-"src/segment.ml" 77 2704 2712 "src/segment.ml" 77 2704 2719
-type(
-  '_a * '_b
-)
-"src/segment.ml" 77 2704 2722 "src/segment.ml" 77 2704 2754
-type(
-  Segment.t -> Segment.t -> int * int
-)
-ident(
-  ext_ref Trigo.point_intersection_droites
-)
-"src/segment.ml" 77 2704 2755 "src/segment.ml" 77 2704 2756
+"src/segment.ml" 78 2839 2871 "src/segment.ml" 78 2839 2872
 type(
   t
 )
 ident(
-  int_ref s "src/segment.ml" 66 2515 2535 "src/segment.ml" 66 2515 2536
+  def s "src/segment.ml" 78 2839 2873 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 78 2839 2873 "src/segment.ml" 78 2839 2874
+type(
+  t
+)
+ident(
+  def d "src/segment.ml" 79 2877 2879 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 79 2877 2883 "src/segment.ml" 79 2877 2885
+type(
+  float
+)
+ident(
+  def xa "src/segment.ml" 80 2915 2917 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 79 2877 2888 "src/segment.ml" 79 2877 2900
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 79 2877 2901 "src/segment.ml" 79 2877 2902
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 78 2839 2871 "src/segment.ml" 78 2839 2872
+)
+"src/segment.ml" 79 2877 2901 "src/segment.ml" 79 2877 2908
+type(
+  Point.t
+)
+"src/segment.ml" 79 2877 2901 "src/segment.ml" 79 2877 2910
+type(
+  int
+)
+"src/segment.ml" 79 2877 2888 "src/segment.ml" 79 2877 2910
+type(
+  float
+)
+"src/segment.ml" 80 2915 2921 "src/segment.ml" 80 2915 2923
+type(
+  float
+)
+ident(
+  def xb "src/segment.ml" 81 2953 2955 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 80 2915 2926 "src/segment.ml" 80 2915 2938
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 80 2915 2939 "src/segment.ml" 80 2915 2940
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 78 2839 2871 "src/segment.ml" 78 2839 2872
+)
+"src/segment.ml" 80 2915 2939 "src/segment.ml" 80 2915 2946
+type(
+  Point.t
+)
+"src/segment.ml" 80 2915 2939 "src/segment.ml" 80 2915 2948
+type(
+  int
+)
+"src/segment.ml" 80 2915 2926 "src/segment.ml" 80 2915 2948
+type(
+  float
+)
+"src/segment.ml" 81 2953 2959 "src/segment.ml" 81 2953 2961
+type(
+  float
+)
+ident(
+  def ya "src/segment.ml" 82 2991 2993 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 81 2953 2964 "src/segment.ml" 81 2953 2976
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 81 2953 2977 "src/segment.ml" 81 2953 2978
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 78 2839 2871 "src/segment.ml" 78 2839 2872
+)
+"src/segment.ml" 81 2953 2977 "src/segment.ml" 81 2953 2984
+type(
+  Point.t
+)
+"src/segment.ml" 81 2953 2977 "src/segment.ml" 81 2953 2986
+type(
+  int
+)
+"src/segment.ml" 81 2953 2964 "src/segment.ml" 81 2953 2986
+type(
+  float
+)
+"src/segment.ml" 82 2991 2997 "src/segment.ml" 82 2991 2999
+type(
+  float
+)
+ident(
+  def yb "src/segment.ml" 83 3029 3031 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 82 2991 3002 "src/segment.ml" 82 2991 3014
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 82 2991 3015 "src/segment.ml" 82 2991 3016
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 78 2839 2871 "src/segment.ml" 78 2839 2872
+)
+"src/segment.ml" 82 2991 3015 "src/segment.ml" 82 2991 3022
+type(
+  Point.t
+)
+"src/segment.ml" 82 2991 3015 "src/segment.ml" 82 2991 3024
+type(
+  int
+)
+"src/segment.ml" 82 2991 3002 "src/segment.ml" 82 2991 3024
+type(
+  float
+)
+"src/segment.ml" 83 3029 3035 "src/segment.ml" 83 3029 3037
+type(
+  float
+)
+ident(
+  def xc "src/segment.ml" 84 3067 3069 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 83 3029 3040 "src/segment.ml" 83 3029 3052
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 83 3029 3053 "src/segment.ml" 83 3029 3054
+type(
+  t
+)
+ident(
+  int_ref d "src/segment.ml" 78 2839 2873 "src/segment.ml" 78 2839 2874
+)
+"src/segment.ml" 83 3029 3053 "src/segment.ml" 83 3029 3060
+type(
+  Point.t
+)
+"src/segment.ml" 83 3029 3053 "src/segment.ml" 83 3029 3062
+type(
+  int
+)
+"src/segment.ml" 83 3029 3040 "src/segment.ml" 83 3029 3062
+type(
+  float
+)
+"src/segment.ml" 84 3067 3073 "src/segment.ml" 84 3067 3075
+type(
+  float
+)
+ident(
+  def xd "src/segment.ml" 85 3105 3107 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 84 3067 3078 "src/segment.ml" 84 3067 3090
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 84 3067 3091 "src/segment.ml" 84 3067 3092
+type(
+  t
+)
+ident(
+  int_ref d "src/segment.ml" 78 2839 2873 "src/segment.ml" 78 2839 2874
+)
+"src/segment.ml" 84 3067 3091 "src/segment.ml" 84 3067 3098
+type(
+  Point.t
+)
+"src/segment.ml" 84 3067 3091 "src/segment.ml" 84 3067 3100
+type(
+  int
+)
+"src/segment.ml" 84 3067 3078 "src/segment.ml" 84 3067 3100
+type(
+  float
+)
+"src/segment.ml" 85 3105 3111 "src/segment.ml" 85 3105 3113
+type(
+  float
+)
+ident(
+  def yc "src/segment.ml" 86 3143 3145 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 85 3105 3116 "src/segment.ml" 85 3105 3128
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 85 3105 3129 "src/segment.ml" 85 3105 3130
+type(
+  t
+)
+ident(
+  int_ref d "src/segment.ml" 78 2839 2873 "src/segment.ml" 78 2839 2874
+)
+"src/segment.ml" 85 3105 3129 "src/segment.ml" 85 3105 3136
+type(
+  Point.t
+)
+"src/segment.ml" 85 3105 3129 "src/segment.ml" 85 3105 3138
+type(
+  int
+)
+"src/segment.ml" 85 3105 3116 "src/segment.ml" 85 3105 3138
+type(
+  float
+)
+"src/segment.ml" 86 3143 3149 "src/segment.ml" 86 3143 3151
+type(
+  float
+)
+ident(
+  def yd "src/segment.ml" 88 3182 3184 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 86 3143 3154 "src/segment.ml" 86 3143 3166
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"src/segment.ml" 86 3143 3167 "src/segment.ml" 86 3143 3168
+type(
+  t
+)
+ident(
+  int_ref d "src/segment.ml" 78 2839 2873 "src/segment.ml" 78 2839 2874
+)
+"src/segment.ml" 86 3143 3167 "src/segment.ml" 86 3143 3174
+type(
+  Point.t
+)
+"src/segment.ml" 86 3143 3167 "src/segment.ml" 86 3143 3176
+type(
+  int
+)
+"src/segment.ml" 86 3143 3154 "src/segment.ml" 86 3143 3176
+type(
+  float
+)
+"src/segment.ml" 88 3182 3188 "src/segment.ml" 88 3182 3190
+type(
+  float
+)
+ident(
+  def dd "src/segment.ml" 90 3252 3254 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 88 3182 3195 "src/segment.ml" 88 3182 3197
+type(
+  float
+)
+ident(
+  int_ref xb "src/segment.ml" 80 2915 2921 "src/segment.ml" 80 2915 2923
+)
+"src/segment.ml" 88 3182 3198 "src/segment.ml" 88 3182 3200
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 88 3182 3201 "src/segment.ml" 88 3182 3203
+type(
+  float
+)
+ident(
+  int_ref xa "src/segment.ml" 79 2877 2883 "src/segment.ml" 79 2877 2885
+)
+"src/segment.ml" 88 3182 3194 "src/segment.ml" 88 3182 3204
+type(
+  float
+)
+"src/segment.ml" 88 3182 3205 "src/segment.ml" 88 3182 3207
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 88 3182 3209 "src/segment.ml" 88 3182 3211
+type(
+  float
+)
+ident(
+  int_ref yd "src/segment.ml" 86 3143 3149 "src/segment.ml" 86 3143 3151
+)
+"src/segment.ml" 88 3182 3212 "src/segment.ml" 88 3182 3214
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 88 3182 3215 "src/segment.ml" 88 3182 3217
+type(
+  float
+)
+ident(
+  int_ref yc "src/segment.ml" 85 3105 3111 "src/segment.ml" 85 3105 3113
+)
+"src/segment.ml" 88 3182 3208 "src/segment.ml" 88 3182 3218
+type(
+  float
+)
+"src/segment.ml" 88 3182 3194 "src/segment.ml" 88 3182 3218
+type(
+  float
+)
+"src/segment.ml" 88 3182 3219 "src/segment.ml" 88 3182 3221
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 88 3182 3223 "src/segment.ml" 88 3182 3225
+type(
+  float
+)
+ident(
+  int_ref yb "src/segment.ml" 82 2991 2997 "src/segment.ml" 82 2991 2999
+)
+"src/segment.ml" 88 3182 3226 "src/segment.ml" 88 3182 3228
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 88 3182 3229 "src/segment.ml" 88 3182 3231
+type(
+  float
+)
+ident(
+  int_ref ya "src/segment.ml" 81 2953 2959 "src/segment.ml" 81 2953 2961
+)
+"src/segment.ml" 88 3182 3222 "src/segment.ml" 88 3182 3232
+type(
+  float
+)
+"src/segment.ml" 88 3182 3233 "src/segment.ml" 88 3182 3235
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 88 3182 3237 "src/segment.ml" 88 3182 3239
+type(
+  float
+)
+ident(
+  int_ref xd "src/segment.ml" 84 3067 3073 "src/segment.ml" 84 3067 3075
+)
+"src/segment.ml" 88 3182 3240 "src/segment.ml" 88 3182 3242
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 88 3182 3243 "src/segment.ml" 88 3182 3245
+type(
+  float
+)
+ident(
+  int_ref xc "src/segment.ml" 83 3029 3035 "src/segment.ml" 83 3029 3037
+)
+"src/segment.ml" 88 3182 3236 "src/segment.ml" 88 3182 3246
+type(
+  float
+)
+"src/segment.ml" 88 3182 3222 "src/segment.ml" 88 3182 3246
+type(
+  float
+)
+"src/segment.ml" 88 3182 3193 "src/segment.ml" 88 3182 3247
+type(
+  float
+)
+"src/segment.ml" 90 3252 3258 "src/segment.ml" 90 3252 3259
+type(
+  float
+)
+ident(
+  def r "src/segment.ml" 91 3327 3329 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 90 3252 3264 "src/segment.ml" 90 3252 3266
+type(
+  float
+)
+ident(
+  int_ref ya "src/segment.ml" 81 2953 2959 "src/segment.ml" 81 2953 2961
+)
+"src/segment.ml" 90 3252 3267 "src/segment.ml" 90 3252 3269
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 90 3252 3270 "src/segment.ml" 90 3252 3272
+type(
+  float
+)
+ident(
+  int_ref yc "src/segment.ml" 85 3105 3111 "src/segment.ml" 85 3105 3113
+)
+"src/segment.ml" 90 3252 3263 "src/segment.ml" 90 3252 3273
+type(
+  float
+)
+"src/segment.ml" 90 3252 3274 "src/segment.ml" 90 3252 3276
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 90 3252 3278 "src/segment.ml" 90 3252 3280
+type(
+  float
+)
+ident(
+  int_ref xd "src/segment.ml" 84 3067 3073 "src/segment.ml" 84 3067 3075
+)
+"src/segment.ml" 90 3252 3281 "src/segment.ml" 90 3252 3283
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 90 3252 3284 "src/segment.ml" 90 3252 3286
+type(
+  float
+)
+ident(
+  int_ref xc "src/segment.ml" 83 3029 3035 "src/segment.ml" 83 3029 3037
+)
+"src/segment.ml" 90 3252 3277 "src/segment.ml" 90 3252 3287
+type(
+  float
+)
+"src/segment.ml" 90 3252 3263 "src/segment.ml" 90 3252 3287
+type(
+  float
+)
+"src/segment.ml" 90 3252 3288 "src/segment.ml" 90 3252 3290
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 90 3252 3292 "src/segment.ml" 90 3252 3294
+type(
+  float
+)
+ident(
+  int_ref xa "src/segment.ml" 79 2877 2883 "src/segment.ml" 79 2877 2885
+)
+"src/segment.ml" 90 3252 3295 "src/segment.ml" 90 3252 3297
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 90 3252 3298 "src/segment.ml" 90 3252 3300
+type(
+  float
+)
+ident(
+  int_ref xc "src/segment.ml" 83 3029 3035 "src/segment.ml" 83 3029 3037
+)
+"src/segment.ml" 90 3252 3291 "src/segment.ml" 90 3252 3301
+type(
+  float
+)
+"src/segment.ml" 90 3252 3302 "src/segment.ml" 90 3252 3304
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 90 3252 3306 "src/segment.ml" 90 3252 3308
+type(
+  float
+)
+ident(
+  int_ref yd "src/segment.ml" 86 3143 3149 "src/segment.ml" 86 3143 3151
+)
+"src/segment.ml" 90 3252 3309 "src/segment.ml" 90 3252 3311
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 90 3252 3312 "src/segment.ml" 90 3252 3314
+type(
+  float
+)
+ident(
+  int_ref yc "src/segment.ml" 85 3105 3111 "src/segment.ml" 85 3105 3113
+)
+"src/segment.ml" 90 3252 3305 "src/segment.ml" 90 3252 3315
+type(
+  float
+)
+"src/segment.ml" 90 3252 3291 "src/segment.ml" 90 3252 3315
+type(
+  float
+)
+"src/segment.ml" 90 3252 3262 "src/segment.ml" 90 3252 3316
+type(
+  float
+)
+"src/segment.ml" 90 3252 3317 "src/segment.ml" 90 3252 3319
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"src/segment.ml" 90 3252 3320 "src/segment.ml" 90 3252 3322
+type(
+  float
+)
+ident(
+  int_ref dd "src/segment.ml" 88 3182 3188 "src/segment.ml" 88 3182 3190
+)
+"src/segment.ml" 90 3252 3262 "src/segment.ml" 90 3252 3322
+type(
+  float
+)
+"src/segment.ml" 91 3327 3333 "src/segment.ml" 91 3327 3335
+type(
+  int
+)
+ident(
+  def xi "src/segment.ml" 92 3376 3381 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 91 3327 3338 "src/segment.ml" 91 3327 3346
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/segment.ml" 91 3327 3348 "src/segment.ml" 91 3327 3350
+type(
+  float
+)
+ident(
+  int_ref xa "src/segment.ml" 79 2877 2883 "src/segment.ml" 79 2877 2885
+)
+"src/segment.ml" 91 3327 3351 "src/segment.ml" 91 3327 3353
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/segment.ml" 91 3327 3354 "src/segment.ml" 91 3327 3355
+type(
+  float
+)
+ident(
+  int_ref r "src/segment.ml" 90 3252 3258 "src/segment.ml" 90 3252 3259
+)
+"src/segment.ml" 91 3327 3356 "src/segment.ml" 91 3327 3358
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 91 3327 3360 "src/segment.ml" 91 3327 3362
+type(
+  float
+)
+ident(
+  int_ref xb "src/segment.ml" 80 2915 2921 "src/segment.ml" 80 2915 2923
+)
+"src/segment.ml" 91 3327 3363 "src/segment.ml" 91 3327 3365
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 91 3327 3366 "src/segment.ml" 91 3327 3368
+type(
+  float
+)
+ident(
+  int_ref xa "src/segment.ml" 79 2877 2883 "src/segment.ml" 79 2877 2885
+)
+"src/segment.ml" 91 3327 3359 "src/segment.ml" 91 3327 3369
+type(
+  float
+)
+"src/segment.ml" 91 3327 3354 "src/segment.ml" 91 3327 3369
+type(
+  float
+)
+"src/segment.ml" 91 3327 3347 "src/segment.ml" 91 3327 3370
+type(
+  float
+)
+"src/segment.ml" 91 3327 3338 "src/segment.ml" 91 3327 3370
+type(
+  int
+)
+"src/segment.ml" 92 3376 3385 "src/segment.ml" 92 3376 3387
+type(
+  int
+)
+ident(
+  def yi "src/segment.ml" 94 3429 3434 "src/segment.ml" 94 3429 3441
+)
+"src/segment.ml" 92 3376 3390 "src/segment.ml" 92 3376 3398
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/segment.ml" 92 3376 3400 "src/segment.ml" 92 3376 3402
+type(
+  float
+)
+ident(
+  int_ref ya "src/segment.ml" 81 2953 2959 "src/segment.ml" 81 2953 2961
+)
+"src/segment.ml" 92 3376 3403 "src/segment.ml" 92 3376 3405
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/segment.ml" 92 3376 3406 "src/segment.ml" 92 3376 3407
+type(
+  float
+)
+ident(
+  int_ref r "src/segment.ml" 90 3252 3258 "src/segment.ml" 90 3252 3259
+)
+"src/segment.ml" 92 3376 3408 "src/segment.ml" 92 3376 3410
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/segment.ml" 92 3376 3412 "src/segment.ml" 92 3376 3414
+type(
+  float
+)
+ident(
+  int_ref yb "src/segment.ml" 82 2991 2997 "src/segment.ml" 82 2991 2999
+)
+"src/segment.ml" 92 3376 3415 "src/segment.ml" 92 3376 3417
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"src/segment.ml" 92 3376 3418 "src/segment.ml" 92 3376 3420
+type(
+  float
+)
+ident(
+  int_ref ya "src/segment.ml" 81 2953 2959 "src/segment.ml" 81 2953 2961
+)
+"src/segment.ml" 92 3376 3411 "src/segment.ml" 92 3376 3421
+type(
+  float
+)
+"src/segment.ml" 92 3376 3406 "src/segment.ml" 92 3376 3421
+type(
+  float
+)
+"src/segment.ml" 92 3376 3399 "src/segment.ml" 92 3376 3422
+type(
+  float
+)
+"src/segment.ml" 92 3376 3390 "src/segment.ml" 92 3376 3422
+type(
+  int
+)
+"src/segment.ml" 94 3429 3435 "src/segment.ml" 94 3429 3437
+type(
+  int
+)
+ident(
+  int_ref xi "src/segment.ml" 91 3327 3333 "src/segment.ml" 91 3327 3335
+)
+"src/segment.ml" 94 3429 3438 "src/segment.ml" 94 3429 3440
+type(
+  int
+)
+ident(
+  int_ref yi "src/segment.ml" 92 3376 3385 "src/segment.ml" 92 3376 3387
+)
+"src/segment.ml" 94 3429 3434 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 92 3376 3381 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 91 3327 3329 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 90 3252 3254 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 88 3182 3184 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 86 3143 3145 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 85 3105 3107 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 84 3067 3069 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 83 3029 3031 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 82 2991 2993 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 81 2953 2955 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 80 2915 2917 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 79 2877 2879 "src/segment.ml" 94 3429 3441
+type(
+  int * int
+)
+"src/segment.ml" 96 3446 3455 "src/segment.ml" 96 3446 3457
+type(
+  int
+)
+ident(
+  def xi "src/segment.ml" 98 3500 3504 "src/segment.ml" 98 3500 3595
+)
+"src/segment.ml" 96 3446 3458 "src/segment.ml" 96 3446 3460
+type(
+  int
+)
+ident(
+  def yi "src/segment.ml" 98 3500 3504 "src/segment.ml" 98 3500 3595
+)
+"src/segment.ml" 96 3446 3454 "src/segment.ml" 96 3446 3461
+type(
+  int * int
+)
+"src/segment.ml" 96 3446 3464 "src/segment.ml" 96 3446 3490
+type(
+  t -> t -> int * int
+)
+ident(
+  int_ref point_intersection_droites "src/segment.ml" 78 2839 2844 "src/segment.ml" 78 2839 2870
+)
+"src/segment.ml" 96 3446 3491 "src/segment.ml" 96 3446 3492
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
+)
+"src/segment.ml" 96 3446 3493 "src/segment.ml" 96 3446 3494
+type(
+  t
+)
+ident(
+  int_ref d "src/segment.ml" 68 2651 2669 "src/segment.ml" 68 2651 2670
+)
+"src/segment.ml" 96 3446 3464 "src/segment.ml" 96 3446 3494
+call(
+  stack
+)
+type(
+  int * int
+)
+"src/segment.ml" 98 3500 3511 "src/segment.ml" 98 3500 3522
+type(
+  int -> int -> int -> int -> t
+)
+ident(
+  int_ref new_segment "src/segment.ml" 30 648 652 "src/segment.ml" 30 648 663
+)
+"src/segment.ml" 98 3500 3523 "src/segment.ml" 98 3500 3524
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
+)
+"src/segment.ml" 98 3500 3523 "src/segment.ml" 98 3500 3530
+type(
+  Point.t
+)
+"src/segment.ml" 98 3500 3523 "src/segment.ml" 98 3500 3532
+type(
+  int
+)
+"src/segment.ml" 98 3500 3533 "src/segment.ml" 98 3500 3534
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
+)
+"src/segment.ml" 98 3500 3533 "src/segment.ml" 98 3500 3540
+type(
+  Point.t
+)
+"src/segment.ml" 98 3500 3533 "src/segment.ml" 98 3500 3542
+type(
+  int
+)
+"src/segment.ml" 98 3500 3543 "src/segment.ml" 98 3500 3545
+type(
+  int
+)
+ident(
+  int_ref xi "src/segment.ml" 96 3446 3455 "src/segment.ml" 96 3446 3457
+)
+"src/segment.ml" 98 3500 3546 "src/segment.ml" 98 3500 3548
+type(
+  int
+)
+ident(
+  int_ref yi "src/segment.ml" 96 3446 3458 "src/segment.ml" 96 3446 3460
+)
+"src/segment.ml" 98 3500 3510 "src/segment.ml" 98 3500 3549
+call(
+  stack
+)
+type(
+  t
+)
+"src/segment.ml" 98 3500 3505 "src/segment.ml" 98 3500 3549
+type(
+  t option
+)
+"src/segment.ml" 98 3500 3556 "src/segment.ml" 98 3500 3567
+type(
+  int -> int -> int -> int -> t
+)
+ident(
+  int_ref new_segment "src/segment.ml" 30 648 652 "src/segment.ml" 30 648 663
+)
+"src/segment.ml" 98 3500 3568 "src/segment.ml" 98 3500 3570
+type(
+  int
+)
+ident(
+  int_ref xi "src/segment.ml" 96 3446 3455 "src/segment.ml" 96 3446 3457
+)
+"src/segment.ml" 98 3500 3571 "src/segment.ml" 98 3500 3573
+type(
+  int
+)
+ident(
+  int_ref yi "src/segment.ml" 96 3446 3458 "src/segment.ml" 96 3446 3460
+)
+"src/segment.ml" 98 3500 3574 "src/segment.ml" 98 3500 3575
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
+)
+"src/segment.ml" 98 3500 3574 "src/segment.ml" 98 3500 3581
+type(
+  Point.t
+)
+"src/segment.ml" 98 3500 3574 "src/segment.ml" 98 3500 3583
+type(
+  int
+)
+"src/segment.ml" 98 3500 3584 "src/segment.ml" 98 3500 3585
+type(
+  t
+)
+ident(
+  int_ref s "src/segment.ml" 68 2651 2671 "src/segment.ml" 68 2651 2672
+)
+"src/segment.ml" 98 3500 3584 "src/segment.ml" 98 3500 3591
+type(
+  Point.t
+)
+"src/segment.ml" 98 3500 3584 "src/segment.ml" 98 3500 3593
+type(
+  int
+)
+"src/segment.ml" 98 3500 3555 "src/segment.ml" 98 3500 3594
+call(
+  stack
+)
+type(
+  t
+)
+"src/segment.ml" 98 3500 3551 "src/segment.ml" 98 3500 3594
+type(
+  t option
+)
+"src/segment.ml" 98 3500 3504 "src/segment.ml" 98 3500 3595
+type(
+  t option * t option
+)
+"src/segment.ml" 96 3446 3450 "src/segment.ml" 98 3500 3595
+type(
+  t option * t option
+)
+"src/segment.ml" 78 2839 2840 "src/segment.ml" 98 3500 3595
+type(
+  t option * t option
+)
+"src/segment.ml" 69 2676 2677 "src/segment.ml" 98 3500 3595
+type(
+  t option * t option
+)
+"src/segment.ml" 100 3598 3602 "src/segment.ml" 100 3598 3607
+type(
+  'a option -> 'a list -> 'a list
+)
+ident(
+  def +:: "src/segment.ml" 103 3659 3659 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 100 3598 3608 "src/segment.ml" 100 3598 3609
+type(
+  'a option
+)
+ident(
+  def e "src/segment.ml" 100 3598 3610 "src/segment.ml" 100 3598 3655
+)
+"src/segment.ml" 100 3598 3610 "src/segment.ml" 100 3598 3611
+type(
+  'a list
+)
+ident(
+  def l "src/segment.ml" 100 3598 3614 "src/segment.ml" 100 3598 3655
+)
+"src/segment.ml" 100 3598 3620 "src/segment.ml" 100 3598 3621
+type(
+  'a option
+)
+ident(
+  int_ref e "src/segment.ml" 100 3598 3608 "src/segment.ml" 100 3598 3609
+)
+"src/segment.ml" 100 3598 3627 "src/segment.ml" 100 3598 3631
+type(
+  'a option
+)
+"src/segment.ml" 100 3598 3635 "src/segment.ml" 100 3598 3636
+type(
+  'a list
+)
+ident(
+  int_ref l "src/segment.ml" 100 3598 3610 "src/segment.ml" 100 3598 3611
+)
+"src/segment.ml" 100 3598 3644 "src/segment.ml" 100 3598 3645
+type(
+  'a
+)
+ident(
+  def e "src/segment.ml" 100 3598 3649 "src/segment.ml" 100 3598 3655
+)
+"src/segment.ml" 100 3598 3639 "src/segment.ml" 100 3598 3645
+type(
+  'a option
+)
+"src/segment.ml" 100 3598 3649 "src/segment.ml" 100 3598 3650
+type(
+  'a
+)
+ident(
+  int_ref e "src/segment.ml" 100 3598 3644 "src/segment.ml" 100 3598 3645
+)
+"src/segment.ml" 100 3598 3654 "src/segment.ml" 100 3598 3655
+type(
+  'a list
+)
+ident(
+  int_ref l "src/segment.ml" 100 3598 3610 "src/segment.ml" 100 3598 3611
+)
+"src/segment.ml" 100 3598 3649 "src/segment.ml" 100 3598 3655
+type(
+  'a list
+)
+"src/segment.ml" 100 3598 3614 "src/segment.ml" 100 3598 3655
+type(
+  'a list
+)
+"src/segment.ml" 103 3659 3663 "src/segment.ml" 103 3659 3668
+type(
+  t -> t list -> t list * t list
+)
+ident(
+  def split "src/segment.ml" 110 3834 3861 "src/segment.ml" 1 0 -1
+)
+"src/segment.ml" 103 3659 3669 "src/segment.ml" 103 3659 3671
+type(
+  t
+)
+ident(
+  def hd "src/segment.ml" 103 3659 3672 "src/segment.ml" 110 3834 3861
+)
+"src/segment.ml" 103 3659 3672 "src/segment.ml" 103 3659 3676
+type(
+  t list
+)
+ident(
+  def rest "src/segment.ml" 104 3680 3681 "src/segment.ml" 110 3834 3861
+)
+"src/segment.ml" 104 3680 3689 "src/segment.ml" 104 3680 3703
+type(
+  t list -> t list * t list -> t list * t list
+)
+ident(
+  def split_terminal "src/segment.ml" 104 3680 3681 "src/segment.ml" 110 3834 3861
+)
+"src/segment.ml" 104 3680 3704 "src/segment.ml" 104 3680 3705
+type(
+  t list
+)
+ident(
+  def l "src/segment.ml" 104 3680 3706 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 104 3680 3707 "src/segment.ml" 104 3680 3709
+type(
+  t list
+)
+ident(
+  def sl "src/segment.ml" 105 3716 3717 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 104 3680 3710 "src/segment.ml" 104 3680 3712
+type(
+  t list
+)
+ident(
+  def sr "src/segment.ml" 105 3716 3717 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 104 3680 3706 "src/segment.ml" 104 3680 3713
+type(
+  t list * t list
+)
+"src/segment.ml" 105 3716 3723 "src/segment.ml" 105 3716 3724
+type(
+  t list
+)
+ident(
+  int_ref l "src/segment.ml" 104 3680 3704 "src/segment.ml" 104 3680 3705
+)
+"src/segment.ml" 106 3730 3733 "src/segment.ml" 106 3730 3735
+type(
+  t list
+)
+"src/segment.ml" 106 3730 3740 "src/segment.ml" 106 3730 3742
+type(
+  t list
+)
+ident(
+  int_ref sl "src/segment.ml" 104 3680 3707 "src/segment.ml" 104 3680 3709
+)
+"src/segment.ml" 106 3730 3743 "src/segment.ml" 106 3730 3745
+type(
+  t list
+)
+ident(
+  int_ref sr "src/segment.ml" 104 3680 3710 "src/segment.ml" 104 3680 3712
+)
+"src/segment.ml" 106 3730 3739 "src/segment.ml" 106 3730 3746
+type(
+  t list * t list
+)
+"src/segment.ml" 107 3747 3750 "src/segment.ml" 107 3747 3751
+type(
+  t
+)
+ident(
+  def a "src/segment.ml" 107 3747 3758 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 107 3747 3753 "src/segment.ml" 107 3747 3754
+type(
+  t list
+)
+ident(
+  def b "src/segment.ml" 107 3747 3758 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 107 3747 3750 "src/segment.ml" 107 3747 3754
+type(
+  t list
+)
+"src/segment.ml" 107 3747 3763 "src/segment.ml" 107 3747 3764
+type(
+  t option
+)
+ident(
+  def l "src/segment.ml" 108 3792 3796 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 107 3747 3765 "src/segment.ml" 107 3747 3766
+type(
+  t option
+)
+ident(
+  def r "src/segment.ml" 108 3792 3796 "src/segment.ml" 108 3792 3829
+)
+"src/segment.ml" 107 3747 3762 "src/segment.ml" 107 3747 3767
+type(
+  t option * t option
+)
+"src/segment.ml" 107 3747 3770 "src/segment.ml" 107 3747 3783
+type(
+  t -> t -> t option * t option
+)
+ident(
+  int_ref split_segment "src/segment.ml" 68 2651 2655 "src/segment.ml" 68 2651 2668
+)
+"src/segment.ml" 107 3747 3784 "src/segment.ml" 107 3747 3786
+type(
+  t
+)
+ident(
+  int_ref hd "src/segment.ml" 103 3659 3669 "src/segment.ml" 103 3659 3671
+)
+"src/segment.ml" 107 3747 3787 "src/segment.ml" 107 3747 3788
+type(
+  t
+)
+ident(
+  int_ref a "src/segment.ml" 107 3747 3750 "src/segment.ml" 107 3747 3751
+)
+"src/segment.ml" 107 3747 3770 "src/segment.ml" 107 3747 3788
+call(
+  stack
+)
+type(
+  t option * t option
+)
+"src/segment.ml" 108 3792 3796 "src/segment.ml" 108 3792 3810
+type(
+  t list -> t list * t list -> t list * t list
+)
+ident(
+  int_ref split_terminal "src/segment.ml" 104 3680 3689 "src/segment.ml" 104 3680 3703
+)
+"src/segment.ml" 108 3792 3811 "src/segment.ml" 108 3792 3812
+type(
+  t list
+)
+ident(
+  int_ref b "src/segment.ml" 107 3747 3753 "src/segment.ml" 107 3747 3754
+)
+"src/segment.ml" 108 3792 3814 "src/segment.ml" 108 3792 3815
+type(
+  t option
+)
+ident(
+  int_ref l "src/segment.ml" 107 3747 3763 "src/segment.ml" 107 3747 3764
+)
+"src/segment.ml" 108 3792 3815 "src/segment.ml" 108 3792 3818
+type(
+  t option -> t list -> t list
+)
+ident(
+  int_ref +:: "src/segment.ml" 100 3598 3602 "src/segment.ml" 100 3598 3607
+)
+"src/segment.ml" 108 3792 3818 "src/segment.ml" 108 3792 3820
+type(
+  t list
+)
+ident(
+  int_ref sl "src/segment.ml" 104 3680 3707 "src/segment.ml" 104 3680 3709
+)
+"src/segment.ml" 108 3792 3814 "src/segment.ml" 108 3792 3820
+call(
+  stack
+)
+type(
+  t list
+)
+"src/segment.ml" 108 3792 3822 "src/segment.ml" 108 3792 3823
+type(
+  t option
+)
+ident(
+  int_ref r "src/segment.ml" 107 3747 3765 "src/segment.ml" 107 3747 3766
+)
+"src/segment.ml" 108 3792 3823 "src/segment.ml" 108 3792 3826
+type(
+  t option -> t list -> t list
+)
+ident(
+  int_ref +:: "src/segment.ml" 100 3598 3602 "src/segment.ml" 100 3598 3607
+)
+"src/segment.ml" 108 3792 3826 "src/segment.ml" 108 3792 3828
+type(
+  t list
+)
+ident(
+  int_ref sr "src/segment.ml" 104 3680 3710 "src/segment.ml" 104 3680 3712
+)
+"src/segment.ml" 108 3792 3822 "src/segment.ml" 108 3792 3828
+call(
+  stack
+)
+type(
+  t list
+)
+"src/segment.ml" 108 3792 3813 "src/segment.ml" 108 3792 3829
+type(
+  t list * t list
+)
+"src/segment.ml" 108 3792 3796 "src/segment.ml" 108 3792 3829
+call(
+  tail
+)
+type(
+  t list * t list
+)
+"src/segment.ml" 107 3747 3758 "src/segment.ml" 108 3792 3829
+type(
+  t list * t list
+)
+"src/segment.ml" 105 3716 3717 "src/segment.ml" 108 3792 3829
+type(
+  t list * t list
+)
+"src/segment.ml" 110 3834 3834 "src/segment.ml" 110 3834 3848
+type(
+  t list -> t list * t list -> t list * t list
+)
+ident(
+  int_ref split_terminal "src/segment.ml" 104 3680 3689 "src/segment.ml" 104 3680 3703
+)
+"src/segment.ml" 110 3834 3849 "src/segment.ml" 110 3834 3853
+type(
+  t list
+)
+ident(
+  int_ref rest "src/segment.ml" 103 3659 3672 "src/segment.ml" 103 3659 3676
+)
+"src/segment.ml" 110 3834 3855 "src/segment.ml" 110 3834 3857
+type(
+  t list
+)
+"src/segment.ml" 110 3834 3858 "src/segment.ml" 110 3834 3860
+type(
+  t list
+)
+"src/segment.ml" 110 3834 3854 "src/segment.ml" 110 3834 3861
+type(
+  t list * t list
+)
+"src/segment.ml" 110 3834 3834 "src/segment.ml" 110 3834 3861
+call(
+  tail
+)
+type(
+  t list * t list
+)
+"src/segment.ml" 104 3680 3681 "src/segment.ml" 110 3834 3861
+type(
+  t list * t list
 )

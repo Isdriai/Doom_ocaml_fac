@@ -10,10 +10,10 @@ type t = {id : string;
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
+          angle_mur : int;
          }
 
 type tpos = L | R | C
-
 
 let compteur =
 	let etat = ref 0 in
@@ -41,7 +41,9 @@ let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in
 	let c = compteur() in 
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
-			 boite_droite_orig = igD; boite_droite_dest = estD} 
+			 boite_droite_orig = igD; boite_droite_dest = estD;
+			 angle_mur = int_of_float(r_to_deg(atan (float_of_int(est.y - ig.y) /. float_of_int(est.x - ig.x))))
+			 } 
 	in p
 
 let dansLaBoite p s = 
@@ -73,8 +75,25 @@ let split_segment d s =
 	| L,C 
 	| C,L -> (Some (s), None)
 	| _,_ ->  
+	let point_intersection_droites s d =
+		let xa = float_of_int s.porig.x in 
+		let xb = float_of_int s.pdest.x in 
+		let ya = float_of_int s.porig.y in 
+		let yb = float_of_int s.pdest.y in 
+		let xc = float_of_int d.porig.x in 
+		let xd = float_of_int d.pdest.x in 
+		let yc = float_of_int d.porig.y in 
+		let yd = float_of_int d.pdest.y in 
 
-    let (xi,yi) = Trigo.point_intersection_droites s d in 
+		let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
+
+		let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
+		let xi = truncate (xa +. r *. (xb -. xa))  in 
+	    let yi = truncate (ya +. r *. (yb -. ya))  in 
+
+	    (xi,yi)
+	in
+    let (xi,yi) = point_intersection_droites s d in 
 
     (Some (new_segment s.porig.x s.porig.y xi yi), Some(new_segment xi yi s.pdest.x s.pdest.y))	
 

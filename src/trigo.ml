@@ -1,6 +1,3 @@
-open Segment
-open Point
-
 let pi = 4. *. atan 1.
 
 let piSur2 = pi /. 2.
@@ -19,7 +16,7 @@ let dacos c = r_to_deg (acos c)
 
 let dsin a = sin (d_to_rad a)
 
-let point_intersection_droites s d =
+(* let point_intersection_droites s d =
 	let xa = float_of_int s.porig.x in 
 	let xb = float_of_int s.pdest.x in 
 	let ya = float_of_int s.porig.y in 
@@ -35,4 +32,4 @@ let point_intersection_droites s d =
 	let xi = truncate (xa +. r *. (xb -. xa))  in 
     let yi = truncate (ya +. r *. (yb -. ya))  in 
 
-    (xi,yi)
+    (xi,yi) *)

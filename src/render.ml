@@ -194,24 +194,47 @@ let projection seg  =
 
 (*correction devra renvoyer deux points ainsi que deux nouvelles colonnes par rapport à un segment 
 et non plus une simple colonne par rapport a une autre colonne*)
-	let correction_c cmax cmin point ctest = 
+	let correction point ctest = 
 
+		let point_intersection_droites s d =
+			let xa = float_of_int s.porig.x in 
+			let xb = float_of_int s.pdest.x in 
+			let ya = float_of_int s.porig.y in 
+			let yb = float_of_int s.pdest.y in 
+			let xc = float_of_int d.porig.x in 
+			let xd = float_of_int d.pdest.x in 
+			let yc = float_of_int d.porig.y in 
+			let yd = float_of_int d.pdest.y in 
+
+			let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
+
+			let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
+			let xi = truncate (xa +. r *. (xb -. xa))  in 
+		    let yi = truncate (ya +. r *. (yb -. ya))  in 
+
+		    (xi,yi)
+		in
 
 		if ctest < cmin then 
-		let (nw_x,nw_y) = Trigo.point_intersection_droites seg (Segment.new_segment 0 0 0 cmin) in
+		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmin) in
 		cmin,nw_x,nw_y
 		else if ctest > cmax then 
-		let (nw_x,nw_y) = Trigo.point_intersection_droites seg (Segment.new_segment 0 0 0 cmax) in
+		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 0 cmax) in
 		cmax,nw_x,nw_y
 		else point.x, point.y, ctest
+	in
+
+	let angle_m xo yo xd yd = 
+		int_of_float(r_to_deg(atan (float_of_int(yd - yo) /. float_of_int(xd - xo))))
 	in
 
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
 	| a,b when a < cmin && b < cmin -> ()
-	| a,b -> let cor = (correction_c cmax cmin) in 
-			 let (nw_x_orig,nw_y_orig,nw_c_p_orig) = cor seg.porig c_p_orig in
-			 let (nw_x_dest,nw_y_dest,nw_c_p_dest) = cor seg.dest c_p_dest in 
+	| a,b -> Printf.printf "angle mur avant correction == %d \n" seg.angle_mur;
+			let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
+			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
+			Printf.printf " angle mur apres corerction == %d \n" (angle_m nw_x_orig nw_y_orig nw_x_dest nw_y_dest);
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
 (*
