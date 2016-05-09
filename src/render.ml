@@ -8,13 +8,14 @@ open Graphics
 let taille = 500
 
 
-let angle_vision = 45
+let angle_vision = Options.fov
 
 let fabs a =
 	if a < 0. then -.a else a
 
 let d_focale = int_of_float(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 ))) 
 
+(*Effectue une translation sur un segment par rapport à la position du joueur*)
 let calcul_vecteur p s =
 	Segment.new_segment (s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
@@ -22,8 +23,13 @@ let calcul_vecteur p s =
 						(s.pdest.y-p.pos.y)
 
 (*
-	x' = x cos a + y sin a
-	y' = -x sin a + y cos a
+	on effectue une rotation sur les segments pour les avoir en face du joueur
+
+	les formules =
+	xa' = xa * cos (-a) - ya * sin (-a)
+	ya' = xa * sin (-a) + ya * cos (-a)
+	xb' = xb * cos (-a) - yb * sin (-a)
+	yb' = xb * sin (-a) + yb * cos (-a)
 *)
 
 let calcul_angle p s =
@@ -32,7 +38,8 @@ let calcul_angle p s =
 		(int_of_float (float_of_int (s.porig.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.porig.y) *. Trigo.dcos (-p.pa)))
 		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.pdest.y) *. Trigo.dsin (-p.pa)))
 		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.pdest.y) *. Trigo.dcos (-p.pa)))
-	
+
+
 let ata xo yo xd yd = 
 	float_of_int(yd - yo) /. float_of_int(xd - xo)
 
@@ -44,7 +51,8 @@ let clipping s =
 	let xd = s.pdest.x in
 	let yd = s.pdest.y in
 	let angle_mur = ata xo yo xd yd in
-
+(*on affiche pas un mur qui serait derriere le joueur, si il y a une partie du mur qui se trouve derriere,
+nous créons un nouveau segment*)
 	if xo < 1 && xd < 1 then None
 	else if xo < 1 then Some(Segment.new_segment 1 (yo+int_of_float(float_of_int(1-xo)*. angle_mur)) xd yd ) 
 	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
@@ -61,17 +69,17 @@ on calcule la correspondance entre la projection et la coordonnée x de l'affich
 ce qui revient à faire une fonction affine
 *)
 let calcul_p_x cmax c =
-	let a = float_of_int(taille)/. (dtan (angle_vision/2) *. float_of_int(d_focale)) in 
+	let a = float_of_int (taille/2)/.float_of_int(-cmax) in 
 	let b = float_of_int(taille/2) in
-	int_of_float ( float_of_int (taille/2)/.float_of_int(-cmax) *. float_of_int (c) +. float_of_int (taille/2))
+	int_of_float ( a *. float_of_int (c) +. b)
 
-
+(*va afficher en 3D un segment*)
 let passage_3d cmax xo yo xd yd co cd =
 
 	let hauteur_yeux = taille/2 in 
 
+(*on fait la meme chose que pour x, on applique une simple fonction affine *)
 	let calcul_p_y x y =
-		let limite = taille in 
 		let echelle = float_of_int(taille/4) in
 		let rapport = float_of_int d_focale /. distance x y in
 		let calcul = int_of_float(echelle *. rapport)+hauteur_yeux in 
@@ -102,7 +110,9 @@ let passage_3d cmax xo yo xd yd co cd =
 
 let projection seg p =
 
-	(*y' = ( ls / 2 ) - (( y * d ) / x *)
+	(*y' = ( y * d ) / x
+	cette formule permet de connaitre la colonne sur l'ecran d'une extremité d'un segment
+	 *)
 	let project p =
 		int_of_float(float_of_int (d_focale * p.y) /. float_of_int( p.x )) in
 
@@ -111,34 +121,15 @@ let projection seg p =
 	let c_p_orig = project seg.porig in
 	let c_p_dest = project seg.pdest in
 
-(*correction devra renvoyer deux points ainsi que deux nouvelles colonnes par rapport à un segment 
-et non plus une simple colonne par rapport a une autre colonne*)
+(*Si le segment à une partie en dehors du champ de vision du joueur, on affiche seulement le pan visible,
+pour cela, on calcul le point d'intersection entre le champ de vision et le segment, ce que fait correction*)
 	let correction point ctest = 
 
-		let point_intersection_droites s d =
-			let xa = float_of_int s.porig.x in 
-			let xb = float_of_int s.pdest.x in 
-			let ya = float_of_int s.porig.y in 
-			let yb = float_of_int s.pdest.y in 
-			let xc = float_of_int d.porig.x in 
-			let xd = float_of_int d.pdest.x in 
-			let yc = float_of_int d.porig.y in 
-			let yd = float_of_int d.pdest.y in 
-
-			let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
-
-			let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
-			let xi = truncate (xa +. r *. (xb -. xa))  in 
-		    let yi = truncate (ya +. r *. (yb -. ya))  in 
-		    (xi,yi)
-
-		in
-
 		if ctest < cmin then 
-		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 (d_focale) cmin) in
+		let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmin in
 		nw_x,nw_y,cmin
 		else if ctest > cmax then 
-		let (nw_x,nw_y) = point_intersection_droites seg (Segment.new_segment 0 0 (d_focale) cmax) in
+		let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmax in
 		nw_x,nw_y,cmax
 		else point.x, point.y, ctest
 	in
@@ -150,10 +141,7 @@ et non plus une simple colonne par rapport a une autre colonne*)
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
-(*
-devra renvoyer un quator de points qui representeront les 4 coins du mur à afficher
-projection seg -> Point.t * Point.t * Point.t * Point.t
-*)
+
 let debug_bsp_2D s p =
 
     Graphics.draw_segments [|(s.porig.x/4, s.porig.y/4,

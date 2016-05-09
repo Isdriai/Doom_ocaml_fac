@@ -56,7 +56,7 @@ let dansLaBoite p s =
 	(s.boite_droite_dest.y - s.boite_gauche_dest.y)* (p.x - s.boite_gauche_dest.x) in
 	if res1 * res2 <= 0  && res3 * res4 <= 0 then raise Exit
 
-
+(*Dis si un segment est à gauche, à droite ou au centre par rapport à un point*)
 let get_position p s = 
 	let res = (s.pdest.x - s.porig.x) * (p.y - s.porig.y) - (s.pdest.y - s.porig.y)* (p.x - s.porig.x) in
 	match res with
@@ -64,6 +64,7 @@ let get_position p s =
 	| a when a < 0 -> R
 	| _ -> C
 
+(*Sépare un segment s si il se fait couper par le prolongement d'un autre segment d*)
 let split_segment d s = 
 	match get_position s.porig d, get_position s.pdest d with
 	| R,C
@@ -74,31 +75,17 @@ let split_segment d s =
 	| L,C 
 	| C,L -> (Some (s), None)
 	| _,_ ->  
-	let point_intersection_droites s d =
-		let xa = float_of_int s.porig.x in 
-		let xb = float_of_int s.pdest.x in 
-		let ya = float_of_int s.porig.y in 
-		let yb = float_of_int s.pdest.y in 
-		let xc = float_of_int d.porig.x in 
-		let xd = float_of_int d.pdest.x in 
-		let yc = float_of_int d.porig.y in 
-		let yd = float_of_int d.pdest.y in 
 
-		let dd = ((xb -. xa) *. (yd -. yc) -. (yb -. ya) *. (xd -. xc)) in
-
-		let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
-		let xi = truncate (xa +. r *. (xb -. xa))  in 
-	    let yi = truncate (ya +. r *. (yb -. ya))  in 
-
-	    (xi,yi)
-	in
-    let (xi,yi) = point_intersection_droites s d in 
+    let (xi,yi) = Trigo.point_intersection_droites s.porig.x s.porig.y s.pdest.x s.pdest.y d.porig.x d.porig.y d.pdest.x d.pdest.y in 
 
     (Some (new_segment s.porig.x s.porig.y xi yi), Some(new_segment xi yi s.pdest.x s.pdest.y))	
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 
-
+(*renvoie la liste des segments à gauche et à droite par rapport à un segment hd,
+ Si un segment se trouve au milieu, un segment correspondant à sa partie gauche sera mis avec les segments à gauche,
+ de meme si pour la partie droite
+*)
 let split hd rest = 
 	let rec split_terminal l (sl,sr) =
 	match l with
@@ -107,5 +94,3 @@ let split hd rest =
 				split_terminal b (l+::sl, r+::sr) 
 in
 split_terminal rest ([],[])
-
-

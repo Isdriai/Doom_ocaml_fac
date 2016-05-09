@@ -9,6 +9,7 @@ mutable pa : int;
 }
 
 let pas = 10.
+let d_angle = 3 
 
 let new_player pos pa = let t = {pos = pos ; pa = pa} in t
 
@@ -16,8 +17,8 @@ type dir = Left | Right
 
 let rotate d p = 
 	match d with
-	| Left -> p.pa <- (p.pa + 10) mod 360
-	| Right -> p.pa <- (p.pa - 10) mod 360
+	| Left -> p.pa <- (p.pa + d_angle) mod 360
+	| Right -> p.pa <- (p.pa - d_angle) mod 360
 	
 
 type mv = MFwd | MBwd | MLeft | MRight
