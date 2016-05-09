@@ -1,16 +1,14 @@
 open Point
-open String
 open Trigo
-(* cree deux segment *)
+open Options
 
 type t = {id : string; 
           porig : Point.t; 
           pdest : Point.t;
-          boite_gauche_orig : Point.t;
+          boite_gauche_orig : Point.t; (* boite de collision*)
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
-          angle_mur : int;
          }
 
 type tpos = L | R | C
@@ -22,27 +20,28 @@ let compteur =
 let angleNormal xa ya xb yb = 
 	let y = float_of_int (yb - ya) in
 	let x = float_of_int (xb - xa) in
-	if x = 0. then 3.14159/.2.
+	if x = 0. then Trigo.piSur2
 	else
-	atan (y /. x) (* calcule de l'angle de la normal et le borne entre 10 et -10*)
+	atan (y /. x) (* calcule de l'angle de la normal*)
 	
 
-let new_segment xo yo xd yd = let ig = {x = xo ; y = yo} in 
+let new_segment xo yo xd yd = 
+	let pas = Options.step_dist /. 2. in
+	let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
 	let ang = angleNormal xo yo xd yd in
-	let igG = {x = xo - (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
-				y = yo - (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
-	let estG = {x = xd - (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
-				y = yd - (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
-	let igD = {x = xo + (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
-				y = yo + (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
-	let estD = {x = xd + (int_of_float (cos (ang +. Trigo.piSur2) *. 10.)) ; 
-				y = yd + (int_of_float (sin (ang +. Trigo.piSur2) *. 10.))} in 
+	let igG = {x = xo - (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
+				y = yo - (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
+	let estG = {x = xd - (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
+				y = yd - (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
+	let igD = {x = xo + (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
+				y = yo + (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
+	let estD = {x = xd + (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
+				y = yd + (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
 	let c = compteur() in 
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
 			 boite_droite_orig = igD; boite_droite_dest = estD;
-			 angle_mur = int_of_float(r_to_deg(atan (float_of_int(est.y - ig.y) /. float_of_int(est.x - ig.x))))
 			 } 
 	in p
 

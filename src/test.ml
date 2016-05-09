@@ -85,13 +85,9 @@ let test lab =
 	let s6 = Segment.new_segment 8 2 3 3 in 
 	let s7 = Segment.new_segment 5 6 5 7 in 
 	let s8 = Segment.new_segment 0 0 10 0 in
- 	let test_split_segment = Segment.split_segment s1 s3 in 
  	let l_lab = construire_liste lab in 
- 	let p_lab = construire_player lab in
 	let l_seg = s1::s2::s3::s4::s5::s6::s7::s8::[] in
 	let test_split = Segment.split s1 l_seg in 
-	let b = Bsp.build_bsp l_seg in 
-
 (* 	Printf.printf "bsp :\n\n";
 	affiche_bsp b; OK*)
 	

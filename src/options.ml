@@ -81,7 +81,7 @@ type tlang = Fr | Be
 let lang = ref Fr
 let change_lang langue = lang := langue
 
-type touche = TZ | TQ | TS | TD | TA | TE | None
+type touche = TZ | TQ | TS | TD | TA | TE | TNone
 
 let clavier_lg touche = match !lang with
   |Fr -> (match touche with 
@@ -91,7 +91,7 @@ let clavier_lg touche = match !lang with
           |'d' -> TD
           |'a' -> TA
           |'e' -> TE
-          |_ -> None)
+          |_ -> TNone)
   |Be -> (match touche with 
           |'e' -> TZ
           |'a' -> TQ
@@ -99,4 +99,4 @@ let clavier_lg touche = match !lang with
           |'i' -> TD
           |'b' -> TA
           |'p' -> TE
-          |_ -> None)
+          |_ -> TNone)
