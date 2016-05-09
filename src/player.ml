@@ -6,12 +6,13 @@ open Trigo
 type t = {
 mutable pos : Point.t;
 mutable pa : int;
+mutable accroupi : bool;
 }
 
 let pas = 10.
 let d_angle = 3 
 
-let new_player pos pa = let t = {pos = pos ; pa = pa} in t
+let new_player pos pa = let t = {pos = pos ; pa = pa ; accroupi = false} in t
 
 type dir = Left | Right
 
@@ -23,7 +24,7 @@ let rotate d p =
 
 type mv = MFwd | MBwd | MLeft | MRight
 
-(*on fera attention, l'origine demarre en haut à gauche, il faut donc mettre -10 à y pour "avancer" et 10 pour "reculer"
+(*
 	l'angle 0 corespond à l'état ou le personnage est tourné vers la droite
 *)
 let move d p bsp = 
@@ -47,3 +48,6 @@ let move d p bsp =
 	if not (Physic.detect_collision !point_tmp bsp) 
 	then  p.pos <- !point_tmp
 	else () 
+
+let accroupir p = 
+	p.accroupi <- not p.accroupi

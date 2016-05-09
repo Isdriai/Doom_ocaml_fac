@@ -16,7 +16,8 @@ let deplacement p bsp = function
     |TD -> Player.move MRight p bsp
 	|TA -> Player.rotate Left p
 	|TE -> Player.rotate Right p   
-    |_ -> raise Invalid_Touche
+	|KKK -> raise Invalid_Touche
+    |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
 let rec jeu p bsp = 
 	Render.display bsp p;
