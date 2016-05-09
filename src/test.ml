@@ -1,4 +1,4 @@
-(*open Options
+open Options
 open Point
 open Segment
 open Player
@@ -230,4 +230,4 @@ let test lab =
 
 	(* Render.display bsp_test p_lab ; *)
 	
-;;*)
+;;
