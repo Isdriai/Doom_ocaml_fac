@@ -19,7 +19,7 @@ LIBOPTS = $(LIBS:.cma=.cmxa)
 
 EXEC = bsp
 
-OBJS = 	$(addprefix $(SRCDIR)/, trigo.cmo options.cmo point.cmo \
+OBJS = 	$(addprefix $(SRCDIR)/, point.cmo trigo.cmo options.cmo \
 	segment.cmo bsp.cmo physic.cmo \
 	player.cmo parse_lab.cmo render.cmo test.cmo sound.cmo main.cmo)
 

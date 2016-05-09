@@ -1,3 +1,5 @@
+open Point
+
 let pi = 4. *. atan 1.
 
 let piSur2 = pi /. 2.
@@ -40,3 +42,33 @@ let point_intersection_droites xa_i ya_i xb_i yb_i xc_i yc_i xd_i yd_i =
     let yi = truncate (ya +. r *. (yb -. ya))  in 
 
     (xi,yi) 
+
+
+let points_intersection_droite_cercle pos a b dist_limite =
+
+(*C'est juste pour éviter une division par 0, et on va estimer que l'echelle globale 
+de la carte est beaucoup plus grande que cette petite rectification *)
+
+	let triche = ref 0 in
+
+	(if a.x = b.x then triche := 1 else () );
+
+	let coef = float_of_int ((b.y - a.y ) / (b.x + !triche - a.x)) in
+	let ordonnee = float_of_int b.y -. (coef *. float_of_int b.x ) in
+	
+	let d = 1. +. coef**2. in
+	let e = 2. *. (coef *. (ordonnee -. float_of_int pos.y)) in 
+	let f = (float_of_int pos.x)**2. +. ((ordonnee -. float_of_int pos.y)**2.) -. dist_limite in
+	let delta = (e**2.) -. (4. *. d *. f) in
+
+	if delta > 0. then
+
+		let x1 = (-.e -. (sqrt delta)) /. (2. *. d) in
+		let x2 = (-.e +. (sqrt delta)) /. (2. *. d) in
+		Some(int_of_float x1),
+		Some(int_of_float (coef *. x1 +. ordonnee)),
+		Some(int_of_float x2),
+		Some(int_of_float (coef *. x2 +. ordonnee))
+
+	else 
+		None,None,None,None

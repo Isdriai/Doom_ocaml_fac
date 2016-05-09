@@ -62,11 +62,14 @@ nous créons un nouveau segment*)
 	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
 	else Some(s)
 
-let distance x y =
-	let xf = float_of_int x in
-	let yf = float_of_int y in
+let distance xa ya xb yb =
+	let xf = float_of_int xa in
+	let yf = float_of_int xb in
+	let tf = float_of_int xb in
+	let zf = float_of_int yb in
 
-	sqrt ((xf**2.)+.(yf**2.))
+
+	sqrt ((xf**2. -. tf**2. )+.(yf**2. -. zf**2. ))
 
 (*
 on calcule la correspondance entre la projection et la coordonnée x de l'affichage, 
@@ -88,7 +91,7 @@ let passage_3d cmax xo yo xd yd co cd =
 (*on fait la meme chose que pour x, on applique une simple fonction affine *)
 	let calcul_p_y x y =
 		let echelle = float_of_int(taille/4) in
-		let rapport = float_of_int d_focale /. distance x y in
+		let rapport = float_of_int d_focale /. distance x y 0 0 in
 		let calcul = int_of_float(echelle *. rapport)+hauteur_yeux in 
 		calcul
 	in
@@ -149,19 +152,37 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
+let affiche_mp seg =
+	()
+;;
 
-let debug_bsp_2D s p =
 
-    Graphics.draw_segments [|(s.porig.x/4, s.porig.y/4,
-    s.pdest.x/4, s.pdest.y/4)
-    |]
+let mini_map perso s =
+	let seg = calcul_vecteur perso s in
+	let dist_limite = 500 in 
+	let dist1 = int_of_float (distance seg.pdest.x seg.pdest.y perso.pos.x perso.pos.y) in
+	let dist2 = int_of_float (distance seg.pdest.x seg.pdest.y perso.pos.x perso.pos.y) in
+
+	match dist1, dist2 with
+	| a,b when a < dist_limite && b < dist_limite -> affiche_mp seg
+	| a,b -> let (xa,ya,xb,yb) = Trigo.points_intersection_droite_cercle
+	perso.pos seg.porig seg.pdest (float_of_int dist_limite) in
+
+		match xa,ya,xb,yb with
+		| None,None,None,None -> ()
+		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a > dist_limite && b > dist_limite ->
+		affiche_mp (Segment.new_segment nxa nya nxb nyb)
+		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
+		affiche_mp (Segment.new_segment nxa nya seg.pdest.x seg.pdest.y)
+		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
+		affiche_mp (Segment.new_segment seg.porig.x seg.porig.y nxb nyb)
+		| _,_,_,_ -> () (*n'arrive jamais *)
 
 
 let affiche p = fun s -> 
 
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
 	let clip = clipping nw_seg in
-	debug_bsp_2D s p;
 
 	match clip with
 	| None -> ()
@@ -188,5 +209,5 @@ let display bsp p =
 	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse (affiche p) bsp p.pos;
+	Bsp.iter  (mini_map p) bsp;
 	synchronize ()
-
