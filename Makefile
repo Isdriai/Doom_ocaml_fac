@@ -12,7 +12,8 @@ PACKAGES = tsdl
 COMPILE = $(OCAMLFIND) $(OCAMLC) -package $(PACKAGES)
 COMPILEOPT = $(OCAMLFIND) $(OCAMLOPT) -package $(PACKAGES)
 
-LIBS = str.cma graphics.cma
+LINK = -linkpkg
+LIBS = graphics.cma
 # bigarray.cma sdl.cma
 LIBOPTS = $(LIBS:.cma=.cmxa)
 
@@ -33,10 +34,10 @@ opt: depend $(EXEC).opt
 .SUFFIXES: .ml .mli .cmo .cmi .cmx .mll .mly
 
 $(EXEC): $(OBJS)
-	$(COMPILE) $(OPTIONS) -o $(EXEC) $(LIBS) $(OBJS)
+	$(COMPILE) $(OPTIONS) -o $(EXEC) $(LIBS) $(LINK) $(OBJS)
 
 $(EXEC).opt: $(OPTOBJS)
-	$(COMPILEOPT) $(OPTIONS) -o $(EXEC) $(LIBOPTS) $(OPTOBJS)
+	$(COMPILEOPT) $(OPTIONS) -o $(EXEC) $(LIBOPTS) $(LINK) $(OPTOBJS)
 
 clean:
 	rm -f $(addprefix $(SRCDIR)/, *.cm[iox] *~ .*~ *.o *.annot .depend)
