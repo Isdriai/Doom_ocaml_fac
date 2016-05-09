@@ -7,12 +7,21 @@ type t = {
 mutable pos : Point.t;
 mutable pa : int;
 mutable accroupi : bool;
+pos_i : Point.t;
+pa_i : int;
 }
 
 let pas = 10.
 let d_angle = 3 
 
-let new_player pos pa = let t = {pos = pos ; pa = pa ; accroupi = false} in t
+let new_player pos pa = 
+	let t = {pos = pos ; 
+			pa = pa ; 
+			accroupi = false;
+			pos_i = pos;
+			pa_i = pa;
+			} 
+	in t
 
 type dir = Left | Right
 
@@ -59,3 +68,7 @@ let move d p bsp =
 
 let accroupir p = 
 	p.accroupi <- not p.accroupi
+
+let reset p = 
+	p.pos <- p.pos_i;
+	p.pa <- p.pa_i

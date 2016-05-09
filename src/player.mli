@@ -2,6 +2,8 @@ type t = {
   mutable pos : Point.t;
   mutable pa : int;
   mutable accroupi : bool;
+  pos_i : Point.t;
+  pa_i : int;
 }
 
 val new_player : Point.t -> int -> t
@@ -15,3 +17,5 @@ type mv = MFwd | MBwd | MLeft | MRight
 val move : mv -> t -> Bsp.t -> unit
 
 val accroupir : t -> unit
+
+val reset : t -> unit
