@@ -8,6 +8,7 @@ open Player
 open Bsp
 open Render
 
+
 exception Invalid_Touche
 let deplacement p bsp = function
 	|TZ -> Player.move MFwd p bsp
@@ -17,6 +18,7 @@ let deplacement p bsp = function
 	|TA -> Player.rotate Left p
 	|TE -> Player.rotate Right p   
 	|KKK -> raise Invalid_Touche
+	|TC -> Player.accroupir p
     |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
 let rec jeu p bsp = 

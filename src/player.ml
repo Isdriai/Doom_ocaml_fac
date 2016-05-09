@@ -31,18 +31,26 @@ let move d p bsp =
 
 	let point_tmp = ref (Point.new_point 0 0) in
 
+	let float_of_bool b =
+		if b then 1. else 0.
+	in
+
+	(*si le joueur est accroupi, il ira moins vite*)
+
+	let nw_pas = pas-.(pas*.float_of_bool p.accroupi)/.2. in
+
 	(match d with
-		| MFwd -> point_tmp := Point.new_point (p.pos.x+int_of_float(pas*.dcos (p.pa))) 
-		(p.pos.y+int_of_float(pas*.dsin (p.pa)))
+		| MFwd -> point_tmp := Point.new_point (p.pos.x+int_of_float((nw_pas*.dcos (p.pa)))) 
+		(p.pos.y+int_of_float(nw_pas*.dsin (p.pa)))
 
-		| MBwd -> point_tmp := Point.new_point (p.pos.x-int_of_float(pas*.dcos (p.pa))) 
-		(p.pos.y-int_of_float(pas*.dsin (p.pa)))
+		| MBwd -> point_tmp := Point.new_point (p.pos.x-int_of_float((nw_pas*.dcos (p.pa)))) 
+		(p.pos.y-int_of_float(nw_pas*.dsin (p.pa)))
 
-		| MLeft -> point_tmp := Point.new_point (p.pos.x-int_of_float(pas*.dsin (p.pa))) 
-		(p.pos.y-int_of_float(pas*.dsin (p.pa-90)))
+		| MLeft -> point_tmp := Point.new_point (p.pos.x-int_of_float((nw_pas*.dsin (p.pa)))) 
+		(p.pos.y-int_of_float(nw_pas*.dsin (p.pa-90)))
 
-		| MRight -> point_tmp := Point.new_point (p.pos.x+int_of_float(pas*.dsin (p.pa))) 
-		(p.pos.y+int_of_float(pas*.dsin (p.pa-90)))
+		| MRight -> point_tmp := Point.new_point (p.pos.x+int_of_float((nw_pas*.dsin (p.pa)))) 
+		(p.pos.y+int_of_float(nw_pas*.dsin (p.pa-90)))
 	);
 
 	if not (Physic.detect_collision !point_tmp bsp) 

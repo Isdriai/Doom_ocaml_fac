@@ -7,6 +7,10 @@ open Graphics
 
 let taille = 500
 
+let int_of_bool b = 
+	if b then 1 else 0
+
+let accroupir = ref false
 
 let angle_vision = Options.fov
 
@@ -76,7 +80,10 @@ let calcul_p_x cmax c =
 (*va afficher en 3D un segment*)
 let passage_3d cmax xo yo xd yd co cd =
 
-	let hauteur_yeux = taille/2 in 
+	let accroupissement = 
+		int_of_bool (!accroupir) * 25 
+	in
+	let hauteur_yeux = (taille/2) + accroupissement in 
 
 (*on fait la meme chose que pour x, on applique une simple fonction affine *)
 	let calcul_p_y x y =
@@ -93,6 +100,7 @@ let passage_3d cmax xo yo xd yd co cd =
 	let p_droite = Point.new_point
 	(calcul_p_x cmax cd)
 	(calcul_p_y xd yd) in 
+
 	Graphics.set_color (Graphics.rgb 0 100 0);
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
@@ -177,6 +185,8 @@ let clear_graph () =
 
 let display bsp p = 
 
+	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse (affiche p) bsp p.pos;
 	synchronize ()
+

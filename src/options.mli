@@ -25,7 +25,7 @@ val debug : bool
 val debug_bsp : bool
 
 type tlang = Fr | Be
-type touche = TZ | TQ | TS | TD | TA | TE | KKK | TNone
+type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TNone
 
 val lang : tlang ref
 val change_lang : tlang -> unit

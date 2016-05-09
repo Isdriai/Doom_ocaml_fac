@@ -4,6 +4,9 @@ let piSur2 = pi /. 2.
 let pidiv = pi /. 180.
 let ipidiv = 180. /. pi
 
+let bool_of_int b = 
+	if b then 1 else 0
+	
 let d_to_rad a = float a *. pidiv
 let r_to_deg a = a *. ipidiv
 
