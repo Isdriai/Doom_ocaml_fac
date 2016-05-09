@@ -8,15 +8,6 @@ open Player
 open Bsp
 open Render
 
-(* 
-let () = 
-	let lab = Parse_lab.read_lab (open_in Sys.argv.(1)) in
-	test lab;
-	let s = Graphics.wait_next_event [Graphics.Button_down;Graphics.Key_pressed]
-	 in ()
-
-;; *)
-
 exception Invalid_Touche
 let deplacement p bsp = function
 	|TZ -> Player.move MFwd p bsp
@@ -51,6 +42,5 @@ let () =
 
 	Graphics.open_graph a;
 	auto_synchronize false;
-	Graphics.sound 2000 5000;
 	jeu p bsp;
 	Graphics.close_graph ()

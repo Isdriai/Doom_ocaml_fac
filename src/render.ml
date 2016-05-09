@@ -15,11 +15,6 @@ let fabs a =
 
 let d_focale = int_of_float(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 ))) 
 
-let affiche_segment s = 
-	Printf.printf "xa: %d, ya: %d    xb: %d, yb: %d     id: %s\n" s.porig.x s.porig.y s.pdest.x s.pdest.y s.id
-
-
-
 let calcul_vecteur p s =
 	Segment.new_segment (s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
@@ -55,12 +50,6 @@ let clipping s =
 	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
 	else Some(s)
 
-let draw_line xo yo xd yd =
-	let pixel = 20 in
-	let decal = 0 in
-	Graphics.draw_segments [|xo*pixel+decal,yo*pixel+decal,xd*pixel+decal,yd*pixel+decal|]
-
-
 let distance x y =
 	let xf = float_of_int x in
 	let yf = float_of_int y in
@@ -79,65 +68,6 @@ let calcul_p_x cmax c =
 
 let passage_3d cmax xo yo xd yd co cd =
 
-	(* let ph = 140. in 
-	let fh = 0. in 
-	let ch = 200. in
-	let co = float_of_int co_i in
-	let cd = float_of_int cd_i in
-
-	let calcul_max x = 
-		let zc =(float_of_int (taille/2)) +. (( ch -. ph )*. float_of_int(d_focale) /. float_of_int(x)) in
-		let zf =(float_of_int(taille/2)) +. ( (fh -. ph )*. float_of_int(d_focale) /.float_of_int(x) )in
-		(zc, zf)
-	in
-
-	let (zuo, zlo) = calcul_max xo in
-	let (zud, zld) = calcul_max xd in
-
-	let delta_u = (zud -. zuo ) /. (cd -. co) in
-	let delta_l = (zld -. zlo) /. ( cd -. co ) in 
-
-	let algo c zu zl =
-		let t = float_of_int taille in 
-		if c < 0.-.(t/.2.) then 
-		(0., zu -. ( c *. delta_u) , zl -. (c*.delta_l))
-		else if c > t-.(t/.2.) then
-		(t, zu -. (( c -. t )*.delta_u), zl -. ((c -. t)*.delta_l))
-		else 
-		(c , zu , zl)
-	in
-
-	let (x_ori, y_haut_ori, y_bas_ori) = algo cd zuo zlo in
-	let (x_dest, y_haut_dest, y_bas_dest) = algo co zud zld in
-
-	Graphics.set_color (Graphics.rgb 0 100 0);
-	Graphics.fill_poly [|
-		int_of_float x_ori, int_of_float y_haut_ori;
-		int_of_float x_ori, int_of_float y_bas_ori;
-		int_of_float x_dest, int_of_float y_bas_dest;
-		int_of_float x_dest, int_of_float y_haut_dest;
-	|];
-	Printf.printf "
-	co = %d  cd = %d
-	x ori = %f y haut ori = %f \n
-	x ori = %f y bas ori = %f \n
-	x dest = %f y bas dest = %f \n 
-	x dest = %f y haut dest = %f \n\n
-	"
-		 co_i cd_i
-		 x_ori  y_haut_ori
-		 x_ori  y_bas_ori
-		 x_dest  y_bas_dest
-		 x_dest  y_haut_dest;;
- *)
-
-
-
-
-
-
-
-	Printf.printf"co == %d, cd == %d\n"  ;
 	let hauteur_yeux = taille/2 in 
 
 	let calcul_p_y x y =
@@ -155,16 +85,6 @@ let passage_3d cmax xo yo xd yd co cd =
 	let p_droite = Point.new_point
 	(calcul_p_x cmax cd)
 	(calcul_p_y xd yd) in 
-	Printf.printf"
-		p_gauche.x == %d  ,p_gauche.y == %d \n;
-		p_gauche.x == %d  ,(-p_gauche.y == %d \n);
-		p_droite.x == %d  ,p_droite.y == %d \n;
-		p_droite.x == %d  ,(-p_droite.y == %d \n)"
-
-		p_gauche.x (hauteur_yeux-(p_droite.y-hauteur_yeux))
-		p_gauche.x p_droite.y
-		p_droite.x p_gauche.y
-		p_droite.x (hauteur_yeux-(p_gauche.y-hauteur_yeux));
 	Graphics.set_color (Graphics.rgb 0 100 0);
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
@@ -188,7 +108,6 @@ let projection seg p =
 
 	let cmax = int_of_float (dtan (angle_vision/2) *. float_of_int d_focale) in
 	let cmin = (-cmax) in 
-	Printf.printf"d == %d \n cmax == %d, cmin == %d\n" d_focale cmax cmin;
 	let c_p_orig = project seg.porig in
 	let c_p_dest = project seg.pdest in
 
@@ -211,7 +130,6 @@ et non plus une simple colonne par rapport a une autre colonne*)
 			let r = ((ya -. yc) *. (xd -. xc) -. (xa -. xc) *. (yd -. yc)) /. dd in 
 			let xi = truncate (xa +. r *. (xb -. xa))  in 
 		    let yi = truncate (ya +. r *. (yb -. ya))  in 
-		    Printf.printf " xi == %d yi == %d\n " xi yi ;
 		    (xi,yi)
 
 		in
@@ -225,53 +143,33 @@ et non plus une simple colonne par rapport a une autre colonne*)
 		else point.x, point.y, ctest
 	in
 
-	let angle_m xo yo xd yd = 
-		int_of_float(r_to_deg(atan (float_of_int(yd - yo) /. float_of_int(xd - xo))))
-	in
-
 	match c_p_orig, c_p_dest with
 	| a,b when a > cmax && b > cmax -> ()
 	| a,b when a < cmin && b < cmin -> ()
-	| a,b -> Printf.printf "angle mur avant correction == %d \n
-							segment avant correction == " seg.angle_mur;
-							affiche_segment seg;
-			let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
+	| a,b -> let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
-			Printf.printf " angle mur apres corerction == %d \n
-							segment apres correction == " (angle_m nw_x_orig nw_y_orig nw_x_dest nw_y_dest);
-			affiche_segment (Segment.new_segment nw_x_orig nw_y_orig nw_x_dest nw_y_dest );
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
-			(* Printf.printf "d :%d, c1: %d, d : %d, c2 : %d \n\n" d_focale (cor c_p_dest) d_focale (cor c_p_orig); *)
+
 (*
 devra renvoyer un quator de points qui representeront les 4 coins du mur à afficher
 projection seg -> Point.t * Point.t * Point.t * Point.t
 *)
-
 let debug_bsp_2D s p =
 
     Graphics.draw_segments [|(s.porig.x/4, s.porig.y/4,
     s.pdest.x/4, s.pdest.y/4)
-    |]; 
-    Printf.printf " origine : %d %d , arrivee : %d %d \n\n"  (s.porig.x/4) (s.porig.y/4) (s.pdest.x/4) (s.pdest.y/4)
+    |]
 
 
 let affiche p = fun s -> 
-	Printf.printf "commencement ==\n ";
-	affiche_segment s;
+
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
-	Printf.printf "avant clipp ==\n ";
-	affiche_segment nw_seg;
 	let clip = clipping nw_seg in
 	debug_bsp_2D s p;
 
 	match clip with
 	| None -> ()
-	| Some(seg) -> (projection seg p; 
-	(* Printf.printf "xa: %d, ya: %d\n xb: %d, yb: %d\nid :%s \n\n" seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y seg.id;
-	Graphics.set_color (Graphics.rgb 255 0 0);
-	draw_line seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y *))
-
-(*faire fenetre graphique et afficher les segments dedans*)
+	| Some(seg) -> projection seg p
 
 let clear_graph () = 
 	Graphics.set_color (Graphics.rgb 40 40 40);
