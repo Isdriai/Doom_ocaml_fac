@@ -7,13 +7,13 @@ SRCDIR = src
 
 OPTIONS = -g -annot -I $(SRCDIR)
 
-PACKAGES = tsdl
+PACKAGES = #tsdl
 
-COMPILE = $(OCAMLFIND) $(OCAMLC) -package $(PACKAGES)
-COMPILEOPT = $(OCAMLFIND) $(OCAMLOPT) -package $(PACKAGES)
+COMPILE = $(OCAMLFIND) $(OCAMLC) #-package $(PACKAGES)
+COMPILEOPT = $(OCAMLFIND) $(OCAMLOPT) #-package $(PACKAGES)
 
-LINK = -linkpkg
-LIBS = graphics.cma
+LINK =# -linkpkg
+LIBS = str.cma graphics.cma 
 # bigarray.cma sdl.cma
 LIBOPTS = $(LIBS:.cma=.cmxa)
 
@@ -21,7 +21,7 @@ EXEC = bsp
 
 OBJS = 	$(addprefix $(SRCDIR)/, point.cmo trigo.cmo options.cmo \
 	segment.cmo bsp.cmo physic.cmo \
-	player.cmo parse_lab.cmo render.cmo test.cmo sound.cmo main.cmo)
+	player.cmo parse_lab.cmo render.cmo test.cmo main.cmo)
 
 OPTOBJS = $(OBJS:.cmo=.cmx)
 FILESMLI = $(OBJS:.cmo=.mli)
