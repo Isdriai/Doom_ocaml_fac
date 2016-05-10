@@ -43,24 +43,32 @@ let point_intersection_droites xa_i ya_i xb_i yb_i xc_i yc_i xd_i yd_i =
 
     (xi,yi) 
 
-
-let points_intersection_droite_cercle pos a b dist_limite =
+let points_intersection_droite_cercle a b dist_limite =
 
 (*C'est juste pour éviter une division par 0, et on va estimer que l'echelle globale 
 de la carte est beaucoup plus grande que cette petite rectification *)
 
+	Printf.printf "pidc xa: %d, ya: %d    xb: %d, yb: %d \n" a.x a.y b.x b.y;
+
+
 	let triche = ref 0 in
 
-	(if a.x = b.x then triche := 1 else () );
+(* 	(if a.x = b.x then triche := 1 else () ); *)
 
-	let coef = float_of_int ((b.y - a.y ) / (b.x + !triche - a.x)) in
+	let coef =  (float_of_int(b.y - a.y ) /. float_of_int(b.x + !triche - a.x)) in
 	let ordonnee = float_of_int b.y -. (coef *. float_of_int b.x ) in
-	
-	let d = 1. +. coef**2. in
-	let e = 2. *. (coef *. (ordonnee -. float_of_int pos.y)) in 
-	let f = (float_of_int pos.x)**2. +. ((ordonnee -. float_of_int pos.y)**2.) -. dist_limite in
-	let delta = (e**2.) -. (4. *. d *. f) in
+	Printf.printf "coef = %f ; ordonnee = %f \n" coef ordonnee;
+	Printf.printf "b.y %d a.y %d b.x %d a.x %d\n" b.y a.y b.x a.x;
 
+
+	let d = 1. +. coef in
+	let e = 2. *. coef *. ordonnee in 
+	let f = (ordonnee **2.) -. dist_limite**2. in
+
+
+
+	let delta = (e**2.) -. (4. *. d *. f) in
+	Printf.printf "A = %f\nB= %f\nC= %f\ndelta = %d\n" d e f (int_of_float delta);
 	if delta > 0. then
 
 		let x1 = (-.e -. (sqrt delta)) /. (2. *. d) in

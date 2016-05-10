@@ -1,0 +1,305 @@
+"src/physic.ml" 4 23 27 "src/physic.ml" 4 23 43
+type(
+  Point.t -> Bsp.t -> bool
+)
+ident(
+  def detect_collision "src/physic.ml" 13 239 257 "src/physic.ml" 1 0 -1
+)
+"src/physic.ml" 4 23 44 "src/physic.ml" 4 23 45
+type(
+  Point.t
+)
+ident(
+  def p "src/physic.ml" 4 23 46 "src/physic.ml" 13 239 257
+)
+"src/physic.ml" 4 23 46 "src/physic.ml" 4 23 49
+type(
+  Bsp.t
+)
+ident(
+  def bsp "src/physic.ml" 5 52 53 "src/physic.ml" 13 239 257
+)
+"src/physic.ml" 5 52 61 "src/physic.ml" 5 52 63
+type(
+  (Segment.t -> unit) -> Bsp.t -> unit
+)
+ident(
+  def dc "src/physic.ml" 5 52 53 "src/physic.ml" 13 239 257
+)
+"src/physic.ml" 5 52 64 "src/physic.ml" 5 52 65
+type(
+  Segment.t -> unit
+)
+ident(
+  def f "src/physic.ml" 5 52 66 "src/physic.ml" 9 164 188
+)
+"src/physic.ml" 5 52 66 "src/physic.ml" 5 52 69
+type(
+  Bsp.t
+)
+ident(
+  def bsp "src/physic.ml" 6 73 75 "src/physic.ml" 9 164 188
+)
+"src/physic.ml" 6 73 81 "src/physic.ml" 6 73 84
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp "src/physic.ml" 5 52 66 "src/physic.ml" 5 52 69
+)
+"src/physic.ml" 7 90 94 "src/physic.ml" 7 90 95
+type(
+  Bsp.t
+)
+"src/physic.ml" 7 90 99 "src/physic.ml" 7 90 101
+type(
+  unit
+)
+"src/physic.ml" 8 102 109 "src/physic.ml" 8 102 110
+type(
+  Segment.t
+)
+ident(
+  def r "src/physic.ml" 8 102 121 "src/physic.ml" 9 164 188
+)
+"src/physic.ml" 8 102 112 "src/physic.ml" 8 102 113
+type(
+  Bsp.t
+)
+ident(
+  def g "src/physic.ml" 8 102 121 "src/physic.ml" 9 164 188
+)
+"src/physic.ml" 8 102 115 "src/physic.ml" 8 102 116
+type(
+  Bsp.t
+)
+ident(
+  def d "src/physic.ml" 8 102 121 "src/physic.ml" 9 164 188
+)
+"src/physic.ml" 8 102 106 "src/physic.ml" 8 102 117
+type(
+  Bsp.t
+)
+"src/physic.ml" 8 102 124 "src/physic.ml" 8 102 136
+type(
+  Point.t -> Segment.t -> Segment.tpos
+)
+ident(
+  ext_ref Segment.get_position
+)
+"src/physic.ml" 8 102 137 "src/physic.ml" 8 102 138
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 4 23 44 "src/physic.ml" 4 23 45
+)
+"src/physic.ml" 8 102 139 "src/physic.ml" 8 102 140
+type(
+  Segment.t
+)
+ident(
+  int_ref r "src/physic.ml" 8 102 109 "src/physic.ml" 8 102 110
+)
+"src/physic.ml" 8 102 124 "src/physic.ml" 8 102 140
+call(
+  stack
+)
+type(
+  Segment.tpos
+)
+"src/physic.ml" 8 102 141 "src/physic.ml" 8 102 142
+type(
+  Segment.tpos -> Segment.tpos -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/physic.ml" 8 102 143 "src/physic.ml" 8 102 144
+type(
+  Segment.tpos
+)
+"src/physic.ml" 8 102 124 "src/physic.ml" 8 102 144
+type(
+  bool
+)
+"src/physic.ml" 8 102 151 "src/physic.ml" 8 102 153
+type(
+  (Segment.t -> unit) -> Bsp.t -> unit
+)
+ident(
+  int_ref dc "src/physic.ml" 5 52 61 "src/physic.ml" 5 52 63
+)
+"src/physic.ml" 8 102 154 "src/physic.ml" 8 102 155
+type(
+  Segment.t -> unit
+)
+ident(
+  int_ref f "src/physic.ml" 5 52 64 "src/physic.ml" 5 52 65
+)
+"src/physic.ml" 8 102 156 "src/physic.ml" 8 102 157
+type(
+  Bsp.t
+)
+ident(
+  int_ref g "src/physic.ml" 8 102 112 "src/physic.ml" 8 102 113
+)
+"src/physic.ml" 8 102 151 "src/physic.ml" 8 102 157
+call(
+  stack
+)
+type(
+  unit
+)
+"src/physic.ml" 8 102 159 "src/physic.ml" 8 102 160
+type(
+  Segment.t -> unit
+)
+ident(
+  int_ref f "src/physic.ml" 5 52 64 "src/physic.ml" 5 52 65
+)
+"src/physic.ml" 8 102 161 "src/physic.ml" 8 102 162
+type(
+  Segment.t
+)
+ident(
+  int_ref r "src/physic.ml" 8 102 109 "src/physic.ml" 8 102 110
+)
+"src/physic.ml" 8 102 159 "src/physic.ml" 8 102 162
+call(
+  tail
+)
+type(
+  unit
+)
+"src/physic.ml" 8 102 150 "src/physic.ml" 8 102 163
+type(
+  unit
+)
+"src/physic.ml" 9 164 176 "src/physic.ml" 9 164 178
+type(
+  (Segment.t -> unit) -> Bsp.t -> unit
+)
+ident(
+  int_ref dc "src/physic.ml" 5 52 61 "src/physic.ml" 5 52 63
+)
+"src/physic.ml" 9 164 179 "src/physic.ml" 9 164 180
+type(
+  Segment.t -> unit
+)
+ident(
+  int_ref f "src/physic.ml" 5 52 64 "src/physic.ml" 5 52 65
+)
+"src/physic.ml" 9 164 181 "src/physic.ml" 9 164 182
+type(
+  Bsp.t
+)
+ident(
+  int_ref d "src/physic.ml" 8 102 115 "src/physic.ml" 8 102 116
+)
+"src/physic.ml" 9 164 176 "src/physic.ml" 9 164 182
+call(
+  stack
+)
+type(
+  unit
+)
+"src/physic.ml" 9 164 184 "src/physic.ml" 9 164 185
+type(
+  Segment.t -> unit
+)
+ident(
+  int_ref f "src/physic.ml" 5 52 64 "src/physic.ml" 5 52 65
+)
+"src/physic.ml" 9 164 186 "src/physic.ml" 9 164 187
+type(
+  Segment.t
+)
+ident(
+  int_ref r "src/physic.ml" 8 102 109 "src/physic.ml" 8 102 110
+)
+"src/physic.ml" 9 164 184 "src/physic.ml" 9 164 187
+call(
+  tail
+)
+type(
+  unit
+)
+"src/physic.ml" 9 164 175 "src/physic.ml" 9 164 188
+type(
+  unit
+)
+"src/physic.ml" 8 102 121 "src/physic.ml" 9 164 188
+type(
+  unit
+)
+"src/physic.ml" 6 73 75 "src/physic.ml" 9 164 188
+type(
+  unit
+)
+"src/physic.ml" 12 199 201 "src/physic.ml" 12 199 203
+type(
+  (Segment.t -> unit) -> Bsp.t -> unit
+)
+ident(
+  int_ref dc "src/physic.ml" 5 52 61 "src/physic.ml" 5 52 63
+)
+"src/physic.ml" 12 199 205 "src/physic.ml" 12 199 224
+type(
+  Point.t -> Segment.t -> unit
+)
+ident(
+  ext_ref Segment.dansLaBoite
+)
+"src/physic.ml" 12 199 225 "src/physic.ml" 12 199 226
+type(
+  Point.t
+)
+ident(
+  int_ref p "src/physic.ml" 4 23 44 "src/physic.ml" 4 23 45
+)
+"src/physic.ml" 12 199 204 "src/physic.ml" 12 199 227
+call(
+  stack
+)
+type(
+  Segment.t -> unit
+)
+"src/physic.ml" 12 199 228 "src/physic.ml" 12 199 231
+type(
+  Bsp.t
+)
+ident(
+  int_ref bsp "src/physic.ml" 4 23 46 "src/physic.ml" 4 23 49
+)
+"src/physic.ml" 12 199 201 "src/physic.ml" 12 199 231
+call(
+  stack
+)
+type(
+  unit
+)
+"src/physic.ml" 12 199 233 "src/physic.ml" 12 199 238
+type(
+  bool
+)
+"src/physic.ml" 12 199 201 "src/physic.ml" 12 199 238
+type(
+  bool
+)
+"src/physic.ml" 13 239 245 "src/physic.ml" 13 239 249
+type(
+  exn
+)
+"src/physic.ml" 13 239 253 "src/physic.ml" 13 239 257
+type(
+  bool
+)
+"src/physic.ml" 11 193 194 "src/physic.ml" 13 239 257
+type(
+  bool
+)
+"src/physic.ml" 5 52 53 "src/physic.ml" 13 239 257
+type(
+  bool
+)

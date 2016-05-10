@@ -152,31 +152,53 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
-let affiche_mp seg =
-	()
-;;
+let affiche_mp seg t =
+	let emplacement = float_of_int (taille/6) in
+	let xo = float_of_int seg.porig.x in
+	let yo = float_of_int seg.porig.y in
+	let xd = float_of_int seg.pdest.x in
+	let yd = float_of_int seg.pdest.y in
+	let tai = float_of_int t in
+	Graphics.draw_segments [|
+	int_of_float((xo *. emplacement /.tai )+. emplacement),
+	int_of_float((yo *. emplacement /.tai )+. emplacement),
+	int_of_float((xd *. emplacement /.tai )+. emplacement),
+	int_of_float((yd *. emplacement /.tai )+. emplacement)|]
 
+let affiche_match xa ya xb yb = 
+	match xa,ya,xb,yb with
+	| None,None,None,None -> ()
+	| Some(x),Some(y),Some(z),Some(t) -> 
+	Printf.printf "xa : %d ya : %d xb : %d yb : %d" x y z t
+	| _,_,_,_ -> ()
 
 let mini_map perso s =
+
+	let emplacement = taille/6 in
+	Graphics.draw_circle  emplacement  emplacement  emplacement;
+
 	let seg = calcul_vecteur perso s in
 	let dist_limite = 500 in 
-	let dist1 = int_of_float (distance seg.pdest.x seg.pdest.y perso.pos.x perso.pos.y) in
-	let dist2 = int_of_float (distance seg.pdest.x seg.pdest.y perso.pos.x perso.pos.y) in
+	let dist1 = int_of_float(sqrt(float_of_int seg.porig.x**2. +. float_of_int seg.porig.y**2.)) in
+	let dist2 = int_of_float(sqrt(float_of_int seg.pdest.x**2. +. float_of_int seg.pdest.y**2.)) in 
 
 	match dist1, dist2 with
-	| a,b when a < dist_limite && b < dist_limite -> affiche_mp seg
-	| a,b -> let (xa,ya,xb,yb) = Trigo.points_intersection_droite_cercle
-	perso.pos seg.porig seg.pdest (float_of_int dist_limite) in
-
+	| a,b when a < dist_limite && b < dist_limite -> affiche_mp seg dist_limite
+	| a,b -> 
+	Printf.printf "seg.porig.x = %d seg.porig.y = %d seg.pdest.x = %d seg.pdest.y = %d"
+	seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y ;
+	let (xa,ya,xb,yb) = Trigo.points_intersection_droite_cercle
+	seg.porig seg.pdest (float_of_int dist_limite) in
+	affiche_match xa ya xb yb;
 		match xa,ya,xb,yb with
 		| None,None,None,None -> ()
 		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a > dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment nxa nya nxb nyb)
+		affiche_mp (Segment.new_segment nxa nya nxb nyb) dist_limite
 		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment nxa nya seg.pdest.x seg.pdest.y)
+		affiche_mp (Segment.new_segment nxa nya seg.pdest.x seg.pdest.y) dist_limite
 		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment seg.porig.x seg.porig.y nxb nyb)
-		| _,_,_,_ -> () (*n'arrive jamais *)
+		affiche_mp (Segment.new_segment seg.porig.x seg.porig.y nxb nyb) dist_limite
+		| _,_,_,_ -> () (*n'arrive jamais *) 
 
 
 let affiche p = fun s -> 
