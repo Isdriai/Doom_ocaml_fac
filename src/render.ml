@@ -137,11 +137,11 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 	let correction point ctest = 
 
 		if ctest < cmin then 
-		let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmin in
-		nw_x,nw_y,cmin
+			let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmin in
+			nw_x,nw_y,cmin
 		else if ctest > cmax then 
-		let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmax in
-		nw_x,nw_y,cmax
+			let (nw_x,nw_y) = Trigo.point_intersection_droites seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y 0 0 d_focale cmax in
+			nw_x,nw_y,cmax
 		else point.x, point.y, ctest
 	in
 
@@ -152,54 +152,116 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
 			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
-let affiche_mp seg t =
-	let emplacement = float_of_int (taille/6) in
-	let xo = float_of_int seg.porig.x in
-	let yo = float_of_int seg.porig.y in
-	let xd = float_of_int seg.pdest.x in
-	let yd = float_of_int seg.pdest.y in
-	let tai = float_of_int t in
-	Graphics.draw_segments [|
-	int_of_float((xo *. emplacement /.tai )+. emplacement),
-	int_of_float((yo *. emplacement /.tai )+. emplacement),
-	int_of_float((xd *. emplacement /.tai )+. emplacement),
-	int_of_float((yd *. emplacement /.tai )+. emplacement)|]
+let c = ref 0
 
-let affiche_match xa ya xb yb = 
-	match xa,ya,xb,yb with
-	| None,None,None,None -> ()
-	| Some(x),Some(y),Some(z),Some(t) -> 
-	Printf.printf "xa : %d ya : %d xb : %d yb : %d" x y z t
-	| _,_,_,_ -> ()
+let affiche_mp seg t =
+
+	(* let limite = 1000 in
+
+	let rec af_mp seg = 
+
+		let xo = float_of_int seg.porig.x in
+		let yo = float_of_int seg.porig.y in
+		let xd = float_of_int seg.pdest.x in
+		let yd = float_of_int seg.pdest.y in
+		let dist1 = sqrt (xo**2. +. yo**2.) in
+		let dist2 = sqrt (xd**2. +. yd**2.) in
+		let bout = 0.99 in 
+
+		let coef = ((yd -. yo) /. (xd -. xo)) in 
+		let ordonnee = (yd -. (coef *. xd )) in
+		match dist1, dist2 with
+		| a,b when a < t && b < t -> *)
+
+			let emplacement = float_of_int (taille/6) in
+				let xo = float_of_int seg.porig.x in
+				let yo = float_of_int seg.porig.y in
+				let xd = float_of_int seg.pdest.x in
+				let yd = float_of_int seg.pdest.y in
+				Graphics.draw_segments [|
+				int_of_float((xo *. emplacement /.t )+. emplacement),
+				int_of_float((yo *. emplacement /.t )+. emplacement),
+				int_of_float((xd *. emplacement /.t )+. emplacement),
+				int_of_float((yd *. emplacement /.t )+. emplacement)|] 
+
+
+		(* | a,b when a > t && b < t -> 
+		if limite > !c then begin
+			incr c;
+			let nx = float_of_int(seg.porig.x)*.bout in
+			af_mp (Segment.new_segment 
+
+				(int_of_float(nx))
+				(int_of_float(nx*.coef+.ordonnee))
+				seg.pdest.x
+				seg.pdest.y) 
+		end
+		else
+			c:=0
+												
+		
+		| a,b when a < t && b > t -> 
+		if limite > !c then begin
+			incr c;
+			let nx = float_of_int(seg.pdest.x)*.bout in
+			af_mp (Segment.new_segment 
+
+				seg.porig.x
+				seg.porig.y
+				(int_of_float(nx))
+				(int_of_float(nx*.coef+.ordonnee)))
+		end
+		else
+			c := 0 
+												
+																	 
+		| a,b when a > t && b > t -> 
+		let nx1 = float_of_int(seg.porig.x)*.bout in
+		let ny1 = nx1*.coef+.ordonnee in 
+		let nx2 = float_of_int(seg.pdest.x)*.bout in
+		let ny2 = nx2*.coef+.ordonnee in 
+		if Trigo.exist_inter_cercle_droite s_i.porig s_i.pdest t then 
+		begin
+
+			if limite > !c then 
+			begin
+				incr c ;
+				af_mp (Segment.new_segment 
+
+				(int_of_float(nx1))
+				(int_of_float(ny1))
+				(int_of_float(nx2))
+				(int_of_float(ny2))) 
+			end
+
+
+			else
+				c := 0
+		end
+
+		else ()
+
+		| _,_ -> () 
+	in
+	c := 0;
+	af_mp s_i *)
+
+											
+																
+
 
 let mini_map perso s =
+	Graphics.set_color (Graphics.rgb 0 40 40);
+	let nw_perso = Player.new_player perso.pos (perso.pa - 90) in
+	let seg = calcul_angle nw_perso (calcul_vecteur perso s) in
+	affiche_mp seg (float_of_int taille)
 
-	let emplacement = taille/6 in
-	Graphics.draw_circle  emplacement  emplacement  emplacement;
-
-	let seg = calcul_vecteur perso s in
-	let dist_limite = 500 in 
-	let dist1 = int_of_float(sqrt(float_of_int seg.porig.x**2. +. float_of_int seg.porig.y**2.)) in
-	let dist2 = int_of_float(sqrt(float_of_int seg.pdest.x**2. +. float_of_int seg.pdest.y**2.)) in 
-
-	match dist1, dist2 with
-	| a,b when a < dist_limite && b < dist_limite -> affiche_mp seg dist_limite
-	| a,b -> 
-	Printf.printf "seg.porig.x = %d seg.porig.y = %d seg.pdest.x = %d seg.pdest.y = %d"
-	seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y ;
-	let (xa,ya,xb,yb) = Trigo.points_intersection_droite_cercle
-	seg.porig seg.pdest (float_of_int dist_limite) in
-	affiche_match xa ya xb yb;
-		match xa,ya,xb,yb with
-		| None,None,None,None -> ()
-		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a > dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment nxa nya nxb nyb) dist_limite
-		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment nxa nya seg.pdest.x seg.pdest.y) dist_limite
-		| Some(nxa),Some(nya),Some(nxb),Some(nyb) when a < dist_limite && b > dist_limite ->
-		affiche_mp (Segment.new_segment seg.porig.x seg.porig.y nxb nyb) dist_limite
-		| _,_,_,_ -> () (*n'arrive jamais *) 
-
+let pre_map () = 
+	Graphics.set_color (Graphics.rgb 0 0 40);
+	Graphics.fill_poly [|(0,0);
+	0,(taille/4);
+	(taille/4),(taille/4);
+	(taille/4),0|]
 
 let affiche p = fun s -> 
 
@@ -231,5 +293,6 @@ let display bsp p =
 	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse (affiche p) bsp p.pos;
-	Bsp.iter  (mini_map p) bsp;
+	(* pre_map ();
+	Bsp.iter  (mini_map p) bsp; *)
 	synchronize ()
