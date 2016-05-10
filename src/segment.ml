@@ -48,12 +48,16 @@ let new_segment xo yo xd yd =
 let dansLaBoite p s = 
 	let res1 = (s.boite_gauche_dest.x - s.boite_gauche_orig.x) * (p.y - s.boite_gauche_orig.y) - 
 	(s.boite_gauche_dest.y - s.boite_gauche_orig.y)* (p.x - s.boite_gauche_orig.x) in
+
 	let res2 = (s.boite_droite_dest.x - s.boite_droite_orig.x) * (p.y - s.boite_droite_orig.y) - 
 	(s.boite_droite_dest.y - s.boite_droite_orig.y)* (p.x - s.boite_droite_orig.x) in
+
 	let res3 = (s.boite_droite_orig.x - s.boite_gauche_orig.x) * (p.y - s.boite_gauche_orig.y) - 
 	(s.boite_droite_orig.y - s.boite_gauche_orig.y)* (p.x - s.boite_gauche_orig.x) in
+
 	let res4 = (s.boite_droite_dest.x - s.boite_gauche_dest.x) * (p.y - s.boite_gauche_dest.y) - 
 	(s.boite_droite_dest.y - s.boite_gauche_dest.y)* (p.x - s.boite_gauche_dest.x) in
+	
 	if res1 * res2 <= 0  && res3 * res4 <= 0 then raise Exit
 
 (*Dis si un segment est à gauche, à droite ou au centre par rapport à un point*)

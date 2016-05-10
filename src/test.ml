@@ -18,6 +18,7 @@ let affiche_boite_segment s =
 
 let affiche_bsp bsp =
 	let rec aff s = function
+	| Ennemi _ -> ()
 		| E -> Printf.printf "%s" s; Printf.printf "E\n"
 		| N (r, g, d) -> let s2 = s^"|            " in
 		 aff s2 g; Printf.printf "%s" s; affiche_segment r; aff s2 d 
@@ -26,6 +27,7 @@ let affiche_bsp bsp =
 
 let rec iter_cps f bsp=  
 	let rec iter cont = function 
+	| Ennemi _ -> cont ()
 	| E -> cont ()
 	| N (r, g, d) -> let k  = (fun () -> f r; iter cont d)
 					in iter k g

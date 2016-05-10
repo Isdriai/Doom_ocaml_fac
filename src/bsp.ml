@@ -1,20 +1,23 @@
-open Segment
+open Segment 
 
-type t = E | N of Segment.t * t * t 
+type t = E | N of Segment.t * t * t | Ennemi of int
 
 let rec parse f bsp p = 
 	match bsp with
+	| Ennemi _
 	| E -> ()
 	| N (r, g, d) -> if get_position p r = L then (parse f g p; f r; parse f d p)
 					else (parse f d p; f r; parse f g p)
 
 let rec rev_parse f bsp p = match bsp with
+	| Ennemi _
 	| E -> ()
 	| N (r, g, d) -> if not (get_position p r = L) then (rev_parse f g p; f r; rev_parse f d p)
 					else (rev_parse f d p; f r; rev_parse f g p)
 
 
-let rec iter f =  function 
+let rec iter f =  function
+	| Ennemi _ 
 	| E -> ()
 	| N (r, g, d) -> iter f g ; f r; iter f d
 
@@ -37,3 +40,18 @@ let build_bsp sl =
 									 N (s, b_bsp ll, b_bsp lr)
 	in
 	b_bsp sl
+
+
+let rec remove_ennemi id pos = function
+	| Ennemi x when x = id -> E
+	| N (r, g, d) ->  if get_position pos r = L then N(r, remove_ennemi id pos g, d)
+					else N(r, g, remove_ennemi id pos d)
+	| E
+	| Ennemi _ -> raise Exit
+
+let rec add_ennemi id pos = function
+	| E -> Ennemi id
+	| N (r, g, d) ->  if get_position pos r = L then N(r, add_ennemi id pos g, d)
+					else N(r, g, add_ennemi id pos d)
+
+	| Ennemi _ -> raise Exit
