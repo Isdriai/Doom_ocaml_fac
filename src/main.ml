@@ -8,7 +8,7 @@ open Player
 open Bsp
 open Render
 open Random
-
+open Ennemi
 
 exception Invalid_Touche
 let deplacement p bsp = function
@@ -64,12 +64,17 @@ let portail lab =
 
  	p lab transformation 
 
+let add_mechant bsp =
+	let mechant = Ennemi.new_ennemi (new_point 2000 2000) in
+	Bsp.add_ennemi mechant.ide mechant.position bsp
+
 let () = 
 	Random.self_init ();
 
 	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
+	let bsp = add_mechant bsp in
 	let s = string_of_int (Render.taille) in 
 	let a =  " " ^ s ^ "x" ^ s in
 

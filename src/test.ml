@@ -5,7 +5,7 @@ open Player
 open Bsp
 open Render
 open Graphics
-
+open Ennemi
 
 let compteur =
 	let etat = ref 0 in
@@ -23,7 +23,7 @@ let affiche_boite_segment s =
 
 let affiche_bsp bsp =
 	let rec aff s = function
-	| Ennemi _ -> ()
+	| Ennemi ((_, x)::_) -> Printf.printf "%s" s; Printf.printf "Ennemi %d %d \n" (x.x) x.y
 		| E -> Printf.printf "%s" s; Printf.printf "E\n"
 		| N (r, g, d) -> let s2 = s^"|            " in
 		 aff s2 g; Printf.printf "%s" s; affiche_segment r; aff s2 d 
@@ -39,6 +39,9 @@ let rec iter_cps f bsp=
 	in	
 	iter (fun _ ->()) bsp
 
+let add_mechant bsp =
+	let mechant = Ennemi.new_ennemi (new_point (-400) (-400)) in
+	Bsp.add_ennemi mechant.ide mechant.position bsp
 
 
 let affiche_bsp_bis bsp = 
@@ -100,8 +103,10 @@ let test lab =
  	let l_lab = construire_liste lab in 
 	let l_seg = s1::s2::s3::s4::s5::s6::s7::s8::[] in
 	let test_split = Segment.split s1 l_seg in 
-(* 	Printf.printf "bsp :\n\n";
-	affiche_bsp b; OK*)
+	let b = Bsp.build_bsp l_seg in
+	let b = add_mechant b in
+ 	Printf.printf "bsp :\n\n";
+	affiche_bsp b; 
 	
 	Printf.printf "boite collision :\n\n";
 	affiche_boite_segment s8;
