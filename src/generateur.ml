@@ -105,7 +105,7 @@ let parcourt (x_dep, y_dep) =
 			deplacements
 	in
 
-	par (0,0) ([],[]) []
+	par (x_dep,y_dep) ([],[]) []
 
 
 let generateur () =
