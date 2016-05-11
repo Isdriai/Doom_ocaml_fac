@@ -108,5 +108,11 @@ let parcourt (x_dep, y_dep) =
 	par (x_dep,y_dep) ([],[]) []
 
 
+
+
+let ecrire_fichier murs_manquants =
+	()
+
 let generateur () =
-	let murs_casses = parcourt (0,0) in ()
+	let murs_casses = parcourt (0,0) in 
+	ecrire_fichier murs_casses
