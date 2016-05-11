@@ -6,6 +6,11 @@ open Bsp
 open Render
 open Graphics
 
+
+let compteur =
+	let etat = ref 0 in
+	fun () -> etat := !etat + 1; !etat 
+
 let affiche_point p = 
 	Printf.printf "x: %d, y: %d\n" p.x p.y
 
@@ -62,8 +67,8 @@ let construire_player ((x,y,pa),_) =
 	Player.new_player (Point.new_point x y) pa
 
 let affichage2dBoiteCollision bsp =  
-	let draw s = Graphics.draw_segments [|s.boite_gauche_orig.x, s.boite_gauche_orig.y, s.boite_gauche_dest.x, s.boite_gauche_dest.y|];
-	Graphics.draw_segments [|s.boite_droite_orig.x, s.boite_droite_orig.y, s.boite_droite_dest.x, s.boite_droite_dest.y|]
+	let draw s = Graphics.draw_segments [|s.boite_gauche_orig.x, s.boite_gauche_orig.y-100, s.boite_gauche_dest.x, s.boite_gauche_dest.y-100|];
+	Graphics.draw_segments [|s.boite_droite_orig.x, s.boite_droite_orig.y-100, s.boite_droite_dest.x, s.boite_droite_dest.y-100|]
 	 in
 	Bsp.iter draw bsp
 
@@ -72,9 +77,14 @@ let affichage2d p bsp =
 	Graphics.set_color (Graphics.rgb !r !g !b);
 	Graphics.moveto p.pos.x p.pos.y;
 	Graphics.plot p.pos.x p.pos.y; Graphics.draw_string "p";
-	let draw s = Graphics.set_color (Graphics.rgb !r !g !b); r := !r - 5;
-		Graphics.moveto s.porig.x s.porig.y; Graphics.draw_string s.id; Printf.printf "%s -> " s.id;
-		Graphics.draw_segments [|s.porig.x, s.porig.y, s.pdest.x, s.pdest.y|] in
+	let draw s = 
+		(match (wait_next_event [Key_pressed]).key with
+		|_ ->());
+	 	Graphics.set_color (Graphics.rgb !r !g !b); r := !r - 5;
+		let c = string_of_int (compteur ()) in
+		Printf.printf "nb %s : %d %d,  %d %d" c s.porig.x s.porig.y s.pdest.x s.pdest.y;
+		Graphics.moveto s.porig.x (s.porig.y-100); Graphics.draw_string c;
+		Graphics.draw_segments [|s.porig.x, s.porig.y-100, s.pdest.x, s.pdest.y-100|] in
 	Bsp.rev_parse draw bsp p.pos
 
 
@@ -170,8 +180,8 @@ let test lab =
 
 	Printf.printf "affichage display :\n\n";
 
-	let s = string_of_int (850) in 
-	let a =  " " ^ s ^ "x" ^ s in
+	
+	let a =  " " ^ "1200" ^ "x" ^ "980" in
 	Graphics.open_graph a;
 
 	 (* let s_d = Segment.new_segment 2 0 2 3 in
@@ -224,8 +234,9 @@ let test lab =
 	affiche_bsp bsp_test; 
 	affichage2dBoiteCollision bsp_test;
 	Printf.printf "\n\n";
-	affichage2d player_test bsp_test
-
+	affichage2d player_test bsp_test;
+	match (wait_next_event [Key_pressed]).key with
+		|_ ->()
 	(* Render.display bsp_test p_lab ; *)
 	
 ;;
