@@ -10,4 +10,8 @@ val build_bsp : Segment.t list -> t
 
 val remove_ennemi : int -> Point.t -> t -> t
 
+(*il faudra que add_ennemi verifie que l'ennemi est bien
+a une certaine distance d'un mur,
+cete distance se trouve dans option sous le nom de
+distance_mur*)
 val add_ennemi : int -> Point.t -> t -> t

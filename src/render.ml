@@ -3,6 +3,7 @@ open Point
 open Trigo
 open Player
 open Graphics
+open Ennemi
 
 
 let taille = 500
@@ -81,7 +82,7 @@ let calcul_p_x cmax c =
 	int_of_float ( a *. float_of_int (c) +. b)
 
 (*va afficher en 3D un segment*)
-let passage_3d cmax xo yo xd yd co cd =
+let passage_3d color cmax xo yo xd yd co cd =
 
 	let accroupissement = 
 		int_of_bool (!accroupir) * 25 
@@ -104,7 +105,8 @@ let passage_3d cmax xo yo xd yd co cd =
 	(calcul_p_x cmax cd)
 	(calcul_p_y xd yd) in 
 
-	Graphics.set_color (Graphics.rgb 0 100 0);
+	Graphics.set_color (color);
+
 	Graphics.fill_poly [|
 		p_gauche.x,(hauteur_yeux-(p_droite.y-hauteur_yeux));
 		p_gauche.x,p_droite.y;
@@ -119,7 +121,7 @@ let passage_3d cmax xo yo xd yd co cd =
 		p_gauche.x,p_droite.y,p_droite.x,p_gauche.y;
 	|]
 
-let projection seg p =
+let projection ?(c = Graphics.rgb 0 50 0) seg p =
 
 	(*y' = ( y * d ) / x
 	cette formule permet de connaitre la colonne sur l'ecran d'une extremité d'un segment
@@ -150,105 +152,24 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 	| a,b when a < cmin && b < cmin -> ()
 	| a,b -> let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
-			passage_3d cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
+			passage_3d c cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
+			
+			
 
-let c = ref 0
+
 
 let affiche_mp seg t =
 
-	(* let limite = 1000 in
-
-	let rec af_mp seg = 
-
+	let emplacement = float_of_int (taille/6) in
 		let xo = float_of_int seg.porig.x in
 		let yo = float_of_int seg.porig.y in
 		let xd = float_of_int seg.pdest.x in
 		let yd = float_of_int seg.pdest.y in
-		let dist1 = sqrt (xo**2. +. yo**2.) in
-		let dist2 = sqrt (xd**2. +. yd**2.) in
-		let bout = 0.99 in 
-
-		let coef = ((yd -. yo) /. (xd -. xo)) in 
-		let ordonnee = (yd -. (coef *. xd )) in
-		match dist1, dist2 with
-		| a,b when a < t && b < t -> *)
-
-			let emplacement = float_of_int (taille/6) in
-				let xo = float_of_int seg.porig.x in
-				let yo = float_of_int seg.porig.y in
-				let xd = float_of_int seg.pdest.x in
-				let yd = float_of_int seg.pdest.y in
-				Graphics.draw_segments [|
-				int_of_float((xo *. emplacement /.t )+. emplacement),
-				int_of_float((yo *. emplacement /.t )+. emplacement),
-				int_of_float((xd *. emplacement /.t )+. emplacement),
-				int_of_float((yd *. emplacement /.t )+. emplacement)|] 
-
-
-		(* | a,b when a > t && b < t -> 
-		if limite > !c then begin
-			incr c;
-			let nx = float_of_int(seg.porig.x)*.bout in
-			af_mp (Segment.new_segment 
-
-				(int_of_float(nx))
-				(int_of_float(nx*.coef+.ordonnee))
-				seg.pdest.x
-				seg.pdest.y) 
-		end
-		else
-			c:=0
-												
-		
-		| a,b when a < t && b > t -> 
-		if limite > !c then begin
-			incr c;
-			let nx = float_of_int(seg.pdest.x)*.bout in
-			af_mp (Segment.new_segment 
-
-				seg.porig.x
-				seg.porig.y
-				(int_of_float(nx))
-				(int_of_float(nx*.coef+.ordonnee)))
-		end
-		else
-			c := 0 
-												
-																	 
-		| a,b when a > t && b > t -> 
-		let nx1 = float_of_int(seg.porig.x)*.bout in
-		let ny1 = nx1*.coef+.ordonnee in 
-		let nx2 = float_of_int(seg.pdest.x)*.bout in
-		let ny2 = nx2*.coef+.ordonnee in 
-		if Trigo.exist_inter_cercle_droite s_i.porig s_i.pdest t then 
-		begin
-
-			if limite > !c then 
-			begin
-				incr c ;
-				af_mp (Segment.new_segment 
-
-				(int_of_float(nx1))
-				(int_of_float(ny1))
-				(int_of_float(nx2))
-				(int_of_float(ny2))) 
-			end
-
-
-			else
-				c := 0
-		end
-
-		else ()
-
-		| _,_ -> () 
-	in
-	c := 0;
-	af_mp s_i *)
-
-											
-																
-
+		Graphics.draw_segments [|
+		int_of_float((xo *. emplacement /.t )+. emplacement),
+		int_of_float((yo *. emplacement /.t )+. emplacement),
+		int_of_float((xd *. emplacement /.t )+. emplacement),
+		int_of_float((yd *. emplacement /.t )+. emplacement)|] 
 
 let mini_map perso s =
 	Graphics.set_color (Graphics.rgb 0 40 40);
@@ -288,6 +209,17 @@ let clear_graph () =
 	taille,taille;
 	|]
 
+let viseur () =
+	Graphics.set_color (Graphics.rgb 250 250 250);
+	let viseur = 5 in
+	let t = taille/2 in
+	Graphics.draw_segments [|
+		t, t + viseur,
+		t, t - viseur;
+		t-viseur, t,
+		t+viseur, t
+	|]
+
 let display bsp p = 
 
 	accroupir := p.accroupi;
@@ -295,4 +227,17 @@ let display bsp p =
 	Bsp.rev_parse (affiche p) bsp p.pos;
 	(* pre_map ();
 	Bsp.iter  (mini_map p) bsp; *)
+	viseur () ;
 	synchronize ()
+
+let affiche_ennemi player en =
+	let gros = truncate(sqrt(float_of_int(Options.distance_mur/2))) in
+	let s = Segment.new_segment (en.position.x-gros)
+								(en.position.y-gros)
+								(en.position.x+gros)
+								(en.position.y+gros)
+							in
+	let nw_s = clipping(calcul_angle player (calcul_vecteur player s)) in
+	match nw_s with
+	| None -> ()
+	| Some(seg) -> projection ~c:(Graphics.rgb 50 0 0) seg player

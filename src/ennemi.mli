@@ -1,2 +1,2 @@
 
-type ennemi = {id : int; mutable pos : Point.t;}
+type t = {id : int; mutable position : Point.t;}

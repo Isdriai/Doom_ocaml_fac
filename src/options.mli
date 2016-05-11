@@ -31,3 +31,5 @@ val lang : tlang ref
 val change_lang : tlang -> unit
 
 val clavier_lg : char -> touche
+
+val distance_mur : int

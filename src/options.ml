@@ -12,6 +12,8 @@ let fov = ref 60
 
 let step_dist = ref 10
 
+let distance_mur = 10
+
 let xmin = ref 1
 let xmax = 9000.
 

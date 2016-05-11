@@ -2,19 +2,19 @@ open Point
 open Bsp
 open Physic
 
-type ennemi = {id : int ; mutable pos : Point.t; }
+type t = {id : int ; mutable position : Point.t; }
 
 let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
 
 let new_ennemi pos = 
-	let t = {id = compteur (); pos = pos ;}
+	let t = {id = compteur (); position = pos ;}
 	in t
 
 let move_ennemi e pos bsp = 
-	if Physic.detect_collision e.pos bsp then bsp
+	if Physic.detect_collision e.position bsp then bsp
 	else(
-		let bsp = Bsp.remove_ennemi e.id e.pos bsp in
-		e.pos <- pos;
+		let bsp = Bsp.remove_ennemi e.id e.position bsp in
+		e.position <- pos;
 		Bsp.add_ennemi e.id pos bsp)
