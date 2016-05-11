@@ -80,7 +80,7 @@ let debug = !debug
 let debug_bsp = !debug_bsp
 
 type tlang = Fr | Be
-let lang = ref Be
+let lang = ref Fr
 let change_lang langue = lang := langue
 
 type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TNone
@@ -108,3 +108,5 @@ let clavier_lg touche = match !lang with
           |'x' -> TC
           |'o' -> TR
           |_ -> TNone)
+
+let nom_lab = "random_lab.lab"

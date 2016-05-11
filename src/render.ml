@@ -246,7 +246,6 @@ let display bsp p =
 	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse ~h:(affiche_ennemi p) (affiche p)  bsp p.pos;
-	Printf.printf "position joueur %d, %d\n" p.pos.x p.pos.y;
 	(* pre_map ();
 	Bsp.iter  (mini_map p) bsp; *)
 	viseur () ;
