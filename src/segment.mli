@@ -5,6 +5,7 @@ type t = {id : string;
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
+          id_autre : int;
          }
 
 
@@ -12,7 +13,7 @@ type tpos = L | R | C
 
 val dansLaBoite : Point.t -> t -> unit
 
-val new_segment : int -> int -> int -> int -> t
+val new_segment : ?s:(int) -> int -> int -> int -> int -> t
 
 val get_position : Point.t -> t -> tpos
 

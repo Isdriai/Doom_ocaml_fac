@@ -22,7 +22,8 @@ let d_focale = int_of_float(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 
 
 (*Effectue une translation sur un segment par rapport à la position du joueur*)
 let calcul_vecteur p s =
-	Segment.new_segment (s.porig.x-p.pos.x) 
+	Segment.new_segment ~s:s.id_autre
+						(s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
 						(s.pdest.x-p.pos.x) 
 						(s.pdest.y-p.pos.y)
@@ -39,6 +40,7 @@ let calcul_vecteur p s =
 
 let calcul_angle p s =
 	Segment.new_segment 
+		~s:s.id_autre
 		(int_of_float (float_of_int (s.porig.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.porig.y) *. Trigo.dsin (-p.pa)))
 		(int_of_float (float_of_int (s.porig.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.porig.y) *. Trigo.dcos (-p.pa)))
 		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.pdest.y) *. Trigo.dsin (-p.pa)))
@@ -152,7 +154,10 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 	| a,b when a < cmin && b < cmin -> ()
 	| a,b -> let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
-			passage_3d c cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
+			let col = ref c in
+			(if seg.id_autre = 0 then () else col := Graphics.rgb 0 0 0);
+			passage_3d !col cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
+
 			
 			
 

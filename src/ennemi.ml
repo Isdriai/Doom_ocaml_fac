@@ -13,8 +13,9 @@ let new_ennemi pos =
 	in t
 
 let move_ennemi e pos bsp = 
-	if Physic.detect_collision e.position bsp then bsp
-	else(
+	let (detect, _) = Physic.detect_collision e.position bsp in
+	if detect then bsp
+	else( 
 		let bsp = Bsp.remove_ennemi e.id e.position bsp in
 		e.position <- pos;
 		Bsp.add_ennemi e.id pos bsp)

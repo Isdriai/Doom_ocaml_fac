@@ -7,6 +7,7 @@ open Segment
 open Player
 open Bsp
 open Render
+open Random
 
 
 exception Invalid_Touche
@@ -39,6 +40,7 @@ let initialisation ((x, y, pa), lab) =
 
 
 let () = 
+	Random.self_init ();
 	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
 	let bsp = Bsp.build_bsp lab in
 	let s = string_of_int (Render.taille) in 

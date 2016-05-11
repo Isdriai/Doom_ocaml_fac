@@ -62,9 +62,12 @@ let move d p bsp =
 		(p.pos.y+int_of_float(nw_pas*.dsin (p.pa-90)))
 	);
 
-	if not (Physic.detect_collision !point_tmp bsp) 
-	then  p.pos <- !point_tmp
-	else () 
+	let coli = (Physic.detect_collision !point_tmp bsp) in 
+	match coli with
+	| (false, _) -> p.pos <- !point_tmp
+	| (true, Some(seg)) -> p.pos <- Point.new_point ((seg.porig.x + seg.pdest.x)/2) ((seg.porig.y + seg.pdest.y)/2)
+	| (true, None) -> ()
+	  
 
 let accroupir p = 
 	p.accroupi <- not p.accroupi

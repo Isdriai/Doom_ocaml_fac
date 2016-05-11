@@ -1,6 +1,7 @@
 open Point
 open Trigo
 open Options
+open Random
 
 type t = {id : string; 
           porig : Point.t; 
@@ -9,6 +10,7 @@ type t = {id : string;
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
+          id_autre : int;
          }
 
 type tpos = L | R | C
@@ -25,7 +27,7 @@ let angleNormal xa ya xb yb =
 	atan (y /. x) (* calcule de l'angle de la normal*)
 	
 
-let new_segment xo yo xd yd = 
+let new_segment ?(s = 0) xo yo xd yd = 
 	let pas = Options.step_dist /. 2. in
 	let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
@@ -42,6 +44,7 @@ let new_segment xo yo xd yd =
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
 			 boite_droite_orig = igD; boite_droite_dest = estD;
+			 id_autre = s;
 			 } 
 	in p
 
@@ -82,7 +85,7 @@ let split_segment d s =
 
     let (xi,yi) = Trigo.point_intersection_droites s.porig.x s.porig.y s.pdest.x s.pdest.y d.porig.x d.porig.y d.pdest.x d.pdest.y in 
 
-    (Some (new_segment s.porig.x s.porig.y xi yi), Some(new_segment xi yi s.pdest.x s.pdest.y))	
+    (Some (new_segment ~s:s.id_autre s.porig.x s.porig.y xi yi), Some(new_segment ~s:s.id_autre xi yi s.pdest.x s.pdest.y))	
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 
