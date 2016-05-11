@@ -226,11 +226,15 @@ let viseur () =
 	|]
 
 let affiche_ennemi player (id,posi) =
-	let gros = truncate(sqrt(float_of_int(Options.distance_mur/2))) in
-	let s = Segment.new_segment (posi.x-gros)
-								(posi.y-gros)
-								(posi.x+gros)
-								(posi.y+gros)
+	let gros = sqrt(float_of_int(Options.distance_mur/2)) in
+	let alpha = try atan (float_of_int(posi.x/posi.y))
+				with Division_by_zero -> 0.
+			in
+
+	let s = Segment.new_segment (posi.x- int_of_float(gros *.sin alpha))
+								(posi.y- int_of_float(gros *.cos alpha))
+								(posi.x+ int_of_float(gros *.sin alpha))
+								(posi.y+ int_of_float(gros *.cos alpha))
 							in
 	let nw_s = clipping(calcul_angle player (calcul_vecteur player s)) in
 	match nw_s with
@@ -242,6 +246,7 @@ let display bsp p =
 	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse ~h:(affiche_ennemi p) (affiche p)  bsp p.pos;
+	Printf.printf "position joueur %d, %d\n" p.pos.x p.pos.y;
 	(* pre_map ();
 	Bsp.iter  (mini_map p) bsp; *)
 	viseur () ;

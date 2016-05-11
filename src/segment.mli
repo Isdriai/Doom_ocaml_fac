@@ -5,7 +5,7 @@ type t = {id : string;
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
-          id_autre : int;
+          mutable id_autre : int;
          }
 
 

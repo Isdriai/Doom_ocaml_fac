@@ -10,7 +10,7 @@ type t = {id : string;
           boite_gauche_dest : Point.t;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
-          id_autre : int;
+          mutable id_autre : int;
          }
 
 type tpos = L | R | C
@@ -44,9 +44,10 @@ let new_segment ?(s = 0) xo yo xd yd =
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
 			 boite_droite_orig = igD; boite_droite_dest = estD;
-			 id_autre = s;
+			 id_autre = s
 			 } 
-	in p
+	in 
+	p
 
 let dansLaBoite p s = 
 	let res1 = (s.boite_gauche_dest.x - s.boite_gauche_orig.x) * (p.y - s.boite_gauche_orig.y) - 

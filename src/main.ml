@@ -38,10 +38,37 @@ let initialisation ((x, y, pa), lab) =
 	let p = new_player (new_point x y) pa in
 	p,ini [] lab	 
 
+let portail lab =
+	
+	let transformation = (1,10)::[] in 
+
+	let rec p l t  =
+		if not (t = []) then 
+		begin
+			match l with
+			| [] -> ()
+			| seg::b -> 
+			let (deb,fin) = List.hd t in
+			
+			if int_of_string (seg.id) = deb then
+			begin
+				seg.id_autre <- fin;
+				p b (List.tl t)
+			end
+			else
+				p b t
+		end
+		else
+			()
+ 	in
+
+ 	p lab transformation 
 
 let () = 
 	Random.self_init ();
+
 	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
+	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let s = string_of_int (Render.taille) in 
 	let a =  " " ^ s ^ "x" ^ s in

@@ -1,6 +1,25 @@
 open Bsp
 open Segment
 
+let recherche_segment id bsp =
+	let tmp = ref (Segment.new_segment 0 0 0 0) in
+	let fonction s =
+		if int_of_string s.id = id then
+		begin
+			tmp:= s;
+			raise Exit
+		end
+		else 
+			()
+	in
+
+	(try 
+  		Bsp.iter fonction bsp
+  	with Exit -> ());
+
+  	!tmp (*peut etre source de bug si l'id rentré 
+  			ne correspond à aucun segment*)
+
 let detect_collision p bsp =
 
 	let seg = ref (Segment.new_segment 0 0 0 0) in
@@ -19,4 +38,4 @@ let detect_collision p bsp =
 		if (!seg).id_autre = 0 then
 			(true, None)
 		else
-			(true, Some(!seg))
+			(true, Some(recherche_segment (!seg).id_autre bsp))
