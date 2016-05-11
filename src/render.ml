@@ -220,24 +220,26 @@ let viseur () =
 		t+viseur, t
 	|]
 
-let display bsp p = 
-
-	accroupir := p.accroupi;
-	clear_graph ();
-	Bsp.rev_parse (affiche p) bsp p.pos;
-	(* pre_map ();
-	Bsp.iter  (mini_map p) bsp; *)
-	viseur () ;
-	synchronize ()
-
-let affiche_ennemi player en =
+let affiche_ennemi player (id,posi) =
 	let gros = truncate(sqrt(float_of_int(Options.distance_mur/2))) in
-	let s = Segment.new_segment (en.position.x-gros)
-								(en.position.y-gros)
-								(en.position.x+gros)
-								(en.position.y+gros)
+	let s = Segment.new_segment (posi.x-gros)
+								(posi.y-gros)
+								(posi.x+gros)
+								(posi.y+gros)
 							in
 	let nw_s = clipping(calcul_angle player (calcul_vecteur player s)) in
 	match nw_s with
 	| None -> ()
 	| Some(seg) -> projection ~c:(Graphics.rgb 50 0 0) seg player
+
+let display bsp p = 
+
+	accroupir := p.accroupi;
+	clear_graph ();
+	Bsp.rev_parse ~h:(affiche_ennemi p) (affiche p)  bsp p.pos;
+	(* pre_map ();
+	Bsp.iter  (mini_map p) bsp; *)
+	viseur () ;
+	synchronize ()
+
+
