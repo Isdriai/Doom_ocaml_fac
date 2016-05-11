@@ -2,6 +2,8 @@ open Options
 open Physic
 open Point
 open Trigo
+open Segment
+open Ennemi
 
 type t = {
 mutable pos : Point.t;
@@ -75,3 +77,47 @@ let accroupir p =
 let reset p = 
 	p.pos <- p.pos_i;
 	p.pa <- p.pa_i
+
+
+(* let balle_dans_le_mur tire s = (* Si tout est a gauche (ou droite)*)
+	let (a,b) = Segment.split_segment tire s in
+	if a = None || b = None
+
+let tire p ennemi bsp =
+	let ligne_visu = Segment.new_segment p.pos.x p.pos.y ennemi.position.x ennemi.position.y in
+	let orientation_joueur = (Point.new_point (p.pos.x-int_of_float((10*.dcos (p.pa)))) 
+		(p.pos.y-int_of_float(10*.dsin (p.pa)))) in
+
+	if Segment.get_position orientation_joueur ligne_visu = C then (let (a,b) = Segment.split_segment )
+		if  *)
+
+
+(* une balle est representer par un segment et un sense
+	on la fait avancer et on regarde les collisions
+*)
+type balle = {mutable emplacement : Segment.t; mutable pa : int; }
+
+let new_balle pos pa = 
+	let dir = Point.new_point (pos.x+int_of_float((pas *.dcos pa))) 
+		(pos.y+int_of_float(pas *.dsin pa)) in
+	let t = {emplacement = Segment.new_segment pos.x pos.y dir.x dir.y; pa = pa;} in
+	t
+let rec touche balle = function
+	| [] -> ()
+	| x::s -> Segment.dansLaBoite x.position balle.emplacement; touche balle s
+
+let tire p ennemi bsp =
+	let balle = new_balle p.pos p.pa in
+
+	let rec trajectoir acc = 
+	let (bo, _) = Physic.detect_collision balle.emplacement.pdest bsp in
+		if bo then  ()
+		else (touche balle ennemi;
+			let dest = Point.new_point (balle.emplacement.pdest.x+int_of_float((pas *.dcos (balle.pa)))) 
+						(balle.emplacement.pdest.y+int_of_float(pas *.dsin (balle.pa))) in
+			balle.emplacement <- new_segment balle.emplacement.porig.x balle.emplacement.porig.y
+												dest.x dest.y)
+
+	in
+	try trajectoir 500
+	with Exit -> ()
