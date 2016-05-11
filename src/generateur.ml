@@ -96,6 +96,7 @@ let parcourt (x_dep, y_dep) =
 	*)
 
 	let rec par (x_a, y_a) (chemin, pos) deplacements =
+		parcouru.(x_a+ y_a*taille) <- true;
 		if not (tout_fait ()) then
 			match (possibilites x_a y_a)  with
 			| a::b -> let (suite, autre_poss) = choix (a::b) in 
@@ -104,7 +105,7 @@ let parcourt (x_dep, y_dep) =
 		else
 			deplacements
 	in
-
+	parcouru.(x_dep+ y_dep*taille) <- true;
 	par (x_dep,y_dep) ([],[]) []
 
 
