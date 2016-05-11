@@ -82,7 +82,7 @@ let () =
 	auto_synchronize false;
 	jeu p bsp;
 	Graphics.close_graph ()
-
-(* let () = 
+(* 
+let () = 
 	let p, lab = (Parse_lab.read_lab (open_in Sys.argv.(1))) in
 	Test.test (p, lab) *)

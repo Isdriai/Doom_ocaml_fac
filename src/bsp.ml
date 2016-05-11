@@ -8,15 +8,15 @@ let rec parse ?h:(b = fun _ -> ()) f bsp p =
 	match bsp with
 	| Ennemi x -> List.iter b x 
 	| E -> ()
-	| N (r, g, d) -> if get_position p r = L then (parse f g p; f r; parse f d p)
-					else (parse f d p; f r; parse f g p)
+	| N (r, g, d) -> if get_position p r = L then (parse ~h:b f g p; f r; parse ~h:b f d p)
+					else (parse ~h:b f d p; f r; parse ~h:b f g p)
 
 let rec rev_parse ?h:(b = fun _ -> ()) f bsp p  = 
 	match bsp with
 	| Ennemi x -> List.iter b x
 	| E -> ()
-	| N (r, g, d) -> if not (get_position p r = L) then (rev_parse f g p; f r; rev_parse f d p)
-					else (rev_parse f d p; f r; rev_parse f g p)
+	| N (r, g, d) -> if not (get_position p r = L) then (rev_parse ~h:b f g p; f r; rev_parse ~h:b f d p)
+					else (rev_parse ~h:b f d p; f r; rev_parse ~h:b f g p)
 
 
 let rec iter f =  function

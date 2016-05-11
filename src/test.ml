@@ -23,7 +23,7 @@ let affiche_boite_segment s =
 
 let affiche_bsp bsp =
 	let rec aff s = function
-	| Ennemi ((_, x)::_) -> Printf.printf "%s" s; Printf.printf "Ennemi %d %d \n" (x.x) x.y
+	| Ennemi (x) -> List.iter (fun (x,_) -> Printf.printf "Ennemi") x (* Printf.printf "%s" s; Printf.printf "Ennemi %d %d \n" (x.x) x.y *)
 		| E -> Printf.printf "%s" s; Printf.printf "E\n"
 		| N (r, g, d) -> let s2 = s^"|            " in
 		 aff s2 g; Printf.printf "%s" s; affiche_segment r; aff s2 d 
@@ -39,9 +39,6 @@ let rec iter_cps f bsp=
 	in	
 	iter (fun _ ->()) bsp
 
-let add_mechant bsp =
-	let mechant = Ennemi.new_ennemi (new_point (-400) (-400)) in
-	Bsp.add_ennemi mechant.ide mechant.position bsp
 
 
 let affiche_bsp_bis bsp = 
@@ -90,6 +87,15 @@ let affichage2d p bsp =
 		Graphics.draw_segments [|s.porig.x, s.porig.y-100, s.pdest.x, s.pdest.y-100|] in
 	Bsp.rev_parse draw bsp p.pos
 
+
+
+
+let add_mechant bsp =
+	let mechant = Ennemi.new_ennemi (new_point (-400) (-400)) in
+	Bsp.add_ennemi mechant.ide mechant.position bsp
+
+let test_ennemi bsp =
+	Bsp.rev_parse  (fun _ -> Printf.printf "2÷\n") bsp (new_point 0 0)
 
 let test lab = 
 	let s1 = Segment.new_segment 0 0 1 1 in 
@@ -235,11 +241,13 @@ let test lab =
 	
 	List.iter affiche_segment l_lab;
 	let bsp_test = Bsp.build_bsp l_lab in 
+	let bsp_test = add_mechant bsp_test in
 	let player_test = Player.new_player (Point.new_point 350 150) 90 in 
-	affiche_bsp bsp_test; 
-	affichage2dBoiteCollision bsp_test;
-	Printf.printf "\n\n";
-	affichage2d player_test bsp_test;
+(* 	affiche_bsp bsp_test; 
+	affichage2dBoiteCollision bsp_test; *)
+	Printf.printf " ennemi\n\n";
+	(* affichage2d player_test bsp_test; *)
+	test_ennemi b;
 	match (wait_next_event [Key_pressed]).key with
 		|_ ->()
 	(* Render.display bsp_test p_lab ; *)
