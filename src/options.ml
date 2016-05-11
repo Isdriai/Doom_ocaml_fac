@@ -98,7 +98,7 @@ let clavier_lg touche = match !lang with
           |'r' -> TR
           |_ -> TNone)
   |Be -> (match touche with 
-          |'e' -> TZ
+          |'\233' -> TZ
           |'a' -> TQ
           |'u' -> TS
           |'i' -> TD
