@@ -226,6 +226,7 @@ let viseur () =
 	|]
 
 let affiche_ennemi player (id,posi) =
+	Printf.printf "test ennemi affiche, x = %d y = %d\n" posi.x posi.y;
 	let gros = sqrt(float_of_int(Options.distance_mur/2)) in
 	let alpha = try atan (float_of_int(posi.x/posi.y))
 				with Division_by_zero -> 0.

@@ -1,6 +1,6 @@
 open Random
 
-let taille = 100
+let taille = 10
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 
