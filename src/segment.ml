@@ -11,6 +11,7 @@ type t = {id : string;
           boite_droite_orig : Point.t;
           boite_droite_dest : Point.t;
           mutable id_autre : int;
+          mutable couleur : Graphics.color;
          }
 
 type tpos = L | R | C
@@ -27,7 +28,7 @@ let angleNormal xa ya xb yb =
 	atan (y /. x) (* calcule de l'angle de la normal*)
 	
 
-let new_segment ?(s = 0) xo yo xd yd = 
+let new_segment ?(s = 0) ?(g = Graphics.rgb 0 50 0) xo yo xd yd = 
 	let pas = Options.step_dist /. 2. in
 	let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
@@ -44,7 +45,8 @@ let new_segment ?(s = 0) xo yo xd yd =
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
 			 boite_droite_orig = igD; boite_droite_dest = estD;
-			 id_autre = s
+			 id_autre = s;
+			 couleur = g;
 			 } 
 	in 
 	p
@@ -108,3 +110,9 @@ let split hd rest =
 				split_terminal b (l+::sl, r+::sr) 
 in
 split_terminal rest ([],[])
+
+let get_color seg =
+	seg.couleur
+
+let set_color seg g =
+	seg.couleur <- g

@@ -12,7 +12,7 @@ let taille = 500
 let int_of_bool b = 
 	if b then 1 else 0
 
-let accroupir = ref false
+let cour = ref false
 
 let angle_vision = Options.fov
 
@@ -23,7 +23,7 @@ let d_focale = int_of_float(float_of_int(taille/2)/. fabs (dtan (angle_vision/2 
 
 (*Effectue une translation sur un segment par rapport à la position du joueur*)
 let calcul_vecteur p s =
-	Segment.new_segment ~s:s.id_autre
+	Segment.new_segment ~s:s.id_autre ~g:s.couleur
 						(s.porig.x-p.pos.x) 
 						(s.porig.y-p.pos.y)
 						(s.pdest.x-p.pos.x) 
@@ -41,7 +41,7 @@ let calcul_vecteur p s =
 
 let calcul_angle p s =
 	Segment.new_segment 
-		~s:s.id_autre
+		~s:s.id_autre ~g:s.couleur
 		(int_of_float (float_of_int (s.porig.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.porig.y) *. Trigo.dsin (-p.pa)))
 		(int_of_float (float_of_int (s.porig.x) *. Trigo.dsin (-p.pa) +. float_of_int (s.porig.y) *. Trigo.dcos (-p.pa)))
 		(int_of_float (float_of_int (s.pdest.x) *. Trigo.dcos (-p.pa) -. float_of_int (s.pdest.y) *. Trigo.dsin (-p.pa)))
@@ -62,8 +62,8 @@ let clipping s =
 (*on affiche pas un mur qui serait derriere le joueur, si il y a une partie du mur qui se trouve derriere,
 nous créons un nouveau segment*)
 	if xo < 1 && xd < 1 then None
-	else if xo < 1 then Some(Segment.new_segment 1 (yo+int_of_float(float_of_int(1-xo)*. angle_mur)) xd yd ) 
-	else if xd < 1 then Some(Segment.new_segment xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
+	else if xo < 1 then Some(Segment.new_segment ~g:s.couleur 1 (yo+int_of_float(float_of_int(1-xo)*. angle_mur)) xd yd ) 
+	else if xd < 1 then Some(Segment.new_segment ~g:s.couleur xo yo 1 (yd + int_of_float(float_of_int(1-xd)*. angle_mur)))
 	else Some(s)
 
 let distance xa ya xb yb =
@@ -87,10 +87,8 @@ let calcul_p_x cmax c =
 (*va afficher en 3D un segment*)
 let passage_3d color cmax xo yo xd yd co cd =
 
-	let accroupissement = 
-		int_of_bool (!accroupir) * 25 
-	in
-	let hauteur_yeux = (taille/2) + accroupissement in 
+
+	let hauteur_yeux = (taille/2)  in 
 
 (*on fait la meme chose que pour x, on applique une simple fonction affine *)
 	let calcul_p_y x y =
@@ -124,7 +122,7 @@ let passage_3d color cmax xo yo xd yd co cd =
 		p_gauche.x,p_droite.y,p_droite.x,p_gauche.y;
 	|]
 
-let projection ?(c = Graphics.rgb 0 50 0) seg p =
+let projection seg p =
 
 	(*y' = ( y * d ) / x
 	cette formule permet de connaitre la colonne sur l'ecran d'une extremité d'un segment
@@ -155,7 +153,7 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 	| a,b when a < cmin && b < cmin -> ()
 	| a,b -> let (nw_x_orig,nw_y_orig,nw_c_p_orig) = correction seg.porig c_p_orig in
 			let (nw_x_dest,nw_y_dest,nw_c_p_dest) = correction seg.pdest c_p_dest in 
-			let col = ref c in
+			let col = ref seg.couleur in
 			(if seg.id_autre = 0 then () else col := Graphics.rgb 0 0 0);
 			passage_3d !col cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
@@ -175,7 +173,14 @@ let affiche_mp seg t =
 		int_of_float((xo *. emplacement /.t )+. emplacement),
 		int_of_float((yo *. emplacement /.t )+. emplacement),
 		int_of_float((xd *. emplacement /.t )+. emplacement),
-		int_of_float((yd *. emplacement /.t )+. emplacement)|] 
+		int_of_float((yd *. emplacement /.t )+. emplacement)|](*  ;
+		Graphics.set_color Graphics.red ;
+
+		Graphics.draw_segments[|
+		
+
+
+		|] *)
 
 let mini_map perso s =
 	let l = float_of_int Generateur.longueur in
@@ -245,14 +250,31 @@ let affiche_ennemi player (id,posi) =
 	let nw_s = clipping(calcul_angle player (calcul_vecteur player s)) in
 	match nw_s with
 	| None -> ()
-	| Some(seg) -> projection ~c:(Graphics.rgb 50 0 0) seg player
+	| Some(seg) -> let ss = Segment.new_segment ~g:(Graphics.rgb 50 0 0)
+								(seg.porig.x)
+								(seg.porig.y)
+								(seg.pdest.x)
+								(seg.pdest.y)
+	in
+	projection ss player
+
+let affiche_color player =
+	let bout = 10 in
+	Graphics.set_color player.color;
+	Graphics.fill_poly [|
+		0, taille;
+		bout, taille;
+		bout, taille-bout;
+		0, taille-bout
+	|]
 
 let display bsp p = 
 
-	accroupir := p.accroupi;
+	cour := p.courir;
 	clear_graph ();
 	Bsp.rev_parse ~h:(affiche_ennemi p) (affiche p)  bsp p.pos;
 	Bsp.iter  (mini_map p) bsp; 
+	affiche_color p;
 	viseur () ;
 	synchronize ()
 

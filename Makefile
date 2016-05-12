@@ -21,7 +21,7 @@ EXEC = bsp
 
 OBJS = 	$(addprefix $(SRCDIR)/, point.cmo trigo.cmo options.cmo \
 	segment.cmo bsp.cmo physic.cmo \
-	ennemi.cmo  player.cmo generateur.cmo parse_lab.cmo  render.cmo test.cmo main.cmo)
+	ennemi.cmo  player.cmo generateur.cmo parse_lab.cmo render.cmo peintre.cmo test.cmo main.cmo)
 
 OPTOBJS = $(OBJS:.cmo=.cmx)
 FILESMLI = $(OBJS:.cmo=.mli)

@@ -10,6 +10,7 @@ open Render
 open Random
 open Ennemi
 open Generateur
+open Peintre
 
 
 let ennemi = ref [Ennemi.new_ennemi (new_point 0 0)]
@@ -23,10 +24,13 @@ let deplacement p bsp = function
 	|TA -> Player.rotate Left p
 	|TE -> Player.rotate Right p   
 	|KKK -> raise Invalid_Touche
-	|TC -> Player.accroupir p
+	|TC -> Player.courir p
 	|TR -> Player.reset p
 	|TF -> bsp := Player.tire p ennemi !bsp
 	|TU -> Player.reset p; Render.go_solveur p (!Generateur.solution) !bsp
+	|TB -> Peintre.couleur_prec p  
+	|TN -> Peintre.couleur_suivante p 
+	|TV -> Peintre.colorier p !bsp
     |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
 let rec jeu p bsp = 
@@ -83,7 +87,7 @@ let add_mechant bsp =
 let () = 
 	Random.self_init ();
 	Generateur.generateur ();
-	let p, lab = initialisation (Parse_lab.read_lab (open_in Options.nom_lab (* Sys.argv.(1) *))) in
+	let p, lab = initialisation (Parse_lab.read_lab ( open_in (*Options.nom_lab *)  Sys.argv.(1) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let bsp = ref (add_mechant bsp) in

@@ -6,22 +6,24 @@ open Segment
 open Ennemi
 
 type t = {
-mutable pos : Point.t;
-mutable pa : int;
-mutable accroupi : bool;
-pos_i : Point.t;
-pa_i : int;
+	mutable pos : Point.t;
+	mutable pa : int;
+	mutable courir : bool;
+	pos_i : Point.t;
+	pa_i : int;
+    mutable color : Graphics.color;
 }
 
 let pas = 10.
 let d_angle = 3 
 
-let new_player pos pa = 
+let new_player ?(g = Graphics.rgb 0 50 0) pos pa = 
 	let t = {pos = pos ; 
 			pa = pa ; 
-			accroupi = false;
+			courir = false;
 			pos_i = pos;
 			pa_i = pa;
+			color = g;
 			} 
 	in t
 
@@ -46,9 +48,9 @@ let move d p bsp =
 		if b then 1. else 0.
 	in
 
-	(*si le joueur est accroupi, il ira moins vite*)
+	(*si le joueur est en train de courir, il ira plus vite*)
 
-	let nw_pas = pas-.(pas*.float_of_bool p.accroupi)/.2. in
+	let nw_pas = pas+.(pas*.float_of_bool p.courir) in
 
 	(match d with
 		| MFwd -> point_tmp := Point.new_point (p.pos.x+int_of_float((nw_pas*.dcos (p.pa)))) 
@@ -71,8 +73,8 @@ let move d p bsp =
 	| (true, None) -> ()
 	  
 
-let accroupir p = 
-	p.accroupi <- not p.accroupi
+let courir p = 
+	p.courir <- not p.courir
 
 let reset p = 
 	p.pos <- p.pos_i;
