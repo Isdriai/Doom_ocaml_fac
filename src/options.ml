@@ -83,7 +83,7 @@ type tlang = Fr | Be
 let lang = ref Fr
 let change_lang langue = lang := langue
 
-type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TF |TNone
+type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TF | TU | TNone
 
 let clavier_lg touche = match !lang with
   |Fr -> (match touche with 
@@ -97,6 +97,7 @@ let clavier_lg touche = match !lang with
           |'c' -> TC
           |'r' -> TR
           |'f' -> TF
+          |'u' -> TU
           |_ -> TNone)
   |Be -> (match touche with 
           |'\233' -> TZ
@@ -109,6 +110,9 @@ let clavier_lg touche = match !lang with
           |'x' -> TC
           |'o' -> TR
           |'e' -> TF
+          |'v' -> TU
           |_ -> TNone)
 
 let nom_lab = "labyrinthes/random_lab.lab"
+
+let nom_solution = "labyrinthes/solution"

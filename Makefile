@@ -13,7 +13,7 @@ COMPILE = $(OCAMLFIND) $(OCAMLC) #-package $(PACKAGES)
 COMPILEOPT = $(OCAMLFIND) $(OCAMLOPT) #-package $(PACKAGES)
 
 LINK =# -linkpkg
-LIBS = str.cma graphics.cma 
+LIBS = str.cma graphics.cma unix.cma
 # bigarray.cma sdl.cma
 LIBOPTS = $(LIBS:.cma=.cmxa)
 
@@ -21,7 +21,7 @@ EXEC = bsp
 
 OBJS = 	$(addprefix $(SRCDIR)/, point.cmo trigo.cmo options.cmo \
 	segment.cmo bsp.cmo physic.cmo \
-	ennemi.cmo player.cmo parse_lab.cmo generateur.cmo render.cmo test.cmo main.cmo)
+	ennemi.cmo  player.cmo generateur.cmo parse_lab.cmo  render.cmo test.cmo main.cmo)
 
 OPTOBJS = $(OBJS:.cmo=.cmx)
 FILESMLI = $(OBJS:.cmo=.mli)

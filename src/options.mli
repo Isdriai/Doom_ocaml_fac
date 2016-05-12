@@ -25,7 +25,7 @@ val debug : bool
 val debug_bsp : bool
 
 type tlang = Fr | Be
-type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TF | TNone
+type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TF | TU | TNone
 
 val lang : tlang ref
 val change_lang : tlang -> unit
@@ -35,3 +35,4 @@ val clavier_lg : char -> touche
 val distance_mur : int
 
 val nom_lab : string
+val nom_solution : string

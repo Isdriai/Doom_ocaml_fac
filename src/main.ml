@@ -26,6 +26,7 @@ let deplacement p bsp = function
 	|TC -> Player.accroupir p
 	|TR -> Player.reset p
 	|TF -> bsp := Player.tire p ennemi !bsp
+	|TU -> Player.reset p; Render.go_solveur p (!Generateur.solution) !bsp
     |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
 let rec jeu p bsp = 

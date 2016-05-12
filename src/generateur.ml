@@ -1,5 +1,7 @@
 open Random
 open Options
+open Player 
+open Point
 
 type case = {
 	id : int;
@@ -8,13 +10,14 @@ type case = {
 	mutable mur_haut : bool;
 }
 
-let taille = 3
+let taille = 10
 
-let longueur = 50 
+let longueur = 100 
 
 let (+::) e l = match e with 
 				| None -> l 
 				| Some(elem) -> elem :: l 
+
 
 let parcouru = Array.init (taille*taille) 
 	(fun i -> let c = { id = i; fait = false ; mur_droite = true ; mur_haut = true; } in c)  
@@ -24,9 +27,6 @@ let solution = ref []
 let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 	let murs_faits = ref 0 in
-
-
-	(* Regarde les voisins d'une case et renvoie la liste de ceux qui sont visitables *)
 
 	let possibilites (x,y) =
 		let eins = 
@@ -101,7 +101,10 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 		parcouru.(y*taille + x).fait <- true
 	in
 
-	let rec par (((x_a,y_a),(possibles))::pile) =
+	let rec par liste =
+
+		match liste with
+		| (((x_a,y_a),(possibles))::pile) -> 
 
 		if not (!murs_faits = taille*taille -1) then
 			match possibles with
@@ -112,19 +115,19 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 			(if (x_fin, y_fin) = (x_a, y_a) then solution := extraction(((x_a,y_a),(possibles))::pile));
 			par ((suite, possibilites suite)::(((x_a,y_a),reste)::pile))
 			
-			| [] -> let etat_precedent = List.tl pile in
-					par etat_precedent
-			
+			| [] -> let etat_precedent = List.hd pile in
+					let pos_prec, possibles_prec = etat_precedent in
+					par ((pos_prec, (possibilites pos_prec))::(List.tl pile)) 
+
 		else
 			()
+		| _ -> ()
+ 
+		
 	in
 
 	changement_etat_case (0,0);
 	par (((0,0), possibilites (0,0))::[])
-
-
-
-
 
 let ecrire_fichier () =
 	let fichier = open_out Options.nom_lab in
@@ -142,9 +145,11 @@ let ecrire_fichier () =
 	let ecrire_mur () =
 		Array.iter 
 		( fun i ->
-			let x = i.id / taille in
-			let y = i.id mod taille in
+			let x = i.id mod taille in
+			let y = i.id / taille in
 
+(* 			Printf.printf "id %d   x %d, y %d\n" i.id x y;
+ *)
 			(if i.mur_haut then 
 							output_string fichier  (
 											  (string_of_int (x*longueur)) ^ " " ^
@@ -172,19 +177,51 @@ let ecrire_fichier () =
 
 	close_out fichier
 
-	let rec affiche_liste l = 
-		match l with
-		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
-		| [] -> ()
+
+let lecture_solution () =
+		(* let fichier = open_in Options.nom_solution in 
+		let solution = ref [] in
+
+		(try
+					let rec lect () =
 		
-(* let affiche () =
-	Array.iter (
-		fun i -> Printf.printf "id %d fait %b mur_droite %b          mur_haut %b\n" i.id i.fait i.mur_droite i.mur_haut
-	)
-	parcouru *)
+						let str = input_line ii in 
+						let x = Str.regexp "\\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\)" in 
+						let y = Str.regexp "\\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\)" in
+						solution := (x,y)::(!solution);
+						lect ()
+					in
+
+					lect ()
+		
+				with End_of_file -> ());
+
+		!solution *) []
+
+
+let ecrire_solution liste =
+
+	let fichier = open_out Options.nom_solution in
+
+	let rec e_s l =
+		match l with
+		| (a,c)::b -> begin output_string fichier ((string_of_int a) ^ " " ^ (string_of_int c) ^ "\n"); 
+					  e_s b end
+		| [] -> ()
+	in
+
+	e_s liste 
 
 let generateur () =
 	parcourt (0,0) (taille-1,taille-1);
-	affiche_liste !solution;
-(* 	affiche ();
- *)	ecrire_fichier ()
+	ecrire_fichier ()
+
+let rec affiche_liste l = 
+		match l with
+		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
+		| [] -> ()
+
+let solveur player liste =
+	match liste with
+	| (x,y)::b -> begin (* Printf.printf " x %d y %d \n " x y ; *) player.pos <- Point.new_point ((x*longueur)+(longueur/2)) ((y*longueur)+(longueur/2)) ; b end
+	| [] -> []

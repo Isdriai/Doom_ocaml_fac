@@ -256,4 +256,26 @@ let display bsp p =
 	viseur () ;
 	synchronize ()
 
+let rec affiche_liste l = 
+		match l with
+		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
+		| [] -> Printf.printf "fin\n"
 
+
+let rec go_solveur player liste bsp = 
+
+(* 	affiche_liste liste;
+ *)
+	Printf.printf "apres \n";
+	
+	let rec go_s l =
+
+		match liste with
+		| [] -> Printf.printf "machin" ; flush stdout
+		| a::b -> begin let reste = Generateur.solveur player l in 
+ 					display bsp player ; 
+ 					affiche_liste reste; 
+					go_s reste end
+
+		in 
+	go_s liste
