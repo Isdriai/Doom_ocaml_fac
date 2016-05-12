@@ -8,63 +8,58 @@ type case = {
 	mutable mur_haut : bool;
 }
 
+let taille = 3
 
-let taille = 2
+let longueur = 50 
 
-let (+::) e l = match e with None -> l | Some e -> e :: l 
+let (+::) e l = match e with 
+				| None -> l 
+				| Some(elem) -> elem :: l 
 
 let parcouru = Array.init (taille*taille) 
 	(fun i -> let c = { id = i; fait = false ; mur_droite = true ; mur_haut = true; } in c)  
 
+let solution = ref [] 
 
 let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 	let murs_faits = ref 0 in
 
-	let solution = ref [] in
 
 	(* Regarde les voisins d'une case et renvoie la liste de ceux qui sont visitables *)
 
-	let possibilites x y =
+	let possibilites (x,y) =
 		let eins = 
-			try
-				if parcouru.(taille*(y-1) +x ).fait then None
+			if (y > 0) then
+				if (parcouru.(taille*(y-1) +x ).fait) then None
 				else Some(x, (y-1))
-			with _ -> None
+			else None
+
 		in
 
 		let zwei = 
 			try
-				if parcouru.(taille*(y+1) +x ).fait then None
+				if (parcouru.(taille*(y+1) +x ).fait) then None
 				else Some(x, (y+1))
 			with _ -> None
 		in
 		let drei = 
-			try
-				if parcouru.(taille*y +(x-1)).fait then None
+			if ( x > 0) then
+				if (parcouru.(taille*y +(x-1)).fait) then None
 				else Some(x-1, y)
-			with _ -> None
+			else None
 		in
 		let vier = 
-			try
-				if parcouru.(taille*y +(x+1) ).fait then None
+			if ( x < taille-1) then
+				if (parcouru.(taille*y +(x+1) ).fait) then None
 				else Some(x+1, y)
-			with _ -> None
+			else None
 		in
 
-		eins+::(zwei+::(drei+::(vier+::[])))
+		let pos = (eins+::(zwei+::(drei+::(vier+::[])))) in 
+		pos
 
 	in
-
-
-	(* 
-		recoit une liste de possibilites et renvoie une paire,
-		la premiere partie est le choix choisi 
-		et la deuxieme partie est la liste d'origine retranchée du choix pris
-
-		( int * int )list -> (int * int ) * (( int * int ) * list )
-
-	*)
 
 	let choix liste =
 		Random.self_init ();
@@ -85,53 +80,54 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 	in
 
 	let effacer_mur (x_a, y_a) (x_b, y_b) = 
-		let (x_c, y_c) = 
-			if (x_b > x_a) || ( y_b < y_a ) then  (x_b, y_b)
-			else (x_a, y_a)
-		in
-		parcouru.(x_c+ y_c*taille).mur_haut <- false;
-		parcouru.(x_c+ y_c*taille).mur_droite <- false;
+
+			if (x_b < x_a) then  parcouru.(y_b*taille + x_b).mur_droite <- false 
+			else if ( y_a < y_b ) then  parcouru.(y_a*taille + x_a).mur_haut <- false 
+			else if (x_b > x_a ) then parcouru.(y_a*taille + x_a).mur_droite <- false 
+			else parcouru.(y_b*taille + x_b).mur_haut <- false 
+
 	in
 
-	(*xa et ya sont les coordonnées de la position actuel,
-	le deuxieme argument est un couple de listes,
+	let extraction liste =
+		let rec e l acc =
+			match l with
+			| ((x,y),_)::b -> e b ((x,y)::acc)
+			| [] -> acc
+		in
+		e liste []
+	in
 
-	la premierre liste represente le chemin par ou on est passé,
-	la deuxieme lsite est la liste qui correspon aux autres possibilités qu'on a eu
+	let changement_etat_case (x,y) =
+		parcouru.(y*taille + x).fait <- true
+	in
 
-	le type du second arguemnt est 
+	let rec par (((x_a,y_a),(possibles))::pile) =
 
-	(int * int ) list * (( int * int ) list )  list
-
-	le troisieme argument est le résumé des deplacements
-
-	(point A -> point B) list
-
-	avec point = int * int
-
-	*)
-
-	let rec par (x_a, y_a) (chemin, pos) deplacements =
-		parcouru.(x_a+ y_a*taille).fait <- true;
-		if not (!murs_faits = (taille*taille -1)) then (* nm -1*)
-			match (possibilites x_a y_a)  with
-			| a::b -> let (suite, autre_poss) = choix (a::b) in 
-					effacer_mur (x_a, y_a) suite;
-					incr murs_faits;
-					(if (suite = (x_fin, y_fin)) then solution := chemin else ());
-					par suite (((x_a, y_a)::chemin),(autre_poss::pos)) (((x_a, y_a),suite)::deplacements)
-			| [] -> par (List.hd chemin) ((List.tl chemin),List.tl pos) deplacements
+		if not (!murs_faits = taille*taille -1) then
+			match possibles with
+			| a::b -> let (suite, reste) = choix possibles in
+			effacer_mur (x_a, y_a) suite;
+			incr murs_faits;
+			changement_etat_case suite;
+			(if (x_fin, y_fin) = (x_a, y_a) then solution := extraction(((x_a,y_a),(possibles))::pile));
+			par ((suite, possibilites suite)::(((x_a,y_a),reste)::pile))
+			
+			| [] -> let etat_precedent = List.tl pile in
+					par etat_precedent
+			
 		else
 			()
 	in
-	parcouru.(x_dep+ y_dep*taille).fait <- true;
-	par (x_dep,y_dep) ([],[]) [];
-	!solution
+
+	changement_etat_case (0,0);
+	par (((0,0), possibilites (0,0))::[])
+
+
+
 
 
 let ecrire_fichier () =
 	let fichier = open_out Options.nom_lab in
-	let longueur = 50 in
 
 	let ecrire_perso () =
 		let emplacement = longueur/2 in
@@ -175,8 +171,20 @@ let ecrire_fichier () =
 	ecrire_mur();
 
 	close_out fichier
-	
+
+	let rec affiche_liste l = 
+		match l with
+		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
+		| [] -> ()
+		
+(* let affiche () =
+	Array.iter (
+		fun i -> Printf.printf "id %d fait %b mur_droite %b          mur_haut %b\n" i.id i.fait i.mur_droite i.mur_haut
+	)
+	parcouru *)
 
 let generateur () =
-	let solution = parcourt (0,0) (taille,taille) in 
-	ecrire_fichier ()
+	parcourt (0,0) (taille-1,taille-1);
+	affiche_liste !solution;
+(* 	affiche ();
+ *)	ecrire_fichier ()

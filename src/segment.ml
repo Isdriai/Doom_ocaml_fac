@@ -88,8 +88,8 @@ let split_segment d s =
     let s1 = new_segment ~s:s.id_autre s.porig.x s.porig.y xi yi in 
     let s2 = new_segment ~s:s.id_autre xi yi s.pdest.x s.pdest.y in 
 
-    let je_sais_pas = get_position (s1.porig) d in
-    match je_sais_pas with
+    let i_dont_know = get_position (s1.porig) d in
+    match i_dont_know with
     | C
     | L -> (Some(s1),Some(s2))
     | R -> (Some(s2),Some(s1))

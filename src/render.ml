@@ -4,6 +4,7 @@ open Trigo
 open Player
 open Graphics
 open Ennemi
+open Generateur
 
 
 let taille = 500
@@ -177,18 +178,23 @@ let affiche_mp seg t =
 		int_of_float((yd *. emplacement /.t )+. emplacement)|] 
 
 let mini_map perso s =
-	Graphics.set_color (Graphics.rgb 0 40 40);
-	let nw_perso = Player.new_player perso.pos (perso.pa - 90) in
-	let seg = calcul_angle nw_perso (calcul_vecteur perso s) in
-	affiche_mp seg (float_of_int taille)
+	let l = float_of_int Generateur.longueur in
+	let t = float_of_int Generateur.taille in
+	let rapport = (float_of_int taille/.6.) /. (l*.t) in 
+	let xo = float_of_int s.porig.x in
+	let yo = float_of_int s.porig.y in
+	let xd = float_of_int s.pdest.x in
+	let yd = float_of_int s.pdest.y in
+	let decal = 10 in
+	Graphics.set_color (Graphics.rgb 0 0 0);
 
-let pre_map () = 
-	Graphics.set_color (Graphics.rgb 0 0 40);
-	Graphics.fill_poly [|(0,0);
-	0,(taille/4);
-	(taille/4),(taille/4);
-	(taille/4),0|]
-
+	Graphics.draw_segments [|
+	int_of_float(xo*.rapport)+decal,
+	int_of_float(yo*.rapport)+decal,
+	int_of_float(xd*.rapport)+decal,
+	int_of_float(yd*.rapport)+decal
+	|]
+	
 let affiche p = fun s -> 
 
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
@@ -246,8 +252,7 @@ let display bsp p =
 	accroupir := p.accroupi;
 	clear_graph ();
 	Bsp.rev_parse ~h:(affiche_ennemi p) (affiche p)  bsp p.pos;
-	(* pre_map ();
-	Bsp.iter  (mini_map p) bsp; *)
+	Bsp.iter  (mini_map p) bsp; 
 	viseur () ;
 	synchronize ()
 
