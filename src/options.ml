@@ -80,7 +80,7 @@ let debug = !debug
 let debug_bsp = !debug_bsp
 
 type tlang = Fr | Be
-let lang = ref Be
+let lang = ref Fr
 let change_lang langue = lang := langue
 
 type touche = TZ | TQ | TS | TD | TA | TE | KKK | TC | TR | TF |TNone

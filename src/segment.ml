@@ -85,8 +85,14 @@ let split_segment d s =
 	| _,_ ->  
 
     let (xi,yi) = Trigo.point_intersection_droites s.porig.x s.porig.y s.pdest.x s.pdest.y d.porig.x d.porig.y d.pdest.x d.pdest.y in 
+    let s1 = new_segment ~s:s.id_autre s.porig.x s.porig.y xi yi in 
+    let s2 = new_segment ~s:s.id_autre xi yi s.pdest.x s.pdest.y in 
 
-    (Some (new_segment ~s:s.id_autre s.porig.x s.porig.y xi yi), Some(new_segment ~s:s.id_autre xi yi s.pdest.x s.pdest.y))	
+    let je_sais_pas = get_position (s1.porig) d in
+    match je_sais_pas with
+    | C
+    | L -> (Some(s1),Some(s2))
+    | R -> (Some(s2),Some(s1))
 
 let (+::) e l = match e with None -> l | Some e -> e :: l 
 

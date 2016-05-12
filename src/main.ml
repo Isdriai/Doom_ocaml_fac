@@ -30,7 +30,7 @@ let deplacement p bsp = function
 
 let rec jeu p bsp = 
 	Render.display !bsp p;
-	List.iter (fun _ -> Printf.printf "au ") !ennemi; Printf.printf "\n";
+	List.iter (fun _ -> Printf.printf "") !ennemi; Printf.printf "\n";
 	match (wait_next_event [Key_pressed]).key with
 	|' ' -> jeu p bsp
 	|'y' -> ()
