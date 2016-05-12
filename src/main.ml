@@ -9,6 +9,7 @@ open Bsp
 open Render
 open Random
 open Ennemi
+open Generateur
 
 
 let ennemi = ref [Ennemi.new_ennemi (new_point 0 0)]
@@ -29,16 +30,11 @@ let deplacement p bsp = function
 
 let rec jeu p bsp = 
 	Render.display !bsp p;
-	let mousePosX,_ = Graphics.mouse_pos () in
-	let ev = wait_next_event [Key_pressed; Button_down; Mouse_motion] in
-	if ev.keypressed then (match ev.key with
-							|' ' -> jeu p bsp
-							|'y' -> ()
-							|a -> deplacement p bsp (Options.clavier_lg a); jeu p bsp)
-	else if ev.button then ( Printf.printf "stst";bsp := Player.tire p ennemi !bsp ; jeu p bsp)
-	else 
-		(let dirAngle = mousePosX - ev.mouse_x in 
-		 Player.rotate ~angle:(dirAngle) Left p;jeu p bsp)
+	List.iter (fun _ -> Printf.printf "") !ennemi; Printf.printf "\n";
+	match (wait_next_event [Key_pressed]).key with
+	|' ' -> jeu p bsp
+	|'y' -> ()
+	|a -> deplacement p bsp (Options.clavier_lg a); jeu p bsp
 
 let initialisation ((x, y, pa), lab) = 
 	let rec ini sl = function
@@ -81,7 +77,8 @@ let add_mechant bsp =
 let () = 
 	Random.self_init ();
 
-	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
+	Generateur.generateur ();
+	let p, lab = initialisation (Parse_lab.read_lab ((* open_in Options.nom_lab *) open_in Sys.argv.(1) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let bsp = ref (add_mechant bsp) in
