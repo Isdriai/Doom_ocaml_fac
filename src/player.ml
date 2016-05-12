@@ -27,10 +27,10 @@ let new_player pos pa =
 
 type dir = Left | Right
 
-let rotate d p = 
+let rotate ?(angle = d_angle) d p = 
 	match d with
-	| Left -> p.pa <- (p.pa + d_angle) mod 360
-	| Right -> p.pa <- (p.pa - d_angle) mod 360
+	| Left -> p.pa <- (p.pa + angle) mod 360
+	| Right -> p.pa <- (p.pa - angle) mod 360
 	
 
 type mv = MFwd | MBwd | MLeft | MRight

@@ -10,7 +10,7 @@ val new_player : Point.t -> int -> t
 
 type dir = Left | Right
 
-val rotate : dir -> t -> unit
+val rotate : ?angle:int -> dir -> t -> unit
 
 type mv = MFwd | MBwd | MLeft | MRight
 
