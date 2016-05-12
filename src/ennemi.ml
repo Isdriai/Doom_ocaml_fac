@@ -19,3 +19,8 @@ let move_ennemi e pos bsp =
 		let bsp = Bsp.remove_ennemi e.ide e.position bsp in
 		e.position <- pos;
 		Bsp.add_ennemi e.ide pos bsp)
+
+let add e bsp =
+	let (detect, _) = Physic.detect_collision e.position bsp in
+	if detect then raise Exit
+	else Bsp.add_ennemi e.ide e.position bsp

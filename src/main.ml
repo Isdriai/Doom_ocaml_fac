@@ -10,21 +10,26 @@ open Render
 open Random
 open Ennemi
 
+
+let ennemi = ref [Ennemi.new_ennemi (new_point 0 0)]
+
 exception Invalid_Touche
 let deplacement p bsp = function
-	|TZ -> Player.move MFwd p bsp
-    |TQ-> Player.move MLeft p bsp
-    |TS -> Player.move MBwd p bsp
-    |TD -> Player.move MRight p bsp
+	|TZ -> Player.move MFwd p !bsp
+    |TQ-> Player.move MLeft p !bsp
+    |TS -> Player.move MBwd p !bsp
+    |TD -> Player.move MRight p !bsp
 	|TA -> Player.rotate Left p
 	|TE -> Player.rotate Right p   
 	|KKK -> raise Invalid_Touche
 	|TC -> Player.accroupir p
 	|TR -> Player.reset p
+	|TF -> bsp := Player.tire p ennemi !bsp
     |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
 let rec jeu p bsp = 
-	Render.display bsp p;
+	Render.display !bsp p;
+	List.iter (fun _ -> Printf.printf "au ") !ennemi; Printf.printf "\n";
 	match (wait_next_event [Key_pressed]).key with
 	|' ' -> jeu p bsp
 	|'y' -> ()
@@ -65,7 +70,7 @@ let portail lab =
  	p lab transformation 
 
 let add_mechant bsp =
-	let mechant = Ennemi.new_ennemi (new_point 400 100) in
+	let mechant = List.hd !ennemi in
 	Bsp.add_ennemi mechant.ide mechant.position bsp
 
 let () = 
@@ -73,8 +78,8 @@ let () =
 
 	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
 	portail lab;
-	let bspa = Bsp.build_bsp lab in
-	let bsp = add_mechant bspa in
+	let bsp = Bsp.build_bsp lab in
+	let bsp = ref (add_mechant bsp) in
 	let s = string_of_int (Render.taille) in 
 	let a =  " " ^ s ^ "x" ^ s in
 

@@ -2,7 +2,7 @@ open Segment
 
 type t = E | N of Segment.t * t * t | Ennemi of (int * Point.t) list
 
-
+exception Bsp_erreur
 
 let rec parse ?h:(b = fun _ -> ()) f bsp p = 
 	match bsp with
@@ -58,7 +58,8 @@ let rec remove_ennemi id pos = function
 	| Ennemi ((x, _)::s)  -> remove_ennemi_list id x s
 	| N (r, g, d) ->  if get_position pos r = L then N(r, remove_ennemi id pos g, d)
 					else N(r, g, remove_ennemi id pos d)
-	| E -> raise Exit
+
+	|_ ->raise Bsp_erreur
 
 let rec add_ennemi id pos = function
 	| E -> Ennemi [id,pos]

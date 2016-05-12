@@ -19,3 +19,5 @@ val move : mv -> t -> Bsp.t -> unit
 val accroupir : t -> unit
 
 val reset : t -> unit
+
+val tire : t -> Ennemi.t list ref -> Bsp.t -> Bsp.t
