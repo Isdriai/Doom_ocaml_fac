@@ -111,4 +111,4 @@ let clavier_lg touche = match !lang with
           |'e' -> TF
           |_ -> TNone)
 
-let nom_lab = "random_lab.lab"
+let nom_lab = "labyrinthes/random_lab.lab"

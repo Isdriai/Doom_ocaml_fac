@@ -9,6 +9,7 @@ open Bsp
 open Render
 open Random
 open Ennemi
+open Generateur
 
 
 let ennemi = ref [Ennemi.new_ennemi (new_point 0 0)]
@@ -76,7 +77,8 @@ let add_mechant bsp =
 let () = 
 	Random.self_init ();
 
-	let p, lab = initialisation (Parse_lab.read_lab (open_in Sys.argv.(1))) in
+	Generateur.generateur ();
+	let p, lab = initialisation (Parse_lab.read_lab ((* open_in Options.nom_lab *) open_in Sys.argv.(1) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let bsp = ref (add_mechant bsp) in
