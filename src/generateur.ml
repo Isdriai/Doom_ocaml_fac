@@ -178,16 +178,35 @@ let ecrire_fichier () =
 	close_out fichier
 
 
+
+
 let lecture_solution () =
 		let fichier = open_in Options.nom_solution in 
+
+		let recupere_paire str =
+
+			let x = ref "" in
+			let y = ref "" in
+			let ok = ref false in 
+
+			(for i = 0 to ((String.length str)-1) do 
+				
+				if !ok then 
+					y := !y ^ (Char.escaped (str.[i]))
+				else if (str.[i] = '\ ') then 
+					ok := true
+				else 
+					x := !x ^ (Char.escaped (str.[i]))
+
+			done);
+
+			(int_of_string !x, int_of_string !y)
+		in
 		
 		let rec lecture solution =
 			try
-				let x = input_binary_int fichier in
-				let espace = input_char fichier in 
-				let y = input_binary_int fichier in
-				let saut = input_char fichier in
-				lecture ((x,y)::solution)
+				let str = input_line fichier in 
+				lecture (recupere_paire str::solution)
 			with
 			| End_of_file -> List.rev_append solution []  
 		in
