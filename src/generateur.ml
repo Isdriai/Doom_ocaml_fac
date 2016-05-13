@@ -10,7 +10,7 @@ type case = {
 	mutable mur_haut : bool;
 }
 
-let taille = 5
+let taille = 10
 
 let longueur = 300
 
@@ -134,7 +134,7 @@ let ecrire_fichier () =
 
 	let ecrire_perso () =
 		let emplacement = longueur/2 in
-		output_string fichier  ("P : "^ (string_of_int (emplacement+longueur)) ^" " ^(string_of_int emplacement) ^ " 90\n")
+		output_string fichier  ("P : "^ (string_of_int (emplacement)) ^" " ^(string_of_int emplacement) ^ " 90\n")
 	in
 
 	let ecrire_contour ()=
@@ -229,8 +229,12 @@ let ecrire_solution liste =
 
 	e_s liste 
 
+let rec affiche_liste l = 
+	match l with
+	| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
+	| [] -> ()
+
 let generateur () =
-	Printf.printf "test\n";
 	parcourt (0,0) (taille-1,taille-1);
 	ecrire_solution !solution;
 	ecrire_fichier ()

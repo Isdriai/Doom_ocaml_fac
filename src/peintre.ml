@@ -4,6 +4,8 @@ open Bsp
 open Render
 open Trigo
 open Point
+open Generateur
+open Random
 
 let tableau = [|
  Graphics.white ;
@@ -28,7 +30,7 @@ let couleur_suivante player =
 
 let colorier perso bsp =
 	try
-		Bsp.parse (fun s -> 
+		Bsp.parse ((* fun s -> 
 
 			let nw_seg = calcul_angle perso (calcul_vecteur perso s) in 
 			let clip = clipping nw_seg in
@@ -41,10 +43,6 @@ let colorier perso bsp =
 											(perso.pos.y + truncate(100.*. (dsin perso.pa)))
 										in
 
-				Printf.printf "joueur a %d %d joueur b %d %d \n segment orig %d %d dest %d %d \n"
-				perso.pos.x perso.pos.y point.x point.y
-				seg.porig.x seg.porig.y seg.pdest.x seg.pdest.y ;
-
 				let segment = Segment.new_segment (perso.pos.x)
 												  (perso.pos.y)
 												  (point.x)
@@ -54,7 +52,16 @@ let colorier perso bsp =
 
 				match get_position seg.porig segment, get_position seg.pdest segment with
 				| a,b when not (a = b) -> s.couleur <- perso.color ; raise Exit
-				| _ -> ()
+				| _ -> () *)
+
+				(*!!!!! ATTENTION LE PEINTRE DEVIENT FOU !!!!!*)
+				fun s ->
+				let chance = Random.int 5 in
+				if chance = 0 then s.couleur <- perso.color else ()
+
+
+
+
 				) bsp perso.pos
 
 		
