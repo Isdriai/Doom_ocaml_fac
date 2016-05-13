@@ -198,7 +198,14 @@ let mini_map perso s =
 	int_of_float(yo*.rapport)+decal,
 	int_of_float(xd*.rapport)+decal,
 	int_of_float(yd*.rapport)+decal
-	|]
+	|];
+
+	let rayon = 200 / (Generateur.taille*Generateur.taille) in 
+
+	Graphics.set_color (perso.color);
+	Graphics.draw_circle (int_of_float(float_of_int (perso.pos.x)*.rapport)+decal)
+						 (int_of_float(float_of_int (perso.pos.y)*.rapport)+decal)
+						 rayon
 	
 let affiche p = fun s -> 
 
@@ -207,7 +214,15 @@ let affiche p = fun s ->
 
 	match clip with
 	| None -> ()
-	| Some(seg) -> projection seg p
+	| Some(seg) -> 
+
+		if Options.max_affiche > int_of_float (distance 0 0 seg.porig.x seg.porig.y) &&
+           Options.max_affiche > int_of_float (distance 0 0 seg.pdest.x seg.pdest.y) then	
+			
+			projection seg p
+
+		else
+			()
 
 let clear_graph () = 
 	Graphics.set_color (Graphics.rgb 40 40 40);
@@ -278,26 +293,13 @@ let display bsp p =
 	viseur () ;
 	synchronize ()
 
-let rec affiche_liste l = 
-		match l with
-		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
-		| [] -> Printf.printf "fin\n"
-
-
 let rec go_solveur player liste bsp = 
 
-(* 	affiche_liste liste;
- *)
-	Printf.printf "apres \n";
-	
 	let rec go_s l =
 
-		match liste with
-		| [] -> Printf.printf "machin" ; flush stdout
-		| a::b -> begin let reste = Generateur.solveur player l in 
+		let reste = Generateur.solveur player l in 
  					display bsp player ; 
- 					affiche_liste reste; 
-					go_s reste end
+ 					if not(reste = []) then go_s reste else () 
 
 		in 
 	go_s liste

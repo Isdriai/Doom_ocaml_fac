@@ -10,9 +10,9 @@ type case = {
 	mutable mur_haut : bool;
 }
 
-let taille = 10
+let taille = 5
 
-let longueur = 100 
+let longueur = 300
 
 let (+::) e l = match e with 
 				| None -> l 
@@ -215,11 +215,6 @@ let ecrire_solution liste =
 let generateur () =
 	parcourt (0,0) (taille-1,taille-1);
 	ecrire_fichier ()
-
-let rec affiche_liste l = 
-		match l with
-		| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
-		| [] -> ()
 
 let solveur player liste =
 	match liste with

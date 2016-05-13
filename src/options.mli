@@ -36,3 +36,5 @@ val distance_mur : int
 
 val nom_lab : string
 val nom_solution : string
+
+val max_affiche : int

@@ -87,15 +87,17 @@ let add_mechant bsp =
 let () = 
 	Random.self_init ();
 	Generateur.generateur ();
-	let p, lab = initialisation (Parse_lab.read_lab ( open_in (*Options.nom_lab *)  Sys.argv.(1) )) in
+	let p, lab = initialisation (Parse_lab.read_lab ( open_in Options.nom_lab  (*Sys.argv.(1)*) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let bsp = ref (add_mechant bsp) in
 	let s = string_of_int (Render.taille) in 
 	let a =  " " ^ s ^ "x" ^ s in
 
+
 	Graphics.open_graph a;
 	auto_synchronize false;
+	Peintre.couleur_suivante p;
 	jeu p bsp;
 	Graphics.close_graph ()
 (* 

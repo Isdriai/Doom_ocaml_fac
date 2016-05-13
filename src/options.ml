@@ -119,3 +119,5 @@ let clavier_lg touche = match !lang with
 let nom_lab = "labyrinthes/random_lab.lab"
 
 let nom_solution = "labyrinthes/solution"
+
+let max_affiche = 5000
