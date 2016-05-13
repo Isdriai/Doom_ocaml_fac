@@ -29,8 +29,8 @@ let detect_collision p bsp =
 		| E -> ()
 		| Ennemi(_) -> ()
 		| N (r, g, d) -> seg := r;
-						if get_position p r = L then (dc f g; f r)
-						else (dc f d; f r)
+						if get_position p r = L then (dc f g; f r;dc f d)
+						else (dc f d; f r;dc f g)
 	in
 	try 
 		dc (Segment.dansLaBoite p) bsp; (false, None)

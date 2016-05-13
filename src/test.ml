@@ -243,10 +243,10 @@ let test lab =
 	let bsp_test = Bsp.build_bsp l_lab in 
 	let bsp_test = add_mechant bsp_test in
 	let player_test = Player.new_player (Point.new_point 350 150) 90 in 
-(* 	affiche_bsp bsp_test; 
-	affichage2dBoiteCollision bsp_test; *)
+	affiche_bsp bsp_test; 
+	affichage2dBoiteCollision bsp_test;
 	Printf.printf " ennemi\n\n";
-	(* affichage2d player_test bsp_test; *)
+	affichage2d player_test bsp_test;
 	test_ennemi b;
 	match (wait_next_event [Key_pressed]).key with
 		|_ ->()
