@@ -6,6 +6,6 @@ val longueur : int
 
 val solution : (int * int ) list ref
 
-val lecture_solution : unit -> ( int * int ) list
+val lecture_solution : unit -> unit
 
 val solveur : Player.t -> ( int * int ) list -> ( int * int ) list

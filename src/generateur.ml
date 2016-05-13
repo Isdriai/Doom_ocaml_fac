@@ -179,41 +179,41 @@ let ecrire_fichier () =
 
 
 let lecture_solution () =
-		(* let fichier = open_in Options.nom_solution in 
-		let solution = ref [] in
-
-		(try
-					let rec lect () =
+		let fichier = open_in Options.nom_solution in 
 		
-						let str = input_line ii in 
-						let x = Str.regexp "\\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\)" in 
-						let y = Str.regexp "\\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\) \\([0-9]+\\)" in
-						solution := (x,y)::(!solution);
-						lect ()
-					in
+		let rec lecture solution =
+			try
+				let x = input_binary_int fichier in
+				let espace = input_char fichier in 
+				let y = input_binary_int fichier in
+				let saut = input_char fichier in
+				lecture ((x,y)::solution)
+			with
+			| End_of_file -> List.rev_append solution []  
+		in
 
-					lect ()
-		
-				with End_of_file -> ());
-
-		!solution *) []
-
+		solution := lecture []
 
 let ecrire_solution liste =
 
 	let fichier = open_out Options.nom_solution in
-
 	let rec e_s l =
 		match l with
-		| (a,c)::b -> begin output_string fichier ((string_of_int a) ^ " " ^ (string_of_int c) ^ "\n"); 
-					  e_s b end
+		| (a,c)::b -> begin 
+
+			let s = ((string_of_int a) ^ " " ^ (string_of_int c) ^ "\n") in 
+			output_string fichier s; 
+			e_s b end
+
 		| [] -> ()
 	in
 
 	e_s liste 
 
 let generateur () =
+	Printf.printf "test\n";
 	parcourt (0,0) (taille-1,taille-1);
+	ecrire_solution !solution;
 	ecrire_fichier ()
 
 let solveur player liste =

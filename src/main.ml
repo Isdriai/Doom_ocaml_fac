@@ -86,7 +86,9 @@ let add_mechant bsp =
 
 let () = 
 	Random.self_init ();
-	Generateur.generateur ();
+
+	(if Sys.file_exists Options.nom_lab then Generateur.lecture_solution () 
+	else Generateur.generateur ());
 	let p, lab = initialisation (Parse_lab.read_lab ( open_in Options.nom_lab  (*Sys.argv.(1)*) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
