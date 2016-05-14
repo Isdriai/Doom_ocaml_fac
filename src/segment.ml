@@ -29,7 +29,7 @@ let angleNormal xa ya xb yb =
 	
 
 let new_segment ?(s = 0) ?(g = Graphics.rgb 0 50 0) xo yo xd yd = 
-	let pas = Options.step_dist /. 2. in
+	let pas = Options.step_dist  in
 	let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
 	let ang = angleNormal xo yo xd yd in

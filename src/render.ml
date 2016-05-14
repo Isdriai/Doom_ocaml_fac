@@ -7,7 +7,7 @@ open Ennemi
 open Generateur
 
 
-let taille = 500
+let taille = 700
 
 let int_of_bool b = 
 	if b then 1 else 0

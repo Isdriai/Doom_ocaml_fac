@@ -41,7 +41,7 @@ let rec jeu p bsp =
 							|' ' -> jeu p bsp
 							|'y' -> ()
 							|a -> deplacement p bsp (Options.clavier_lg a); jeu p bsp)
-	else if ev.button then ( Printf.printf "stst";bsp := Player.tire p ennemi !bsp ; jeu p bsp)
+	else if ev.button then ( bsp := Player.tire p ennemi !bsp ; jeu p bsp)
 	else 
 		(let dirAngle = mousePosX - ev.mouse_x in 
 		 Player.rotate ~angle:(dirAngle) Left p;jeu p bsp)
@@ -85,11 +85,11 @@ let add_mechant bsp =
 	Bsp.add_ennemi mechant.ide mechant.position bsp
 
 let () = 
+
 	Random.self_init ();
-(* 
-	(if Sys.file_exists Options.nom_lab then Generateur.lecture_solution () 
-	else Generateur.generateur ()); *)
-let p, lab = initialisation (Parse_lab.read_lab (  open_in  (* Options.nom_lab *)  Sys.argv.(1) )) in
+
+	Generateur.generateur (); 
+	let p, lab = initialisation (Parse_lab.read_lab (  open_in Sys.argv.(1) )) in
 	portail lab;
 	let bsp = Bsp.build_bsp lab in
 	let bsp = ref (add_mechant bsp) in

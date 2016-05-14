@@ -13,8 +13,8 @@ COMPILE = $(OCAMLFIND) $(OCAMLC) #-package $(PACKAGES)
 COMPILEOPT = $(OCAMLFIND) $(OCAMLOPT) #-package $(PACKAGES)
 
 LINK =# -linkpkg
-LIBS = str.cma graphics.cma unix.cma
-# bigarray.cma sdl.cma
+LIBS = str.cma graphics.cma unix.cma 
+# bigarray.cma sdl.cma 
 LIBOPTS = $(LIBS:.cma=.cmxa)
 
 EXEC = bsp
