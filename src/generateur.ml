@@ -24,6 +24,20 @@ let parcouru = Array.init (taille*taille)
 
 let solution = ref [] 
 
+let verticaux = Array.init (taille-1)
+	(fun i -> Array.init (taille)
+		(fun j -> true
+		)
+	)
+
+let horizontaux = Array.init (taille-1)
+	(fun i -> Array.init (taille)
+		(fun j -> true
+		)
+	)
+
+
+
 let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 	let murs_faits = ref 0 in
@@ -81,10 +95,10 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 	let effacer_mur (x_a, y_a) (x_b, y_b) = 
 
-			if (x_b < x_a) then  parcouru.(y_b*taille + x_b).mur_droite <- false 
-			else if ( y_a < y_b ) then  parcouru.(y_a*taille + x_a).mur_haut <- false 
-			else if (x_b > x_a ) then parcouru.(y_a*taille + x_a).mur_droite <- false 
-			else parcouru.(y_b*taille + x_b).mur_haut <- false 
+			if (x_b < x_a ) then verticaux.(x_b).(y_b) <- false
+			else if ( y_a < y_b ) then horizontaux.(y_a).(x_a) <- false
+			else if ( x_b > x_a ) then verticaux.(x_a).(y_a) <- false
+		    else horizontaux.(y_b).(x_b) <- false  
 
 	in
 
@@ -129,42 +143,57 @@ let ecrire_fichier () =
 	in
 
 	let ecrire_contour ()=
-			output_string fichier  ("0 0 0 " ^ (string_of_int (taille*longueur)) ^ "\n");
-			output_string fichier  ("0 0 "^ (string_of_int (taille*longueur)) ^" 0\n")
-	in
+			let decal = (string_of_int (taille*longueur)) in
+			output_string fichier  ("0 0 0 " ^ decal ^ "\n");
+			output_string fichier  ("0 0 "^ decal ^" 0\n");
+			output_string fichier  ("0 " ^ decal ^ " " ^ decal ^ " " ^ decal ^ "\n");
+			output_string fichier  (decal ^ " " ^ decal ^ " " ^ decal ^ " 0" ^ "\n")
+		in
 
-	let ecrire_mur () =
-		Array.iter 
-		( fun i ->
-			let x = i.id mod taille in
-			let y = i.id / taille in
+	let ecrire_murs () =
 
-(* 			Printf.printf "id %d   x %d, y %d\n" i.id x y;
- *)
-			(if i.mur_haut then 
-							output_string fichier  (
-											  (string_of_int (x*longueur)) ^ " " ^
-											  (string_of_int ((y+1)*longueur))	^ " " ^
-											  (string_of_int ((x+1)*longueur)) ^ " " ^
-											  (string_of_int ((y+1)*longueur)) ^ "\n"
-											)
-						else ());
+		let ecrire_mur xa ya xb yb =
+			 output_string fichier (
+									(string_of_int(xa)) ^ " " ^
+									(string_of_int(ya)) ^ " " ^
+									(string_of_int(xb)) ^ " " ^
+									(string_of_int(yb)) ^ "\n"
+									) 
+		in 
 
-			(if i.mur_droite then 
-							output_string fichier  (
-								(string_of_int ((x+1)*longueur)) ^ " " ^
-								(string_of_int (y*longueur)) ^ " " ^
-								(string_of_int ((x+1)*longueur)) ^ " " ^
-								(string_of_int ((y+1)*longueur)) ^ "\n"
-							)
-						else ())
-		)
-		parcouru
-	in
+		let parcour_ecriture fonction mur =
+		Array.iteri (
+			fun index el -> 
+				let deb = ref 0 in 
+
+				for i = 0 to (taille-1) do 
+
+ 					if el.(i) then 
+						if i = (taille-1) then begin
+ 							fonction index (!deb) (i+1);
+						end
+						else 
+							()
+					else
+						if i = !deb then 
+							incr deb
+						else 
+							begin
+ 							fonction index (!deb) i;
+							deb := i+1
+						end
+				done
+			) mur
+		in 
+		
+  		parcour_ecriture (fun index i deb -> ecrire_mur ((index+1)*longueur) (deb*longueur) ((index+1)*longueur) (i*longueur)) verticaux;
+ 		  
+		parcour_ecriture (fun index i deb -> ecrire_mur (deb*longueur) ((index+1)*longueur) (i*longueur) ((index+1)*longueur)) horizontaux
+ 	in
 
 	ecrire_perso ();
 	ecrire_contour ();
-	ecrire_mur();
+	ecrire_murs();
 
 	close_out fichier
 

@@ -55,6 +55,7 @@ let colorier perso bsp =
 				| _ -> () *)
 
 				(*!!!!! ATTENTION LE PEINTRE DEVIENT FOU !!!!!*)
+				
 				fun s ->
 				let chance = Random.int 5 in
 				if chance = 0 then s.couleur <- perso.color else ()
