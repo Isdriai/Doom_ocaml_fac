@@ -15,6 +15,7 @@ open Peintre
 
 let ennemi = ref [Ennemi.new_ennemi (new_point 0 0)]
 
+(*Fait des actions selon la touche pressée*)
 exception Invalid_Touche
 let deplacement p bsp = function
 	|TZ -> Player.move MFwd p !bsp
@@ -33,6 +34,7 @@ let deplacement p bsp = function
 	|TV -> Peintre.colorier p !bsp
     |_ -> Printf.printf "gnneeeeeuuuh je suis trizomique, je tape sur une mauvaise touche\n"
 
+(*boucle principale du jeu*)
 let rec jeu p bsp = 
 	Render.display !bsp p;
 	let mousePosX,_ = Graphics.mouse_pos () in
@@ -46,6 +48,7 @@ let rec jeu p bsp =
 		(let dirAngle = mousePosX - ev.mouse_x in 
 		 Player.rotate ~angle:(dirAngle) Left p;jeu p bsp)
 
+
 let initialisation ((x, y, pa), lab) = 
 	let rec ini sl = function
 		|[] -> sl
@@ -54,6 +57,7 @@ let initialisation ((x, y, pa), lab) =
 	let p = new_player (new_point x y) pa in
 	p,ini [] lab	 
 
+(*transforme des segments en portails en mode stargate oh yeah :) *)
 let portail lab =
 	
 	let transformation = (1,10)::[] in 
@@ -80,10 +84,12 @@ let portail lab =
 
  	p lab transformation 
 
+(*rajoute un mechant*)
 let add_mechant bsp =
 	let mechant = List.hd !ennemi in
 	Bsp.add_ennemi mechant.ide mechant.position bsp
 
+(*lance la fenetre graphique et donne la main à la boucle principale du jeu*)
 let () = 
 
 	Random.self_init ();
