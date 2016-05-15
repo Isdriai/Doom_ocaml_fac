@@ -16,6 +16,8 @@ type t = {id : string;
 
 type tpos = L | R | C
 
+exception Collision
+
 let compteur =
 	let etat = ref 0 in
 	fun () -> etat := !etat + 1; !etat 
@@ -23,16 +25,18 @@ let compteur =
 let angleNormal xa ya xb yb = 
 	let y = float_of_int (yb - ya) in
 	let x = float_of_int (xb - xa) in
-	if x = 0. then Trigo.piSur2
+	if x = 0. then Trigo.piSur2 (* evite de divisier par zero*)
 	else
-	atan (y /. x) (* calcule de l'angle de la normal*)
+		atan (y /. x) (* calcule de l'angle de la normal*)
 	
 
 let new_segment ?(s = 0) ?(g = Graphics.rgb 0 50 0) xo yo xd yd = 
 	let pas = Options.step_dist  in
 	let ig = {x = xo ; y = yo} in 
 	let est = {x = xd ; y = yd} in 
-	let ang = angleNormal xo yo xd yd in
+	let ang = angleNormal xo yo xd yd in   
+
+	(* les boites de collisons sont calculer pas raport au vecteur normal fois le pas *)
 	let igG = {x = xo - (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
 				y = yo - (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
 	let estG = {x = xd - (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
@@ -41,6 +45,7 @@ let new_segment ?(s = 0) ?(g = Graphics.rgb 0 50 0) xo yo xd yd =
 				y = yo + (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
 	let estD = {x = xd + (int_of_float (cos (ang +. Trigo.piSur2) *. pas)) ; 
 				y = yd + (int_of_float (sin (ang +. Trigo.piSur2) *. pas))} in 
+
 	let c = compteur() in 
 	let p = {id = string_of_int c; porig = ig ; pdest = est;
 			 boite_gauche_orig = igG; boite_gauche_dest = estG;
@@ -52,6 +57,7 @@ let new_segment ?(s = 0) ?(g = Graphics.rgb 0 50 0) xo yo xd yd =
 	p
 
 let dansLaBoite p s = 
+	(* on regarde la position du point par raport a chaque segment*)
 	let res1 = (s.boite_gauche_dest.x - s.boite_gauche_orig.x) * (p.y - s.boite_gauche_orig.y) - 
 	(s.boite_gauche_dest.y - s.boite_gauche_orig.y)* (p.x - s.boite_gauche_orig.x) in
 
@@ -64,7 +70,8 @@ let dansLaBoite p s =
 	let res4 = (s.boite_droite_dest.x - s.boite_gauche_dest.x) * (p.y - s.boite_gauche_dest.y) - 
 	(s.boite_droite_dest.y - s.boite_gauche_dest.y)* (p.x - s.boite_gauche_dest.x) in
 	
-	if res1 * res2 <= 0  && res3 * res4 <= 0 then raise Exit
+	(* on regarde si le point est entre chaque segment' si oui en renvoi une erreur*)
+	if res1 * res2 <= 0  && res3 * res4 <= 0 then raise Collision
 
 (*Dis si un segment est à gauche, à droite ou au centre par rapport à un point*)
 let get_position p s = 

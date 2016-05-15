@@ -34,7 +34,7 @@ let detect_collision p bsp =
 	in
 	try 
 		dc (Segment.dansLaBoite p) bsp; (false, None)
-	with Exit -> 
+	with Segment.Collision -> 
 		if (!seg).id_autre = 0 then
 			(true, None)
 		else

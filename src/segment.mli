@@ -12,6 +12,8 @@ type t = {id : string;
 
 type tpos = L | R | C
 
+exception  Collision
+
 val dansLaBoite : Point.t -> t -> unit
 
 val new_segment : ?s:(int) -> ?g:Graphics.color -> int -> int -> int -> int -> t

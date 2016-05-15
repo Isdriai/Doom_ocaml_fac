@@ -119,5 +119,5 @@ let tire p ennemi bsp =
 
 		in
 		try trajectoir 500;bsp
-		with Exit -> ennemi := List.filter (fun x -> x != !e) !ennemi; Bsp.remove_ennemi !e.ide !e.position bsp
+		with Collision -> ennemi := List.filter (fun x -> x != !e) !ennemi; Bsp.remove_ennemi !e.ide !e.position bsp
 	else bsp
