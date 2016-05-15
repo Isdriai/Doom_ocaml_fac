@@ -86,7 +86,11 @@ let split_segment d s =
 	| C,L -> (Some (s), None)
 	| _,_ ->  
 
-    let (xi,yi) = Trigo.point_intersection_droites s.porig.x s.porig.y s.pdest.x s.pdest.y d.porig.x d.porig.y d.pdest.x d.pdest.y in 
+    let (xi,yi) = Trigo.point_intersection_droites s.porig.x s.porig.y 
+    											   s.pdest.x s.pdest.y 
+    											   d.porig.x d.porig.y 
+    											   d.pdest.x d.pdest.y in 
+    											   
     let s1 = new_segment ~s:s.id_autre s.porig.x s.porig.y xi yi in 
     let s2 = new_segment ~s:s.id_autre xi yi s.pdest.x s.pdest.y in 
 

@@ -101,39 +101,30 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 	in
 
-	let extraction liste =
-		let rec e l acc =
-			match l with
-			| ((x,y),_)::b -> e b ((x,y)::acc)
-			| [] -> acc
-		in
-		e liste []
-	in
-
 	let changement_etat_case (x,y) =
 		parcouru.(y*taille + x).fait <- true
 	in
 
-	let rec par liste =
+	let rec par liste possibles =
 
 		match liste with
-		| (((x_a,y_a),(possibles))::pile) -> 
+		| (x_a,y_a::pile) -> 
 
 		if not (!murs_faits = taille*taille -1) then
 			match possibles with
-			| a::b -> let (suite, reste) = choix possibles in
+			| a::b -> let suite = choix possibles in
 			effacer_mur (x_a, y_a) suite;
 			incr murs_faits;
 			changement_etat_case suite;
-			(if (x_fin, y_fin) = (x_a, y_a) then solution := extraction(((x_a,y_a),(possibles))::pile));
-			par ((suite, possibilites suite)::(((x_a,y_a),reste)::pile))
+			(if (x_fin, y_fin) = (x_a, y_a) then solution := ((x_a,y_a)::pile));
+			par (suite::((x_a,y_a)::pile)) (possibilites suite)
 			
 			| [] -> let etat_precedent = List.hd pile in
 					let pos_prec, possibles_prec = etat_precedent in
 					par ((pos_prec, (possibilites pos_prec))::(List.tl pile)) 
 
 		else
-			(if !solution = [] then solution := extraction (((x_fin,y_fin),([]))::pile)
+			(if !solution = [] then solution := ((x_fin,y_fin)::pile)
 			 else ())
 		| _ -> ()
  
@@ -141,7 +132,7 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 	in
 
 	changement_etat_case (0,0);
-	par (((0,0), possibilites (0,0))::[])
+	par ((0,0)::[])
 
 let ecrire_fichier () =
 	let fichier = open_out Options.nom_lab in
