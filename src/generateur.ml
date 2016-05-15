@@ -3,13 +3,6 @@ open Options
 open Player 
 open Point
 
-type case = {
-	id : int;
-	mutable fait : bool;
-	mutable mur_droite : bool;
-	mutable mur_haut : bool;
-}
-
 let taille = 10
 
 let longueur = 300
@@ -20,7 +13,7 @@ let (+::) e l = match e with
 
 
 let parcouru = Array.init (taille*taille) 
-	(fun i -> let c = { id = i; fait = false ; mur_droite = true ; mur_haut = true; } in c)  
+	(fun _ -> false)  
 
 let solution = ref [] 
 
@@ -36,7 +29,11 @@ let horizontaux = Array.init (taille-1)
 		)
 	)
 
+(*description de l'algo, on commence a une case, on choisit une case non visitée et on détruit le mur les separant
+si on a plus de choix on remonte la pile d'appel jusqu'a trouver une case ou il y encore un choix
 
+on fait ca jusqu'à avoir retirer taille²-1 murs ( propriétés des labyrinthes parfaits )
+*)
 
 let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
@@ -45,7 +42,7 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 	let possibilites (x,y) =
 		let eins = 
 			if (y > 0) then
-				if (parcouru.(taille*(y-1) +x ).fait) then None
+				if (parcouru.(taille*(y-1) +x )) then None
 				else Some(x, (y-1))
 			else None
 
@@ -53,19 +50,19 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 		let zwei = 
 			try
-				if (parcouru.(taille*(y+1) +x ).fait) then None
+				if (parcouru.(taille*(y+1) +x )) then None
 				else Some(x, (y+1))
 			with _ -> None
 		in
 		let drei = 
 			if ( x > 0) then
-				if (parcouru.(taille*y +(x-1)).fait) then None
+				if (parcouru.(taille*y +(x-1))) then None
 				else Some(x-1, y)
 			else None
 		in
 		let vier = 
 			if ( x < taille-1) then
-				if (parcouru.(taille*y +(x+1) ).fait) then None
+				if (parcouru.(taille*y +(x+1) )) then None
 				else Some(x+1, y)
 			else None
 		in
@@ -82,9 +79,7 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 
 		let rec ch l n =
 			match l with
-			| a::b::c -> if n=0 then a else ch (b::c) (n-1) 
-			(*c'est pas grave si on change le sens des elements car on veut en prendre un aleatoirement*)
-			
+			| a::b::c -> if n=0 then a else ch (b::c) (n-1) 			
 			| a::b -> a (*b est forcement la liste vide*)
 			| [] -> (0,0) (*n'arrive jamais*)
 		in
@@ -103,7 +98,7 @@ let parcourt (x_dep, y_dep) (x_fin, y_fin) =
 	in
 
 	let changement_etat_case (x,y) =
-		parcouru.(y*taille + x).fait <- true
+		parcouru.(y*taille + x) <- true
 	in
 
 	let rec par liste possibles =
@@ -161,6 +156,12 @@ let ecrire_fichier () =
 									) 
 		in 
 
+		(*si deux murs sont collés, la fonction n'en fera qu'un seul qui sera la fusion des deux anciens
+		
+		Pour le faire, on enregistre la derniere fois qu'on a rencontré un mur et on regarde quand on tombe sur un trou
+
+		 *)
+
 		let parcour_ecriture fonction mur =
 		Array.iteri (
 			fun index el -> 
@@ -170,7 +171,7 @@ let ecrire_fichier () =
 
  					if el.(i) then 
 						if i = (taille-1) then begin
- 							fonction index (!deb) (i+1);
+ 							fonction index (!deb) (i+1); (*cas particulier ou on est à la fin*)
 						end
 						else 
 							()
@@ -199,7 +200,7 @@ let ecrire_fichier () =
 
 
 
-
+(*lis la solution du labyrinthes précedemment écrite dans un fichier*)
 let lecture_solution () =
 		let fichier = open_in Options.nom_solution in 
 
@@ -249,17 +250,13 @@ let ecrire_solution liste =
 
 	e_s liste 
 
-let rec affiche_liste l = 
-	match l with
-	| (a,c)::b -> Printf.printf "         x %d y %d\n" a c; affiche_liste b
-	| [] -> ()
 
 let generateur () =
 	parcourt (0,0) (taille-1,taille-1);
 	ecrire_solution !solution;
 	ecrire_fichier ()
 
-
+(*Repositionne le joueur sur la case finale grace à la solution chargée depuis un fichier*)
 let solveur player liste =
 	match liste with
 	| (x,y)::b -> begin (* Printf.printf " x %d y %d \n " x y ; *) player.pos <- Point.new_point ((x*longueur)+(longueur/2)) ((y*longueur)+(longueur/2)) ; b end

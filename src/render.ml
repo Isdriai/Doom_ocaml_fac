@@ -51,7 +51,8 @@ let calcul_angle p s =
 let ata xo yo xd yd = 
 	float_of_int(yd - yo) /. float_of_int(xd - xo)
 
-
+(*Permet de ne pas aficher les segments qui se trouvent entierement derriere le joueur, 
+si un mur est en partie visible, on calcul sa partie visible*)
 let clipping s = 
 
 	let xo = s.porig.x in
@@ -122,6 +123,8 @@ let passage_3d color cmax xo yo xd yd co cd =
 		p_gauche.x,p_droite.y,p_droite.x,p_gauche.y;
 	|]
 
+
+(*on projecte sur un ecran fictif tous les segments pr les afficher en 3d par la suite*)
 let projection seg p =
 
 	(*y' = ( y * d ) / x
@@ -157,31 +160,8 @@ pour cela, on calcul le point d'intersection entre le champ de vision et le segm
 			(if seg.id_autre = 0 then () else col := Graphics.rgb 0 0 0);
 			passage_3d !col cmax nw_x_orig nw_y_orig nw_x_dest nw_y_dest nw_c_p_dest nw_c_p_orig
 
-			
-			
 
-
-
-let affiche_mp seg t =
-
-	let emplacement = float_of_int (taille/6) in
-		let xo = float_of_int seg.porig.x in
-		let yo = float_of_int seg.porig.y in
-		let xd = float_of_int seg.pdest.x in
-		let yd = float_of_int seg.pdest.y in
-		Graphics.draw_segments [|
-		int_of_float((xo *. emplacement /.t )+. emplacement),
-		int_of_float((yo *. emplacement /.t )+. emplacement),
-		int_of_float((xd *. emplacement /.t )+. emplacement),
-		int_of_float((yd *. emplacement /.t )+. emplacement)|](*  ;
-		Graphics.set_color Graphics.red ;
-
-		Graphics.draw_segments[|
-		
-
-
-		|] *)
-
+(*affiche la mini map*)
 let mini_map perso s =
 	let l = float_of_int Generateur.longueur in
 	let t = float_of_int Generateur.taille in
@@ -207,6 +187,7 @@ let mini_map perso s =
 						 (int_of_float(float_of_int (perso.pos.y)*.rapport)+decal)
 						 rayon
 	
+(*va afficher un segment en le clippant *)
 let affiche p = fun s -> 
 
 	let nw_seg = calcul_angle p (calcul_vecteur p s) in 
@@ -224,6 +205,7 @@ let affiche p = fun s ->
 		else
 			()
 
+(*reinitialise la fenetre graphique*)
 let clear_graph () = 
 	Graphics.set_color (Graphics.rgb 40 40 40);
 	Graphics.fill_poly[|
@@ -240,6 +222,7 @@ let clear_graph () =
 	taille,taille;
 	|]
 
+(*affiche un viseur*)
 let viseur () =
 	Graphics.set_color (Graphics.rgb 250 250 250);
 	let viseur = 5 in
@@ -251,6 +234,7 @@ let viseur () =
 		t+viseur, t
 	|]
 
+(*affiche un ennemi en lui attribuant un segment et le clippant pr ensuite l'afficher en 3d*)
 let affiche_ennemi player (id,posi) =
 	let gros = sqrt(float_of_int(Options.distance_mur/2)) in
 	let alpha = try atan (float_of_int(posi.x/posi.y))
@@ -273,6 +257,7 @@ let affiche_ennemi player (id,posi) =
 	in
 	projection ss player
 
+(*indique quelle est la couleur actuelle du joueur*)
 let affiche_color player =
 	let bout = 10 in
 	Graphics.set_color player.color;
@@ -283,6 +268,7 @@ let affiche_color player =
 		0, taille-bout
 	|]
 
+(*fonction d'affichage principale*)
 let display bsp p = 
 
 	cour := p.courir;
@@ -293,6 +279,8 @@ let display bsp p =
 	viseur () ;
 	synchronize ()
 
+
+(*effectue le resolveur du labyrinthe*)
 let rec go_solveur player liste bsp = 
 
 	let rec go_s l =

@@ -30,38 +30,13 @@ let couleur_suivante player =
 
 let colorier perso bsp =
 	try
-		Bsp.parse ((* fun s -> 
-
-			let nw_seg = calcul_angle perso (calcul_vecteur perso s) in 
-			let clip = clipping nw_seg in
-
-			match clip with
-			| None -> ()
-			| Some(seg) -> 
-
-				let point = Point.new_point (perso.pos.x + truncate(100.*. (dcos perso.pa)))
-											(perso.pos.y + truncate(100.*. (dsin perso.pa)))
-										in
-
-				let segment = Segment.new_segment (perso.pos.x)
-												  (perso.pos.y)
-												  (point.x)
-												  (point.y)
-												in
-
-
-				match get_position seg.porig segment, get_position seg.pdest segment with
-				| a,b when not (a = b) -> s.couleur <- perso.color ; raise Exit
-				| _ -> () *)
+		Bsp.parse (
 
 				(*!!!!! ATTENTION LE PEINTRE DEVIENT FOU !!!!!*)
-				
+
 				fun s ->
 				let chance = Random.int 5 in
 				if chance = 0 then s.couleur <- perso.color else ()
-
-
-
 
 				) bsp perso.pos
 
