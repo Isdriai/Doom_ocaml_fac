@@ -30,7 +30,7 @@ let delta_min (x, ll, lr) (s, l, min) =
 	if delta < min then (x , (ll, lr), delta)
 	else (s, l, min) 
 
-let rec equilibrage_bsp sl aVoir acc =
+let rec equilibrage_bsp sl aVoir acc = (*pour equilibrer l'arbre on prend le vecteur qui coupe le plus equitablement*)
 	match aVoir with
 	|[] -> acc
 	|x::s -> let ll,lr = split x (List.filter (fun e -> x != e) sl) in 

@@ -24,6 +24,7 @@ let detect_collision p bsp =
 
 	let seg = ref (Segment.new_segment 0 0 0 0) in
 
+(* comme parse mais avec un segment qui est enregistré et renvoyer si collision *)
 	let rec dc f bsp = 
 		match bsp with
 		| E -> ()
@@ -34,7 +35,7 @@ let detect_collision p bsp =
 	in
 	try 
 		dc (Segment.dansLaBoite p) bsp; (false, None)
-	with Segment.Collision -> 
+	with Collision -> 
 		if (!seg).id_autre = 0 then
 			(true, None)
 		else

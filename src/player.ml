@@ -81,7 +81,7 @@ let reset p =
 	p.pa <- p.pa_i
 
 
-(* une balle est representer par un segment et un sense
+(* une balle est representer par un segment et un sens
 	on la fait avancer et on regarde les collisions
 *)
 type balle = {mutable emplacement : Segment.t; mutable pa : int; }
@@ -94,7 +94,7 @@ let new_balle pos pa =
 	let t = {emplacement = Segment.new_segment pos.x pos.y dir.x dir.y; pa = pa;} in
 	t
 
-let rec touche balle e = function
+let rec touche balle e = function (*renvoi collison si elle touche un mur*)
 	| [] -> ()
 	| x::s -> e := x ;
 			Segment.dansLaBoite x.position balle.emplacement; touche balle e s 
@@ -107,9 +107,9 @@ let tire p ennemi bsp =
 		let rec trajectoir acc = 
 		let (bo, _) = Physic.detect_collision balle.emplacement.pdest bsp in
 			if bo then () (*si la balle prend un mur*)
-			else if acc = 0 then ()
+			else if acc = 0 then () (*si la balle part trop loin*)
 
-			else (touche balle e !ennemi;
+			else (touche balle e !ennemi; (*on fait bouger la balle avec la meme equation que le joueur*)
 				let dest = Point.new_point (balle.emplacement.pdest.x+int_of_float((pas *.dcos (balle.pa)))) 
 							(balle.emplacement.pdest.y+int_of_float(pas *.dsin (balle.pa))) in
 							
@@ -119,5 +119,5 @@ let tire p ennemi bsp =
 
 		in
 		try trajectoir 500;bsp
-		with Collision -> ennemi := List.filter (fun x -> x != !e) !ennemi; Bsp.remove_ennemi !e.ide !e.position bsp
+		with Collision -> ennemi := List.filter (fun x -> x != !e) !ennemi; Bsp.remove_ennemi !e.ide !e.position bsp (*on supprime l'ennemi de la list et on renvoi un autre bsp*)
 	else bsp
